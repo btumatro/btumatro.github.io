@@ -287,6 +287,14 @@ content:
         description: Kartlarda görünen 1-2 cümlelik özet.
       - { name: link, label: Bağlantı (form, kayıt vb.), type: string }
       - { name: linkLabel, label: Bağlantı buton yazısı, type: string }
+      - name: links
+        label: Birden çok bağlantı
+        type: object
+        list:
+          collapsible: true
+        fields:
+          - { name: label, label: Buton yazısı, type: string, required: true }
+          - { name: url, label: Bağlantı, type: string, required: true }
       - name: teams
         label: İlgili takımlar
         type: string

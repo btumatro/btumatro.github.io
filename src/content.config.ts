@@ -71,6 +71,8 @@ const haberler = defineCollection({
     gallery: z.array(z.string()).default([]),
     link: z.string().default(''),
     linkLabel: z.string().default(''),
+    /** Haberin altında gösterilecek birden fazla bağlantı (formlar gibi). */
+    links: z.array(z.object({ label: z.string(), url: z.string() })).default([]),
     /** İlgili takımların dosya adları (ör. su-alti-roketi). Haberde takım sayfalarına bağlantı verir. */
     teams: z.array(z.string()).default([]),
     summary: z.string().default(''),

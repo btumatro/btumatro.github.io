@@ -6,8 +6,13 @@ expiresOn: "2026-10-31"
 pinned: true
 draft: false
 image: "/media/haber-tanisma-etkinligi.jpg"
-link: "https://docs.google.com/forms/d/e/1FAIpQLSfMgCHKihBA7zilbQnI2QfxbMTmjfrU-v7afIGuPeQx6zSUUw/viewform"
-linkLabel: "Topluluk kayıt formu"
+link: ""
+linkLabel: ""
+links:
+  - label: "Topluluk kayıt formu"
+    url: "https://docs.google.com/forms/d/e/1FAIpQLSfMgCHKihBA7zilbQnI2QfxbMTmjfrU-v7afIGuPeQx6zSUUw/viewform"
+  - label: "Takım ön başvuru formu"
+    url: "https://docs.google.com/forms/d/e/1FAIpQLSeX_98sMFjh5ReuF-zasq5cYje6LOaeFdWoDwVJGaZvd3foyQ/viewform"
 teams: []
 summary: "Robotik, otomasyon, yazılım ve mekanik alanlarında kendini geliştirmek isteyen tüm BTÜ öğrencilerini aramıza bekliyoruz. Ön koşul yok; önce topluluğa kaydol, ardından takım ön başvurunu yap."
 ---

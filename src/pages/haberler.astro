@@ -36,6 +36,11 @@ const takimlar = new Map(
       rendered.length > 0 ? (
         <div class="space-y-5">
           {rendered.map(({ entry, Content }, i) => {
+            const links = entry.data.links.length > 0
+              ? entry.data.links
+              : entry.data.link
+                ? [{ url: entry.data.link, label: entry.data.linkLabel || 'Ayrıntılar' }]
+                : [];
             return (
               <article id={entry.id} class="card reveal overflow-hidden" data-delay={i * 45}>
                 <div class="grid md:grid-cols-[1fr_1.6fr]">
@@ -119,15 +124,24 @@ const takimlar = new Map(
                       </div>
                     )}
 
-                    {entry.data.link && (
-                      <a
-                        href={entry.data.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="mt-5 inline-block rounded-xl bg-volt-400 px-5 py-2.5 text-sm font-semibold text-ink-950 transition-transform hover:scale-[1.03]"
-                      >
-                        {entry.data.linkLabel || 'Ayrıntılar'}
-                      </a>
+                    {links.length > 0 && (
+                      <div class="mt-5 flex flex-wrap gap-2.5">
+                        {links.map((link, linkIndex) => (
+                          <a
+                            href={link.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class:list={[
+                              'inline-block rounded-xl px-5 py-2.5 text-sm font-semibold transition-transform hover:scale-[1.03]',
+                              linkIndex === 0
+                                ? 'bg-volt-400 text-ink-950'
+                                : 'border border-white/15 text-mist-100 hover:border-volt-400/50 hover:text-volt-300',
+                            ]}
+                          >
+                            {link.label}
+                          </a>
+                        ))}
+                      </div>
                     )}
                   </div>
                 </div>
