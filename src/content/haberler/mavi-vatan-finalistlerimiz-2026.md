@@ -5,7 +5,7 @@ date: 2026-08-19
 expiresOn: ""
 pinned: false
 draft: false
-image: "/media/haber-mavi-vatan-finalistleri.jpg"
+image: "/media/mavi-vatan-ekipler.jpg"
 link: "https://www.instagram.com/p/DcO-NgqNSsj/"
 linkLabel: "Instagram gönderisi"
 teams:

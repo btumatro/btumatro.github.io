@@ -2,6 +2,11 @@
   "intro": "Atölyeden yarışma sahasına, teknik gezilerden ödül törenlerine MATRO'dan kareler. En güncel kareler en üstte yer alır.",
   "images": [
     {
+      "image": "/media/mavi-vatan-ekipler.jpg",
+      "caption": "TEKNOFEST 2026 Mavi Vatan'da LODOS, ZEMHERİ ve PRUSA ekiplerimiz TCG Anadolu'da",
+      "category": "Yarışma"
+    },
+    {
       "image": "/media/takim-lodos.jpg",
       "caption": "LODOS ekibimiz insansız deniz aracıyla TEKNOFEST 2026 finalinde",
       "category": "Yarışma"
