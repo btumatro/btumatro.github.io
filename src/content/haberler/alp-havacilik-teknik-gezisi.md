@@ -5,7 +5,7 @@ date: 2026-03-25
 expiresOn: ""
 pinned: false
 draft: false
-image: ""
+image: "/media/haber-alp-havacilik.jpg"
 link: ""
 linkLabel: ""
 teams: []

@@ -2,6 +2,31 @@
   "intro": "Atölyeden yarışma sahasına, teknik gezilerden ödül törenlerine MATRO'dan kareler. En güncel kareler en üstte yer alır.",
   "images": [
     {
+      "image": "/media/takim-zemheri.jpg",
+      "caption": "ZEMHERİ ekibimiz su altı roketiyle TEKNOFEST 2026 finalinde",
+      "category": "Yarışma"
+    },
+    {
+      "image": "/media/galeri-zemheri-atolye.jpg",
+      "caption": "ZEMHERİ ekibimiz yarışma alanında son hazırlıklarda",
+      "category": "Yarışma"
+    },
+    {
+      "image": "/media/haber-alp-havacilik.jpg",
+      "caption": "Alp Havacılık teknik gezimiz",
+      "category": "Teknik Gezi"
+    },
+    {
+      "image": "/media/galeri-fabrika-gezisi.jpg",
+      "caption": "Üretim tesisi gezimizden bir kare",
+      "category": "Teknik Gezi"
+    },
+    {
+      "image": "/media/galeri-matrover-stand.jpg",
+      "caption": "MATROVER ekibimiz TEKNOFEST standında",
+      "category": "Yarışma"
+    },
+    {
       "image": "/media/mavi-vatan-ekipler.jpg",
       "caption": "TEKNOFEST 2026 Mavi Vatan'da LODOS, ZEMHERİ ve PRUSA ekiplerimiz TCG Anadolu'da",
       "category": "Yarışma"
