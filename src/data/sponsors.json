@@ -8,8 +8,7 @@
       "type": "Hizmet",
       "amount": "",
       "logo": "/media/logolar/vatanjet.png",
-      "website": "",
-      "logoKaynak": ""
+      "website": ""
     },
     {
       "name": "LUNA ROBOTICS",
@@ -17,8 +16,7 @@
       "type": "Nakit + Hizmet + Malzeme",
       "amount": "200.000 TL",
       "logo": "/media/logolar/luna-robotics.png",
-      "website": "",
-      "logoKaynak": ""
+      "website": ""
     },
     {
       "name": "TEKYAZ",
@@ -26,8 +24,7 @@
       "type": "Yazılım / Lisans",
       "amount": "",
       "logo": "/media/logolar/tekyaz.png",
-      "website": "",
-      "logoKaynak": ""
+      "website": ""
     },
     {
       "name": "KAYRA YEMEK",
@@ -35,8 +32,7 @@
       "type": "Nakit",
       "amount": "90.000 TL",
       "logo": "/media/logolar/kayra-yemek.png",
-      "website": "",
-      "logoKaynak": "https://drive.google.com/open?id=1ToMh_-06Cif8WSYrVbCR8ZszBRSX9_qo"
+      "website": ""
     },
     {
       "name": "BİYOLİFT",
@@ -44,8 +40,7 @@
       "type": "Hizmet + Malzeme",
       "amount": "85.000 TL",
       "logo": "/media/logolar/biyolift.png",
-      "website": "",
-      "logoKaynak": "https://drive.google.com/open?id=13nxZg42G5dII_ArTLMqT2Rknt3zNSjfm"
+      "website": ""
     },
     {
       "name": "İBRAŞ KAUÇUK",
@@ -53,8 +48,7 @@
       "type": "Nakit",
       "amount": "20.000 TL",
       "logo": "/media/logolar/ibras.png",
-      "website": "",
-      "logoKaynak": "https://drive.google.com/open?id=1TeaI7RzBQ2CobahiHj20Q64sA8fnGI8e"
+      "website": ""
     },
     {
       "name": "FINEMOLD",
@@ -62,8 +56,7 @@
       "type": "Üretim / Kalıp",
       "amount": "Hizmet Desteği",
       "logo": "/media/logolar/finemold.png",
-      "website": "",
-      "logoKaynak": ""
+      "website": ""
     },
     {
       "name": "AKKUŞ ENERJİ",
@@ -71,8 +64,7 @@
       "type": "Nakit",
       "amount": "30.000 TL",
       "logo": "/media/logolar/akkus-enerji.png",
-      "website": "",
-      "logoKaynak": "https://drive.google.com/open?id=1wU-UfYRyVCFe9qRozzhLKDOvs3GYROp_"
+      "website": ""
     },
     {
       "name": "ÇAKIR DEPOLAMA LOJİSTİK",
@@ -80,8 +72,7 @@
       "type": "Nakit",
       "amount": "20.000 TL",
       "logo": "/media/logolar/cakir.png",
-      "website": "",
-      "logoKaynak": "https://drive.google.com/open?id=14wrAZRIdwtssm-TRvB1xv5Ap0oBLkvtt"
+      "website": ""
     },
     {
       "name": "PINAR METAL",
@@ -89,8 +80,7 @@
       "type": "Hizmet + Malzeme",
       "amount": "Üretim Desteği",
       "logo": "/media/logolar/pinar-metal.png",
-      "website": "",
-      "logoKaynak": ""
+      "website": ""
     },
     {
       "name": "MARKA LAZER",
@@ -98,8 +88,7 @@
       "type": "Hizmet + Malzeme",
       "amount": "Kesim Desteği",
       "logo": "/media/logolar/marka-lazer.png",
-      "website": "",
-      "logoKaynak": ""
+      "website": ""
     },
     {
       "name": "TSG SAC İŞLEME MERKEZİ",
@@ -107,8 +96,7 @@
       "type": "Hizmet",
       "amount": "",
       "logo": "/media/logolar/tsg.png",
-      "website": "",
-      "logoKaynak": ""
+      "website": ""
     },
     {
       "name": "DR. TABLET",
@@ -116,8 +104,7 @@
       "type": "Hizmet + Malzeme",
       "amount": "20.000 TL altı",
       "logo": "/media/logolar/dr-tablet.png",
-      "website": "",
-      "logoKaynak": ""
+      "website": ""
     },
     {
       "name": "MERCAN BALIKÇILIK",
@@ -125,8 +112,7 @@
       "type": "Nakit",
       "amount": "10.000 TL",
       "logo": "/media/logolar/mercan.png",
-      "website": "",
-      "logoKaynak": "https://drive.google.com/open?id=1MsN7nSJq63b6SVqBQYM4tjVgTLrwWQW0"
+      "website": ""
     },
     {
       "name": "POCKETBOOK",
@@ -134,8 +120,7 @@
       "type": "Ürün",
       "amount": "",
       "logo": "/media/logolar/pocketbook.png",
-      "website": "",
-      "logoKaynak": ""
+      "website": ""
     },
     {
       "name": "OFF-EE",
@@ -143,8 +128,7 @@
       "type": "Hizmet + Malzeme",
       "amount": "20.000 TL altı",
       "logo": "/media/logolar/off-ee.png",
-      "website": "",
-      "logoKaynak": "https://drive.google.com/open?id=1C9PTLFxh0wbsa3wwzis67y7k18IPyXlY"
+      "website": ""
     }
   ],
   "past": [

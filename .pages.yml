@@ -421,10 +421,6 @@ content:
             type: string
           - { name: logo, label: Logo, type: image }
           - { name: website, label: Web sitesi, type: string }
-          - name: logoKaynak
-            label: Logo kaynak bağlantısı (iç not)
-            type: string
-            description: Drive vb. bağlantı. Logoyu buradan indirip yukarıya yükleyin.
       - name: past
         label: Geçmiş Dönem Sponsorları
         type: string
