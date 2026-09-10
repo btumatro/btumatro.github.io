@@ -5,6 +5,8 @@ category: Dijital Teknolojiler
 status: Aktif
 order: 7
 image: "/media/takim-sanayide-dijital.jpg"
+gallery:
+  - "/media/galeri-pusula-robot.jpg"
 badge: "2026 Finalisti"
 instagram: "pusula_takim"
 aliases:

@@ -7,6 +7,7 @@ order: 1
 image: "/media/takim-ashina-2026.jpg"
 gallery:
   - "/media/takim-ashina.jpg"
+  - "/media/galeri-ashina-atolye.jpg"
 badge: "2026 Finalisti"
 instagram: "ashinatechnology"
 aliases:

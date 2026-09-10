@@ -8,6 +8,7 @@ image: "/media/takim-lodos.jpg"
 gallery:
   - "/media/takim-ida.jpg"
   - "/media/galeri-lodos-ekip.jpg"
+  - "/media/galeri-lodos-detay.jpg"
 badge: "2026 Finalisti"
 instagram: "lodos.tech"
 aliases:

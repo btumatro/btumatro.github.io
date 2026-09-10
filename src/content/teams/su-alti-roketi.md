@@ -8,6 +8,7 @@ image: "/media/takim-zemheri.jpg"
 gallery:
   - "/media/galeri-zemheri-atolye.jpg"
   - "/media/galeri-zemheri-takim.jpg"
+  - "/media/galeri-zemheri-sara.jpg"
 badge: "2026 Finalisti"
 instagram: ""
 focus:

@@ -8,6 +8,7 @@ image: "/media/takim-luna-ika.jpg"
 gallery:
   - "/media/takim-luna.jpg"
   - "/media/takim-matrover.jpg"
+  - "/media/galeri-matrover-arac.jpg"
 badge: "2026 Finalisti"
 instagram: ""
 aliases:
