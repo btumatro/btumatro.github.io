@@ -10,12 +10,19 @@ import BasvuruButonlari from '../components/BasvuruButonlari.astro';
 import home from '../data/home.json';
 import achievements from '../data/achievements.json';
 import sponsors from '../data/sponsors.json';
-import { url, media, degreeTone, publishedNews, teamIndex, teamHref } from '../lib/utils';
+import { url, media, achievementSummary, degreeTone, publishedNews, teamIndex, teamHref } from '../lib/utils';
 
 const allTeams = (await getCollection('teams')).sort((a, b) => a.data.order - b.data.order);
 const teams = allTeams.filter(t => t.data.status !== 'Arşiv').slice(0, 6);
 const takimDizini = teamIndex(allTeams);
 const featured = achievements.items.filter(a => a.featured).slice(0, 6);
+const achievementStats = achievementSummary(achievements.items);
+const homeStats = home.stats.map((stat, index) => {
+  if (index === 0) return { ...stat, value: achievementStats.records, label: 'Kayıtlı Derece' };
+  if (index === 1) return { ...stat, value: achievementStats.firstPlaces, label: 'Birincilik' };
+  if (index === 4) return { ...stat, value: achievementStats.finalists2026 };
+  return stat;
+});
 const news = publishedNews(await getCollection('haberler'));
 const announcements = news.filter(item => item.data.pinned).slice(0, 2);
 const latestNews = news.slice(0, 3);
@@ -52,7 +59,7 @@ const heroImage = media(home.hero.backgroundImage);
   </aside>}
 
   <Section eyebrow="Rakamlarla MATRO" title="Birlikte, yıllar içinde." class="home-stats">
-    <div class="mt-9"><StatGrid stats={home.stats} /></div>
+    <div class="mt-9"><StatGrid stats={homeStats} /></div>
   </Section>
 
   <Section eyebrow="Proje takımları" title="Bir merak. Bir takım. Bir proje." description="Havada, karada ve suyun altında. Her takımda başka bir mühendislik problemi, aynı üretme tutkusu." class="home-teams" id="takimlar">

@@ -82,6 +82,27 @@ export function publishedNews<
     .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 }
 
+export interface AchievementRecord {
+  year: number;
+  competition: string;
+  degree: string;
+}
+
+/** Başarı ekranlarında kullanılan ortak sayaç özeti. */
+export function achievementSummary(items: AchievementRecord[]) {
+  const years = items.map((item) => item.year);
+  return {
+    records: items.length,
+    firstPlaces: items.filter((item) => /(^|[^0-9])1\./.test(item.degree)).length,
+    finalists2026: items.filter((item) => item.year === 2026 && /finalist/i.test(item.degree)).length,
+    international: items.filter((item) =>
+      /dünya|singapore|france|nasa|italian|uluslararası|bölge/i.test(`${item.competition} ${item.degree}`),
+    ).length,
+    firstYear: Math.min(...years),
+    lastYear: Math.max(...years),
+  };
+}
+
 /** Sponsorluk paketine göre renk sınıfı */
 export function packageTone(name: string): { ring: string; text: string; bg: string } {
   const n = name.toLocaleLowerCase('tr');
