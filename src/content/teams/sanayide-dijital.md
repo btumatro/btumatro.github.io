@@ -6,6 +6,7 @@ status: Aktif
 order: 7
 image: "/media/takim-sanayide-dijital.jpg"
 gallery:
+  - "/media/galeri-pusula-ekip-2025.jpg"
   - "/media/galeri-pusula-robot.jpg"
   - "/media/haber-teknofest-2026-diyarbakir.jpg"
 badge: "2026 Finalisti"

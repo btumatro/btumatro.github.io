@@ -2,6 +2,61 @@
   "intro": "Atölyeden yarışma sahasına, teknik gezilerden ödül törenlerine MATRO'dan kareler. En güncel kareler en üstte yer alır.",
   "images": [
     {
+      "image": "/media/etkinlik-alper-gezeravci.jpg",
+      "caption": "İlk Türk astronot Alper Gezeravcı ve BTÜ Rektörü Prof. Dr. Naci Çağlar atölyemizde",
+      "category": "Etkinlik"
+    },
+    {
+      "image": "/media/galeri-matrover-2025.jpg",
+      "caption": "MATROVER otonom arazi aracı açık saha testlerinde",
+      "category": "Atölye"
+    },
+    {
+      "image": "/media/takim-alhazen.jpg",
+      "caption": "ALHAZEN ekibimizin hidrojen yakıt pili ve ileri malzeme çalışmaları",
+      "category": "Atölye"
+    },
+    {
+      "image": "/media/galeri-pusula-ekip-2025.jpg",
+      "caption": "PUSULA ekibimiz ve sanayi robotik platformu",
+      "category": "Yarışma"
+    },
+    {
+      "image": "/media/galeri-matris-saha.jpg",
+      "caption": "MATRİS sürü İHA ekibi yer istasyonu ve uçuş testlerinde",
+      "category": "Atölye"
+    },
+    {
+      "image": "/media/galeri-zemheri-final.jpg",
+      "caption": "ZEMHERİ ekibimiz TEKNOFEST 2026 Mavi Vatan finalinde",
+      "category": "Yarışma"
+    },
+    {
+      "image": "/media/galeri-zemheri-sara.jpg",
+      "caption": "ZEMHERİ'nin SARA aracı Özdemir Bayraktar Teknoloji Atölyesi'nde",
+      "category": "Atölye"
+    },
+    {
+      "image": "/media/galeri-prusa-teknofest.jpg",
+      "caption": "PRUSA ekibimizin TEKNOFEST 2026 sergileme alanı",
+      "category": "Yarışma"
+    },
+    {
+      "image": "/media/galeri-lodos-teknofest.jpg",
+      "caption": "LODOS ekibimiz TEKNOFEST 2026 standında",
+      "category": "Yarışma"
+    },
+    {
+      "image": "/media/galeri-lodos-saha.jpg",
+      "caption": "LODOS ekibimiz yarışma sahasında",
+      "category": "Yarışma"
+    },
+    {
+      "image": "/media/galeri-lodos-ekip-sahil.jpg",
+      "caption": "LODOS ekibimiz ve insansız deniz aracı",
+      "category": "Yarışma"
+    },
+    {
       "image": "/media/haber-tusas-ziyareti.jpg",
       "caption": "TUSAŞ heyeti atölyemizde LODOS prototipini incelerken",
       "category": "Etkinlik"

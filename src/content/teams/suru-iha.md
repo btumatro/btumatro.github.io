@@ -6,10 +6,14 @@ status: Aktif
 order: 6
 image: "/media/takim-matris-2026.jpg"
 gallery:
+  - "/media/galeri-matris-saha.jpg"
   - "/media/takim-matris-iha.jpg"
   - "/media/galeri-matris-ekip.jpg"
 badge: "2026 Finalisti"
 instagram: "btu_matris"
+aliases:
+  - "MATRİS"
+  - "SÜRÜ İHA"
 focus:
   - Sürü halinde otonom uçuş
   - Çoklu araç koordinasyonu

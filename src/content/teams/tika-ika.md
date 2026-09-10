@@ -6,6 +6,8 @@ status: Aktif
 order: 2
 image: "/media/takim-luna-ika.jpg"
 gallery:
+  - "/media/galeri-matrover-2025.jpg"
+  - "/media/galeri-luna-batarya.jpg"
   - "/media/takim-luna.jpg"
   - "/media/takim-matrover.jpg"
   - "/media/galeri-matrover-arac.jpg"
@@ -15,6 +17,7 @@ aliases:
   - "MATROVER"
   - "LUNA"
   - "LUNA İKA"
+  - "LUNAROV"
   - "MATROBOT"
   - "YAKLI"
   - "BTÜ İKA"
@@ -37,7 +40,7 @@ achievements:
 summary: "MATROVER, LUNA, MATROBOT, YAKLI, BTÜ İKA ve ROVER TEAM alt takımlarıyla 2019'dan bu yana kesintisiz derece kazanan otonom kara aracı ailemiz."
 ---
 
-Tarımsal İnsansız Kara Araçları çatısı altında, topluluğumuzun en uzun soluklu proje geleneği yürütülmektedir. 2019'dan bu yana her yıl TEKNOFEST'te derece kazanan bu çatı; **MATROVER**, **LUNA**, **MATROBOT**, **YAKLI**, **BTÜ İKA**, **ROVER TEAM** ve **SEKSENOL** alt takımlarını barındırır.
+Tarımsal İnsansız Kara Araçları çatısı altında, topluluğumuzun en uzun soluklu proje geleneği yürütülmektedir. 2019'dan bu yana her yıl TEKNOFEST'te derece kazanan bu **TİKA** çatısı; **MATROVER**, **LUNA**, **LUNA İKA**, **LUNAROV**, **MATROBOT**, **YAKLI**, **BTÜ İKA**, **ROVER TEAM** ve **SEKSENOL** alt takımlarını ve araçlarını barındırır.
 
 ## Teknik odak
 

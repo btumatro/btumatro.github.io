@@ -1,0 +1,30 @@
+---
+interface Props {
+  src: string;
+  poster?: string;
+  title: string;
+}
+
+const { src, poster, title } = Astro.props;
+---
+
+<section class="local-video mt-10" aria-label={title + ' tanıtım videosu'}>
+  <p class="eyebrow">Takım tanıtımı</p>
+  <video
+    class="mt-4 aspect-video w-full bg-black object-cover"
+    controls
+    preload="metadata"
+    playsinline
+    poster={poster}
+  >
+    <source src={src} type="video/mp4" />
+    Tarayıcınız bu videoyu oynatmayı desteklemiyor.
+  </video>
+</section>
+
+<style>
+  .local-video {
+    border-top: 1px solid var(--edge);
+    padding-top: 1.5rem;
+  }
+</style>

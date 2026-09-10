@@ -7,6 +7,8 @@ order: 10
 image: "/media/renault-twizy.jpg"
 badge: ""
 instagram: ""
+aliases:
+  - "BÜRKÜT"
 focus:
   - Otonom uçuş simülasyonları
   - Kalman filtresi tabanlı sensör füzyonu
@@ -14,6 +16,9 @@ focus:
 achievements:
   - "TEKNOFEST 2024 Uçan Araba Simülasyon — Türkiye 31.si (1547 takım arasından finalist)"
   - "TEKNOFEST 2024 — En İyi Takım Ruhu Ödülü"
+  - "TEKNOFEST 2022 Cezeri Uçan Araba — En İyi Performans Ödülü & Türkiye 4.sü"
+  - "Renault Twizy Contest 2021 — Dünya 4.sü, Türkiye 1.si ve 2.si"
+  - "TEKNOFEST 2020 BAYKAR Uçan Araba — Türkiye 1.si"
 summary: "1547 takım arasından finale kalan ve \"En İyi Takım Ruhu\" ödülünü kazanan otonom uçuş simülasyon takımımız."
 ---
 

@@ -15,6 +15,9 @@ const teams = defineCollection({
     image: z.string().default(''),
     /** Kapaktan sonra küçük resim şeridinde gösterilecek ek görseller. */
     gallery: z.array(z.string()).default([]),
+    /** Drive'dan doğrulanmış, site için optimize edilmiş takım tanıtım videosu. */
+    video: z.string().default(''),
+    videoPoster: z.string().default(''),
     /** Kart üzerinde görünen ek etiket. Örn: "2026 Finalisti" */
     badge: z.string().default(''),
     /** Takımın Instagram kullanıcı adı (@ olmadan). Boşsa bağlantı gösterilmez. */

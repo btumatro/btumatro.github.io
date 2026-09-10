@@ -399,6 +399,8 @@ content:
         list:
           collapsible: true
         description: Kapağın altında küçük resim şeridi olarak görünür; birine tıklanınca büyür.
+      - { name: video, label: Tanıtım videosu, type: string, description: "Siteye eklenmiş MP4 video yolu. Örn: /media/video-lodos-tanitim.mp4" }
+      - { name: videoPoster, label: Video kapak görseli, type: image, description: Videonun yüklenmeden önce gösterilecek kapak görseli. }
       - name: badge
         label: Ek etiket
         type: string

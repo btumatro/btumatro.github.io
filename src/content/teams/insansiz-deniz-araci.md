@@ -6,9 +6,15 @@ status: Aktif
 order: 3
 image: "/media/takim-lodos.jpg"
 gallery:
+  - "/media/galeri-lodos-atolye-govde.jpg"
   - "/media/takim-ida.jpg"
   - "/media/galeri-lodos-ekip.jpg"
   - "/media/galeri-lodos-detay.jpg"
+  - "/media/galeri-lodos-teknofest.jpg"
+  - "/media/galeri-lodos-saha.jpg"
+  - "/media/galeri-lodos-ekip-sahil.jpg"
+video: "/media/video-lodos-tanitim.mp4"
+videoPoster: "/media/video-lodos-tanitim.jpg"
 badge: "2026 Finalisti"
 instagram: "lodos.tech"
 aliases:

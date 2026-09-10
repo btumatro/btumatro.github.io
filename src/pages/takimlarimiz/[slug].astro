@@ -5,6 +5,7 @@ import CtaBand from '../../components/CtaBand.astro';
 import BasvuruButonlari from '../../components/BasvuruButonlari.astro';
 import { instagramUrl, url } from '../../lib/utils';
 import MediaGaleri from '../../components/MediaGaleri.astro';
+import LocalVideo from '../../components/LocalVideo.astro';
 
 export async function getStaticPaths() {
   const teams = await getCollection('teams');
@@ -107,6 +108,15 @@ const others = (await getCollection('teams'))
         class="mx-auto mt-10 max-w-3xl"
         imgClass="aspect-[16/9] w-full rounded-2xl border border-white/10 object-cover"
       />
+      {
+        team.data.video && (
+          <LocalVideo
+            src={team.data.video}
+            poster={team.data.videoPoster || undefined}
+            title={team.data.title}
+          />
+        )
+      }
     </div>
 
     <div class="container-matro grid gap-12 py-14 md:py-20 lg:grid-cols-[1.5fr_1fr]">

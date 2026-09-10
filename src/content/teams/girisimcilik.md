@@ -7,11 +7,18 @@ order: 13
 image: "/media/odul-girisimcilik.jpg"
 badge: ""
 instagram: ""
+aliases:
+  - "INNOSENS"
+  - "SYNTAX"
+  - "SCENDERS"
+  - "GİRİŞİMCİLİK"
 focus:
   - Teknoloji girişimciliği
   - Ürünleşme ve iş modeli tasarımı
   - Hackathon ve fikir yarışmaları
 achievements:
+  - "Türkiye Uzay Ajansı Astro Hackathon 2026 — 5.lik (SCENDERS)"
+  - "Advance-Up Hackathon 2025 — Türkiye 3.sü (SYNTAX)"
   - "TEKNOFEST 2023 T3 Girişimcilik — Türkiye 1.si (INNOSENS Robot Teknolojileri, 75.000 TL)"
   - "GDG Yapay Zekâ Hackathonu 2024 — Türkiye 1.si"
   - "NASA Space Apps Challenge 2024 — Bölge 1.si"
@@ -21,12 +28,11 @@ summary: "Atölyede doğan fikirleri ürüne ve şirkete dönüştüren; TEKNOFE
 
 Girişimcilik ve İnovasyon grubu, topluluk bünyesinde ortaya çıkan teknolojileri ürüne ve iş modeline dönüştürmeye odaklanır.
 
-## Öne çıkan girişim
+## Girişim ve proje ekipleri
 
-**INNOSENS Robot Teknolojileri** ile TEKNOFEST T3 Girişimcilik Yarışması'nda **Türkiye 1.si** olunmuş ve **75.000 TL** ödül kazanılmıştır.
-
-## Hackathon başarıları
-
-- **GDG Yapay Zekâ Hackathonu** — Türkiye 1.si
-- **NASA Space Apps Challenge** — Bölge 1.si
-- **TEB İcat Çıkart Yarışması** — Türkiye 3.sü
+- **INNOSENS:** TEKNOFEST T3 Girişimcilik Yarışması'nda Türkiye 1.si (75.000 TL ödül)
+- **SCENDERS:** Türkiye Uzay Ajansı Astro Hackathon 5.si
+- **SYNTAX:** Advance-Up Hackathon Türkiye 3.sü
+- **GDG Yapay Zekâ Hackathonu:** Türkiye 1.si
+- **NASA Space Apps Challenge:** Bölge 1.si
+- **TEB İcat Çıkart Yarışması:** Türkiye 3.sü

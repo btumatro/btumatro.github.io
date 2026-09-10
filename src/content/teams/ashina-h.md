@@ -5,18 +5,22 @@ category: Savunma
 status: Aktif
 order: 8
 image: "/media/takim-goksav.jpg"
+gallery:
+  - "/media/galeri-mergen-hss.jpg"
 badge: ""
 instagram: ""
 aliases:
   - "GÖKSAV"
   - "ASHİNA-H"
+  - "MERGEN"
+  - "MERGEN HSS"
 focus:
   - Hava savunma sistem entegrasyonu
   - Radar ve sensör takibi
   - Bertaraf mekanizmaları
 achievements:
-  - "TEKNOFEST 2025 ASELSAN Hava Savunma Sistemleri — Rapor 3.sü"
-summary: "TEKNOFEST 2025 Hava Savunma Sistemleri yarışmasında rapor aşamasında Türkiye 3.sü olan, ASHİNA kökenlerinden gelen hava savunma takımımız."
+  - "TEKNOFEST 2025 ASELSAN Hava Savunma Sistemleri — Rapor 3.sü (GÖKSAV)"
+summary: "TEKNOFEST 2025 Hava Savunma Sistemleri yarışmasında rapor aşamasında Türkiye 3.sü olan, ASHİNA kökenlerinden gelen GÖKSAV (ASHİNA-H) hava savunma takımımız."
 ---
 
 Takımın adı, Göktürk Kağanlığı'nın kurucu Türk soyu olan **ASHİNA** ismi ile **"Hava Savunma"** kavramının birleşiminden gelmektedir.
@@ -27,8 +31,8 @@ Takımın adı, Göktürk Kağanlığı'nın kurucu Türk soyu olan **ASHİNA** 
 
 ## Çalışma alanları
 
-Hava savunma sistemlerinde tespit, teşhis, takip ve bertaraf zincirinin her halkasında çalışmalar yürütülmektedir.
+Hava savunma sistemlerinde tespit, teşhis, takip ve bertaraf zincirinin her halkasında çalışmalar yürütülmektedir. Bu çalışma hattında **GÖKSAV** (ASHİNA-H) ve hedef takip odaklı **MERGEN** sistemleri yer alır.
 
 ## Başarı
 
-Takım, **TEKNOFEST 2025 ASELSAN Hava Savunma Sistemleri Yarışması**'nda rapor değerlendirmesinde **Türkiye 3.sü** olmuştur.
+Takım, **TEKNOFEST 2025 ASELSAN Hava Savunma Sistemleri Yarışması**'nda rapor değerlendirmesinde **Türkiye 3.sü** olmuştur. Bu başarı **GÖKSAV (ASHİNA-H)** adıyla kayda geçmiştir.

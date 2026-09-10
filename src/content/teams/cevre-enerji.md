@@ -4,7 +4,7 @@ subtitle: Çevre ve Enerji Teknolojileri
 category: Çevre & Enerji
 status: Aktif
 order: 12
-image: ""
+image: "/media/takim-alhazen.jpg"
 badge: ""
 instagram: ""
 aliases:
@@ -22,9 +22,10 @@ ALHAZEN, iklim değişikliği ve küresel enerji krizi karşısında uygulanabil
 
 ## Çalışma alanları
 
+- Yakıt pili ve hidrojen enerjisi sistemleri
 - Yenilenebilir enerji üretim ve dönüşüm sistemleri
 - Enerji depolama teknolojileri ve verimlilik optimizasyonu
-- Geri dönüşüm ve sıfır atık odaklı akıllı çevre teknolojileri
+- Geri dönüşüm ve sıfır atık odaklı çevre teknolojileri
 
 ## Misyon
 

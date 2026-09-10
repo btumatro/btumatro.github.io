@@ -7,6 +7,9 @@ order: 4
 image: "/media/takim-iss-sualti-araci.jpg"
 gallery:
   - "/media/takim-iss-ekip.jpg"
+  - "/media/galeri-prusa-teknofest.jpg"
+video: "/media/video-prusa-tanitim.mp4"
+videoPoster: "/media/video-prusa-tanitim.jpg"
 badge: "2026 Finalisti"
 instagram: "prusateam"
 aliases:
