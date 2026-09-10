@@ -9,6 +9,7 @@ image: "/media/haber-hktm-gezisi.jpg"
 gallery:
   - "/media/galeri-hktm-sunum.jpg"
   - "/media/galeri-hktm-ekip.jpg"
+  - "/media/galeri-hktm-grup.jpg"
 link: "https://www.instagram.com/reel/DV38J5gDYAs/"
 linkLabel: "Instagram gönderisi"
 teams: []

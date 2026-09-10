@@ -6,6 +6,10 @@ expiresOn: ""
 pinned: false
 draft: false
 image: "/media/mavi-vatan-ekipler.jpg"
+gallery:
+  - "/media/galeri-lodos-ekip.jpg"
+  - "/media/takim-iss-ekip.jpg"
+  - "/media/galeri-zemheri-takim.jpg"
 link: "https://www.instagram.com/p/DcO-NgqNSsj/"
 linkLabel: "Instagram gönderisi"
 teams:

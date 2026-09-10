@@ -7,6 +7,7 @@ order: 7
 image: "/media/takim-sanayide-dijital.jpg"
 gallery:
   - "/media/galeri-pusula-robot.jpg"
+  - "/media/haber-teknofest-2026-diyarbakir.jpg"
 badge: "2026 Finalisti"
 instagram: "pusula_takim"
 aliases:
