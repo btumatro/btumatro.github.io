@@ -8,12 +8,16 @@ image: "/media/takim-iss-sualti-araci.jpg"
 gallery:
   - "/media/takim-iss-ekip.jpg"
   - "/media/galeri-prusa-teknofest.jpg"
+  - "/media/galeri-iss-2021-disari.jpg"
+  - "/media/galeri-iss-2021-icerde.jpg"
 video: "/media/video-prusa-tanitim.mp4"
 videoPoster: "/media/video-prusa-tanitim.jpg"
 badge: "2026 Finalisti"
 instagram: "prusateam"
 aliases:
   - "PRUSA"
+  - "BTU AUV"
+  - "BTU DALAY"
 focus:
   - Otonom sualtı aracı (AUV) tasarımı
   - Sualtı görüntü işleme

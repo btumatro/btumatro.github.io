@@ -297,10 +297,13 @@ content:
           - { name: url, label: Bağlantı, type: string, required: true }
       - name: teams
         label: İlgili takımlar
-        type: string
-        list:
-          collapsible: true
-        description: "Takım dosya adları (ör. su-alti-roketi). Haberin altında o takımların sayfalarına bağlantı çıkar."
+        type: reference
+        options:
+          collection: teams
+          multiple: true
+          value: "{name}"
+          label: "{fields.title}"
+        description: Listeden ilgili takımları seçin. Haberin altında o takımların sayfalarına bağlantı çıkar.
       - name: body
         label: İçerik
         type: rich-text

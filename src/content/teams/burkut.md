@@ -9,6 +9,7 @@ badge: ""
 instagram: ""
 aliases:
   - "BÜRKÜT"
+  - "EMİZY"
 focus:
   - Otonom uçuş simülasyonları
   - Kalman filtresi tabanlı sensör füzyonu

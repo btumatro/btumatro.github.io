@@ -270,6 +270,36 @@
       "image": "/media/haber-bahar-piknigi.jpg",
       "caption": "Bahar pikniğimiz",
       "category": "Etkinlik"
+    },
+    {
+      "image": "/media/galeri-ashina-teknofest-grup.jpg",
+      "caption": "ASHİNA ekibimiz TEKNOFEST'te LAGARİ-FIRAT-YELKOVAN İHA'larıyla",
+      "category": "Yarışma"
+    },
+    {
+      "image": "/media/galeri-ashina-uretim.jpg",
+      "caption": "ASHİNA İHA gövde üretim aşamasında",
+      "category": "Atölye"
+    },
+    {
+      "image": "/media/galeri-tika-tarimsal-ika.jpg",
+      "caption": "MATROBOT ekibimiz Tarımsal İnsansız Kara Aracı Yarışması'nda",
+      "category": "Yarışma"
+    },
+    {
+      "image": "/media/galeri-iss-2021-disari.jpg",
+      "caption": "İSS ekibimiz 2021 sezonunda",
+      "category": "Etkinlik"
+    },
+    {
+      "image": "/media/galeri-iss-2021-icerde.jpg",
+      "caption": "İSS ekibimiz sualtı aracı prototipiyle",
+      "category": "Atölye"
+    },
+    {
+      "image": "/media/galeri-teknofest-2022-odul.jpg",
+      "caption": "TEKNOFEST Sanayide Dijital Teknolojileri Yarışması Temel Kategori'de Türkiye üçüncülüğü",
+      "category": "Yarışma"
     }
   ]
 }
