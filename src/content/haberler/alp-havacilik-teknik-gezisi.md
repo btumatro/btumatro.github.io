@@ -8,6 +8,7 @@ draft: false
 image: ""
 link: ""
 linkLabel: ""
+teams: []
 summary: "Teknik gezi programımız kapsamında Alp Havacılık tesislerinde havacılık sektöründeki üretim süreçlerini yerinde inceledik."
 ---
 

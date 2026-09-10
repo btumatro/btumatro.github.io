@@ -6,6 +6,7 @@ status: Aktif
 order: 11
 image: ""
 badge: ""
+instagram: ""
 focus:
   - Yazılım tabanlı radyo (SDR) mimarileri
   - Jammer (sinyal karıştırıcı) engelleme algoritmaları

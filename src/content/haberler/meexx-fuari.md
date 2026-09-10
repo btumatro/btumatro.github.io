@@ -8,6 +8,7 @@ draft: false
 image: "/media/haber-meexx.jpg"
 link: ""
 linkLabel: ""
+teams: []
 summary: "3-6 Aralık 2025'te Bursa Fuar Merkezi'nde düzenlenen MEEXX Makine ve Teknolojileri Fuarı'nda MATRO standıyla ziyaretçilerle buluştuk."
 ---
 

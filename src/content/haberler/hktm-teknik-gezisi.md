@@ -6,8 +6,9 @@ expiresOn: ""
 pinned: false
 draft: false
 image: "/media/haber-hktm-gezisi.jpg"
-link: ""
-linkLabel: ""
+link: "https://www.instagram.com/reel/DV38J5gDYAs/"
+linkLabel: "Instagram gönderisi"
+teams: []
 summary: "Endüstriyel otomasyon ve ileri mühendislik uygulamalarını yerinde görmek için Hidropar Hareket Kontrol Teknolojileri Merkezi'ni ziyaret ettik."
 ---
 

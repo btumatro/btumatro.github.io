@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import PageHero from '../components/PageHero.astro';
+import FotoSerit from '../components/FotoSerit.astro';
 import Section from '../components/Section.astro';
 import CtaBand from '../components/CtaBand.astro';
 import BasvuruButonlari from '../components/BasvuruButonlari.astro';
@@ -153,6 +154,10 @@ const initials = (name: string) =>
       </Section>
     )
   }
+
+  <Section eyebrow="Kareler" title="Topluluk hayatından" class="pt-0">
+    <FotoSerit categories={['Etkinlik', 'Teknik Gezi']} limit={6} class="mt-10" />
+  </Section>
 
   <CtaBand
     title="Yönetim kurulunda görev almak ister misin?"

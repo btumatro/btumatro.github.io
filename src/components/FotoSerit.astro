@@ -1,0 +1,74 @@
+---
+/**
+ * Galeriden seçilen karelerle oluşan yatay fotoğraf şeridi.
+ *
+ * Görseller `src/data/gallery.json` dosyasından okunur; panelden galeriye
+ * fotoğraf eklendiğinde bu şeritler de kendiliğinden güncellenir.
+ * Uygun görsel yoksa bileşen hiçbir şey basmaz.
+ */
+import gallery from '../data/gallery.json';
+import { url, media } from '../lib/utils';
+
+interface Props {
+  /** Yalnızca bu kategorilerden seç. Boşsa tüm galeri. */
+  categories?: string[];
+  /** Kaç kare gösterilsin. */
+  limit?: number;
+  class?: string;
+}
+const { categories = [], limit = 6, class: className = '' } = Astro.props;
+
+const secilen = gallery.images
+  .filter((g) => g.image?.trim() && (categories.length === 0 || categories.includes(g.category)))
+  .slice(0, limit);
+---
+
+{
+  secilen.length > 0 && (
+    <div class:list={[className]}>
+      <div class="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
+        {secilen.map((g, i) => (
+          <a
+            href={url('/galeri')}
+            class="card reveal group relative aspect-square overflow-hidden"
+            data-delay={(i % 6) * 45}
+            title={g.caption}
+          >
+            <img
+              src={media(g.image)!}
+              alt={g.caption}
+              loading="lazy"
+              decoding="async"
+              class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.06]"
+            />
+            <span class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink-950/90 to-transparent p-2 text-[0.62rem] leading-snug text-mist-300 opacity-0 transition-opacity group-hover:opacity-100">
+              {g.caption}
+            </span>
+          </a>
+        ))}
+      </div>
+
+      <div class="reveal mt-5">
+        <a
+          href={url('/galeri')}
+          class="inline-flex items-center gap-2 text-sm font-semibold text-volt-400 hover:text-volt-300"
+        >
+          Galerinin tamamı
+          <svg
+            width="15"
+            height="15"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M5 12h14M13 6l6 6-6 6" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  )
+}

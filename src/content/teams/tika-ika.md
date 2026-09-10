@@ -6,6 +6,17 @@ status: Aktif
 order: 2
 image: "/media/takim-luna-ika.jpg"
 badge: "2026 Finalisti"
+instagram: ""
+aliases:
+  - "MATROVER"
+  - "LUNA"
+  - "LUNA İKA"
+  - "MATROBOT"
+  - "YAKLI"
+  - "BTÜ İKA"
+  - "ROVER TEAM"
+  - "SEKSENOL"
+  - "TİKA"
 focus:
   - Otonom arazi sürüşü
   - Haritalama ve rota planlama

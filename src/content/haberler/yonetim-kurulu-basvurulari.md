@@ -8,6 +8,7 @@ draft: false
 image: "/media/haber-uye-alimi.jpg"
 link: "https://docs.google.com/forms/d/e/1FAIpQLSffLpElNfRvIGQfX_p_teSanTIgPmtRn225CGaGmIq9laHvXg/viewform"
 linkLabel: "Yönetim kurulu başvuru formu"
+teams: []
 summary: "Topluluğumuzun gelişimine yön veren, sorumluluk almayı seven ve üretken bir ekibin parçası olmak istiyorsan 2026-2027 dönemi yönetim kurulu başvuruları açıldı."
 ---
 

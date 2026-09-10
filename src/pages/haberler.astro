@@ -3,7 +3,7 @@ import { getCollection, render } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import PageHero from '../components/PageHero.astro';
 import Section from '../components/Section.astro';
-import { media, publishedNews } from '../lib/utils';
+import { media, publishedNews, url } from '../lib/utils';
 
 const entries = publishedNews(await getCollection('haberler'));
 const rendered = await Promise.all(
@@ -11,6 +11,11 @@ const rendered = await Promise.all(
 );
 
 const dateFmt = new Intl.DateTimeFormat('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' });
+
+// Haberde adı geçen takımların başlıklarını, bağlantı etiketi olarak kullanabilmek için topla
+const takimlar = new Map(
+  (await getCollection('teams')).map((t) => [t.id, t.data.title])
+);
 ---
 
 <BaseLayout
@@ -100,6 +105,24 @@ const dateFmt = new Intl.DateTimeFormat('tr-TR', { day: 'numeric', month: 'long'
                         </div>
                       </details>
                     </div>
+
+                    {entry.data.teams.filter((s) => takimlar.has(s)).length > 0 && (
+                      <div class="mt-5 flex flex-wrap items-center gap-2">
+                        <span class="font-mono text-[0.62rem] tracking-[0.15em] text-mist-500 uppercase">
+                          İlgili takımlar
+                        </span>
+                        {entry.data.teams
+                          .filter((s) => takimlar.has(s))
+                          .map((s) => (
+                            <a
+                              href={url(`/takimlarimiz/${s}`)}
+                              class="rounded-lg border border-white/12 px-2.5 py-1 text-xs font-medium text-mist-300 transition-colors hover:border-volt-400/50 hover:text-volt-300"
+                            >
+                              {takimlar.get(s)}
+                            </a>
+                          ))}
+                      </div>
+                    )}
 
                     {entry.data.link && (
                       <a

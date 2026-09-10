@@ -6,6 +6,9 @@ status: Aktif
 order: 4
 image: "/media/takim-iss-sualti-araci.jpg"
 badge: "2026 Finalisti"
+instagram: "prusateam"
+aliases:
+  - "PRUSA"
 focus:
   - Otonom sualtı aracı (AUV) tasarımı
   - Sualtı görüntü işleme

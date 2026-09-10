@@ -6,8 +6,9 @@ expiresOn: ""
 pinned: false
 draft: false
 image: "/media/haber-yks-tercih-2026.jpg"
-link: ""
-linkLabel: ""
+link: "https://www.instagram.com/p/DcOWJr4Nw8K/"
+linkLabel: "Instagram gönderisi"
+teams: []
 summary: "YKS tercih sonuçları açıklandı. Bursa Teknik Üniversitesi'ne yerleşen tüm arkadaşlarımızı tebrik ediyor, onları MATRO'da aramızda görmeyi bekliyoruz."
 ---
 

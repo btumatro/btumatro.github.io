@@ -1,5 +1,5 @@
 ---
-import { degreeTone } from '../lib/utils';
+import { degreeTone, teamHref } from '../lib/utils';
 
 interface Achievement {
   year: number;
@@ -11,8 +11,11 @@ interface Achievement {
 }
 interface Props {
   items: Achievement[];
+  /** Takım adı → dosya adı eşlemesi; verilirse takım adları sayfasına bağlanır. */
+  teams?: Map<string, string>;
 }
-const { items } = Astro.props;
+const { items, teams = new Map<string, string>() } = Astro.props;
+const bag = (ad?: string) => teamHref(teams, ad);
 
 const sorted = [...items].sort(
   (a, b) => b.year - a.year || a.competition.localeCompare(b.competition, 'tr')
@@ -93,7 +96,17 @@ const years = [...new Set(sorted.map((i) => i.year))].sort((a, b) => b - a);
               <td class="px-5 py-4 font-mono text-sm text-mist-500 tabular-nums">{a.year}</td>
               <td class="px-5 py-4">
                 <span class="text-sm font-semibold text-mist-100">{a.competition}</span>
-                {a.team && <span class="mt-0.5 block font-mono text-[0.7rem] text-volt-400">{a.team}</span>}
+                {a.team &&
+                  (bag(a.team) ? (
+                    <a
+                      href={bag(a.team)}
+                      class="mt-0.5 block font-mono text-[0.7rem] text-volt-400 underline decoration-volt-400/30 underline-offset-4 hover:text-volt-300 hover:decoration-volt-400"
+                    >
+                      {a.team}
+                    </a>
+                  ) : (
+                    <span class="mt-0.5 block font-mono text-[0.7rem] text-volt-400">{a.team}</span>
+                  ))}
               </td>
               <td class="px-5 py-4 text-sm text-mist-300">{a.category}</td>
               <td class={`px-5 py-4 text-sm font-semibold ${degreeTone(a.degree)}`}>{a.degree}</td>
@@ -118,7 +131,17 @@ const years = [...new Set(sorted.map((i) => i.year))].sort((a, b) => b - a);
             <span class="shrink-0 font-mono text-xs text-mist-500">{a.year}</span>
           </div>
           <p class="mt-1 text-xs text-mist-300">{a.category}</p>
-          {a.team && <p class="mt-1 font-mono text-[0.7rem] text-volt-400">{a.team}</p>}
+          {a.team &&
+            (bag(a.team) ? (
+              <a
+                href={bag(a.team)}
+                class="mt-1 block font-mono text-[0.7rem] text-volt-400 underline decoration-volt-400/30 underline-offset-4"
+              >
+                {a.team}
+              </a>
+            ) : (
+              <p class="mt-1 font-mono text-[0.7rem] text-volt-400">{a.team}</p>
+            ))}
           <p class={`mt-2.5 text-sm font-semibold ${degreeTone(a.degree)}`}>{a.degree}</p>
         </article>
       ))

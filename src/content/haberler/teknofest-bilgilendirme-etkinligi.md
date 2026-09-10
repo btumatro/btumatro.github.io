@@ -6,8 +6,9 @@ expiresOn: ""
 pinned: false
 draft: false
 image: "/media/haber-teknofest-bilgilendirme.jpg"
-link: ""
-linkLabel: ""
+link: "https://www.instagram.com/reel/DSPDmuqDIe4/"
+linkLabel: "Instagram gönderisi"
+teams: []
 summary: "T3 Vakfı Yönetim Kurulu Başkanı Dr. Elvan Kuzucu Hıdır'ın jüri başkanlığında gerçekleşen etkinlikte TEKNOFEST'in başvurudan finallere uzanan tüm aşamaları ele alındı."
 ---
 

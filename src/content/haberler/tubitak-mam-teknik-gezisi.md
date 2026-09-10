@@ -8,6 +8,7 @@ draft: false
 image: "/media/haber-tubitak-mam.jpg"
 link: ""
 linkLabel: ""
+teams: []
 summary: "TÜBİTAK Marmara Araştırma Merkezi'ne düzenlediğimiz teknik gezide Ar-Ge süreçlerini ve laboratuvar altyapısını yerinde inceledik."
 ---
 

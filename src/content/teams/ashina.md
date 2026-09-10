@@ -6,6 +6,11 @@ status: Aktif
 order: 1
 image: "/media/takim-ashina-2026.jpg"
 badge: "2026 Finalisti"
+instagram: "ashinatechnology"
+aliases:
+  - "LAGARİ"
+  - "FIRAT"
+  - "YELKOVAN"
 focus:
   - Otonom İHA sistemleri
   - Derin öğrenme tabanlı görüntü işleme

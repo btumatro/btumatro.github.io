@@ -6,6 +6,7 @@ status: Aktif
 order: 6
 image: "/media/takim-matris-2026.jpg"
 badge: "2026 Finalisti"
+instagram: "btu_matris"
 focus:
   - Sürü halinde otonom uçuş
   - Çoklu araç koordinasyonu

@@ -15,6 +15,10 @@ const teams = defineCollection({
     image: z.string().default(''),
     /** Kart üzerinde görünen ek etiket. Örn: "2026 Finalisti" */
     badge: z.string().default(''),
+    /** Takımın Instagram kullanıcı adı (@ olmadan). Boşsa bağlantı gösterilmez. */
+    instagram: z.string().default(''),
+    /** Bu takım çatısı altındaki alt takım adları. Başarı listesinde bağlantı kurmak için kullanılır. */
+    aliases: z.array(z.string()).default([]),
     focus: z.array(z.string()).default([]),
     achievements: z.array(z.string()).default([]),
     summary: z.string().default(''),
@@ -61,6 +65,8 @@ const haberler = defineCollection({
     image: z.string().default(''),
     link: z.string().default(''),
     linkLabel: z.string().default(''),
+    /** İlgili takımların dosya adları (ör. su-alti-roketi). Haberde takım sayfalarına bağlantı verir. */
+    teams: z.array(z.string()).default([]),
     summary: z.string().default(''),
   }),
 });

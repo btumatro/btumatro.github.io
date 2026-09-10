@@ -6,6 +6,10 @@ status: Aktif
 order: 7
 image: "/media/takim-sanayide-dijital.jpg"
 badge: "2026 Finalisti"
+instagram: "pusula_takim"
+aliases:
+  - "PUSULA"
+  - "ANDROMEDA"
 focus:
   - Endüstri 4.0 uygulamaları
   - Nesnelerin interneti (IoT)

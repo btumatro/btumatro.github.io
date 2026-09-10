@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import PageHero from '../components/PageHero.astro';
 import Section from '../components/Section.astro';
 import BasvuruButonlari from '../components/BasvuruButonlari.astro';
+import FotoSerit from '../components/FotoSerit.astro';
 import SocialIcon from '../components/SocialIcon.astro';
 import site from '../data/site.json';
 
@@ -146,6 +147,8 @@ const people = site.people.filter((p) => p.name && !p.name.startsWith('['));
 
   <!-- Harita -->
   <Section eyebrow="Konum" title="Atölyemize bekleriz" class="pt-0">
+    <FotoSerit categories={['Atölye', 'Etkinlik']} limit={6} class="mt-8" />
+
     <div class="reveal mt-10 overflow-hidden rounded-2xl border border-white/10">
       <iframe
         src={mapSrc}

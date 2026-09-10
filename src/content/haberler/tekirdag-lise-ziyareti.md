@@ -8,6 +8,7 @@ draft: false
 image: "/media/haber-tekirdag-ziyaret.jpg"
 link: ""
 linkLabel: ""
+teams: []
 summary: "Lise öğrencilerine projelerimizi ve teknik süreçlerimizi tanıttık; mühendislik ve üretim alanlarına dair sohbetler gerçekleştirdik."
 ---
 

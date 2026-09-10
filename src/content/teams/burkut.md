@@ -6,6 +6,7 @@ status: Aktif
 order: 10
 image: "/media/renault-twizy.jpg"
 badge: ""
+instagram: ""
 focus:
   - Otonom uçuş simülasyonları
   - Kalman filtresi tabanlı sensör füzyonu

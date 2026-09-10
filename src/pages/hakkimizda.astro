@@ -1,10 +1,14 @@
 ---
+import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import PageHero from '../components/PageHero.astro';
+import FotoSerit from '../components/FotoSerit.astro';
 import Section from '../components/Section.astro';
 import CtaBand from '../components/CtaBand.astro';
 import about from '../data/about.json';
 import site from '../data/site.json';
+
+const takimSayisi = (await getCollection('teams')).filter((t) => t.data.status !== 'Arşiv').length;
 ---
 
 <BaseLayout
@@ -102,9 +106,13 @@ import site from '../data/site.json';
     </ol>
   </Section>
 
+  <Section eyebrow="Kareler" title="Atölyeden ve sahadan" class="pt-0">
+    <FotoSerit limit={6} class="mt-10" />
+  </Section>
+
   <CtaBand
     title="Takımlarımızı yakından tanıyın"
-    description="On iki farklı proje takımıyla havacılıktan sualtına, tarımdan haberleşmeye kadar geniş bir alanda çalışıyoruz."
+    description={`${takimSayisi} farklı proje takımıyla havacılıktan sualtına, tarımdan haberleşmeye kadar geniş bir alanda çalışıyoruz.`}
     primary={{ label: 'Takımlarımız', href: '/takimlarimiz' }}
     secondary={{ label: 'Başarılarımız', href: '/basarilarimiz' }}
   />

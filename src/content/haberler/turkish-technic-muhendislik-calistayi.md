@@ -6,8 +6,9 @@ expiresOn: ""
 pinned: false
 draft: false
 image: "/media/fuar-ziyaret.jpg"
-link: ""
-linkLabel: ""
+link: "https://www.instagram.com/reel/DZSukjltqmk/"
+linkLabel: "Instagram gönderisi"
+teams: []
 summary: "Turkish Technic mühendislerinin sahadan getirdiği gerçek problemleri ekipler hâlinde analiz ettik ve çözüm önerilerimizi sunduk."
 ---
 

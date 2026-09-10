@@ -8,6 +8,7 @@ draft: false
 image: "/media/haber-tanisma-etkinligi.jpg"
 link: "https://docs.google.com/forms/d/e/1FAIpQLSfMgCHKihBA7zilbQnI2QfxbMTmjfrU-v7afIGuPeQx6zSUUw/viewform"
 linkLabel: "Topluluk kayıt formu"
+teams: []
 summary: "Robotik, otomasyon, yazılım ve mekanik alanlarında kendini geliştirmek isteyen tüm BTÜ öğrencilerini aramıza bekliyoruz. Ön koşul yok; önce topluluğa kaydol, ardından takım ön başvurunu yap."
 ---
 

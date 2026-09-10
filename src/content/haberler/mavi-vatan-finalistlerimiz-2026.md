@@ -6,8 +6,12 @@ expiresOn: ""
 pinned: false
 draft: false
 image: "/media/haber-mavi-vatan-finalistleri.jpg"
-link: ""
-linkLabel: ""
+link: "https://www.instagram.com/p/DcO-NgqNSsj/"
+linkLabel: "Instagram gönderisi"
+teams:
+  - "insansiz-deniz-araci"
+  - "su-alti-roketi"
+  - "insansiz-su-alti"
 summary: "LODOS İnsansız Deniz Aracı, PRUSA İnsansız Sualtı Aracı ve ZEMHERİ Su Altı Roket kategorilerinde TEKNOFEST 2026 finaline kaldı."
 ---
 

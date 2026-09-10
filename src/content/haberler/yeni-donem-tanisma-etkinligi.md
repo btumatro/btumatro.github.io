@@ -8,6 +8,7 @@ draft: false
 image: "/media/haber-tanisma-etkinligi.jpg"
 link: ""
 linkLabel: ""
+teams: []
 summary: "Yeni üyelerimizle tanıştığımız etkinlikte topluluğun vizyonunu ve projelerini paylaştık, TEKNOFEST hazırlıklarının yürütüldüğü atölyemizi gezdik."
 ---
 

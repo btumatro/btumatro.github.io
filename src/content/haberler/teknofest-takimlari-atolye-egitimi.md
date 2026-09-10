@@ -8,6 +8,7 @@ draft: false
 image: "/media/haber-atolye-egitimi.jpg"
 link: ""
 linkLabel: ""
+teams: []
 summary: "Yeni dönem TEKNOFEST takımlarımıza topluluk kültürümüzü, proje yönetimi yaklaşımımızı ve atölye kurallarımızı aktardığımız bir eğitim düzenledik."
 ---
 

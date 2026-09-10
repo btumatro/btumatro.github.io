@@ -8,6 +8,7 @@ draft: false
 image: "/media/haber-devfest-bursa.jpg"
 link: ""
 linkLabel: ""
+teams: []
 summary: "Google Developer Groups Bursa tarafından düzenlenen DevFest'25 Bursa etkinliğinde topluluk partneri olarak yer aldık."
 ---
 

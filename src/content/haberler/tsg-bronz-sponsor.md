@@ -6,8 +6,9 @@ expiresOn: ""
 pinned: false
 draft: false
 image: "/media/sponsor-bronz-tsg.jpg"
-link: ""
-linkLabel: ""
+link: "https://www.instagram.com/p/DSHfRLIjUn6/"
+linkLabel: "Instagram gönderisi"
+teams: []
 summary: "TSG Sac İşleme Merkezi, 2025-2026 döneminde topluluğumuzun Bronz Sponsoru olarak destek veriyor."
 ---
 

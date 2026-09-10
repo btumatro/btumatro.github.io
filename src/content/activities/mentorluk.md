@@ -4,7 +4,7 @@ type: Eğitim
 date: 2024-01-01
 endDate: ""
 order: 6
-image: ""
+image: "/media/haber-atolye-egitimi.jpg"
 stats: []
 summary: "Ortaokul ve lise düzeyindeki öğrencilere teknoloji mentörlüğü sağlayarak yeni nesli erken yaşta mühendislikle tanıştırıyoruz."
 ---

@@ -104,3 +104,41 @@ export function degreeTone(degree: string): string {
   if (d.includes('ödül')) return 'text-volt-300';
   return 'text-mist-300';
 }
+
+/**
+ * Instagram kullanıcı adını tam adrese çevirir.
+ * "@btu_matris", "btu_matris" ve tam adres — üçü de kabul edilir.
+ */
+export function instagramUrl(handle?: string | null): string | null {
+  if (!handle || !handle.trim()) return null;
+  const h = handle.trim();
+  if (/^https?:\/\//i.test(h)) return h;
+  return `https://www.instagram.com/${h.replace(/^@/, '')}/`;
+}
+
+/**
+ * Takım adı → takım sayfası eşlemesi.
+ *
+ * Başarı listesinde ve haberlerde geçen takım adları (LODOS, MATROVER, PRUSA…)
+ * her zaman takım sayfasının başlığıyla birebir aynı olmuyor. Bu yüzden her
+ * takımın frontmatter'ındaki `aliases` alanı da eşlemeye dahil edilir; böylece
+ * yeni bir alt takım eklendiğinde koda dokunmadan panelden tanımlanabilir.
+ */
+export function teamIndex(
+  teams: { id: string; data: { title: string; aliases?: string[] } }[]
+): Map<string, string> {
+  const index = new Map<string, string>();
+  const key = (s: string) => s.trim().toLocaleLowerCase('tr');
+  for (const t of teams) {
+    index.set(key(t.data.title), t.id);
+    for (const a of t.data.aliases ?? []) if (a.trim()) index.set(key(a), t.id);
+  }
+  return index;
+}
+
+/** Takım adına karşılık gelen sayfa yolu; eşleşme yoksa null. */
+export function teamHref(index: Map<string, string>, name?: string | null): string | null {
+  if (!name || !name.trim()) return null;
+  const slug = index.get(name.trim().toLocaleLowerCase('tr'));
+  return slug ? url(`/takimlarimiz/${slug}`) : null;
+}

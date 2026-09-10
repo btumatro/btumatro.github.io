@@ -1,13 +1,17 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import PageHero from '../components/PageHero.astro';
+import FotoSerit from '../components/FotoSerit.astro';
 import Section from '../components/Section.astro';
 import StatGrid from '../components/StatGrid.astro';
 import AchievementsExplorer from '../components/AchievementsExplorer.astro';
 import CtaBand from '../components/CtaBand.astro';
 import achievements from '../data/achievements.json';
+import { getCollection } from 'astro:content';
+import { teamIndex } from '../lib/utils';
 
 const items = achievements.items;
+const takimDizini = teamIndex(await getCollection('teams'));
 const years = [...new Set(items.map((i) => i.year))];
 const firstPlaces = items.filter((i) => i.degree.includes('1.')).length;
 const international = items.filter((i) =>
@@ -44,7 +48,11 @@ const stats = [
     description="Yıla göre filtreleyebilir veya yarışma, takım ve kategori adıyla arama yapabilirsin."
     class="pt-0"
   >
-    <AchievementsExplorer items={items} />
+    <AchievementsExplorer items={items} teams={takimDizini} />
+  </Section>
+
+  <Section eyebrow="Kareler" title="Yarışma alanından" class="pt-0">
+    <FotoSerit categories={['Yarışma']} limit={6} class="mt-10" />
   </Section>
 
   <CtaBand

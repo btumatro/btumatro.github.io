@@ -6,8 +6,9 @@ expiresOn: ""
 pinned: false
 draft: false
 image: "/media/haber-hali-saha.jpg"
-link: ""
-linkLabel: ""
+link: "https://www.instagram.com/reel/DXCizE8jf8B/"
+linkLabel: "Instagram gönderisi"
+teams: []
 summary: "Yoğun tempoya kısa bir ara vererek düzenlediğimiz halı saha etkinliğinde takım ruhunu saha dışında da yaşadık."
 ---
 

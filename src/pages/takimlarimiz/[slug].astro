@@ -3,7 +3,7 @@ import { getCollection, render, type CollectionEntry } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import CtaBand from '../../components/CtaBand.astro';
 import BasvuruButonlari from '../../components/BasvuruButonlari.astro';
-import { url, media } from '../../lib/utils';
+import { instagramUrl, url, media } from '../../lib/utils';
 
 export async function getStaticPaths() {
   const teams = await getCollection('teams');
@@ -20,6 +20,7 @@ interface Props {
 const { team } = Astro.props;
 const { Content } = await render(team);
 const cover = media(team.data.image);
+const takimInstagram = instagramUrl(team.data.instagram);
 
 const others = (await getCollection('teams'))
   .filter((t) => t.id !== team.id)
@@ -74,6 +75,24 @@ const others = (await getCollection('teams'))
         {
           team.data.summary && (
             <p class="mt-5 max-w-2xl leading-relaxed text-mist-300">{team.data.summary}</p>
+          )
+        }
+
+        {
+          takimInstagram && (
+            <a
+              href={takimInstagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="mt-6 inline-flex items-center gap-2 rounded-xl border border-white/15 px-4 py-2.5 text-sm font-semibold text-mist-100 transition-colors hover:border-volt-400/50 hover:text-volt-300"
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+              </svg>
+              Takımın Instagram sayfası
+            </a>
           )
         }
       </div>

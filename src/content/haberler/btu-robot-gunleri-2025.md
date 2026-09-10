@@ -8,6 +8,7 @@ draft: false
 image: "/media/haber-btu-robot-gunleri.jpg"
 link: ""
 linkLabel: ""
+teams: []
 summary: "ROTASAM ve Mekatronik Mühendisliği Bölümü tarafından bu yıl ikincisi düzenlenen BTÜ Robot Günleri'nde projelerimizi tanıttık ve MATLAB eğitimlerine katıldık."
 ---
 

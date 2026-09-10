@@ -6,6 +6,7 @@ status: Yeni Takım
 order: 5
 image: "/media/takim-zemheri.jpg"
 badge: "2026 Finalisti"
+instagram: ""
 focus:
   - Su altı roket gövde ve itki tasarımı
   - Sızdırmazlık ve basınç dayanımı

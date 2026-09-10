@@ -8,6 +8,8 @@ draft: false
 image: "/media/haber-matrover-3luk.jpg"
 link: ""
 linkLabel: ""
+teams:
+  - "tika-ika"
 summary: "Finale kalan 28 takım arasında gösterdiğimiz performansla TEKNOFEST 2025 İnsansız Kara Aracı Yarışması'nda Türkiye üçüncülüğü elde ettik."
 ---
 

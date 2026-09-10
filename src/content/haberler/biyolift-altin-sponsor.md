@@ -8,6 +8,7 @@ draft: false
 image: "/media/haber-biyolift.jpg"
 link: ""
 linkLabel: ""
+teams: []
 summary: "Biyolift Mekatronik A.Ş., topluluğumuzun Altın Sponsoru olarak projelerimize destek vermeye başladı."
 ---
 

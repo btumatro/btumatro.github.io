@@ -8,6 +8,7 @@ draft: false
 image: "/media/haber-genc-ticaret.jpg"
 link: ""
 linkLabel: ""
+teams: []
 summary: "Topluluk üyemiz İbrahim İdris, farklı ülkelerden gençleri buluşturan Genç Ticaret Elçileri Yarışması'nda birinci oldu."
 ---
 

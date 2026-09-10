@@ -6,8 +6,10 @@ expiresOn: ""
 pinned: false
 draft: false
 image: "/media/takim-zemheri.jpg"
-link: ""
-linkLabel: ""
+link: "https://www.instagram.com/reel/DcitY77teii/"
+linkLabel: "Instagram gönderisi"
+teams:
+  - "su-alti-roketi"
 summary: "ROKETSAN tarafından bu yıl ikinci kez düzenlenen Su Altı Roket kategorisinde ilk kez yarışan ZEMHERİ takımımız finalist oldu ve hakem heyetinin takdirini topladı."
 ---
 

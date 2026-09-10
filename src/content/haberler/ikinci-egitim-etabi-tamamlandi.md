@@ -6,8 +6,9 @@ expiresOn: ""
 pinned: false
 draft: false
 image: "/media/haber-ikinci-egitim.jpg"
-link: ""
-linkLabel: ""
+link: "https://www.instagram.com/reel/DVyy02_DStE/"
+linkLabel: "Instagram gönderisi"
+teams: []
 summary: "Eğitim programımızın ikinci etabını tamamladık; ilk etapta atılan temel üzerine yeni konular eklendi."
 ---
 

@@ -6,8 +6,9 @@ expiresOn: ""
 pinned: false
 draft: false
 image: "/media/sponsor-platin-vatanjet.jpg"
-link: ""
-linkLabel: ""
+link: "https://www.instagram.com/p/DZm6cjitZlq/"
+linkLabel: "Instagram gönderisi"
+teams: []
 summary: "VatanJet, 2025-2026 döneminde topluluğumuzun Platin Sponsoru olarak projelerimize destek vermeye başladı."
 ---
 

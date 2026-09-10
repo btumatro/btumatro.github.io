@@ -6,8 +6,9 @@ expiresOn: ""
 pinned: false
 draft: false
 image: "/media/sponsor-platin-luna-robotics.jpg"
-link: ""
-linkLabel: ""
+link: "https://www.instagram.com/p/DcN1fFlNbd0/"
+linkLabel: "Instagram gönderisi"
+teams: []
 summary: "Luna Robotics, 2025-2026 döneminde topluluğumuzun Platin Sponsoru olarak projelerimize destek veriyor."
 ---
 

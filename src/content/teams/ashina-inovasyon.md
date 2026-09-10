@@ -6,6 +6,7 @@ status: Yeni Takım
 order: 9
 image: ""
 badge: ""
+instagram: ""
 focus:
   - Akıllı tarım çözümleri
   - Sürdürülebilir üretim teknolojileri

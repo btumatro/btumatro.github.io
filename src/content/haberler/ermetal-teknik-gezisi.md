@@ -6,8 +6,9 @@ expiresOn: ""
 pinned: false
 draft: false
 image: "/media/haber-ermetal-gezisi.jpg"
-link: ""
-linkLabel: ""
+link: "https://www.instagram.com/reel/DSXReO9DfWs/"
+linkLabel: "Instagram gönderisi"
+teams: []
 summary: "Mekatronik Mühendisleri Derneği ile birlikte gerçekleştirdiğimiz gezide üretim süreçlerini ve sektörün işleyişini yerinde inceledik."
 ---
 

@@ -4,8 +4,11 @@ subtitle: İnsansız Deniz Aracı
 category: Deniz Araçları
 status: Aktif
 order: 3
-image: "/media/takim-ida.jpg"
+image: "/media/takim-lodos.jpg"
 badge: "2026 Finalisti"
+instagram: "lodos.tech"
+aliases:
+  - "LODOS"
 focus:
   - Deniz üstü otonomi
   - Rotalandırma ve seyir algoritmaları

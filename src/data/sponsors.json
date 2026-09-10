@@ -8,7 +8,8 @@
       "type": "Hizmet",
       "amount": "",
       "logo": "/media/logolar/vatanjet.png",
-      "website": ""
+      "website": "",
+      "instagram": "vatanjet.official"
     },
     {
       "name": "LUNA ROBOTICS",
@@ -16,7 +17,8 @@
       "type": "Nakit + Hizmet + Malzeme",
       "amount": "200.000 TL",
       "logo": "/media/logolar/luna-robotics.png",
-      "website": ""
+      "website": "",
+      "instagram": "luna_robotics"
     },
     {
       "name": "TEKYAZ",
@@ -24,7 +26,8 @@
       "type": "Yazılım / Lisans",
       "amount": "",
       "logo": "/media/logolar/tekyaz.png",
-      "website": ""
+      "website": "",
+      "instagram": "tekyazcom"
     },
     {
       "name": "KAYRA YEMEK",
@@ -32,7 +35,8 @@
       "type": "Nakit",
       "amount": "90.000 TL",
       "logo": "/media/logolar/kayra-yemek.png",
-      "website": ""
+      "website": "",
+      "instagram": ""
     },
     {
       "name": "BİYOLİFT",
@@ -40,7 +44,8 @@
       "type": "Hizmet + Malzeme",
       "amount": "85.000 TL",
       "logo": "/media/logolar/biyolift.png",
-      "website": ""
+      "website": "",
+      "instagram": ""
     },
     {
       "name": "İBRAŞ KAUÇUK",
@@ -48,7 +53,8 @@
       "type": "Nakit",
       "amount": "20.000 TL",
       "logo": "/media/logolar/ibras.png",
-      "website": ""
+      "website": "",
+      "instagram": ""
     },
     {
       "name": "FINEMOLD",
@@ -56,7 +62,8 @@
       "type": "Üretim / Kalıp",
       "amount": "Hizmet Desteği",
       "logo": "/media/logolar/finemold.png",
-      "website": ""
+      "website": "",
+      "instagram": ""
     },
     {
       "name": "AKKUŞ ENERJİ",
@@ -64,7 +71,8 @@
       "type": "Nakit",
       "amount": "30.000 TL",
       "logo": "/media/logolar/akkus-enerji.png",
-      "website": ""
+      "website": "",
+      "instagram": ""
     },
     {
       "name": "ÇAKIR DEPOLAMA LOJİSTİK",
@@ -72,7 +80,8 @@
       "type": "Nakit",
       "amount": "20.000 TL",
       "logo": "/media/logolar/cakir.png",
-      "website": ""
+      "website": "",
+      "instagram": ""
     },
     {
       "name": "PINAR METAL",
@@ -80,7 +89,8 @@
       "type": "Hizmet + Malzeme",
       "amount": "Üretim Desteği",
       "logo": "/media/logolar/pinar-metal.png",
-      "website": ""
+      "website": "",
+      "instagram": ""
     },
     {
       "name": "MARKA LAZER",
@@ -88,7 +98,8 @@
       "type": "Hizmet + Malzeme",
       "amount": "Kesim Desteği",
       "logo": "/media/logolar/marka-lazer.png",
-      "website": ""
+      "website": "",
+      "instagram": ""
     },
     {
       "name": "TSG SAC İŞLEME MERKEZİ",
@@ -96,7 +107,8 @@
       "type": "Hizmet",
       "amount": "",
       "logo": "/media/logolar/tsg.png",
-      "website": ""
+      "website": "",
+      "instagram": "tsg.metal"
     },
     {
       "name": "DR. TABLET",
@@ -104,7 +116,8 @@
       "type": "Hizmet + Malzeme",
       "amount": "20.000 TL altı",
       "logo": "/media/logolar/dr-tablet.png",
-      "website": ""
+      "website": "",
+      "instagram": ""
     },
     {
       "name": "MERCAN BALIKÇILIK",
@@ -112,7 +125,8 @@
       "type": "Nakit",
       "amount": "10.000 TL",
       "logo": "/media/logolar/mercan.png",
-      "website": ""
+      "website": "",
+      "instagram": ""
     },
     {
       "name": "POCKETBOOK",
@@ -120,7 +134,8 @@
       "type": "Ürün",
       "amount": "",
       "logo": "/media/logolar/pocketbook.png",
-      "website": ""
+      "website": "",
+      "instagram": ""
     },
     {
       "name": "OFF-EE",
@@ -128,7 +143,8 @@
       "type": "Hizmet + Malzeme",
       "amount": "20.000 TL altı",
       "logo": "/media/logolar/off-ee.png",
-      "website": ""
+      "website": "",
+      "instagram": ""
     }
   ],
   "past": [

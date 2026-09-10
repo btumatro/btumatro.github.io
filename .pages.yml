@@ -273,6 +273,12 @@ content:
         description: Kartlarda görünen 1-2 cümlelik özet.
       - { name: link, label: Bağlantı (form, kayıt vb.), type: string }
       - { name: linkLabel, label: Bağlantı buton yazısı, type: string }
+      - name: teams
+        label: İlgili takımlar
+        type: string
+        list:
+          collapsible: true
+        description: "Takım dosya adları (ör. su-alti-roketi). Haberin altında o takımların sayfalarına bağlantı çıkar."
       - name: body
         label: İçerik
         type: rich-text
@@ -369,6 +375,16 @@ content:
         label: Ek etiket
         type: string
         description: "Kartın üzerinde görünen küçük rozet. Örn: 2026 Finalisti. Boş bırakılabilir."
+      - name: instagram
+        label: Takımın Instagram kullanıcı adı
+        type: string
+        description: "Sadece kullanıcı adı, @ olmadan. Örn: btu_matris. Boşsa bağlantı gösterilmez."
+      - name: aliases
+        label: Alt takım adları
+        type: string
+        list:
+          collapsible: true
+        description: "Başarı listesinde bu adlar geçtiğinde bu takım sayfasına bağlanır. Örn: LODOS, MATROVER."
       - name: focus
         label: Odak alanları
         type: string
@@ -421,6 +437,7 @@ content:
             type: string
           - { name: logo, label: Logo, type: image }
           - { name: website, label: Web sitesi, type: string }
+          - { name: instagram, label: Instagram kullanıcı adı, type: string }
       - name: past
         label: Geçmiş Dönem Sponsorları
         type: string

@@ -6,6 +6,10 @@ status: Aktif
 order: 8
 image: "/media/takim-goksav.jpg"
 badge: ""
+instagram: ""
+aliases:
+  - "GÖKSAV"
+  - "ASHİNA-H"
 focus:
   - Hava savunma sistem entegrasyonu
   - Radar ve sensör takibi

@@ -6,6 +6,7 @@ status: Aktif
 order: 13
 image: "/media/odul-girisimcilik.jpg"
 badge: ""
+instagram: ""
 focus:
   - Teknoloji girişimciliği
   - Ürünleşme ve iş modeli tasarımı

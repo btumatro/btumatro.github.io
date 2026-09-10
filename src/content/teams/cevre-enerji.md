@@ -6,6 +6,9 @@ status: Aktif
 order: 12
 image: ""
 badge: ""
+instagram: ""
+aliases:
+  - "ALHAZEN"
 focus:
   - Yenilenebilir enerji sistemleri
   - Enerji depolama ve verimliliği

@@ -6,8 +6,9 @@ expiresOn: ""
 pinned: false
 draft: false
 image: "/media/haber-bahar-piknigi.jpg"
-link: ""
-linkLabel: ""
+link: "https://www.instagram.com/reel/DYkeD1ttmps/"
+linkLabel: "Instagram gönderisi"
+teams: []
 summary: "Yoğun yarışma temposuna kısa bir ara verip yönetim kurulumuz ve takım arkadaşlarımızla bir araya geldiğimiz piknik etkinliği düzenledik."
 ---
 

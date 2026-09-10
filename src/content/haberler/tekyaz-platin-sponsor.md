@@ -6,8 +6,9 @@ expiresOn: ""
 pinned: false
 draft: false
 image: "/media/sponsor-platin-tekyaz.jpg"
-link: ""
-linkLabel: ""
+link: "https://www.instagram.com/p/DcHLevmtgR3/"
+linkLabel: "Instagram gönderisi"
+teams: []
 summary: "TEKYAZ, 2025-2026 döneminde topluluğumuzun Platin Sponsoru olarak yarışma takımlarımıza destek veriyor."
 ---
 

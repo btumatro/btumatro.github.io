@@ -6,8 +6,13 @@ expiresOn: ""
 pinned: false
 draft: false
 image: "/media/haber-teknofest-2026-finalleri.jpg"
-link: ""
-linkLabel: ""
+link: "https://www.instagram.com/p/DdGJr1cjfko/"
+linkLabel: "Instagram gönderisi"
+teams:
+  - "ashina"
+  - "sanayide-dijital"
+  - "tika-ika"
+  - "suru-iha"
 summary: "Aynı çatı, farklı şehirler, tek hedef: ASHİNA, PUSULA, LUNA İKA ve MATRİS takımlarımız TEKNOFEST 2026 finallerinde Türkiye'nin dört ayrı şehrinde üniversitemizi temsil ediyor."
 ---
 
