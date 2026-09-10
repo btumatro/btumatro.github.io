@@ -7,7 +7,7 @@ const { youtubeId, title } = Astro.props;
 ---
 
 <div
-  class="video-embed group relative aspect-video w-full cursor-pointer overflow-hidden rounded-2xl border border-white/10 bg-ink-850"
+  class="video-embed group relative aspect-video w-full cursor-pointer overflow-hidden rounded-sm border border-white/10 bg-ink-850"
   data-id={youtubeId}
   data-title={title}
 >
@@ -26,7 +26,7 @@ const { youtubeId, title } = Astro.props;
     aria-label={`Videoyu oynat: ${title}`}
   >
     <span
-      class="flex h-16 w-16 items-center justify-center rounded-full bg-volt-400 text-ink-950 shadow-lg shadow-volt-500/30 transition-transform duration-300 group-hover:scale-110"
+      class="flex h-16 w-16 items-center justify-center rounded-full bg-volt-400 text-ink-950 transition-transform duration-300 group-hover:scale-110"
     >
       <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
         <path d="M8 5.5v13l11-6.5-11-6.5Z"></path>

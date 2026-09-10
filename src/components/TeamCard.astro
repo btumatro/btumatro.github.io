@@ -1,6 +1,5 @@
 ---
 import { url, media } from '../lib/utils';
-
 interface Props {
   slug: string;
   title: string;
@@ -13,104 +12,35 @@ interface Props {
   focus?: string[];
   delay?: number;
 }
-const {
-  slug,
-  title,
-  subtitle,
-  category,
-  status = 'Aktif',
-  badge,
-  summary,
-  image,
-  focus = [],
-  delay = 0,
-} = Astro.props;
-
+const { slug, title, subtitle, category, status, badge, summary, image, focus = [], delay = 0 } = Astro.props;
 const cover = media(image);
-const isNew = status === 'Yeni Takım';
 ---
-
-<a
-  href={url(`/takimlarimiz/${slug}`)}
-  class="card card-hover reveal group flex flex-col overflow-hidden"
-  data-delay={delay}
->
-  <div class="relative aspect-[16/9] overflow-hidden border-b border-white/8 bg-ink-800">
-    {
-      cover ? (
-        <img
-          src={cover}
-          alt={`${title} takımı`}
-          loading="lazy"
-          decoding="async"
-          class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.04]"
-        />
-      ) : (
-        <div class="grid-bg flex h-full w-full items-center justify-center">
-          <span class="font-mono text-3xl font-bold tracking-tight text-white/8 select-none">
-            {title}
-          </span>
-        </div>
-      )
-    }
-    <div class="absolute top-3 left-3 flex gap-1.5">
-      {
-        category && (
-          <span class="rounded-md bg-ink-950/80 px-2 py-1 font-mono text-[0.6rem] tracking-wider text-mist-300 uppercase backdrop-blur">
-            {category}
-          </span>
-        )
-      }
-      {
-        isNew && (
-          <span class="rounded-md bg-volt-400/90 px-2 py-1 font-mono text-[0.6rem] font-semibold tracking-wider text-ink-950 uppercase">
-            Yeni
-          </span>
-        )
-      }
-      {
-        badge && (
-          <span class="rounded-md bg-medal-500/90 px-2 py-1 font-mono text-[0.6rem] font-semibold tracking-wider text-ink-950 uppercase">
-            {badge}
-          </span>
-        )
-      }
-    </div>
+<a href={url(`/takimlarimiz/${slug}`)} class="team-card reveal group" data-delay={delay} data-category={category}>
+  <div class="team-photo">
+    {cover ? <img src={cover} alt={`${title} takımı`} loading="lazy" decoding="async" /> : <div class="team-placeholder" aria-hidden="true"><span>{title}</span><svg viewBox="0 0 120 120" fill="none"><circle cx="60" cy="60" r="42"/><path d="M60 0v120M0 60h120M18 18l84 84M18 102l84-84"/><circle cx="60" cy="60" r="24"/></svg></div>}
+    {badge && <span class="team-badge">{badge}</span>}
   </div>
-
-  <div class="flex flex-1 flex-col p-5">
-    <h3 class="text-lg font-bold tracking-tight text-mist-100 transition-colors group-hover:text-volt-300">
-      {title}
-    </h3>
-    {subtitle && <p class="mt-0.5 text-xs font-medium text-volt-400">{subtitle}</p>}
-    {summary && <p class="mt-3 flex-1 text-sm leading-relaxed text-mist-500">{summary}</p>}
-
-    {
-      focus.length > 0 && (
-        <ul class="mt-4 flex flex-wrap gap-1.5">
-          {focus.slice(0, 3).map((f) => (
-            <li class="rounded-md border border-white/10 px-2 py-1 text-[0.68rem] text-mist-500">{f}</li>
-          ))}
-        </ul>
-      )
-    }
-
-    <span class="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-volt-400">
-      Takımı incele
-      <svg
-        width="14"
-        height="14"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        aria-hidden="true"
-        class="transition-transform duration-300 group-hover:translate-x-1"
-      >
-        <path d="M5 12h14M13 6l6 6-6 6" />
-      </svg>
-    </span>
-  </div>
+  <div class="team-meta"><span>{category}</span>{status === 'Yeni Takım' && <span>Yeni takım</span>}</div>
+  <div class="team-title"><h3>{title}</h3><span aria-hidden="true">↗</span></div>
+  {subtitle && <p class="team-subtitle">{subtitle}</p>}
+  {summary && <p class="team-summary">{summary}</p>}
+  {focus.length > 0 && <p class="team-focus">{focus.slice(0,3).join(' / ')}</p>}
 </a>
+<style>
+  .team-card { display:flex; flex-direction:column; min-width:0; padding-bottom:1.4rem; border-bottom:1px solid var(--edge); }
+  .team-photo { position:relative; overflow:hidden; background:var(--color-ink-800); aspect-ratio:4/3; }
+  .team-photo img { width:100%; height:100%; object-fit:cover; transition:transform .45s ease; }
+  .team-card:hover img { transform:scale(1.025); }
+  .team-placeholder { position:relative; height:100%; padding:1.5rem; display:flex; align-items:flex-end; }
+  .team-placeholder span { position:relative; z-index:1; font-family:var(--font-display); font-size:2rem; color:var(--color-mist-300); }
+  .team-placeholder svg { position:absolute; width:65%; right:5%; top:5%; stroke:var(--color-mist-500); opacity:.25; stroke-width:.5; }
+  .team-badge { position:absolute; bottom:0; left:0; padding:.55rem .85rem; background:var(--color-ink-950); color:var(--color-medal-400); font-size:.65rem; font-weight:500; }
+  .team-meta { display:flex; justify-content:space-between; gap:.5rem; color:var(--color-mist-500); font-size:.67rem; margin-top:1.25rem; }
+  .team-title { display:flex; align-items:center; justify-content:space-between; gap:1rem; margin-top:.45rem; }
+  .team-title h3 { font-weight:600; font-size:1.65rem; line-height:1.2; }
+  .team-title>span { color:var(--color-volt-400); transition:transform .2s; }
+  .team-card:hover .team-title>span { transform:translate(2px,-2px); }
+  .team-subtitle { font-size:.75rem; color:var(--color-volt-400); margin-top:.45rem; }
+  .team-summary { margin-top:.85rem; color:var(--color-mist-300); font-size:.85rem; line-height:1.75; flex:1; }
+  .team-focus { margin-top:1.2rem; color:var(--color-mist-500); font-size:.65rem; line-height:1.7; }
+</style>

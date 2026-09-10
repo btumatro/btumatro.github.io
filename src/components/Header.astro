@@ -13,7 +13,7 @@ const groupActive = (item: (typeof NAV)[number]) =>
 
 <header
   id="site-header"
-  class="fixed inset-x-0 top-0 z-50 border-b border-transparent transition-[background-color,backdrop-filter,border-color] duration-300"
+  class="fixed inset-x-0 top-0 z-50 bg-ink-950 border-b border-white/10 transition-[background-color,backdrop-filter,border-color] duration-300"
 >
   <div class="container-matro flex h-[4.5rem] items-center justify-between gap-4">
     <a href={url('/')} class="shrink-0" aria-label="MATRO ana sayfa">
@@ -103,7 +103,7 @@ const groupActive = (item: (typeof NAV)[number]) =>
     <div class="flex items-center gap-2">
       <a
         href={url('/bize-katilin')}
-        class="hidden rounded-lg bg-volt-400 px-4 py-2 text-[0.85rem] font-semibold text-ink-950 transition-transform hover:scale-[1.03] sm:inline-block"
+        class="hidden rounded-sm bg-volt-400 px-4 py-2 text-[0.85rem] font-semibold text-ink-950 transition-transform hover:scale-[1.03] sm:inline-block"
       >
         Bize Katılın
       </a>
@@ -196,8 +196,7 @@ const groupActive = (item: (typeof NAV)[number]) =>
     const scrolled = window.scrollY > 12;
     header.classList.toggle('bg-ink-950/85', scrolled);
     header.classList.toggle('backdrop-blur-xl', scrolled);
-    header.classList.toggle('border-white/10', scrolled);
-    header.classList.toggle('border-transparent', !scrolled);
+
   };
   onScroll();
   window.addEventListener('scroll', onScroll, { passive: true });
@@ -231,6 +230,14 @@ const groupActive = (item: (typeof NAV)[number]) =>
 
   document.addEventListener('keydown', (event) => {
     if (event.key !== 'Escape') return;
+    if (panel && !panel.classList.contains('hidden')) {
+      panel.classList.add('hidden');
+      toggle?.setAttribute('aria-expanded', 'false');
+      toggle?.setAttribute('aria-label', 'Menüyü aç');
+      toggle?.querySelector('.nav-open-icon')?.classList.remove('hidden');
+      toggle?.querySelector('.nav-close-icon')?.classList.add('hidden');
+      toggle?.focus();
+    }
     document.querySelectorAll<HTMLElement>('.nav-group.is-open').forEach((group) => {
       group.classList.remove('is-open');
       group.querySelector('.nav-trigger')?.setAttribute('aria-expanded', 'false');

@@ -17,13 +17,13 @@ const {
 } = Astro.props;
 ---
 
-<section id={id} class={`container-matro py-16 md:py-24 ${className}`}>
+<section id={id} class={`container-matro section-matro py-14 md:py-20 ${className}`}>
   {
     (eyebrow || title || description) && (
       <header class={align === 'center' ? 'mx-auto max-w-2xl text-center' : 'max-w-2xl'}>
         {eyebrow && <p class="eyebrow reveal">{eyebrow}</p>}
         {title && (
-          <h2 class="reveal mt-3 text-3xl font-bold tracking-tight md:text-4xl" data-delay="60">
+          <h2 class="reveal mt-3 text-4xl leading-[1.08] font-semibold tracking-tight md:text-5xl" data-delay="60">
             {title}
           </h2>
         )}

@@ -111,9 +111,9 @@ ve her gün 06:00 TR'de (süresi geçen duyurular düşsün diye) otomatik build
    ajan bunları tarayıp: (a) siteye uygun olanları `gallery` alanlarına eklemeli, (b) sponsorluk
    dosyası için ayrıca yüksek çözünürlüklü bir seçki hazırlayıp kullanıcıya
    `SendUserFile`/eşdeğeriyle teslim etmeli (bu görseller repoya girmek zorunda değil).
-   `TAKIM-TANITIM` altındaki **"Takımlar faaliyet raporu"** dosyası Drive'da önizlenemiyor
-   (muhtemelen Word/InDesign) — sponsorluk dosyası için önemliyse kullanıcıdan doğrudan
-   istenmeli.
+   `TAKIM-TANITIM` altındaki **"Takımlar faaliyet rapaoru" bir klasördür**, belge değildir.
+   10 Eylül tarihinde Drive bağlayıcısıyla doğrulandı: id `1awXj2Mu0q30yLAm57uUiIgx7FhjkClsS`,
+   içinde 15 görsel var. `/file/d/` yerine `/drive/folders/` ile açılmalı; yeniden kullanıcıdan istenmesine gerek yok.
 4. **Video henüz hiç eklenmedi.** Kullanıcı "video resimleri vs gerekli encode/optimizeleri
    yapıp eklemeye çalış" dedi. Drive'da birkaç takımın "Videolar" alt klasörü var (LODOS, Turkish
    Technic Workshop, HKTM, TÜBİTAK, TUSAŞ). Kullanıcının yerelinde (`~/Downloads/v3_60fps.mp4`,
@@ -138,3 +138,27 @@ ve her gün 06:00 TR'de (süresi geçen duyurular düşsün diye) otomatik build
 - Kullanıcı (Bilgehan Zeki Özaytaç / @WildGenie) hızlı, doğrudan geri bildirim veriyor; iş
   bitince kısa özet + canlı doğrulama (curl ile 200 kontrolü, GitHub Actions run durumu) bekliyor.
   `gh run list` ile deploy'u takip et, `https://btumatro.com` üzerinden gerçek sonucu doğrula.
+
+
+## 10 Eylül 2026 — Codex devam notu
+
+Kullanıcı medya işinden önce görsel kaliteye öncelik verdi. Ana sayfa, ortak başlık/CTA/
+istatistik/takım kartları, renkler ve takım listesi yenilendi; güncel sözleşme DESIGN.md'de.
+
+Medya işinin ön araştırması `/tmp/matro-devralma/` altında korunuyor:
+- `claude-text.txt`: yalnızca bu projenin Claude oturumundan çıkarılan konuşma ve araç kayıtları.
+- `inventory-complete.json`: Drive klasörleri ve dosyalarının kimlik/MIME/boyut bilgileri.
+  100 kayıt dönen büyük klasörlerin listesi kısmi olabilir; tüm arşivin indirildiği anlamına gelmez.
+- `original-test.jpg`: doğrudan Drive indirmesiyle alınmış 4032x3024 orijinal fotoğraf;
+  yüksek çözünürlüklü indirme çalışıyor. Sponsorluk seçkisi henüz teslim edilmedi.
+- `MATRO TAKIM İÇERİKLERİ` altındaki 15 takım klasörü sorgu anında boştu; FİNALİSTLER
+  altındaki ASHİNA/LUNA/MATRİS gün klasörleri ve PUSULA da boştu. Boş galerileri doldurmak
+  için doğrulanmamış görsel atanmamalı.
+- Tanıtım videoları mevcut: LODOS yatay klasörü `178SJFmDtNK7mR4ZB0rL82i20YMJ6V4ET`,
+  PRUSA yatay `1KjQMGSuRgDuxireYOokvNbvhKdDha9dk`, sualtı roket yatay
+  `1EV5TXipQGJzK66Iz8XRtJTyn3dy7mdDe`. Klipler henüz indirilip görsel olarak incelenmedi.
+- Önceki konuşmadaki beş yapıştırılmış fotoğraf yerel Claude JSONL kaydında gömülü bulunamadı.
+
+Astro'nun otomatik arka plan dev sunucusu 4321 portunda eski içeriği gösterebildi.
+Üretim çıktısını doğrulamak için `npm run build` ardından
+`python3 -m http.server 4341 --bind 127.0.0.1 --directory dist` kullanıldı.

@@ -10,13 +10,13 @@ Karanlık zeminli, tek tema (site her zaman koyu — light mode yok, `color-sche
 
 | Token | Değer | Kullanım |
 | --- | --- | --- |
-| `ink-950` | `#04070d` | Sayfa arka planı |
+| `ink-950` | `#0b1012` | Sayfa arka planı |
 | `ink-900` / `ink-850` / `ink-800` | koyudan açığa | Kart/panel katmanları, header |
 | `ink-700` / `ink-600` | | Border, hover zemin |
-| `mist-100` | `#eef3fb` | Ana metin (başlıklar) |
-| `mist-300` | `#b9c6dc` | Gövde metni |
-| `mist-500` | `#8496b3` | İkincil/etiket metni |
-| `volt-300..600` | camgöbeği | **Marka rengi.** CTA, link, aktif durum, vurgu glow |
+| `mist-100` | `#f0f0e9` | Ana metin (başlıklar) |
+| `mist-300` | `#bdc8c9` | Gövde metni |
+| `mist-500` | `#8e9fa3` | İkincil/etiket metni |
+| `volt-300..600` | camgöbeği | **Marka rengi.** CTA, link ve aktif durum; ana vurgu `#75d5d0` |
 | `medal-400/500` | altın sarısı | Ödül/derece, rozet ("2026 Finalisti" gibi) |
 | `ember-400/500` | kırmızı | Bronz/uyarı tonları (nadiren kullanılır) |
 
@@ -44,11 +44,11 @@ seçme.
 - `PageHero.astro` — her alt sayfanın en üstündeki büyük başlık alanı.
 - `CtaBand.astro` — sayfa sonu çağrı kutusu; `<slot />` destekler (ör. `BasvuruButonlari` içine
   geçirilebilir).
-- `.card` / `.card-hover` — koyu panel, `rounded-2xl border border-white/10`; hover'da hafif
+- `.card` / `.card-hover` — düz koyu panel, 4px köşe ve ince kenarlık; hover'da hafif
   yükselme. Yeni bir kutu tasarlarken bu sınıftan başla.
-- `.reveal` (+ `data-delay`) — scroll'da fade/slide-in. Listelerde `data-delay={i * 50}` gibi
+- `.reveal` (+ `data-delay`) — JavaScript hazırsa scroll'da kısa fade/slide-in; JS olmadan içerik görünür. Listelerde `data-delay={i * 50}` gibi
   kademeli gecikme ver.
-- `grid-bg` — noktalı/gridli arka plan deseni, hero ve boş-durum kutularında kullanılır.
+- `grid-bg` — yalnızca gerektiğinde görselsiz yer tutucularda kullanılır. Hero, CTA ve footer zeminine ızgara veya glow eklenmez.
 
 ## Görsel bileşenleri
 
@@ -111,7 +111,7 @@ başvuru formu eklerken bu bileşene dokunma — sadece JSON'a ekle, her yerde o
 
 | Bağlam | Oran/sınıf |
 | --- | --- |
-| Takım/haber/faaliyet kartı (liste) | `aspect-[16/9]` (TeamCard) veya `stretch` + grid hücresi (haber/faaliyet) |
+| Takım/haber/faaliyet kartı (liste) | `aspect-[4/3]` (TeamCard) veya `stretch` + grid hücresi (haber/faaliyet) |
 | Takım detay kapak görseli | `aspect-[16/9]`, `max-w-3xl`, `rounded-2xl` |
 | Sponsor logosu | kare, `rounded-full`, `h-20 w-20` (dairesel rozet — `crop-sponsor-logos.mjs` çıktısı zaten kare+saydam) |
 | Galeri şeridi kareleri (`FotoSerit`) | `aspect-square` |
@@ -126,3 +126,34 @@ başvuru formu eklerken bu bileşene dokunma — sadece JSON'a ekle, her yerde o
    markup/bileşen yazmana gerek yok, sayfalar zaten `MediaGaleri`'yi çağırıyor.
 4. `.pages.yml`'de karşılık gelen alan zaten tanımlı (`image` + `gallery` üç koleksiyonda da
    var); yeni bir koleksiyon eklersen aynı ikiliyi oraya da ekle.
+
+
+## 10 Eylül 2026 — Görsel yenileme
+
+Görsel yön: teknik bir topluluğun fotoğraf ağırlıklı, sade yayın düzeni. Koyu kömür
+zemin, kırık beyaz Barlow başlıklar, sınırlı camgöbeği vurgu. Büyük başlıkların yanında
+kısa açıklamalar ve belirgin boşluklar kullanılır. Tekrarlayan kutular yerine içeriğe göre
+farklı düzenler tercih edilir; hero görseline karartma bindirilmez.
+
+- Ana sayfa: iki satırlı kısa başlık ve açıklama, altında gerçek ekip fotoğrafı.
+  `home.hero.backgroundImage` artık arka plan değil, ana fotoğraftır; `imageAlt` ve
+  `imageCaption` alanları Pages CMS üzerinden düzenlenir. Başlık satır sonlarını korur.
+- `PageHero`: masaüstünde başlık/açıklama iki sütun, mobilde üst üste. Izgara ve ışık efekti yok.
+- `StatGrid`: altı sütuna kadar açılan düz istatistik şeridi. Değerler sunucuda basılır;
+  sıfırdan başlayan sayaç animasyonu kaldırıldı, JavaScript olmadan da doğru sayı gösterilir.
+- `TeamCard`: 4:3 fotoğraf, fotoğraf altında kategori ve başlık, ince alt çizgi.
+  Kategori, özet ve odak alanları korunur. Fotoğrafsız içerikte soyut teknik çizim bulunur.
+- Takım listesi: kategoriler gerçek filtre düğmeleridir; `aria-pressed` ve canlı sonuç
+  sayısı bulunur. JS olmadan filtreler gizlenir ve tüm takımlar görünür.
+- Ana sayfa başarıları: yıl / yarışma / derece sütunlarından oluşan satırlar.
+- Ana sayfa haberleri: bir büyük ve iki ikincil fotoğraflı haber. Bağlantılar haberin
+  `/haberler#dosya-adi` konumuna gider.
+- Sponsorlar: küçük kapsüller yerine logoların okunabildiği sabit hücreler.
+- `CtaBand`: camgöbeği üst çizgi, solda başlık, sağda eylemler; ışık efekti yok.
+  Dahili yollar yanında `mailto:` ve dış bağlantıları da destekler.
+- `.button-primary`: 3px köşeli, düz renkli ana düğme. `.text-link`: okla biten metin bağlantısı.
+- Hareket, yalnızca hazır JS tarafından `.motion-ready` ile etkinleştirilir. Hareket
+  azaltma tercihi korunur. Mobil menü Escape ile kapanıp odağı düğmeye döndürür.
+
+Doğrulama: 25 sayfalık Astro üretim derlemesi; 12 sayfanın 320, 768 ve 1440px genişlikte
+taşma/tek h1 kontrolleri; menü, takım filtreleri, galeri değişimi ve ana sayfa görsel yüklemeleri.

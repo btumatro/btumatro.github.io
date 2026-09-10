@@ -22,26 +22,21 @@ const categories = [...new Set(teams.map((t) => t.data.category))].sort((a, b) =
   description="ASHİNA, BÜRKÜT, ÇAĞRI, TİKA, İSS ve daha fazlası — MATRO bünyesinde faaliyet gösteren proje takımları ve çalışma alanları."
 >
   <PageHero
-    eyebrow="Takımlarımız"
-    title="Farklı disiplinlerde, tek çatı altında"
-    description="MATRO bünyesinde aktif olarak faaliyet gösteren ve geleceğin teknolojilerini inşa eden proje takımlarımız."
+    eyebrow="Proje ekipleri"
+    title="Takımlarımız."
+    description="Hava, kara, deniz ve dijital teknolojiler. Merak ettiğin çalışma alanını seç, o alanda üreten ekiple tanış."
   >
-    <div class="reveal mt-8 flex flex-wrap gap-2" data-delay="180">
-      <span class="rounded-lg border border-white/12 px-3 py-1.5 font-mono text-xs text-mist-300">
-        {teams.length} takım
-      </span>
-      {
-        categories.map((c) => (
-          <span class="rounded-lg border border-white/12 px-3 py-1.5 font-mono text-xs text-mist-500">
-            {c}
-          </span>
-        ))
-      }
-    </div>
   </PageHero>
 
-  <Section>
-    <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+  <Section class="pt-8 md:pt-10">
+    <div class="team-filter-bar">
+      <p id="team-count" aria-live="polite">{teams.length} takım</p>
+      <div id="team-filters" hidden role="group" aria-label="Çalışma alanına göre filtrele">
+        <button type="button" data-filter="" aria-pressed="true">Tümü</button>
+        {categories.map(c => <button type="button" data-filter={c} aria-pressed="false">{c}</button>)}
+      </div>
+    </div>
+    <div id="team-results" class="grid gap-x-6 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
       {
         teams.map((team, i) => (
           <TeamCard
@@ -90,3 +85,32 @@ const categories = [...new Set(teams.map((t) => t.data.category))].sort((a, b) =
     <BasvuruButonlari align="center" class="mt-10 border-t border-white/8 pt-8" />
   </CtaBand>
 </BaseLayout>
+
+<style>
+  .team-filter-bar { border-bottom:1px solid var(--edge); margin-bottom:2rem; padding-bottom:1rem; }
+  #team-count { font-family:var(--font-mono); font-size:.75rem; color:var(--color-mist-500); margin-bottom:1rem; }
+  #team-filters:not([hidden]) { display:flex; flex-wrap:wrap; gap:.35rem 1.4rem; }
+  #team-filters button { cursor:pointer; padding:.7rem 0; font-size:.75rem; color:var(--color-mist-300); border-bottom:2px solid transparent; }
+  #team-filters button[aria-pressed="true"] { color:var(--color-volt-400); border-color:var(--color-volt-400); }
+  #team-filters button:hover { color:var(--color-mist-100); }
+  :global(#team-results .team-card[hidden]) { display:none; }
+</style>
+<script>
+  const filters = document.getElementById('team-filters');
+  const cards = document.querySelectorAll<HTMLElement>('#team-results [data-category]');
+  const count = document.getElementById('team-count');
+  if (filters && count) {
+    filters.hidden = false;
+    filters.querySelectorAll<HTMLButtonElement>('button').forEach(button => {
+      button.addEventListener('click', () => {
+        filters.querySelectorAll('button').forEach(other => other.setAttribute('aria-pressed', String(other === button)));
+        let visible = 0;
+        cards.forEach(card => {
+          card.hidden = Boolean(button.dataset.filter && card.dataset.category !== button.dataset.filter);
+          if (!card.hidden) { visible++; card.classList.add('is-visible'); }
+        });
+        count.textContent = `${visible} takım`;
+      });
+    });
+  }
+</script>

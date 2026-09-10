@@ -35,7 +35,7 @@ const takimlar = new Map(
         <div class="space-y-5">
           {rendered.map(({ entry, Content }, i) => {
             return (
-              <article class="card reveal overflow-hidden" data-delay={i * 45}>
+              <article id={entry.id} class="card reveal overflow-hidden" data-delay={i * 45}>
                 <div class="grid md:grid-cols-[1fr_1.6fr]">
                   <div class="relative flex min-h-[11rem] flex-col border-b border-white/8 bg-ink-800 md:border-r md:border-b-0">
                     <MediaGaleri

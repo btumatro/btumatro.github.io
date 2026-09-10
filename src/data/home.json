@@ -1,21 +1,23 @@
 {
   "hero": {
     "eyebrow": "Bursa Teknik Üniversitesi · 2013'ten beri",
-    "title": "Geleceğin teknolojilerini bugün şekillendiriyoruz",
-    "description": "Bursa Teknik Üniversitesi'nin yenilikçi ve dinamik gücü MATRO olarak, \"Milli Teknoloji Hamlesi\" vizyonuyla 2013 yılından bu yana geleceğin teknolojilerine yön veriyoruz. İnsansız hava araçlarından sualtı sistemlerine, otonom tarımsal kara araçlarından çığır açan simülasyonlara, kablosuz haberleşmeden çevre ve enerji çözümlerine kadar geniş bir yelpazede projeler geliştiriyoruz.",
+    "title": "Atölyede başlar.\nSahada kanıtlanır.",
+    "description": "Biz MATRO. Bursa Teknik Üniversitesi’nde hava, kara ve sualtı sistemleri geliştiren öğrenci topluluğuyuz. Birlikte tasarlıyor, üretiyor ve yarışıyoruz.",
     "primaryCta": {
-      "label": "Projelerimizi Keşfedin",
+      "label": "Takımlarımızı keşfet",
       "href": "/takimlarimiz"
     },
     "secondaryCta": {
-      "label": "Bize Katılın",
+      "label": "Aramıza katıl",
       "href": "/bize-katilin"
     },
     "tertiaryCta": {
-      "label": "Sponsor Olun",
+      "label": "Çalışmalarımıza destek ol",
       "href": "/sponsorluk"
     },
-    "backgroundImage": "/media/atolye-araclar.jpg"
+    "backgroundImage": "/media/mavi-vatan-ekipler.jpg",
+    "imageCaption": "Mavi Vatan’da MATRO takımları",
+    "imageAlt": "Mavi Vatan etkinliğinde gemi güvertesinde bir araya gelen MATRO takımları"
   },
   "stats": [
     {
@@ -58,11 +60,11 @@
   "video": {
     "title": "2025 Yılı MATRO'nun Hikayesi: Durmadan Devam",
     "youtubeId": "Oooh40gmogI",
-    "description": "Atölye çalışmalarımızdan yarışma alanlarına, uykusuz gecelerden zafer anlarına kadar MATRO ailesinin ilham veren 2025 yılı yolculuğunu izleyin."
+    "description": "Üretim, deneme, yarışma. Bir yılın arkasındaki ekipleri ve çalışmaları yakından tanıyın."
   },
   "highlights": {
     "eyebrow": "Öne Çıkanlar",
-    "title": "Son dönemde neler başardık?",
+    "title": "Emeğin karşılığı.",
     "description": "2020-2025 döneminde 35 takımımız ilk 10'a girdi, 342 yarışmacımız finalist oldu ve 22 derece ile özel ödül kazandık. 2026 sezonunda ise sekiz takımımız TEKNOFEST finallerinde yarıştı."
   }
 }

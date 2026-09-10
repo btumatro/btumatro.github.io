@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import PageHero from '../components/PageHero.astro';
 import Section from '../components/Section.astro';
+import CtaBand from '../components/CtaBand.astro';
 import sponsorship from '../data/sponsorship.json';
 import sponsors from '../data/sponsors.json';
 import site from '../data/site.json';
@@ -22,7 +23,7 @@ const mailto = `mailto:${site.contact.emails[0]}?subject=${encodeURIComponent('S
     <div class="reveal mt-8" data-delay="180">
       <a
         href={mailto}
-        class="inline-block rounded-xl bg-volt-400 px-6 py-3.5 text-sm font-semibold text-ink-950 transition-transform hover:scale-[1.03]"
+        class="button-primary"
       >
         Sponsorluk dosyasını isteyin
       </a>
@@ -249,33 +250,10 @@ const mailto = `mailto:${site.contact.emails[0]}?subject=${encodeURIComponent('S
     }
   </Section>
 
-  <!-- İletişim CTA -->
-  <section class="container-matro py-8">
-    <div class="card reveal relative overflow-hidden px-6 py-12 text-center md:px-12 md:py-16">
-      <div class="grid-bg absolute inset-0 opacity-60" aria-hidden="true"></div>
-      <div
-        class="absolute -bottom-32 left-1/2 h-72 w-[38rem] -translate-x-1/2 rounded-full bg-medal-500/12 blur-[100px]"
-        aria-hidden="true"
-      >
-      </div>
-      <div class="relative mx-auto max-w-2xl">
-        <h2 class="text-2xl font-bold tracking-tight md:text-3xl">{sponsorship.cta.title}</h2>
-        <p class="mt-4 leading-relaxed text-mist-300">{sponsorship.cta.description}</p>
-        <div class="mt-8 flex flex-wrap items-center justify-center gap-3">
-          <a
-            href={mailto}
-            class="rounded-xl bg-volt-400 px-6 py-3 text-sm font-semibold text-ink-950 transition-transform hover:scale-[1.03]"
-          >
-            {sponsorship.cta.buttonLabel}
-          </a>
-          <a
-            href={url('/iletisim')}
-            class="rounded-xl border border-white/15 px-6 py-3 text-sm font-semibold text-mist-100 transition-colors hover:border-volt-400/50 hover:text-volt-300"
-          >
-            İletişim bilgileri
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
+  <CtaBand
+    title={sponsorship.cta.title}
+    description={sponsorship.cta.description}
+    primary={{ label: sponsorship.cta.buttonLabel, href: mailto }}
+    secondary={{ label: 'İletişim bilgileri', href: '/iletisim' }}
+  />
 </BaseLayout>

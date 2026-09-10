@@ -38,16 +38,18 @@ content:
             description: Başlığın üstünde çıkan küçük yazı
           - name: title
             label: Ana başlık
-            type: string
+            type: text
             required: true
           - name: description
             label: Tanıtım metni
             type: text
             required: true
           - name: backgroundImage
-            label: Arka plan görseli
+            label: Giriş fotoğrafı
             type: image
-            description: Giriş bölümünün arkasında soluk şekilde görünür. Boş bırakılırsa sadece ızgara deseni kalır.
+            description: Başlığın altında geniş gösterilen gerçek ekip veya proje fotoğrafı.
+          - { name: imageAlt, label: Görsel açıklaması (erişilebilirlik), type: string }
+          - { name: imageCaption, label: Fotoğraf alt yazısı, type: string }
           - name: primaryCta
             label: 1. Buton
             type: object

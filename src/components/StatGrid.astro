@@ -1,70 +1,18 @@
 ---
-interface Stat {
-  value: number;
-  suffix?: string;
-  label: string;
-  note?: string;
-}
-interface Props {
-  stats: Stat[];
-}
+interface Stat { value: number; suffix?: string; label: string; note?: string; }
+interface Props { stats: Stat[]; }
 const { stats } = Astro.props;
 ---
-
-<div class="grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-white/10 bg-white/10 md:grid-cols-3">
-  {
-    stats.map((stat, i) => (
-      <div class="reveal bg-ink-900 p-6 md:p-7" data-delay={i * 60}>
-        <div class="flex items-baseline gap-0.5">
-          <span
-            class="counter font-mono text-3xl font-bold tracking-tight text-mist-100 tabular-nums md:text-4xl"
-            data-target={stat.value}
-          >
-            0
-          </span>
-          {stat.suffix && (
-            <span class="font-mono text-2xl font-bold text-volt-400 md:text-3xl">{stat.suffix}</span>
-          )}
-        </div>
-        <p class="mt-2 text-sm font-medium text-mist-100">{stat.label}</p>
-        {stat.note && <p class="mt-0.5 text-xs text-mist-500">{stat.note}</p>}
-      </div>
-    ))
-  }
+<div class="stat-grid">
+  {stats.map(stat => <div class="stat-item"><p class="stat-value">{stat.value}<span>{stat.suffix}</span></p><p class="stat-label">{stat.label}</p>{stat.note && <p class="stat-note">{stat.note}</p>}</div>)}
 </div>
-
-<script>
-  const counters = document.querySelectorAll<HTMLElement>('.counter');
-  if (counters.length) {
-    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    const run = (el: HTMLElement) => {
-      const target = Number(el.dataset.target ?? 0);
-      if (reduce || target === 0) {
-        el.textContent = String(target);
-        return;
-      }
-      const duration = 1400;
-      const start = performance.now();
-      const tick = (now: number) => {
-        const p = Math.min((now - start) / duration, 1);
-        // easeOutExpo
-        const eased = p === 1 ? 1 : 1 - Math.pow(2, -10 * p);
-        el.textContent = String(Math.round(target * eased));
-        if (p < 1) requestAnimationFrame(tick);
-      };
-      requestAnimationFrame(tick);
-    };
-
-    const io = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (!entry.isIntersecting) return;
-          run(entry.target as HTMLElement);
-          io.unobserve(entry.target);
-        });
-      },
-      { threshold: 0.4 }
-    );
-    counters.forEach((el) => io.observe(el));
-  }
-</script>
+<style>
+  .stat-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); border-top:1px solid var(--edge); }
+  .stat-item { padding:1.8rem 1.5rem 1.8rem 0; border-bottom:1px solid var(--edge); }
+  .stat-value { font-family:var(--font-display); font-size:clamp(2.5rem,4.5vw,4rem); font-weight:600; letter-spacing:-.05em; line-height:1.1; }
+  .stat-value span { color:var(--color-volt-400); font-size:.5em; letter-spacing:-.03em; }
+  .stat-label { font-size:.85rem; margin-top:.6rem; }
+  .stat-note { font-size:.68rem; color:var(--color-mist-500); margin-top:.4rem; }
+  @media(min-width:1100px) { .stat-grid { grid-template-columns:repeat(6,minmax(0,1fr)); } }
+  @media(max-width:600px) { .stat-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } .stat-item { padding:1.4rem .8rem 1.4rem 0; } }
+</style>

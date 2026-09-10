@@ -7,26 +7,20 @@ interface Props {
 const { eyebrow, title, description } = Astro.props;
 ---
 
-<section class="relative overflow-hidden border-b border-white/10">
-  <div class="grid-bg absolute inset-0 opacity-50" aria-hidden="true"></div>
-  <div
-    class="absolute -top-40 left-1/2 h-[26rem] w-[46rem] -translate-x-1/2 rounded-full bg-volt-500/12 blur-[110px]"
-    aria-hidden="true"
-  >
-  </div>
-
-  <div class="container-matro relative py-16 md:py-24">
+<section class="page-intro border-b border-white/12">
+  <div class="container-matro py-12 md:py-20">
     {eyebrow && <p class="eyebrow reveal">{eyebrow}</p>}
-    <h1 class="reveal mt-3 max-w-3xl text-4xl font-bold tracking-tight md:text-5xl" data-delay="60">
-      {title}
-    </h1>
-    {
-      description && (
-        <p class="reveal mt-5 max-w-2xl text-base leading-relaxed text-mist-300 md:text-lg" data-delay="120">
-          {description}
-        </p>
-      )
-    }
+    <div class="page-intro-grid mt-5">
+      <h1 class="reveal">{title}</h1>
+      {description && <p class="reveal page-intro-description" data-delay="70">{description}</p>}
+    </div>
     <slot />
   </div>
 </section>
+
+<style>
+  h1 { max-width: 20ch; font-size: clamp(2.6rem, 4.7vw, 4.8rem); line-height: 1.04; white-space: pre-line; font-weight: 600; letter-spacing: -.045em; }
+  .page-intro-description { max-width: 42ch; color: var(--color-mist-300); font-size: 1rem; line-height: 1.8; }
+  .page-intro-grid { display: grid; gap: 1.5rem; }
+  @media (min-width: 900px) { .page-intro-grid { grid-template-columns: 1.5fr 1fr; gap: 5rem; align-items: end; } }
+</style>

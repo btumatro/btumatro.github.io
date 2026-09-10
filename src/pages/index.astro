@@ -13,332 +13,138 @@ import sponsors from '../data/sponsors.json';
 import { url, media, degreeTone, publishedNews, teamIndex, teamHref } from '../lib/utils';
 
 const allTeams = (await getCollection('teams')).sort((a, b) => a.data.order - b.data.order);
-const teams = allTeams.slice(0, 6);
+const teams = allTeams.filter(t => t.data.status !== 'Arşiv').slice(0, 6);
 const takimDizini = teamIndex(allTeams);
-
-const featured = achievements.items.filter((a) => a.featured).slice(0, 6);
-
-// Öne çıkarılmış haber/duyuru varsa anasayfada şerit olarak göster; yoksa hiç çıkmaz
-const announcements = publishedNews(await getCollection('haberler'), { onlyPinned: true }).slice(0, 2);
-// Son haberler bölümü
-const latestNews = publishedNews(await getCollection('haberler')).slice(0, 3);
+const featured = achievements.items.filter(a => a.featured).slice(0, 6);
+const news = publishedNews(await getCollection('haberler'));
+const announcements = news.filter(item => item.data.pinned).slice(0, 2);
+const latestNews = news.slice(0, 3);
 const dateFmt = new Intl.DateTimeFormat('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' });
-const heroBg = media(home.hero.backgroundImage);
+const heroImage = media(home.hero.backgroundImage);
 ---
 
 <BaseLayout>
-  <!-- ============ HERO ============ -->
-  <section class="relative overflow-hidden">
-    {
-      heroBg && (
-        <div class="absolute inset-0" aria-hidden="true">
-          <img
-            src={heroBg}
-            alt=""
-            class="h-full w-full object-cover opacity-[0.18]"
-            fetchpriority="high"
-            decoding="async"
-          />
-          <div class="absolute inset-0 bg-gradient-to-r from-ink-950 via-ink-950/85 to-ink-950/40" />
-          <div class="absolute inset-0 bg-gradient-to-t from-ink-950 via-transparent to-ink-950/80" />
+  <section class="home-hero container-matro">
+    <div class="hero-topline">
+      <p class="eyebrow">{home.hero.eyebrow}</p>
+      <a href={url('/hakkimizda')} class="hero-about">Topluluğu tanı <span aria-hidden="true">↗</span></a>
+    </div>
+    <div class="hero-heading">
+      <h1>{home.hero.title}</h1>
+      <div class="hero-intro">
+        <p>{home.hero.description}</p>
+        <div class="hero-actions">
+          <a href={url(home.hero.primaryCta.href)} class="button-primary">{home.hero.primaryCta.label}<span aria-hidden="true">↗</span></a>
+          <a href={url(home.hero.secondaryCta.href)} class="text-link">{home.hero.secondaryCta.label}<span aria-hidden="true">→</span></a>
         </div>
-      )
-    }
-    <div class="grid-bg absolute inset-0" aria-hidden="true"></div>
-    <div
-      class="absolute -top-52 left-1/2 h-[34rem] w-[60rem] -translate-x-1/2 rounded-full bg-volt-500/14 blur-[130px]"
-      aria-hidden="true"
-    >
-    </div>
-    <div
-      class="absolute -right-40 bottom-0 h-[22rem] w-[22rem] rounded-full bg-ember-500/8 blur-[110px]"
-      aria-hidden="true"
-    >
-    </div>
-
-    <div class="container-matro relative flex min-h-[calc(100svh-4.5rem)] flex-col justify-center py-20">
-      <p class="eyebrow reveal">{home.hero.eyebrow}</p>
-
-      <h1
-        class="reveal mt-5 max-w-4xl text-[2.6rem] leading-[1.05] font-bold tracking-tight sm:text-6xl lg:text-7xl"
-        data-delay="70"
-      >
-        <span class="text-gradient">{home.hero.title}</span>
-      </h1>
-
-      <p class="reveal mt-7 max-w-2xl text-base leading-relaxed text-mist-300 md:text-lg" data-delay="140">
-        {home.hero.description}
-      </p>
-
-      <div class="reveal mt-10 flex flex-wrap gap-3" data-delay="210">
-        <a
-          href={url(home.hero.primaryCta.href)}
-          class="rounded-xl bg-volt-400 px-6 py-3.5 text-sm font-semibold text-ink-950 transition-transform hover:scale-[1.03]"
-        >
-          {home.hero.primaryCta.label}
-        </a>
-        <a
-          href={url(home.hero.secondaryCta.href)}
-          class="rounded-xl border border-white/15 px-6 py-3.5 text-sm font-semibold text-mist-100 transition-colors hover:border-volt-400/50 hover:text-volt-300"
-        >
-          {home.hero.secondaryCta.label}
-        </a>
-        <a
-          href={url(home.hero.tertiaryCta.href)}
-          class="rounded-xl px-6 py-3.5 text-sm font-semibold text-mist-300 transition-colors hover:text-volt-300"
-        >
-          {home.hero.tertiaryCta.label} →
-        </a>
       </div>
     </div>
+    {heroImage && <figure class="hero-photo">
+      <img src={heroImage} alt={home.hero.imageAlt} fetchpriority="high" decoding="async" width="1600" height="900" />
+      <figcaption><span>{home.hero.imageCaption}</span><a href={url('/galeri')}>Fotoğraf arşivi <span aria-hidden="true">↗</span></a></figcaption>
+    </figure>}
+    <div class="hero-bottom"><p>Makine Teknolojileri Robot ve Otomasyon Topluluğu</p><a href={url(home.hero.tertiaryCta.href)}>{home.hero.tertiaryCta.label} <span aria-hidden="true">↗</span></a></div>
   </section>
 
-  <!-- ============ DUYURULAR (yayında duyuru varsa) ============ -->
-  {
-    announcements.length > 0 && (
-      <section class="container-matro pt-4">
-        <div class="grid gap-4 md:grid-cols-2">
-          {announcements.map((item, i) => (
-            <a
-              href={url('/haberler')}
-              class="card card-hover reveal group flex items-start gap-4 p-5"
-              data-delay={i * 60}
-            >
-              <span class="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-volt-400/12 text-volt-300">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                  <path d="M4 10.5v3a1.5 1.5 0 0 0 1.5 1.5H8l6 4V6.5l-6 4H5.5A1.5 1.5 0 0 0 4 12Z" />
-                  <path d="M17.5 9a4 4 0 0 1 0 6" />
-                </svg>
-              </span>
-              <div class="min-w-0">
-                <div class="flex flex-wrap items-center gap-2">
-                  <span class="font-mono text-[0.62rem] tracking-[0.15em] text-volt-400 uppercase">
-                    {item.data.type}
-                  </span>
-                  <time datetime={item.data.date.toISOString()} class="font-mono text-[0.68rem] text-mist-500">
-                    {dateFmt.format(item.data.date)}
-                  </time>
-                </div>
-                <h2 class="mt-1.5 text-base font-bold text-mist-100 transition-colors group-hover:text-volt-300">
-                  {item.data.title}
-                </h2>
-                {item.data.summary && (
-                  <p class="mt-1 line-clamp-2 text-sm leading-relaxed text-mist-500">
-                    {item.data.summary}
-                  </p>
-                )}
-              </div>
-            </a>
-          ))}
-        </div>
-      </section>
-    )
-  }
+  {announcements.length > 0 && <aside class="container-matro notice-strip" aria-label="Öne çıkan duyurular">
+    <span class="eyebrow">Gündem</span>
+    <div>{announcements.map(item => <a href={url(`/haberler#${item.id}`)}><span>{item.data.title}</span><span aria-hidden="true">↗</span></a>)}</div>
+  </aside>}
 
-  <!-- ============ RAKAMLARLA MATRO ============ -->
-  <Section eyebrow="Rakamlarla MATRO" title="2013'ten bugüne biriken emek">
-    <div class="mt-10">
-      <StatGrid stats={home.stats} />
-    </div>
+  <Section eyebrow="Rakamlarla MATRO" title="Birlikte, yıllar içinde." class="home-stats">
+    <div class="mt-9"><StatGrid stats={home.stats} /></div>
   </Section>
 
-  <!-- ============ VİDEO ============ -->
-  <Section eyebrow="Tanıtım Videosu" title={home.video.title} description={home.video.description}>
-    <div class="reveal mt-10">
-      <VideoEmbed youtubeId={home.video.youtubeId} title={home.video.title} />
-    </div>
+  <Section eyebrow="Proje takımları" title="Bir merak. Bir takım. Bir proje." description="Havada, karada ve suyun altında. Her takımda başka bir mühendislik problemi, aynı üretme tutkusu." class="home-teams" id="takimlar">
+    <div class="section-action"><a class="text-link" href={url('/takimlarimiz')}>Tüm takımlar <span aria-hidden="true">↗</span></a></div>
+    <div class="teams-grid">{teams.map((team, i) => <TeamCard slug={team.id} {...team.data} delay={(i % 3) * 50} />)}</div>
   </Section>
 
-  <!-- ============ TAKIMLAR ============ -->
-  <Section
-    eyebrow="Takımlarımız"
-    title="Farklı disiplinlerde, tek çatı altında"
-    description="İnsansız hava araçlarından sualtı sistemlerine, otonom kara araçlarından kablosuz haberleşmeye kadar geniş bir yelpazede proje geliştiriyoruz."
-  >
-    <div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-      {
-        teams.map((team, i) => (
-          <TeamCard
-            slug={team.id}
-            title={team.data.title}
-            subtitle={team.data.subtitle}
-            category={team.data.category}
-            status={team.data.status}
-            badge={team.data.badge}
-            summary={team.data.summary}
-            image={team.data.image}
-            focus={team.data.focus}
-            delay={i * 60}
-          />
-        ))
-      }
-    </div>
-
-    <div class="reveal mt-8">
-      <a
-        href={url('/takimlarimiz')}
-        class="inline-flex items-center gap-2 text-sm font-semibold text-volt-400 hover:text-volt-300"
-      >
-        Tüm takımları gör
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path d="M5 12h14M13 6l6 6-6 6"></path>
-        </svg>
-      </a>
-    </div>
+  <Section eyebrow="Atölyeden sahaya" title={home.video.title} description={home.video.description} class="home-film">
+    <div class="mt-9"><VideoEmbed youtubeId={home.video.youtubeId} title={home.video.title} /></div>
   </Section>
 
-  <!-- ============ ÖNE ÇIKAN BAŞARILAR ============ -->
-  <Section
-    eyebrow={home.highlights.eyebrow}
-    title={home.highlights.title}
-    description={home.highlights.description}
-  >
-    <div class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-      {
-        featured.map((a, i) => (
-          <article class="card reveal p-5" data-delay={i * 55}>
-            <div class="flex items-center justify-between">
-              <span class="font-mono text-xs text-mist-500">{a.year}</span>
-              <svg class="h-4 w-4 text-medal-400" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                <path d="M12 2 9.2 8.6 2 9.2l5.5 4.7L5.8 21 12 17.3 18.2 21l-1.7-7.1L22 9.2l-7.2-.6L12 2Z" />
-              </svg>
-            </div>
-            <h3 class={`mt-3 text-base font-bold ${degreeTone(a.degree)}`}>{a.degree}</h3>
-            <p class="mt-2 text-sm font-medium text-mist-100">{a.competition}</p>
-            <p class="mt-1 text-xs text-mist-500">{a.category}</p>
-            {a.team &&
-              (teamHref(takimDizini, a.team) ? (
-                <a
-                  href={teamHref(takimDizini, a.team)}
-                  class="mt-2 inline-block font-mono text-[0.7rem] text-volt-400 underline decoration-volt-400/30 underline-offset-4 hover:text-volt-300 hover:decoration-volt-400"
-                >
-                  {a.team}
-                </a>
-              ) : (
-                <p class="mt-2 font-mono text-[0.7rem] text-volt-400">{a.team}</p>
-              ))}
-          </article>
-        ))
-      }
+  <Section eyebrow={home.highlights.eyebrow} title={home.highlights.title} description={home.highlights.description} class="home-achievements">
+    <div class="achievement-list mt-10">
+      {featured.map(a => <article class="achievement-row reveal">
+        <span class="achievement-year">{a.year}</span>
+        <div><h3>{a.competition}</h3><p>{a.category}</p></div>
+        <div class="achievement-result"><strong class={degreeTone(a.degree)}>{a.degree}</strong>{a.team && (teamHref(takimDizini, a.team) ? <a href={teamHref(takimDizini, a.team)}>{a.team} ↗</a> : <span>{a.team}</span>)}</div>
+      </article>)}
     </div>
-
-    <div class="reveal mt-8">
-      <a
-        href={url('/basarilarimiz')}
-        class="inline-flex items-center gap-2 text-sm font-semibold text-volt-400 hover:text-volt-300"
-      >
-        Tüm dereceler ve ödüller
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path d="M5 12h14M13 6l6 6-6 6"></path>
-        </svg>
-      </a>
-    </div>
+    <a class="text-link mt-7" href={url('/basarilarimiz')}>Tüm dereceler ve ödüller <span aria-hidden="true">↗</span></a>
   </Section>
 
-  <!-- ============ SON HABERLER ============ -->
-  {
-    latestNews.length > 0 && (
-      <Section
-        eyebrow="Haberler"
-        title="Topluluktan son gelişmeler"
-        description="Yarışma sonuçları, teknik geziler ve etkinliklerden güncel haberler."
-      >
-        <div class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {latestNews.map((item, i) => (
-            <a
-              href={url('/haberler')}
-              class="card card-hover reveal group flex flex-col p-5"
-              data-delay={i * 55}
-            >
-              <div class="flex flex-wrap items-center gap-2">
-                <span class="font-mono text-[0.62rem] tracking-[0.15em] text-volt-400 uppercase">
-                  {item.data.type}
-                </span>
-                <time
-                  datetime={item.data.date.toISOString()}
-                  class="font-mono text-[0.68rem] text-mist-500"
-                >
-                  {dateFmt.format(item.data.date)}
-                </time>
-              </div>
-              <h3 class="mt-2.5 text-base font-bold text-mist-100 transition-colors group-hover:text-volt-300">
-                {item.data.title}
-              </h3>
-              {item.data.summary && (
-                <p class="mt-2 flex-1 text-sm leading-relaxed text-mist-500">{item.data.summary}</p>
-              )}
-            </a>
-          ))}
-        </div>
+  {latestNews.length > 0 && <Section eyebrow="Haberler" title="MATRO’da neler oluyor?" class="home-news">
+    <div class="section-action"><a class="text-link" href={url('/haberler')}>Tüm haberler <span aria-hidden="true">↗</span></a></div>
+    <div class="news-grid mt-9">{latestNews.map((item, i) => <a href={url(`/haberler#${item.id}`)} class:list={['news-story group reveal', i === 0 && 'news-story-lead']}>
+      {media(item.data.image) && <div class="news-photo"><img src={media(item.data.image)} alt={item.data.title} loading="lazy" decoding="async" /></div>}
+      <div class="news-copy"><div class="news-meta"><span>{item.data.type}</span><time datetime={item.data.date.toISOString()}>{dateFmt.format(item.data.date)}</time></div><h3>{item.data.title}</h3><p>{item.data.summary}</p><span class="text-link">Haberi oku <span aria-hidden="true">↗</span></span></div>
+    </a>)}</div>
+  </Section>}
 
-        <div class="reveal mt-8">
-          <a
-            href={url('/haberler')}
-            class="inline-flex items-center gap-2 text-sm font-semibold text-volt-400 hover:text-volt-300"
-          >
-            Tüm haberler
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-              <path d="M5 12h14M13 6l6 6-6 6" />
-            </svg>
-          </a>
-        </div>
-      </Section>
-    )
-  }
-
-  <!-- ============ SPONSORLAR ============ -->
-  <Section eyebrow="Destekçilerimiz" title="Bizi mümkün kılanlar" align="center">
-    <ul class="mt-10 flex flex-wrap items-center justify-center gap-2.5">
-      {
-        sponsors.current.map((s, i) => {
-          const logo = media(s.logo);
-          return (
-            <li class="reveal" data-delay={i * 30}>
-              <a
-                href={url('/sponsorluk')}
-                class="flex items-center gap-2.5 rounded-xl border border-white/10 bg-ink-900 py-2 pr-4 pl-2 text-sm font-medium text-mist-300 transition-colors hover:border-volt-400/40 hover:text-mist-100"
-              >
-                {logo ? (
-                  <img
-                    src={logo}
-                    alt=""
-                    loading="lazy"
-                    decoding="async"
-                    width="28"
-                    height="28"
-                    class="h-7 w-7 shrink-0 rounded-full object-contain ring-1 ring-white/10"
-                  />
-                ) : (
-                  <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-white/5 font-mono text-xs text-white/30">
-                    {s.name.trim().charAt(0)}
-                  </span>
-                )}
-                {s.name}
-              </a>
-            </li>
-          );
-        })
-      }
-    </ul>
-    <div class="reveal mt-8 text-center">
-      <a
-        href={url('/sponsorluk')}
-        class="inline-flex items-center gap-2 text-sm font-semibold text-volt-400 hover:text-volt-300"
-      >
-        Sponsorluk paketlerini incele
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path d="M5 12h14M13 6l6 6-6 6"></path>
-        </svg>
-      </a>
-    </div>
+  <Section eyebrow="Destekçilerimiz" title="Üretmenin arkasında birlikte duruyoruz." class="home-sponsors">
+    <div class="section-action"><a class="text-link" href={url('/sponsorluk')}>Sponsorluk ve iş birliği <span aria-hidden="true">↗</span></a></div>
+    <ul class="sponsor-wall mt-10">{sponsors.current.map(s => <li><a href={url('/sponsorluk')} aria-label={`${s.name} — sponsorluk bilgileri`}>
+      {media(s.logo) && <img src={media(s.logo)} alt="" loading="lazy" decoding="async" width="72" height="72" />}<span>{s.name}</span>
+    </a></li>)}</ul>
   </Section>
 
-  <CtaBand
-    title="Sen de bu hikâyenin parçası ol"
-    description="Teknolojiye meraklı, sorumluluk sahibi ve takım çalışmasına inanan tüm BTÜ öğrencilerini aramıza bekliyoruz."
-    primary={{ label: 'Bize Katılın', href: '/bize-katilin' }}
-    secondary={{ label: 'İletişime Geçin', href: '/iletisim' }}
-  >
+  <CtaBand title="Sıradaki projede sen de ol." description="Tasarım, yazılım, elektronik ya da iletişim. Merak ettiğin alanda birlikte çalışalım." primary={{label:'Aramıza katıl',href:'/bize-katilin'}} secondary={{label:'Bizi tanı',href:'/hakkimizda'}}>
     <BasvuruButonlari align="center" class="mt-10 border-t border-white/8 pt-8" />
   </CtaBand>
 </BaseLayout>
+
+<style>
+  .home-hero { padding-top: 2.5rem; }
+  .hero-topline,.hero-bottom { display:flex; justify-content:space-between; gap:1.5rem; align-items:center; }
+  .hero-about { font-size:.78rem; color:var(--color-mist-300); white-space:nowrap; }
+  .hero-about span { margin-left:1rem; color:var(--color-volt-400); }
+  .hero-heading { display:grid; grid-template-columns:1.6fr 1fr; gap:4rem; align-items:end; padding:2.7rem 0 3rem; }
+  h1 { white-space:pre-line; font-size:clamp(3.3rem,6.1vw,6rem); font-weight:600; line-height:1.02; letter-spacing:-.047em; text-wrap:initial; }
+  .hero-intro>p { font-size:1rem; line-height:1.85; color:var(--color-mist-300); max-width:39ch; }
+  .hero-actions { display:flex; flex-wrap:wrap; align-items:center; gap:1.5rem; margin-top:1.6rem; }
+  .hero-photo img { width:100%; height:clamp(300px,32vw,470px); object-fit:cover; object-position:50% 57%; }
+  .hero-photo figcaption { display:flex; gap:1rem; justify-content:space-between; padding:.85rem 0; font-size:.72rem; color:var(--color-mist-300); border-bottom:1px solid var(--edge); }
+  .hero-photo figcaption a { color:var(--color-mist-100); }
+  .hero-bottom { padding:1.2rem 0; font-size:.72rem; color:var(--color-mist-500); }
+  .hero-bottom a { color:var(--color-mist-300); }
+  .notice-strip { display:grid; grid-template-columns:110px 1fr; gap:2rem; margin-top:1rem; }
+  .notice-strip>.eyebrow { padding:1.1rem 0; }
+  .notice-strip>div { border-top:1px solid var(--edge); }
+  .notice-strip a { display:flex; justify-content:space-between; gap:1rem; padding:1rem 0; border-bottom:1px solid var(--edge); font-size:.85rem; }
+  .notice-strip a:hover { color:var(--color-volt-400); }
+  .section-action { display:flex; justify-content:flex-end; margin-top:-1.7rem; }
+  .teams-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:3rem 1.6rem; margin-top:2.5rem; }
+  .achievement-row { display:grid; grid-template-columns:90px 1fr 240px; align-items:center; gap:2rem; padding:1.5rem 0; border-top:1px solid var(--edge); }
+  .achievement-row:last-child { border-bottom:1px solid var(--edge); }
+  .achievement-year { font-family:var(--font-mono); font-size:.8rem; color:var(--color-mist-500); }
+  .achievement-row h3 { font-size:1.3rem; font-weight:600; }
+  .achievement-row p { font-size:.8rem; color:var(--color-mist-500); margin-top:.35rem; }
+  .achievement-result { display:flex; flex-direction:column; gap:.4rem; text-align:right; }
+  .achievement-result strong { font-family:var(--font-display); font-size:1.25rem; font-weight:600; }
+  .achievement-result a,.achievement-result>span { font-size:.75rem; color:var(--color-mist-300); }
+  .news-grid { display:grid; grid-template-columns:1.15fr 1fr; gap:2rem 3rem; }
+  .news-story-lead { grid-row:span 2; }
+  .news-story:not(.news-story-lead) { display:grid; grid-template-columns:140px 1fr; gap:1.4rem; padding-bottom:1.7rem; border-bottom:1px solid var(--edge); }
+  .news-photo { align-self:start; overflow:hidden; background:var(--color-ink-800); }
+  .news-photo img { width:100%; aspect-ratio:4/3; object-fit:cover; transition:transform .4s; }
+  .news-story:hover img { transform:scale(1.025); }
+  .news-story:not(.news-story-lead) img { aspect-ratio:1; }
+  .news-story-lead .news-copy { padding-top:1.3rem; }
+  .news-meta { display:flex; flex-wrap:wrap; gap:.6rem 1rem; color:var(--color-mist-500); font-size:.68rem; }
+  .news-meta>span { color:var(--color-volt-400); }
+  .news-story h3 { font-size:1.45rem; font-weight:600; line-height:1.2; margin-top:.65rem; }
+  .news-story-lead h3 { font-size:1.9rem; }
+  .news-copy>p { font-size:.85rem; line-height:1.7; color:var(--color-mist-300); margin-top:.8rem; }
+  .news-copy>.text-link { margin-top:1.3rem; }
+  .sponsor-wall { display:grid; grid-template-columns:repeat(6,minmax(0,1fr)); border-top:1px solid var(--edge); border-left:1px solid var(--edge); }
+  .sponsor-wall li { border-right:1px solid var(--edge); border-bottom:1px solid var(--edge); }
+  .sponsor-wall a { min-height:160px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:1rem; padding:1.3rem .7rem; transition:background .2s; }
+  .sponsor-wall a:hover { background:var(--color-ink-800); }
+  .sponsor-wall img { object-fit:contain; }
+  .sponsor-wall span { font-size:.72rem; color:var(--color-mist-300); text-align:center; }
+  @media(max-width:1050px) { .hero-heading { gap:2rem; grid-template-columns:1.4fr 1fr; } .hero-actions { gap:1rem; } .section-action { margin-top:1.5rem; justify-content:flex-start; } .sponsor-wall { grid-template-columns:repeat(4,minmax(0,1fr)); } }
+  @media(max-width:767px) { .home-hero { padding-top:1.7rem; } .hero-topline .eyebrow { max-width:27ch; font-size:.6rem; } .hero-about { font-size:.7rem; } .hero-heading { grid-template-columns:1fr; gap:1.5rem; padding:2rem 0; } h1 { font-size:clamp(2.6rem,8.6vw,4.3rem); } .hero-intro>p { font-size:.9rem; max-width:48ch; } .hero-photo img { height:auto; aspect-ratio:4/3; } .hero-photo figcaption { font-size:.65rem; } .hero-bottom { align-items:flex-start; font-size:.65rem; } .hero-bottom p { max-width:27ch; } .hero-bottom a { max-width:20ch; text-align:right; } .notice-strip { grid-template-columns:1fr; gap:0; } .teams-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:2.5rem 1rem; } .achievement-row { grid-template-columns:40px 1fr; gap:1rem; } .achievement-result { grid-column:2; text-align:left; flex-direction:row; align-items:center; justify-content:space-between; } .achievement-row h3 { font-size:1.1rem; } .achievement-result strong { font-size:1rem; } .news-grid { grid-template-columns:1fr; gap:2rem; } .news-story:not(.news-story-lead) { grid-template-columns:100px 1fr; gap:1rem; } .sponsor-wall { grid-template-columns:repeat(3,minmax(0,1fr)); } .sponsor-wall a { min-height:145px; } }
+  @media(max-width:480px) { .teams-grid { grid-template-columns:1fr; } .hero-about span { margin-left:.3rem; } .hero-actions { gap:1.25rem; } }
+</style>
