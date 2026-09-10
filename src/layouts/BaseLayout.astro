@@ -110,12 +110,14 @@ const jsonLd = {
               entries.forEach((entry) => {
                 if (!entry.isIntersecting) return;
                 const el = entry.target as HTMLElement;
-                const delay = Number(el.dataset.delay ?? 0);
-                window.setTimeout(() => el.classList.add('is-visible'), delay);
+                // Hızlı kaydırmada kartı geciktirmek, görsel yüklenmiş olsa bile
+                // içerikte boş bir alan bırakıyordu. Giriş animasyonu kalsın;
+                // görünürlük gözlemciye girer girmez başlasın.
+                el.classList.add('is-visible');
                 io.unobserve(el);
               });
             },
-            { rootMargin: '0px 0px -8% 0px', threshold: 0.08 }
+            { rootMargin: '0px 0px 15% 0px', threshold: 0.08 }
           );
           items.forEach((el) => { el.classList.add('motion-ready'); io.observe(el); });
         }
