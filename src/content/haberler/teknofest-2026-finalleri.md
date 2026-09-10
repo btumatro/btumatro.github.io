@@ -7,10 +7,9 @@ pinned: false
 draft: false
 image: "/media/haber-teknofest-2026-finalleri.jpg"
 gallery:
-  - "/media/takim-ashina-2026.jpg"
   - "/media/haber-teknofest-2026-diyarbakir.jpg"
-  - "/media/takim-luna-ika.jpg"
-  - "/media/takim-matris-2026.jpg"
+  - "/media/haber-teknofest-2026-mardin.jpg"
+  - "/media/haber-teknofest-2026-gaziantep.jpg"
 link: "https://www.instagram.com/p/DdGJr1cjfko/"
 linkLabel: "Instagram gönderisi"
 teams:
