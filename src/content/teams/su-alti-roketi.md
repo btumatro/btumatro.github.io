@@ -5,6 +5,9 @@ category: Sualtı Sistemleri
 status: Yeni Takım
 order: 5
 image: "/media/takim-zemheri.jpg"
+gallery:
+  - "/media/galeri-zemheri-atolye.jpg"
+  - "/media/galeri-zemheri-takim.jpg"
 badge: "2026 Finalisti"
 instagram: ""
 focus:

@@ -1,0 +1,117 @@
+---
+/**
+ * Kapak görseli + küçük resim şeridi.
+ *
+ * Bir içerik (takım, haber, faaliyet) için birden fazla görsel varsa, ana
+ * görselin altında küçük resimler dizilir; birine tıklanınca o görsel
+ * büyür. Tek görsel varsa (çoğu içerik için durum budur) şerit hiç
+ * basılmaz, sayfa mevcut haliyle kalır — ek JS veya markup yükü olmaz.
+ *
+ * `cover` ve `gallery` içindeki yollar `src/lib/utils`'teki `media()` ile
+ * çözülür; ikisi de ham CMS yolu (ör. "/media/foo.jpg") olarak verilir.
+ */
+import { media } from '../lib/utils';
+
+interface Props {
+  cover?: string | null;
+  gallery?: string[];
+  alt: string;
+  /** Yer tutucu ve ana görsel için üstte gösterilecek etiket (görsel yoksa). */
+  placeholderLabel?: string;
+  /** false ise ve hiç görsel yoksa hiçbir şey basılmaz (yer tutucu kutu da yok). */
+  renderEmpty?: boolean;
+  /**
+   * true: sarmalayıcı `flex h-full flex-col` olur, ana görsel `imgClass`
+   * içinde verilen `flex-1` ile kalan tüm alanı kaplar (küçük resim şeridi
+   * varsa altına oturur) — grid hücresi gibi yüksekliği dıştan belirlenen
+   * yerler için (haber/faaliyet kartları). false: sade blok akışı, `imgClass`
+   * kendi boyutunu kendi belirler (ör. sabit `aspect-[16/9]`).
+   */
+  stretch?: boolean;
+  class?: string;
+  imgClass?: string;
+}
+const {
+  cover,
+  gallery = [],
+  alt,
+  placeholderLabel,
+  renderEmpty = true,
+  stretch = false,
+  class: className = '',
+  imgClass = 'h-full w-full object-cover',
+} = Astro.props;
+
+// Kapak + galeri görsellerini çözüp tekilleştir; kapak her zaman ilk sırada.
+const seen = new Set<string>();
+const tum: string[] = [];
+for (const raw of [cover, ...gallery]) {
+  const resolved = media(raw ?? null);
+  if (resolved && !seen.has(resolved)) {
+    seen.add(resolved);
+    tum.push(resolved);
+  }
+}
+const ana = tum[0] ?? null;
+const digerleri = tum.slice(1);
+---
+
+{
+  ana ? (
+    <div class:list={['medya-galeri', stretch && 'flex h-full flex-col', className]}>
+      <img src={ana} alt={alt} loading="lazy" decoding="async" class={imgClass} data-ana-gorsel />
+      {digerleri.length > 0 && (
+        <div class="mt-2 flex gap-1.5 overflow-x-auto pb-0.5" role="group" aria-label="Diğer görseller">
+          {tum.map((src, i) => (
+            <button
+              type="button"
+              class:list={[
+                'h-12 w-16 shrink-0 overflow-hidden rounded-md ring-2 transition-opacity hover:opacity-100',
+                i === 0 ? 'ring-volt-400' : 'ring-transparent opacity-70',
+              ]}
+              data-kucuk-resim
+              data-src={src}
+              aria-label={`${i + 1}. görseli göster`}
+              aria-pressed={i === 0}
+            >
+              <img src={src} alt="" loading="lazy" decoding="async" class="h-full w-full object-cover" />
+            </button>
+          ))}
+        </div>
+      )}
+    </div>
+  ) : (
+    renderEmpty && (
+      <div class:list={['grid-bg flex h-full w-full items-center justify-center p-6', className]}>
+        {placeholderLabel && (
+          <span class="font-mono text-xs tracking-[0.2em] text-white/15 uppercase">
+            {placeholderLabel}
+          </span>
+        )}
+      </div>
+    )
+  )
+}
+
+<script>
+  // Tek script tüm sayfadaki galerileri yönetir (event delegation) — kaç
+  // tane .medya-galeri olursa olsun ekstra kod çalışmaz.
+  document.addEventListener('click', (e) => {
+    const btn = (e.target as HTMLElement).closest<HTMLButtonElement>('[data-kucuk-resim]');
+    if (!btn) return;
+    const wrap = btn.closest('.medya-galeri');
+    const ana = wrap?.querySelector<HTMLImageElement>('[data-ana-gorsel]');
+    const src = btn.dataset.src;
+    if (!ana || !src || ana.src === new URL(src, location.href).href) return;
+
+    ana.src = src;
+    wrap?.querySelectorAll<HTMLButtonElement>('[data-kucuk-resim]').forEach((b) => {
+      const active = b === btn;
+      b.setAttribute('aria-pressed', String(active));
+      b.classList.toggle('ring-volt-400', active);
+      b.classList.toggle('ring-transparent', !active);
+      b.classList.toggle('opacity-70', !active);
+      b.classList.toggle('opacity-100', active);
+    });
+  });
+</script>

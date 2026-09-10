@@ -5,6 +5,8 @@ category: Havacılık
 status: Aktif
 order: 1
 image: "/media/takim-ashina-2026.jpg"
+gallery:
+  - "/media/takim-ashina.jpg"
 badge: "2026 Finalisti"
 instagram: "ashinatechnology"
 aliases:

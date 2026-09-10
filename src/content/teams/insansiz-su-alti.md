@@ -5,6 +5,8 @@ category: Sualtı Sistemleri
 status: Aktif
 order: 4
 image: "/media/takim-iss-sualti-araci.jpg"
+gallery:
+  - "/media/takim-iss-ekip.jpg"
 badge: "2026 Finalisti"
 instagram: "prusateam"
 aliases:

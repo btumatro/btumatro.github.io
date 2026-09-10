@@ -13,6 +13,8 @@ const teams = defineCollection({
     status: z.enum(['Aktif', 'Yeni Takım', 'Arşiv']).default('Aktif'),
     order: z.number().default(99),
     image: z.string().default(''),
+    /** Kapaktan sonra küçük resim şeridinde gösterilecek ek görseller. */
+    gallery: z.array(z.string()).default([]),
     /** Kart üzerinde görünen ek etiket. Örn: "2026 Finalisti" */
     badge: z.string().default(''),
     /** Takımın Instagram kullanıcı adı (@ olmadan). Boşsa bağlantı gösterilmez. */
@@ -37,6 +39,8 @@ const activities = defineCollection({
     endDate: z.string().default(''),
     order: z.number().default(99),
     image: z.string().default(''),
+    /** Kapaktan sonra küçük resim şeridinde gösterilecek ek görseller. */
+    gallery: z.array(z.string()).default([]),
     stats: z
       .array(z.object({ label: z.string(), value: z.string() }))
       .default([]),
@@ -63,6 +67,8 @@ const haberler = defineCollection({
     /** Taslak mı? true ise sitede hiç görünmez. */
     draft: z.boolean().default(false),
     image: z.string().default(''),
+    /** Kapaktan sonra küçük resim şeridinde gösterilecek ek görseller. */
+    gallery: z.array(z.string()).default([]),
     link: z.string().default(''),
     linkLabel: z.string().default(''),
     /** İlgili takımların dosya adları (ör. su-alti-roketi). Haberde takım sayfalarına bağlantı verir. */

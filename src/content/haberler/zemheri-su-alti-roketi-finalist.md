@@ -6,6 +6,8 @@ expiresOn: ""
 pinned: false
 draft: false
 image: "/media/takim-zemheri.jpg"
+gallery:
+  - "/media/galeri-zemheri-takim.jpg"
 link: "https://www.instagram.com/reel/DcitY77teii/"
 linkLabel: "Instagram gönderisi"
 teams:

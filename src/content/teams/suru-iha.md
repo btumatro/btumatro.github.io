@@ -5,6 +5,8 @@ category: Havacılık
 status: Aktif
 order: 6
 image: "/media/takim-matris-2026.jpg"
+gallery:
+  - "/media/takim-matris-iha.jpg"
 badge: "2026 Finalisti"
 instagram: "btu_matris"
 focus:

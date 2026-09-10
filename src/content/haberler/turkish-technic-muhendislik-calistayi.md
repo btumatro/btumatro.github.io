@@ -5,7 +5,9 @@ date: 2026-06-07
 expiresOn: ""
 pinned: false
 draft: false
-image: "/media/fuar-ziyaret.jpg"
+image: "/media/haber-turkish-technic-plaket.jpg"
+gallery:
+  - "/media/galeri-turkish-technic-sinif.jpg"
 link: "https://www.instagram.com/reel/DZSukjltqmk/"
 linkLabel: "Instagram gönderisi"
 teams: []

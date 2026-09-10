@@ -210,6 +210,12 @@ content:
         default: 99
         description: Küçük sayı üstte görünür.
       - { name: image, label: Kapak görseli, type: image }
+      - name: gallery
+        label: Ek görseller
+        type: image
+        list:
+          collapsible: true
+        description: Kapağın altında küçük resim şeridi olarak görünür; birine tıklanınca büyür.
       - name: stats
         label: Rakamlar (opsiyonel)
         type: object
@@ -267,6 +273,12 @@ content:
           format: yyyy-MM-dd
         description: Bu tarih geçince içerik sitede görünmez olur. Süresiz içerikler için boş bırakın.
       - { name: image, label: Kapak görseli, type: image }
+      - name: gallery
+        label: Ek görseller
+        type: image
+        list:
+          collapsible: true
+        description: Kapağın altında küçük resim şeridi olarak görünür; birine tıklanınca büyür.
       - name: summary
         label: Kısa özet
         type: text
@@ -371,6 +383,12 @@ content:
         default: 99
         description: Küçük sayı üstte görünür.
       - { name: image, label: Takım görseli, type: image }
+      - name: gallery
+        label: Ek görseller
+        type: image
+        list:
+          collapsible: true
+        description: Kapağın altında küçük resim şeridi olarak görünür; birine tıklanınca büyür.
       - name: badge
         label: Ek etiket
         type: string

@@ -3,7 +3,8 @@ import { getCollection, render, type CollectionEntry } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import CtaBand from '../../components/CtaBand.astro';
 import BasvuruButonlari from '../../components/BasvuruButonlari.astro';
-import { instagramUrl, url, media } from '../../lib/utils';
+import { instagramUrl, url } from '../../lib/utils';
+import MediaGaleri from '../../components/MediaGaleri.astro';
 
 export async function getStaticPaths() {
   const teams = await getCollection('teams');
@@ -19,7 +20,6 @@ interface Props {
 
 const { team } = Astro.props;
 const { Content } = await render(team);
-const cover = media(team.data.image);
 const takimInstagram = instagramUrl(team.data.instagram);
 
 const others = (await getCollection('teams'))
@@ -98,19 +98,16 @@ const others = (await getCollection('teams'))
       </div>
     </header>
 
-    {
-      cover && (
-        <div class="container-matro">
-          <img
-            src={cover}
-            alt={`${team.data.title} takımı`}
-            class="mx-auto mt-10 aspect-[16/9] w-full max-w-3xl rounded-2xl border border-white/10 object-cover"
-            loading="lazy"
-            decoding="async"
-          />
-        </div>
-      )
-    }
+    <div class="container-matro">
+      <MediaGaleri
+        cover={team.data.image}
+        gallery={team.data.gallery}
+        alt={`${team.data.title} takımı`}
+        renderEmpty={false}
+        class="mx-auto mt-10 max-w-3xl"
+        imgClass="aspect-[16/9] w-full rounded-2xl border border-white/10 object-cover"
+      />
+    </div>
 
     <div class="container-matro grid gap-12 py-14 md:py-20 lg:grid-cols-[1.5fr_1fr]">
       <div class="prose-matro reveal max-w-none">

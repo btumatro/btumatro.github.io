@@ -5,6 +5,9 @@ category: Kara Araçları
 status: Aktif
 order: 2
 image: "/media/takim-luna-ika.jpg"
+gallery:
+  - "/media/takim-luna.jpg"
+  - "/media/takim-matrover.jpg"
 badge: "2026 Finalisti"
 instagram: ""
 aliases:

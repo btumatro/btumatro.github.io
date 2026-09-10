@@ -3,7 +3,8 @@ import { getCollection, render } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import PageHero from '../components/PageHero.astro';
 import Section from '../components/Section.astro';
-import { media, publishedNews, url } from '../lib/utils';
+import { publishedNews, url } from '../lib/utils';
+import MediaGaleri from '../components/MediaGaleri.astro';
 
 const entries = publishedNews(await getCollection('haberler'));
 const rendered = await Promise.all(
@@ -33,26 +34,18 @@ const takimlar = new Map(
       rendered.length > 0 ? (
         <div class="space-y-5">
           {rendered.map(({ entry, Content }, i) => {
-            const cover = media(entry.data.image);
             return (
               <article class="card reveal overflow-hidden" data-delay={i * 45}>
                 <div class="grid md:grid-cols-[1fr_1.6fr]">
-                  <div class="relative min-h-[11rem] border-b border-white/8 bg-ink-800 md:border-r md:border-b-0">
-                    {cover ? (
-                      <img
-                        src={cover}
-                        alt={entry.data.title}
-                        loading="lazy"
-                        decoding="async"
-                        class="h-full w-full object-cover"
-                      />
-                    ) : (
-                      <div class="grid-bg flex h-full w-full items-center justify-center p-6">
-                        <span class="font-mono text-xs tracking-[0.2em] text-white/15 uppercase">
-                          {entry.data.type}
-                        </span>
-                      </div>
-                    )}
+                  <div class="relative flex min-h-[11rem] flex-col border-b border-white/8 bg-ink-800 md:border-r md:border-b-0">
+                    <MediaGaleri
+                      cover={entry.data.image}
+                      gallery={entry.data.gallery}
+                      alt={entry.data.title}
+                      placeholderLabel={entry.data.type}
+                      stretch
+                      imgClass="aspect-[4/3] w-full flex-1 object-cover md:aspect-auto"
+                    />
                   </div>
 
                   <div class="p-6 md:p-8">

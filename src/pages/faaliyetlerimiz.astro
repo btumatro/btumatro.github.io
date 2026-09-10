@@ -4,7 +4,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import PageHero from '../components/PageHero.astro';
 import Section from '../components/Section.astro';
 import CtaBand from '../components/CtaBand.astro';
-import { media } from '../lib/utils';
+import MediaGaleri from '../components/MediaGaleri.astro';
 
 const activities = (await getCollection('activities')).sort(
   (a, b) => a.data.order - b.data.order
@@ -34,26 +34,18 @@ const dateFmt = new Intl.DateTimeFormat('tr-TR', { day: 'numeric', month: 'long'
     <div class="space-y-5">
       {
         rendered.map(({ entry, Content }, i) => {
-          const cover = media(entry.data.image);
           return (
             <article class="card reveal overflow-hidden" data-delay={i * 50}>
               <div class="grid md:grid-cols-[1fr_1.6fr]">
-                <div class="relative min-h-[10rem] border-b border-white/8 bg-ink-800 md:border-r md:border-b-0">
-                  {cover ? (
-                    <img
-                      src={cover}
-                      alt={entry.data.title}
-                      loading="lazy"
-                      decoding="async"
-                      class="h-full w-full object-cover"
-                    />
-                  ) : (
-                    <div class="grid-bg flex h-full w-full items-center justify-center p-6">
-                      <span class="font-mono text-xs tracking-[0.2em] text-white/15 uppercase">
-                        {entry.data.type}
-                      </span>
-                    </div>
-                  )}
+                <div class="relative flex min-h-[10rem] flex-col border-b border-white/8 bg-ink-800 md:border-r md:border-b-0">
+                  <MediaGaleri
+                    cover={entry.data.image}
+                    gallery={entry.data.gallery}
+                    alt={entry.data.title}
+                    placeholderLabel={entry.data.type}
+                    stretch
+                      imgClass="aspect-[4/3] w-full flex-1 object-cover md:aspect-auto"
+                  />
                 </div>
 
                 <div class="p-6 md:p-8">

@@ -6,6 +6,9 @@ expiresOn: ""
 pinned: false
 draft: false
 image: "/media/haber-hktm-gezisi.jpg"
+gallery:
+  - "/media/galeri-hktm-sunum.jpg"
+  - "/media/galeri-hktm-ekip.jpg"
 link: "https://www.instagram.com/reel/DV38J5gDYAs/"
 linkLabel: "Instagram gönderisi"
 teams: []
