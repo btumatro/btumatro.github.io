@@ -4,21 +4,23 @@
     "title": "MATRO ailesine katıl, ilk projeni bu dönem yap",
     "description": "Teknolojiye meraklı, sorumluluk sahibi ve takım çalışmasına inanan tüm Bursa Teknik Üniversitesi öğrencilerini aramıza bekliyoruz. Bölüm ayrımı yok — mekanik, elektronik, yazılım, tasarım, organizasyon ve iletişim alanlarında herkese yer var."
   },
-  "applicationFormUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfMgCHKihBA7zilbQnI2QfxbMTmjfrU-v7afIGuPeQx6zSUUw/viewform",
   "applications": [
     {
+      "anchor": "topluluk-kaydi",
       "title": "Topluluk Kayıt Formu",
       "description": "İlk adım. Topluluk üyeliğin bu formla başlar; ön koşul yoktur, tüm bölümlerden öğrencilere açıktır.",
       "url": "https://docs.google.com/forms/d/e/1FAIpQLSfMgCHKihBA7zilbQnI2QfxbMTmjfrU-v7afIGuPeQx6zSUUw/viewform",
       "buttonLabel": "Kayıt formunu doldur"
     },
     {
+      "anchor": "takim-basvurusu",
       "title": "Takım Ön Başvuru Formu",
       "description": "Yarışma takımlarında görev almak isteyenler için. Üyeliğini tamamladıktan sonra en fazla üç takım tercihi yaparsın.",
       "url": "https://docs.google.com/forms/d/e/1FAIpQLSeX_98sMFjh5ReuF-zasq5cYje6LOaeFdWoDwVJGaZvd3foyQ/viewform",
       "buttonLabel": "Takım başvurusu yap"
     },
     {
+      "anchor": "yonetim-basvurusu",
       "title": "Yönetim Kurulu Başvuru Formu",
       "description": "Takım ve atölye, sponsorluk, organizasyon veya sosyal medya birimlerinde sorumluluk almak isteyenler için.",
       "url": "https://docs.google.com/forms/d/e/1FAIpQLSffLpElNfRvIGQfX_p_teSanTIgPmtRn225CGaGmIq9laHvXg/viewform",

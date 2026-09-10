@@ -555,10 +555,6 @@ content:
           - { name: eyebrow, label: Üst etiket, type: string }
           - { name: title, label: Başlık, type: string }
           - { name: description, label: Açıklama, type: text }
-      - name: applicationFormUrl
-        label: Başvuru formu bağlantısı
-        type: string
-        description: Google Forms vb. bağlantı. Boş bırakılırsa Instagram butonu gösterilir.
       - name: applicationPeriod
         label: Başvuru dönemi notu
         type: string
@@ -570,6 +566,11 @@ content:
         list:
           collapsible: true
         fields:
+          - name: anchor
+            label: Sayfa içi bağlantı kimliği
+            type: string
+            required: true
+            description: "Teknik alan: topluluk-kaydi, takim-basvurusu veya yonetim-basvurusu olarak bırakın."
           - { name: title, label: Form adı, type: string, required: true }
           - { name: description, label: Açıklama, type: text }
           - { name: url, label: Form bağlantısı, type: string, required: true }

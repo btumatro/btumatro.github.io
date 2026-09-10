@@ -27,7 +27,7 @@ const period = join.applicationPeriod?.trim();
     (variant === 'kart' ? (
       <div class:list={['grid gap-4 md:grid-cols-3', className]}>
         {applications.map((a, i) => (
-          <article class="card reveal flex flex-col p-6" data-delay={i * 60}>
+          <article id={a.anchor} class="card reveal flex scroll-mt-28 flex-col p-6" data-delay={i * 60}>
             <span class="font-mono text-[0.62rem] tracking-[0.2em] text-mist-500 uppercase">
               {String(i + 1).padStart(2, '0')}
             </span>

@@ -9,8 +9,9 @@ import site from '../data/site.json';
 import { url } from '../lib/utils';
 
 const instagram = site.social.find((s) => s.platform === 'Instagram')?.url ?? '#';
-const hasForm = Boolean(join.applicationFormUrl?.trim());
 const applications = (join.applications ?? []).filter((a) => a.url?.trim());
+const communityApplication = applications.find((a) => a.anchor === 'topluluk-kaydi') ?? applications[0];
+const hasForm = Boolean(communityApplication?.url?.trim());
 ---
 
 <BaseLayout
@@ -22,12 +23,12 @@ const applications = (join.applications ?? []).filter((a) => a.url?.trim());
       {
         hasForm ? (
           <a
-            href={join.applicationFormUrl}
+            href={communityApplication.url}
             target="_blank"
             rel="noopener noreferrer"
             class="rounded-xl bg-volt-400 px-6 py-3.5 text-sm font-semibold text-ink-950 transition-transform hover:scale-[1.03]"
           >
-            Başvuru formunu doldur
+            Topluluk kayıt formuna git
           </a>
         ) : (
           <a
@@ -64,7 +65,7 @@ const applications = (join.applications ?? []).filter((a) => a.url?.trim());
       <Section
         eyebrow="Başvuru Formları"
         title="Açık başvurular"
-        description={join.applicationPeriod}
+        description={`${join.applicationPeriod}. Sana uygun başvuru türünü seçerek doğrudan ilgili forma ilerleyebilirsin.`}
       >
         <BasvuruButonlari variant="kart" class="mt-10" />
       </Section>
