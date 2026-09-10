@@ -8,6 +8,10 @@ draft: false
 image: "/media/haber-turkish-technic-plaket.jpg"
 gallery:
   - "/media/galeri-turkish-technic-sinif.jpg"
+  - "/media/galeri-turkish-technic-hangar.jpg"
+  - "/media/galeri-turkish-technic-briefing.jpg"
+  - "/media/galeri-turkish-technic-atolye.jpg"
+  - "/media/galeri-turkish-technic-guvenlik.jpg"
 link: "https://www.instagram.com/reel/DZSukjltqmk/"
 linkLabel: "Instagram gönderisi"
 teams: []
