@@ -3,8 +3,9 @@ title: ÇAĞRI
 subtitle: Kablosuz Haberleşme
 category: Haberleşme
 status: Aktif
-order: 5
+order: 11
 image: ""
+badge: ""
 focus:
   - Yazılım tabanlı radyo (SDR) mimarileri
   - Jammer (sinyal karıştırıcı) engelleme algoritmaları

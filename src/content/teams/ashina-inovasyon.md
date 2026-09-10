@@ -3,8 +3,9 @@ title: ASHİNA İNOVASYON
 subtitle: Tarım Teknolojileri
 category: Tarım Teknolojileri
 status: Yeni Takım
-order: 3
+order: 9
 image: ""
+badge: ""
 focus:
   - Akıllı tarım çözümleri
   - Sürdürülebilir üretim teknolojileri

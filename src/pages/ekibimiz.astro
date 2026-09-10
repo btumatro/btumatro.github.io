@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import PageHero from '../components/PageHero.astro';
 import Section from '../components/Section.astro';
 import CtaBand from '../components/CtaBand.astro';
+import BasvuruButonlari from '../components/BasvuruButonlari.astro';
 import ekip from '../data/ekibimiz.json';
 import { media } from '../lib/utils';
 
@@ -155,8 +156,10 @@ const initials = (name: string) =>
 
   <CtaBand
     title="Yönetim kurulunda görev almak ister misin?"
-    description="Yönetim kurulu başvuruları her dönem başında açılır. Duyuruları Instagram hesabımızdan ve sitemizden takip edebilirsin."
+    description="Takım ve atölye, sponsorluk, organizasyon ya da sosyal medya birimlerinde sorumluluk alabilirsin."
     primary={{ label: 'Bize Katılın', href: '/bize-katilin' }}
     secondary={{ label: 'İletişim', href: '/iletisim' }}
-  />
+  >
+    <BasvuruButonlari align="center" class="mt-10 border-t border-white/8 pt-8" />
+  </CtaBand>
 </BaseLayout>

@@ -3,8 +3,9 @@ title: İDA
 subtitle: İnsansız Deniz Aracı
 category: Deniz Araçları
 status: Aktif
-order: 9
+order: 3
 image: "/media/takim-ida.jpg"
+badge: "2026 Finalisti"
 focus:
   - Deniz üstü otonomi
   - Rotalandırma ve seyir algoritmaları

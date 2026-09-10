@@ -3,8 +3,9 @@ title: ZEMHERİ
 subtitle: Su Altı Roket Sistemleri
 category: Sualtı Sistemleri
 status: Yeni Takım
-order: 10
+order: 5
 image: "/media/takim-zemheri.jpg"
+badge: "2026 Finalisti"
 focus:
   - Su altı roket gövde ve itki tasarımı
   - Sızdırmazlık ve basınç dayanımı

@@ -84,9 +84,9 @@ const mailto = `mailto:${site.contact.emails[0]}?subject=${encodeURIComponent('S
     }
   </Section>
 
-  <!-- Resmî sponsorluk formu -->
+  <!-- Sponsorluk süreci -->
   {
-    sponsorship.officialForm?.fileUrl && (
+    sponsorship.officialForm?.steps?.length > 0 && (
       <Section
         eyebrow="Nasıl Sponsor Olunur"
         title={sponsorship.officialForm.title}
@@ -105,14 +105,18 @@ const mailto = `mailto:${site.contact.emails[0]}?subject=${encodeURIComponent('S
           ))}
         </ol>
 
-        <div class="reveal mt-8 flex flex-wrap items-center gap-4">
+        <div class="reveal mt-8 flex flex-wrap items-center gap-3">
           <a
-            href={url(sponsorship.officialForm.fileUrl)}
-            target="_blank"
-            rel="noopener noreferrer"
+            href={mailto}
+            class="rounded-xl bg-volt-400 px-6 py-3 text-sm font-semibold text-ink-950 transition-transform hover:scale-[1.03]"
+          >
+            Sponsorluk için yazın
+          </a>
+          <a
+            href={url('/iletisim')}
             class="rounded-xl border border-white/15 px-6 py-3 text-sm font-semibold text-mist-100 transition-colors hover:border-volt-400/50 hover:text-volt-300"
           >
-            {sponsorship.officialForm.buttonLabel}
+            İletişim bilgileri
           </a>
         </div>
 

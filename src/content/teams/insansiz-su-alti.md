@@ -3,8 +3,9 @@ title: İSS
 subtitle: İnsansız Su Altı Sistemleri
 category: Sualtı Sistemleri
 status: Aktif
-order: 8
+order: 4
 image: "/media/takim-iss-sualti-araci.jpg"
+badge: "2026 Finalisti"
 focus:
   - Otonom sualtı aracı (AUV) tasarımı
   - Sualtı görüntü işleme
@@ -16,7 +17,7 @@ achievements:
   - "Singapore SAUVC 2022 — Dünya Finalisti"
   - "TEKNOFEST 2021 ASELSAN İnsansız Su Altı Sistemleri — Türkiye Finalisti"
   - "TEKNOFEST 2019 ASELSAN İnsansız Su Altı Sistemleri — Türkiye 7.si"
-summary: "Singapur SAUVC'de dünya finaline kalan, otonom sualtı araçları geliştiren takımımız."
+summary: "Singapur SAUVC'de dünya finaline kalan; PRUSA ekibiyle 2026 TEKNOFEST İnsansız Sualtı Aracı finaline yükselen otonom sualtı araçları takımımız."
 ---
 
 İnsansız Su Altı Sistemleri takımı, otonom sualtı araçlarının (AUV) mekanik, elektronik ve yazılım katmanlarını uçtan uca geliştirir.

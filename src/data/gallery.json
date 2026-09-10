@@ -1,6 +1,31 @@
 {
-  "intro": "Atölyeden yarışma sahasına, teknik gezilerden ödül törenlerine MATRO'dan kareler.",
+  "intro": "Atölyeden yarışma sahasına, teknik gezilerden ödül törenlerine MATRO'dan kareler. En güncel kareler en üstte yer alır.",
   "images": [
+    {
+      "image": "/media/haber-teknofest-2026-finalleri.jpg",
+      "caption": "TEKNOFEST 2026 finali — Malatya, ASHİNA",
+      "category": "Yarışma"
+    },
+    {
+      "image": "/media/haber-teknofest-2026-mardin.jpg",
+      "caption": "TEKNOFEST 2026 finali — Mardin, LUNA İKA",
+      "category": "Yarışma"
+    },
+    {
+      "image": "/media/haber-teknofest-2026-gaziantep.jpg",
+      "caption": "TEKNOFEST 2026 finali — Gaziantep, MATRİS",
+      "category": "Yarışma"
+    },
+    {
+      "image": "/media/haber-mavi-vatan-finalistleri.jpg",
+      "caption": "Mavi Vatan finalisti takımlarımız: Lodos, Zemheri ve Prusa",
+      "category": "Yarışma"
+    },
+    {
+      "image": "/media/haber-yks-tercih-2026.jpg",
+      "caption": "Topluluk anılarımızdan bir kolaj",
+      "category": "Etkinlik"
+    },
     {
       "image": "/media/atolye-araclar.jpg",
       "caption": "Atölyemizde sergilenen proje araçlarımız",
@@ -109,21 +134,6 @@
     {
       "image": "/media/haber-bahar-piknigi.jpg",
       "caption": "Bahar pikniğimiz",
-      "category": "Etkinlik"
-    },
-    {
-      "image": "/media/haber-teknofest-2026-finalleri.jpg",
-      "caption": "TEKNOFEST 2026 finallerinde dört ayrı şehirde yarıştık",
-      "category": "Yarışma"
-    },
-    {
-      "image": "/media/haber-mavi-vatan-finalistleri.jpg",
-      "caption": "Mavi Vatan finalisti takımlarımız: Lodos, Zemheri ve Prusa",
-      "category": "Yarışma"
-    },
-    {
-      "image": "/media/haber-yks-tercih-2026.jpg",
-      "caption": "Topluluk anılarımızdan bir kolaj",
       "category": "Etkinlik"
     }
   ]

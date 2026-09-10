@@ -13,6 +13,8 @@ const teams = defineCollection({
     status: z.enum(['Aktif', 'Yeni Takım', 'Arşiv']).default('Aktif'),
     order: z.number().default(99),
     image: z.string().default(''),
+    /** Kart üzerinde görünen ek etiket. Örn: "2026 Finalisti" */
+    badge: z.string().default(''),
     focus: z.array(z.string()).default([]),
     achievements: z.array(z.string()).default([]),
     summary: z.string().default(''),

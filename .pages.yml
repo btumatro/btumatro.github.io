@@ -365,6 +365,10 @@ content:
         default: 99
         description: Küçük sayı üstte görünür.
       - { name: image, label: Takım görseli, type: image }
+      - name: badge
+        label: Ek etiket
+        type: string
+        description: "Kartın üzerinde görünen küçük rozet. Örn: 2026 Finalisti. Boş bırakılabilir."
       - name: focus
         label: Odak alanları
         type: string
@@ -473,16 +477,12 @@ content:
         description: Kademelerin BTÜ resmî formuna dayandığını belirten küçük punto açıklama.
 
       - name: officialForm
-        label: Resmî Sponsorluk Formu
+        label: Sponsorluk Süreci
         type: object
+        description: Sponsorluk adımları. Resmî BTÜ formu siteye KONULMAZ; firmalar önce bizimle iletişime geçer.
         fields:
           - { name: title, label: Başlık, type: string }
           - { name: description, label: Açıklama, type: text }
-          - name: fileUrl
-            label: Form dosyası (PDF)
-            type: file
-            description: BTÜ Sponsorluk Formu. Yenisi yayımlanırsa buradan değiştirin.
-          - { name: buttonLabel, label: İndirme butonu yazısı, type: string }
           - name: steps
             label: Sponsorluk Adımları
             type: object

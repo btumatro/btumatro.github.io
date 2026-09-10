@@ -2,6 +2,7 @@
 import { getCollection, render, type CollectionEntry } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import CtaBand from '../../components/CtaBand.astro';
+import BasvuruButonlari from '../../components/BasvuruButonlari.astro';
 import { url, media } from '../../lib/utils';
 
 export async function getStaticPaths() {
@@ -56,6 +57,13 @@ const others = (await getCollection('teams'))
             team.data.status === 'Yeni Takım' && (
               <span class="rounded-md bg-volt-400/90 px-2.5 py-1 font-mono text-[0.65rem] font-semibold tracking-wider text-ink-950 uppercase">
                 Yeni Takım
+              </span>
+            )
+          }
+          {
+            team.data.badge && (
+              <span class="rounded-md bg-medal-500/90 px-2.5 py-1 font-mono text-[0.65rem] font-semibold tracking-wider text-ink-950 uppercase">
+                {team.data.badge}
               </span>
             )
           }
@@ -160,8 +168,10 @@ const others = (await getCollection('teams'))
 
   <CtaBand
     title={`${team.data.title} takımında yer al`}
-    description="Başvuru formunda ilgilendiğin takımı belirtmen yeterli."
+    description="Takım ön başvuru formunda en fazla üç takım tercihi yapabilirsin."
     primary={{ label: 'Bize Katılın', href: '/bize-katilin' }}
     secondary={{ label: 'İletişim', href: '/iletisim' }}
-  />
+  >
+    <BasvuruButonlari align="center" class="mt-10 border-t border-white/8 pt-8" />
+  </CtaBand>
 </BaseLayout>

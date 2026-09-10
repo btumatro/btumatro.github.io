@@ -5,6 +5,7 @@ import PageHero from '../../components/PageHero.astro';
 import Section from '../../components/Section.astro';
 import TeamCard from '../../components/TeamCard.astro';
 import CtaBand from '../../components/CtaBand.astro';
+import BasvuruButonlari from '../../components/BasvuruButonlari.astro';
 import about from '../../data/about.json';
 
 const teams = (await getCollection('teams'))
@@ -49,6 +50,7 @@ const categories = [...new Set(teams.map((t) => t.data.category))].sort((a, b) =
             subtitle={team.data.subtitle}
             category={team.data.category}
             status={team.data.status}
+            badge={team.data.badge}
             summary={team.data.summary}
             image={team.data.image}
             focus={team.data.focus}
@@ -84,5 +86,7 @@ const categories = [...new Set(teams.map((t) => t.data.category))].sort((a, b) =
     description="Bölüm ayrımı yok. Başvurunda ilgilendiğin alanı belirt, seni doğru takıma yönlendirelim."
     primary={{ label: 'Bize Katılın', href: '/bize-katilin' }}
     secondary={{ label: 'Başarılarımız', href: '/basarilarimiz' }}
-  />
+  >
+    <BasvuruButonlari align="center" class="mt-10 border-t border-white/8 pt-8" />
+  </CtaBand>
 </BaseLayout>

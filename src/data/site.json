@@ -15,28 +15,28 @@
   },
   "people": [
     {
-      "role": "Akademik Danışman",
-      "name": "Doç. Dr. Mehmet Onur GENÇ",
-      "title": "Mühendislik ve Doğa Bilimleri Fakültesi — Mekatronik Mühendisliği Bölümü",
-      "phone": "",
-      "email": "onur.genc@btu.edu.tr",
-      "profileUrl": "https://sayfam.btu.edu.tr/onur.genc"
-    },
-    {
-      "role": "Topluluk Danışman Mühendisi",
-      "name": "Muhammed ATAMAN",
-      "title": "",
-      "phone": "+90 546 204 8189",
-      "email": "muhatmn@hotmail.com",
-      "profileUrl": ""
-    },
-    {
       "role": "Topluluk Başkanı",
       "name": "Irmak KARAAĞAÇ",
       "title": "",
       "phone": "",
       "email": "irmakkaraagac@hotmail.com",
       "profileUrl": ""
+    },
+    {
+      "role": "Topluluk Danışman Mühendisi",
+      "name": "Muhammed ATAMAN",
+      "title": "",
+      "phone": "",
+      "email": "muhatmn@hotmail.com",
+      "profileUrl": ""
+    },
+    {
+      "role": "Akademik Danışman",
+      "name": "Doç. Dr. Mehmet Onur GENÇ",
+      "title": "Mühendislik ve Doğa Bilimleri Fakültesi — Mekatronik Mühendisliği Bölümü",
+      "phone": "",
+      "email": "",
+      "profileUrl": "https://sayfam.btu.edu.tr/onur.genc"
     }
   ],
   "social": [

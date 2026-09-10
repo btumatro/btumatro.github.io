@@ -3,8 +3,9 @@ title: ALHAZEN
 subtitle: Çevre ve Enerji Teknolojileri
 category: Çevre & Enerji
 status: Aktif
-order: 6
+order: 12
 image: ""
+badge: ""
 focus:
   - Yenilenebilir enerji sistemleri
   - Enerji depolama ve verimliliği

@@ -3,8 +3,9 @@ title: SANAYİDE DİJİTAL TEKNOLOJİLER
 subtitle: Endüstri 4.0 ve Dijital İkiz
 category: Dijital Teknolojiler
 status: Aktif
-order: 12
+order: 7
 image: "/media/takim-sanayide-dijital.jpg"
+badge: "2026 Finalisti"
 focus:
   - Endüstri 4.0 uygulamaları
   - Nesnelerin interneti (IoT)

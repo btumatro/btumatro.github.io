@@ -1,0 +1,79 @@
+---
+/**
+ * Açık başvuru formlarının butonları.
+ *
+ * Formlar `src/data/join.json` → `applications` alanından okunur; panelden
+ * eklenen her form otomatik olarak buraya da yansır. Form listesi boşsa
+ * bileşen hiçbir şey basmaz, sayfa düzeni bozulmaz.
+ *
+ *   variant="satir"  → yan yana butonlar (sayfa altı çağrıları için)
+ *   variant="kart"   → açıklamalı kartlar (Bize Katılın sayfası için)
+ */
+import join from '../data/join.json';
+
+interface Props {
+  variant?: 'satir' | 'kart';
+  class?: string;
+  align?: 'left' | 'center';
+}
+const { variant = 'satir', class: className = '', align = 'left' } = Astro.props;
+
+const applications = (join.applications ?? []).filter((a) => a.url?.trim());
+const period = join.applicationPeriod?.trim();
+---
+
+{
+  applications.length > 0 &&
+    (variant === 'kart' ? (
+      <div class:list={['grid gap-4 md:grid-cols-3', className]}>
+        {applications.map((a, i) => (
+          <article class="card reveal flex flex-col p-6" data-delay={i * 60}>
+            <span class="font-mono text-[0.62rem] tracking-[0.2em] text-mist-500 uppercase">
+              {String(i + 1).padStart(2, '0')}
+            </span>
+            <h3 class="mt-2 text-base font-bold text-mist-100">{a.title}</h3>
+            <p class="mt-2 flex-1 text-sm leading-relaxed text-mist-500">{a.description}</p>
+            <a
+              href={a.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="mt-5 inline-block rounded-xl border border-white/15 px-4 py-2.5 text-center text-sm font-semibold text-mist-100 transition-colors hover:border-volt-400/50 hover:text-volt-300"
+            >
+              {a.buttonLabel}
+            </a>
+          </article>
+        ))}
+      </div>
+    ) : (
+      <div class:list={['reveal', className]}>
+        {period && (
+          <p
+            class:list={[
+              'flex flex-wrap items-center gap-2 font-mono text-[0.62rem] tracking-[0.18em] text-mist-500 uppercase',
+              align === 'center' && 'justify-center',
+            ]}
+          >
+            <span class="inline-block h-1.5 w-1.5 shrink-0 rounded-full bg-volt-400" aria-hidden="true" />
+            {period}
+          </p>
+        )}
+        <div
+          class:list={[
+            'mt-4 flex flex-wrap gap-2.5',
+            align === 'center' && 'justify-center',
+          ]}
+        >
+          {applications.map((a) => (
+            <a
+              href={a.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="rounded-xl border border-white/15 px-4 py-2.5 text-sm font-semibold text-mist-100 transition-colors hover:border-volt-400/50 hover:text-volt-300"
+            >
+              {a.title}
+            </a>
+          ))}
+        </div>
+      </div>
+    ))
+}

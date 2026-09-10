@@ -3,8 +3,9 @@ title: BÜRKÜT
 subtitle: Uçan Araba Simülasyonu
 category: Simülasyon & Otonomi
 status: Aktif
-order: 4
+order: 10
 image: "/media/renault-twizy.jpg"
+badge: ""
 focus:
   - Otonom uçuş simülasyonları
   - Kalman filtresi tabanlı sensör füzyonu

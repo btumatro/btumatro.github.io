@@ -78,30 +78,28 @@
     "description": "Sponsorluk dosyamızı ve bu yılki proje hedeflerimizi içeren sunumumuzu sizinle paylaşalım.",
     "buttonLabel": "Sponsorluk için iletişime geçin"
   },
-  "packagesNote": "Kademeler ve haklar, Bursa Teknik Üniversitesi resmî Sponsorluk Formu'na (Form No: SKS-001) göre belirlenmiştir. Tanıtım standlarında satış ve pazarlama yapılamaz. Sponsorluk görsellerinde logo paylaşımları sponsorluk derecesine göre belirlenir.",
+  "packagesNote": "Kademeler ve sponsor firmaya tanınan haklar, Bursa Teknik Üniversitesi'nin resmî sponsorluk yönergesine göre belirlenmiştir. Tanıtım standlarında satış ve pazarlama yapılamaz. Sponsorluk görsellerinde logo paylaşımları sponsorluk derecesine göre belirlenir.",
   "officialForm": {
-    "title": "BTÜ Sponsorluk Formu",
-    "description": "Sponsorluk süreci, Bursa Teknik Üniversitesi Rektörlüğü'ne sunulan resmî form ile yürütülür. Formda kademeler, sponsor firmaya tanınan haklar ve nakit bağış hesabı bilgileri yer alır.",
-    "fileUrl": "/media/btu-sponsorluk-formu.pdf",
-    "buttonLabel": "Sponsorluk formunu indir (PDF)",
+    "title": "Sponsorluk süreci nasıl işliyor?",
+    "description": "Sponsorluk, Bursa Teknik Üniversitesi Rektörlüğü'ne sunulan resmî bir form ile kayda geçer. Formu, ilgili tüm belgeleri ve bağış hesabı bilgilerini görüşmemizin ardından size biz iletiyoruz.",
     "steps": [
       {
-        "title": "Kademeyi belirleyin",
-        "description": "Vereceğiniz ayni ve nakdi desteğin tutarına göre platin, altın, gümüş veya bronz kademelerden birini seçin."
+        "title": "Bizimle iletişime geçin",
+        "description": "Sponsorluk ekibimize yazın. Markanızın hedeflerini ve destek vermek istediğiniz alanı birlikte belirleyelim."
       },
       {
-        "title": "Formu doldurun",
-        "description": "BTÜ Sponsorluk Formu'nu firma unvanı, kaşe ve imza ile doldurun; ayni destek türü ile nakdi destek tutarını belirtin."
+        "title": "Kademeyi birlikte belirleyelim",
+        "description": "Vereceğiniz ayni ve nakdi desteğin tutarına göre platin, altın, gümüş veya bronz kademelerden birine karar verelim."
       },
       {
-        "title": "Formu iletin",
-        "description": "Doldurduğunuz formu topluluk e-posta adresimize gönderin; süreci üniversitemizle birlikte biz yürütelim."
+        "title": "Resmî formu size iletelim",
+        "description": "Üniversitemizin sponsorluk formunu ve bağış bilgilerini size gönderelim; süreci baştan sona birlikte yürütelim."
       },
       {
-        "title": "Logonuzu gönderin",
-        "description": "Logonuzun vektörel halini bağışın ardından sksdb@btu.edu.tr adresine iletin. Logo gönderilmediğinde firmanın web sitesindeki logo kullanılır."
+        "title": "Logonuzu paylaşın",
+        "description": "Logonuzun vektörel halini iletin; yarışma alanında, araçlarda ve tüm tanıtım görsellerinde doğru şekilde kullanılsın."
       }
     ],
-    "note": "Nakit olarak yapılacak şartlı bağış dekontlarına, desteğin hangi topluluk ve takımın harcamalarında kullanılacağı açıklama olarak yazılmalıdır. Bağış hesabı bilgileri formun içinde yer alır."
+    "note": "Nakit destekler üniversitemizin şartlı bağış hesabı üzerinden kayda alınır ve doğrudan topluluğumuzun harcamalarında kullanılır. Hesap bilgilerini ve resmî formu iletişim kurduğunuzda paylaşıyoruz."
   }
 }

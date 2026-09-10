@@ -36,6 +36,7 @@ const test = {
 const jobs = [
   // Luna Robotics 2025-2026'da platin sponsor oldu; logoyu yeni platin duyurusundan alıyoruz.
   ['sponsor-platin-luna-robotics.jpg', 'luna-robotics', 540, 676, 'beyaz', 292],
+  ['sponsor-platin-tekyaz.jpg', 'tekyaz', 540, 676, 'beyaz', 292],
 
   ['sponsor-altin.jpg', 'kayra-yemek', 258, 960, 'beyaz', 168],
   ['sponsor-altin.jpg', 'biyolift', 822, 962, 'beyaz', 168],

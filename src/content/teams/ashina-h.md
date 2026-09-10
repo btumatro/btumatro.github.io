@@ -3,8 +3,9 @@ title: GÖKSAV
 subtitle: Hava Savunma Sistemleri (ASHİNA-H)
 category: Savunma
 status: Aktif
-order: 2
+order: 8
 image: "/media/takim-goksav.jpg"
+badge: ""
 focus:
   - Hava savunma sistem entegrasyonu
   - Radar ve sensör takibi

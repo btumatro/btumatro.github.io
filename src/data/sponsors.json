@@ -21,6 +21,15 @@
       "logoKaynak": ""
     },
     {
+      "name": "TEKYAZ",
+      "package": "Platin",
+      "type": "Yazılım / Lisans",
+      "amount": "",
+      "logo": "/media/logolar/tekyaz.png",
+      "website": "",
+      "logoKaynak": ""
+    },
+    {
       "name": "KAYRA YEMEK",
       "package": "Altın",
       "type": "Nakit",
@@ -140,7 +149,6 @@
   ],
   "past": [
     "Gelecek Evimde",
-    "TEKYAZ",
     "Epsan",
     "ER Metal",
     "Aquapol",
@@ -159,6 +167,10 @@
       {
         "image": "/media/sponsor-platin-luna-robotics.jpg",
         "caption": "Platin Sponsor — LUNA ROBOTICS"
+      },
+      {
+        "image": "/media/sponsor-platin-tekyaz.jpg",
+        "caption": "Platin Sponsor — TEKYAZ"
       },
       {
         "image": "/media/sponsor-altin.jpg",

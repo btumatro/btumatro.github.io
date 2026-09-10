@@ -3,8 +3,9 @@ title: MATROVER & LUNA
 subtitle: İnsansız ve Tarımsal İnsansız Kara Araçları
 category: Kara Araçları
 status: Aktif
-order: 7
-image: "/media/takim-matrover.jpg"
+order: 2
+image: "/media/takim-luna-ika.jpg"
+badge: "2026 Finalisti"
 focus:
   - Otonom arazi sürüşü
   - Haritalama ve rota planlama

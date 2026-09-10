@@ -6,6 +6,7 @@ import StatGrid from '../components/StatGrid.astro';
 import TeamCard from '../components/TeamCard.astro';
 import VideoEmbed from '../components/VideoEmbed.astro';
 import CtaBand from '../components/CtaBand.astro';
+import BasvuruButonlari from '../components/BasvuruButonlari.astro';
 import home from '../data/home.json';
 import achievements from '../data/achievements.json';
 import sponsors from '../data/sponsors.json';
@@ -163,6 +164,7 @@ const heroBg = media(home.hero.backgroundImage);
             subtitle={team.data.subtitle}
             category={team.data.category}
             status={team.data.status}
+            badge={team.data.badge}
             summary={team.data.summary}
             image={team.data.image}
             focus={team.data.focus}
@@ -306,5 +308,7 @@ const heroBg = media(home.hero.backgroundImage);
     description="Teknolojiye meraklı, sorumluluk sahibi ve takım çalışmasına inanan tüm BTÜ öğrencilerini aramıza bekliyoruz."
     primary={{ label: 'Bize Katılın', href: '/bize-katilin' }}
     secondary={{ label: 'İletişime Geçin', href: '/iletisim' }}
-  />
+  >
+    <BasvuruButonlari align="center" class="mt-10 border-t border-white/8 pt-8" />
+  </CtaBand>
 </BaseLayout>
