@@ -13,7 +13,9 @@ import { teamIndex } from '../lib/utils';
 const items = achievements.items;
 const takimDizini = teamIndex(await getCollection('teams'));
 const years = [...new Set(items.map((i) => i.year))];
-const firstPlaces = items.filter((i) => i.degree.includes('1.')).length;
+// "31.lik" gibi kayıtlar birinciliğe sayılmasın diye 1'in önünde rakam olmamalı
+const firstPlaces = items.filter((i) => /(^|[^0-9])1\./.test(i.degree)).length;
+const finalists2026 = items.filter((i) => i.year === 2026 && /finalist/i.test(i.degree)).length;
 const international = items.filter((i) =>
   /dünya|singapore|france|nasa|italian|uluslararası|bölge/i.test(`${i.competition} ${i.degree}`)
 ).length;
@@ -24,7 +26,7 @@ const stats = [
   { value: international, suffix: '', label: 'Uluslararası Başarı', note: 'Dünya çapında' },
   { value: 342, suffix: '', label: 'Finalist Yarışmacı', note: '2020–2025' },
   { value: 35, suffix: '', label: "İlk 10'a Giren Takım", note: '2020–2025' },
-  { value: 22, suffix: '', label: 'Ödül ve Derece', note: '2020–2025' },
+  { value: finalists2026, suffix: '', label: 'TEKNOFEST Finalisti', note: '2026 sezonu' },
 ];
 ---
 

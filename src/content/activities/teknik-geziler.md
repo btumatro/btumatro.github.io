@@ -7,8 +7,8 @@ order: 2
 image: "/media/gezi-togg.jpg"
 stats:
   - label: Ziyaret Edilen Kurum
-    value: "13+"
-summary: "TUSAŞ, TOGG, Toyota, ASELSAN, TEI, TÜBİTAK SAGE ve daha fazlasına düzenlediğimiz vizyon gezileriyle üyelerimizi sanayi ile buluşturuyoruz."
+    value: "15+"
+summary: "TUSAŞ, TOGG, ASELSAN, TEI, Turkish Technic, Ermetal, HKTM ve Alp Havacılık gibi kuruluşlara düzenlediğimiz vizyon gezileriyle üyelerimizi sanayi ile buluşturuyoruz."
 ---
 
 Üyelerimizin mühendislik pratiğini sahada görmesi için Türkiye'nin önde gelen teknoloji ve üretim kuruluşlarına düzenli teknik geziler düzenliyoruz.
