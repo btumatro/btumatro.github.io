@@ -1,4 +1,5 @@
 ---
+import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import PageHero from '../components/PageHero.astro';
 import Section from '../components/Section.astro';
@@ -6,9 +7,13 @@ import CtaBand from '../components/CtaBand.astro';
 import sponsorship from '../data/sponsorship.json';
 import sponsors from '../data/sponsors.json';
 import site from '../data/site.json';
-import { url, media, packageTone, instagramUrl } from '../lib/utils';
+import { url, media, packageTone, instagramUrl, publishedNews } from '../lib/utils';
 
 const mailto = `mailto:${site.contact.emails[0]}?subject=${encodeURIComponent('Sponsorluk Başvurusu — MATRO')}`;
+const sponsorNews = publishedNews(await getCollection('haberler')).filter(
+  (entry) => entry.data.type === 'Sponsorluk',
+);
+const dateFmt = new Intl.DateTimeFormat('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' });
 ---
 
 <BaseLayout
@@ -164,6 +169,53 @@ const mailto = `mailto:${site.contact.emails[0]}?subject=${encodeURIComponent('S
                 </figcaption>
               )}
             </figure>
+          ))}
+        </div>
+      </Section>
+    )
+  }
+
+  <!-- Sponsorluk haberleri -->
+  {
+    sponsorNews.length > 0 && (
+      <Section
+        eyebrow="Sponsorluk Haberleri"
+        title="Bize güç veren iş birlikleri"
+        description="Sponsorlarımızla kurduğumuz iş birliklerini ve destek duyurularını burada bulabilirsiniz."
+        class="pt-0"
+      >
+        <div class="mt-8 grid gap-3 md:grid-cols-2">
+          {sponsorNews.map(({ data }, i) => (
+            <article class="card reveal grid grid-cols-[5.5rem_1fr] gap-4 p-3" data-delay={(i % 2) * 55}>
+              {media(data.image) ? (
+                <img
+                  src={media(data.image)!}
+                  alt={data.title}
+                  loading="lazy"
+                  decoding="async"
+                  class="h-24 w-full rounded-lg object-cover"
+                />
+              ) : (
+                <div class="grid-bg h-24 rounded-lg" aria-hidden="true"></div>
+              )}
+              <div class="min-w-0 py-1">
+                <time datetime={data.date.toISOString()} class="font-mono text-[0.62rem] text-mist-500">
+                  {dateFmt.format(data.date)}
+                </time>
+                <h3 class="mt-1 text-sm font-bold leading-snug text-mist-100">{data.title}</h3>
+                <p class="mt-1 line-clamp-2 text-xs leading-relaxed text-mist-500">{data.summary}</p>
+                {data.link && (
+                  <a
+                    href={data.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="mt-2 inline-block text-xs font-semibold text-volt-400 hover:text-volt-300"
+                  >
+                    Gönderiyi gör →
+                  </a>
+                )}
+              </div>
+            </article>
           ))}
         </div>
       </Section>

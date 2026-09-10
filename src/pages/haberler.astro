@@ -6,7 +6,9 @@ import Section from '../components/Section.astro';
 import { publishedNews, url } from '../lib/utils';
 import MediaGaleri from '../components/MediaGaleri.astro';
 
-const entries = publishedNews(await getCollection('haberler'));
+const entries = publishedNews(await getCollection('haberler')).filter(
+  (entry) => entry.data.type !== 'Sponsorluk',
+);
 const rendered = await Promise.all(
   entries.map(async (entry) => ({ entry, Content: (await render(entry)).Content }))
 );
