@@ -10,8 +10,9 @@ focus:
   - Rotalandırma ve seyir algoritmaları
   - Keşif ve gözetleme sistemleri
 achievements:
+  - "TEKNOFEST 2026 ASELSAN İnsansız Deniz Aracı — Türkiye Finalisti (LODOS)"
   - "TEKNOFEST 2025 ASELSAN İnsansız Deniz Aracı — Türkiye Finalisti"
-summary: "TEKNOFEST 2025 İnsansız Deniz Aracı yarışmasında finale kalan; deniz üstü otonom seyir ve keşif sistemleri geliştiren takımımız."
+summary: "LODOS ekibiyle 2025 ve 2026 TEKNOFEST İnsansız Deniz Aracı yarışmalarında finale kalan; deniz üstü otonom seyir ve keşif sistemleri geliştiren takımımız."
 ---
 
 İnsansız Deniz Aracı takımı, su üstü platformlarında otonom seyir ve görev kabiliyeti geliştirmeye odaklanır.
@@ -24,4 +25,4 @@ summary: "TEKNOFEST 2025 İnsansız Deniz Aracı yarışmasında finale kalan; d
 
 ## Başarı
 
-Takım, **TEKNOFEST 2025 ASELSAN İnsansız Deniz Aracı Yarışması**'nda **Türkiye finalisti** olmuştur.
+Takım, **TEKNOFEST 2025 ASELSAN İnsansız Deniz Aracı Yarışması**'nda **Türkiye finalisti** olmuştur. 2026 sezonunda **LODOS** ekibimiz aynı kategoride yeniden Türkiye finalisti oldu.

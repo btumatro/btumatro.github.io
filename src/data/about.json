@@ -72,17 +72,16 @@
     }
   ],
   "goals2026": {
-    "title": "2026 yarışma hedeflerimiz",
-    "description": "Önümüzdeki dönemde sekiz ayrı ulusal ve uluslararası yarışma kategorisinde ülkemizi ve üniversitemizi temsil etmeyi hedefliyoruz.",
+    "title": "2026-2027 yarışma hedeflerimiz",
+    "description": "2026-2027 döneminde yedi ayrı yarışma takımıyla ulusal ve uluslararası arenada üniversitemizi temsil etmeyi hedefliyoruz. Takım ön başvurularında bu kategoriler arasından en fazla üç tercih yapılabiliyor.",
     "items": [
-      "Rover Challenge",
-      "İnsansız Sualtı Aracı",
       "İnsansız Kara Aracı",
+      "İnsansız Su Altı",
       "İnsansız Deniz Aracı",
-      "Sürü İnsansız Hava Aracı",
-      "Sanayide Dijital Teknolojiler",
       "Hava Savunma Sistemleri",
-      "Girişimcilik Yarışması"
+      "Sanayide Dijital Teknolojiler",
+      "Sürü İHA",
+      "Serbest İHA"
     ]
   }
 }

@@ -1,6 +1,94 @@
 {
-  "intro": "Topluluğumuz 2020-2025 döneminde 35 takımı ile ilk 10'a girdi, 342 yarışmacı ile finalist oldu ve 22 derece ile özel ödül kazandı. Aşağıda 2013'ten bugüne kazanılan tüm dereceler yer alıyor.",
+  "intro": "Topluluğumuz 2020-2025 döneminde 35 takımı ile ilk 10'a girdi, 342 yarışmacı ile finalist oldu ve 22 derece ile özel ödül kazandı. 2026 sezonunda ise sekiz takımımız TEKNOFEST finallerinde üniversitemizi temsil etti. Aşağıda 2013'ten bugüne kazanılan tüm dereceler yer alıyor.",
   "items": [
+    {
+      "year": 2026,
+      "competition": "TEKNOFEST — TÜBİTAK",
+      "category": "Uluslararası İnsansız Hava Araçları",
+      "degree": "Türkiye Finalisti",
+      "team": "ASHİNA",
+      "featured": true
+    },
+    {
+      "year": 2026,
+      "competition": "TEKNOFEST — ASELSAN",
+      "category": "İnsansız Kara Aracı",
+      "degree": "Türkiye Finalisti",
+      "team": "LUNA İKA",
+      "featured": false
+    },
+    {
+      "year": 2026,
+      "competition": "TEKNOFEST — ASELSAN",
+      "category": "İnsansız Deniz Aracı",
+      "degree": "Türkiye Finalisti",
+      "team": "LODOS",
+      "featured": false
+    },
+    {
+      "year": 2026,
+      "competition": "TEKNOFEST — ASELSAN",
+      "category": "İnsansız Sualtı Aracı",
+      "degree": "Türkiye Finalisti",
+      "team": "PRUSA",
+      "featured": false
+    },
+    {
+      "year": 2026,
+      "competition": "TEKNOFEST — ROKETSAN",
+      "category": "Su Altı Roket Yarışması",
+      "degree": "Türkiye Finalisti",
+      "team": "ZEMHERİ",
+      "featured": true
+    },
+    {
+      "year": 2026,
+      "competition": "TEKNOFEST — HAVELSAN",
+      "category": "Sürü İnsansız Hava Aracı",
+      "degree": "Türkiye Finalisti",
+      "team": "MATRİS",
+      "featured": false
+    },
+    {
+      "year": 2026,
+      "competition": "TEKNOFEST — KOSGEB",
+      "category": "Sanayide Robotik Uygulamalar",
+      "degree": "Türkiye Finalisti",
+      "team": "PUSULA",
+      "featured": false
+    },
+    {
+      "year": 2026,
+      "competition": "TEKNOFEST — Mesleki Yetenek Yarışması",
+      "category": "Akıllı Fabrika Sistemleri Programlama",
+      "degree": "Türkiye Finalisti",
+      "team": "ANDROMEDA",
+      "featured": false
+    },
+    {
+      "year": 2026,
+      "competition": "Genç MÜSİAD — Genç Ticaret Elçileri",
+      "category": "Girişimcilik",
+      "degree": "1.lik",
+      "team": "",
+      "featured": true
+    },
+    {
+      "year": 2026,
+      "competition": "Türkiye Uzay Ajansı — Astro Hackathon",
+      "category": "Uzay Teknolojileri",
+      "degree": "5.lik",
+      "team": "SCENDERS",
+      "featured": false
+    },
+    {
+      "year": 2025,
+      "competition": "Advance-Up Hackathon",
+      "category": "Girişimcilik",
+      "degree": "3.lük",
+      "team": "SYNTAX",
+      "featured": false
+    },
     {
       "year": 2025,
       "competition": "TEKNOFEST — ASELSAN",
@@ -43,10 +131,10 @@
     },
     {
       "year": 2025,
-      "competition": "TEKNOFEST — PUSULA",
+      "competition": "TEKNOFEST",
       "category": "Sanayide Dijital Teknolojiler",
       "degree": "Türkiye 8.si",
-      "team": "",
+      "team": "PUSULA",
       "featured": false
     },
     {

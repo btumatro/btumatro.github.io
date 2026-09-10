@@ -1,25 +1,25 @@
 ---
-title: Yeni Dönem Yönetim Kurulu Başvuruları Açıldı
+title: 2026-2027 Yönetim Kurulu başvuruları açıldı
 type: Başvuru
-date: 2026-09-15
-expiresOn: ""
+date: 2026-09-10
+expiresOn: "2026-10-31"
 pinned: true
-draft: true
+draft: false
 image: "/media/haber-uye-alimi.jpg"
-link: ""
-linkLabel: "Başvuru formu"
-summary: "Topluluğumuzun gelişimine yön veren, sorumluluk almayı seven ve üretken bir ekibin parçası olmak istiyorsan seni de aramızda görmek isteriz."
+link: "https://docs.google.com/forms/d/e/1FAIpQLSffLpElNfRvIGQfX_p_teSanTIgPmtRn225CGaGmIq9laHvXg/viewform"
+linkLabel: "Yönetim kurulu başvuru formu"
+summary: "Topluluğumuzun gelişimine yön veren, sorumluluk almayı seven ve üretken bir ekibin parçası olmak istiyorsan 2026-2027 dönemi yönetim kurulu başvuruları açıldı."
 ---
 
-Makine Teknolojileri Robot ve Otomasyon Topluluğu olarak yeni dönem **Yönetim Kurulu başvuruları** devam ediyor! 🚀
+Makine Teknolojileri Robot ve Otomasyon Topluluğu olarak **2026-2027 dönemi Yönetim Kurulu başvurularını** açtık.
 
-Topluluğumuzun gelişimine yön veren, sorumluluk almayı seven ve üretken bir ekibin parçası olmak istiyorsan seni de aramızda görmek isteriz.
+MATRO'nun çalışmalarında aktif rol almak, sorumluluk üstlenmek ve topluluğumuzun geleceğine birlikte yön vermek isteyen arkadaşlarımızı aramızda görmek isteriz.
 
-## Hangi ekiplere başvurabilirsin?
+## Hangi birime başvurabilirsin?
 
-- **Atölye Ekibi** — Atölye düzeni ve denetiminden, takımlar arası iletişimden ve takım koordinasyonluğundan sorumludur.
-- **Sponsorluk Ekibi** — Topluluğun ihtiyaçlarını karşılamak için iş birlikleri kurarak sponsorluk süreçlerini yürütür.
-- **Organizasyon Ekibi** — Etkinlikler planlar ve etkinlik süreçleri organize ederek topluluk içi faaliyetleri güçlendirir.
-- **Sosyal Medya Ekibi** — Topluluğun dijital yüzünü oluşturur, paylaşımlar ve içeriklerle görünürlüğü artırır.
+- **Takım ve Atölye Birimi** — Yarışma takımlarını ve atölye işleyişini koordine eder; atölye düzeni, denetimi ve takımlar arası iletişimden sorumludur.
+- **Sponsorluk Birimi** — Kurumsal iş birliklerini ve sanayi ilişkilerini yürüterek topluluğun ihtiyaçlarını karşılar.
+- **Organizasyon Birimi** — Etkinlik, seminer, yarışma ve teknik gezi süreçlerinin tamamını planlar ve yürütür.
+- **Sosyal Medya ve Tasarım Birimi** — Topluluğun dijital yüzünü oluşturur; içerik ve tasarımlarla görünürlüğü artırır.
 
-Sorularını Instagram hesabımızdan iletebilir veya atölyemize uğrayabilirsin.
+Başvurunu yukarıdaki form üzerinden iletebilir, sorularını Instagram hesabımızdan sorabilir veya atölyemize uğrayabilirsin.

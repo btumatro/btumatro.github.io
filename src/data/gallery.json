@@ -110,6 +110,21 @@
       "image": "/media/haber-bahar-piknigi.jpg",
       "caption": "Bahar pikniğimiz",
       "category": "Etkinlik"
+    },
+    {
+      "image": "/media/haber-teknofest-2026-finalleri.jpg",
+      "caption": "TEKNOFEST 2026 finallerinde dört ayrı şehirde yarıştık",
+      "category": "Yarışma"
+    },
+    {
+      "image": "/media/haber-mavi-vatan-finalistleri.jpg",
+      "caption": "Mavi Vatan finalisti takımlarımız: Lodos, Zemheri ve Prusa",
+      "category": "Yarışma"
+    },
+    {
+      "image": "/media/haber-yks-tercih-2026.jpg",
+      "caption": "Topluluk anılarımızdan bir kolaj",
+      "category": "Etkinlik"
     }
   ]
 }

@@ -13,7 +13,7 @@
     },
     {
       "name": "LUNA ROBOTICS",
-      "package": "Altın",
+      "package": "Platin",
       "type": "Nakit + Hizmet + Malzeme",
       "amount": "200.000 TL",
       "logo": "/media/logolar/luna-robotics.png",
@@ -155,6 +155,10 @@
       {
         "image": "/media/sponsor-platin-vatanjet.jpg",
         "caption": "Platin Sponsor"
+      },
+      {
+        "image": "/media/sponsor-platin-luna-robotics.jpg",
+        "caption": "Platin Sponsor — LUNA ROBOTICS"
       },
       {
         "image": "/media/sponsor-altin.jpg",

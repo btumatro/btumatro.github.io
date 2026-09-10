@@ -34,7 +34,9 @@ const test = {
 
 // [dosya, çıktı adı, yaklaşık merkez X, yaklaşık merkez Y, disk tipi, beklenen yarıçap]
 const jobs = [
-  ['sponsor-altin.jpg', 'luna-robotics', 553, 508, 'teal', 168],
+  // Luna Robotics 2025-2026'da platin sponsor oldu; logoyu yeni platin duyurusundan alıyoruz.
+  ['sponsor-platin-luna-robotics.jpg', 'luna-robotics', 540, 676, 'beyaz', 292],
+
   ['sponsor-altin.jpg', 'kayra-yemek', 258, 960, 'beyaz', 168],
   ['sponsor-altin.jpg', 'biyolift', 822, 962, 'beyaz', 168],
 

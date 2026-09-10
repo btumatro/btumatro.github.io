@@ -11,6 +11,7 @@ focus:
   - Otonom fırlatma devresi
   - Yerli fırçasız motor üretimi
 achievements:
+  - "TEKNOFEST 2026 TÜBİTAK Uluslararası İnsansız Hava Araçları — Türkiye Finalisti (ASHİNA)"
   - "TEKNOFEST 2024 Uluslararası Serbest Görev İHA — Türkiye 19.su (685 takım arasından finalist)"
   - "TEKNOFEST 2023 İnsansız Hava Araçları — En İyi Performans Ödülü"
   - "TEKNOFEST 2022 İnsansız Hava Araçları — Türkiye 4.sü"
@@ -35,4 +36,4 @@ Takım, **"Tamamen Otonom; Havadan Tespit, Karadan İmha"** senaryosunu uçtan u
 
 ## Güncel durum
 
-Takım, 2025 yılında **Uluslararası İHA Döner Kanat** kategorisinde yarışmaya devam etmektedir.
+Takım, TEKNOFEST 2026 **TÜBİTAK Uluslararası İnsansız Hava Araçları Yarışması**'nda Türkiye finalisti olarak Malatya'da üniversitemizi temsil etmiştir.

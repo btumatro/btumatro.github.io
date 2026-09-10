@@ -7,57 +7,101 @@
   "packages": [
     {
       "name": "Platin",
-      "range": "101.000 TL ve üzeri",
+      "range": "151.000 TL ve üzeri",
       "highlight": true,
       "benefits": [
-        "Tüm takım araçlarında en büyük boyutta logo",
-        "Web sitesi ve sosyal medyada ana sponsor görünürlüğü",
-        "Atölye ve yarışma alanında tanıtım standı hakkı",
-        "Öncelikli staj ve işe alım havuzu erişimi",
-        "Kurumsal tanıtım videosunda yer alma"
+        "Yarışma finallerinde BTÜ standının arka fonunda logo",
+        "Yarışma alanında ve yarış araçlarında logo",
+        "BTÜ web sayfası ve sosyal medya hesaplarında paylaşım",
+        "Üniversitenin uygun alanlarında pano, afiş ve görsellerde yıl boyu logo",
+        "Broşür ve basılı tanıtım materyallerinde logo",
+        "Yarışmacı tişört, bandana vb. giyim malzemelerinde logo",
+        "Üniversite içi organizasyonlarda yılda iki kez ücretsiz tanıtım standı"
       ]
     },
     {
       "name": "Altın",
-      "range": "51.000 TL – 100.000 TL",
+      "range": "81.000 TL – 150.000 TL",
       "highlight": false,
       "benefits": [
-        "Takım araçlarında büyük boyutta logo",
-        "Web sitesi ve sosyal medya paylaşımlarında yer alma",
-        "Etkinlik ve seminerlerde marka görünürlüğü",
-        "Staj ve işe alım havuzu erişimi"
+        "Yarışma finallerinde BTÜ standının arka fonunda logo",
+        "Yarışma alanında ve yarış araçlarında logo",
+        "BTÜ web sayfası ve sosyal medya hesaplarında paylaşım",
+        "Üniversitenin uygun alanlarında pano, afiş ve görsellerde yıl boyu logo",
+        "Broşür ve basılı tanıtım materyallerinde logo",
+        "Yarışmacı tişört, bandana vb. giyim malzemelerinde logo",
+        "Üniversite içi organizasyonlarda ücretsiz tanıtım standı"
       ]
     },
     {
       "name": "Gümüş",
-      "range": "26.000 TL – 50.000 TL",
+      "range": "41.000 TL – 80.000 TL",
       "highlight": false,
       "benefits": [
-        "Takım araçlarında logo",
-        "Web sitesinde sponsor listesinde yer alma",
-        "Sosyal medyada teşekkür paylaşımı"
+        "Yarışma finallerinde BTÜ standının arka fonunda logo",
+        "BTÜ web sayfası ve sosyal medya hesaplarında paylaşım",
+        "Üniversitenin uygun alanlarında pano, afiş ve görsellerde yıl boyu logo",
+        "Yarışmayla ilgili broşür ve basılı tanıtım materyallerinde logo"
       ]
     },
     {
       "name": "Bronz",
-      "range": "11.000 TL – 25.000 TL",
+      "range": "20.000 TL – 40.000 TL",
       "highlight": false,
       "benefits": [
-        "Web sitesinde sponsor listesinde yer alma",
-        "Sosyal medyada teşekkür paylaşımı",
-        "Yıllık faaliyet raporunda anılma"
+        "Yarışma finallerinde BTÜ standının arka fonunda logo",
+        "Üniversitenin uygun alanlarında pano, afiş ve görsellerde yıl boyu logo",
+        "Broşür ve basılı tanıtım materyallerinde logo"
       ]
     }
   ],
   "supportTypes": [
-    { "title": "Nakit Destek", "description": "Malzeme, üretim ve yarışma katılım giderlerinde doğrudan kullanılır." },
-    { "title": "Malzeme Desteği", "description": "Elektronik komponent, hammadde, kompozit ve mekanik parça temini." },
-    { "title": "Hizmet Desteği", "description": "Lazer kesim, CNC işleme, kalıp, kaplama, lojistik ve barınma desteği." },
-    { "title": "Ürün / Lisans Desteği", "description": "Mühendislik yazılımı lisansı, test cihazı veya ekipman tahsisi." }
+    {
+      "title": "Nakit Destek",
+      "description": "Malzeme, üretim ve yarışma katılım giderlerinde doğrudan kullanılır."
+    },
+    {
+      "title": "Malzeme Desteği",
+      "description": "Elektronik komponent, hammadde, kompozit ve mekanik parça temini."
+    },
+    {
+      "title": "Hizmet Desteği",
+      "description": "Lazer kesim, CNC işleme, kalıp, kaplama, lojistik ve barınma desteği."
+    },
+    {
+      "title": "Ürün / Lisans Desteği",
+      "description": "Mühendislik yazılımı lisansı, test cihazı veya ekipman tahsisi."
+    }
   ],
   "cta": {
     "title": "Sponsor olmak ister misiniz?",
     "description": "Sponsorluk dosyamızı ve bu yılki proje hedeflerimizi içeren sunumumuzu sizinle paylaşalım.",
     "buttonLabel": "Sponsorluk için iletişime geçin"
+  },
+  "packagesNote": "Kademeler ve haklar, Bursa Teknik Üniversitesi resmî Sponsorluk Formu'na (Form No: SKS-001) göre belirlenmiştir. Tanıtım standlarında satış ve pazarlama yapılamaz. Sponsorluk görsellerinde logo paylaşımları sponsorluk derecesine göre belirlenir.",
+  "officialForm": {
+    "title": "BTÜ Sponsorluk Formu",
+    "description": "Sponsorluk süreci, Bursa Teknik Üniversitesi Rektörlüğü'ne sunulan resmî form ile yürütülür. Formda kademeler, sponsor firmaya tanınan haklar ve nakit bağış hesabı bilgileri yer alır.",
+    "fileUrl": "/media/btu-sponsorluk-formu.pdf",
+    "buttonLabel": "Sponsorluk formunu indir (PDF)",
+    "steps": [
+      {
+        "title": "Kademeyi belirleyin",
+        "description": "Vereceğiniz ayni ve nakdi desteğin tutarına göre platin, altın, gümüş veya bronz kademelerden birini seçin."
+      },
+      {
+        "title": "Formu doldurun",
+        "description": "BTÜ Sponsorluk Formu'nu firma unvanı, kaşe ve imza ile doldurun; ayni destek türü ile nakdi destek tutarını belirtin."
+      },
+      {
+        "title": "Formu iletin",
+        "description": "Doldurduğunuz formu topluluk e-posta adresimize gönderin; süreci üniversitemizle birlikte biz yürütelim."
+      },
+      {
+        "title": "Logonuzu gönderin",
+        "description": "Logonuzun vektörel halini bağışın ardından sksdb@btu.edu.tr adresine iletin. Logo gönderilmediğinde firmanın web sitesindeki logo kullanılır."
+      }
+    ],
+    "note": "Nakit olarak yapılacak şartlı bağış dekontlarına, desteğin hangi topluluk ve takımın harcamalarında kullanılacağı açıklama olarak yazılmalıdır. Bağış hesabı bilgileri formun içinde yer alır."
   }
 }

@@ -10,6 +10,7 @@ focus:
   - Sualtı görüntü işleme
   - Sızdırmazlık ve basınç dayanımı
 achievements:
+  - "TEKNOFEST 2026 ASELSAN İnsansız Sualtı Aracı — Türkiye Finalisti (PRUSA)"
   - "TEKNOFEST 2025 ASELSAN İnsansız Sualtı Sistemleri — Türkiye Finalisti"
   - "TEKNOFEST 2024 ASELSAN İnsansız Sualtı Sistemleri — Türkiye Finalisti"
   - "Singapore SAUVC 2022 — Dünya Finalisti"
@@ -29,7 +30,7 @@ summary: "Singapur SAUVC'de dünya finaline kalan, otonom sualtı araçları gel
 
 ## Uluslararası deneyim
 
-Takım, **Singapur SAUVC (Singapore AUV Challenge) 2022**'de dünya finalisti olarak uluslararası arenada ülkemizi temsil etmiştir. TEKNOFEST ASELSAN İnsansız Sualtı Sistemleri yarışmasında 2024 ve 2025 yıllarında da finale kalmıştır.
+Takım, **Singapur SAUVC (Singapore AUV Challenge) 2022**'de dünya finalisti olarak uluslararası arenada ülkemizi temsil etmiştir. TEKNOFEST ASELSAN İnsansız Sualtı Sistemleri yarışmasında 2024 ve 2025 yıllarında finale kalmış; 2026 sezonunda **PRUSA** ekibimizle yeniden Türkiye finalisti olmuştur.
 
 ## Yerli çözümler
 

@@ -3,7 +3,7 @@ title: GİRİŞİMCİLİK VE İNOVASYON
 subtitle: Ürünleşme ve Teknoloji Girişimciliği
 category: Girişimcilik
 status: Aktif
-order: 12
+order: 13
 image: "/media/odul-girisimcilik.jpg"
 focus:
   - Teknoloji girişimciliği

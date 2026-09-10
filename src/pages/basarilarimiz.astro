@@ -18,19 +18,19 @@ const stats = [
   { value: items.length, suffix: '', label: 'Kayıtlı Derece', note: `${Math.min(...years)}–${Math.max(...years)}` },
   { value: firstPlaces, suffix: '', label: 'Birincilik', note: 'Türkiye ve bölge' },
   { value: international, suffix: '', label: 'Uluslararası Başarı', note: 'Dünya çapında' },
-  { value: 258, suffix: '+', label: 'Finalist Yarışmacı', note: 'Öğrenci' },
-  { value: 32, suffix: '', label: "İlk 10'a Giren Takım", note: '2020–2024' },
-  { value: 30, suffix: '+', label: 'Toplam Ödül', note: 'Derece ve özel ödül' },
+  { value: 342, suffix: '', label: 'Finalist Yarışmacı', note: '2020–2025' },
+  { value: 35, suffix: '', label: "İlk 10'a Giren Takım", note: '2020–2025' },
+  { value: 22, suffix: '', label: 'Ödül ve Derece', note: '2020–2025' },
 ];
 ---
 
 <BaseLayout
   title="Başarılarımız"
-  description="MATRO'nun 2019-2024 arası TEKNOFEST, NASA Space Apps, Renault Twizy Contest ve Singapore SAUVC gibi ulusal ve uluslararası yarışmalarda kazandığı tüm dereceler."
+  description="MATRO'nun 2013'ten bugüne TEKNOFEST, NASA Space Apps, Renault Twizy Contest ve Singapore SAUVC gibi ulusal ve uluslararası yarışmalarda kazandığı tüm dereceler."
 >
   <PageHero
     eyebrow="Başarılarımız"
-    title="30'dan fazla derece, 15 birincilik"
+    title={`${items.length} kayıtlı derece, ${firstPlaces} birincilik`}
     description={achievements.intro}
   />
 

@@ -467,6 +467,32 @@ content:
             type: string
             list:
               collapsible: true
+      - name: packagesNote
+        label: Paketler altı not
+        type: text
+        description: Kademelerin BTÜ resmî formuna dayandığını belirten küçük punto açıklama.
+
+      - name: officialForm
+        label: Resmî Sponsorluk Formu
+        type: object
+        fields:
+          - { name: title, label: Başlık, type: string }
+          - { name: description, label: Açıklama, type: text }
+          - name: fileUrl
+            label: Form dosyası (PDF)
+            type: file
+            description: BTÜ Sponsorluk Formu. Yenisi yayımlanırsa buradan değiştirin.
+          - { name: buttonLabel, label: İndirme butonu yazısı, type: string }
+          - name: steps
+            label: Sponsorluk Adımları
+            type: object
+            list:
+              collapsible: true
+            fields:
+              - { name: title, label: Adım başlığı, type: string }
+              - { name: description, label: Açıklama, type: text }
+          - { name: note, label: Alt not, type: text }
+
       - name: supportTypes
         label: Destek Türleri
         type: object
@@ -500,6 +526,22 @@ content:
         label: Başvuru formu bağlantısı
         type: string
         description: Google Forms vb. bağlantı. Boş bırakılırsa Instagram butonu gösterilir.
+      - name: applicationPeriod
+        label: Başvuru dönemi notu
+        type: string
+        description: "Örn: 2026-2027 dönemi başvuruları açık. Başvuru formları bölümünün altında görünür."
+
+      - name: applications
+        label: Başvuru Formları
+        type: object
+        list:
+          collapsible: true
+        fields:
+          - { name: title, label: Form adı, type: string, required: true }
+          - { name: description, label: Açıklama, type: text }
+          - { name: url, label: Form bağlantısı, type: string, required: true }
+          - { name: buttonLabel, label: Buton yazısı, type: string }
+
       - name: steps
         label: Başvuru Adımları
         type: object

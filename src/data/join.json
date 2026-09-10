@@ -4,23 +4,43 @@
     "title": "MATRO ailesine katıl, ilk projeni bu dönem yap",
     "description": "Teknolojiye meraklı, sorumluluk sahibi ve takım çalışmasına inanan tüm Bursa Teknik Üniversitesi öğrencilerini aramıza bekliyoruz. Bölüm ayrımı yok — mekanik, elektronik, yazılım, tasarım, organizasyon ve iletişim alanlarında herkese yer var."
   },
-  "applicationFormUrl": "",
+  "applicationFormUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfMgCHKihBA7zilbQnI2QfxbMTmjfrU-v7afIGuPeQx6zSUUw/viewform",
+  "applications": [
+    {
+      "title": "Topluluk Kayıt Formu",
+      "description": "İlk adım. Topluluk üyeliğin bu formla başlar; ön koşul yoktur, tüm bölümlerden öğrencilere açıktır.",
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSfMgCHKihBA7zilbQnI2QfxbMTmjfrU-v7afIGuPeQx6zSUUw/viewform",
+      "buttonLabel": "Kayıt formunu doldur"
+    },
+    {
+      "title": "Takım Ön Başvuru Formu",
+      "description": "Yarışma takımlarında görev almak isteyenler için. Üyeliğini tamamladıktan sonra en fazla üç takım tercihi yaparsın.",
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSeX_98sMFjh5ReuF-zasq5cYje6LOaeFdWoDwVJGaZvd3foyQ/viewform",
+      "buttonLabel": "Takım başvurusu yap"
+    },
+    {
+      "title": "Yönetim Kurulu Başvuru Formu",
+      "description": "Takım ve atölye, sponsorluk, organizasyon veya sosyal medya birimlerinde sorumluluk almak isteyenler için.",
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSffLpElNfRvIGQfX_p_teSanTIgPmtRn225CGaGmIq9laHvXg/viewform",
+      "buttonLabel": "Yönetim kuruluna başvur"
+    }
+  ],
   "steps": [
     {
-      "title": "Online Başvuru",
-      "description": "Başvuru formunu doldur. İlgilendiğin çalışma alanını ve varsa deneyimini belirtmen yeterli; ön bilgi şartı yok."
+      "title": "Topluluk Kaydı",
+      "description": "Topluluk kayıt formunu doldurarak üyeliğini başlat. Ön bilgi ya da bölüm şartı yok; öğrenmeye istekli olman yeterli."
+    },
+    {
+      "title": "Takım Ön Başvurusu",
+      "description": "Yarışma takımlarında görev almak istiyorsan ön başvuru formunda en fazla üç takım tercihi ve çalışmak istediğin alanı belirt."
     },
     {
       "title": "Tanışma ve Mülakat",
-      "description": "Takım sorumlularıyla kısa bir tanışma görüşmesi yaparız. Amacımız seni tanımak ve doğru takıma yönlendirmek."
+      "description": "Takım sorumlularıyla kısa bir görüşme yaparız. Amacımız seni tanımak ve doğru takıma yönlendirmek."
     },
     {
-      "title": "Takım Oryantasyonu",
-      "description": "Topluluğun işleyişini, atölye kurallarını ve aktif projeleri tanıtırız. Eğitim kampımıza katılırsın."
-    },
-    {
-      "title": "Atölye Çalışmaları",
-      "description": "Artık bir takımın parçasısın. Aktif projede görev alır, yarışma sürecine dahil olursun."
+      "title": "Atölye ve Proje",
+      "description": "Artık bir takımın parçasısın. Eğitim programına katılır, aktif projede görev alır ve yarışma sürecine dahil olursun."
     }
   ],
   "whyJoin": [
@@ -44,7 +64,7 @@
   "faq": [
     {
       "question": "Hangi bölümden olmalıyım?",
-      "answer": "Bölüm şartı yok. Makine, mekatronik, elektrik-elektronik, bilgisayar, endüstri, metalurji ve diğer tüm bölümlerden üyelerimiz var. Tasarım, sosyal medya ve organizasyon alanlarında da ekip arkadaşlarına ihtiyacımız oluyor."
+      "answer": "Bölüm şartı yok. Makine, mekatronik, elektrik-elektronik, bilgisayar, endüstri, metalurji ve diğer tüm bölümlerden üyelerimiz var. Takımlarda yazılım, mekanik tasarım, tasarım analizi, malzeme ve üretim yöntemleri, elektrik-elektronik ile sponsorluk ve dış ilişkiler alanlarında görev alabilirsin."
     },
     {
       "question": "Hiç deneyimim yok, olur mu?",
@@ -52,11 +72,12 @@
     },
     {
       "question": "Başvurular ne zaman açılıyor?",
-      "answer": "Başvurular genellikle güz döneminin başında açılır. Güncel duyuruları Instagram hesabımızdan (@btumatro) takip edebilirsin."
+      "answer": "Başvurular güz döneminin başında açılır. 2026-2027 dönemi topluluk kayıtları, takım ön başvuruları ve yönetim kurulu başvuruları şu anda açık; formlara bu sayfadan ulaşabilirsin. Güncel duyurular için Instagram hesabımızı (@btumatro) da takip edebilirsin."
     },
     {
       "question": "Ne kadar zaman ayırmam gerekir?",
       "answer": "Takıma ve yarışma takvimine göre değişir. Dönem başında haftada birkaç saatlik atölye çalışması, yarışmaya yaklaşırken daha yoğun bir tempo söz konusu olur."
     }
-  ]
+  ],
+  "applicationPeriod": "2026-2027 dönemi başvuruları açık"
 }
