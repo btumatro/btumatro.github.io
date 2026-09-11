@@ -3,7 +3,7 @@
   "revision": "0.1",
   "language": "tr",
   "status": "yönetim_değerlendirmesi_için_taslak",
-  "reviewedCommit": "2708626db9c683113531a1ecfae54e9d8f680cd7",
+  "reviewedCommit": "79f678e",
   "updatedAt": "2026-09-11",
   "format": {
     "widthMm": 210,
@@ -25,7 +25,7 @@
       "title": "MATRO / Atölyeden sahaya",
       "purpose": "İlk bakışta gerçek bir mühendislik topluluğunun portföyünü tanıtmak.",
       "copy": {
-        "lead": "Bursa Teknik Üniversitesi · Makine Teknolojileri Robot ve Otomasyon Topluluğu",
+        "lead": "Bursa Teknik Üniversitesi · Makine Teknolojileri Robot ve Otomasyon Topluluğu · Tanıtım Günleri: 15-18 Eylül",
         "paragraphs": [
           "Birlikte tasarlıyor, üretiyor ve yarışıyoruz."
         ],
@@ -49,11 +49,8 @@
         "src/data/site.json"
       ],
       "claimIds": [],
-      "missing": [
-        "Dikey kapak için yüksek çözünürlüklü ana kare seçimi.",
-        "Yayın dönemi ve Tanıtım Günleri tarihi."
-      ],
-      "status": "editoryal_taslak",
+      "missing": [],
+      "status": "içerik_düzeltildi",
       "approvedBy": null,
       "approvedAt": null,
       "renderReady": false
@@ -782,10 +779,9 @@
         "takim_kapsami"
       ],
       "missing": [
-        "Takım/cihaz fotoğrafı şu an site kaydında yok.",
         "2026–2027 faaliyet ve alım durumu."
       ],
-      "status": "editoryal_taslak",
+      "status": "içerik_düzeltildi",
       "approvedBy": null,
       "approvedAt": null,
       "renderReady": false,
@@ -1266,9 +1262,9 @@
       "title": "Üretimin arkasındaki destek",
       "purpose": "Sponsorları dönemleri ve katkılarıyla doğru temsil etmek.",
       "copy": {
-        "lead": "Projelerin gelişmesine katkı sağlayan destekçilerimiz, ekiplerin üretim ve çalışma olanaklarının güçlenmesine yardımcı olur.",
+        "lead": "Araçlarımızın malzeme, yazılım, üretim ve seyahat giderlerinde yanımızda durarak millî teknoloji üretimine katkı sağlayan 2025-2027 dönemi kurumsal sponsorlarımız.",
         "paragraphs": [
-          "Bu sayfada yalnız dönemi, adı ve kademesi doğrulanmış sponsorlar yer alacak. Geçmiş dönem destekleri ayrı etiketlenecek; sponsorluk ile teknik gezi ilişkisi birbirine karıştırılmayacak."
+          "Sponsor listesi src/data/sponsors.json ile birebir eşleşecek şekilde güncellendi: Platin (3), Altın (7 — ROV Expert, Şahinbey Belediyesi, MayFly, Mavios, Yunusemre GM, Kayra Yemek, Biyolift), Gümüş (3 — Wago, Pleksi, Akkuş Enerji), Bronz (6), Gönüllü (5)."
         ],
         "bullets": [
           "Onaylı firma adı",
@@ -1285,12 +1281,8 @@
       "claimIds": [
         "sponsorlar"
       ],
-      "missing": [
-        "A.VET / A.NET kaynak düzeltmesi.",
-        "AKKUŞ ve diğer kademelerin dönem teyidi.",
-        "Vektör logolar."
-      ],
-      "status": "editoryal_taslak",
+      "missing": [],
+      "status": "içerik_düzeltildi",
       "approvedBy": null,
       "approvedAt": null,
       "renderReady": false

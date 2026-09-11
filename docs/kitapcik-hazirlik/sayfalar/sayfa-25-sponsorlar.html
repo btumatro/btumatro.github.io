@@ -7,19 +7,19 @@
 :root {
   --c-bg: #FFFFFF; --c-ink: #0B1012; --c-text-muted: #475569; --c-text-subtle: #64748B;
   --c-border: #CBD5E1; --c-volt: #0D9488; --c-volt-light: #F0FDFA; --c-medal: #D97706;
-  --c-medal-light: #FEF3C7; --c-surface: #F8FAFC;
+  --c-medal-light: #FEF3C7; --c-surface: #F8FAFC; --c-silver: #64748B;
   --font-display: 'Barlow', sans-serif; --font-sans: 'Inter', sans-serif; --font-mono: 'JetBrains Mono', monospace;
 }
 
 body.page-sheet {
   width: 1240px; height: 1754px; background: var(--c-bg); color: var(--c-ink); font-family: var(--font-sans);
-  display: flex; flex-direction: column; justify-content: space-between; padding: 44px 56px 36px 56px;
+  display: flex; flex-direction: column; justify-content: space-between; padding: 44px 56px 30px 56px;
   position: relative; overflow: hidden; -webkit-font-smoothing: antialiased;
 }
 
 .page-header {
   display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--c-ink);
-  padding-bottom: 12px; margin-bottom: 16px; flex-shrink: 0;
+  padding-bottom: 12px; margin-bottom: 14px; flex-shrink: 0;
 }
 .brand-left { display: flex; align-items: center; gap: 14px; }
 .header-logo { height: 36px; width: auto; object-fit: contain; }
@@ -35,26 +35,24 @@ body.page-sheet {
 .footer-site { color: var(--c-ink); font-weight: 700; }
 .page-number { font-weight: 800; color: var(--c-ink); }
 
-.media-unit { display: flex; flex-direction: column; height: 100%; min-height: 0; overflow: hidden; }
-.img-box { width: 100%; flex: 1; min-height: 0; position: relative; overflow: hidden; background-color: #F8FAFC; border-radius: 4px; border: 1px solid var(--c-border); }
-.img-box img { width: 100%; height: 100%; object-fit: cover; display: block; }
-.caption-bar { display: flex; align-items: center; gap: 8px; padding-top: 6px; font-family: var(--font-sans); line-height: 1.25; flex-shrink: 0; }
-.caption-tag {
-  font-family: var(--font-mono); font-size: 9px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase;
-  color: #FFFFFF; background-color: var(--c-ink); padding: 2px 6px; border-radius: 2px; white-space: nowrap;
-}
-.caption-text { font-size: 11px; font-weight: 500; color: #475569; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-
-.tier-section { margin-bottom: 24px; flex-shrink: 0; }
-.tier-header { display: flex; align-items: center; gap: 10px; font-family: var(--font-mono); font-size: 11px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; border-bottom: 1.5px solid var(--c-ink); padding-bottom: 6px; margin-bottom: 14px; }
-.logo-grid { display: grid; gap: 16px; }
+.tier-section { margin-bottom: 14px; flex-shrink: 0; }
+.tier-header { display: flex; align-items: center; justify-content: space-between; gap: 10px; font-family: var(--font-mono); font-size: 10.5px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; border-bottom: 1.5px solid var(--c-ink); padding-bottom: 5px; margin-bottom: 10px; }
+.tier-count { color: var(--c-text-subtle); font-weight: 600; }
+.logo-grid { display: grid; gap: 10px; }
 .logo-grid.tier-plat { grid-template-columns: repeat(3, 1fr); }
-.logo-grid.tier-gold { grid-template-columns: repeat(4, 1fr); }
-.logo-grid.tier-bronze { grid-template-columns: repeat(6, 1fr); }
-.logo-card { background: var(--c-surface); border: 1px solid var(--c-border); border-radius: 4px; padding: 16px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; text-align: center; }
-.logo-card img { height: 50px; width: auto; max-width: 100%; object-fit: contain; }
-.logo-name { font-size: 11px; font-weight: 700; color: var(--c-ink); }
-.logo-type { font-family: var(--font-mono); font-size: 9px; color: var(--c-text-subtle); text-transform: uppercase; }
+.logo-grid.cols-4 { grid-template-columns: repeat(4, 1fr); }
+.logo-grid.cols-6 { grid-template-columns: repeat(6, 1fr); }
+.logo-card { background: var(--c-surface); border: 1px solid var(--c-border); border-radius: 4px; padding: 14px 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; text-align: center; }
+.logo-card.plat { padding: 18px 12px; gap: 8px; }
+.logo-card img { height: 38px; width: auto; max-width: 88%; object-fit: contain; }
+.logo-card.plat img { height: 48px; }
+.logo-card .placeholder-mark {
+  height: 38px; width: 38px; border-radius: 50%; background: #E2E8F0; color: #94A3B8;
+  display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-weight: 800; font-size: 16px;
+}
+.logo-name { font-size: 10.5px; font-weight: 700; color: var(--c-ink); line-height: 1.2; }
+.logo-card.plat .logo-name { font-size: 12px; }
+.logo-type { font-family: var(--font-mono); font-size: 8px; color: var(--c-text-subtle); text-transform: uppercase; letter-spacing: 0.03em; }
 </style></head>
 <body class="page-sheet">
   <header class="page-header">
@@ -68,42 +66,62 @@ body.page-sheet {
     </div>
   </header>
 
-  <div style="margin-bottom: 16px;">
+  <div style="margin-bottom: 14px;">
     <div style="font-family: var(--font-mono); font-size: 11px; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color: var(--c-volt);">GÜÇ BİRLİĞİ</div>
-    <h1 style="font-family: var(--font-display); font-size: 46px; font-weight: 900; line-height: 0.98; text-transform: uppercase; margin-top: 3px; margin-bottom: 5px;">Üretimin Arkasındaki Destek</h1>
-    <p style="font-size: 15px; font-weight: 500; line-height: 1.45; color: #334155;">
-      Araçlarımızın malzeme, yazılım, üretim ve seyahat giderlerinde yanımızda durarak millî teknoloji üretimine katkı sağlayan kurumsal sponsorlarımız.
+    <h1 style="font-family: var(--font-display); font-size: 42px; font-weight: 900; line-height: 0.98; text-transform: uppercase; margin-top: 3px; margin-bottom: 5px;">Üretimin Arkasındaki Destek</h1>
+    <p style="font-size: 14px; font-weight: 500; line-height: 1.4; color: #334155;">
+      Araçlarımızın malzeme, yazılım, üretim ve seyahat giderlerinde yanımızda durarak millî teknoloji üretimine katkı sağlayan 2025-2027 dönemi kurumsal sponsorlarımız.
     </p>
   </div>
 
   <div class="tier-section">
-    <div class="tier-header" style="color: var(--c-volt);"><span>■ Platin Düzey Destekçilerimiz</span></div>
+    <div class="tier-header" style="color: var(--c-volt);"><span>■ Platin Düzey Destekçilerimiz</span><span class="tier-count">3</span></div>
     <div class="logo-grid tier-plat">
-      <div class="logo-card">
+      <div class="logo-card plat">
         <img src="file:///Users/wildgenie/Projects/btu-matro/public/media/logolar/vatanjet.png" alt="Vatanjet">
         <div class="logo-name">VATANJET</div>
         <div class="logo-type">Ulaşım Sponsoru</div>
       </div>
-      <div class="logo-card">
+      <div class="logo-card plat">
         <img src="file:///Users/wildgenie/Projects/btu-matro/public/media/logolar/luna-robotics.png" alt="Luna Robotics">
         <div class="logo-name">LUNA ROBOTICS</div>
-        <div class="logo-type">Ar-Ge & Malzeme</div>
+        <div class="logo-type">Nakit + Ar-Ge + Malzeme</div>
       </div>
-      <div class="logo-card">
+      <div class="logo-card plat">
         <img src="file:///Users/wildgenie/Projects/btu-matro/public/media/logolar/tekyaz.png" alt="Tekyaz">
         <div class="logo-name">TEKYAZ</div>
-        <div class="logo-type">SolidWorks Yazılım</div>
+        <div class="logo-type">Yazılım / Lisans</div>
       </div>
     </div>
   </div>
 
   <div class="tier-section">
-    <div class="tier-header" style="color: var(--c-medal);"><span>■ Altın ve Gümüş Düzey Destekçilerimiz</span></div>
-    <div class="logo-grid tier-gold">
+    <div class="tier-header" style="color: var(--c-medal);"><span>■ Altın Düzey Destekçilerimiz</span><span class="tier-count">7</span></div>
+    <div class="logo-grid cols-4">
       <div class="logo-card">
-        <img src="file:///Users/wildgenie/Projects/btu-matro/public/media/logolar/akkus-enerji.png" alt="Akkuş Enerji">
-        <div class="logo-name">AKKUŞ ENERJİ</div>
-        <div class="logo-type">Nakit & Enerji</div>
+        <img src="file:///Users/wildgenie/Projects/btu-matro/public/media/logolar/rov-expert.png" alt="ROV Expert">
+        <div class="logo-name">ROV EXPERT</div>
+        <div class="logo-type">Hizmet + Malzeme</div>
+      </div>
+      <div class="logo-card">
+        <img src="file:///Users/wildgenie/Projects/btu-matro/public/media/logolar/sahinbey-belediyesi.png" alt="Şahinbey Belediyesi">
+        <div class="logo-name">ŞAHİNBEY BELEDİYESİ</div>
+        <div class="logo-type">Kurumsal Destek</div>
+      </div>
+      <div class="logo-card">
+        <img src="file:///Users/wildgenie/Projects/btu-matro/public/media/logolar/mayfly.png" alt="MayFly">
+        <div class="logo-name">MAYFLY</div>
+        <div class="logo-type">Hizmet + Malzeme</div>
+      </div>
+      <div class="logo-card">
+        <img src="file:///Users/wildgenie/Projects/btu-matro/public/media/logolar/mavios.png" alt="Mavios">
+        <div class="logo-name">MAVIOS</div>
+        <div class="logo-type">Hizmet + Malzeme</div>
+      </div>
+      <div class="logo-card">
+        <img src="file:///Users/wildgenie/Projects/btu-matro/public/media/logolar/yunusemre-gm.png" alt="Yunusemre GM">
+        <div class="logo-name">YUNUSEMRE GM</div>
+        <div class="logo-type">Kurumsal Destek</div>
       </div>
       <div class="logo-card">
         <img src="file:///Users/wildgenie/Projects/btu-matro/public/media/logolar/kayra-yemek.png" alt="Kayra Yemek">
@@ -113,25 +131,40 @@ body.page-sheet {
       <div class="logo-card">
         <img src="file:///Users/wildgenie/Projects/btu-matro/public/media/logolar/biyolift.png" alt="Biyolift">
         <div class="logo-name">BİYOLİFT</div>
-        <div class="logo-type">Hizmet & Malzeme</div>
-      </div>
-      <div class="logo-card">
-        <img src="file:///Users/wildgenie/Projects/btu-matro/public/media/logolar/finemold.png" alt="Finemold">
-        <div class="logo-name">FINEMOLD</div>
-        <div class="logo-type">Kalıp İmalat</div>
+        <div class="logo-type">Hizmet + Malzeme</div>
       </div>
     </div>
   </div>
 
   <div class="tier-section">
-    <div class="tier-header" style="color: var(--c-text-muted);"><span>■ Bronz Düzey ve Teknik Üretim Sponsorlarımız</span></div>
-    <div class="logo-grid tier-bronze">
-      <div class="logo-card"><img src="file:///Users/wildgenie/Projects/btu-matro/public/media/logolar/ibras.png" alt="İbraş"><div class="logo-name">İBRAŞ</div></div>
-      <div class="logo-card"><img src="file:///Users/wildgenie/Projects/btu-matro/public/media/logolar/pinar-metal.png" alt="Pınar Metal"><div class="logo-name">PINAR METAL</div></div>
-      <div class="logo-card"><img src="file:///Users/wildgenie/Projects/btu-matro/public/media/logolar/marka-lazer.png" alt="Marka Lazer"><div class="logo-name">MARKA LAZER</div></div>
-      <div class="logo-card"><img src="file:///Users/wildgenie/Projects/btu-matro/public/media/logolar/tsg.png" alt="TSG"><div class="logo-name">TSG SAC</div></div>
-      <div class="logo-card"><img src="file:///Users/wildgenie/Projects/btu-matro/public/media/logolar/cakir.png" alt="Çakır"><div class="logo-name">ÇAKIR</div></div>
+    <div class="tier-header" style="color: var(--c-silver);"><span>■ Gümüş Düzey Destekçilerimiz</span><span class="tier-count">3</span></div>
+    <div class="logo-grid cols-6">
+      <div class="logo-card"><img src="file:///Users/wildgenie/Projects/btu-matro/public/media/logolar/wago.png" alt="Wago"><div class="logo-name">WAGO</div><div class="logo-type">Hizmet + Malzeme</div></div>
+      <div class="logo-card"><img src="file:///Users/wildgenie/Projects/btu-matro/public/media/logolar/pleksi.png" alt="Pleksi"><div class="logo-name">PLEKSİ</div><div class="logo-type">Hizmet + Malzeme</div></div>
+      <div class="logo-card"><img src="file:///Users/wildgenie/Projects/btu-matro/public/media/logolar/akkus-enerji.png" alt="Akkuş Enerji"><div class="logo-name">AKKUŞ ENERJİ</div><div class="logo-type">Nakit</div></div>
+    </div>
+  </div>
+
+  <div class="tier-section">
+    <div class="tier-header" style="color: var(--c-text-muted);"><span>■ Bronz Düzey Destekçilerimiz</span><span class="tier-count">6</span></div>
+    <div class="logo-grid cols-6">
+      <div class="logo-card"><img src="file:///Users/wildgenie/Projects/btu-matro/public/media/logolar/ibras.png" alt="İbraş Kauçuk"><div class="logo-name">İBRAŞ KAUÇUK</div><div class="logo-type">Nakit</div></div>
+      <div class="logo-card"><img src="file:///Users/wildgenie/Projects/btu-matro/public/media/logolar/finemold.png" alt="Finemold"><div class="logo-name">FINEMOLD</div><div class="logo-type">Üretim / Kalıp</div></div>
+      <div class="logo-card"><img src="file:///Users/wildgenie/Projects/btu-matro/public/media/logolar/cakir.png" alt="Çakır Depolama Lojistik"><div class="logo-name">ÇAKIR LOJİSTİK</div><div class="logo-type">Nakit</div></div>
+      <div class="logo-card"><img src="file:///Users/wildgenie/Projects/btu-matro/public/media/logolar/pinar-metal.png" alt="Pınar Metal"><div class="logo-name">PINAR METAL</div><div class="logo-type">Hizmet + Malzeme</div></div>
+      <div class="logo-card"><img src="file:///Users/wildgenie/Projects/btu-matro/public/media/logolar/marka-lazer.png" alt="Marka Lazer"><div class="logo-name">MARKA LAZER</div><div class="logo-type">Kesim Desteği</div></div>
+      <div class="logo-card"><img src="file:///Users/wildgenie/Projects/btu-matro/public/media/logolar/tsg.png" alt="TSG Sac İşleme"><div class="logo-name">TSG SAC</div><div class="logo-type">Hizmet</div></div>
+    </div>
+  </div>
+
+  <div class="tier-section" style="margin-bottom: 0;">
+    <div class="tier-header" style="color: var(--c-text-subtle);"><span>■ Gönüllü Destekçilerimiz</span><span class="tier-count">5</span></div>
+    <div class="logo-grid cols-6">
+      <div class="logo-card"><img src="file:///Users/wildgenie/Projects/btu-matro/public/media/logolar/dr-tablet.png" alt="Dr. Tablet"><div class="logo-name">DR. TABLET</div></div>
+      <div class="logo-card"><img src="file:///Users/wildgenie/Projects/btu-matro/public/media/logolar/mercan.png" alt="Mercan Balıkçılık"><div class="logo-name">MERCAN BALIKÇILIK</div></div>
+      <div class="logo-card"><img src="file:///Users/wildgenie/Projects/btu-matro/public/media/logolar/pocketbook.png" alt="Pocketbook"><div class="logo-name">POCKETBOOK</div></div>
       <div class="logo-card"><img src="file:///Users/wildgenie/Projects/btu-matro/public/media/logolar/off-ee.png" alt="Off-ee"><div class="logo-name">OFF-EE</div></div>
+      <div class="logo-card"><div class="placeholder-mark">K</div><div class="logo-name">KOMAGENE</div></div>
     </div>
   </div>
 

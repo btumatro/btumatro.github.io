@@ -2,6 +2,30 @@
 
 Durum: tasarım ve içerik hazırlığı. Bu belge, baskıya onay verilmiş bir yayın değildir.
 
+## Durum güncellemesi (2026-09-11, commit 79f678e sonrası)
+
+- Sayfa 1, 2, 15, 25 içerikleri doğrulanmış verilerle düzeltildi (bkz. `yayin-plani.json`).
+  Kaynaksız rakamlar ("350+ mühendis", "15 Ar-Ge takımı" → 13, "yılda 15+ yarışma")
+  kaldırıldı; sponsor listesi (sayfa 25) `src/data/sponsors.json` ile birebir eşleşiyor.
+- Bu oturumda silinen/yeniden adlandırılan 4 site görseline (`galeri-hktm-gezisi.jpg`,
+  `takim-matris-iha.jpg`, `ekip-kampus.jpg`) yapılan kitapçık içi referanslar düzeltildi.
+- **Baskı/PDF üretim yöntemi netleşti:** ham `chrome --print-to-pdf` CLI'ı, body'nin
+  piksel boyutu tam @page ölçüsüne denk gelmediğinde footer'ı boş bir ikinci sayfaya
+  taşırıyordu. Çözüm `scripts/build-booklet-pdf.mjs` — Puppeteer (`puppeteer-core`,
+  yerel Chrome'u kullanır) ile `page.pdf({width,height})` piksel tabanlı API'si
+  kullanılıyor; her sayfa için otomatik olarak (ekran önizlemesini etkilemeden)
+  gerekli en küçük baskı yüksekliği bulunup tek sayfaya sığdırılıyor, sonra
+  `pdf-lib` ile tek kitapçığa birleştiriliyor. HTML/CSS kaynağından vazgeçmeye
+  gerek yok; sorun render pipeline'daydı.
+- Sayfa PNG önizlemeleri için `scripts/render-page.sh <sayfa-adı>` kullanılabilir
+  (tek sayfa, hızlı görsel kontrol).
+- ÇAĞRI takımının gerçek fotoğrafı (`public/media/cagri-team-cropped.jpg`,
+  TEKNOFEST Kablosuz Haberleşme Yarışması sahnesi) daha önce yalnız kitapçıkta
+  vardı, siteye (`src/content/teams/cagri.md`) da eklendi.
+- Kalan iş: sayfa 3-24, 26-28'in aynı disiplinle denetlenmesi (özellikle sayfa
+  6-10'daki doğrulanamayan teknik spesifikasyon kutuları — bkz.
+  `docs/2026-09-11-son-48-saat-denetimi.md` bulgu #6).
+
 ## Amaç ve teslimler
 
 Topluluk Tanıtım Günleri'nde yeni öğrencinin “Burada ne yapabilirim?” sorusunu; sponsor görüşmesinde “Bu ekibe neden ve nasıl destek verebilirim?” sorusunu cevaplayan bir yayın ailesi hazırlıyoruz.

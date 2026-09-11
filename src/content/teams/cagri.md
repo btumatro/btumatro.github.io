@@ -4,7 +4,7 @@ subtitle: Kablosuz Haberleşme
 category: Haberleşme
 status: Aktif
 order: 11
-image: ""
+image: "/media/cagri-team-cropped.jpg"
 badge: ""
 instagram: ""
 focus:

@@ -10,11 +10,29 @@ Kaynak klasör: `Google Drive / SOSYAL MEDYA`
 ## 1. Sayısal Göstergeler (Doğrulanmış Rakamlar)
 
 - **Kayıtlı Derece:** 50 (2013–2026)
-- **Birincilikler:** 7 (Türkiye ve uluslararası yarışmalar)
+- **Birincilikler:** 7 (Türkiye ve bölge — biri NASA Space Apps'in bölgesel birinciliği; "ulusal birincilik" diye tek başına kullanılmamalı)
 - **TEKNOFEST 2026 Finalistleri:** 8 kategori/takım (Malatya, Mardin, Diyarbakır, Gaziantep, Mavi Vatan)
 - **Finalist Yarışmacı Havuzu:** 342+ (2020–2025 dönemi)
 - **İlk 10 Derecesi:** 35 takım
 - **Aktif Takım Sayısı:** 13 takım
+
+Not: Kitapçığın önceki taslağında "350+ mühendis", "100+ saat/yıl saha testi" ve
+"yılda 15+ yarışma" gibi rakamlar vardı; bunların hiçbiri site verisinde veya
+sponsorluk sunumunda doğrulanamadı ve kitapçıktan çıkarıldı (2026-09-11).
+
+---
+
+## 1b. Güncel Sponsor Kademeleri (src/data/sponsors.json ile birebir, 2026-09-11)
+
+- **Platin (3):** VatanJet, Luna Robotics, Tekyaz
+- **Altın (7):** ROV Expert, Şahinbey Belediyesi, MayFly, Mavios, Yunusemre GM, Kayra Yemek, Biyolift
+- **Gümüş (3):** Wago, Pleksi, Akkuş Enerji
+- **Bronz (6):** İbraş Kauçuk, Finemold, Çakır Depolama Lojistik, Pınar Metal, Marka Lazer, TSG Sac İşleme Merkezi
+- **Gönüllü (5):** Dr. Tablet, Mercan Balıkçılık, Pocketbook, Off-ee, Komagene (logosu yok)
+
+Kaynak: `MATRO_sponsorluk-sunumu-sablon.pdf` (2025-2027 dönemi) + `src/data/sponsors.json`.
+Wago, Pleksi ve Yunusemre GM logoları PDF'te vektör/metin olarak durduğu için
+export klasöründe ayrı dosya yoktu; PDF'ten kırpılıp işlendi.
 
 ---
 

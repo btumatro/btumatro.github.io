@@ -20,5 +20,9 @@
     "astro": "^7.1.6",
     "tailwindcss": "^4.3.3"
   },
-  "description": "Bursa Teknik Üniversitesi MATRO topluluğu web sitesi"
+  "description": "Bursa Teknik Üniversitesi MATRO topluluğu web sitesi",
+  "devDependencies": {
+    "pdf-lib": "^1.17.1",
+    "puppeteer-core": "^25.10.0"
+  }
 }
