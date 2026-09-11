@@ -7,8 +7,15 @@ order: 7
 image: "/media/takim-sanayide-dijital.jpg"
 gallery:
   - "/media/galeri-pusula-ekip-2025.jpg"
+  - "/media/galeri-pusula-atolye.jpg"
   - "/media/galeri-pusula-robot.jpg"
+  - "/media/galeri-sanayide-dijital-arena.jpg"
+  - "/media/galeri-teknofest-2022-odul.jpg"
   - "/media/haber-teknofest-2026-diyarbakir.jpg"
+  - "/media/webmedya-sanayide-dijital-23.jpg"
+  - "/media/webmedya-sanayide-dijital-24.jpg"
+  - "/media/webmedya-sanayide-dijital-25.jpg"
+  - "/media/webmedya-sanayide-dijital-26.jpg"
 badge: "2026 Finalisti"
 instagram: "pusula_takim"
 aliases:

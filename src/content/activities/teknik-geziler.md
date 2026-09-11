@@ -5,6 +5,14 @@ date: 2024-01-01
 endDate: ""
 order: 2
 image: "/media/gezi-togg.jpg"
+gallery:
+  - "/media/gezi-turkish-technic.jpg"
+  - "/media/galeri-tubitak-sage-gezisi.jpg"
+  - "/media/galeri-toyota-gezisi.jpg"
+  - "/media/galeri-ermetal-gezisi.jpg"
+  - "/media/galeri-teknopark-ankara.jpg"
+  - "/media/galeri-hktm-gezisi.jpg"
+  - "/media/galeri-fabrika-gezisi.jpg"
 stats:
   - label: Ziyaret Edilen Kurum
     value: "15+"

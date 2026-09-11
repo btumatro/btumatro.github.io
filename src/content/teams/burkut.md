@@ -4,7 +4,15 @@ subtitle: Uçan Araba Simülasyonu
 category: Simülasyon & Otonomi
 status: Aktif
 order: 10
-image: "/media/renault-twizy.jpg"
+image: "/media/takim-burkut-ucan-araba.jpg"
+gallery:
+  - "/media/galeri-bayraktar-ucan-araba.jpg"
+  - "/media/gorsel-twizy-emizy-birincilik.jpg"
+  - "/media/gorsel-twizy-matrobot-iletisim.jpg"
+  - "/media/webmedya-burkut-43.jpg"
+  - "/media/webmedya-burkut-44.jpg"
+  - "/media/webmedya-burkut-45.jpg"
+  - "/media/webmedya-burkut-46.jpg"
 badge: ""
 instagram: ""
 aliases:

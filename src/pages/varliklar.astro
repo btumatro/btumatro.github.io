@@ -1,0 +1,161 @@
+---
+/**
+ * Varlıklar (assets) — tanıtım ve sponsorluk dosyası hazırlarken kullanılacak
+ * tüm görsel, video ve logo dosyalarının dökümü.
+ *
+ * Bu sayfa bilerek menüde ve site haritasında yer almaz, arama motorlarına da
+ * kapalıdır. Amaç: sunum hazırlayan kişinin sitedeki her dosyayı tek yerden
+ * görüp indirebilmesi. İçerik `src/data/assets.json` dosyasından gelir ve
+ * panelden (Pages CMS → "Varlıklar") düzenlenebilir.
+ */
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHero from '../components/PageHero.astro';
+import Section from '../components/Section.astro';
+import assets from '../data/assets.json';
+import sponsors from '../data/sponsors.json';
+import gallery from '../data/gallery.json';
+import { media, url } from '../lib/utils';
+
+const [teams, activities, haberler] = await Promise.all([
+  getCollection('teams'),
+  getCollection('activities'),
+  getCollection('haberler'),
+]);
+
+/** Bir dosyanın sitede nerelerde kullanıldığı — sunumda bağlam vermek için. */
+const usage = new Map<string, string[]>();
+const note = (file: string, where: string) => {
+  if (!file?.trim()) return;
+  const list = usage.get(file) ?? [];
+  if (!list.includes(where)) list.push(where);
+  usage.set(file, list);
+};
+
+for (const t of teams) {
+  note(t.data.image, t.data.title);
+  note(t.data.videoPoster, t.data.title);
+  note(t.data.video, t.data.title);
+  for (const g of t.data.gallery) note(g, t.data.title);
+}
+for (const a of activities) {
+  note(a.data.image, a.data.title);
+  for (const g of a.data.gallery) note(g, a.data.title);
+}
+for (const h of haberler) {
+  note(h.data.image, h.data.title);
+  for (const g of h.data.gallery) note(g, h.data.title);
+}
+for (const g of gallery.images) note(g.image, 'Galeri');
+for (const s of sponsors.current ?? []) {
+  note((s as { logo?: string }).logo ?? '', s.name);
+  note((s as { image?: string }).image ?? '', s.name);
+}
+
+/** assets.json dışında kalmış dosya var mı? Liste sessizce eskimesin diye. */
+const known = new Set(assets.assets.map((a) => a.file));
+const orphans = [...usage.keys()].filter((f) => f.startsWith('/media/') && !known.has(f));
+
+const groups = [...new Set(assets.assets.map((a) => a.group))].map((group) => ({
+  group,
+  items: assets.assets.filter((a) => a.group === group),
+}));
+
+const isVideo = (f: string) => f.endsWith('.mp4');
+const totalMb = Math.round(assets.assets.reduce((sum, a) => sum + a.sizeKb, 0) / 1024);
+---
+
+<BaseLayout
+  title="Varlıklar"
+  description="Tanıtım dosyası için görsel ve video dökümü."
+  noindex
+>
+  <PageHero
+    eyebrow="İç kullanım"
+    title="Tanıtım dosyası varlıkları"
+    description={assets.intro}
+  />
+
+  <Section>
+    <div class="card grid gap-4 p-6 sm:grid-cols-3">
+      <div>
+        <p class="font-mono text-[0.62rem] tracking-[0.15em] text-volt-400 uppercase">Dosya</p>
+        <p class="mt-1 text-2xl font-semibold">{assets.assets.length}</p>
+      </div>
+      <div>
+        <p class="font-mono text-[0.62rem] tracking-[0.15em] text-volt-400 uppercase">Grup</p>
+        <p class="mt-1 text-2xl font-semibold">{groups.length}</p>
+      </div>
+      <div>
+        <p class="font-mono text-[0.62rem] tracking-[0.15em] text-volt-400 uppercase">Toplam boyut</p>
+        <p class="mt-1 text-2xl font-semibold">~{totalMb} MB</p>
+      </div>
+    </div>
+
+    {
+      orphans.length > 0 && (
+        <div class="card mt-4 border-ember-400/35 p-6">
+          <p class="text-sm text-mist-300">
+            Sitede kullanılan ama bu listede olmayan dosyalar var. Listeyi güncelleyin:
+          </p>
+          <ul class="mt-2 space-y-1 font-mono text-xs text-ember-400">
+            {orphans.map((f) => (
+              <li>{f}</li>
+            ))}
+          </ul>
+        </div>
+      )
+    }
+
+    {
+      groups.map(({ group, items }) => (
+        <div class="mt-12">
+          <h2 class="text-lg font-semibold">
+            {group}
+            <span class="ml-2 font-mono text-xs text-mist-500">{items.length}</span>
+          </h2>
+
+          <div class="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {items.map((a) => (
+              <figure class="card overflow-hidden">
+                {isVideo(a.file) ? (
+                  <div class="flex aspect-video items-center justify-center bg-white/4 font-mono text-xs text-mist-500">
+                    MP4
+                  </div>
+                ) : (
+                  <img
+                    src={media(a.file)!}
+                    alt={a.title}
+                    loading="lazy"
+                    decoding="async"
+                    class="aspect-video w-full bg-white/4 object-contain"
+                  />
+                )}
+                <figcaption class="border-t border-white/8 p-4">
+                  <p class="text-sm text-mist-300">{a.title}</p>
+                  {a.note && <p class="mt-1 text-xs text-mist-500">{a.note}</p>}
+                  <p class="mt-2 font-mono text-[0.62rem] text-mist-500">
+                    {a.width > 0 ? `${a.width}×${a.height} · ` : ''}
+                    {a.sizeKb} KB
+                  </p>
+                  {usage.get(a.file) && (
+                    <p class="mt-1 text-xs text-mist-500">
+                      Kullanıldığı yer: {usage.get(a.file)!.join(', ')}
+                    </p>
+                  )}
+                  <a
+                    href={url(a.file)}
+                    download
+                    class="mt-3 inline-block font-mono text-[0.62rem] tracking-[0.15em] text-volt-400 uppercase hover:underline"
+                  >
+                    Dosyayı aç
+                  </a>
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+        </div>
+      ))
+    }
+  </Section>
+</BaseLayout>

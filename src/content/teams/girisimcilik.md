@@ -5,6 +5,8 @@ category: Girişimcilik
 status: Aktif
 order: 13
 image: "/media/odul-girisimcilik.jpg"
+gallery:
+  - "/media/galeri-advance-up-syntax.jpg"
 badge: ""
 instagram: ""
 aliases:

@@ -633,7 +633,44 @@ content:
             label: Kategori
             type: select
             options:
-              values: [Atölye, Yarışma, Teknik Gezi, Etkinlik, Sponsor]
+              values: [Atölye, Yarışma, Teknik Gezi, Etkinlik, Tasarım, Sponsor]
+
+  - name: assets
+    label: Varlıklar (tanıtım dosyası)
+    type: file
+    path: src/data/assets.json
+    format: json
+    description: Tanıtım ve sponsorluk dosyası hazırlarken kullanılacak tüm görsel, video ve logo dökümü. Bu liste site menüsünde görünmez; /varliklar adresinden açılır ve arama motorlarına kapalıdır.
+    fields:
+      - { name: intro, label: Giriş metni, type: text }
+      - name: assets
+        label: Dosyalar
+        type: object
+        list:
+          collapsible: true
+        fields:
+          - { name: file, label: Dosya, type: image, required: true }
+          - { name: title, label: Başlık, type: string }
+          - name: group
+            label: Grup
+            type: select
+            options:
+              values:
+                - Araç tasarım görselleri
+                - Takım kapak görselleri
+                - Galeri fotoğrafları
+                - Faaliyet fotoğrafları
+                - Yarışma afiş ve ödül görselleri
+                - Haber görselleri
+                - Videolar
+                - Video kapakları
+                - Takım logoları
+                - Sponsor logoları
+                - Sponsor görselleri
+          - { name: width, label: Genişlik (px), type: number }
+          - { name: height, label: Yükseklik (px), type: number }
+          - { name: sizeKb, label: Boyut (KB), type: number }
+          - { name: note, label: Not, type: text, description: "Sunumda nerede kullanılabileceğine dair kısa not." }
 
   - name: site
     label: Site Ayarları ve İletişim

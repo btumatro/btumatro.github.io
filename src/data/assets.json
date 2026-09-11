@@ -1,0 +1,1913 @@
+{
+  "intro": "Tanıtım ve sponsorluk dosyası hazırlarken kullanılabilecek tüm görsel, video ve logo dosyalarının dökümü. Bu sayfa site menüsünde görünmez; yalnızca /varliklar adresinden açılır ve arama motorlarına kapalıdır.",
+  "assets": [
+    {
+      "file": "/media/tasarim-ashina-iha.jpg",
+      "title": "ASHİNA sabit kanat İHA'sının kafes kanat yapısı tasarımı",
+      "group": "Araç tasarım görselleri",
+      "width": 1277,
+      "height": 706,
+      "sizeKb": 48,
+      "note": ""
+    },
+    {
+      "file": "/media/tasarim-iss-auv-izometrik.jpg",
+      "title": "İSS sualtı aracının itki üniteleri ve kamera yerleşimi",
+      "group": "Araç tasarım görselleri",
+      "width": 768,
+      "height": 550,
+      "sizeKb": 37,
+      "note": ""
+    },
+    {
+      "file": "/media/tasarim-iss-auv-mor.jpg",
+      "title": "İSS sualtı aracının gövde ve kaplama tasarımı",
+      "group": "Araç tasarım görselleri",
+      "width": 1600,
+      "height": 767,
+      "sizeKb": 80,
+      "note": ""
+    },
+    {
+      "file": "/media/tasarim-iss-auv-onden.jpg",
+      "title": "İSS otonom sualtı aracının önden tasarım görüntüsü",
+      "group": "Araç tasarım görselleri",
+      "width": 786,
+      "height": 613,
+      "sizeKb": 69,
+      "note": ""
+    },
+    {
+      "file": "/media/tasarim-matrobot-ika.jpg",
+      "title": "MATROBOT tarımsal insansız kara aracının tasarım görüntüsü",
+      "group": "Araç tasarım görselleri",
+      "width": 403,
+      "height": 288,
+      "sizeKb": 11,
+      "note": ""
+    },
+    {
+      "file": "/media/tasarim-ucan-araba.jpg",
+      "title": "Uçan araba konsept aracımızın tasarım görüntüsü",
+      "group": "Araç tasarım görselleri",
+      "width": 345,
+      "height": 185,
+      "sizeKb": 7,
+      "note": ""
+    },
+    {
+      "file": "/media/goksav-test.jpg",
+      "title": "GÖKSAV hava savunma sistemi test düzeneği",
+      "group": "Takım kapak görselleri",
+      "width": 337,
+      "height": 658,
+      "sizeKb": 24,
+      "note": ""
+    },
+    {
+      "file": "/media/ida-ekip.jpg",
+      "title": "İDA insansız deniz aracı ekibimiz",
+      "group": "Takım kapak görselleri",
+      "width": 330,
+      "height": 238,
+      "sizeKb": 25,
+      "note": ""
+    },
+    {
+      "file": "/media/galeri-iss-fuar-standi.jpg",
+      "title": "Renault Twizy Contest için geliştirdiğimiz araç",
+      "group": "Takım kapak görselleri",
+      "width": 435,
+      "height": 382,
+      "sizeKb": 46,
+      "note": ""
+    },
+    {
+      "file": "/media/takim-alhazen.jpg",
+      "title": "ALHAZEN ekibimizin hidrojen yakıt pili ve ileri malzeme çalışmaları",
+      "group": "Takım kapak görselleri",
+      "width": 1200,
+      "height": 1600,
+      "sizeKb": 130,
+      "note": ""
+    },
+    {
+      "file": "/media/takim-ashina-2026.jpg",
+      "title": "Ashina 2026",
+      "group": "Takım kapak görselleri",
+      "width": 1200,
+      "height": 675,
+      "sizeKb": 80,
+      "note": ""
+    },
+    {
+      "file": "/media/takim-ashina.jpg",
+      "title": "ASHİNA ekibimiz insansız hava aracıyla",
+      "group": "Takım kapak görselleri",
+      "width": 694,
+      "height": 429,
+      "sizeKb": 52,
+      "note": ""
+    },
+    {
+      "file": "/media/takim-goksav.jpg",
+      "title": "GÖKSAV hava savunma sistemi prototipi",
+      "group": "Takım kapak görselleri",
+      "width": 377,
+      "height": 655,
+      "sizeKb": 38,
+      "note": ""
+    },
+    {
+      "file": "/media/takim-ida.jpg",
+      "title": "İnsansız deniz aracı ekibimiz yarışma alanında",
+      "group": "Takım kapak görselleri",
+      "width": 739,
+      "height": 336,
+      "sizeKb": 51,
+      "note": ""
+    },
+    {
+      "file": "/media/takim-iss-ekip.jpg",
+      "title": "Iss ekip",
+      "group": "Takım kapak görselleri",
+      "width": 388,
+      "height": 283,
+      "sizeKb": 24,
+      "note": ""
+    },
+    {
+      "file": "/media/takim-iss-sualti-araci.jpg",
+      "title": "İnsansız sualtı aracımız havuz testinde",
+      "group": "Takım kapak görselleri",
+      "width": 408,
+      "height": 344,
+      "sizeKb": 31,
+      "note": ""
+    },
+    {
+      "file": "/media/takim-lodos.jpg",
+      "title": "LODOS ekibimiz insansız deniz aracıyla TEKNOFEST 2026 finalinde",
+      "group": "Takım kapak görselleri",
+      "width": 640,
+      "height": 360,
+      "sizeKb": 43,
+      "note": ""
+    },
+    {
+      "file": "/media/takim-luna-ika.jpg",
+      "title": "Luna ika",
+      "group": "Takım kapak görselleri",
+      "width": 1200,
+      "height": 675,
+      "sizeKb": 76,
+      "note": ""
+    },
+    {
+      "file": "/media/takim-luna.jpg",
+      "title": "Luna",
+      "group": "Takım kapak görselleri",
+      "width": 367,
+      "height": 275,
+      "sizeKb": 27,
+      "note": ""
+    },
+    {
+      "file": "/media/takim-matris-2026.jpg",
+      "title": "Matris 2026",
+      "group": "Takım kapak görselleri",
+      "width": 1200,
+      "height": 675,
+      "sizeKb": 103,
+      "note": ""
+    },
+    {
+      "file": "/media/takim-matris-iha.jpg",
+      "title": "MATRİS sürü İHA sistemimiz",
+      "group": "Takım kapak görselleri",
+      "width": 670,
+      "height": 377,
+      "sizeKb": 39,
+      "note": ""
+    },
+    {
+      "file": "/media/takim-matrover.jpg",
+      "title": "MATROVER ekibimiz TEKNOFEST yarışma alanında",
+      "group": "Takım kapak görselleri",
+      "width": 700,
+      "height": 368,
+      "sizeKb": 59,
+      "note": ""
+    },
+    {
+      "file": "/media/takim-sanayide-dijital.jpg",
+      "title": "Sanayide dijital",
+      "group": "Takım kapak görselleri",
+      "width": 720,
+      "height": 411,
+      "sizeKb": 49,
+      "note": ""
+    },
+    {
+      "file": "/media/takim-zemheri.jpg",
+      "title": "ZEMHERİ ekibimiz su altı roketiyle TEKNOFEST 2026 finalinde",
+      "group": "Takım kapak görselleri",
+      "width": 1600,
+      "height": 900,
+      "sizeKb": 196,
+      "note": ""
+    },
+    {
+      "file": "/media/galeri-2025-yil-ozeti.jpg",
+      "title": "2025 yılından kareler",
+      "group": "Galeri fotoğrafları",
+      "width": 960,
+      "height": 540,
+      "sizeKb": 186,
+      "note": ""
+    },
+    {
+      "file": "/media/galeri-alper-gezeravci-detay.jpg",
+      "title": "Alper gezeravci detay",
+      "group": "Galeri fotoğrafları",
+      "width": 676,
+      "height": 1200,
+      "sizeKb": 228,
+      "note": ""
+    },
+    {
+      "file": "/media/galeri-ashina-atolye.jpg",
+      "title": "Ashina atolye",
+      "group": "Galeri fotoğrafları",
+      "width": 1126,
+      "height": 2000,
+      "sizeKb": 291,
+      "note": ""
+    },
+    {
+      "file": "/media/galeri-ashina-iha.jpg",
+      "title": "Ashina iha",
+      "group": "Galeri fotoğrafları",
+      "width": 1126,
+      "height": 2000,
+      "sizeKb": 298,
+      "note": ""
+    },
+    {
+      "file": "/media/galeri-ashina-kompozit-uretim.jpg",
+      "title": "ASHİNA kanat kalıbında vakum infüzyonu ile kompozit üretim",
+      "group": "Galeri fotoğrafları",
+      "width": 1200,
+      "height": 1600,
+      "sizeKb": 132,
+      "note": ""
+    },
+    {
+      "file": "/media/galeri-ashina-saha.jpg",
+      "title": "ASHİNA ekibi TEKNOFEST uçuş sahasında",
+      "group": "Galeri fotoğrafları",
+      "width": 1600,
+      "height": 1200,
+      "sizeKb": 310,
+      "note": ""
+    },
+    {
+      "file": "/media/galeri-ashina-teknofest-grup.jpg",
+      "title": "ASHİNA ekibimiz TEKNOFEST'te LAGARİ-FIRAT-YELKOVAN İHA'larıyla",
+      "group": "Galeri fotoğrafları",
+      "width": 1600,
+      "height": 1200,
+      "sizeKb": 205,
+      "note": ""
+    },
+    {
+      "file": "/media/galeri-ashina-uretim.jpg",
+      "title": "ASHİNA İHA gövde üretim aşamasında",
+      "group": "Galeri fotoğrafları",
+      "width": 863,
+      "height": 646,
+      "sizeKb": 68,
+      "note": ""
+    },
+    {
+      "file": "/media/galeri-ermetal-gezisi.jpg",
+      "title": "ERMETAL teknik gezimiz",
+      "group": "Galeri fotoğrafları",
+      "width": 876,
+      "height": 553,
+      "sizeKb": 80,
+      "note": ""
+    },
+    {
+      "file": "/media/galeri-fabrika-gezisi.jpg",
+      "title": "Üretim tesisi gezimizden bir kare",
+      "group": "Galeri fotoğrafları",
+      "width": 1200,
+      "height": 675,
+      "sizeKb": 161,
+      "note": ""
+    },
+    {
+      "file": "/media/galeri-hktm-ekip.jpg",
+      "title": "Hktm ekip",
+      "group": "Galeri fotoğrafları",
+      "width": 1200,
+      "height": 1600,
+      "sizeKb": 208,
+      "note": ""
+    },
+    {
+      "file": "/media/galeri-hktm-gezisi.jpg",
+      "title": "HKTM teknik gezimizden bir kare",
+      "group": "Galeri fotoğrafları",
+      "width": 1200,
+      "height": 900,
+      "sizeKb": 141,
+      "note": ""
+    },
+    {
+      "file": "/media/galeri-hktm-grup.jpg",
+      "title": "Hktm grup",
+      "group": "Galeri fotoğrafları",
+      "width": 1200,
+      "height": 900,
+      "sizeKb": 148,
+      "note": ""
+    },
+    {
+      "file": "/media/galeri-hktm-sunum.jpg",
+      "title": "Hktm sunum",
+      "group": "Galeri fotoğrafları",
+      "width": 1200,
+      "height": 900,
+      "sizeKb": 141,
+      "note": ""
+    },
+    {
+      "file": "/media/galeri-iss-2021-disari.jpg",
+      "title": "İSS ekibimiz 2021 sezonunda",
+      "group": "Galeri fotoğrafları",
+      "width": 594,
+      "height": 444,
+      "sizeKb": 56,
+      "note": ""
+    },
+    {
+      "file": "/media/galeri-iss-2021-icerde.jpg",
+      "title": "İSS ekibimiz sualtı aracı prototipiyle",
+      "group": "Galeri fotoğrafları",
+      "width": 314,
+      "height": 215,
+      "sizeKb": 15,
+      "note": ""
+    },
+    {
+      "file": "/media/galeri-iss-auv-havuz.jpg",
+      "title": "Sualtı aracımız havuz testlerine hazırlanırken",
+      "group": "Galeri fotoğrafları",
+      "width": 1536,
+      "height": 2048,
+      "sizeKb": 533,
+      "note": ""
+    },
+    {
+      "file": "/media/galeri-iss-auv-sergi.jpg",
+      "title": "Sualtı aracımız kampüs tanıtım gününde",
+      "group": "Galeri fotoğrafları",
+      "width": 1600,
+      "height": 1200,
+      "sizeKb": 384,
+      "note": ""
+    },
+    {
+      "file": "/media/galeri-istanbul-fuar-merkezi.jpg",
+      "title": "İstanbul Fuar Merkezi'ndeki fuar katılımımız",
+      "group": "Galeri fotoğrafları",
+      "width": 1800,
+      "height": 1350,
+      "sizeKb": 339,
+      "note": ""
+    },
+    {
+      "file": "/media/galeri-lodos-atolye-govde.jpg",
+      "title": "Lodos atolye govde",
+      "group": "Galeri fotoğrafları",
+      "width": 1200,
+      "height": 675,
+      "sizeKb": 101,
+      "note": ""
+    },
+    {
+      "file": "/media/galeri-lodos-detay.jpg",
+      "title": "Lodos detay",
+      "group": "Galeri fotoğrafları",
+      "width": 1200,
+      "height": 675,
+      "sizeKb": 94,
+      "note": ""
+    },
+    {
+      "file": "/media/galeri-lodos-ekip-sahil.jpg",
+      "title": "LODOS ekibimiz ve insansız deniz aracı",
+      "group": "Galeri fotoğrafları",
+      "width": 1200,
+      "height": 800,
+      "sizeKb": 218,
+      "note": ""
+    },
+    {
+      "file": "/media/galeri-lodos-ekip.jpg",
+      "title": "LODOS ekibimiz yarışma alanında",
+      "group": "Galeri fotoğrafları",
+      "width": 480,
+      "height": 640,
+      "sizeKb": 44,
+      "note": ""
+    },
+    {
+      "file": "/media/galeri-lodos-saha.jpg",
+      "title": "LODOS ekibimiz yarışma sahasında",
+      "group": "Galeri fotoğrafları",
+      "width": 1200,
+      "height": 800,
+      "sizeKb": 155,
+      "note": ""
+    },
+    {
+      "file": "/media/galeri-lodos-teknofest.jpg",
+      "title": "LODOS ekibimiz TEKNOFEST 2026 standında",
+      "group": "Galeri fotoğrafları",
+      "width": 1200,
+      "height": 800,
+      "sizeKb": 87,
+      "note": ""
+    },
+    {
+      "file": "/media/galeri-luna-batarya.jpg",
+      "title": "Luna batarya",
+      "group": "Galeri fotoğrafları",
+      "width": 1200,
+      "height": 1600,
+      "sizeKb": 226,
+      "note": ""
+    },
+    {
+      "file": "/media/galeri-matris-ekip.jpg",
+      "title": "Matris ekip",
+      "group": "Galeri fotoğrafları",
+      "width": 1200,
+      "height": 675,
+      "sizeKb": 128,
+      "note": ""
+    },
+    {
+      "file": "/media/galeri-matris-saha.jpg",
+      "title": "MATRİS sürü İHA ekibi yer istasyonu ve uçuş testlerinde",
+      "group": "Galeri fotoğrafları",
+      "width": 1200,
+      "height": 675,
+      "sizeKb": 136,
+      "note": ""
+    },
+    {
+      "file": "/media/galeri-matro-birincilik-30000.jpg",
+      "title": "Yarışma birinciliği ödülümüzle topluluk sergimiz",
+      "group": "Galeri fotoğrafları",
+      "width": 1800,
+      "height": 1186,
+      "sizeKb": 301,
+      "note": ""
+    },
+    {
+      "file": "/media/galeri-matro-kupa-vitrini.jpg",
+      "title": "Topluluk kupa vitrinimiz",
+      "group": "Galeri fotoğrafları",
+      "width": 1154,
+      "height": 657,
+      "sizeKb": 108,
+      "note": ""
+    },
+    {
+      "file": "/media/galeri-matrover-2025.jpg",
+      "title": "MATROVER otonom arazi aracı açık saha testlerinde",
+      "group": "Galeri fotoğrafları",
+      "width": 1200,
+      "height": 1600,
+      "sizeKb": 405,
+      "note": ""
+    },
+    {
+      "file": "/media/galeri-matrover-arac.jpg",
+      "title": "Matrover arac",
+      "group": "Galeri fotoğrafları",
+      "width": 1200,
+      "height": 1600,
+      "sizeKb": 378,
+      "note": ""
+    },
+    {
+      "file": "/media/galeri-matrover-stand.jpg",
+      "title": "MATROVER ekibimiz TEKNOFEST standında",
+      "group": "Galeri fotoğrafları",
+      "width": 1200,
+      "height": 675,
+      "sizeKb": 164,
+      "note": ""
+    },
+    {
+      "file": "/media/galeri-meexx-stand.jpg",
+      "title": "MEEXX Makine ve Teknolojileri Fuarı'ndaki standımız",
+      "group": "Galeri fotoğrafları",
+      "width": 1080,
+      "height": 1920,
+      "sizeKb": 333,
+      "note": ""
+    },
+    {
+      "file": "/media/galeri-mergen-hss.jpg",
+      "title": "Mergen hss",
+      "group": "Galeri fotoğrafları",
+      "width": 1200,
+      "height": 1600,
+      "sizeKb": 105,
+      "note": ""
+    },
+    {
+      "file": "/media/galeri-meteksan-fuari.jpg",
+      "title": "Savunma sanayii fuarında Meteksan standında",
+      "group": "Galeri fotoğrafları",
+      "width": 1600,
+      "height": 1200,
+      "sizeKb": 255,
+      "note": ""
+    },
+    {
+      "file": "/media/galeri-prusa-teknofest.jpg",
+      "title": "PRUSA ekibimizin TEKNOFEST 2026 sergileme alanı",
+      "group": "Galeri fotoğrafları",
+      "width": 1200,
+      "height": 800,
+      "sizeKb": 54,
+      "note": ""
+    },
+    {
+      "file": "/media/galeri-pusula-ekip-2025.jpg",
+      "title": "PUSULA ekibimiz ve sanayi robotik platformu",
+      "group": "Galeri fotoğrafları",
+      "width": 1148,
+      "height": 854,
+      "sizeKb": 102,
+      "note": ""
+    },
+    {
+      "file": "/media/galeri-pusula-robot.jpg",
+      "title": "Pusula robot",
+      "group": "Galeri fotoğrafları",
+      "width": 1148,
+      "height": 854,
+      "sizeKb": 99,
+      "note": ""
+    },
+    {
+      "file": "/media/galeri-sanayide-dijital-arena.jpg",
+      "title": "Sanayide Dijital Teknolojiler yarışma arenasında aracımız",
+      "group": "Galeri fotoğrafları",
+      "width": 1280,
+      "height": 720,
+      "sizeKb": 108,
+      "note": ""
+    },
+    {
+      "file": "/media/galeri-tanisma-kahvaltisi.jpg",
+      "title": "Yeni dönem tanışma kahvaltımız",
+      "group": "Galeri fotoğrafları",
+      "width": 540,
+      "height": 960,
+      "sizeKb": 84,
+      "note": ""
+    },
+    {
+      "file": "/media/galeri-teknofest-2022-odul.jpg",
+      "title": "TEKNOFEST Sanayide Dijital Teknolojileri Yarışması Temel Kategori'de Türkiye üçüncülüğü",
+      "group": "Galeri fotoğrafları",
+      "width": 1800,
+      "height": 831,
+      "sizeKb": 258,
+      "note": ""
+    },
+    {
+      "file": "/media/galeri-teknopark-ankara.jpg",
+      "title": "Teknopark Ankara gezimiz",
+      "group": "Galeri fotoğrafları",
+      "width": 1024,
+      "height": 768,
+      "sizeKb": 140,
+      "note": ""
+    },
+    {
+      "file": "/media/galeri-tika-tarimsal-ika.jpg",
+      "title": "MATROBOT ekibimiz Tarımsal İnsansız Kara Aracı Yarışması'nda",
+      "group": "Galeri fotoğrafları",
+      "width": 1800,
+      "height": 1205,
+      "sizeKb": 308,
+      "note": ""
+    },
+    {
+      "file": "/media/galeri-toyota-gezisi.jpg",
+      "title": "Toyota fabrikası teknik gezimiz",
+      "group": "Galeri fotoğrafları",
+      "width": 879,
+      "height": 493,
+      "sizeKb": 75,
+      "note": ""
+    },
+    {
+      "file": "/media/galeri-tubitak-sage-gezisi.jpg",
+      "title": "TÜBİTAK SAGE teknik gezimiz",
+      "group": "Galeri fotoğrafları",
+      "width": 800,
+      "height": 532,
+      "sizeKb": 86,
+      "note": ""
+    },
+    {
+      "file": "/media/galeri-turkish-technic-atolye.jpg",
+      "title": "Turkish Technic teknik gezimizde laboratuvar incelemesi",
+      "group": "Galeri fotoğrafları",
+      "width": 1200,
+      "height": 675,
+      "sizeKb": 131,
+      "note": ""
+    },
+    {
+      "file": "/media/galeri-turkish-technic-briefing.jpg",
+      "title": "Turkish Technic teknik gezimizde saha bilgilendirmesi",
+      "group": "Galeri fotoğrafları",
+      "width": 1200,
+      "height": 675,
+      "sizeKb": 103,
+      "note": ""
+    },
+    {
+      "file": "/media/galeri-turkish-technic-guvenlik.jpg",
+      "title": "Turkish Technic teknik gezimizde iş güvenliği sunumu",
+      "group": "Galeri fotoğrafları",
+      "width": 1200,
+      "height": 675,
+      "sizeKb": 96,
+      "note": ""
+    },
+    {
+      "file": "/media/galeri-turkish-technic-hangar.jpg",
+      "title": "Turkish Technic teknik gezimizde uçak bakım hangarında ekip fotoğrafı",
+      "group": "Galeri fotoğrafları",
+      "width": 1200,
+      "height": 675,
+      "sizeKb": 149,
+      "note": ""
+    },
+    {
+      "file": "/media/galeri-turkish-technic-plaket.jpg",
+      "title": "Turkish Technic çalıştayı kapanışında plaket takdimi",
+      "group": "Galeri fotoğrafları",
+      "width": 1200,
+      "height": 1600,
+      "sizeKb": 195,
+      "note": ""
+    },
+    {
+      "file": "/media/galeri-turkish-technic-sinif.jpg",
+      "title": "Turkish technic sinif",
+      "group": "Galeri fotoğrafları",
+      "width": 1200,
+      "height": 1600,
+      "sizeKb": 314,
+      "note": ""
+    },
+    {
+      "file": "/media/galeri-zemheri-atolye.jpg",
+      "title": "ZEMHERİ ekibimiz yarışma alanında son hazırlıklarda",
+      "group": "Galeri fotoğrafları",
+      "width": 1200,
+      "height": 900,
+      "sizeKb": 188,
+      "note": ""
+    },
+    {
+      "file": "/media/galeri-zemheri-final.jpg",
+      "title": "ZEMHERİ ekibimiz TEKNOFEST 2026 Mavi Vatan finalinde",
+      "group": "Galeri fotoğrafları",
+      "width": 1200,
+      "height": 676,
+      "sizeKb": 139,
+      "note": ""
+    },
+    {
+      "file": "/media/galeri-zemheri-sara.jpg",
+      "title": "ZEMHERİ'nin SARA aracı Özdemir Bayraktar Teknoloji Atölyesi'nde",
+      "group": "Galeri fotoğrafları",
+      "width": 1200,
+      "height": 1600,
+      "sizeKb": 285,
+      "note": ""
+    },
+    {
+      "file": "/media/galeri-zemheri-takim.jpg",
+      "title": "Zemheri takim",
+      "group": "Galeri fotoğrafları",
+      "width": 1200,
+      "height": 1600,
+      "sizeKb": 247,
+      "note": ""
+    },
+    {
+      "file": "/media/ika-parkur.jpg",
+      "title": "İnsansız kara aracı yarışma parkuru",
+      "group": "Galeri fotoğrafları",
+      "width": 425,
+      "height": 303,
+      "sizeKb": 31,
+      "note": ""
+    },
+    {
+      "file": "/media/ika-saha-testi.jpg",
+      "title": "İnsansız kara aracımızın saha testleri",
+      "group": "Galeri fotoğrafları",
+      "width": 306,
+      "height": 332,
+      "sizeKb": 28,
+      "note": ""
+    },
+    {
+      "file": "/media/ika-yarisma-alani.jpg",
+      "title": "İnsansız kara aracı yarışma alanı",
+      "group": "Galeri fotoğrafları",
+      "width": 307,
+      "height": 303,
+      "sizeKb": 26,
+      "note": ""
+    },
+    {
+      "file": "/media/mavi-vatan-ekipler.jpg",
+      "title": "TEKNOFEST 2026 Mavi Vatan'da LODOS, ZEMHERİ ve PRUSA ekiplerimiz TCG Anadolu'da",
+      "group": "Galeri fotoğrafları",
+      "width": 1600,
+      "height": 900,
+      "sizeKb": 187,
+      "note": ""
+    },
+    {
+      "file": "/media/atolye-araclar.jpg",
+      "title": "Atölyemizde sergilenen proje araçlarımız",
+      "group": "Faaliyet fotoğrafları",
+      "width": 723,
+      "height": 542,
+      "sizeKb": 61,
+      "note": ""
+    },
+    {
+      "file": "/media/ekip-kampus.jpg",
+      "title": "Kampüste topluluk üyelerimiz",
+      "group": "Faaliyet fotoğrafları",
+      "width": 753,
+      "height": 566,
+      "sizeKb": 76,
+      "note": ""
+    },
+    {
+      "file": "/media/etkinlik-alper-gezeravci.jpg",
+      "title": "İlk Türk astronot Alper Gezeravcı ve BTÜ Rektörü Prof. Dr. Naci Çağlar atölyemizde",
+      "group": "Faaliyet fotoğrafları",
+      "width": 1200,
+      "height": 676,
+      "sizeKb": 116,
+      "note": ""
+    },
+    {
+      "file": "/media/fuar-standi-2.jpg",
+      "title": "Standi 2",
+      "group": "Faaliyet fotoğrafları",
+      "width": 405,
+      "height": 225,
+      "sizeKb": 23,
+      "note": ""
+    },
+    {
+      "file": "/media/fuar-standi.jpg",
+      "title": "Fuar standımızda ziyaretçilerimizle",
+      "group": "Faaliyet fotoğrafları",
+      "width": 405,
+      "height": 263,
+      "sizeKb": 25,
+      "note": ""
+    },
+    {
+      "file": "/media/fuar-ziyaret.jpg",
+      "title": "Ziyaret",
+      "group": "Faaliyet fotoğrafları",
+      "width": 405,
+      "height": 721,
+      "sizeKb": 58,
+      "note": ""
+    },
+    {
+      "file": "/media/gezi-togg.jpg",
+      "title": "TOGG teknik gezimiz",
+      "group": "Faaliyet fotoğrafları",
+      "width": 358,
+      "height": 320,
+      "sizeKb": 23,
+      "note": ""
+    },
+    {
+      "file": "/media/gezi-turkish-technic.jpg",
+      "title": "Turkish Technic teknik gezimiz",
+      "group": "Faaliyet fotoğrafları",
+      "width": 357,
+      "height": 320,
+      "sizeKb": 29,
+      "note": ""
+    },
+    {
+      "file": "/media/teknofest-standi.jpg",
+      "title": "TEKNOFEST alanındaki MATRO standımız",
+      "group": "Faaliyet fotoğrafları",
+      "width": 580,
+      "height": 362,
+      "sizeKb": 44,
+      "note": ""
+    },
+    {
+      "file": "/media/gorsel-twizy-emizy-birincilik.jpg",
+      "title": "Twizy emizy birincilik",
+      "group": "Yarışma afiş ve ödül görselleri",
+      "width": 960,
+      "height": 884,
+      "sizeKb": 95,
+      "note": ""
+    },
+    {
+      "file": "/media/gorsel-twizy-matrobot-iletisim.jpg",
+      "title": "Twizy matrobot iletisim",
+      "group": "Yarışma afiş ve ödül görselleri",
+      "width": 960,
+      "height": 884,
+      "sizeKb": 99,
+      "note": ""
+    },
+    {
+      "file": "/media/odul-girisimcilik.jpg",
+      "title": "TEKNOFEST Girişimcilik Yarışması Türkiye 1.liği ödül töreni",
+      "group": "Yarışma afiş ve ödül görselleri",
+      "width": 560,
+      "height": 465,
+      "sizeKb": 46,
+      "note": ""
+    },
+    {
+      "file": "/media/odul-toreni.jpg",
+      "title": "Ödül töreninden bir kare",
+      "group": "Yarışma afiş ve ödül görselleri",
+      "width": 404,
+      "height": 261,
+      "sizeKb": 30,
+      "note": ""
+    },
+    {
+      "file": "/media/haber-alp-havacilik.jpg",
+      "title": "Alp Havacılık teknik gezimiz",
+      "group": "Haber görselleri",
+      "width": 1600,
+      "height": 900,
+      "sizeKb": 216,
+      "note": ""
+    },
+    {
+      "file": "/media/haber-atolye-egitimi.jpg",
+      "title": "Atolye egitimi",
+      "group": "Haber görselleri",
+      "width": 540,
+      "height": 960,
+      "sizeKb": 49,
+      "note": ""
+    },
+    {
+      "file": "/media/haber-bahar-piknigi.jpg",
+      "title": "Bahar pikniğimiz",
+      "group": "Haber görselleri",
+      "width": 1100,
+      "height": 1956,
+      "sizeKb": 311,
+      "note": ""
+    },
+    {
+      "file": "/media/haber-biyolift.jpg",
+      "title": "Biyolift",
+      "group": "Haber görselleri",
+      "width": 800,
+      "height": 800,
+      "sizeKb": 75,
+      "note": ""
+    },
+    {
+      "file": "/media/haber-btu-robot-gunleri.jpg",
+      "title": "BTÜ Robot Günleri 2025'te standımız",
+      "group": "Haber görselleri",
+      "width": 1100,
+      "height": 1956,
+      "sizeKb": 177,
+      "note": ""
+    },
+    {
+      "file": "/media/haber-devfest-bursa.jpg",
+      "title": "Devfest bursa",
+      "group": "Haber görselleri",
+      "width": 640,
+      "height": 800,
+      "sizeKb": 30,
+      "note": ""
+    },
+    {
+      "file": "/media/haber-ermetal-gezisi.jpg",
+      "title": "Ermetal gezisi",
+      "group": "Haber görselleri",
+      "width": 540,
+      "height": 960,
+      "sizeKb": 84,
+      "note": ""
+    },
+    {
+      "file": "/media/haber-genc-ticaret.jpg",
+      "title": "Genc ticaret",
+      "group": "Haber görselleri",
+      "width": 1100,
+      "height": 1100,
+      "sizeKb": 108,
+      "note": ""
+    },
+    {
+      "file": "/media/haber-hali-saha.jpg",
+      "title": "Halı saha etkinliğimiz",
+      "group": "Haber görselleri",
+      "width": 1080,
+      "height": 1920,
+      "sizeKb": 287,
+      "note": ""
+    },
+    {
+      "file": "/media/haber-hktm-gezisi.jpg",
+      "title": "Hktm gezisi",
+      "group": "Haber görselleri",
+      "width": 1080,
+      "height": 1920,
+      "sizeKb": 243,
+      "note": ""
+    },
+    {
+      "file": "/media/haber-ikinci-egitim.jpg",
+      "title": "Ikinci egitim",
+      "group": "Haber görselleri",
+      "width": 1080,
+      "height": 1920,
+      "sizeKb": 182,
+      "note": ""
+    },
+    {
+      "file": "/media/haber-luna-lodos.jpg",
+      "title": "Luna lodos",
+      "group": "Haber görselleri",
+      "width": 800,
+      "height": 1000,
+      "sizeKb": 100,
+      "note": ""
+    },
+    {
+      "file": "/media/haber-matrover-3luk.jpg",
+      "title": "Matrover 3luk",
+      "group": "Haber görselleri",
+      "width": 800,
+      "height": 1000,
+      "sizeKb": 117,
+      "note": ""
+    },
+    {
+      "file": "/media/haber-mavi-vatan-finalistleri.jpg",
+      "title": "Mavi Vatan finalisti takımlarımız: Lodos, Zemheri ve Prusa",
+      "group": "Haber görselleri",
+      "width": 1080,
+      "height": 1351,
+      "sizeKb": 151,
+      "note": ""
+    },
+    {
+      "file": "/media/haber-meexx.jpg",
+      "title": "Meexx",
+      "group": "Haber görselleri",
+      "width": 800,
+      "height": 1000,
+      "sizeKb": 109,
+      "note": ""
+    },
+    {
+      "file": "/media/haber-tanisma-etkinligi.jpg",
+      "title": "Tanisma etkinligi",
+      "group": "Haber görselleri",
+      "width": 640,
+      "height": 1136,
+      "sizeKb": 63,
+      "note": ""
+    },
+    {
+      "file": "/media/haber-tekirdag-ziyaret.jpg",
+      "title": "Tekirdag ziyaret",
+      "group": "Haber görselleri",
+      "width": 540,
+      "height": 960,
+      "sizeKb": 64,
+      "note": ""
+    },
+    {
+      "file": "/media/haber-teknofest-2026-diyarbakir.jpg",
+      "title": "TEKNOFEST 2026 finali — Diyarbakır, PUSULA",
+      "group": "Haber görselleri",
+      "width": 1200,
+      "height": 1500,
+      "sizeKb": 146,
+      "note": ""
+    },
+    {
+      "file": "/media/haber-teknofest-2026-finalleri.jpg",
+      "title": "TEKNOFEST 2026 finali — Malatya, ASHİNA",
+      "group": "Haber görselleri",
+      "width": 1200,
+      "height": 1500,
+      "sizeKb": 203,
+      "note": ""
+    },
+    {
+      "file": "/media/haber-teknofest-2026-gaziantep.jpg",
+      "title": "TEKNOFEST 2026 finali — Gaziantep, MATRİS",
+      "group": "Haber görselleri",
+      "width": 1200,
+      "height": 1500,
+      "sizeKb": 205,
+      "note": ""
+    },
+    {
+      "file": "/media/haber-teknofest-2026-mardin.jpg",
+      "title": "TEKNOFEST 2026 finali — Mardin, LUNA İKA",
+      "group": "Haber görselleri",
+      "width": 1200,
+      "height": 1500,
+      "sizeKb": 175,
+      "note": ""
+    },
+    {
+      "file": "/media/haber-teknofest-bilgilendirme.jpg",
+      "title": "Teknofest bilgilendirme",
+      "group": "Haber görselleri",
+      "width": 1080,
+      "height": 1920,
+      "sizeKb": 208,
+      "note": ""
+    },
+    {
+      "file": "/media/haber-tubitak-mam.jpg",
+      "title": "Tubitak mam",
+      "group": "Haber görselleri",
+      "width": 1100,
+      "height": 1375,
+      "sizeKb": 106,
+      "note": ""
+    },
+    {
+      "file": "/media/haber-turkish-technic-plaket.jpg",
+      "title": "Turkish technic plaket",
+      "group": "Haber görselleri",
+      "width": 1200,
+      "height": 1600,
+      "sizeKb": 168,
+      "note": ""
+    },
+    {
+      "file": "/media/haber-tusas-ziyareti.jpg",
+      "title": "TUSAŞ heyeti atölyemizde LODOS prototipini incelerken",
+      "group": "Haber görselleri",
+      "width": 1600,
+      "height": 1200,
+      "sizeKb": 191,
+      "note": ""
+    },
+    {
+      "file": "/media/haber-uye-alimi.jpg",
+      "title": "Uye alimi",
+      "group": "Haber görselleri",
+      "width": 800,
+      "height": 1000,
+      "sizeKb": 123,
+      "note": ""
+    },
+    {
+      "file": "/media/haber-yks-tercih-2026.jpg",
+      "title": "Topluluk anılarımızdan bir kolaj",
+      "group": "Haber görselleri",
+      "width": 1080,
+      "height": 1350,
+      "sizeKb": 249,
+      "note": ""
+    },
+    {
+      "file": "/media/video-lodos-tanitim.mp4",
+      "title": "Lodos tanitim",
+      "group": "Videolar",
+      "width": 0,
+      "height": 0,
+      "sizeKb": 1698,
+      "note": ""
+    },
+    {
+      "file": "/media/video-prusa-tanitim.mp4",
+      "title": "Prusa tanitim",
+      "group": "Videolar",
+      "width": 0,
+      "height": 0,
+      "sizeKb": 1551,
+      "note": ""
+    },
+    {
+      "file": "/media/video-zemheri-tanitim.mp4",
+      "title": "Zemheri tanitim",
+      "group": "Videolar",
+      "width": 0,
+      "height": 0,
+      "sizeKb": 2403,
+      "note": ""
+    },
+    {
+      "file": "/media/video-lodos-tanitim.jpg",
+      "title": "Lodos tanitim",
+      "group": "Video kapakları",
+      "width": 1280,
+      "height": 720,
+      "sizeKb": 61,
+      "note": ""
+    },
+    {
+      "file": "/media/video-prusa-tanitim.jpg",
+      "title": "Prusa tanitim",
+      "group": "Video kapakları",
+      "width": 1280,
+      "height": 720,
+      "sizeKb": 44,
+      "note": ""
+    },
+    {
+      "file": "/media/video-zemheri-tanitim.jpg",
+      "title": "Zemheri tanitim",
+      "group": "Video kapakları",
+      "width": 1280,
+      "height": 720,
+      "sizeKb": 56,
+      "note": ""
+    },
+    {
+      "file": "/media/logolar/takimlar/ashina.png",
+      "title": "Ashina",
+      "group": "Takım logoları",
+      "width": 800,
+      "height": 699,
+      "sizeKb": 23,
+      "note": ""
+    },
+    {
+      "file": "/media/logolar/takimlar/btu-auv.png",
+      "title": "Btu auv",
+      "group": "Takım logoları",
+      "width": 800,
+      "height": 777,
+      "sizeKb": 131,
+      "note": ""
+    },
+    {
+      "file": "/media/logolar/takimlar/btu-dalay.png",
+      "title": "Btu dalay",
+      "group": "Takım logoları",
+      "width": 800,
+      "height": 712,
+      "sizeKb": 41,
+      "note": ""
+    },
+    {
+      "file": "/media/logolar/takimlar/iss-rozet.png",
+      "title": "Iss rozet",
+      "group": "Takım logoları",
+      "width": 366,
+      "height": 366,
+      "sizeKb": 17,
+      "note": ""
+    },
+    {
+      "file": "/media/logolar/akkus-enerji.png",
+      "title": "Akkus enerji",
+      "group": "Sponsor logoları",
+      "width": 320,
+      "height": 320,
+      "sizeKb": 40,
+      "note": ""
+    },
+    {
+      "file": "/media/logolar/biyolift.png",
+      "title": "Biyolift",
+      "group": "Sponsor logoları",
+      "width": 320,
+      "height": 320,
+      "sizeKb": 24,
+      "note": ""
+    },
+    {
+      "file": "/media/logolar/cakir.png",
+      "title": "Cakir",
+      "group": "Sponsor logoları",
+      "width": 320,
+      "height": 320,
+      "sizeKb": 22,
+      "note": ""
+    },
+    {
+      "file": "/media/logolar/dr-tablet.png",
+      "title": "Dr tablet",
+      "group": "Sponsor logoları",
+      "width": 320,
+      "height": 320,
+      "sizeKb": 18,
+      "note": ""
+    },
+    {
+      "file": "/media/logolar/finemold.png",
+      "title": "Finemold",
+      "group": "Sponsor logoları",
+      "width": 320,
+      "height": 320,
+      "sizeKb": 26,
+      "note": ""
+    },
+    {
+      "file": "/media/logolar/ibras.png",
+      "title": "Ibras",
+      "group": "Sponsor logoları",
+      "width": 320,
+      "height": 320,
+      "sizeKb": 21,
+      "note": ""
+    },
+    {
+      "file": "/media/logolar/kayra-yemek.png",
+      "title": "Kayra yemek",
+      "group": "Sponsor logoları",
+      "width": 320,
+      "height": 320,
+      "sizeKb": 29,
+      "note": ""
+    },
+    {
+      "file": "/media/logolar/luna-robotics.png",
+      "title": "Luna robotics",
+      "group": "Sponsor logoları",
+      "width": 320,
+      "height": 320,
+      "sizeKb": 30,
+      "note": ""
+    },
+    {
+      "file": "/media/logolar/marka-lazer.png",
+      "title": "Marka lazer",
+      "group": "Sponsor logoları",
+      "width": 320,
+      "height": 320,
+      "sizeKb": 22,
+      "note": ""
+    },
+    {
+      "file": "/media/logolar/mercan.png",
+      "title": "Mercan",
+      "group": "Sponsor logoları",
+      "width": 320,
+      "height": 320,
+      "sizeKb": 19,
+      "note": ""
+    },
+    {
+      "file": "/media/logolar/off-ee.png",
+      "title": "Off ee",
+      "group": "Sponsor logoları",
+      "width": 320,
+      "height": 320,
+      "sizeKb": 17,
+      "note": ""
+    },
+    {
+      "file": "/media/logolar/pinar-metal.png",
+      "title": "Pinar metal",
+      "group": "Sponsor logoları",
+      "width": 320,
+      "height": 320,
+      "sizeKb": 22,
+      "note": ""
+    },
+    {
+      "file": "/media/logolar/pocketbook.png",
+      "title": "Pocketbook",
+      "group": "Sponsor logoları",
+      "width": 320,
+      "height": 320,
+      "sizeKb": 24,
+      "note": ""
+    },
+    {
+      "file": "/media/logolar/tekyaz.png",
+      "title": "Tekyaz",
+      "group": "Sponsor logoları",
+      "width": 320,
+      "height": 320,
+      "sizeKb": 37,
+      "note": ""
+    },
+    {
+      "file": "/media/logolar/tsg.png",
+      "title": "Tsg",
+      "group": "Sponsor logoları",
+      "width": 320,
+      "height": 320,
+      "sizeKb": 19,
+      "note": ""
+    },
+    {
+      "file": "/media/logolar/vatanjet.png",
+      "title": "Vatanjet",
+      "group": "Sponsor logoları",
+      "width": 320,
+      "height": 320,
+      "sizeKb": 17,
+      "note": ""
+    },
+    {
+      "file": "/media/sponsor-altin.jpg",
+      "title": "Altin",
+      "group": "Sponsor görselleri",
+      "width": 1080,
+      "height": 1350,
+      "sizeKb": 127,
+      "note": ""
+    },
+    {
+      "file": "/media/sponsor-biyolift-2.jpg",
+      "title": "Biyolift 2",
+      "group": "Sponsor görselleri",
+      "width": 800,
+      "height": 800,
+      "sizeKb": 87,
+      "note": ""
+    },
+    {
+      "file": "/media/sponsor-biyolift-3.jpg",
+      "title": "Biyolift 3",
+      "group": "Sponsor görselleri",
+      "width": 800,
+      "height": 800,
+      "sizeKb": 125,
+      "note": ""
+    },
+    {
+      "file": "/media/sponsor-bronz-tsg.jpg",
+      "title": "Bronz tsg",
+      "group": "Sponsor görselleri",
+      "width": 1080,
+      "height": 1350,
+      "sizeKb": 161,
+      "note": ""
+    },
+    {
+      "file": "/media/sponsor-bronz.jpg",
+      "title": "Bronz",
+      "group": "Sponsor görselleri",
+      "width": 720,
+      "height": 900,
+      "sizeKb": 82,
+      "note": ""
+    },
+    {
+      "file": "/media/sponsor-gonullu.jpg",
+      "title": "Gonullu",
+      "group": "Sponsor görselleri",
+      "width": 1080,
+      "height": 1350,
+      "sizeKb": 129,
+      "note": ""
+    },
+    {
+      "file": "/media/sponsor-platin-luna-robotics.jpg",
+      "title": "Platin luna robotics",
+      "group": "Sponsor görselleri",
+      "width": 1080,
+      "height": 1351,
+      "sizeKb": 179,
+      "note": ""
+    },
+    {
+      "file": "/media/sponsor-platin-tekyaz.jpg",
+      "title": "Platin tekyaz",
+      "group": "Sponsor görselleri",
+      "width": 1080,
+      "height": 1351,
+      "sizeKb": 179,
+      "note": ""
+    },
+    {
+      "file": "/media/sponsor-platin-vatanjet.jpg",
+      "title": "Platin vatanjet",
+      "group": "Sponsor görselleri",
+      "width": 1080,
+      "height": 1352,
+      "sizeKb": 163,
+      "note": ""
+    },
+    {
+      "file": "/media/takim-burkut-ucan-araba.jpg",
+      "title": "BÜRKÜT Uçan Araba prototipi ve TEKNOFEST jüri sunumu",
+      "group": "Takım kapak görselleri",
+      "note": "BÜRKÜT takım kapak görseli ve Uçan Araba yarışması sunumu",
+      "width": 1600,
+      "height": 874,
+      "sizeKb": 227
+    },
+    {
+      "file": "/media/galeri-bayraktar-ucan-araba.jpg",
+      "title": "Selçuk Bayraktar ve Uçan Araba ekibimiz TEKNOFEST standında",
+      "group": "Galeri fotoğrafları",
+      "note": "TEKNOFEST Baykar Uçan Araba stand ziyareti",
+      "width": 1320,
+      "height": 736,
+      "sizeKb": 113
+    },
+    {
+      "file": "/media/galeri-matro-teknofest-2020.jpg",
+      "title": "TEKNOFEST 2020 Gaziantep finallerinde MATRO kafilesi",
+      "group": "Galeri fotoğrafları",
+      "note": "Gaziantep TEKNOFEST 2020 final sahnesi ve topluluk bayrağı",
+      "width": 1600,
+      "height": 901,
+      "sizeKb": 191
+    },
+    {
+      "file": "/media/galeri-ashina-tubitak-sahne.jpg",
+      "title": "ASHİNA İHA ekibimiz TÜBİTAK yarışma sahnesi önünde",
+      "group": "Galeri fotoğrafları",
+      "note": "TÜBİTAK Uluslararası İHA Yarışması sahnesi",
+      "width": 1599,
+      "height": 1081,
+      "sizeKb": 178
+    },
+    {
+      "file": "/media/galeri-pusula-atolye.jpg",
+      "title": "PUSULA sanayi robotik platformu ve ekibimiz",
+      "group": "Galeri fotoğrafları",
+      "note": "Sanayide Dijital Teknolojiler robotik prototipi",
+      "width": 1600,
+      "height": 946,
+      "sizeKb": 210
+    },
+    {
+      "file": "/media/topluluk-ekip-selfie.jpg",
+      "title": "Bursa Teknik Üniversitesi MATRO topluluk ekibi",
+      "group": "Faaliyet fotoğrafları",
+      "note": "Tanıtım kitapçığı Biz Kimiz sayfası topluluk fotoğrafı",
+      "width": 1594,
+      "height": 1198,
+      "sizeKb": 256
+    },
+    {
+      "file": "/media/video-alper-gezeravci.mp4",
+      "title": "Alper Gezeravcı atölye ziyareti video kaydı",
+      "group": "Videolar",
+      "width": 1280,
+      "height": 720,
+      "sizeKb": 3818,
+      "note": "Alper Gezeravcı ve BTÜ Rektörünün MATRO atölyesinde takımları incelediği 14 saniyelik yatay 720p HD kayıt"
+    },
+    {
+      "file": "/media/video-alper-gezeravci.jpg",
+      "title": "Alper Gezeravcı video kapak görseli",
+      "group": "Video kapakları",
+      "width": 1280,
+      "height": 720,
+      "sizeKb": 140,
+      "note": "Alper Gezeravcı atölye videosu afişi"
+    },
+    {
+      "file": "/media/webmedya-genel-1.jpg",
+      "title": "genel arşivi görseli",
+      "group": "Galeri fotoğrafları",
+      "width": 1400,
+      "height": 1440,
+      "sizeKb": 235,
+      "note": "web site medya klasöründen aktarıldı (etkinlik/tanıtım-stand/17885019300252302.heic)"
+    },
+    {
+      "file": "/media/webmedya-genel-2.jpg",
+      "title": "genel arşivi görseli",
+      "group": "Galeri fotoğrafları",
+      "width": 1097,
+      "height": 820,
+      "sizeKb": 123,
+      "note": "web site medya klasöründen aktarıldı (etkinlik/tanıtım-stand/17897632835543559.jpg)"
+    },
+    {
+      "file": "/media/webmedya-genel-3.jpg",
+      "title": "genel arşivi görseli",
+      "group": "Galeri fotoğrafları",
+      "width": 1400,
+      "height": 1440,
+      "sizeKb": 119,
+      "note": "web site medya klasöründen aktarıldı (sponsorlar/ibraş/17950656764953133.webp)"
+    },
+    {
+      "file": "/media/webmedya-cevre-enerji-4.jpg",
+      "title": "cevre-enerji arşivi görseli",
+      "group": "Galeri fotoğrafları",
+      "width": 1184,
+      "height": 864,
+      "sizeKb": 91,
+      "note": "web site medya klasöründen aktarıldı (takımlar/çevre ve enerji/WhatsApp Image 2025-10-02 at 12.01.34.jpeg)"
+    },
+    {
+      "file": "/media/webmedya-cevre-enerji-5.jpg",
+      "title": "cevre-enerji arşivi görseli",
+      "group": "Galeri fotoğrafları",
+      "width": 1400,
+      "height": 1066,
+      "sizeKb": 190,
+      "note": "web site medya klasöründen aktarıldı (takımlar/çevre ve enerji/WhatsApp Image 2025-10-02 at 14.23.11.jpeg)"
+    },
+    {
+      "file": "/media/webmedya-cevre-enerji-6.jpg",
+      "title": "cevre-enerji arşivi görseli",
+      "group": "Galeri fotoğrafları",
+      "width": 1400,
+      "height": 1200,
+      "sizeKb": 183,
+      "note": "web site medya klasöründen aktarıldı (takımlar/çevre ve enerji/WhatsApp Image 2025-10-02 at 14.23.13 (2).jpeg)"
+    },
+    {
+      "file": "/media/webmedya-cevre-enerji-7.jpg",
+      "title": "cevre-enerji arşivi görseli",
+      "group": "Galeri fotoğrafları",
+      "width": 1400,
+      "height": 1200,
+      "sizeKb": 185,
+      "note": "web site medya klasöründen aktarıldı (takımlar/çevre ve enerji/WhatsApp Image 2025-10-02 at 14.23.13.jpeg)"
+    },
+    {
+      "file": "/media/webmedya-cevre-enerji-8.jpg",
+      "title": "cevre-enerji arşivi görseli",
+      "group": "Galeri fotoğrafları",
+      "width": 1200,
+      "height": 1600,
+      "sizeKb": 239,
+      "note": "web site medya klasöründen aktarıldı (takımlar/çevre ve enerji/WhatsApp Image 2025-10-02 at 14.23.14 (1).jpeg)"
+    },
+    {
+      "file": "/media/webmedya-cevre-enerji-9.jpg",
+      "title": "cevre-enerji arşivi görseli",
+      "group": "Galeri fotoğrafları",
+      "width": 1400,
+      "height": 1200,
+      "sizeKb": 194,
+      "note": "web site medya klasöründen aktarıldı (takımlar/çevre ve enerji/WhatsApp Image 2025-10-02 at 14.23.14 (2).jpeg)"
+    },
+    {
+      "file": "/media/webmedya-cevre-enerji-10.jpg",
+      "title": "cevre-enerji arşivi görseli",
+      "group": "Galeri fotoğrafları",
+      "width": 1200,
+      "height": 1600,
+      "sizeKb": 212,
+      "note": "web site medya klasöründen aktarıldı (takımlar/çevre ve enerji/WhatsApp Image 2025-10-02 at 14.23.14.jpeg)"
+    },
+    {
+      "file": "/media/webmedya-insansiz-deniz-araci-11.jpg",
+      "title": "insansiz-deniz-araci arşivi görseli",
+      "group": "Galeri fotoğrafları",
+      "width": 1400,
+      "height": 2000,
+      "sizeKb": 130,
+      "note": "web site medya klasöründen aktarıldı (takımlar/insansız deniz aracı/WhatsApp Image 2025-10-02 at 13.59.33.jpeg)"
+    },
+    {
+      "file": "/media/webmedya-insansiz-deniz-araci-12.jpg",
+      "title": "insansiz-deniz-araci arşivi görseli",
+      "group": "Galeri fotoğrafları",
+      "width": 1400,
+      "height": 2000,
+      "sizeKb": 209,
+      "note": "web site medya klasöründen aktarıldı (takımlar/insansız deniz aracı/WhatsApp Image 2025-10-02 at 13.59.34.jpeg)"
+    },
+    {
+      "file": "/media/webmedya-insansiz-deniz-araci-13.jpg",
+      "title": "insansiz-deniz-araci arşivi görseli",
+      "group": "Galeri fotoğrafları",
+      "width": 1400,
+      "height": 2048,
+      "sizeKb": 262,
+      "note": "web site medya klasöründen aktarıldı (takımlar/insansız deniz aracı/WhatsApp Image 2025-10-02 at 13.59.35 (1).jpeg)"
+    },
+    {
+      "file": "/media/webmedya-insansiz-deniz-araci-14.jpg",
+      "title": "insansiz-deniz-araci arşivi görseli",
+      "group": "Galeri fotoğrafları",
+      "width": 1400,
+      "height": 2048,
+      "sizeKb": 310,
+      "note": "web site medya klasöründen aktarıldı (takımlar/insansız deniz aracı/WhatsApp Image 2025-10-02 at 13.59.35 (2).jpeg)"
+    },
+    {
+      "file": "/media/webmedya-tika-ika-15.jpg",
+      "title": "tika-ika arşivi görseli",
+      "group": "Galeri fotoğrafları",
+      "width": 1400,
+      "height": 900,
+      "sizeKb": 223,
+      "note": "web site medya klasöründen aktarıldı (takımlar/insansız kara aracı/WhatsApp Image 2025-10-02 at 13.19.15.jpeg)"
+    },
+    {
+      "file": "/media/webmedya-tika-ika-16.jpg",
+      "title": "tika-ika arşivi görseli",
+      "group": "Galeri fotoğrafları",
+      "width": 1400,
+      "height": 900,
+      "sizeKb": 203,
+      "note": "web site medya klasöründen aktarıldı (takımlar/insansız kara aracı/WhatsApp Image 2025-10-02 at 13.19.16.jpeg)"
+    },
+    {
+      "file": "/media/webmedya-tika-ika-17.jpg",
+      "title": "tika-ika arşivi görseli",
+      "group": "Galeri fotoğrafları",
+      "width": 900,
+      "height": 1600,
+      "sizeKb": 236,
+      "note": "web site medya klasöründen aktarıldı (takımlar/insansız kara aracı/WhatsApp Image 2025-10-02 at 13.19.18.jpeg)"
+    },
+    {
+      "file": "/media/webmedya-tika-ika-18.jpg",
+      "title": "tika-ika arşivi görseli",
+      "group": "Galeri fotoğrafları",
+      "width": 1400,
+      "height": 1152,
+      "sizeKb": 158,
+      "note": "web site medya klasöründen aktarıldı (takımlar/insansız kara aracı/WhatsApp Image 2025-10-02 at 13.21.55 (1).jpeg)"
+    },
+    {
+      "file": "/media/webmedya-tika-ika-19.jpg",
+      "title": "tika-ika arşivi görseli",
+      "group": "Galeri fotoğrafları",
+      "width": 1400,
+      "height": 1152,
+      "sizeKb": 212,
+      "note": "web site medya klasöründen aktarıldı (takımlar/insansız kara aracı/WhatsApp Image 2025-10-02 at 13.21.55.jpeg)"
+    },
+    {
+      "file": "/media/webmedya-tika-ika-20.jpg",
+      "title": "tika-ika arşivi görseli",
+      "group": "Galeri fotoğrafları",
+      "width": 1400,
+      "height": 1200,
+      "sizeKb": 259,
+      "note": "web site medya klasöründen aktarıldı (takımlar/insansız kara aracı/WhatsApp Image 2025-10-02 at 13.43.57.jpeg)"
+    },
+    {
+      "file": "/media/webmedya-tika-ika-21.jpg",
+      "title": "tika-ika arşivi görseli",
+      "group": "Galeri fotoğrafları",
+      "width": 1200,
+      "height": 1600,
+      "sizeKb": 305,
+      "note": "web site medya klasöründen aktarıldı (takımlar/insansız kara aracı/WhatsApp Image 2025-10-02 at 13.43.58 (1).jpeg)"
+    },
+    {
+      "file": "/media/webmedya-tika-ika-22.jpg",
+      "title": "tika-ika arşivi görseli",
+      "group": "Galeri fotoğrafları",
+      "width": 900,
+      "height": 1600,
+      "sizeKb": 277,
+      "note": "web site medya klasöründen aktarıldı (takımlar/insansız kara aracı/WhatsApp Image 2025-10-02 at 13.44.24.jpeg)"
+    },
+    {
+      "file": "/media/webmedya-sanayide-dijital-23.jpg",
+      "title": "sanayide-dijital arşivi görseli",
+      "group": "Galeri fotoğrafları",
+      "width": 1000,
+      "height": 666,
+      "sizeKb": 64,
+      "note": "web site medya klasöründen aktarıldı (takımlar/sanayide dijital teknolojileri/WhatsApp Image 2025-10-02 at 13.56.01 (1).jpeg)"
+    },
+    {
+      "file": "/media/webmedya-sanayide-dijital-24.jpg",
+      "title": "sanayide-dijital arşivi görseli",
+      "group": "Galeri fotoğrafları",
+      "width": 1196,
+      "height": 1600,
+      "sizeKb": 105,
+      "note": "web site medya klasöründen aktarıldı (takımlar/sanayide dijital teknolojileri/WhatsApp Image 2025-10-02 at 13.56.01 (2).jpeg)"
+    },
+    {
+      "file": "/media/webmedya-sanayide-dijital-25.jpg",
+      "title": "sanayide-dijital arşivi görseli",
+      "group": "Galeri fotoğrafları",
+      "width": 1196,
+      "height": 1600,
+      "sizeKb": 150,
+      "note": "web site medya klasöründen aktarıldı (takımlar/sanayide dijital teknolojileri/WhatsApp Image 2025-10-02 at 13.56.01.jpeg)"
+    },
+    {
+      "file": "/media/webmedya-sanayide-dijital-26.jpg",
+      "title": "sanayide-dijital arşivi görseli",
+      "group": "Galeri fotoğrafları",
+      "width": 1196,
+      "height": 1600,
+      "sizeKb": 138,
+      "note": "web site medya klasöründen aktarıldı (takımlar/sanayide dijital teknolojileri/WhatsApp Image 2025-10-02 at 13.56.02.jpeg)"
+    },
+    {
+      "file": "/media/webmedya-sanayide-dijital-28.jpg",
+      "title": "sanayide-dijital arşivi görseli",
+      "group": "Galeri fotoğrafları",
+      "width": 1400,
+      "height": 1512,
+      "sizeKb": 151,
+      "note": "web site medya klasöründen aktarıldı (takımlar/sanayide dijital teknolojileri/WhatsApp Image 2025-10-02 at 13.58.19.jpeg)"
+    },
+    {
+      "file": "/media/webmedya-sanayide-dijital-29.jpg",
+      "title": "sanayide-dijital arşivi görseli",
+      "group": "Galeri fotoğrafları",
+      "width": 1400,
+      "height": 2000,
+      "sizeKb": 200,
+      "note": "web site medya klasöründen aktarıldı (takımlar/sanayide dijital teknolojileri/WhatsApp Image 2025-10-02 at 13.58.22.jpeg)"
+    },
+    {
+      "file": "/media/webmedya-sanayide-dijital-30.jpg",
+      "title": "sanayide-dijital arşivi görseli",
+      "group": "Galeri fotoğrafları",
+      "width": 1400,
+      "height": 945,
+      "sizeKb": 138,
+      "note": "web site medya klasöründen aktarıldı (takımlar/sanayide dijital teknolojileri/WhatsApp Image 2025-10-02 at 13.58.23 (1).jpeg)"
+    },
+    {
+      "file": "/media/webmedya-sanayide-dijital-31.jpg",
+      "title": "sanayide-dijital arşivi görseli",
+      "group": "Galeri fotoğrafları",
+      "width": 1400,
+      "height": 1148,
+      "sizeKb": 145,
+      "note": "web site medya klasöründen aktarıldı (takımlar/sanayide dijital teknolojileri/WhatsApp Image 2025-10-02 at 13.58.23 (2).jpeg)"
+    },
+    {
+      "file": "/media/webmedya-sanayide-dijital-32.jpg",
+      "title": "sanayide-dijital arşivi görseli",
+      "group": "Galeri fotoğrafları",
+      "width": 1400,
+      "height": 2016,
+      "sizeKb": 266,
+      "note": "web site medya klasöründen aktarıldı (takımlar/sanayide dijital teknolojileri/WhatsApp Image 2025-10-02 at 13.58.23 (3).jpeg)"
+    },
+    {
+      "file": "/media/webmedya-sanayide-dijital-33.jpg",
+      "title": "sanayide-dijital arşivi görseli",
+      "group": "Galeri fotoğrafları",
+      "width": 1400,
+      "height": 1512,
+      "sizeKb": 166,
+      "note": "web site medya klasöründen aktarıldı (takımlar/sanayide dijital teknolojileri/WhatsApp Image 2025-10-02 at 13.58.24 (1).jpeg)"
+    },
+    {
+      "file": "/media/webmedya-sanayide-dijital-34.jpg",
+      "title": "sanayide-dijital arşivi görseli",
+      "group": "Galeri fotoğrafları",
+      "width": 1400,
+      "height": 1512,
+      "sizeKb": 158,
+      "note": "web site medya klasöründen aktarıldı (takımlar/sanayide dijital teknolojileri/WhatsApp Image 2025-10-02 at 13.58.24.jpeg)"
+    },
+    {
+      "file": "/media/webmedya-suru-iha-35.jpg",
+      "title": "suru-iha arşivi görseli",
+      "group": "Galeri fotoğrafları",
+      "width": 1400,
+      "height": 899,
+      "sizeKb": 114,
+      "note": "web site medya klasöründen aktarıldı (takımlar/sürü iha/IMG-20240824-WA0004.jpg)"
+    },
+    {
+      "file": "/media/webmedya-suru-iha-36.jpg",
+      "title": "suru-iha arşivi görseli",
+      "group": "Galeri fotoğrafları",
+      "width": 1220,
+      "height": 549,
+      "sizeKb": 101,
+      "note": "web site medya klasöründen aktarıldı (takımlar/sürü iha/WhatsApp Image 2025-10-04 at 13.02.17.jpeg)"
+    },
+    {
+      "file": "/media/webmedya-suru-iha-37.jpg",
+      "title": "suru-iha arşivi görseli",
+      "group": "Galeri fotoğrafları",
+      "width": 1400,
+      "height": 1200,
+      "sizeKb": 179,
+      "note": "web site medya klasöründen aktarıldı (takımlar/sürü iha/WhatsApp Image 2025-10-04 at 13.03.04.jpeg)"
+    },
+    {
+      "file": "/media/webmedya-tika-ika-38.jpg",
+      "title": "tika-ika arşivi görseli",
+      "group": "Galeri fotoğrafları",
+      "width": 1200,
+      "height": 1600,
+      "sizeKb": 283,
+      "note": "web site medya klasöründen aktarıldı (takımlar/tarımsal insansız kara aracı/WhatsApp Image 2025-10-02 at 12.56.30 (1).jpeg)"
+    },
+    {
+      "file": "/media/webmedya-tika-ika-39.jpg",
+      "title": "tika-ika arşivi görseli",
+      "group": "Galeri fotoğrafları",
+      "width": 900,
+      "height": 1600,
+      "sizeKb": 116,
+      "note": "web site medya klasöründen aktarıldı (takımlar/tarımsal insansız kara aracı/WhatsApp Image 2025-10-02 at 12.56.30 (2).jpeg)"
+    },
+    {
+      "file": "/media/webmedya-tika-ika-40.jpg",
+      "title": "tika-ika arşivi görseli",
+      "group": "Galeri fotoğrafları",
+      "width": 900,
+      "height": 1600,
+      "sizeKb": 116,
+      "note": "web site medya klasöründen aktarıldı (takımlar/tarımsal insansız kara aracı/WhatsApp Image 2025-10-02 at 12.56.30.jpeg)"
+    },
+    {
+      "file": "/media/webmedya-tika-ika-41.jpg",
+      "title": "tika-ika arşivi görseli",
+      "group": "Galeri fotoğrafları",
+      "width": 1400,
+      "height": 1200,
+      "sizeKb": 268,
+      "note": "web site medya klasöründen aktarıldı (takımlar/tarımsal insansız kara aracı/WhatsApp Image 2025-10-02 at 12.56.31 (1).jpeg)"
+    },
+    {
+      "file": "/media/webmedya-tika-ika-42.jpg",
+      "title": "tika-ika arşivi görseli",
+      "group": "Galeri fotoğrafları",
+      "width": 828,
+      "height": 464,
+      "sizeKb": 102,
+      "note": "web site medya klasöründen aktarıldı (takımlar/tarımsal insansız kara aracı/WhatsApp Image 2025-10-02 at 12.56.31.jpeg)"
+    },
+    {
+      "file": "/media/webmedya-burkut-43.jpg",
+      "title": "burkut arşivi görseli",
+      "group": "Galeri fotoğrafları",
+      "width": 738,
+      "height": 1600,
+      "sizeKb": 142,
+      "note": "web site medya klasöründen aktarıldı (takımlar/uçan araba simülasyon yarışması/WhatsApp Image 2025-10-02 at 12.57.19 (1).jpeg)"
+    },
+    {
+      "file": "/media/webmedya-burkut-44.jpg",
+      "title": "burkut arşivi görseli",
+      "group": "Galeri fotoğrafları",
+      "width": 1080,
+      "height": 1438,
+      "sizeKb": 187,
+      "note": "web site medya klasöründen aktarıldı (takımlar/uçan araba simülasyon yarışması/WhatsApp Image 2025-10-02 at 12.57.19 (2).jpeg)"
+    },
+    {
+      "file": "/media/webmedya-burkut-45.jpg",
+      "title": "burkut arşivi görseli",
+      "group": "Galeri fotoğrafları",
+      "width": 1400,
+      "height": 1200,
+      "sizeKb": 209,
+      "note": "web site medya klasöründen aktarıldı (takımlar/uçan araba simülasyon yarışması/WhatsApp Image 2025-10-02 at 12.57.20 (1).jpeg)"
+    },
+    {
+      "file": "/media/webmedya-burkut-46.jpg",
+      "title": "burkut arşivi görseli",
+      "group": "Galeri fotoğrafları",
+      "width": 1200,
+      "height": 1600,
+      "sizeKb": 212,
+      "note": "web site medya klasöründen aktarıldı (takımlar/uçan araba simülasyon yarışması/WhatsApp Image 2025-10-02 at 12.57.20.jpeg)"
+    }
+  ]
+}

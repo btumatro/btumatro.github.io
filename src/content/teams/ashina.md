@@ -7,9 +7,12 @@ order: 1
 image: "/media/takim-ashina-2026.jpg"
 gallery:
   - "/media/takim-ashina.jpg"
+  - "/media/galeri-ashina-tubitak-sahne.jpg"
+  - "/media/galeri-ashina-saha.jpg"
+  - "/media/galeri-ashina-kompozit-uretim.jpg"
+  - "/media/tasarim-ashina-iha.jpg"
   - "/media/galeri-ashina-atolye.jpg"
   - "/media/galeri-ashina-teknofest-grup.jpg"
-  - "/media/galeri-ashina-uretim.jpg"
 badge: "2026 Finalisti"
 instagram: "ashinatechnology"
 aliases:

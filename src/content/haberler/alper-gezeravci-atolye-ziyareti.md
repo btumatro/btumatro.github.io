@@ -21,4 +21,9 @@ Türkiye'nin ilk astronotu **Alper Gezeravcı**, Bursa Teknik Üniversitesi Rekt
 
 Ziyarette PUSULA, MATROVER ve LODOS başta olmak üzere takımlarımızın geliştirdiği otonom kara araçları, sanayi robotları ve insansız deniz platformları incelendi; üretim süreçleri ve teknik detaylar paylaşıldı.
 
+<video class="mt-5 aspect-video w-full rounded-xl bg-black object-cover border border-white/10 shadow-lg" controls preload="metadata" playsinline poster="/media/video-alper-gezeravci.jpg">
+  <source src="/media/video-alper-gezeravci.mp4" type="video/mp4" />
+  Tarayıcınız video oynatmayı desteklemiyor.
+</video>
+
 Atölyemizi ziyaret ederek genç mühendis adaylarına ilham veren Alper Gezeravcı'ya ve üniversite yönetimimize teşekkür ederiz.

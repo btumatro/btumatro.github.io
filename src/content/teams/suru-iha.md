@@ -9,6 +9,9 @@ gallery:
   - "/media/galeri-matris-saha.jpg"
   - "/media/takim-matris-iha.jpg"
   - "/media/galeri-matris-ekip.jpg"
+  - "/media/webmedya-suru-iha-35.jpg"
+  - "/media/webmedya-suru-iha-36.jpg"
+  - "/media/webmedya-suru-iha-37.jpg"
 badge: "2026 Finalisti"
 instagram: "btu_matris"
 aliases:

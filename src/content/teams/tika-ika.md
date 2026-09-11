@@ -7,11 +7,15 @@ order: 2
 image: "/media/takim-luna-ika.jpg"
 gallery:
   - "/media/galeri-matrover-2025.jpg"
+  - "/media/galeri-tika-tarimsal-ika.jpg"
   - "/media/galeri-luna-batarya.jpg"
   - "/media/takim-luna.jpg"
   - "/media/takim-matrover.jpg"
   - "/media/galeri-matrover-arac.jpg"
-  - "/media/galeri-tika-tarimsal-ika.jpg"
+  - "/media/webmedya-tika-ika-15.jpg"
+  - "/media/webmedya-tika-ika-16.jpg"
+  - "/media/webmedya-tika-ika-17.jpg"
+  - "/media/webmedya-tika-ika-18.jpg"
 badge: "2026 Finalisti"
 instagram: ""
 aliases:

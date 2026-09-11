@@ -5,6 +5,11 @@ category: Çevre & Enerji
 status: Aktif
 order: 12
 image: "/media/takim-alhazen.jpg"
+gallery:
+  - "/media/webmedya-cevre-enerji-4.jpg"
+  - "/media/webmedya-cevre-enerji-5.jpg"
+  - "/media/webmedya-cevre-enerji-6.jpg"
+  - "/media/webmedya-cevre-enerji-7.jpg"
 badge: ""
 instagram: ""
 aliases:

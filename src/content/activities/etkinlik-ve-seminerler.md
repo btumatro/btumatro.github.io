@@ -5,6 +5,12 @@ date: 2025-01-01
 endDate: ""
 order: 4
 image: "/media/odul-toreni.jpg"
+gallery:
+  - "/media/galeri-matro-birincilik-30000.jpg"
+  - "/media/galeri-matro-kupa-vitrini.jpg"
+  - "/media/galeri-iss-auv-sergi.jpg"
+  - "/media/odul-girisimcilik.jpg"
+  - "/media/teknofest-standi.jpg"
 stats: []
 summary: "Sektörel söyleşiler, kariyer günleri, hackathon organizasyonları ve teknoloji çalıştaylarıyla üyelerimizi alanında uzman isimlerle buluşturuyoruz."
 ---

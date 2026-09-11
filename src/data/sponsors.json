@@ -145,18 +145,30 @@
       "logo": "/media/logolar/off-ee.png",
       "website": "",
       "instagram": ""
+    },
+    {
+      "name": "KOMAGENE",
+      "package": "Gönüllü",
+      "type": "İkram / Lezzet Sponsoru",
+      "amount": "",
+      "logo": "",
+      "website": "",
+      "instagram": "komagene"
     }
   ],
   "past": [
-    "Gelecek Evimde",
-    "Epsan",
     "HKTM",
     "ERMETAL",
-    "YOSAB (Yenişehir Organize Sanayi Bölgesi)",
-    "Demo Marine",
+    "Epsan",
+    "BURGAB",
     "Aquapol",
+    "Dijilkart",
+    "A.NET",
+    "Demo Marine",
     "AkuaKare",
-    "A.VET"
+    "YUMİ Mühendislik",
+    "Gelecek Evimde",
+    "YOSAB (Yenişehir Organize Sanayi Bölgesi)"
   ],
   "graphics": {
     "title": "2025-2026 sponsorlarımız",

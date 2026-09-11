@@ -5,6 +5,11 @@ date: 2025-12-06
 endDate: ""
 order: 3
 image: "/media/fuar-standi.jpg"
+gallery:
+  - "/media/fuar-standi-2.jpg"
+  - "/media/galeri-istanbul-fuar-merkezi.jpg"
+  - "/media/galeri-meteksan-fuari.jpg"
+  - "/media/fuar-ziyaret.jpg"
 stats:
   - label: Fuar
     value: "15+"

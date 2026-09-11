@@ -18,12 +18,15 @@ interface Props {
   description?: string;
   /** Sayfaya özel OG görseli (public/ içindeki yol) */
   image?: string;
+  /** Arama motorlarına kapalı, yalnızca bağlantıyı bilenlerin açtığı sayfalar için. */
+  noindex?: boolean;
 }
 
 const {
   title,
   description = site.metaDescription,
   image = '/og.png',
+  noindex = false,
 } = Astro.props;
 
 const pageTitle = title
@@ -65,6 +68,7 @@ const jsonLd = {
     <title>{pageTitle}</title>
     <meta name="description" content={description} />
     <meta name="theme-color" content="#0b1012" />
+    {noindex && <meta name="robots" content="noindex, nofollow" />}
 
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="tr_TR" />

@@ -19,5 +19,8 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
 
-  integrations: [sitemap()],
+  integrations: [
+    // /varliklar iç kullanım sayfasıdır; site haritasına ve aramalara girmez.
+    sitemap({ filter: (page) => !page.includes('/varliklar') }),
+  ],
 });

@@ -32,5 +32,198 @@
     "Sosyal Medya Ekibi",
     "Takım Kaptanları"
   ],
-  "people": []
+  "people": [
+    {
+      "name": "Begüm Gümüş",
+      "group": "Organizasyon Ekibi",
+      "role": "Ekip Üyesi",
+      "order": 1
+    },
+    {
+      "name": "Nurseda Yavuz",
+      "group": "Organizasyon Ekibi",
+      "role": "Ekip Üyesi",
+      "order": 2
+    },
+    {
+      "name": "Almina Yanar",
+      "group": "Organizasyon Ekibi",
+      "role": "Ekip Üyesi",
+      "order": 3
+    },
+    {
+      "name": "Buse Kayhan",
+      "group": "Organizasyon Ekibi",
+      "role": "Ekip Üyesi",
+      "order": 4
+    },
+    {
+      "name": "Bilgehan Zeki Özaytaç",
+      "group": "Organizasyon Ekibi",
+      "role": "Ekip Üyesi",
+      "order": 5
+    },
+    {
+      "name": "Havanur Kılınçer",
+      "group": "Organizasyon Ekibi",
+      "role": "Ekip Üyesi",
+      "order": 6
+    },
+    {
+      "name": "Ömer Cihan Demir",
+      "group": "Organizasyon Ekibi",
+      "role": "Ekip Üyesi",
+      "order": 7
+    },
+    {
+      "name": "İrem Azra Kaya",
+      "group": "Organizasyon Ekibi",
+      "role": "Ekip Üyesi",
+      "order": 8
+    },
+    {
+      "name": "Mehmet Furkan Ketme",
+      "group": "Organizasyon Ekibi",
+      "role": "Ekip Üyesi",
+      "order": 9
+    },
+    {
+      "name": "Melih Gür",
+      "group": "Sponsorluk Ekibi",
+      "role": "Ekip Üyesi",
+      "order": 1
+    },
+    {
+      "name": "Refika Abacı",
+      "group": "Sponsorluk Ekibi",
+      "role": "Ekip Üyesi",
+      "order": 2
+    },
+    {
+      "name": "İlayda Çınar",
+      "group": "Sponsorluk Ekibi",
+      "role": "Ekip Üyesi",
+      "order": 3
+    },
+    {
+      "name": "İrem Azra Kaya",
+      "group": "Sponsorluk Ekibi",
+      "role": "Ekip Üyesi",
+      "order": 4
+    },
+    {
+      "name": "Yusuf Sarsıcı",
+      "group": "Sponsorluk Ekibi",
+      "role": "Ekip Üyesi",
+      "order": 5
+    },
+    {
+      "name": "Oğuzhan Dursun",
+      "group": "Sponsorluk Ekibi",
+      "role": "Ekip Üyesi",
+      "order": 6
+    },
+    {
+      "name": "Hatice Sena Aşık",
+      "group": "Sponsorluk Ekibi",
+      "role": "Ekip Üyesi",
+      "order": 7
+    },
+    {
+      "name": "Samet İhsan",
+      "group": "Sponsorluk Ekibi",
+      "role": "Ekip Üyesi",
+      "order": 8
+    },
+    {
+      "name": "Kerem Ali Altunışık",
+      "group": "Atölye Ekibi",
+      "role": "Ekip Üyesi",
+      "order": 1
+    },
+    {
+      "name": "Oğuzhan Dursun",
+      "group": "Atölye Ekibi",
+      "role": "Ekip Üyesi",
+      "order": 2
+    },
+    {
+      "name": "Hatice Sena Aşık",
+      "group": "Atölye Ekibi",
+      "role": "Ekip Üyesi",
+      "order": 3
+    },
+    {
+      "name": "Ömer Cihan Demir",
+      "group": "Atölye Ekibi",
+      "role": "Ekip Üyesi",
+      "order": 4
+    },
+    {
+      "name": "Almina Yanar",
+      "group": "Atölye Ekibi",
+      "role": "Ekip Üyesi",
+      "order": 5
+    },
+    {
+      "name": "Buse Kayhan",
+      "group": "Atölye Ekibi",
+      "role": "Ekip Üyesi",
+      "order": 6
+    },
+    {
+      "name": "Feyza Karabıçak",
+      "group": "Sosyal Medya Ekibi",
+      "role": "Ekip Üyesi",
+      "order": 1
+    },
+    {
+      "name": "Feride Şirin",
+      "group": "Sosyal Medya Ekibi",
+      "role": "Ekip Üyesi",
+      "order": 2
+    },
+    {
+      "name": "Samet İhsan",
+      "group": "Sosyal Medya Ekibi",
+      "role": "Ekip Üyesi",
+      "order": 3
+    },
+    {
+      "name": "Ömer Cihan Demir",
+      "group": "Sosyal Medya Ekibi",
+      "role": "Ekip Üyesi",
+      "order": 4
+    },
+    {
+      "name": "Mehmet Furkan Ketme",
+      "group": "Sosyal Medya Ekibi",
+      "role": "Ekip Üyesi",
+      "order": 5
+    },
+    {
+      "name": "Yusuf Sarsıcı",
+      "group": "Sosyal Medya Ekibi",
+      "role": "Ekip Üyesi",
+      "order": 6
+    },
+    {
+      "name": "Hatice Sena Aşık",
+      "group": "Sosyal Medya Ekibi",
+      "role": "Ekip Üyesi",
+      "order": 7
+    },
+    {
+      "name": "Nurseda Yavuz",
+      "group": "Sosyal Medya Ekibi",
+      "role": "Ekip Üyesi",
+      "order": 8
+    },
+    {
+      "name": "İlayda Çınar",
+      "group": "Sosyal Medya Ekibi",
+      "role": "Ekip Üyesi",
+      "order": 9
+    }
+  ]
 }

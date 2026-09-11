@@ -237,8 +237,8 @@
       "category": "Etkinlik"
     },
     {
-      "image": "/media/renault-twizy.jpg",
-      "caption": "Renault Twizy Contest için geliştirdiğimiz araç",
+      "image": "/media/galeri-iss-fuar-standi.jpg",
+      "caption": "İSS ekibimiz, sualtı aracımız ve kupalarımızla kampüs fuarında",
       "category": "Yarışma"
     },
     {
@@ -299,6 +299,111 @@
     {
       "image": "/media/galeri-teknofest-2022-odul.jpg",
       "caption": "TEKNOFEST Sanayide Dijital Teknolojileri Yarışması Temel Kategori'de Türkiye üçüncülüğü",
+      "category": "Yarışma"
+    },
+    {
+      "image": "/media/tasarim-iss-auv-onden.jpg",
+      "caption": "İSS otonom sualtı aracının önden tasarım görüntüsü",
+      "category": "Tasarım"
+    },
+    {
+      "image": "/media/tasarim-iss-auv-izometrik.jpg",
+      "caption": "İSS sualtı aracının itki üniteleri ve kamera yerleşimi",
+      "category": "Tasarım"
+    },
+    {
+      "image": "/media/tasarim-iss-auv-mor.jpg",
+      "caption": "İSS sualtı aracının gövde ve kaplama tasarımı",
+      "category": "Tasarım"
+    },
+    {
+      "image": "/media/tasarim-ashina-iha.jpg",
+      "caption": "ASHİNA sabit kanat İHA'sının kafes kanat yapısı tasarımı",
+      "category": "Tasarım"
+    },
+    {
+      "image": "/media/galeri-advance-up-syntax.jpg",
+      "caption": "SYNTAX ekibimiz Advance-Up Hackathon Türkiye üçüncülüğü ödül töreninde",
+      "category": "Yarışma"
+    },
+    {
+      "image": "/media/galeri-bayraktar-ucan-araba.jpg",
+      "caption": "Selçuk Bayraktar ve Uçan Araba ekibimiz TEKNOFEST standında",
+      "category": "Yarışma"
+    },
+    {
+      "image": "/media/galeri-matro-teknofest-2020.jpg",
+      "caption": "TEKNOFEST 2020 Gaziantep finallerinde MATRO kafilesi",
+      "category": "Yarışma"
+    },
+    {
+      "image": "/media/galeri-ashina-tubitak-sahne.jpg",
+      "caption": "ASHİNA İHA ekibimiz TÜBİTAK yarışma sahnesi önünde",
+      "category": "Yarışma"
+    },
+    {
+      "image": "/media/galeri-iss-auv-havuz.jpg",
+      "caption": "Sualtı aracımız havuz testlerine hazırlanırken",
+      "category": "Yarışma"
+    },
+    {
+      "image": "/media/galeri-iss-auv-sergi.jpg",
+      "caption": "Sualtı aracımız kampüs tanıtım gününde",
+      "category": "Etkinlik"
+    },
+    {
+      "image": "/media/galeri-ashina-kompozit-uretim.jpg",
+      "caption": "ASHİNA kanat kalıbında vakum infüzyonu ile kompozit üretim",
+      "category": "Atölye"
+    },
+    {
+      "image": "/media/galeri-ashina-saha.jpg",
+      "caption": "ASHİNA ekibi TEKNOFEST uçuş sahasında",
+      "category": "Yarışma"
+    },
+    {
+      "image": "/media/galeri-matro-kupa-vitrini.jpg",
+      "caption": "Topluluk kupa vitrinimiz",
+      "category": "Etkinlik"
+    },
+    {
+      "image": "/media/galeri-matro-birincilik-30000.jpg",
+      "caption": "Yarışma birinciliği ödülümüzle topluluk sergimiz",
+      "category": "Etkinlik"
+    },
+    {
+      "image": "/media/galeri-tubitak-sage-gezisi.jpg",
+      "caption": "TÜBİTAK SAGE teknik gezimiz",
+      "category": "Teknik Gezi"
+    },
+    {
+      "image": "/media/galeri-ermetal-gezisi.jpg",
+      "caption": "ERMETAL teknik gezimiz",
+      "category": "Teknik Gezi"
+    },
+    {
+      "image": "/media/galeri-toyota-gezisi.jpg",
+      "caption": "Toyota fabrikası teknik gezimiz",
+      "category": "Teknik Gezi"
+    },
+    {
+      "image": "/media/galeri-teknopark-ankara.jpg",
+      "caption": "Teknopark Ankara gezimiz",
+      "category": "Teknik Gezi"
+    },
+    {
+      "image": "/media/galeri-istanbul-fuar-merkezi.jpg",
+      "caption": "İstanbul Fuar Merkezi'ndeki fuar katılımımız",
+      "category": "Etkinlik"
+    },
+    {
+      "image": "/media/galeri-meteksan-fuari.jpg",
+      "caption": "Savunma sanayii fuarında Meteksan standında",
+      "category": "Etkinlik"
+    },
+    {
+      "image": "/media/galeri-sanayide-dijital-arena.jpg",
+      "caption": "Sanayide Dijital Teknolojiler yarışma arenasında aracımız",
       "category": "Yarışma"
     }
   ]
