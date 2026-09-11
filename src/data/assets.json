@@ -1150,8 +1150,7 @@
       "height": 303,
       "sizeKb": 26,
       "note": "",
-      "usedIn": [
-      ]
+      "usedIn": []
     },
     {
       "file": "/media/mavi-vatan-ekipler.jpg",
@@ -1919,9 +1918,9 @@
       "file": "/media/logolar/rov-expert.png",
       "title": "ROV Expert",
       "group": "Sponsor logoları",
-      "width": 426,
-      "height": 127,
-      "sizeKb": 19,
+      "width": 320,
+      "height": 320,
+      "sizeKb": 21,
       "note": "Kullanıldığı yer: ROV EXPERT (Logo)",
       "usedIn": [
         "ROV EXPERT (Logo)"
@@ -1931,9 +1930,9 @@
       "file": "/media/logolar/sahinbey-belediyesi.png",
       "title": "Şahinbey Belediyesi",
       "group": "Sponsor logoları",
-      "width": 346,
-      "height": 109,
-      "sizeKb": 6,
+      "width": 320,
+      "height": 320,
+      "sizeKb": 22,
       "note": "Kullanıldığı yer: ŞAHİNBEY BELEDİYESİ (Logo)",
       "usedIn": [
         "ŞAHİNBEY BELEDİYESİ (Logo)"
@@ -1943,9 +1942,9 @@
       "file": "/media/logolar/mayfly.png",
       "title": "MayFly",
       "group": "Sponsor logoları",
-      "width": 175,
-      "height": 73,
-      "sizeKb": 4,
+      "width": 320,
+      "height": 320,
+      "sizeKb": 17,
       "note": "Kullanıldığı yer: MAYFLY (Logo)",
       "usedIn": [
         "MAYFLY (Logo)"
@@ -1955,9 +1954,9 @@
       "file": "/media/logolar/yunusemre-gm.png",
       "title": "Yunusemre GM",
       "group": "Sponsor logoları",
-      "width": 700,
-      "height": 163,
-      "sizeKb": 47,
+      "width": 320,
+      "height": 320,
+      "sizeKb": 17,
       "note": "Kullanıldığı yer: YUNUSEMRE GM (Logo)",
       "usedIn": [
         "YUNUSEMRE GM (Logo)"
@@ -1967,9 +1966,9 @@
       "file": "/media/logolar/wago.png",
       "title": "Wago",
       "group": "Sponsor logoları",
-      "width": 402,
-      "height": 145,
-      "sizeKb": 12,
+      "width": 320,
+      "height": 320,
+      "sizeKb": 14,
       "note": "Kullanıldığı yer: WAGO (Logo)",
       "usedIn": [
         "WAGO (Logo)"
@@ -1979,9 +1978,9 @@
       "file": "/media/logolar/pleksi.png",
       "title": "Pleksi",
       "group": "Sponsor logoları",
-      "width": 297,
-      "height": 105,
-      "sizeKb": 13,
+      "width": 320,
+      "height": 320,
+      "sizeKb": 18,
       "note": "Kullanıldığı yer: PLEKSİ (Logo)",
       "usedIn": [
         "PLEKSİ (Logo)"
@@ -1991,9 +1990,9 @@
       "file": "/media/logolar/mavios.png",
       "title": "Mavios",
       "group": "Sponsor logoları",
-      "width": 310,
-      "height": 50,
-      "sizeKb": 16,
+      "width": 320,
+      "height": 320,
+      "sizeKb": 20,
       "note": "Kullanıldığı yer: MAVIOS (Logo)",
       "usedIn": [
         "MAVIOS (Logo)"
