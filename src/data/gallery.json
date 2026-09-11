@@ -1,5 +1,5 @@
 {
-  "intro": "Atölyeden yarışma sahasına, teknik gezilerden ödül törenlerine MATRO'dan kareler. En güncel kareler en üstte yer alır.",
+  "intro": "Atölyeden yarışma sahasına, teknik gezilerden ödül törenlerine MATRO'dan kareler.",
   "images": [
     {
       "image": "/media/etkinlik-alper-gezeravci.jpg",
@@ -24,6 +24,76 @@
     {
       "image": "/media/galeri-matris-saha.jpg",
       "caption": "MATRİS sürü İHA ekibi yer istasyonu ve uçuş testlerinde",
+      "category": "Atölye"
+    },
+    {
+      "image": "/media/galeri-alper-gezeravci-detay.jpg",
+      "caption": "İlk Türk astronot Alper Gezeravcı Özdemir Bayraktar Atölyemizde kara aracı şasisini incelerken",
+      "category": "Etkinlik"
+    },
+    {
+      "image": "/media/topluluk-ekip-selfie.jpg",
+      "caption": "Bursa Teknik Üniversitesi MATRO öğrenci topluluğu üyeleri",
+      "category": "Etkinlik"
+    },
+    {
+      "image": "/media/gorsel-twizy-matrobot-iletisim.jpg",
+      "caption": "Renault Twizy Mobility Challenge En İyi İletişim Ödülü (MATROBOT)",
+      "category": "Yarışma"
+    },
+    {
+      "image": "/media/gorsel-twizy-emizy-birincilik.jpg",
+      "caption": "Renault Twizy Mobility Challenge Türkiye birinciliğimiz (EMİZY)",
+      "category": "Yarışma"
+    },
+    {
+      "image": "/media/galeri-pusula-atolye.jpg",
+      "caption": "PUSULA ekibi sanayi robotik taşıyıcı platformu atölye mekanik montajında",
+      "category": "Atölye"
+    },
+    {
+      "image": "/media/galeri-matris-test-alani.jpg",
+      "caption": "MATRİS sürü hava araçlarının yer kontrol istasyonu telemetri testleri",
+      "category": "Atölye"
+    },
+    {
+      "image": "/media/galeri-matris-dron-filo.jpg",
+      "caption": "MATRİS sürü İHA ekibimizin çoklu araç koordinasyon testleri",
+      "category": "Yarışma"
+    },
+    {
+      "image": "/media/galeri-matrobot-tarla-test.jpg",
+      "caption": "MATROBOT tarımsal otonom kara aracı açık tarla sürüş testinde",
+      "category": "Yarışma"
+    },
+    {
+      "image": "/media/galeri-luna-arac-detay.jpg",
+      "caption": "LUNA kara aracı aktüatör ve yüksek torklu tahrik sistemi montajı",
+      "category": "Atölye"
+    },
+    {
+      "image": "/media/galeri-lodos-sahil-ekip.jpg",
+      "caption": "LODOS ekibimiz göl ve deniz testleri öncesinde hazırlık aşamasında",
+      "category": "Atölye"
+    },
+    {
+      "image": "/media/galeri-lodos-deniz-test.jpg",
+      "caption": "LODOS insansız deniz aracı su üstü otonom seyir testlerinde",
+      "category": "Yarışma"
+    },
+    {
+      "image": "/media/galeri-burkut-simulasyon-ekip.jpg",
+      "caption": "BÜRKÜT otonom uçuş simülasyonu ekibi çalışma istasyonlarında",
+      "category": "Atölye"
+    },
+    {
+      "image": "/media/galeri-alhazen-ekipman.jpg",
+      "caption": "ALHAZEN ekibimizin enerji depolama ve analiz test düzeneği",
+      "category": "Atölye"
+    },
+    {
+      "image": "/media/galeri-alhazen-laboratuvar.jpg",
+      "caption": "ALHAZEN Çevre ve Enerji ekibimiz yakıt pili ve hidrojen laboratuvarında",
       "category": "Atölye"
     },
     {

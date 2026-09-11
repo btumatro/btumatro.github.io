@@ -6,6 +6,8 @@ expiresOn: ""
 pinned: false
 draft: false
 image: "/media/haber-tanisma-etkinligi.jpg"
+gallery:
+  - "/media/galeri-tanisma-kahvaltisi.jpg"
 link: ""
 linkLabel: ""
 teams: []

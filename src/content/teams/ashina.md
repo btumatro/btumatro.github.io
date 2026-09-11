@@ -13,6 +13,7 @@ gallery:
   - "/media/tasarim-ashina-iha.jpg"
   - "/media/galeri-ashina-atolye.jpg"
   - "/media/galeri-ashina-teknofest-grup.jpg"
+  - "/media/galeri-ashina-uretim.jpg"
 badge: "2026 Finalisti"
 instagram: "ashinatechnology"
 aliases:

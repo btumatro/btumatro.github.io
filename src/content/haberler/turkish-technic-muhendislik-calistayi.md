@@ -12,6 +12,7 @@ gallery:
   - "/media/galeri-turkish-technic-briefing.jpg"
   - "/media/galeri-turkish-technic-atolye.jpg"
   - "/media/galeri-turkish-technic-guvenlik.jpg"
+  - "/media/galeri-turkish-technic-plaket.jpg"
 link: "https://www.instagram.com/reel/DZSukjltqmk/"
 linkLabel: "Instagram gönderisi"
 teams: []

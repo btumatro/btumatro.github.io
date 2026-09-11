@@ -54,26 +54,6 @@
       ]
     },
     {
-      "file": "/media/tasarim-matrobot-ika.jpg",
-      "title": "MATROBOT tarımsal insansız kara aracının tasarım görüntüsü",
-      "group": "Araç tasarım görselleri",
-      "width": 403,
-      "height": 288,
-      "sizeKb": 11,
-      "note": "",
-      "usedIn": []
-    },
-    {
-      "file": "/media/tasarim-ucan-araba.jpg",
-      "title": "Uçan araba konsept aracımızın tasarım görüntüsü",
-      "group": "Araç tasarım görselleri",
-      "width": 345,
-      "height": 185,
-      "sizeKb": 7,
-      "note": "",
-      "usedIn": []
-    },
-    {
       "file": "/media/goksav-test.jpg",
       "title": "GÖKSAV hava savunma sistemi test düzeneği",
       "group": "Takım kapak görselleri",
@@ -250,8 +230,9 @@
       "width": 670,
       "height": 377,
       "sizeKb": 39,
-      "note": "Kullanıldığı yer: Site Galerisi (Atölye)",
+      "note": "Kullanıldığı yer: MATRİS (Galeri), Site Galerisi (Atölye)",
       "usedIn": [
+        "MATRİS (Galeri)",
         "Site Galerisi (Atölye)"
       ]
     },
@@ -301,8 +282,9 @@
       "width": 960,
       "height": 540,
       "sizeKb": 186,
-      "note": "Kullanıldığı yer: Site Galerisi (Etkinlik)",
+      "note": "Kullanıldığı yer: Etkinlikler, Seminerler ve Çalıştaylar (Faaliyet Galerisi), Site Galerisi (Etkinlik)",
       "usedIn": [
+        "Etkinlikler, Seminerler ve Çalıştaylar (Faaliyet Galerisi)",
         "Site Galerisi (Etkinlik)"
       ]
     },
@@ -313,9 +295,10 @@
       "width": 676,
       "height": 1200,
       "sizeKb": 228,
-      "note": "Kullanıldığı yer: İlk Türk astronot Alper Gezera... (Haber Galerisi)",
+      "note": "Kullanıldığı yer: İlk Türk astronot Alper Gezera... (Haber Galerisi), Site Galerisi (Etkinlik)",
       "usedIn": [
-        "İlk Türk astronot Alper Gezera... (Haber Galerisi)"
+        "İlk Türk astronot Alper Gezera... (Haber Galerisi)",
+        "Site Galerisi (Etkinlik)"
       ]
     },
     {
@@ -329,16 +312,6 @@
       "usedIn": [
         "ASHİNA (Galeri)"
       ]
-    },
-    {
-      "file": "/media/galeri-ashina-iha.jpg",
-      "title": "Ashina iha",
-      "group": "Galeri fotoğrafları",
-      "width": 1126,
-      "height": 2000,
-      "sizeKb": 298,
-      "note": "",
-      "usedIn": []
     },
     {
       "file": "/media/galeri-ashina-kompozit-uretim.jpg",
@@ -386,8 +359,9 @@
       "width": 863,
       "height": 646,
       "sizeKb": 68,
-      "note": "Kullanıldığı yer: Site Galerisi (Atölye)",
+      "note": "Kullanıldığı yer: ASHİNA (Galeri), Site Galerisi (Atölye)",
       "usedIn": [
+        "ASHİNA (Galeri)",
         "Site Galerisi (Atölye)"
       ]
     },
@@ -473,8 +447,9 @@
       "width": 594,
       "height": 444,
       "sizeKb": 56,
-      "note": "Kullanıldığı yer: Site Galerisi (Etkinlik)",
+      "note": "Kullanıldığı yer: İSS (Galeri), Site Galerisi (Etkinlik)",
       "usedIn": [
+        "İSS (Galeri)",
         "Site Galerisi (Etkinlik)"
       ]
     },
@@ -485,8 +460,9 @@
       "width": 314,
       "height": 215,
       "sizeKb": 15,
-      "note": "Kullanıldığı yer: Site Galerisi (Atölye)",
+      "note": "Kullanıldığı yer: İSS (Galeri), Site Galerisi (Atölye)",
       "usedIn": [
+        "İSS (Galeri)",
         "Site Galerisi (Atölye)"
       ]
     },
@@ -531,22 +507,12 @@
       ]
     },
     {
-      "file": "/media/galeri-lodos-atolye-govde.jpg",
+      "file": "/media/galeri-lodos-detay.jpg",
       "title": "Lodos atolye govde",
       "group": "Galeri fotoğrafları",
       "width": 1200,
       "height": 675,
       "sizeKb": 101,
-      "note": "",
-      "usedIn": []
-    },
-    {
-      "file": "/media/galeri-lodos-detay.jpg",
-      "title": "Lodos detay",
-      "group": "Galeri fotoğrafları",
-      "width": 1200,
-      "height": 675,
-      "sizeKb": 94,
       "note": "Kullanıldığı yer: İDA (Galeri)",
       "usedIn": [
         "İDA (Galeri)"
@@ -618,22 +584,12 @@
       ]
     },
     {
-      "file": "/media/galeri-matris-ekip.jpg",
+      "file": "/media/galeri-matris-saha.jpg",
       "title": "Matris ekip",
       "group": "Galeri fotoğrafları",
       "width": 1200,
       "height": 675,
       "sizeKb": 128,
-      "note": "",
-      "usedIn": []
-    },
-    {
-      "file": "/media/galeri-matris-saha.jpg",
-      "title": "MATRİS sürü İHA ekibi yer istasyonu ve uçuş testlerinde",
-      "group": "Galeri fotoğrafları",
-      "width": 1200,
-      "height": 675,
-      "sizeKb": 136,
       "note": "Kullanıldığı yer: MATRİS (Galeri), Site Galerisi (Atölye)",
       "usedIn": [
         "MATRİS (Galeri)",
@@ -680,24 +636,15 @@
       ]
     },
     {
-      "file": "/media/galeri-matrover-arac.jpg",
-      "title": "Matrover arac",
-      "group": "Galeri fotoğrafları",
-      "width": 1200,
-      "height": 1600,
-      "sizeKb": 378,
-      "note": "",
-      "usedIn": []
-    },
-    {
       "file": "/media/galeri-matrover-stand.jpg",
       "title": "MATROVER ekibimiz TEKNOFEST standında",
       "group": "Galeri fotoğrafları",
       "width": 1200,
       "height": 675,
       "sizeKb": 164,
-      "note": "Kullanıldığı yer: Site Galerisi (Yarışma)",
+      "note": "Kullanıldığı yer: MATROVER & LUNA (Galeri), Site Galerisi (Yarışma)",
       "usedIn": [
+        "MATROVER & LUNA (Galeri)",
         "Site Galerisi (Yarışma)"
       ]
     },
@@ -708,8 +655,9 @@
       "width": 1080,
       "height": 1920,
       "sizeKb": 333,
-      "note": "Kullanıldığı yer: Site Galerisi (Etkinlik)",
+      "note": "Kullanıldığı yer: MEEXX Makine ve Teknolojileri ... (Haber Galerisi), Site Galerisi (Etkinlik)",
       "usedIn": [
+        "MEEXX Makine ve Teknolojileri ... (Haber Galerisi)",
         "Site Galerisi (Etkinlik)"
       ]
     },
@@ -765,16 +713,6 @@
       ]
     },
     {
-      "file": "/media/galeri-pusula-robot.jpg",
-      "title": "Pusula robot",
-      "group": "Galeri fotoğrafları",
-      "width": 1148,
-      "height": 854,
-      "sizeKb": 99,
-      "note": "",
-      "usedIn": []
-    },
-    {
       "file": "/media/galeri-sanayide-dijital-arena.jpg",
       "title": "Sanayide Dijital Teknolojiler yarışma arenasında aracımız",
       "group": "Galeri fotoğrafları",
@@ -794,8 +732,9 @@
       "width": 540,
       "height": 960,
       "sizeKb": 84,
-      "note": "Kullanıldığı yer: Site Galerisi (Etkinlik)",
+      "note": "Kullanıldığı yer: Yeni dönem tanışma etkinliğind... (Haber Galerisi), Site Galerisi (Etkinlik)",
       "usedIn": [
+        "Yeni dönem tanışma etkinliğind... (Haber Galerisi)",
         "Site Galerisi (Etkinlik)"
       ]
     },
@@ -923,8 +862,9 @@
       "width": 1200,
       "height": 1600,
       "sizeKb": 195,
-      "note": "Kullanıldığı yer: Site Galerisi (Teknik Gezi)",
+      "note": "Kullanıldığı yer: Turkish Technic ile mühendisli... (Haber Galerisi), Site Galerisi (Teknik Gezi)",
       "usedIn": [
+        "Turkish Technic ile mühendisli... (Haber Galerisi)",
         "Site Galerisi (Teknik Gezi)"
       ]
     },
@@ -1010,8 +950,9 @@
       "width": 306,
       "height": 332,
       "sizeKb": 28,
-      "note": "Kullanıldığı yer: Site Galerisi (Yarışma)",
+      "note": "Kullanıldığı yer: MATROVER & LUNA (Galeri), Site Galerisi (Yarışma)",
       "usedIn": [
+        "MATROVER & LUNA (Galeri)",
         "Site Galerisi (Yarışma)"
       ]
     },
@@ -1163,9 +1104,10 @@
       "width": 960,
       "height": 884,
       "sizeKb": 95,
-      "note": "Kullanıldığı yer: BÜRKÜT (Galeri)",
+      "note": "Kullanıldığı yer: BÜRKÜT (Galeri), Site Galerisi (Yarışma)",
       "usedIn": [
-        "BÜRKÜT (Galeri)"
+        "BÜRKÜT (Galeri)",
+        "Site Galerisi (Yarışma)"
       ]
     },
     {
@@ -1175,9 +1117,10 @@
       "width": 960,
       "height": 884,
       "sizeKb": 99,
-      "note": "Kullanıldığı yer: BÜRKÜT (Galeri)",
+      "note": "Kullanıldığı yer: BÜRKÜT (Galeri), Site Galerisi (Yarışma)",
       "usedIn": [
-        "BÜRKÜT (Galeri)"
+        "BÜRKÜT (Galeri)",
+        "Site Galerisi (Yarışma)"
       ]
     },
     {
@@ -1375,8 +1318,9 @@
       "width": 1080,
       "height": 1351,
       "sizeKb": 151,
-      "note": "Kullanıldığı yer: Site Galerisi (Yarışma)",
+      "note": "Kullanıldığı yer: Mavi Vatan'da üç takımımız TEK... (Haber Galerisi), Site Galerisi (Yarışma)",
       "usedIn": [
+        "Mavi Vatan'da üç takımımız TEK... (Haber Galerisi)",
         "Site Galerisi (Yarışma)"
       ]
     },
@@ -1960,7 +1904,7 @@
       "file": "/media/takim-burkut-ucan-araba.jpg",
       "title": "BÜRKÜT Uçan Araba prototipi ve TEKNOFEST jüri sunumu",
       "group": "Takım kapak görselleri",
-      "note": "BÜRKÜT takım kapak görseli ve Uçan Araba yarışması sunumu",
+      "note": "Kullanıldığı yer: BÜRKÜT (Kapak)",
       "width": 1600,
       "height": 874,
       "sizeKb": 227,
@@ -1972,7 +1916,7 @@
       "file": "/media/galeri-bayraktar-ucan-araba.jpg",
       "title": "Selçuk Bayraktar ve Uçan Araba ekibimiz TEKNOFEST standında",
       "group": "Galeri fotoğrafları",
-      "note": "TEKNOFEST Baykar Uçan Araba stand ziyareti",
+      "note": "Kullanıldığı yer: BÜRKÜT (Galeri), Site Galerisi (Yarışma)",
       "width": 1320,
       "height": 736,
       "sizeKb": 113,
@@ -1985,11 +1929,12 @@
       "file": "/media/galeri-matro-teknofest-2020.jpg",
       "title": "TEKNOFEST 2020 Gaziantep finallerinde MATRO kafilesi",
       "group": "Galeri fotoğrafları",
-      "note": "Gaziantep TEKNOFEST 2020 final sahnesi ve topluluk bayrağı",
+      "note": "Kullanıldığı yer: Etkinlikler, Seminerler ve Çalıştaylar (Faaliyet Galerisi), Site Galerisi (Yarışma)",
       "width": 1600,
       "height": 901,
       "sizeKb": 191,
       "usedIn": [
+        "Etkinlikler, Seminerler ve Çalıştaylar (Faaliyet Galerisi)",
         "Site Galerisi (Yarışma)"
       ]
     },
@@ -1997,7 +1942,7 @@
       "file": "/media/galeri-ashina-tubitak-sahne.jpg",
       "title": "ASHİNA İHA ekibimiz TÜBİTAK yarışma sahnesi önünde",
       "group": "Galeri fotoğrafları",
-      "note": "TÜBİTAK Uluslararası İHA Yarışması sahnesi",
+      "note": "Kullanıldığı yer: ASHİNA (Galeri), Site Galerisi (Yarışma)",
       "width": 1599,
       "height": 1081,
       "sizeKb": 178,
@@ -2010,23 +1955,27 @@
       "file": "/media/galeri-pusula-atolye.jpg",
       "title": "PUSULA sanayi robotik platformu ve ekibimiz",
       "group": "Galeri fotoğrafları",
-      "note": "Sanayide Dijital Teknolojiler robotik prototipi",
+      "note": "Kullanıldığı yer: SANAYİDE DİJİTAL TEKNOLOJİLER (Galeri), Site Galerisi (Atölye)",
       "width": 1600,
       "height": 946,
       "sizeKb": 210,
       "usedIn": [
-        "SANAYİDE DİJİTAL TEKNOLOJİLER (Galeri)"
+        "SANAYİDE DİJİTAL TEKNOLOJİLER (Galeri)",
+        "Site Galerisi (Atölye)"
       ]
     },
     {
       "file": "/media/topluluk-ekip-selfie.jpg",
       "title": "Bursa Teknik Üniversitesi MATRO topluluk ekibi",
       "group": "Faaliyet fotoğrafları",
-      "note": "Tanıtım kitapçığı Biz Kimiz sayfası topluluk fotoğrafı",
+      "note": "Kullanıldığı yer: Etkinlikler, Seminerler ve Çalıştaylar (Faaliyet Galerisi), Site Galerisi (Etkinlik)",
       "width": 1594,
       "height": 1198,
       "sizeKb": 256,
-      "usedIn": []
+      "usedIn": [
+        "Etkinlikler, Seminerler ve Çalıştaylar (Faaliyet Galerisi)",
+        "Site Galerisi (Etkinlik)"
+      ]
     },
     {
       "file": "/media/video-alper-gezeravci.mp4",
@@ -2035,7 +1984,7 @@
       "width": 1280,
       "height": 720,
       "sizeKb": 3818,
-      "note": "Alper Gezeravcı ve BTÜ Rektörünün MATRO atölyesinde takımları incelediği 14 saniyelik yatay 720p HD kayıt",
+      "note": "Kullanıldığı yer: İlk Türk astronot Alper Gezera... (Haber Videosu)",
       "usedIn": [
         "İlk Türk astronot Alper Gezera... (Haber Videosu)"
       ]
@@ -2087,20 +2036,23 @@
       "width": 1184,
       "height": 864,
       "sizeKb": 91,
-      "note": "web site medya klasöründen aktarıldı (takımlar/çevre ve enerji/WhatsApp Image 2025-10-02 at 12.01.34.jpeg)",
+      "note": "Kullanıldığı yer: ALHAZEN (Galeri)",
       "usedIn": [
         "ALHAZEN (Galeri)"
       ]
     },
     {
-      "file": "/media/webmedya-cevre-enerji-5.jpg",
+      "file": "/media/galeri-alhazen-laboratuvar.jpg",
       "title": "cevre-enerji arşivi görseli",
       "group": "Galeri fotoğrafları",
       "width": 1400,
       "height": 1066,
       "sizeKb": 190,
-      "note": "web site medya klasöründen aktarıldı (takımlar/çevre ve enerji/WhatsApp Image 2025-10-02 at 14.23.11.jpeg)",
-      "usedIn": []
+      "note": "Kullanıldığı yer: ALHAZEN (Galeri), Site Galerisi (Atölye)",
+      "usedIn": [
+        "ALHAZEN (Galeri)",
+        "Site Galerisi (Atölye)"
+      ]
     },
     {
       "file": "/media/webmedya-cevre-enerji-6.jpg",
@@ -2109,20 +2061,23 @@
       "width": 1400,
       "height": 1200,
       "sizeKb": 183,
-      "note": "web site medya klasöründen aktarıldı (takımlar/çevre ve enerji/WhatsApp Image 2025-10-02 at 14.23.13 (2).jpeg)",
+      "note": "Kullanıldığı yer: ALHAZEN (Galeri)",
       "usedIn": [
         "ALHAZEN (Galeri)"
       ]
     },
     {
-      "file": "/media/webmedya-cevre-enerji-7.jpg",
+      "file": "/media/galeri-alhazen-ekipman.jpg",
       "title": "cevre-enerji arşivi görseli",
       "group": "Galeri fotoğrafları",
       "width": 1400,
       "height": 1200,
       "sizeKb": 185,
-      "note": "web site medya klasöründen aktarıldı (takımlar/çevre ve enerji/WhatsApp Image 2025-10-02 at 14.23.13.jpeg)",
-      "usedIn": []
+      "note": "Kullanıldığı yer: ALHAZEN (Galeri), Site Galerisi (Atölye)",
+      "usedIn": [
+        "ALHAZEN (Galeri)",
+        "Site Galerisi (Atölye)"
+      ]
     },
     {
       "file": "/media/webmedya-cevre-enerji-8.jpg",
@@ -2145,7 +2100,7 @@
       "usedIn": []
     },
     {
-      "file": "/media/webmedya-cevre-enerji-10.jpg",
+      "file": "/media/galeri-alhazen-analiz.jpg",
       "title": "cevre-enerji arşivi görseli",
       "group": "Galeri fotoğrafları",
       "width": 1200,
@@ -2161,7 +2116,7 @@
       "width": 1400,
       "height": 2000,
       "sizeKb": 130,
-      "note": "web site medya klasöründen aktarıldı (takımlar/insansız deniz aracı/WhatsApp Image 2025-10-02 at 13.59.33.jpeg)",
+      "note": "Kullanıldığı yer: İDA (Galeri)",
       "usedIn": [
         "İDA (Galeri)"
       ]
@@ -2173,30 +2128,36 @@
       "width": 1400,
       "height": 2000,
       "sizeKb": 209,
-      "note": "web site medya klasöründen aktarıldı (takımlar/insansız deniz aracı/WhatsApp Image 2025-10-02 at 13.59.34.jpeg)",
+      "note": "Kullanıldığı yer: İDA (Galeri)",
       "usedIn": [
         "İDA (Galeri)"
       ]
     },
     {
-      "file": "/media/webmedya-insansiz-deniz-araci-13.jpg",
+      "file": "/media/galeri-lodos-deniz-test.jpg",
       "title": "insansiz-deniz-araci arşivi görseli",
       "group": "Galeri fotoğrafları",
       "width": 1400,
       "height": 2048,
       "sizeKb": 262,
-      "note": "web site medya klasöründen aktarıldı (takımlar/insansız deniz aracı/WhatsApp Image 2025-10-02 at 13.59.35 (1).jpeg)",
-      "usedIn": []
+      "note": "Kullanıldığı yer: İDA (Galeri), Site Galerisi (Yarışma)",
+      "usedIn": [
+        "İDA (Galeri)",
+        "Site Galerisi (Yarışma)"
+      ]
     },
     {
-      "file": "/media/webmedya-insansiz-deniz-araci-14.jpg",
+      "file": "/media/galeri-lodos-sahil-ekip.jpg",
       "title": "insansiz-deniz-araci arşivi görseli",
       "group": "Galeri fotoğrafları",
       "width": 1400,
       "height": 2048,
       "sizeKb": 310,
-      "note": "web site medya klasöründen aktarıldı (takımlar/insansız deniz aracı/WhatsApp Image 2025-10-02 at 13.59.35 (2).jpeg)",
-      "usedIn": []
+      "note": "Kullanıldığı yer: İDA (Galeri), Site Galerisi (Atölye)",
+      "usedIn": [
+        "İDA (Galeri)",
+        "Site Galerisi (Atölye)"
+      ]
     },
     {
       "file": "/media/webmedya-tika-ika-15.jpg",
@@ -2205,7 +2166,7 @@
       "width": 1400,
       "height": 900,
       "sizeKb": 223,
-      "note": "web site medya klasöründen aktarıldı (takımlar/insansız kara aracı/WhatsApp Image 2025-10-02 at 13.19.15.jpeg)",
+      "note": "Kullanıldığı yer: MATROVER & LUNA (Galeri)",
       "usedIn": [
         "MATROVER & LUNA (Galeri)"
       ]
@@ -2217,7 +2178,7 @@
       "width": 1400,
       "height": 900,
       "sizeKb": 203,
-      "note": "web site medya klasöründen aktarıldı (takımlar/insansız kara aracı/WhatsApp Image 2025-10-02 at 13.19.16.jpeg)",
+      "note": "Kullanıldığı yer: MATROVER & LUNA (Galeri)",
       "usedIn": [
         "MATROVER & LUNA (Galeri)"
       ]
@@ -2229,7 +2190,7 @@
       "width": 900,
       "height": 1600,
       "sizeKb": 236,
-      "note": "web site medya klasöründen aktarıldı (takımlar/insansız kara aracı/WhatsApp Image 2025-10-02 at 13.19.18.jpeg)",
+      "note": "Kullanıldığı yer: MATROVER & LUNA (Galeri)",
       "usedIn": [
         "MATROVER & LUNA (Galeri)"
       ]
@@ -2241,30 +2202,35 @@
       "width": 1400,
       "height": 1152,
       "sizeKb": 158,
-      "note": "web site medya klasöründen aktarıldı (takımlar/insansız kara aracı/WhatsApp Image 2025-10-02 at 13.21.55 (1).jpeg)",
+      "note": "Kullanıldığı yer: MATROVER & LUNA (Galeri)",
       "usedIn": [
         "MATROVER & LUNA (Galeri)"
       ]
     },
     {
-      "file": "/media/webmedya-tika-ika-19.jpg",
+      "file": "/media/galeri-luna-arac-detay.jpg",
       "title": "tika-ika arşivi görseli",
       "group": "Galeri fotoğrafları",
       "width": 1400,
       "height": 1152,
       "sizeKb": 212,
-      "note": "web site medya klasöründen aktarıldı (takımlar/insansız kara aracı/WhatsApp Image 2025-10-02 at 13.21.55.jpeg)",
-      "usedIn": []
+      "note": "Kullanıldığı yer: MATROVER & LUNA (Galeri), Site Galerisi (Atölye)",
+      "usedIn": [
+        "MATROVER & LUNA (Galeri)",
+        "Site Galerisi (Atölye)"
+      ]
     },
     {
-      "file": "/media/webmedya-tika-ika-20.jpg",
+      "file": "/media/galeri-matrover-arazi-test.jpg",
       "title": "tika-ika arşivi görseli",
       "group": "Galeri fotoğrafları",
       "width": 1400,
       "height": 1200,
       "sizeKb": 259,
-      "note": "web site medya klasöründen aktarıldı (takımlar/insansız kara aracı/WhatsApp Image 2025-10-02 at 13.43.57.jpeg)",
-      "usedIn": []
+      "note": "Kullanıldığı yer: MATROVER & LUNA (Galeri)",
+      "usedIn": [
+        "MATROVER & LUNA (Galeri)"
+      ]
     },
     {
       "file": "/media/webmedya-tika-ika-21.jpg",
@@ -2293,7 +2259,7 @@
       "width": 1000,
       "height": 666,
       "sizeKb": 64,
-      "note": "web site medya klasöründen aktarıldı (takımlar/sanayide dijital teknolojileri/WhatsApp Image 2025-10-02 at 13.56.01 (1).jpeg)",
+      "note": "Kullanıldığı yer: SANAYİDE DİJİTAL TEKNOLOJİLER (Galeri)",
       "usedIn": [
         "SANAYİDE DİJİTAL TEKNOLOJİLER (Galeri)"
       ]
@@ -2305,7 +2271,7 @@
       "width": 1196,
       "height": 1600,
       "sizeKb": 105,
-      "note": "web site medya klasöründen aktarıldı (takımlar/sanayide dijital teknolojileri/WhatsApp Image 2025-10-02 at 13.56.01 (2).jpeg)",
+      "note": "Kullanıldığı yer: SANAYİDE DİJİTAL TEKNOLOJİLER (Galeri)",
       "usedIn": [
         "SANAYİDE DİJİTAL TEKNOLOJİLER (Galeri)"
       ]
@@ -2317,7 +2283,7 @@
       "width": 1196,
       "height": 1600,
       "sizeKb": 150,
-      "note": "web site medya klasöründen aktarıldı (takımlar/sanayide dijital teknolojileri/WhatsApp Image 2025-10-02 at 13.56.01.jpeg)",
+      "note": "Kullanıldığı yer: SANAYİDE DİJİTAL TEKNOLOJİLER (Galeri)",
       "usedIn": [
         "SANAYİDE DİJİTAL TEKNOLOJİLER (Galeri)"
       ]
@@ -2329,7 +2295,7 @@
       "width": 1196,
       "height": 1600,
       "sizeKb": 138,
-      "note": "web site medya klasöründen aktarıldı (takımlar/sanayide dijital teknolojileri/WhatsApp Image 2025-10-02 at 13.56.02.jpeg)",
+      "note": "Kullanıldığı yer: SANAYİDE DİJİTAL TEKNOLOJİLER (Galeri)",
       "usedIn": [
         "SANAYİDE DİJİTAL TEKNOLOJİLER (Galeri)"
       ]
@@ -2411,33 +2377,39 @@
       "width": 1400,
       "height": 899,
       "sizeKb": 114,
-      "note": "web site medya klasöründen aktarıldı (takımlar/sürü iha/IMG-20240824-WA0004.jpg)",
+      "note": "Kullanıldığı yer: MATRİS (Galeri)",
       "usedIn": [
         "MATRİS (Galeri)"
       ]
     },
     {
-      "file": "/media/webmedya-suru-iha-36.jpg",
+      "file": "/media/galeri-matris-test-alani.jpg",
       "title": "suru-iha arşivi görseli",
       "group": "Galeri fotoğrafları",
       "width": 1220,
       "height": 549,
       "sizeKb": 101,
-      "note": "web site medya klasöründen aktarıldı (takımlar/sürü iha/WhatsApp Image 2025-10-04 at 13.02.17.jpeg)",
-      "usedIn": []
+      "note": "Kullanıldığı yer: MATRİS (Galeri), Site Galerisi (Atölye)",
+      "usedIn": [
+        "MATRİS (Galeri)",
+        "Site Galerisi (Atölye)"
+      ]
     },
     {
-      "file": "/media/webmedya-suru-iha-37.jpg",
+      "file": "/media/galeri-matris-dron-filo.jpg",
       "title": "suru-iha arşivi görseli",
       "group": "Galeri fotoğrafları",
       "width": 1400,
       "height": 1200,
       "sizeKb": 179,
-      "note": "web site medya klasöründen aktarıldı (takımlar/sürü iha/WhatsApp Image 2025-10-04 at 13.03.04.jpeg)",
-      "usedIn": []
+      "note": "Kullanıldığı yer: MATRİS (Galeri), Site Galerisi (Yarışma)",
+      "usedIn": [
+        "MATRİS (Galeri)",
+        "Site Galerisi (Yarışma)"
+      ]
     },
     {
-      "file": "/media/webmedya-tika-ika-38.jpg",
+      "file": "/media/galeri-matrobot-govde-yapi.jpg",
       "title": "tika-ika arşivi görseli",
       "group": "Galeri fotoğrafları",
       "width": 1200,
@@ -2457,24 +2429,17 @@
       "usedIn": []
     },
     {
-      "file": "/media/webmedya-tika-ika-40.jpg",
-      "title": "tika-ika arşivi görseli",
-      "group": "Galeri fotoğrafları",
-      "width": 900,
-      "height": 1600,
-      "sizeKb": 116,
-      "note": "web site medya klasöründen aktarıldı (takımlar/tarımsal insansız kara aracı/WhatsApp Image 2025-10-02 at 12.56.30.jpeg)",
-      "usedIn": []
-    },
-    {
-      "file": "/media/webmedya-tika-ika-41.jpg",
+      "file": "/media/galeri-matrobot-tarla-test.jpg",
       "title": "tika-ika arşivi görseli",
       "group": "Galeri fotoğrafları",
       "width": 1400,
       "height": 1200,
       "sizeKb": 268,
-      "note": "web site medya klasöründen aktarıldı (takımlar/tarımsal insansız kara aracı/WhatsApp Image 2025-10-02 at 12.56.31 (1).jpeg)",
-      "usedIn": []
+      "note": "Kullanıldığı yer: MATROVER & LUNA (Galeri), Site Galerisi (Yarışma)",
+      "usedIn": [
+        "MATROVER & LUNA (Galeri)",
+        "Site Galerisi (Yarışma)"
+      ]
     },
     {
       "file": "/media/webmedya-tika-ika-42.jpg",
@@ -2493,30 +2458,35 @@
       "width": 738,
       "height": 1600,
       "sizeKb": 142,
-      "note": "web site medya klasöründen aktarıldı (takımlar/uçan araba simülasyon yarışması/WhatsApp Image 2025-10-02 at 12.57.19 (1).jpeg)",
+      "note": "Kullanıldığı yer: BÜRKÜT (Galeri)",
       "usedIn": [
         "BÜRKÜT (Galeri)"
       ]
     },
     {
-      "file": "/media/webmedya-burkut-44.jpg",
+      "file": "/media/galeri-burkut-calisma.jpg",
       "title": "burkut arşivi görseli",
       "group": "Galeri fotoğrafları",
       "width": 1080,
       "height": 1438,
       "sizeKb": 187,
-      "note": "web site medya klasöründen aktarıldı (takımlar/uçan araba simülasyon yarışması/WhatsApp Image 2025-10-02 at 12.57.19 (2).jpeg)",
-      "usedIn": []
+      "note": "Kullanıldığı yer: BÜRKÜT (Galeri)",
+      "usedIn": [
+        "BÜRKÜT (Galeri)"
+      ]
     },
     {
-      "file": "/media/webmedya-burkut-45.jpg",
+      "file": "/media/galeri-burkut-simulasyon-ekip.jpg",
       "title": "burkut arşivi görseli",
       "group": "Galeri fotoğrafları",
       "width": 1400,
       "height": 1200,
       "sizeKb": 209,
-      "note": "web site medya klasöründen aktarıldı (takımlar/uçan araba simülasyon yarışması/WhatsApp Image 2025-10-02 at 12.57.20 (1).jpeg)",
-      "usedIn": []
+      "note": "Kullanıldığı yer: BÜRKÜT (Galeri), Site Galerisi (Atölye)",
+      "usedIn": [
+        "BÜRKÜT (Galeri)",
+        "Site Galerisi (Atölye)"
+      ]
     },
     {
       "file": "/media/webmedya-burkut-46.jpg",
@@ -2525,7 +2495,7 @@
       "width": 1200,
       "height": 1600,
       "sizeKb": 212,
-      "note": "web site medya klasöründen aktarıldı (takımlar/uçan araba simülasyon yarışması/WhatsApp Image 2025-10-02 at 12.57.20.jpeg)",
+      "note": "Kullanıldığı yer: BÜRKÜT (Galeri)",
       "usedIn": [
         "BÜRKÜT (Galeri)"
       ]

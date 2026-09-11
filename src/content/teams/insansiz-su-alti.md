@@ -14,6 +14,8 @@ gallery:
   - "/media/tasarim-iss-auv-mor.jpg"
   - "/media/tasarim-iss-auv-izometrik.jpg"
   - "/media/tasarim-iss-auv-onden.jpg"
+  - "/media/galeri-iss-2021-disari.jpg"
+  - "/media/galeri-iss-2021-icerde.jpg"
 video: "/media/video-prusa-tanitim.mp4"
 videoPoster: "/media/video-prusa-tanitim.jpg"
 badge: "2026 Finalisti"

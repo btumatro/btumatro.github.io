@@ -6,6 +6,8 @@ expiresOn: ""
 pinned: false
 draft: false
 image: "/media/haber-meexx.jpg"
+gallery:
+  - "/media/galeri-meexx-stand.jpg"
 link: ""
 linkLabel: ""
 teams: []

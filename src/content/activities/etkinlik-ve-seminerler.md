@@ -11,6 +11,9 @@ gallery:
   - "/media/galeri-iss-auv-sergi.jpg"
   - "/media/odul-girisimcilik.jpg"
   - "/media/teknofest-standi.jpg"
+  - "/media/topluluk-ekip-selfie.jpg"
+  - "/media/galeri-2025-yil-ozeti.jpg"
+  - "/media/galeri-matro-teknofest-2020.jpg"
 stats: []
 summary: "Sektörel söyleşiler, kariyer günleri, hackathon organizasyonları ve teknoloji çalıştaylarıyla üyelerimizi alanında uzman isimlerle buluşturuyoruz."
 ---

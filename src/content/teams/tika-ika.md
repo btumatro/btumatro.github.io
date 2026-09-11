@@ -15,6 +15,10 @@ gallery:
   - "/media/webmedya-tika-ika-16.jpg"
   - "/media/webmedya-tika-ika-17.jpg"
   - "/media/webmedya-tika-ika-18.jpg"
+  - "/media/galeri-matrobot-tarla-test.jpg"
+  - "/media/galeri-luna-arac-detay.jpg"
+  - "/media/galeri-matrover-stand.jpg"
+  - "/media/ika-saha-testi.jpg"
 badge: "2026 Finalisti"
 instagram: ""
 aliases:
