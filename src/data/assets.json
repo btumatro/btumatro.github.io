@@ -2499,6 +2499,19 @@
       "usedIn": [
         "BÜRKÜT (Galeri)"
       ]
+    },
+    {
+      "file": "/media/galeri-advance-up-syntax.jpg",
+      "title": "SYNTAX Advance-Up Hackathon Türkiye üçüncülüğü ödülü",
+      "group": "Yarışma afiş ve ödül görselleri",
+      "width": 960,
+      "height": 1200,
+      "sizeKb": 89,
+      "note": "Kullanıldığı yer: GİRİŞİMCİLİK VE İNOVASYON (Galeri), Site Galerisi (Yarışma)",
+      "usedIn": [
+        "GİRİŞİMCİLİK VE İNOVASYON (Galeri)",
+        "Site Galerisi (Yarışma)"
+      ]
     }
   ]
 }
