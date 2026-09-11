@@ -686,27 +686,15 @@
       ]
     },
     {
-      "file": "/media/galeri-kampus-atolye-standi.jpg",
-      "title": "Kampüs atölye tanıtım standımız",
-      "group": "Galeri fotoğrafları",
-      "width": 552,
-      "height": 345,
-      "sizeKb": 41,
-      "note": "Kullanıldığı yer: Etkinlikler, Seminerler ve Çalıştaylar (Faaliyet Galerisi)",
-      "usedIn": [
-        "Etkinlikler, Seminerler ve Çalıştaylar (Faaliyet Galerisi)"
-      ]
-    },
-    {
       "file": "/media/galeri-matro-birincilik-30000.jpg",
       "title": "Yarışma birinciliği ödülümüzle topluluk sergimiz",
       "group": "Galeri fotoğrafları",
       "width": 1600,
       "height": 917,
       "sizeKb": 206,
-      "note": "Kullanıldığı yer: Etkinlikler, Seminerler ve Çalıştaylar (Faaliyet Galerisi), Site Galerisi (Etkinlik)",
+      "note": "Kullanıldığı yer: Etkinlikler, Seminerler ve Çalıştaylar (Faaliyet Kapağı), Site Galerisi (Etkinlik)",
       "usedIn": [
-        "Etkinlikler, Seminerler ve Çalıştaylar (Faaliyet Galerisi)",
+        "Etkinlikler, Seminerler ve Çalıştaylar (Faaliyet Kapağı)",
         "Site Galerisi (Etkinlik)"
       ]
     },
@@ -1327,9 +1315,9 @@
       "width": 404,
       "height": 261,
       "sizeKb": 30,
-      "note": "Kullanıldığı yer: Etkinlikler, Seminerler ve Çalıştaylar (Faaliyet), Site Galerisi (Yarışma)",
+      "note": "Kullanıldığı yer: Etkinlikler, Seminerler ve Çalıştaylar (Faaliyet Galerisi), Site Galerisi (Yarışma)",
       "usedIn": [
-        "Etkinlikler, Seminerler ve Çalıştaylar (Faaliyet)",
+        "Etkinlikler, Seminerler ve Çalıştaylar (Faaliyet Galerisi)",
         "Site Galerisi (Yarışma)"
       ]
     },

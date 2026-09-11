@@ -1,19 +1,17 @@
 ---
 title: Etkinlikler, Seminerler ve Çalıştaylar
 type: Etkinlik
-date: 2025-01-01
 endDate: ""
 order: 4
-image: "/media/odul-toreni.jpg"
+image: "/media/galeri-matro-birincilik-30000.jpg"
 gallery:
-  - "/media/galeri-matro-birincilik-30000.jpg"
   - "/media/galeri-odul-vitrini-kampus.jpg"
   - "/media/galeri-kupa-rafi.jpg"
   - "/media/galeri-kampus-fuar-standi.jpg"
-  - "/media/galeri-kampus-atolye-standi.jpg"
   - "/media/galeri-matro-kupa-vitrini.jpg"
   - "/media/galeri-iss-auv-sergi.jpg"
   - "/media/odul-girisimcilik.jpg"
+  - "/media/odul-toreni.jpg"
   - "/media/topluluk-ekip-selfie.jpg"
   - "/media/galeri-2025-yil-ozeti.jpg"
   - "/media/galeri-matro-teknofest-2020.jpg"

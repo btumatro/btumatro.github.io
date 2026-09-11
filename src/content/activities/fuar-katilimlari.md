@@ -1,7 +1,6 @@
 ---
 title: Fuar Katılımları ve Sektör Etkinlikleri
 type: Etkinlik
-date: 2025-12-06
 endDate: ""
 order: 3
 image: "/media/fuar-standi.jpg"

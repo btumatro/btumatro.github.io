@@ -7,7 +7,6 @@ pinned: true
 draft: false
 image: "/media/galeri-kampus-fuar-standi.jpg"
 gallery:
-  - "/media/galeri-kampus-atolye-standi.jpg"
   - "/media/galeri-odul-vitrini-kampus.jpg"
 link: "https://ogrenci.btu.edu.tr/tr/duyuru/detay/54920/%C3%B6%C4%9Frenci-topluluklar%C4%B1-tan%C4%B1t%C4%B1m-g%C3%BCnleri-ba%C5%9Fl%C4%B1yor-toplulu%C4%9Funu-ke%C5%9Ffet-kamp%C3%BCse-kat%C4%B1l"
 linkLabel: "Okulun resmi duyurusu"

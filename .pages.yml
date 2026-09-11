@@ -218,11 +218,11 @@ content:
             - Sosyal Sorumluluk
         default: Etkinlik
       - name: date
-        label: Başlangıç tarihi
+        label: Başlangıç tarihi (opsiyonel)
         type: date
         options:
           format: yyyy-MM-dd
-        required: true
+        description: Belirli bir tarihi olan (ör. bir eğitim dönemi) faaliyetlerde doldurun. Sürekli/tekrarlayan genel faaliyetlerde (teknik geziler, mentörlük vb.) boş bırakın; sitede tarih hiç gösterilmez.
       - name: endDate
         label: Bitiş tarihi (opsiyonel)
         type: date

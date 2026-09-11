@@ -1,7 +1,6 @@
 ---
 title: Teknik Geziler ve Vizyon Programları
 type: Teknik Gezi
-date: 2024-01-01
 endDate: ""
 order: 2
 image: "/media/gezi-togg.jpg"

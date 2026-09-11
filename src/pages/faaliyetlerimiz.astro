@@ -53,10 +53,12 @@ const dateFmt = new Intl.DateTimeFormat('tr-TR', { day: 'numeric', month: 'long'
                     <span class="rounded-md bg-volt-400/10 px-2.5 py-1 font-mono text-[0.65rem] tracking-wider text-volt-300 uppercase">
                       {entry.data.type}
                     </span>
-                    <span class="font-mono text-[0.7rem] text-mist-500">
-                      {dateFmt.format(entry.data.date)}
-                      {entry.data.endDate && ` – ${dateFmt.format(new Date(entry.data.endDate))}`}
-                    </span>
+                    {entry.data.date && (
+                      <span class="font-mono text-[0.7rem] text-mist-500">
+                        {dateFmt.format(entry.data.date)}
+                        {entry.data.endDate && ` – ${dateFmt.format(new Date(entry.data.endDate))}`}
+                      </span>
+                    )}
                   </div>
 
                   <h2 class="mt-3 text-xl font-bold tracking-tight text-mist-100">

@@ -1,7 +1,6 @@
 ---
 title: Ortaokul ve Lise Mentörlüğü
 type: Eğitim
-date: 2024-01-01
 endDate: ""
 order: 6
 image: "/media/haber-atolye-egitimi.jpg"

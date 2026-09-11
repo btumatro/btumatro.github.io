@@ -38,7 +38,8 @@ const activities = defineCollection({
   schema: z.object({
     title: z.string(),
     type: z.string().default('Etkinlik'),
-    date: z.coerce.date(),
+    /** Sürekli/tekrarlayan faaliyetlerde belirli bir tarih anlamsız olduğundan boş bırakılabilir. */
+    date: z.coerce.date().optional(),
     endDate: z.string().default(''),
     order: z.number().default(99),
     image: z.string().default(''),
