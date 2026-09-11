@@ -1,0 +1,1653 @@
+{
+  "schemaVersion": 1,
+  "revision": "0.1",
+  "language": "tr",
+  "status": "yönetim_değerlendirmesi_için_taslak",
+  "reviewedCommit": "2708626db9c683113531a1ecfae54e9d8f680cd7",
+  "updatedAt": "2026-09-11",
+  "format": {
+    "widthMm": 210,
+    "heightMm": 297,
+    "orientation": "portrait",
+    "pageLimit": null
+  },
+  "editingRule": "Metin, görsel ve kaynak değişikliklerini bu dosyada yapın; üretilen Markdown/CSV tekrar üretilebilir.",
+  "brandFiles": [
+    "public/matro-logo-siyah.svg",
+    "public/matro-logo-mavi.svg",
+    "public/logo-matro-beyaz.png"
+  ],
+  "pages": [
+    {
+      "id": "T01",
+      "page": 1,
+      "edition": "tanitim",
+      "title": "MATRO / Atölyeden sahaya",
+      "purpose": "İlk bakışta gerçek bir mühendislik topluluğunun portföyünü tanıtmak.",
+      "copy": {
+        "lead": "Bursa Teknik Üniversitesi · Makine Teknolojileri Robot ve Otomasyon Topluluğu",
+        "paragraphs": [
+          "Birlikte tasarlıyor, üretiyor ve yarışıyoruz."
+        ],
+        "bullets": []
+      },
+      "layout": "kapak",
+      "visuals": [
+        {
+          "file": "/media/mavi-vatan-ekipler.jpg",
+          "role": "ana",
+          "captionDraft": "Mavi Vatan etkinliğinde MATRO ekipleri.",
+          "verification": "ön_inceleme",
+          "verificationNote": "Orijinal kaynak ve kullanım bağlamı yayın öncesi teyit edilecek.",
+          "originalFile": null,
+          "targetWidthMm": 180,
+          "crop": "konu_ve_yazıları_koru"
+        }
+      ],
+      "sourceFiles": [
+        "src/data/home.json",
+        "src/data/site.json"
+      ],
+      "claimIds": [],
+      "missing": [
+        "Dikey kapak için yüksek çözünürlüklü ana kare seçimi.",
+        "Yayın dönemi ve Tanıtım Günleri tarihi."
+      ],
+      "status": "editoryal_taslak",
+      "approvedBy": null,
+      "approvedAt": null,
+      "renderReady": false
+    },
+    {
+      "id": "T02",
+      "page": 2,
+      "edition": "tanitim",
+      "title": "Birlikte üreten bir topluluk",
+      "purpose": "MATRO’nun kimliğini ve öğrenciye sunduğu ortamı anlatmak.",
+      "copy": {
+        "lead": "MATRO, Bursa Teknik Üniversitesi öğrencilerinin mühendislik fikirlerini ekip çalışmasıyla geliştirdiği bir topluluktur.",
+        "paragraphs": [
+          "Hava, kara, deniz ve sualtı araçlarından endüstriyel otomasyona uzanan projelerde mekanik, elektronik ve yazılım bir araya gelir. Atölye çalışmaları, yarışmalar, eğitimler ve teknik geziler bu deneyimin parçalarıdır.",
+          "2013’te başlayan topluluk hikâyesini, farklı dönemlerde görev alan ekiplerin biriktirdiği bilgi ve deneyim sürdürüyor."
+        ],
+        "bullets": [
+          "Birden fazla disiplinde çalışma",
+          "Bilgiyi projede kullanma",
+          "Deneyimi yeni üyelere aktarma"
+        ]
+      },
+      "layout": "fotoğraf_ve_metin",
+      "visuals": [
+        {
+          "file": "/media/topluluk-ekip-selfie.jpg",
+          "role": "ana",
+          "captionDraft": "MATRO üyelerinden bir grup.",
+          "verification": "ön_inceleme",
+          "verificationNote": "Orijinal kaynak ve kullanım bağlamı yayın öncesi teyit edilecek.",
+          "originalFile": null,
+          "targetWidthMm": 180,
+          "crop": "konu_ve_yazıları_koru"
+        }
+      ],
+      "sourceFiles": [
+        "src/data/about.json",
+        "src/data/site.json"
+      ],
+      "claimIds": [
+        "kurulus"
+      ],
+      "missing": [],
+      "status": "editoryal_taslak",
+      "approvedBy": null,
+      "approvedAt": null,
+      "renderReady": false
+    },
+    {
+      "id": "T03",
+      "page": 3,
+      "edition": "tanitim",
+      "title": "Bir fikir nasıl projeye dönüşür?",
+      "purpose": "Sonuç kadar üretim sürecinin de görünmesini sağlamak.",
+      "copy": {
+        "lead": "Bir aracın yarışma alanına çıkması, birbirini izleyen tasarım ve deneme adımlarının sonucudur.",
+        "paragraphs": [
+          "İhtiyaç ve görev tanımlanır; mekanik tasarım, elektronik altyapı ve yazılım birlikte geliştirilir. Üretimden çıkan parçalar bir araya getirilir, testlerde görülen sorunlar tasarıma geri taşınır. Her yeni deneme ekibin bir sonraki kararını besler."
+        ],
+        "bullets": [
+          "Problemi tanımla",
+          "Tasarla ve üret",
+          "Birleştir ve dene",
+          "Sonuçları kaydet ve geliştir"
+        ]
+      },
+      "layout": "süreç",
+      "visuals": [
+        {
+          "file": "/media/galeri-ashina-kompozit-uretim.jpg",
+          "role": "ana",
+          "captionDraft": "Kompozit parça üretiminden bir çalışma.",
+          "verification": "ön_inceleme",
+          "verificationNote": "Orijinal kaynak ve kullanım bağlamı yayın öncesi teyit edilecek.",
+          "originalFile": null,
+          "targetWidthMm": 180,
+          "crop": "konu_ve_yazıları_koru"
+        },
+        {
+          "file": "/media/galeri-ashina-uretim.jpg",
+          "role": "detay",
+          "captionDraft": "Atölyede bir hava aracı.",
+          "verification": "ön_inceleme",
+          "verificationNote": "Orijinal kaynak ve kullanım bağlamı yayın öncesi teyit edilecek.",
+          "originalFile": null,
+          "targetWidthMm": 85,
+          "crop": "konu_ve_yazıları_koru"
+        }
+      ],
+      "sourceFiles": [
+        "src/content/teams/ashina.md",
+        "src/content/activities/egitim-kampi-2025-2026.md"
+      ],
+      "claimIds": [],
+      "missing": [
+        "Dört aşamaya ait farklı, doğrulanmış kareler."
+      ],
+      "status": "editoryal_taslak",
+      "approvedBy": null,
+      "approvedAt": null,
+      "renderReady": false
+    },
+    {
+      "id": "T04",
+      "page": 4,
+      "edition": "tanitim",
+      "title": "Sen hangi işi üstlenmek istersin?",
+      "purpose": "Teknik ve teknik olmayan katkı yollarını görünür kılmak.",
+      "copy": {
+        "lead": "Bir projenin çalışması yalnızca yazılıma veya mekanik tasarıma bağlı değildir; farklı görevlerin birlikte yürütülmesine ihtiyaç duyar.",
+        "paragraphs": [
+          "Mekanik tasarım ve üretim, elektrik-elektronik, yazılım, analiz, görsel iletişim ve organizasyon alanları arasından ilgine uygun bir başlangıç yapabilirsin. Başvuru ve tanışma sürecinde beklentilerini, deneyimini ve öğrenmek istediklerini paylaşırsın."
+        ],
+        "bullets": [
+          "Mekanik ve üretim",
+          "Elektronik ve yazılım",
+          "Analiz ve tasarım",
+          "Sponsorluk, organizasyon ve iletişim"
+        ]
+      },
+      "layout": "rol_haritası",
+      "visuals": [
+        {
+          "file": "/media/webmedya-sanayide-dijital-31.jpg",
+          "role": "ana",
+          "captionDraft": "Araç üzerinde birlikte çalışan ekip üyeleri.",
+          "verification": "ön_inceleme",
+          "verificationNote": "Orijinal kaynak ve kullanım bağlamı yayın öncesi teyit edilecek.",
+          "originalFile": null,
+          "targetWidthMm": 180,
+          "crop": "konu_ve_yazıları_koru"
+        }
+      ],
+      "sourceFiles": [
+        "src/data/join.json",
+        "src/data/ekibimiz.json"
+      ],
+      "claimIds": [],
+      "missing": [],
+      "status": "editoryal_taslak",
+      "approvedBy": null,
+      "approvedAt": null,
+      "renderReady": false
+    },
+    {
+      "id": "T05",
+      "page": 5,
+      "edition": "tanitim",
+      "title": "Çalışma alanlarımız",
+      "purpose": "Takım, alt araç ve başvuru kategorisi kavramlarını ayırmak.",
+      "copy": {
+        "lead": "MATRO portföyü farklı dönemlerde geliştirilen araçları, ekipleri ve araştırma alanlarını bir araya getirir.",
+        "paragraphs": [
+          "Bir takım çatısı altında birden fazla araç veya alt ekip adı bulunabilir. Aşağıdaki sayfalar bu birikimi anlatır. Yeni dönem başvurusuna açık kategoriler ise katılım sayfasında ayrıca gösterilir; portföyde yer almak tek başına açık alım olduğu anlamına gelmez."
+        ],
+        "bullets": [
+          "Hava ve savunma",
+          "Kara, deniz ve sualtı",
+          "Sanayi ve haberleşme",
+          "Çevre, tarım ve girişimcilik"
+        ]
+      },
+      "layout": "portföy_haritası",
+      "visuals": [],
+      "sourceFiles": [
+        "src/content/teams",
+        "src/data/about.json",
+        "src/data/join.json"
+      ],
+      "claimIds": [
+        "takim_kapsami"
+      ],
+      "missing": [
+        "13 başlığın 2026–2027 aktif/arşiv/alım durumu.",
+        "Alanları bağlayan düzenlenebilir vektör diyagram."
+      ],
+      "status": "editoryal_taslak",
+      "approvedBy": null,
+      "approvedAt": null,
+      "renderReady": false
+    },
+    {
+      "id": "T06",
+      "page": 6,
+      "edition": "tanitim",
+      "title": "ASHİNA",
+      "purpose": "Havacılıkta tasarımdan uçuşa",
+      "copy": {
+        "lead": "ASHİNA, insansız hava araçlarının tasarımı ve görev otonomisi üzerinde çalışan havacılık ekibimizdir. Mekanik yapı, uçuş elektroniği, görüntü işleme ve yer istasyonu çalışmaları aynı proje içinde buluşur.",
+        "paragraphs": [
+          "Üretim aşamasındaki bir parçadan uçuşa hazır araca uzanan süreci, gerçek atölye fotoğrafları ve ekibin tasarım çizimleriyle anlatacağız. LAGARİ, FIRAT ve YELKOVAN adlarının dönem ve proje ilişkileri tarihli açıklamalarla gösterilecek."
+        ],
+        "bullets": [
+          "Hava aracı tasarımı ve üretimi",
+          "Uçuş yazılımı ve görüntü işleme",
+          "Yer istasyonu ve sistem bütünleştirme"
+        ]
+      },
+      "layout": "takım_profili",
+      "visuals": [
+        {
+          "file": "/media/galeri-ashina-teknofest-grup.jpg",
+          "role": "ana",
+          "captionDraft": "Yarışma alanında ASHİNA ekibi.",
+          "verification": "ön_inceleme",
+          "verificationNote": "Orijinal kaynak ve kullanım bağlamı yayın öncesi teyit edilecek.",
+          "originalFile": null,
+          "targetWidthMm": 180,
+          "crop": "konu_ve_yazıları_koru"
+        },
+        {
+          "file": "/media/tasarim-ashina-iha.jpg",
+          "role": "teknik",
+          "captionDraft": "Arşivdeki sabit kanat araç tasarımı.",
+          "verification": "ön_inceleme",
+          "verificationNote": "Orijinal kaynak ve kullanım bağlamı yayın öncesi teyit edilecek.",
+          "originalFile": null,
+          "targetWidthMm": 85,
+          "crop": "konu_ve_yazıları_koru"
+        },
+        {
+          "file": "/media/galeri-ashina-kompozit-uretim.jpg",
+          "role": "detay",
+          "captionDraft": "Atölyede kompozit üretimi.",
+          "verification": "ön_inceleme",
+          "verificationNote": "Orijinal kaynak ve kullanım bağlamı yayın öncesi teyit edilecek.",
+          "originalFile": null,
+          "targetWidthMm": 85,
+          "crop": "konu_ve_yazıları_koru"
+        }
+      ],
+      "sourceFiles": [
+        "src/content/teams/ashina.md",
+        "src/data/achievements.json"
+      ],
+      "claimIds": [
+        "takim_kapsami"
+      ],
+      "missing": [
+        "Alt ekiplerin sezonları ve kullanılacak aracın adı.",
+        "CAD çiziminin hangi araca ait olduğu."
+      ],
+      "status": "editoryal_taslak",
+      "approvedBy": null,
+      "approvedAt": null,
+      "renderReady": false,
+      "teamSlug": "ashina",
+      "targetUrl": "https://btumatro.com/takimlarimiz/ashina/",
+      "layoutNotes": "Üstte alan adı ve takım; ortada tek büyük gerçek görsel; altta 80–140 kelimelik anlatı, üç çalışma alanı, tarihli sonuç satırı. İkinci görsel veya teknik şema mümkünse karşı sütunda. Alt ekipler sezonla etiketlenir."
+    },
+    {
+      "id": "T07",
+      "page": 7,
+      "edition": "tanitim",
+      "title": "MATROVER & LUNA",
+      "purpose": "Arazide çalışan robotlar",
+      "copy": {
+        "lead": "Kara araçları çalışmalarımız, otonom sürüş ve tarımsal görevler için geliştirilen farklı platformları kapsar. MATROVER ve LUNA adları, bu portföydeki ayrı ekip ve araç çalışmalarını temsil eder.",
+        "paragraphs": [
+          "Mekanik gövde, algılama, hareket kontrolü ve görev planlama birlikte ele alınır. Tarımsal araç geçmişi ile insansız kara aracı yarışma projeleri, araç adı ve sezonuyla ayrı satırlarda anlatılacak."
+        ],
+        "bullets": [
+          "Mekanik platform ve hareket sistemi",
+          "Algılama ve rota planlama",
+          "Görev odaklı araç geliştirme"
+        ]
+      },
+      "layout": "takım_profili",
+      "visuals": [
+        {
+          "file": "/media/takim-matrover.jpg",
+          "role": "ana",
+          "captionDraft": "MATROVER standında ekip ve araç.",
+          "verification": "ön_inceleme",
+          "verificationNote": "Orijinal kaynak ve kullanım bağlamı yayın öncesi teyit edilecek.",
+          "originalFile": null,
+          "targetWidthMm": 180,
+          "crop": "konu_ve_yazıları_koru"
+        },
+        {
+          "file": "/media/takim-luna.jpg",
+          "role": "detay",
+          "captionDraft": "LUNA İKA standında ekip ve araç.",
+          "verification": "ön_inceleme",
+          "verificationNote": "Orijinal kaynak ve kullanım bağlamı yayın öncesi teyit edilecek.",
+          "originalFile": null,
+          "targetWidthMm": 85,
+          "crop": "konu_ve_yazıları_koru"
+        },
+        {
+          "file": "/media/galeri-tika-tarimsal-ika.jpg",
+          "role": "detay",
+          "captionDraft": "Tarımsal araç yarışmasından ekip fotoğrafı.",
+          "verification": "ön_inceleme",
+          "verificationNote": "Orijinal kaynak ve kullanım bağlamı yayın öncesi teyit edilecek.",
+          "originalFile": null,
+          "targetWidthMm": 85,
+          "crop": "konu_ve_yazıları_koru"
+        }
+      ],
+      "sourceFiles": [
+        "src/content/teams/tika-ika.md",
+        "src/data/achievements.json"
+      ],
+      "claimIds": [
+        "takim_kapsami"
+      ],
+      "missing": [
+        "LUNAROV ve diğer adların üst ekip/dönem ilişkisi.",
+        "Kesintisiz her yıl derece ve altı derece ifadeleri kullanılmayacak."
+      ],
+      "status": "editoryal_taslak",
+      "approvedBy": null,
+      "approvedAt": null,
+      "renderReady": false,
+      "teamSlug": "tika-ika",
+      "targetUrl": "https://btumatro.com/takimlarimiz/tika-ika/",
+      "layoutNotes": "Üstte alan adı ve takım; ortada tek büyük gerçek görsel; altta 80–140 kelimelik anlatı, üç çalışma alanı, tarihli sonuç satırı. İkinci görsel veya teknik şema mümkünse karşı sütunda. Alt ekipler sezonla etiketlenir."
+    },
+    {
+      "id": "T08",
+      "page": 8,
+      "edition": "tanitim",
+      "title": "İDA / LODOS",
+      "purpose": "Su üstünde otonom hareket",
+      "copy": {
+        "lead": "LODOS, insansız deniz aracı çalışmalarımızın ekip adıdır. Gövde ve elektronik sistemler, su üstünde seyir ve görev yazılımıyla birlikte geliştirilir.",
+        "paragraphs": [
+          "Sayfada gerçek tekne fotoğrafı ve gövde ayrıntısı yer alacak. Yarışma geçmişi tarihli bir bilgi satırında gösterilirken, kısa tanıtım klibine takım sayfasındaki QR üzerinden ulaşılacak."
+        ],
+        "bullets": [
+          "Deniz aracı gövdesi ve sistem bütünleştirme",
+          "Seyir ve görev yazılımı",
+          "Elektronik donanım ve test"
+        ]
+      },
+      "layout": "takım_profili",
+      "visuals": [
+        {
+          "file": "/media/takim-lodos.jpg",
+          "role": "ana",
+          "captionDraft": "LODOS ekibi ve teknesi.",
+          "verification": "ön_inceleme",
+          "verificationNote": "Orijinal kaynak ve kullanım bağlamı yayın öncesi teyit edilecek.",
+          "originalFile": null,
+          "targetWidthMm": 180,
+          "crop": "konu_ve_yazıları_koru"
+        },
+        {
+          "file": "/media/galeri-lodos-detay.jpg",
+          "role": "detay",
+          "captionDraft": "Tekne içindeki elektronik ve bağlantılar.",
+          "verification": "ön_inceleme",
+          "verificationNote": "Orijinal kaynak ve kullanım bağlamı yayın öncesi teyit edilecek.",
+          "originalFile": null,
+          "targetWidthMm": 85,
+          "crop": "konu_ve_yazıları_koru"
+        }
+      ],
+      "sourceFiles": [
+        "src/content/teams/insansiz-deniz-araci.md",
+        "src/data/achievements.json"
+      ],
+      "claimIds": [
+        "takim_kapsami"
+      ],
+      "missing": [
+        "2026–2027 proje hedefi ve gerçek test fotoğrafı."
+      ],
+      "status": "editoryal_taslak",
+      "approvedBy": null,
+      "approvedAt": null,
+      "renderReady": false,
+      "teamSlug": "insansiz-deniz-araci",
+      "targetUrl": "https://btumatro.com/takimlarimiz/insansiz-deniz-araci/",
+      "layoutNotes": "Üstte alan adı ve takım; ortada tek büyük gerçek görsel; altta 80–140 kelimelik anlatı, üç çalışma alanı, tarihli sonuç satırı. İkinci görsel veya teknik şema mümkünse karşı sütunda. Alt ekipler sezonla etiketlenir."
+    },
+    {
+      "id": "T09",
+      "page": 9,
+      "edition": "tanitim",
+      "title": "İSS / PRUSA",
+      "purpose": "Suyun altında mühendislik",
+      "copy": {
+        "lead": "İnsansız Su Altı Sistemleri ekibimiz, mekanik, elektronik ve yazılımı sualtı görevleri için bir araya getirir. PRUSA, güncel yarışma anlatısında yer alan ekip adıdır.",
+        "paragraphs": [
+          "Sızdırmaz gövde, itki düzeni ve görev algılama gibi çalışma alanları gerçek araç görüntüsü üzerinden açıklanacak. Arşivdeki CAD görselleri ile fotoğrafın aynı araç nesline ait olup olmadığı belirtilmeden yan yana karşılaştırma yapılmayacak."
+        ],
+        "bullets": [
+          "Gövde ve sızdırmazlık",
+          "İtki ve kontrol",
+          "Görüntü işleme ve görev yazılımı"
+        ]
+      },
+      "layout": "takım_profili",
+      "visuals": [
+        {
+          "file": "/media/takim-iss-sualti-araci.jpg",
+          "role": "ana",
+          "captionDraft": "Havuz kenarında bir İSS sualtı aracı.",
+          "verification": "ön_inceleme",
+          "verificationNote": "Orijinal kaynak ve kullanım bağlamı yayın öncesi teyit edilecek.",
+          "originalFile": null,
+          "targetWidthMm": 180,
+          "crop": "konu_ve_yazıları_koru"
+        },
+        {
+          "file": "/media/tasarim-iss-auv-izometrik.jpg",
+          "role": "teknik",
+          "captionDraft": "Arşivden sualtı aracı tasarımı.",
+          "verification": "ön_inceleme",
+          "verificationNote": "Orijinal kaynak ve kullanım bağlamı yayın öncesi teyit edilecek.",
+          "originalFile": null,
+          "targetWidthMm": 85,
+          "crop": "konu_ve_yazıları_koru"
+        }
+      ],
+      "sourceFiles": [
+        "src/content/teams/insansiz-su-alti.md",
+        "src/data/achievements.json"
+      ],
+      "claimIds": [
+        "takim_kapsami"
+      ],
+      "missing": [
+        "PRUSA / BTU AUV / BTU DALAY adlarının araç nesilleri.",
+        "Uluslararası başarı kaydının birincil belgesi."
+      ],
+      "status": "editoryal_taslak",
+      "approvedBy": null,
+      "approvedAt": null,
+      "renderReady": false,
+      "teamSlug": "insansiz-su-alti",
+      "targetUrl": "https://btumatro.com/takimlarimiz/insansiz-su-alti/",
+      "layoutNotes": "Üstte alan adı ve takım; ortada tek büyük gerçek görsel; altta 80–140 kelimelik anlatı, üç çalışma alanı, tarihli sonuç satırı. İkinci görsel veya teknik şema mümkünse karşı sütunda. Alt ekipler sezonla etiketlenir."
+    },
+    {
+      "id": "T10",
+      "page": 10,
+      "edition": "tanitim",
+      "title": "ZEMHERİ / SARA",
+      "purpose": "Yeni bir çalışma alanı",
+      "copy": {
+        "lead": "ZEMHERİ, MATRO’nun sualtı roket sistemleri alanındaki takımını temsil eder. SARA adı arşivde yer alan araç görselinde kullanılır.",
+        "paragraphs": [
+          "Takımın ilk sezon deneyimi; tasarım, üretim ve ekip çalışması üzerinden anlatılacak. Yarışma sonucu finalistlik olarak açıkça belirtilecek; derece veya ödül kazanıldığı ima edilmeyecek."
+        ],
+        "bullets": [
+          "Gövde ve malzeme çalışmaları",
+          "Sistem bütünleştirme",
+          "Takımın ilk sezon deneyimi"
+        ]
+      },
+      "layout": "takım_profili",
+      "visuals": [
+        {
+          "file": "/media/galeri-zemheri-sara.jpg",
+          "role": "ana",
+          "captionDraft": "Arşivde SARA adıyla kaydedilmiş araç.",
+          "verification": "ön_inceleme",
+          "verificationNote": "Orijinal kaynak ve kullanım bağlamı yayın öncesi teyit edilecek.",
+          "originalFile": null,
+          "targetWidthMm": 180,
+          "crop": "konu_ve_yazıları_koru"
+        },
+        {
+          "file": "/media/galeri-zemheri-takim.jpg",
+          "role": "detay",
+          "captionDraft": "Yarışma ortamında ekip üyeleri.",
+          "verification": "ön_inceleme",
+          "verificationNote": "Orijinal kaynak ve kullanım bağlamı yayın öncesi teyit edilecek.",
+          "originalFile": null,
+          "targetWidthMm": 85,
+          "crop": "konu_ve_yazıları_koru"
+        }
+      ],
+      "sourceFiles": [
+        "src/content/teams/su-alti-roketi.md",
+        "src/data/achievements.json"
+      ],
+      "claimIds": [
+        "takim_kapsami"
+      ],
+      "missing": [
+        "SARA adının güncel araçla ilişkisinin teyidi.",
+        "İlk katılım sezonunun açık yılı."
+      ],
+      "status": "editoryal_taslak",
+      "approvedBy": null,
+      "approvedAt": null,
+      "renderReady": false,
+      "teamSlug": "su-alti-roketi",
+      "targetUrl": "https://btumatro.com/takimlarimiz/su-alti-roketi/",
+      "layoutNotes": "Üstte alan adı ve takım; ortada tek büyük gerçek görsel; altta 80–140 kelimelik anlatı, üç çalışma alanı, tarihli sonuç satırı. İkinci görsel veya teknik şema mümkünse karşı sütunda. Alt ekipler sezonla etiketlenir."
+    },
+    {
+      "id": "T11",
+      "page": 11,
+      "edition": "tanitim",
+      "title": "MATRİS",
+      "purpose": "Birlikte hareket eden hava araçları",
+      "copy": {
+        "lead": "MATRİS, birden fazla insansız hava aracının koordineli görev yapması üzerine çalışan ekibimizdir. Sürü yaklaşımı, tek bir aracı yönetmenin ötesinde araçlar arası haberleşme ve görev paylaşımını da kapsar.",
+        "paragraphs": [
+          "Gerçek hava aracı fotoğrafına, çoklu araç koordinasyonunu açıklayan sade bir şema eşlik edecek. Şema bir anlatım aracı olacak; ekibin ölçülmüş uçuş kaydı veya gerçek filo büyüklüğü gibi sunulmayacak."
+        ],
+        "bullets": [
+          "Çoklu araç koordinasyonu",
+          "Haberleşme ve görev paylaşımı",
+          "Uçuş kontrolü ve yazılım"
+        ]
+      },
+      "layout": "takım_profili",
+      "visuals": [
+        {
+          "file": "/media/takim-matris-iha.jpg",
+          "role": "ana",
+          "captionDraft": "MATRİS portföyündeki hava aracı.",
+          "verification": "ön_inceleme",
+          "verificationNote": "Orijinal kaynak ve kullanım bağlamı yayın öncesi teyit edilecek.",
+          "originalFile": null,
+          "targetWidthMm": 180,
+          "crop": "konu_ve_yazıları_koru"
+        }
+      ],
+      "sourceFiles": [
+        "src/content/teams/suru-iha.md",
+        "src/data/achievements.json"
+      ],
+      "claimIds": [
+        "takim_kapsami"
+      ],
+      "missing": [
+        "Gerçek çoklu araç/test fotoğrafı.",
+        "Filo fotoğrafı diye etiketlenmiş özçekim kullanılmayacak."
+      ],
+      "status": "editoryal_taslak",
+      "approvedBy": null,
+      "approvedAt": null,
+      "renderReady": false,
+      "teamSlug": "suru-iha",
+      "targetUrl": "https://btumatro.com/takimlarimiz/suru-iha/",
+      "layoutNotes": "Üstte alan adı ve takım; ortada tek büyük gerçek görsel; altta 80–140 kelimelik anlatı, üç çalışma alanı, tarihli sonuç satırı. İkinci görsel veya teknik şema mümkünse karşı sütunda. Alt ekipler sezonla etiketlenir."
+    },
+    {
+      "id": "T12",
+      "page": 12,
+      "edition": "tanitim",
+      "title": "PUSULA / ANDROMEDA",
+      "purpose": "Üretim süreçleri için akıllı sistemler",
+      "copy": {
+        "lead": "Sanayide Dijital Teknolojiler çatısında üretim ve otomasyon problemleri üzerinde çalışıyoruz. PUSULA ile ANDROMEDA, farklı yarışma ve uygulama hatları olarak ayrı anlatılacak.",
+        "paragraphs": [
+          "PUSULA için araç ve atölye çalışmaları; ANDROMEDA için doğrulanmış programlama veya üretim senaryosu gösterilecek. İki ekibin çıktıları tek bir aracın özelliği gibi birleştirilmeyecek."
+        ],
+        "bullets": [
+          "Endüstriyel otomasyon",
+          "Sensörler ve veri toplama",
+          "Görev programlama ve bütünleştirme"
+        ]
+      },
+      "layout": "takım_profili",
+      "visuals": [
+        {
+          "file": "/media/galeri-pusula-atolye.jpg",
+          "role": "ana",
+          "captionDraft": "PUSULA aracının yanında ekip üyeleri.",
+          "verification": "ön_inceleme",
+          "verificationNote": "Orijinal kaynak ve kullanım bağlamı yayın öncesi teyit edilecek.",
+          "originalFile": null,
+          "targetWidthMm": 180,
+          "crop": "konu_ve_yazıları_koru"
+        },
+        {
+          "file": "/media/webmedya-sanayide-dijital-31.jpg",
+          "role": "detay",
+          "captionDraft": "PUSULA aracı üzerinde çalışma.",
+          "verification": "ön_inceleme",
+          "verificationNote": "Orijinal kaynak ve kullanım bağlamı yayın öncesi teyit edilecek.",
+          "originalFile": null,
+          "targetWidthMm": 85,
+          "crop": "konu_ve_yazıları_koru"
+        }
+      ],
+      "sourceFiles": [
+        "src/content/teams/sanayide-dijital.md",
+        "src/data/achievements.json"
+      ],
+      "claimIds": [
+        "takim_kapsami"
+      ],
+      "missing": [
+        "ANDROMEDA için gerçek görsel ve kısa proje açıklaması.",
+        "2021 üçüncülüğündeki teknik destek ilişkisi."
+      ],
+      "status": "editoryal_taslak",
+      "approvedBy": null,
+      "approvedAt": null,
+      "renderReady": false,
+      "teamSlug": "sanayide-dijital",
+      "targetUrl": "https://btumatro.com/takimlarimiz/sanayide-dijital/",
+      "layoutNotes": "Üstte alan adı ve takım; ortada tek büyük gerçek görsel; altta 80–140 kelimelik anlatı, üç çalışma alanı, tarihli sonuç satırı. İkinci görsel veya teknik şema mümkünse karşı sütunda. Alt ekipler sezonla etiketlenir."
+    },
+    {
+      "id": "T13",
+      "page": 13,
+      "edition": "tanitim",
+      "title": "GÖKSAV / ASHİNA-H",
+      "purpose": "Takip ve kontrol sistemleri",
+      "copy": {
+        "lead": "GÖKSAV, hava savunma sistemleri alanındaki takım başlığıdır; ASHİNA-H adı da mevcut arşivde kullanılır. Proje anlatısı sensör, takip, kontrol ve sistem bütünleştirme çalışmalarına odaklanacak.",
+        "paragraphs": [
+          "2025 rapor değerlendirmesi sonucu, yarışma final sıralamasından açık biçimde ayrılacak. MERGEN adının bu ekiple ilişkisi teyit edilmeden görsel kesin alt araç başlığıyla sunulmayacak."
+        ],
+        "bullets": [
+          "Algılama ve takip",
+          "Kontrol yazılımı",
+          "Sistem bütünleştirme"
+        ]
+      },
+      "layout": "takım_profili",
+      "visuals": [
+        {
+          "file": "/media/galeri-mergen-hss.jpg",
+          "role": "ana",
+          "captionDraft": "Arşivde MERGEN HSS adıyla kayıtlı sistem.",
+          "verification": "ön_inceleme",
+          "verificationNote": "Görselde sistem görülüyor; GÖKSAV üst ekip ilişkisi henüz teyitsiz.",
+          "originalFile": null,
+          "targetWidthMm": 180,
+          "crop": "konu_ve_yazıları_koru"
+        }
+      ],
+      "sourceFiles": [
+        "src/content/teams/ashina-h.md",
+        "src/data/achievements.json"
+      ],
+      "claimIds": [
+        "takim_kapsami"
+      ],
+      "missing": [
+        "GÖKSAV / ASHİNA-H / MERGEN ilişkisi.",
+        "Kapak ve mevcut test fotoğraflarının projeyle eşleşmesi."
+      ],
+      "status": "editoryal_taslak",
+      "approvedBy": null,
+      "approvedAt": null,
+      "renderReady": false,
+      "teamSlug": "ashina-h",
+      "targetUrl": "https://btumatro.com/takimlarimiz/ashina-h/",
+      "layoutNotes": "Üstte alan adı ve takım; ortada tek büyük gerçek görsel; altta 80–140 kelimelik anlatı, üç çalışma alanı, tarihli sonuç satırı. İkinci görsel veya teknik şema mümkünse karşı sütunda. Alt ekipler sezonla etiketlenir."
+    },
+    {
+      "id": "T14",
+      "page": 14,
+      "edition": "tanitim",
+      "title": "BÜRKÜT",
+      "purpose": "Simülasyonda geliştirmek",
+      "copy": {
+        "lead": "BÜRKÜT, uçan araba ve otonom hareket senaryolarını simülasyon ortamında ele alan proje ekibimizdir. Yazılım geliştirme, görev planlama ve kontrol yaklaşımları bu çalışmanın merkezindedir.",
+        "paragraphs": [
+          "Bu sayfada simülasyon ekranı, senaryo akışı ve ekip fotoğrafı birlikte kullanılacak. Twizy geçmişindeki EMİZY ve MATROBOT adları, yıl ve takım ilişkisi doğrulandıktan sonra ayrı tarihçe kutusuna alınacak."
+        ],
+        "bullets": [
+          "Kontrol ve durum kestirimi",
+          "Görev planlama",
+          "Simülasyonda deneme"
+        ]
+      },
+      "layout": "takım_profili",
+      "visuals": [
+        {
+          "file": "/media/galeri-burkut-simulasyon-ekip.jpg",
+          "role": "ana",
+          "captionDraft": "BÜRKÜT arşivindeki etkinlik ve ekip fotoğrafı.",
+          "verification": "ön_inceleme",
+          "verificationNote": "Orijinal kaynak ve kullanım bağlamı yayın öncesi teyit edilecek.",
+          "originalFile": null,
+          "targetWidthMm": 180,
+          "crop": "konu_ve_yazıları_koru"
+        }
+      ],
+      "sourceFiles": [
+        "src/content/teams/burkut.md",
+        "src/data/achievements.json"
+      ],
+      "claimIds": [
+        "takim_kapsami"
+      ],
+      "missing": [
+        "Gerçek simülasyon ekran görüntüsü.",
+        "2020/2021 Twizy sezon ve sonuç tarihleri."
+      ],
+      "status": "editoryal_taslak",
+      "approvedBy": null,
+      "approvedAt": null,
+      "renderReady": false,
+      "teamSlug": "burkut",
+      "targetUrl": "https://btumatro.com/takimlarimiz/burkut/",
+      "layoutNotes": "Üstte alan adı ve takım; ortada tek büyük gerçek görsel; altta 80–140 kelimelik anlatı, üç çalışma alanı, tarihli sonuç satırı. İkinci görsel veya teknik şema mümkünse karşı sütunda. Alt ekipler sezonla etiketlenir."
+    },
+    {
+      "id": "T15",
+      "page": 15,
+      "edition": "tanitim",
+      "title": "ÇAĞRI",
+      "purpose": "Bağlantıyı sürdürebilmek",
+      "copy": {
+        "lead": "ÇAĞRI, kablosuz haberleşme problemleri üzerinde çalışan ekibimizdir. Sinyal işleme, yazılım tabanlı radyo ve veri aktarımının güvenilirliği çalışma alanları arasında yer alır.",
+        "paragraphs": [
+          "Haberleşme sürecini anlatan düzenlenebilir bir verici–kanal–alıcı şemasına gerçek ekipman ve çalışma fotoğrafı eşlik etmeli. Şema temsili olacak; ölçülmemiş menzil veya veri hızı eklenmeyecek."
+        ],
+        "bullets": [
+          "Sinyal işleme",
+          "Yazılım tabanlı radyo",
+          "Veri aktarımı ve doğrulama"
+        ]
+      },
+      "layout": "takım_profili",
+      "visuals": [],
+      "sourceFiles": [
+        "src/content/teams/cagri.md",
+        "src/data/achievements.json"
+      ],
+      "claimIds": [
+        "takim_kapsami"
+      ],
+      "missing": [
+        "Takım/cihaz fotoğrafı şu an site kaydında yok.",
+        "2026–2027 faaliyet ve alım durumu."
+      ],
+      "status": "editoryal_taslak",
+      "approvedBy": null,
+      "approvedAt": null,
+      "renderReady": false,
+      "teamSlug": "cagri",
+      "targetUrl": "https://btumatro.com/takimlarimiz/cagri/",
+      "layoutNotes": "Üstte alan adı ve takım; ortada tek büyük gerçek görsel; altta 80–140 kelimelik anlatı, üç çalışma alanı, tarihli sonuç satırı. İkinci görsel veya teknik şema mümkünse karşı sütunda. Alt ekipler sezonla etiketlenir."
+    },
+    {
+      "id": "T16",
+      "page": 16,
+      "edition": "tanitim",
+      "title": "ALHAZEN",
+      "purpose": "Enerji ve malzemeye odaklanmak",
+      "copy": {
+        "lead": "ALHAZEN, çevre ve enerji teknolojileri üzerine çalışan ekibimizdir. Mevcut içerik yakıt pili, hidrojen enerjisi ve enerji verimliliği çalışmalarını anlatıyor.",
+        "paragraphs": [
+          "Sayfada gerçek laboratuvar çalışması ile yarışma katılımı iki ayrı bağlam olarak gösterilecek. Yarışma özçekimleri analiz deneyi gibi etiketlenmeyecek. Projenin adı, kullanılan yaklaşım ve elde edilen çıktı ekip tarafından teyit edilecek."
+        ],
+        "bullets": [
+          "Enerji dönüşümü",
+          "Malzeme ve sistem çalışmaları",
+          "Çevre odaklı mühendislik"
+        ]
+      },
+      "layout": "takım_profili",
+      "visuals": [
+        {
+          "file": "/media/takim-alhazen.jpg",
+          "role": "ana",
+          "captionDraft": "Laboratuvarda malzeme üzerinde çalışma.",
+          "verification": "ön_inceleme",
+          "verificationNote": "Orijinal kaynak ve kullanım bağlamı yayın öncesi teyit edilecek.",
+          "originalFile": null,
+          "targetWidthMm": 180,
+          "crop": "konu_ve_yazıları_koru"
+        },
+        {
+          "file": "/media/webmedya-cevre-enerji-9.jpg",
+          "role": "detay",
+          "captionDraft": "Çevre ve enerji yarışması standında ekip.",
+          "verification": "ön_inceleme",
+          "verificationNote": "Orijinal kaynak ve kullanım bağlamı yayın öncesi teyit edilecek.",
+          "originalFile": null,
+          "targetWidthMm": 85,
+          "crop": "konu_ve_yazıları_koru"
+        }
+      ],
+      "sourceFiles": [
+        "src/content/teams/cevre-enerji.md",
+        "src/data/achievements.json"
+      ],
+      "claimIds": [
+        "takim_kapsami"
+      ],
+      "missing": [
+        "Proje adı, laboratuvar fotoğrafının bağlamı ve çalışma sonucu."
+      ],
+      "status": "editoryal_taslak",
+      "approvedBy": null,
+      "approvedAt": null,
+      "renderReady": false,
+      "teamSlug": "cevre-enerji",
+      "targetUrl": "https://btumatro.com/takimlarimiz/cevre-enerji/",
+      "layoutNotes": "Üstte alan adı ve takım; ortada tek büyük gerçek görsel; altta 80–140 kelimelik anlatı, üç çalışma alanı, tarihli sonuç satırı. İkinci görsel veya teknik şema mümkünse karşı sütunda. Alt ekipler sezonla etiketlenir."
+    },
+    {
+      "id": "T17",
+      "page": 17,
+      "edition": "tanitim",
+      "title": "ASHİNA İNOVASYON",
+      "purpose": "Tarım için araştırmak",
+      "copy": {
+        "lead": "ASHİNA İNOVASYON, tarımın saha ihtiyaçlarına yönelik araştırma ve proje geliştirme alanıdır. Mevcut takım kaydı literatür taraması, saha analizi ve prototipleme çalışmalarını tanımlar.",
+        "paragraphs": [
+          "Bu sayfa araştırma sorusunu, ele alınan ihtiyacı ve planlanan çalışma adımlarını anlatacak. Henüz belgelenmemiş bir araç veya tamamlanmış sonuç varmış gibi tanıtılmayacak."
+        ],
+        "bullets": [
+          "Saha ihtiyacını anlamak",
+          "Araştırma ve kavram geliştirme",
+          "Deneme ve prototipleme"
+        ]
+      },
+      "layout": "takım_profili",
+      "visuals": [],
+      "sourceFiles": [
+        "src/content/teams/ashina-inovasyon.md",
+        "src/data/achievements.json"
+      ],
+      "claimIds": [
+        "takim_kapsami"
+      ],
+      "missing": [
+        "Gerçek çalışma fotoğrafı.",
+        "Güncel araştırma konusu ve proje aşaması.",
+        "Sayfa tek başına yeterli içerik taşımazsa araştırma alanlarıyla birleştirilecek."
+      ],
+      "status": "editoryal_taslak",
+      "approvedBy": null,
+      "approvedAt": null,
+      "renderReady": false,
+      "teamSlug": "ashina-inovasyon",
+      "targetUrl": "https://btumatro.com/takimlarimiz/ashina-inovasyon/",
+      "layoutNotes": "Üstte alan adı ve takım; ortada tek büyük gerçek görsel; altta 80–140 kelimelik anlatı, üç çalışma alanı, tarihli sonuç satırı. İkinci görsel veya teknik şema mümkünse karşı sütunda. Alt ekipler sezonla etiketlenir."
+    },
+    {
+      "id": "T18",
+      "page": 18,
+      "edition": "tanitim",
+      "title": "Fikirden girişime",
+      "purpose": "Teknik üretimin ürün ve girişim boyutunu anlatmak.",
+      "copy": {
+        "lead": "Girişimcilik ve İnovasyon çalışmalarında teknik fikrin kullanıcı ihtiyacına, ürüne ve iş modeline dönüşmesi ele alınır. Hackathonlar ve proje yarışmaları bu deneyimin farklı yollarıdır.",
+        "paragraphs": [
+          "INNOSENS, SYNTAX ve SCENDERS adları ayrı ekip/çalışma kayıtları olarak sunulacak. Yarışma adı, yıl ve sonuç türü her kayıtla birlikte gösterilecek; bölgesel başarı ulusal veya dünya derecesine dönüştürülmeyecek."
+        ],
+        "bullets": [
+          "Problem ve kullanıcı ihtiyacı",
+          "Ürün ve iş modeli",
+          "Hackathon ve proje deneyimi"
+        ]
+      },
+      "layout": "takım_profili",
+      "visuals": [
+        {
+          "file": "/media/odul-girisimcilik.jpg",
+          "role": "ana",
+          "captionDraft": "Girişimcilik ödül töreninden bir kare.",
+          "verification": "ön_inceleme",
+          "verificationNote": "Orijinal kaynak ve kullanım bağlamı yayın öncesi teyit edilecek.",
+          "originalFile": null,
+          "targetWidthMm": 180,
+          "crop": "konu_ve_yazıları_koru"
+        },
+        {
+          "file": "/media/galeri-advance-up-syntax.jpg",
+          "role": "belge",
+          "captionDraft": "Advance-Up Hackathon üçüncülük duyurusu.",
+          "verification": "ön_inceleme",
+          "verificationNote": "Orijinal kaynak ve kullanım bağlamı yayın öncesi teyit edilecek.",
+          "originalFile": null,
+          "targetWidthMm": 85,
+          "crop": "konu_ve_yazıları_koru"
+        }
+      ],
+      "sourceFiles": [
+        "src/content/teams/girisimcilik.md",
+        "src/data/achievements.json"
+      ],
+      "claimIds": [
+        "takim_kapsami"
+      ],
+      "missing": [
+        "Ekip adları ve başarıların birincil kayıtları."
+      ],
+      "status": "editoryal_taslak",
+      "approvedBy": null,
+      "approvedAt": null,
+      "renderReady": false,
+      "teamSlug": "girisimcilik",
+      "targetUrl": "https://btumatro.com/takimlarimiz/girisimcilik/",
+      "layoutNotes": "Üstte alan adı ve takım; ortada tek büyük gerçek görsel; altta 80–140 kelimelik anlatı, üç çalışma alanı, tarihli sonuç satırı. İkinci görsel veya teknik şema mümkünse karşı sütunda. Alt ekipler sezonla etiketlenir."
+    },
+    {
+      "id": "T19",
+      "page": 19,
+      "edition": "tanitim",
+      "title": "Emek, deneyim ve sonuç",
+      "purpose": "Başarıları doğru ölçek ve bağlamla sunmak.",
+      "copy": {
+        "lead": "Her sonuç, farklı bir ekibin çalışma sürecinin bir parçasıdır. Bu seçki yarışma derecelerini, özel ödülleri ve finalistlikleri kendi adlarıyla gösterir.",
+        "paragraphs": [
+          "Yayın anındaki veri tabanında {{basari_kaydi}} kayıt ve {{birincilik}} birincilik kaydı bulunuyor. Sayıların yanında kapsadıkları dönem ve sonuç türü yazılacak; tüm kayıtlar aynı düzeyde bir ödül gibi gösterilmeyecek."
+        ],
+        "bullets": [
+          "Yıl / yarışma / takım / sonuç",
+          "Finalistlik ve derece ayrı gösterilir",
+          "Tam listeye QR bağlantısı"
+        ]
+      },
+      "layout": "başarı_çizelgesi",
+      "visuals": [
+        {
+          "file": "/media/odul-toreni.jpg",
+          "role": "ana",
+          "captionDraft": "Bir ödül töreninden MATRO ekibi.",
+          "verification": "ön_inceleme",
+          "verificationNote": "Orijinal kaynak ve kullanım bağlamı yayın öncesi teyit edilecek.",
+          "originalFile": null,
+          "targetWidthMm": 180,
+          "crop": "konu_ve_yazıları_koru"
+        }
+      ],
+      "sourceFiles": [
+        "src/data/achievements.json"
+      ],
+      "claimIds": [
+        "basari_kaydi",
+        "birincilik",
+        "tarihsel_sayilar",
+        "pusula_2021",
+        "twizy"
+      ],
+      "missing": [
+        "6–8 birincil kaynaklı sonuç seçimi."
+      ],
+      "status": "editoryal_taslak",
+      "approvedBy": null,
+      "approvedAt": null,
+      "renderReady": false
+    },
+    {
+      "id": "T20",
+      "page": 20,
+      "edition": "tanitim",
+      "title": "2026 sezonundan",
+      "purpose": "Sezon kapsamını dört şehir haberiyle karıştırmadan göstermek.",
+      "copy": {
+        "lead": "2026 başarı listesinde sekiz finalist ekip kaydı bulunuyor. Sezonu, ekip adı ve yarışma kategorisiyle birlikte anlatıyoruz.",
+        "paragraphs": [
+          "Malatya’da ASHİNA, Diyarbakır’da PUSULA, Mardin’de LUNA İKA ve Gaziantep’te MATRİS aynı tarihli dört şehir haberinde yer alıyor. LODOS, PRUSA ve ZEMHERİ Mavi Vatan anlatısında; ANDROMEDA ise kendi yarışma kategorisinde ele alınacak."
+        ],
+        "bullets": [
+          "Dört şehirdeki haber: ASHİNA / PUSULA / LUNA İKA / MATRİS",
+          "Mavi Vatan: LODOS / PRUSA / ZEMHERİ",
+          "ANDROMEDA: ayrı yarışma kaydı"
+        ]
+      },
+      "layout": "sezon_haritası",
+      "visuals": [
+        {
+          "file": "/media/haber-teknofest-2026-finalleri.jpg",
+          "role": "belge",
+          "captionDraft": "Malatya / ASHİNA finalist duyurusu.",
+          "verification": "ön_inceleme",
+          "verificationNote": "Orijinal kaynak ve kullanım bağlamı yayın öncesi teyit edilecek.",
+          "originalFile": null,
+          "targetWidthMm": 85,
+          "crop": "konu_ve_yazıları_koru"
+        },
+        {
+          "file": "/media/haber-teknofest-2026-diyarbakir.jpg",
+          "role": "belge",
+          "captionDraft": "Diyarbakır / PUSULA finalist duyurusu.",
+          "verification": "ön_inceleme",
+          "verificationNote": "Orijinal kaynak ve kullanım bağlamı yayın öncesi teyit edilecek.",
+          "originalFile": null,
+          "targetWidthMm": 85,
+          "crop": "konu_ve_yazıları_koru"
+        },
+        {
+          "file": "/media/haber-teknofest-2026-mardin.jpg",
+          "role": "belge",
+          "captionDraft": "Mardin / LUNA İKA finalist duyurusu.",
+          "verification": "ön_inceleme",
+          "verificationNote": "Orijinal kaynak ve kullanım bağlamı yayın öncesi teyit edilecek.",
+          "originalFile": null,
+          "targetWidthMm": 85,
+          "crop": "konu_ve_yazıları_koru"
+        },
+        {
+          "file": "/media/haber-teknofest-2026-gaziantep.jpg",
+          "role": "belge",
+          "captionDraft": "Gaziantep / MATRİS finalist duyurusu.",
+          "verification": "ön_inceleme",
+          "verificationNote": "Orijinal kaynak ve kullanım bağlamı yayın öncesi teyit edilecek.",
+          "originalFile": null,
+          "targetWidthMm": 85,
+          "crop": "konu_ve_yazıları_koru"
+        }
+      ],
+      "sourceFiles": [
+        "src/data/achievements.json",
+        "src/content/haberler/teknofest-2026-finalleri.md",
+        "src/content/haberler/mavi-vatan-finalistlerimiz-2026.md"
+      ],
+      "claimIds": [
+        "finalistler_2026"
+      ],
+      "missing": [
+        "Haritada yalnız doğrulanmış şehirler işaretlenecek.",
+        "Ham fotoğraflar bulunduğunda afiş yerine fotoğraf seçimi."
+      ],
+      "status": "editoryal_taslak",
+      "approvedBy": null,
+      "approvedAt": null,
+      "renderReady": false
+    },
+    {
+      "id": "T21",
+      "page": 21,
+      "edition": "tanitim",
+      "title": "Öğrenerek üretmek",
+      "purpose": "Yeni üyeye somut öğrenme deneyimi göstermek.",
+      "copy": {
+        "lead": "Atölyeye katılan bir öğrencinin ilk ihtiyacı, birlikte çalışacağı alanları tanımaktır. Eğitim programları bu başlangıç için ortak bir temel oluşturur.",
+        "paragraphs": [
+          "2025–2026 birinci eğitim kampı kaydında 32 ders saati ve belge almaya hak kazanan 61 katılımcı yer alıyor. Bu geçmiş program, yeni dönemde aynı takvim veya aynı içeriğin kesin açılacağı sözü olarak sunulmayacak."
+        ],
+        "bullets": [
+          "Mekanik, elektronik ve yazılım temeli",
+          "Uygulama ve ekip çalışması",
+          "Geçmiş programdan ölçülebilir örnek"
+        ]
+      },
+      "layout": "eğitim",
+      "visuals": [
+        {
+          "file": "/media/haber-ikinci-egitim.jpg",
+          "role": "belge",
+          "captionDraft": "Eğitim çalışmalarından duyuru kolajı.",
+          "verification": "ön_inceleme",
+          "verificationNote": "Orijinal kaynak ve kullanım bağlamı yayın öncesi teyit edilecek.",
+          "originalFile": null,
+          "targetWidthMm": 85,
+          "crop": "konu_ve_yazıları_koru"
+        },
+        {
+          "file": "/media/galeri-turkish-technic-sinif.jpg",
+          "role": "detay",
+          "captionDraft": "Turkish Technic çalıştayından ders ortamı.",
+          "verification": "ön_inceleme",
+          "verificationNote": "Orijinal kaynak ve kullanım bağlamı yayın öncesi teyit edilecek.",
+          "originalFile": null,
+          "targetWidthMm": 85,
+          "crop": "konu_ve_yazıları_koru"
+        }
+      ],
+      "sourceFiles": [
+        "src/content/activities/egitim-kampi-2025-2026.md",
+        "src/content/haberler/ikinci-egitim-etabi-tamamlandi.md"
+      ],
+      "claimIds": [
+        "egitim_kampi"
+      ],
+      "missing": [
+        "Eğitim kampına ait doğrudan sınıf/uygulama kareleri; başka çalıştayın fotoğrafı kamp diye etiketlenmeyecek."
+      ],
+      "status": "editoryal_taslak",
+      "approvedBy": null,
+      "approvedAt": null,
+      "renderReady": false
+    },
+    {
+      "id": "T22",
+      "page": 22,
+      "edition": "tanitim",
+      "title": "Mühendisliği yerinde görmek",
+      "purpose": "Teknik gezi, ziyaret ve sponsor ilişkisinin farkını korumak.",
+      "copy": {
+        "lead": "Teknik geziler ve çalıştaylar, öğrencilerin mühendisliğin üretim ortamındaki karşılığını görmesini sağlar.",
+        "paragraphs": [
+          "Turkish Technic ve HKTM gibi kurumlara yapılan ziyaretlerden seçilen kareler; görülen çalışma alanı ve etkinlik adıyla anlatılacak. Kurum logosunun bu sayfada bulunması sponsorluk ilişkisi anlamına gelmeyecek."
+        ],
+        "bullets": [
+          "Üretim ve bakım ortamlarını tanımak",
+          "Mühendislerle doğrudan temas",
+          "Atölyedeki soruları sahaya taşımak"
+        ]
+      },
+      "layout": "fotoğraf_yazısı",
+      "visuals": [
+        {
+          "file": "/media/galeri-turkish-technic-hangar.jpg",
+          "role": "ana",
+          "captionDraft": "Turkish Technic ziyaretinde hangarda MATRO grubu.",
+          "verification": "ön_inceleme",
+          "verificationNote": "Orijinal kaynak ve kullanım bağlamı yayın öncesi teyit edilecek.",
+          "originalFile": null,
+          "targetWidthMm": 180,
+          "crop": "konu_ve_yazıları_koru"
+        },
+        {
+          "file": "/media/galeri-hktm-grup.jpg",
+          "role": "detay",
+          "captionDraft": "HKTM ziyaretinden grup fotoğrafı.",
+          "verification": "ön_inceleme",
+          "verificationNote": "Orijinal kaynak ve kullanım bağlamı yayın öncesi teyit edilecek.",
+          "originalFile": null,
+          "targetWidthMm": 85,
+          "crop": "konu_ve_yazıları_koru"
+        }
+      ],
+      "sourceFiles": [
+        "src/content/activities/teknik-geziler.md",
+        "src/content/haberler/turkish-technic-muhendislik-calistayi.md"
+      ],
+      "claimIds": [],
+      "missing": [
+        "Etkinlik tarihleri, fotoğraf açıklamaları ve yüksek çözünürlüklü kaynaklar."
+      ],
+      "status": "editoryal_taslak",
+      "approvedBy": null,
+      "approvedAt": null,
+      "renderReady": false
+    },
+    {
+      "id": "T23",
+      "page": 23,
+      "edition": "tanitim",
+      "title": "Birlikte öğrenmenin ötesinde",
+      "purpose": "Topluluk deneyiminin sosyal tarafını anlatmak.",
+      "copy": {
+        "lead": "MATRO’da ortak üretim; tanışma, paylaşma ve birbirine destek olma kültürüyle birlikte gelişir.",
+        "paragraphs": [
+          "Sosyal etkinlikler üyelerin birbirini tanımasını sağlar. Mentorluk ve Kardeş Okul çalışmaları ise teknoloji deneyiminin farklı yaş gruplarıyla paylaşılmasına alan açar. Her faaliyet gerçek tarih ve kendi görselleriyle anlatılacak."
+        ],
+        "bullets": [
+          "Topluluk etkinlikleri",
+          "Öğrencilere mentorluk",
+          "Kardeş Okul çalışmaları"
+        ]
+      },
+      "layout": "insan_hikâyesi",
+      "visuals": [
+        {
+          "file": "/media/topluluk-ekip-selfie.jpg",
+          "role": "geçici",
+          "captionDraft": "Topluluk üyelerinden bir grup.",
+          "verification": "ön_inceleme",
+          "verificationNote": "Orijinal kaynak ve kullanım bağlamı yayın öncesi teyit edilecek.",
+          "originalFile": null,
+          "targetWidthMm": 85,
+          "crop": "konu_ve_yazıları_koru"
+        }
+      ],
+      "sourceFiles": [
+        "src/content/activities/kardes-okul.md",
+        "src/content/activities/mentorluk.md",
+        "src/data/gallery.json"
+      ],
+      "claimIds": [],
+      "missing": [
+        "Kapakta/ikinci sayfada kullanılan kare yerine farklı bir etkinlik fotoğrafı.",
+        "Sosyal sorumluluk için tarihli etki kaydı."
+      ],
+      "status": "editoryal_taslak",
+      "approvedBy": null,
+      "approvedAt": null,
+      "renderReady": false
+    },
+    {
+      "id": "T24",
+      "page": 24,
+      "edition": "tanitim",
+      "title": "Topluluğu birlikte yürütüyoruz",
+      "purpose": "Yönetim görevlerini teknik takım çalışmasından ayırmak.",
+      "copy": {
+        "lead": "Bir topluluğun sürdürülebilmesi, teknik projelerin yanında düzenli organizasyon ve iletişim çalışmasına da ihtiyaç duyar.",
+        "paragraphs": [
+          "Atölye, sponsorluk, organizasyon ve sosyal medya birimleri farklı sorumluluklar üstlenir. Bu alanlarda görev almak, yarışma takımına başvurmaktan ayrı bir katılım yoludur. Sayfada kişilerden önce birimlerin yaptığı işler anlatılacak."
+        ],
+        "bullets": [
+          "Atölye: çalışma ortamı ve koordinasyon",
+          "Sponsorluk: iş birlikleri",
+          "Organizasyon: etkinlik süreçleri",
+          "Sosyal medya: içerik ve iletişim"
+        ]
+      },
+      "layout": "organizasyon_şeması",
+      "visuals": [],
+      "sourceFiles": [
+        "src/data/ekibimiz.json",
+        "src/data/join.json"
+      ],
+      "claimIds": [],
+      "missing": [
+        "2026–2027 yönetim yapısı teyidi; isim kullanılacaksa dönem ve onay."
+      ],
+      "status": "editoryal_taslak",
+      "approvedBy": null,
+      "approvedAt": null,
+      "renderReady": false
+    },
+    {
+      "id": "T25",
+      "page": 25,
+      "edition": "tanitim",
+      "title": "Üretimin arkasındaki destek",
+      "purpose": "Sponsorları dönemleri ve katkılarıyla doğru temsil etmek.",
+      "copy": {
+        "lead": "Projelerin gelişmesine katkı sağlayan destekçilerimiz, ekiplerin üretim ve çalışma olanaklarının güçlenmesine yardımcı olur.",
+        "paragraphs": [
+          "Bu sayfada yalnız dönemi, adı ve kademesi doğrulanmış sponsorlar yer alacak. Geçmiş dönem destekleri ayrı etiketlenecek; sponsorluk ile teknik gezi ilişkisi birbirine karıştırılmayacak."
+        ],
+        "bullets": [
+          "Onaylı firma adı",
+          "Destek dönemi ve türü",
+          "Oranları korunmuş logo yerleşimi"
+        ]
+      },
+      "layout": "sponsor_logoları",
+      "visuals": [],
+      "sourceFiles": [
+        "src/data/sponsors.json",
+        "src/data/sponsorship.json"
+      ],
+      "claimIds": [
+        "sponsorlar"
+      ],
+      "missing": [
+        "A.VET / A.NET kaynak düzeltmesi.",
+        "AKKUŞ ve diğer kademelerin dönem teyidi.",
+        "Vektör logolar."
+      ],
+      "status": "editoryal_taslak",
+      "approvedBy": null,
+      "approvedAt": null,
+      "renderReady": false
+    },
+    {
+      "id": "T26",
+      "page": 26,
+      "edition": "tanitim",
+      "title": "Bir projenin ihtiyaçları",
+      "purpose": "Somut destek çeşitlerini görünür kılmak.",
+      "copy": {
+        "lead": "Bir proje, yalnızca fikirden oluşmaz. Malzeme, üretim olanağı, test ekipmanı ve çalışma araçları da geliştirme sürecinin parçasıdır.",
+        "paragraphs": [
+          "Bir iş birliği nakit katkı, malzeme temini, üretim hizmeti veya yazılım desteği şeklinde kurulabilir. İhtiyaçlar ekiplerle birlikte belirlenir; kapsam ve resmi süreç görüşmede netleştirilir."
+        ],
+        "bullets": [
+          "Malzeme ve bileşen",
+          "Üretim ve hizmet",
+          "Yazılım ve ekipman",
+          "Nakit destek"
+        ]
+      },
+      "layout": "destek_akışı",
+      "visuals": [
+        {
+          "file": "/media/galeri-ashina-kompozit-uretim.jpg",
+          "role": "geçici",
+          "captionDraft": "Üretim aşamasından bir örnek.",
+          "verification": "ön_inceleme",
+          "verificationNote": "Orijinal kaynak ve kullanım bağlamı yayın öncesi teyit edilecek.",
+          "originalFile": null,
+          "targetWidthMm": 85,
+          "crop": "konu_ve_yazıları_koru"
+        }
+      ],
+      "sourceFiles": [
+        "src/data/sponsorship.json"
+      ],
+      "claimIds": [],
+      "missing": [
+        "Güncel ihtiyaç listesinden somut, onaylı örnekler.",
+        "Sayfa 3/6 ile tekrar etmeyen üretim görseli."
+      ],
+      "status": "editoryal_taslak",
+      "approvedBy": null,
+      "approvedAt": null,
+      "renderReady": false
+    },
+    {
+      "id": "T27",
+      "page": 27,
+      "edition": "tanitim",
+      "title": "MATRO’da kendi yolunu seç",
+      "purpose": "Üç ayrı başvuru işlemini anlaşılır biçimde sunmak.",
+      "copy": {
+        "lead": "Topluluğa katılmak, bir yarışma ekibinde çalışmak ve yönetimde sorumluluk almak farklı katılım yollarıdır.",
+        "paragraphs": [
+          "Topluluk kaydı genel üyelik içindir. Yarışma takımlarında görev almak isteyenler takım ön başvurusuyla tercihlerini bildirir. Atölye, sponsorluk, organizasyon ve sosyal medya çalışmalarında sorumluluk almak isteyenler yönetim başvurusunu kullanır."
+        ],
+        "bullets": [
+          "Topluluk kaydı",
+          "Takım ön başvurusu",
+          "Yönetim kurulu başvurusu"
+        ]
+      },
+      "layout": "katılım",
+      "visuals": [],
+      "sourceFiles": [
+        "src/data/join.json"
+      ],
+      "claimIds": [
+        "basvuru"
+      ],
+      "missing": [
+        "Açık formlar ve dönem son kez kontrol edilecek.",
+        "Tanıtım Günleri tarih ve stand yeri.",
+        "Üç ayrı QR ve okunabilir hedef bağlantıları."
+      ],
+      "status": "editoryal_taslak",
+      "approvedBy": null,
+      "approvedAt": null,
+      "renderReady": false
+    },
+    {
+      "id": "T28",
+      "page": 28,
+      "edition": "tanitim",
+      "title": "Bir sonraki projede görüşmek üzere",
+      "purpose": "Kolay ve kalıcı iletişim hedefi vermek.",
+      "copy": {
+        "lead": "MATRO · Bursa Teknik Üniversitesi",
+        "paragraphs": [
+          "Projelerimizi, güncel duyuruları ve katılım yollarını web sitemizden takip edebilirsiniz."
+        ],
+        "bullets": [
+          "btumatro.com",
+          "matroiletisim@gmail.com",
+          "Instagram: @btumatro"
+        ]
+      },
+      "layout": "arka_kapak",
+      "visuals": [],
+      "sourceFiles": [
+        "src/data/site.json"
+      ],
+      "claimIds": [],
+      "missing": [
+        "Son iletişim ve QR testi."
+      ],
+      "status": "editoryal_taslak",
+      "approvedBy": null,
+      "approvedAt": null,
+      "renderReady": false
+    }
+  ],
+  "sponsorModule": [
+    {
+      "id": "S27",
+      "page": 27,
+      "edition": "sponsorluk",
+      "title": "Bu dönem neyi üretmek istiyoruz?",
+      "purpose": "Sponsor görüşmesine yönelik ek modül.",
+      "copy": {
+        "lead": "Her proje için hedef, mevcut aşama, beklenen çıktı ve sezon yazılır.",
+        "paragraphs": [],
+        "bullets": []
+      },
+      "layout": "sponsor_modülü",
+      "visuals": [],
+      "sourceFiles": [
+        "src/data/sponsorship.json"
+      ],
+      "claimIds": [
+        "sponsorlar"
+      ],
+      "missing": [
+        "Takım kaptanlarından tarihli proje hedefleri.",
+        "Hedefe ait gerçek araç/çizim."
+      ],
+      "status": "editoryal_taslak",
+      "approvedBy": null,
+      "approvedAt": null,
+      "renderReady": false
+    },
+    {
+      "id": "S28",
+      "page": 28,
+      "edition": "sponsorluk",
+      "title": "Desteğin projeye dönüşeceği kalemler",
+      "purpose": "Sponsor görüşmesine yönelik ek modül.",
+      "copy": {
+        "lead": "İhtiyaç, adet, nakit/ayni destek, teklif tarihi ve öncelik birlikte gösterilir. Henüz teyitli bütçe verisi bulunmadığı için rakam doldurulmaz.",
+        "paragraphs": [],
+        "bullets": []
+      },
+      "layout": "sponsor_modülü",
+      "visuals": [],
+      "sourceFiles": [
+        "src/data/sponsorship.json"
+      ],
+      "claimIds": [
+        "sponsorlar"
+      ],
+      "missing": [
+        "Güncel teklif ve ihtiyaç tablosu.",
+        "Destek kalemini gösteren gerçek üretim fotoğrafı."
+      ],
+      "status": "editoryal_taslak",
+      "approvedBy": null,
+      "approvedAt": null,
+      "renderReady": false
+    },
+    {
+      "id": "S29",
+      "page": 29,
+      "edition": "sponsorluk",
+      "title": "Birlikte görünür olmak",
+      "purpose": "Sponsor görüşmesine yönelik ek modül.",
+      "copy": {
+        "lead": "Araç, forma, stant ve dijital mecralardaki destekçi görünürlüğü, onaylanmış kapsamla anlatılır.",
+        "paragraphs": [],
+        "bullets": []
+      },
+      "layout": "sponsor_modülü",
+      "visuals": [],
+      "sourceFiles": [
+        "src/data/sponsorship.json"
+      ],
+      "claimIds": [
+        "sponsorlar"
+      ],
+      "missing": [
+        "İzin verilen logo alanları ve kullanım örnekleri.",
+        "Üniversite ve yönetimce teyit edilen haklar."
+      ],
+      "status": "editoryal_taslak",
+      "approvedBy": null,
+      "approvedAt": null,
+      "renderReady": false
+    },
+    {
+      "id": "S30",
+      "page": 30,
+      "edition": "sponsorluk",
+      "title": "Destek seçenekleri",
+      "purpose": "Sponsor görüşmesine yönelik ek modül.",
+      "copy": {
+        "lead": "Nakdi ve ayni katkı için geçerli dönem ve kademe matrisi hazırlanır. Eski tutarlar yeni sezonun onaylı koşulu gibi sunulmaz.",
+        "paragraphs": [],
+        "bullets": []
+      },
+      "layout": "sponsor_modülü",
+      "visuals": [],
+      "sourceFiles": [
+        "src/data/sponsorship.json"
+      ],
+      "claimIds": [
+        "sponsorlar"
+      ],
+      "missing": [
+        "Yürürlükteki sponsorluk kademeleri ve hakları.",
+        "Ayni desteğin değerlendirme usulü."
+      ],
+      "status": "editoryal_taslak",
+      "approvedBy": null,
+      "approvedAt": null,
+      "renderReady": false
+    },
+    {
+      "id": "S31",
+      "page": 31,
+      "edition": "sponsorluk",
+      "title": "İş birliğini birlikte yürütelim",
+      "purpose": "Sponsor görüşmesine yönelik ek modül.",
+      "copy": {
+        "lead": "İlk görüşme, ihtiyaç eşleştirme, üniversite süreci ve çıktı paylaşımı birbirini izler. Raporlama sıklığı yönetimle kararlaştırılır.",
+        "paragraphs": [],
+        "bullets": []
+      },
+      "layout": "sponsor_modülü",
+      "visuals": [],
+      "sourceFiles": [
+        "src/data/sponsorship.json"
+      ],
+      "claimIds": [
+        "sponsorlar"
+      ],
+      "missing": [
+        "İş birliği sorumlusu ve süreç teyidi.",
+        "Teslim/raporlama kapsamı; garanti verilmeyecek."
+      ],
+      "status": "editoryal_taslak",
+      "approvedBy": null,
+      "approvedAt": null,
+      "renderReady": false
+    },
+    {
+      "id": "S32",
+      "page": 32,
+      "edition": "sponsorluk",
+      "title": "Ortak bir projeyi konuşalım",
+      "purpose": "Sponsor görüşmesine yönelik ek modül.",
+      "copy": {
+        "lead": "Sponsorluk ve proje iş birlikleri için kurumsal iletişim kanallarımızdan bize ulaşabilirsiniz.",
+        "paragraphs": [],
+        "bullets": []
+      },
+      "layout": "sponsor_modülü",
+      "visuals": [],
+      "sourceFiles": [
+        "src/data/sponsorship.json"
+      ],
+      "claimIds": [
+        "sponsorlar"
+      ],
+      "missing": [
+        "Kurumsal e-posta ve sponsorluk sayfasına QR.",
+        "Yayın dönemi ve belge sürümü."
+      ],
+      "status": "editoryal_taslak",
+      "approvedBy": null,
+      "approvedAt": null,
+      "renderReady": false
+    }
+  ],
+  "editions": {
+    "tanitim": [
+      "T01",
+      "T02",
+      "T03",
+      "T04",
+      "T05",
+      "T06",
+      "T07",
+      "T08",
+      "T09",
+      "T10",
+      "T11",
+      "T12",
+      "T13",
+      "T14",
+      "T15",
+      "T16",
+      "T17",
+      "T18",
+      "T19",
+      "T20",
+      "T21",
+      "T22",
+      "T23",
+      "T24",
+      "T25",
+      "T26",
+      "T27",
+      "T28"
+    ],
+    "sponsorluk": [
+      "T01",
+      "T02",
+      "T03",
+      "T04",
+      "T05",
+      "T06",
+      "T07",
+      "T08",
+      "T09",
+      "T10",
+      "T11",
+      "T12",
+      "T13",
+      "T14",
+      "T15",
+      "T16",
+      "T17",
+      "T18",
+      "T19",
+      "T20",
+      "T21",
+      "T22",
+      "T23",
+      "T24",
+      "T25",
+      "T26",
+      "S27",
+      "S28",
+      "S29",
+      "S30",
+      "S31",
+      "S32"
+    ]
+  },
+  "editionOverrides": {
+    "sponsorluk": {
+      "T01": {
+        "title": "MATRO / Projeler ve iş birlikleri",
+        "note": "Tanıtım kapağı yerine sponsor görüşmesine uygun kapak."
+      }
+    }
+  }
+}

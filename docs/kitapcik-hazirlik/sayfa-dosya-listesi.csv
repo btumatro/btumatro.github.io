@@ -1,0 +1,45 @@
+Sayfa,Sayfa Başlığı,Görsel Rolü,Dosya Yolu,Önerilen Altyazı,Genişlik (mm),Kırpım Notu
+1,MATRO / Atölyeden sahaya,ana,/media/mavi-vatan-ekipler.jpg,Mavi Vatan etkinliğinde MATRO ekipleri.,180,konu_ve_yazıları_koru
+2,Birlikte üreten bir topluluk,ana,/media/topluluk-ekip-selfie.jpg,MATRO üyelerinden bir grup.,180,konu_ve_yazıları_koru
+3,Bir fikir nasıl projeye dönüşür?,ana,/media/galeri-ashina-kompozit-uretim.jpg,Kompozit parça üretiminden bir çalışma.,180,konu_ve_yazıları_koru
+3,Bir fikir nasıl projeye dönüşür?,detay,/media/galeri-ashina-uretim.jpg,Atölyede bir hava aracı.,85,konu_ve_yazıları_koru
+4,Sen hangi işi üstlenmek istersin?,ana,/media/webmedya-sanayide-dijital-31.jpg,Araç üzerinde birlikte çalışan ekip üyeleri.,180,konu_ve_yazıları_koru
+5,Çalışma alanlarımız,Yok / Vektör Şema,-,-,-,-
+6,ASHİNA,ana,/media/galeri-ashina-teknofest-grup.jpg,Yarışma alanında ASHİNA ekibi.,180,konu_ve_yazıları_koru
+6,ASHİNA,teknik,/media/tasarim-ashina-iha.jpg,Arşivdeki sabit kanat araç tasarımı.,85,konu_ve_yazıları_koru
+6,ASHİNA,detay,/media/galeri-ashina-kompozit-uretim.jpg,Atölyede kompozit üretimi.,85,konu_ve_yazıları_koru
+7,MATROVER & LUNA,ana,/media/takim-matrover.jpg,MATROVER standında ekip ve araç.,180,konu_ve_yazıları_koru
+7,MATROVER & LUNA,detay,/media/takim-luna.jpg,LUNA İKA standında ekip ve araç.,85,konu_ve_yazıları_koru
+7,MATROVER & LUNA,detay,/media/galeri-tika-tarimsal-ika.jpg,Tarımsal araç yarışmasından ekip fotoğrafı.,85,konu_ve_yazıları_koru
+8,İDA / LODOS,ana,/media/takim-lodos.jpg,LODOS ekibi ve teknesi.,180,konu_ve_yazıları_koru
+8,İDA / LODOS,detay,/media/galeri-lodos-detay.jpg,Tekne içindeki elektronik ve bağlantılar.,85,konu_ve_yazıları_koru
+9,İSS / PRUSA,ana,/media/takim-iss-sualti-araci.jpg,Havuz kenarında bir İSS sualtı aracı.,180,konu_ve_yazıları_koru
+9,İSS / PRUSA,teknik,/media/tasarim-iss-auv-izometrik.jpg,Arşivden sualtı aracı tasarımı.,85,konu_ve_yazıları_koru
+10,ZEMHERİ / SARA,ana,/media/galeri-zemheri-sara.jpg,Arşivde SARA adıyla kaydedilmiş araç.,180,konu_ve_yazıları_koru
+10,ZEMHERİ / SARA,detay,/media/galeri-zemheri-takim.jpg,Yarışma ortamında ekip üyeleri.,85,konu_ve_yazıları_koru
+11,MATRİS,ana,/media/takim-matris-iha.jpg,MATRİS portföyündeki hava aracı.,180,konu_ve_yazıları_koru
+12,PUSULA / ANDROMEDA,ana,/media/galeri-pusula-atolye.jpg,PUSULA aracının yanında ekip üyeleri.,180,konu_ve_yazıları_koru
+12,PUSULA / ANDROMEDA,detay,/media/webmedya-sanayide-dijital-31.jpg,PUSULA aracı üzerinde çalışma.,85,konu_ve_yazıları_koru
+13,GÖKSAV / ASHİNA-H,ana,/media/galeri-mergen-hss.jpg,Arşivde MERGEN HSS adıyla kayıtlı sistem.,180,konu_ve_yazıları_koru
+14,BÜRKÜT,ana,/media/galeri-burkut-simulasyon-ekip.jpg,BÜRKÜT arşivindeki etkinlik ve ekip fotoğrafı.,180,konu_ve_yazıları_koru
+15,ÇAĞRI,Yok / Vektör Şema,-,-,-,-
+16,ALHAZEN,ana,/media/takim-alhazen.jpg,Laboratuvarda malzeme üzerinde çalışma.,180,konu_ve_yazıları_koru
+16,ALHAZEN,detay,/media/webmedya-cevre-enerji-9.jpg,Çevre ve enerji yarışması standında ekip.,85,konu_ve_yazıları_koru
+17,ASHİNA İNOVASYON,Yok / Vektör Şema,-,-,-,-
+18,Fikirden girişime,ana,/media/odul-girisimcilik.jpg,Girişimcilik ödül töreninden bir kare.,180,konu_ve_yazıları_koru
+18,Fikirden girişime,belge,/media/galeri-advance-up-syntax.jpg,Advance-Up Hackathon üçüncülük duyurusu.,85,konu_ve_yazıları_koru
+19,"Emek, deneyim ve sonuç",ana,/media/odul-toreni.jpg,Bir ödül töreninden MATRO ekibi.,180,konu_ve_yazıları_koru
+20,2026 sezonundan,belge,/media/haber-teknofest-2026-finalleri.jpg,Malatya / ASHİNA finalist duyurusu.,85,konu_ve_yazıları_koru
+20,2026 sezonundan,belge,/media/haber-teknofest-2026-diyarbakir.jpg,Diyarbakır / PUSULA finalist duyurusu.,85,konu_ve_yazıları_koru
+20,2026 sezonundan,belge,/media/haber-teknofest-2026-mardin.jpg,Mardin / LUNA İKA finalist duyurusu.,85,konu_ve_yazıları_koru
+20,2026 sezonundan,belge,/media/haber-teknofest-2026-gaziantep.jpg,Gaziantep / MATRİS finalist duyurusu.,85,konu_ve_yazıları_koru
+21,Öğrenerek üretmek,belge,/media/haber-ikinci-egitim.jpg,Eğitim çalışmalarından duyuru kolajı.,85,konu_ve_yazıları_koru
+21,Öğrenerek üretmek,detay,/media/galeri-turkish-technic-sinif.jpg,Turkish Technic çalıştayından ders ortamı.,85,konu_ve_yazıları_koru
+22,Mühendisliği yerinde görmek,ana,/media/galeri-turkish-technic-hangar.jpg,Turkish Technic ziyaretinde hangarda MATRO grubu.,180,konu_ve_yazıları_koru
+22,Mühendisliği yerinde görmek,detay,/media/galeri-hktm-grup.jpg,HKTM ziyaretinden grup fotoğrafı.,85,konu_ve_yazıları_koru
+23,Birlikte öğrenmenin ötesinde,geçici,/media/topluluk-ekip-selfie.jpg,Topluluk üyelerinden bir grup.,85,konu_ve_yazıları_koru
+24,Topluluğu birlikte yürütüyoruz,Yok / Vektör Şema,-,-,-,-
+25,Üretimin arkasındaki destek,Yok / Vektör Şema,-,-,-,-
+26,Bir projenin ihtiyaçları,geçici,/media/galeri-ashina-kompozit-uretim.jpg,Üretim aşamasından bir örnek.,85,konu_ve_yazıları_koru
+27,MATRO’da kendi yolunu seç,Yok / Vektör Şema,-,-,-,-
+28,Bir sonraki projede görüşmek üzere,Yok / Vektör Şema,-,-,-,-
