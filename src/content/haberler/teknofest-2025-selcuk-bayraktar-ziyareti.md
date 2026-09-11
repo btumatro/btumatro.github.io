@@ -5,7 +5,7 @@ date: 2025-09-21
 expiresOn: ""
 pinned: false
 draft: false
-image: "/media/ika-yarisma-alani.jpg"
+image: "/media/takim-luna-ika.jpg"
 link: ""
 linkLabel: ""
 teams:

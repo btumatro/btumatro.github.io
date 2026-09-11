@@ -3,10 +3,10 @@ title: Fuar Katılımları ve Sektör Etkinlikleri
 type: Etkinlik
 endDate: ""
 order: 3
-image: "/media/fuar-standi.jpg"
+image: "/media/galeri-istanbul-fuar-merkezi.jpg"
 gallery:
+  - "/media/fuar-standi.jpg"
   - "/media/fuar-standi-2.jpg"
-  - "/media/galeri-istanbul-fuar-merkezi.jpg"
   - "/media/galeri-meteksan-fuari.jpg"
   - "/media/fuar-ziyaret.jpg"
 stats:
