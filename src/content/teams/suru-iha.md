@@ -7,11 +7,9 @@ order: 6
 image: "/media/takim-matris-2026.jpg"
 gallery:
   - "/media/galeri-matris-saha.jpg"
-  - "/media/takim-matris-iha.jpg"
-  - "/media/galeri-matris-ekip.jpg"
   - "/media/webmedya-suru-iha-35.jpg"
-  - "/media/webmedya-suru-iha-36.jpg"
-  - "/media/webmedya-suru-iha-37.jpg"
+  - "/media/galeri-matris-test-alani.jpg"
+  - "/media/galeri-matris-dron-filo.jpg"
 badge: "2026 Finalisti"
 instagram: "btu_matris"
 aliases:

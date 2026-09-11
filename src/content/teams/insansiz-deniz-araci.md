@@ -6,7 +6,6 @@ status: Aktif
 order: 3
 image: "/media/takim-lodos.jpg"
 gallery:
-  - "/media/galeri-lodos-atolye-govde.jpg"
   - "/media/takim-ida.jpg"
   - "/media/galeri-lodos-ekip.jpg"
   - "/media/galeri-lodos-detay.jpg"
@@ -15,8 +14,8 @@ gallery:
   - "/media/galeri-lodos-ekip-sahil.jpg"
   - "/media/webmedya-insansiz-deniz-araci-11.jpg"
   - "/media/webmedya-insansiz-deniz-araci-12.jpg"
-  - "/media/webmedya-insansiz-deniz-araci-13.jpg"
-  - "/media/webmedya-insansiz-deniz-araci-14.jpg"
+  - "/media/galeri-lodos-deniz-test.jpg"
+  - "/media/galeri-lodos-sahil-ekip.jpg"
 video: "/media/video-lodos-tanitim.mp4"
 videoPoster: "/media/video-lodos-tanitim.jpg"
 badge: "2026 Finalisti"

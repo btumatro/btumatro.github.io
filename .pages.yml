@@ -671,6 +671,10 @@ content:
           - { name: height, label: Yükseklik (px), type: number }
           - { name: sizeKb, label: Boyut (KB), type: number }
           - { name: note, label: Not, type: text, description: "Sunumda nerede kullanılabileceğine dair kısa not." }
+          - name: usedIn
+            label: Kullanıldığı yerler
+            type: list
+            description: "Bu dosyanın sitede kullanıldığı takımlar, sayfalar ve etkinlikler."
 
   - name: site
     label: Site Ayarları ve İletişim

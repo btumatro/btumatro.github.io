@@ -7,9 +7,9 @@ order: 12
 image: "/media/takim-alhazen.jpg"
 gallery:
   - "/media/webmedya-cevre-enerji-4.jpg"
-  - "/media/webmedya-cevre-enerji-5.jpg"
+  - "/media/galeri-alhazen-laboratuvar.jpg"
   - "/media/webmedya-cevre-enerji-6.jpg"
-  - "/media/webmedya-cevre-enerji-7.jpg"
+  - "/media/galeri-alhazen-ekipman.jpg"
 badge: ""
 instagram: ""
 aliases:
