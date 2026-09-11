@@ -302,6 +302,30 @@
       ]
     },
     {
+      "file": "/media/galeri-ashina-bayraktar.jpg",
+      "title": "ASHİNA ekibimiz Selçuk Bayraktar ile",
+      "group": "Galeri fotoğrafları",
+      "width": 1468,
+      "height": 849,
+      "sizeKb": 166,
+      "note": "Kullanıldığı yer: ASHİNA (Galeri)",
+      "usedIn": [
+        "ASHİNA (Galeri)"
+      ]
+    },
+    {
+      "file": "/media/galeri-ashina-model-ucak-ekip.jpg",
+      "title": "ASHİNA ekibimiz sabit kanat model uçağıyla",
+      "group": "Galeri fotoğrafları",
+      "width": 517,
+      "height": 398,
+      "sizeKb": 46,
+      "note": "Kullanıldığı yer: ASHİNA (Galeri)",
+      "usedIn": [
+        "ASHİNA (Galeri)"
+      ]
+    },
+    {
       "file": "/media/galeri-ashina-atolye.jpg",
       "title": "Ashina atolye",
       "group": "Galeri fotoğrafları",
@@ -532,6 +556,18 @@
       ]
     },
     {
+      "file": "/media/galeri-lodos-liman-ekip.jpg",
+      "title": "LODOS ekibimiz teknesiyle limanda",
+      "group": "Galeri fotoğrafları",
+      "width": 701,
+      "height": 498,
+      "sizeKb": 90,
+      "note": "Kullanıldığı yer: İDA (Galeri)",
+      "usedIn": [
+        "İDA (Galeri)"
+      ]
+    },
+    {
       "file": "/media/galeri-lodos-ekip.jpg",
       "title": "LODOS ekibimiz yarışma alanında",
       "group": "Galeri fotoğrafları",
@@ -584,6 +620,30 @@
       ]
     },
     {
+      "file": "/media/galeri-matris-havelsan-stand.jpg",
+      "title": "MATRİS ekibimiz HAVELSAN Sürü İHA standında",
+      "group": "Galeri fotoğrafları",
+      "width": 895,
+      "height": 631,
+      "sizeKb": 85,
+      "note": "Kullanıldığı yer: MATRİS (Galeri)",
+      "usedIn": [
+        "MATRİS (Galeri)"
+      ]
+    },
+    {
+      "file": "/media/galeri-matris-saha-ekip.jpg",
+      "title": "MATRİS ekibimiz saha testinde",
+      "group": "Galeri fotoğrafları",
+      "width": 623,
+      "height": 488,
+      "sizeKb": 65,
+      "note": "Kullanıldığı yer: MATRİS (Galeri)",
+      "usedIn": [
+        "MATRİS (Galeri)"
+      ]
+    },
+    {
       "file": "/media/galeri-matris-saha.jpg",
       "title": "Matris ekip",
       "group": "Galeri fotoğrafları",
@@ -620,6 +680,42 @@
       "usedIn": [
         "Etkinlikler, Seminerler ve Çalıştaylar (Faaliyet Galerisi)",
         "Site Galerisi (Etkinlik)"
+      ]
+    },
+    {
+      "file": "/media/galeri-matrover-teknofest-cadir.jpg",
+      "title": "MATROVER ekibimiz TEKNOFEST çadırında",
+      "group": "Galeri fotoğrafları",
+      "width": 1326,
+      "height": 762,
+      "sizeKb": 214,
+      "note": "Kullanıldığı yer: MATROVER & LUNA (Galeri)",
+      "usedIn": [
+        "MATROVER & LUNA (Galeri)"
+      ]
+    },
+    {
+      "file": "/media/galeri-matrover-parkur-ekip.jpg",
+      "title": "MATROVER ekibimiz yarışma parkurunda",
+      "group": "Galeri fotoğrafları",
+      "width": 1095,
+      "height": 642,
+      "sizeKb": 108,
+      "note": "Kullanıldığı yer: MATROVER & LUNA (Galeri)",
+      "usedIn": [
+        "MATROVER & LUNA (Galeri)"
+      ]
+    },
+    {
+      "file": "/media/galeri-matrover-tarla-robot.jpg",
+      "title": "MATROVER tarımsal aracı saha testinde",
+      "group": "Galeri fotoğrafları",
+      "width": 426,
+      "height": 370,
+      "sizeKb": 44,
+      "note": "Kullanıldığı yer: MATROVER & LUNA (Galeri)",
+      "usedIn": [
+        "MATROVER & LUNA (Galeri)"
       ]
     },
     {
@@ -878,6 +974,18 @@
       "note": "Kullanıldığı yer: Turkish Technic ile mühendisli... (Haber Galerisi)",
       "usedIn": [
         "Turkish Technic ile mühendisli... (Haber Galerisi)"
+      ]
+    },
+    {
+      "file": "/media/galeri-zemheri-liman-ekip.jpg",
+      "title": "ZEMHERİ ekibimiz roketiyle limanda",
+      "group": "Galeri fotoğrafları",
+      "width": 1282,
+      "height": 613,
+      "sizeKb": 161,
+      "note": "Kullanıldığı yer: ZEMHERİ (Galeri)",
+      "usedIn": [
+        "ZEMHERİ (Galeri)"
       ]
     },
     {
@@ -2021,6 +2129,18 @@
       "usedIn": [
         "ASHİNA (Galeri)",
         "Site Galerisi (Yarışma)"
+      ]
+    },
+    {
+      "file": "/media/galeri-pusula-sahne-ekip.jpg",
+      "title": "PUSULA ekibimiz yarışma sahnesinde",
+      "group": "Galeri fotoğrafları",
+      "width": 717,
+      "height": 410,
+      "sizeKb": 57,
+      "note": "Kullanıldığı yer: SANAYİDE DİJİTAL TEKNOLOJİLER (Galeri)",
+      "usedIn": [
+        "SANAYİDE DİJİTAL TEKNOLOJİLER (Galeri)"
       ]
     },
     {

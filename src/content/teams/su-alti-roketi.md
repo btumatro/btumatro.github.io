@@ -6,6 +6,7 @@ status: Yeni Takım
 order: 5
 image: "/media/takim-zemheri.jpg"
 gallery:
+  - "/media/galeri-zemheri-liman-ekip.jpg"
   - "/media/galeri-zemheri-atolye.jpg"
   - "/media/galeri-zemheri-takim.jpg"
   - "/media/galeri-zemheri-sara.jpg"

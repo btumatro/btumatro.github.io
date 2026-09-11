@@ -2,6 +2,56 @@
   "intro": "Atölyeden yarışma sahasına, teknik gezilerden ödül törenlerine MATRO'dan kareler.",
   "images": [
     {
+      "image": "/media/galeri-ashina-bayraktar.jpg",
+      "caption": "ASHİNA ekibimiz, Selçuk Bayraktar ile İHA standımızda",
+      "category": "Yarışma"
+    },
+    {
+      "image": "/media/galeri-ashina-model-ucak-ekip.jpg",
+      "caption": "ASHİNA ekibimiz sabit kanat model uçağıyla",
+      "category": "Yarışma"
+    },
+    {
+      "image": "/media/galeri-matrover-teknofest-cadir.jpg",
+      "caption": "MATROVER ekibimiz TEKNOFEST çadırında",
+      "category": "Yarışma"
+    },
+    {
+      "image": "/media/galeri-matrover-parkur-ekip.jpg",
+      "caption": "MATROVER ekibimiz yarışma parkurunda",
+      "category": "Yarışma"
+    },
+    {
+      "image": "/media/galeri-zemheri-liman-ekip.jpg",
+      "caption": "ZEMHERİ ekibimiz roketiyle limanda",
+      "category": "Yarışma"
+    },
+    {
+      "image": "/media/galeri-lodos-liman-ekip.jpg",
+      "caption": "LODOS ekibimiz teknesiyle limanda",
+      "category": "Yarışma"
+    },
+    {
+      "image": "/media/galeri-matris-havelsan-stand.jpg",
+      "caption": "MATRİS ekibimiz HAVELSAN Sürü İHA standında",
+      "category": "Yarışma"
+    },
+    {
+      "image": "/media/galeri-pusula-sahne-ekip.jpg",
+      "caption": "PUSULA ekibimiz yarışma sahnesinde",
+      "category": "Yarışma"
+    },
+    {
+      "image": "/media/galeri-tusas-gezisi.jpg",
+      "caption": "TUSAŞ teknik gezimiz",
+      "category": "Teknik Gezi"
+    },
+    {
+      "image": "/media/galeri-tubitak-mam-gezisi.jpg",
+      "caption": "TÜBİTAK Marmara Araştırma Merkezi gezimiz",
+      "category": "Teknik Gezi"
+    },
+    {
       "image": "/media/etkinlik-alper-gezeravci.jpg",
       "caption": "İlk Türk astronot Alper Gezeravcı ve BTÜ Rektörü Prof. Dr. Naci Çağlar atölyemizde",
       "category": "Etkinlik"

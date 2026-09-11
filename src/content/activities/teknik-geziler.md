@@ -17,7 +17,7 @@ gallery:
   - "/media/galeri-fabrika-gezisi.jpg"
 stats:
   - label: Ziyaret Edilen Kurum
-    value: "15+"
+    value: "19+"
 summary: "TUSAŞ, TOGG, ASELSAN, TEI, Turkish Technic, Ermetal, HKTM ve Alp Havacılık gibi kuruluşlara düzenlediğimiz vizyon gezileriyle üyelerimizi sanayi ile buluşturuyoruz."
 ---
 

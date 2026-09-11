@@ -29,6 +29,9 @@ Alanında çalışan mühendislerle yürüttüğümüz "Mühendis Olmak" serisi:
 - Turkcell'de Mühendis Olmak
 - NASA'da Mühendis Olmak
 - CERN'de Mühendis Olmak
+- Bosch'ta Mühendis Olmak
+- Renault'da Mühendis Olmak
+- Girişimci Mühendis Olmak
 
 ## Organizasyon ve çalıştaylar
 
@@ -44,3 +47,6 @@ Alanında çalışan mühendislerle yürüttüğümüz "Mühendis Olmak" serisi:
 - Bursa Teknoloji Merkezi Şenliği
 - Gençlik Haftası Model Uçak Etkinliği
 - Future Medicine Semineri
+- Model Uçak ve Model Roket Eğitimleri
+- ROBTÜ Robot Yarışmaları
+- Milli Teknoloji Semineri

@@ -7,6 +7,7 @@ order: 3
 image: "/media/takim-lodos.jpg"
 gallery:
   - "/media/takim-ida.jpg"
+  - "/media/galeri-lodos-liman-ekip.jpg"
   - "/media/galeri-lodos-ekip.jpg"
   - "/media/galeri-lodos-detay.jpg"
   - "/media/galeri-lodos-teknofest.jpg"

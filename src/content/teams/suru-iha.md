@@ -7,6 +7,8 @@ order: 6
 image: "/media/takim-matris-2026.jpg"
 gallery:
   - "/media/galeri-matris-saha.jpg"
+  - "/media/galeri-matris-havelsan-stand.jpg"
+  - "/media/galeri-matris-saha-ekip.jpg"
   - "/media/webmedya-suru-iha-35.jpg"
   - "/media/galeri-matris-test-alani.jpg"
   - "/media/galeri-matris-dron-filo.jpg"
