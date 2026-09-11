@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<title>MATRO — Sayfa 01 Kapak</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,700;0,800;0,900;1,800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  @page {
+    size: 210mm 297mm;
+    margin: 0;
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    width: 1240px;
+    height: 1754px;
+    background-color: #FFFFFF;
+    color: #0B1012;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 72px 80px 64px 80px;
+    position: relative;
+    overflow: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Üst Kurumsal Header */
+  .top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 2px solid #0B1012;
+    padding-bottom: 24px;
+  }
+  .brand-block {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .brand-logo {
+    height: 64px;
+    width: auto;
+    object-fit: contain;
+  }
+  .brand-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .univ-title {
+    font-family: 'Barlow', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #0B1012;
+    line-height: 1;
+  }
+  .community-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: #52606D;
+    letter-spacing: 0.01em;
+  }
+  .meta-tag {
+    text-align: right;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #0D9488;
+    line-height: 1.6;
+  }
+
+  /* Hero Fotoğraf Sahnesi */
+  .hero-container {
+    position: relative;
+    width: 100%;
+    height: 840px;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #0B1012;
+    box-shadow: 0 20px 40px -15px rgba(11, 16, 18, 0.18);
+  }
+  .hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 38%;
+    display: block;
+  }
+  .hero-badge {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    background: rgba(11, 16, 18, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #FFFFFF;
+    padding: 10px 18px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .hero-badge .dot {
+    width: 8px;
+    height: 8px;
+    background-color: #00F5D4;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .hero-badge span {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+  .hero-caption {
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
+    background: rgba(11, 16, 18, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #F1F5F9;
+    padding: 10px 18px;
+    border-radius: 4px;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+  }
+
+  /* Tipografi & Manifesto Alanı */
+  .title-section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 10px;
+  }
+  .eyebrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: #0D9488;
+  }
+  .main-title {
+    font-family: 'Barlow', sans-serif;
+    font-size: 76px;
+    font-weight: 900;
+    line-height: 0.96;
+    letter-spacing: -0.035em;
+    color: #0B1012;
+    text-transform: uppercase;
+  }
+  .statement {
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 1.45;
+    color: #334155;
+    max-width: 960px;
+    letter-spacing: -0.01em;
+  }
+
+  /* Alt Veri & İstatistik Bandı */
+  .bottom-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    border-top: 2px solid #0B1012;
+    padding-top: 24px;
+  }
+  .stat-card {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .stat-num {
+    font-family: 'Barlow', sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 1;
+    color: #0B1012;
+    letter-spacing: -0.02em;
+  }
+  .stat-num span {
+    color: #0D9488;
+  }
+  .stat-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #64748B;
+  }
+</style>
+</head>
+<body>
+
+  <!-- Üst Kurumsal Header -->
+  <header class="top-header">
+    <div class="brand-block">
+      <img class="brand-logo" src="file:///Users/wildgenie/Projects/btu-matro/public/logo-matro-siyah.png" alt="MATRO Logo">
+      <div class="brand-text">
+        <div class="univ-title">Bursa Teknik Üniversitesi</div>
+        <div class="community-subtitle">Makine Teknolojileri Robot ve Otomasyon Topluluğu</div>
+      </div>
+    </div>
+    <div class="meta-tag">
+      <div>Mühendislik Portföyü</div>
+      <div>2026 // Sayı 01</div>
+    </div>
+  </header>
+
+  <!-- Hero Fotoğraf Sahnesi (TCG Anadolu Mavi Vatan Ekipleri) -->
+  <div class="hero-container">
+    <img class="hero-img" src="file:///Users/wildgenie/Projects/btu-matro/public/media/mavi-vatan-ekipler.jpg" alt="Mavi Vatan TCG Anadolu MATRO Ekipleri">
+    <div class="hero-badge">
+      <span class="dot"></span>
+      <span>Saha Görevi // TCG Anadolu</span>
+    </div>
+    <div class="hero-caption">
+      TEKNOFEST Mavi Vatan Finalleri — LODOS, ZEMHERİ & PRUSA Ekipleri
+    </div>
+  </div>
+
+  <!-- Editoryal Başlık ve Konsept -->
+  <div class="title-section">
+    <div class="eyebrow">Resmî Tanıtım Kitapçığı & Proje Kataloğu</div>
+    <h1 class="main-title">Atölyeden Sahaya</h1>
+    <p class="statement">
+      Deniz tabanından gökyüzüne uzanan otonom sistemler. Bursa Teknik Üniversitesi MATRO çatısı altında 15 Ar-Ge takımıyla tasarlıyor, üretiyor ve yarışıyoruz.
+    </p>
+  </div>
+
+  <!-- Alt Metrikler & Kurumsal Özet -->
+  <footer class="bottom-grid">
+    <div class="stat-card">
+      <div class="stat-num">50<span>+</span></div>
+      <div class="stat-label">Kayıtlı Derece</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">07</div>
+      <div class="stat-label">Ulusal Birincilik</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">08</div>
+      <div class="stat-label">2026 Finalisti</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-num">15</div>
+      <div class="stat-label">Aktif Ar-Ge Takımı</div>
+    </div>
+  </footer>
+
+</body>
+</html>

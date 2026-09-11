@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,600;0,700;0,800;0,900;1,800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&display=swap');
+
+@page { size: 210mm 297mm; margin: 0; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --c-bg: #FFFFFF;
+  --c-ink: #0B1012;
+  --c-text-muted: #475569;
+  --c-text-subtle: #64748B;
+  --c-border: #CBD5E1;
+  --c-volt: #0D9488;
+  --c-volt-light: #F0FDFA;
+  --c-medal: #D97706;
+  --c-medal-light: #FEF3C7;
+  --c-surface: #F8FAFC;
+  --font-display: 'Barlow', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+body.page-sheet {
+  width: 1240px;
+  height: 1754px;
+  background-color: var(--c-bg);
+  color: var(--c-ink);
+  font-family: var(--font-sans);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 44px 56px 36px 56px;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Header */
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--c-ink);
+  padding-bottom: 12px;
+  margin-bottom: 16px;
+}
+.brand-left { display: flex; align-items: center; gap: 14px; }
+.header-logo { height: 36px; width: auto; object-fit: contain; }
+.univ-name { font-family: var(--font-display); font-size: 15px; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; color: var(--c-ink); line-height: 1.1; }
+.dept-name { font-family: var(--font-sans); font-size: 11px; font-weight: 500; color: var(--c-text-muted); }
+.header-meta-right { display: flex; align-items: center; gap: 14px; }
+.section-tag { font-family: var(--font-mono); font-size: 11px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--c-volt); }
+.page-index-badge { font-family: var(--font-mono); font-size: 11px; font-weight: 700; color: var(--c-ink); border: 1.5px solid var(--c-ink); padding: 2px 7px; border-radius: 2px; }
+
+/* Footer */
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1.5px solid var(--c-ink);
+  padding-top: 10px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--c-text-subtle);
+  letter-spacing: 0.05em;
+}
+.page-footer .footer-site { color: var(--c-ink); font-weight: 700; }
+.page-footer .page-number { font-weight: 800; color: var(--c-ink); }
+
+/* Tipografi */
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--c-volt);
+}
+.headline {
+  font-family: var(--font-display);
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 0.98;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--c-ink);
+  margin-top: 3px;
+  margin-bottom: 5px;
+}
+.lead-text {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.45;
+  color: #334155;
+}
+
+/* Görsel Çerçevesi & Sıfır Üst Yazı */
+.media-unit {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.img-box {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: #F8FAFC;
+  border-radius: 4px;
+  border: 1px solid var(--c-border);
+}
+.img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.caption-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-top: 6px;
+  font-family: var(--font-sans);
+  line-height: 1.25;
+}
+.caption-tag {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: var(--c-ink);
+  padding: 2px 6px;
+  border-radius: 2px;
+  white-space: nowrap;
+}
+.caption-text {
+  font-size: 11px;
+  font-weight: 500;
+  color: #475569;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Bullet & Teknik Kutu */
+.bullet-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.bullet-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--c-ink);
+  line-height: 1.35;
+}
+.bullet-list li::before {
+  content: "■";
+  color: var(--c-volt);
+  font-size: 9px;
+  margin-top: 3px;
+}
+
+.tech-spec-box {
+  background: var(--c-surface);
+  border: 1.5px solid var(--c-border);
+  border-radius: 4px;
+  padding: 16px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.box-title {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--c-ink);
+  border-bottom: 1.5px solid var(--c-ink);
+  padding-bottom: 6px;
+  display: flex;
+  justify-content: space-between;
+}
+.spec-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 14px;
+}
+.spec-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.spec-label {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--c-text-subtle);
+}
+.spec-value {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--c-ink);
+}
+.award-pill {
+  background: var(--c-medal-light);
+  border: 1px solid #FCD34D;
+  color: #92400E;
+  padding: 7px 12px;
+  border-radius: 3px;
+  font-size: 11.5px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.award-pill .trophy-dot {
+  width: 6px;
+  height: 6px;
+  background: var(--c-medal);
+  border-radius: 50%;
+}
+
+.hero-pano {
+  width: 100%;
+  height: 520px;
+  margin-bottom: 16px;
+}
+.mid-three-col {
+  display: grid;
+  grid-template-columns: 280px 1fr 340px;
+  gap: 24px;
+  margin-bottom: 16px;
+  align-items: stretch;
+}
+.spec-pillar {
+  background: var(--c-surface);
+  border: 1.5px solid var(--c-border);
+  border-radius: 4px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.story-pillar h1 {
+  font-family: var(--font-display);
+  font-size: 48px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -0.03em;
+  line-height: 0.95;
+  color: var(--c-ink);
+  margin-bottom: 4px;
+}
+.story-pillar .subtitle {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--c-volt);
+  font-family: var(--font-mono);
+  margin-bottom: 12px;
+}
+.story-pillar p {
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: #475569;
+  margin-bottom: 8px;
+}
+.side-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.lower-flight-strip {
+  width: 100%;
+  height: 310px;
+  margin-bottom: 4px;
+}
+</style>
+</head>
+<body class="page-sheet">
+  <header class="page-header">
+    <div class="brand-left">
+      <img class="header-logo" src="file:///Users/wildgenie/Projects/btu-matro/public/logo-matro-siyah.png" alt="MATRO Logo">
+      <div class="dept-name">Bursa Teknik Üniversitesi // MATRO Havacılık Kümesi</div>
+    </div>
+    <div class="header-meta-right">
+      <div class="section-tag">Sabit & Döner Kanat</div>
+      <div class="page-index-badge">06</div>
+    </div>
+  </header>
+
+  <!-- Üst Panoramik Hero (TEKNOFEST Finalist Ekibi ve 2 İHA) -->
+  <div style="display: flex; flex-direction: column;">
+    <div class="media-box hero-pano">
+      <img style="object-position: center 38%;" src="file:///Users/wildgenie/Projects/btu-matro/public/media/galeri-ashina-teknofest-grup.jpg" alt="ASHİNA TEKNOFEST Ekip">
+    </div>
+    <div class="caption-line">
+      <span class="caption-tag">YARIŞMA SAHNESİ</span>
+      <span class="caption-txt">TÜBİTAK Uluslararası İnsansız Hava Araçları Yarışması pistinde ASHİNA ekibimiz ve iki yarışma uçağımız</span>
+    </div>
+  </div>
+
+  <!-- Orta 3 Kolonlu Editoryal Alan -->
+  <div class="mid-three-col">
+    <div class="spec-pillar">
+      <div style="font-family: var(--font-mono); font-size: 11px; font-weight: 700; border-bottom: 1.5px solid var(--c-ink); padding-bottom: 6px;">
+        TEKNİK SPESİFİKASYON
+      </div>
+      <div>
+        <div style="font-family: var(--font-mono); font-size: 9px; color: var(--c-text-subtle); text-transform: uppercase;">Kanat Açıklığı</div>
+        <div style="font-size: 14px; font-weight: 700; color: var(--c-ink);">1900 mm // Karbon Sandviç</div>
+      </div>
+      <div>
+        <div style="font-family: var(--font-mono); font-size: 9px; color: var(--c-text-subtle); text-transform: uppercase;">Uçuş Süresi & Menzil</div>
+        <div style="font-size: 14px; font-weight: 700; color: var(--c-ink);">45 Dk // 25 km Telemetri</div>
+      </div>
+      <div>
+        <div style="font-family: var(--font-mono); font-size: 9px; color: var(--c-text-subtle); text-transform: uppercase;">Otonom Uçuş Kartı</div>
+        <div style="font-size: 14px; font-weight: 700; color: var(--c-ink);">Pixhawk 6C + Jetson Nano</div>
+      </div>
+      <div style="background: var(--c-medal-light); border: 1px solid #FCD34D; padding: 6px 10px; border-radius: 3px; font-size: 11px; font-weight: 700; color: #92400E;">
+        ★ 2026 TÜBİTAK FİNALİSTİ
+      </div>
+    </div>
+
+    <div class="story-pillar">
+      <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 6px;">
+        <img style="height: 38px; width: auto;" src="file:///Users/wildgenie/Projects/btu-matro/public/media/logolar/takimlar/ashina.png" alt="Logo">
+        <h1>ASHİNA İHA</h1>
+      </div>
+      <div class="subtitle">HAVADAN TESPİT // OTONOM SEYRÜSEFER</div>
+      <p>
+        <strong>ASHİNA</strong>, aerodinamik gövdesinden otonom uçuş yazılımına kadar tamamen öğrencilerimiz tarafından geliştirilen sabit kanat İHA sistemidir.
+      </p>
+      <p>
+        Kendi imkânlarımızla ürettiğimiz fırçasız motorlar ve vakum infüzyon karbon elyaf kanatlar sayesinde uzun süre havada kalır; yapay zekâlı görüntü işleme ile yer hedeflerini otonom tespit eder.
+      </p>
+    </div>
+
+    <div class="side-stack">
+      <div>
+        <div class="media-box" style="height: 110px;">
+          <img src="file:///Users/wildgenie/Projects/btu-matro/public/media/tasarim-ashina-iha.jpg" alt="CAD">
+        </div>
+        <div class="caption-line">
+          <span class="caption-tag">CAD</span>
+          <span class="caption-txt">Kafes kanat aerodinamik modellemesi</span>
+        </div>
+      </div>
+      <div>
+        <div class="media-box" style="height: 110px;">
+          <img src="file:///Users/wildgenie/Projects/btu-matro/public/media/galeri-ashina-kompozit-uretim.jpg" alt="İnfüzyon">
+        </div>
+        <div class="caption-line">
+          <span class="caption-tag">İMALAT</span>
+          <span class="caption-txt">Vakum infüzyon karbon elyaf kanat kalıbı</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Alt Uçuş Sahası Şeridi (Geniş 16:9 Uçuş Hattı Karesi) -->
+  <div style="display: flex; flex-direction: column;">
+    <div class="media-box lower-flight-strip">
+      <img style="object-position: center 20%;" src="file:///Users/wildgenie/Projects/btu-matro/public/media/galeri-ashina-saha.jpg" alt="Uçuş Sahası">
+    </div>
+    <div class="caption-line">
+      <span class="caption-tag">PİST TESTİ</span>
+      <span class="caption-txt">Kalkış pistinde rüzgâr tüneli ve otonom iniş-kalkış parametre testleri</span>
+    </div>
+  </div>
+
+  <footer class="page-footer">
+    <div class="footer-site">btumatro.com // ASHİNA İHA</div>
+    <div class="page-number">SAYFA 06</div>
+  </footer>
+</body>
+</html>

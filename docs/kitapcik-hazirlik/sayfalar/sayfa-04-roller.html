@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,600;0,700;0,800;0,900;1,800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&display=swap');
+
+@page { size: 210mm 297mm; margin: 0; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --c-bg: #FFFFFF;
+  --c-ink: #0B1012;
+  --c-text-muted: #475569;
+  --c-text-subtle: #64748B;
+  --c-border: #CBD5E1;
+  --c-volt: #0D9488;
+  --c-volt-light: #F0FDFA;
+  --c-medal: #D97706;
+  --c-medal-light: #FEF3C7;
+  --c-surface: #F8FAFC;
+  --font-display: 'Barlow', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+body.page-sheet {
+  width: 1240px;
+  height: 1754px;
+  background-color: var(--c-bg);
+  color: var(--c-ink);
+  font-family: var(--font-sans);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 44px 56px 36px 56px;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Header */
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--c-ink);
+  padding-bottom: 12px;
+  margin-bottom: 16px;
+}
+.brand-left { display: flex; align-items: center; gap: 14px; }
+.header-logo { height: 36px; width: auto; object-fit: contain; }
+.univ-name { font-family: var(--font-display); font-size: 15px; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; color: var(--c-ink); line-height: 1.1; }
+.dept-name { font-family: var(--font-sans); font-size: 11px; font-weight: 500; color: var(--c-text-muted); }
+.header-meta-right { display: flex; align-items: center; gap: 14px; }
+.section-tag { font-family: var(--font-mono); font-size: 11px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--c-volt); }
+.page-index-badge { font-family: var(--font-mono); font-size: 11px; font-weight: 700; color: var(--c-ink); border: 1.5px solid var(--c-ink); padding: 2px 7px; border-radius: 2px; }
+
+/* Footer */
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1.5px solid var(--c-ink);
+  padding-top: 10px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--c-text-subtle);
+  letter-spacing: 0.05em;
+}
+.page-footer .footer-site { color: var(--c-ink); font-weight: 700; }
+.page-footer .page-number { font-weight: 800; color: var(--c-ink); }
+
+/* Tipografi */
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--c-volt);
+}
+.headline {
+  font-family: var(--font-display);
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 0.98;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--c-ink);
+  margin-top: 3px;
+  margin-bottom: 5px;
+}
+.lead-text {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.45;
+  color: #334155;
+}
+
+/* Görsel Çerçevesi & Sıfır Üst Yazı */
+.media-unit {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.img-box {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: #F8FAFC;
+  border-radius: 4px;
+  border: 1px solid var(--c-border);
+}
+.img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.caption-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-top: 6px;
+  font-family: var(--font-sans);
+  line-height: 1.25;
+}
+.caption-tag {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: var(--c-ink);
+  padding: 2px 6px;
+  border-radius: 2px;
+  white-space: nowrap;
+}
+.caption-text {
+  font-size: 11px;
+  font-weight: 500;
+  color: #475569;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Bullet & Teknik Kutu */
+.bullet-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.bullet-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--c-ink);
+  line-height: 1.35;
+}
+.bullet-list li::before {
+  content: "■";
+  color: var(--c-volt);
+  font-size: 9px;
+  margin-top: 3px;
+}
+
+.tech-spec-box {
+  background: var(--c-surface);
+  border: 1.5px solid var(--c-border);
+  border-radius: 4px;
+  padding: 16px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.box-title {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--c-ink);
+  border-bottom: 1.5px solid var(--c-ink);
+  padding-bottom: 6px;
+  display: flex;
+  justify-content: space-between;
+}
+.spec-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 14px;
+}
+.spec-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.spec-label {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--c-text-subtle);
+}
+.spec-value {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--c-ink);
+}
+.award-pill {
+  background: var(--c-medal-light);
+  border: 1px solid #FCD34D;
+  color: #92400E;
+  padding: 7px 12px;
+  border-radius: 3px;
+  font-size: 11.5px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.award-pill .trophy-dot {
+  width: 6px;
+  height: 6px;
+  background: var(--c-medal);
+  border-radius: 50%;
+}
+
+.role-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 24px; }
+.role-card { background: var(--c-surface); border: 1.5px solid var(--c-border); border-radius: 4px; padding: 20px; display: flex; flex-direction: column; gap: 10px; }
+.lower-bento-2 { display: grid; grid-template-columns: 1.2fr 0.8fr; height: 480px; gap: 18px; margin-bottom: 6px; }
+</style>
+</head>
+<body class="page-sheet">
+  <header class="page-header">
+    <div class="brand-left">
+      <img class="header-logo" src="file:///Users/wildgenie/Projects/btu-matro/public/logo-matro-siyah.png" alt="MATRO Logo">
+      <div class="dept-name">Bursa Teknik Üniversitesi // MATRO Kariyer Haritası</div>
+    </div>
+    <div class="header-meta-right">
+      <div class="section-tag">Rol Dağılımı</div>
+      <div class="page-index-badge">04</div>
+    </div>
+  </header>
+
+  <div class="editorial-title-block">
+    <div class="eyebrow">Disiplinlerarası Mühendislik</div>
+    <h1 class="headline">Sen Hangi İşi Üstlenmek İstersin?</h1>
+    <p class="lead-text">
+      Bir projenin sahaya çıkması yalnızca tek bir uzmanlığa bağlı değildir; mekanik, elektronik, yazılım ve kurumsal yönetimin senkronize çalışmasını gerektirir.
+    </p>
+  </div>
+
+  <div class="role-grid">
+    <div class="role-card">
+      <div style="font-family: var(--font-mono); font-size: 10px; font-weight: 700; color: var(--c-volt); text-transform: uppercase;">DİSİPLİN 01</div>
+      <h3 style="font-family: var(--font-display); font-size: 20px; font-weight: 800; text-transform: uppercase;">Mekanik & İmalat</h3>
+      <p style="font-size: 13px; color: #475569; line-height: 1.5;">CAD tasarım, kompozit vakum infüzyon, CNC işleme, aerodinamik/hidrodinamik CFD analizleri ve yapısal mukavemet testleri.</p>
+    </div>
+    <div class="role-card">
+      <div style="font-family: var(--font-mono); font-size: 10px; font-weight: 700; color: var(--c-volt); text-transform: uppercase;">DİSİPLİN 02</div>
+      <h3 style="font-family: var(--font-display); font-size: 20px; font-weight: 800; text-transform: uppercase;">Elektronik & Aviyonik</h3>
+      <p style="font-size: 13px; color: #475569; line-height: 1.5;">Özel PCB tasarımı, STM32 mikrodenetleyici mimarisi, güç dağıtımı, BMS batarya yönetimi ve sensör arayüzleri.</p>
+    </div>
+    <div class="role-card">
+      <div style="font-family: var(--font-mono); font-size: 10px; font-weight: 700; color: var(--c-volt); text-transform: uppercase;">DİSİPLİN 03</div>
+      <h3 style="font-family: var(--font-display); font-size: 20px; font-weight: 800; text-transform: uppercase;">Otonom Yazılım</h3>
+      <p style="font-size: 13px; color: #475569; line-height: 1.5;">ROS 2 mimarisi, SLAM haritalama, görüntü işleme (YOLO), derin öğrenme, seyrüsefer ve yer kontrol istasyonu yazılımları.</p>
+    </div>
+  </div>
+
+  <div class="lower-bento-2">
+    <div class="media-unit">
+      <div class="img-box">
+        <img style="object-position: center 30%;" src="file:///Users/wildgenie/Projects/btu-matro/public/media/webmedya-sanayide-dijital-31.jpg" alt="Atölye Ekip Çalışması">
+      </div>
+      <div class="caption-bar">
+        <span class="caption-tag">EŞZAMANLI MÜHENDİSLİK</span>
+        <span class="caption-text">Mekanik ve elektronik ekipleri araç şasisi üzerinde birlikte çalışırken</span>
+      </div>
+    </div>
+    <div class="media-unit">
+      <div class="img-box">
+        <img style="object-position: center center;" src="file:///Users/wildgenie/Projects/btu-matro/public/media/galeri-turkish-technic-sinif.jpg" alt="Teknik Eğitim">
+      </div>
+      <div class="caption-bar">
+        <span class="caption-tag">EĞİTİM & AKTARIM</span>
+        <span class="caption-text">Kıdemli üyeler tarafından yeni katılan üyelere teknik çizim ve yazılım seminerleri</span>
+      </div>
+    </div>
+  </div>
+
+  <footer class="page-footer">
+    <div class="footer-site">btumatro.com // ROLLER</div>
+    <div class="page-number">SAYFA 04</div>
+  </footer>
+</body>
+</html>

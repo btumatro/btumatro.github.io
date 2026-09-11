@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<title>MATRO — 2026 Tanıtım Kitapçığı & Portföy A4 Önizleme Merkezi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@700;800;900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@600;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background-color: #0B1012;
+    color: #F1F5F9;
+    font-family: 'Inter', -apple-system, sans-serif;
+    padding: 40px;
+  }
+  header {
+    max-width: 1400px;
+    margin: 0 auto 36px auto;
+    border-bottom: 2px solid #1E293B;
+    padding-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .title-block h1 {
+    font-family: 'Barlow', sans-serif;
+    font-size: 38px;
+    font-weight: 900;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+  .title-block p {
+    font-size: 15px;
+    color: #94A3B8;
+    margin-top: 6px;
+  }
+  .tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    font-weight: 700;
+    color: #00F5D4;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 28px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  .card {
+    background: #151D21;
+    border: 1px solid #263339;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s, border-color 0.2s;
+    text-decoration: none;
+    color: inherit;
+  }
+  .card:hover {
+    transform: translateY(-4px);
+    border-color: #00F5D4;
+  }
+  .thumb-wrap {
+    aspect-ratio: 1 / 1.414;
+    background: #FFFFFF;
+    position: relative;
+    overflow: hidden;
+  }
+  .thumb-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .info {
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .card-page-num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    font-weight: 700;
+    color: #00F5D4;
+    letter-spacing: 0.1em;
+  }
+  .card-title {
+    font-family: 'Barlow', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    line-height: 1.1;
+  }
+  .card-desc {
+    font-size: 12.5px;
+    color: #94A3B8;
+    line-height: 1.4;
+  }
+  .card-btn {
+    margin-top: 8px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #00F5D4;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <div class="title-block">
+      <div class="tag">MATRO // Editoryal A4 Yayın Önizleme Merkezi</div>
+      <h1>Tanıtım Kitapçığı & Portföy Sayfaları</h1>
+      <p>Gerçek atölye imalatı, TEKNOFEST finalleri ve saf stüdyo ürün çekimleriyle hazırlanan sayfalar.</p>
+    </div>
+    <div class="tag">2026–2027 YAYINI</div>
+  </header>
+
+  <div class="grid">
+    <!-- Sayfa 01 -->
+    <a href="sayfalar/sayfa-01-kapak.html" class="card" target="_blank">
+      <div class="thumb-wrap">
+        <img src="ornek-tasarimlar/sayfa-01-kapak.png" alt="Sayfa 01">
+      </div>
+      <div class="info">
+        <span class="card-page-num">SAYFA 01 // KAPAK</span>
+        <h3 class="card-title">Atölyeden Sahaya</h3>
+        <p class="card-desc">TCG Anadolu uçuş güvertesinde TEKNOFEST Mavi Vatan finalistlerimiz ve kurumsal metrikler.</p>
+        <span class="card-btn">Sayfayı Aç (HTML) →</span>
+      </div>
+    </a>
+
+    <!-- Sayfa 02 -->
+    <a href="sayfalar/sayfa-02-topluluk.html" class="card" target="_blank">
+      <div class="thumb-wrap">
+        <img src="ornek-tasarimlar/sayfa-02-topluluk.png" alt="Sayfa 02">
+      </div>
+      <div class="info">
+        <span class="card-page-num">SAYFA 02 // KURUMSAL</span>
+        <h3 class="card-title">Birlikte Üreten Bir Topluluk</h3>
+        <p class="card-desc">Turkish Technic hangarı, atölye montajı, Alper Gezeravcı ziyareti ve HKTM teknik gezisi.</p>
+        <span class="card-btn">Sayfayı Aç (HTML) →</span>
+      </div>
+    </a>
+
+    <!-- Sayfa 03 -->
+    <a href="sayfalar/sayfa-03-surec.html" class="card" target="_blank">
+      <div class="thumb-wrap">
+        <img src="ornek-tasarimlar/sayfa-03-surec.png" alt="Sayfa 03">
+      </div>
+      <div class="info">
+        <span class="card-page-num">SAYFA 03 // METODOLOJİ</span>
+        <h3 class="card-title">Bir Fikir Nasıl Projeye Dönüşür?</h3>
+        <p class="card-desc">Modelleme, İmalat, Test ve Sahaya Çıkış: V-Model mühendislik yaşam döngüsü.</p>
+        <span class="card-btn">Sayfayı Aç (HTML) →</span>
+      </div>
+    </a>
+
+    <!-- Sayfa 06 -->
+    <a href="sayfalar/sayfa-06-ashina.html" class="card" target="_blank">
+      <div class="thumb-wrap">
+        <img src="ornek-tasarimlar/sayfa-06-ashina.png" alt="Sayfa 06">
+      </div>
+      <div class="info">
+        <span class="card-page-num">SAYFA 06 // HAVACILIK</span>
+        <h3 class="card-title">ASHİNA İHA</h3>
+        <p class="card-desc">Stüdyo karbon VTOL gövdesi, TÜBİTAK İHA finalist ekibi, CAD ve kompozit infüzyon.</p>
+        <span class="card-btn">Sayfayı Aç (HTML) →</span>
+      </div>
+    </a>
+
+    <!-- Sayfa 07 -->
+    <a href="sayfalar/sayfa-07-matrover-luna.html" class="card" target="_blank">
+      <div class="thumb-wrap">
+        <img src="ornek-tasarimlar/sayfa-07-matrover-luna.png" alt="Sayfa 07">
+      </div>
+      <div class="info">
+        <span class="card-page-num">SAYFA 07 // KARA SİSTEMLERİ</span>
+        <h3 class="card-title">MATROVER & LUNA</h3>
+        <p class="card-desc">6x6 Rocker-bogie stüdyo keşif robotu, LUNA taktik İKA, TEKNOFEST çadırı ve tarla testi.</p>
+        <span class="card-btn">Sayfayı Aç (HTML) →</span>
+      </div>
+    </a>
+
+    <!-- Sayfa 08 -->
+    <a href="sayfalar/sayfa-08-lodos-ida.html" class="card" target="_blank">
+      <div class="thumb-wrap">
+        <img src="ornek-tasarimlar/sayfa-08-lodos-ida.png" alt="Sayfa 08">
+      </div>
+      <div class="info">
+        <span class="card-page-num">SAYFA 08 // DENİZCİLİK</span>
+        <h3 class="card-title">LODOS & İDA</h3>
+        <p class="card-desc">LODOS stüdyo trimaran tekne çekimi, iskele sahası, gövde imalatı ve Haluk Bayraktar sunumu.</p>
+        <span class="card-btn">Sayfayı Aç (HTML) →</span>
+      </div>
+    </a>
+
+    <!-- Sayfa 09 -->
+    <a href="sayfalar/sayfa-09-prusa-iss.html" class="card" target="_blank">
+      <div class="thumb-wrap">
+        <img src="ornek-tasarimlar/sayfa-09-prusa-iss.png" alt="Sayfa 09">
+      </div>
+      <div class="info">
+        <span class="card-page-num">SAYFA 09 // SUALTI ROBOTİK</span>
+        <h3 class="card-title">İSS & PRUSA</h3>
+        <p class="card-desc">PRUSA AUV 8 iticili stüdyo çekimi, olimpik havuz otonom görevi ve CAD şeması.</p>
+        <span class="card-btn">Sayfayı Aç (HTML) →</span>
+      </div>
+    </a>
+
+    <!-- Sayfa 10 -->
+    <a href="sayfalar/sayfa-10-zemheri-sara.html" class="card" target="_blank">
+      <div class="thumb-wrap">
+        <img src="ornek-tasarimlar/sayfa-10-zemheri-sara.png" alt="Sayfa 10">
+      </div>
+      <div class="info">
+        <span class="card-page-num">SAYFA 10 // ROKET & SAVUNMA</span>
+        <h3 class="card-title">ZEMHERİ & SARA</h3>
+        <p class="card-desc">Sualtı roket fırlatma kapsülü, finalist ekip kupa karesi ve Mavi Vatan sahası.</p>
+        <span class="card-btn">Sayfayı Aç (HTML) →</span>
+      </div>
+    </a>
+
+    <!-- Sayfa 11 -->
+    <a href="sayfalar/sayfa-11-matris.html" class="card" target="_blank">
+      <div class="thumb-wrap">
+        <img src="ornek-tasarimlar/sayfa-11-matris.png" alt="Sayfa 11">
+      </div>
+      <div class="info">
+        <span class="card-page-num">SAYFA 11 // SÜRÜ İHA</span>
+        <h3 class="card-title">MATRİS</h3>
+        <p class="card-desc">Sürü quadcopter donanımı stüdyo çekimi, atölye filosu kalibrasyonu ve uçuş pisti.</p>
+        <span class="card-btn">Sayfayı Aç (HTML) →</span>
+      </div>
+    </a>
+
+    <!-- Sayfa 12 -->
+    <a href="sayfalar/sayfa-12-pusula.html" class="card" target="_blank">
+      <div class="thumb-wrap">
+        <img src="ornek-tasarimlar/sayfa-12-pusula.png" alt="Sayfa 12">
+      </div>
+      <div class="info">
+        <span class="card-page-num">SAYFA 12 // SANAYİ ROBOTİK</span>
+        <h3 class="card-title">PUSULA & ANDROMEDA</h3>
+        <p class="card-desc">Fabrika içi otonom malzeme taşıma robotu (AMR), TEKNOFEST Diyarbakır ve atölye montajı.</p>
+        <span class="card-btn">Sayfayı Aç (HTML) →</span>
+      </div>
+    </a>
+
+    <!-- Sayfa 13 -->
+    <a href="sayfalar/sayfa-13-goksav.html" class="card" target="_blank">
+      <div class="thumb-wrap">
+        <img src="ornek-tasarimlar/sayfa-13-goksav.png" alt="Sayfa 13">
+      </div>
+      <div class="info">
+        <span class="card-page-num">SAYFA 13 // HAVA SAVUNMA</span>
+        <h3 class="card-title">GÖKSAV & MERGEN</h3>
+        <p class="card-desc">Elektro-optik derinlik kameralı hedef takip tareti stüdyo çekimi ve açık alan testleri.</p>
+        <span class="card-btn">Sayfayı Aç (HTML) →</span>
+      </div>
+    </a>
+
+    <!-- Sayfa 14 -->
+    <a href="sayfalar/sayfa-14-burkut.html" class="card" target="_blank">
+      <div class="thumb-wrap">
+        <img src="ornek-tasarimlar/sayfa-14-burkut.png" alt="Sayfa 14">
+      </div>
+      <div class="info">
+        <span class="card-page-num">SAYFA 14 // İLERİ HAVACILIK</span>
+        <h3 class="card-title">BÜRKÜT</h3>
+        <p class="card-desc">Uçan araba kentsel hava hareketliliği konsepti, uçuş simülasyonu ve TEKNOFEST sergisi.</p>
+        <span class="card-btn">Sayfayı Aç (HTML) →</span>
+      </div>
+    </a>
+
+    <!-- Sayfa 15 -->
+    <a href="sayfalar/sayfa-15-cagri.html" class="card" target="_blank">
+      <div class="thumb-wrap">
+        <img src="ornek-tasarimlar/sayfa-15-cagri.png" alt="Sayfa 15">
+      </div>
+      <div class="info">
+        <span class="card-page-num">SAYFA 15 // HABERLEŞME</span>
+        <h3 class="card-title">ÇAĞRI</h3>
+        <p class="card-desc">Kablosuz haberleşme finalist ekibi, yazılım tanımlı radyo (SDR) ve RF analiz altyapısı.</p>
+        <span class="card-btn">Sayfayı Aç (HTML) →</span>
+      </div>
+    </a>
+
+    <!-- Sayfa 16 -->
+    <a href="sayfalar/sayfa-16-alhazen.html" class="card" target="_blank">
+      <div class="thumb-wrap">
+        <img src="ornek-tasarimlar/sayfa-16-alhazen.png" alt="Sayfa 16">
+      </div>
+      <div class="info">
+        <span class="card-page-num">SAYFA 16 // BİYOTEKNOLOJİ</span>
+        <h3 class="card-title">ALHAZEN</h3>
+        <p class="card-desc">Biyomedikal laboratuvar ortamı, taşınabilir optik spektrofotometre ve biyo-sensör dizgileri.</p>
+        <span class="card-btn">Sayfayı Aç (HTML) →</span>
+      </div>
+    </a>
+
+    <!-- Sayfa 17 -->
+    <a href="sayfalar/sayfa-17-ashina-inovasyon.html" class="card" target="_blank">
+      <div class="thumb-wrap">
+        <img src="ornek-tasarimlar/sayfa-17-ashina-inovasyon.png" alt="Sayfa 17">
+      </div>
+      <div class="info">
+        <span class="card-page-num">SAYFA 17 // İNOVASYON</span>
+        <h3 class="card-title">ASHİNA İNOVASYON</h3>
+        <p class="card-desc">Dikey kalkışlı hibrit VTOL kargo hava aracı stüdyo tanıtımı ve atölye imalatı.</p>
+        <span class="card-btn">Sayfayı Aç (HTML) →</span>
+      </div>
+    </a>
+
+    <!-- Sayfa 18 -->
+    <a href="sayfalar/sayfa-18-girisimcilik.html" class="card" target="_blank">
+      <div class="thumb-wrap">
+        <img src="ornek-tasarimlar/sayfa-18-girisimcilik.png" alt="Sayfa 18">
+      </div>
+      <div class="info">
+        <span class="card-page-num">SAYFA 18 // GİRİŞİMCİLİK</span>
+        <h3 class="card-title">Fikirden Girişime</h3>
+        <p class="card-desc">Teknoloji girişimciliği Türkiye 1.liği, LUNA Robotics şirketleşmesi ve kupa vitrini.</p>
+        <span class="card-btn">Sayfayı Aç (HTML) →</span>
+      </div>
+    </a>
+  </div>
+</body>
+</html>
