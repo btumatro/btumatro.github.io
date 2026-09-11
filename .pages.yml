@@ -147,6 +147,27 @@ content:
             list:
               collapsible: true
 
+  - name: basinda-biz
+    label: Basında Biz
+    type: file
+    path: src/data/basinda-biz.json
+    format: json
+    description: Ulusal/yerel basında çıkan haberlerimizin listesi. Sadece gerçek, yayında olan haber bağlantıları ekleyin.
+    fields:
+      - name: intro
+        label: Giriş metni
+        type: text
+      - name: items
+        label: Haberler
+        type: object
+        list:
+          collapsible: true
+        fields:
+          - { name: outlet, label: Yayın adı, type: string, required: true }
+          - { name: headline, label: Haber başlığı, type: string, required: true }
+          - { name: date, label: Tarih, type: date, required: true }
+          - { name: url, label: Haber bağlantısı, type: string, required: true }
+
   - name: achievements
     label: Başarılarımız
     type: file

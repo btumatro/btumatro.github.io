@@ -38,6 +38,7 @@ export const NAV: NavItem[] = [
       { label: 'Ekibimiz', href: '/ekibimiz', description: 'Yönetim kurulu ve ekipler' },
       { label: 'Faaliyetlerimiz', href: '/faaliyetlerimiz', description: 'Eğitimler, geziler, sosyal sorumluluk' },
       { label: 'Galeri', href: '/galeri', description: 'Atölye ve yarışmalardan kareler' },
+      { label: 'Basında Biz', href: '/basinda-biz', description: 'Ulusal ve yerel basındaki haberlerimiz' },
     ],
   },
   { label: 'Takımlarımız', href: '/takimlarimiz' },
@@ -57,6 +58,7 @@ export const FOOTER_LINKS = [
   { label: 'Haberler', href: '/haberler' },
   { label: 'Sponsorluk', href: '/sponsorluk' },
   { label: 'Galeri', href: '/galeri' },
+  { label: 'Basında Biz', href: '/basinda-biz' },
   { label: 'Bize Katılın', href: '/bize-katilin' },
   { label: 'İletişim', href: '/iletisim' },
 ] as const;

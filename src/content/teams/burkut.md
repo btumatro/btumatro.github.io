@@ -6,6 +6,7 @@ status: Aktif
 order: 10
 image: "/media/takim-burkut-ucan-araba.jpg"
 gallery:
+  - "/media/galeri-burkut-takim-ruhu-odulu.jpg"
   - "/media/galeri-bayraktar-ucan-araba.jpg"
   - "/media/gorsel-twizy-emizy-birincilik.jpg"
   - "/media/gorsel-twizy-matrobot-iletisim.jpg"

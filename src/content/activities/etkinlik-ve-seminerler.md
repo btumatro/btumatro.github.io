@@ -7,6 +7,8 @@ order: 4
 image: "/media/odul-toreni.jpg"
 gallery:
   - "/media/galeri-matro-birincilik-30000.jpg"
+  - "/media/galeri-odul-vitrini-kampus.jpg"
+  - "/media/galeri-kampus-fuar-standi.jpg"
   - "/media/galeri-matro-kupa-vitrini.jpg"
   - "/media/galeri-iss-auv-sergi.jpg"
   - "/media/odul-girisimcilik.jpg"

@@ -2,6 +2,21 @@
   "intro": "Atölyeden yarışma sahasına, teknik gezilerden ödül törenlerine MATRO'dan kareler.",
   "images": [
     {
+      "image": "/media/galeri-topluluk-gemi-ziyareti.jpg",
+      "caption": "Ekibimiz bir deniz kuvvetleri gemisi ziyaretinde",
+      "category": "Etkinlik"
+    },
+    {
+      "image": "/media/galeri-odul-vitrini-kampus.jpg",
+      "caption": "Kampüsümüzde kupa ve proje vitrinimiz",
+      "category": "Etkinlik"
+    },
+    {
+      "image": "/media/galeri-kampus-fuar-standi.jpg",
+      "caption": "Kampüs içi tanıtım standımızda ekibimiz",
+      "category": "Etkinlik"
+    },
+    {
       "image": "/media/galeri-ashina-bayraktar.jpg",
       "caption": "ASHİNA ekibimiz, Selçuk Bayraktar ile İHA standımızda",
       "category": "Yarışma"

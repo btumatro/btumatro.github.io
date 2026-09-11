@@ -75,11 +75,11 @@
     },
     {
       "file": "/media/galeri-iss-fuar-standi.jpg",
-      "title": "Renault Twizy Contest için geliştirdiğimiz araç",
-      "group": "Takım kapak görselleri",
-      "width": 435,
-      "height": 382,
-      "sizeKb": 46,
+      "title": "İSS ekibimiz, sualtı aracımız ve kupalarımızla kampüs fuarında",
+      "group": "Galeri fotoğrafları",
+      "width": 1598,
+      "height": 1004,
+      "sizeKb": 366,
       "note": "Kullanıldığı yer: İSS (Galeri), Site Galerisi (Yarışma)",
       "usedIn": [
         "İSS (Galeri)",
@@ -167,9 +167,9 @@
       "file": "/media/takim-iss-sualti-araci.jpg",
       "title": "İnsansız sualtı aracımız havuz testinde",
       "group": "Takım kapak görselleri",
-      "width": 408,
-      "height": 344,
-      "sizeKb": 31,
+      "width": 1400,
+      "height": 959,
+      "sizeKb": 226,
       "note": "Kullanıldığı yer: İSS (Kapak), Site Galerisi (Yarışma)",
       "usedIn": [
         "İSS (Kapak)",
@@ -341,9 +341,9 @@
       "file": "/media/galeri-ashina-kompozit-uretim.jpg",
       "title": "ASHİNA kanat kalıbında vakum infüzyonu ile kompozit üretim",
       "group": "Galeri fotoğrafları",
-      "width": 1200,
-      "height": 1600,
-      "sizeKb": 132,
+      "width": 1198,
+      "height": 1598,
+      "sizeKb": 131,
       "note": "Kullanıldığı yer: ASHİNA (Galeri), Site Galerisi (Atölye)",
       "usedIn": [
         "ASHİNA (Galeri)",
@@ -354,9 +354,9 @@
       "file": "/media/galeri-ashina-saha.jpg",
       "title": "ASHİNA ekibi TEKNOFEST uçuş sahasında",
       "group": "Galeri fotoğrafları",
-      "width": 1600,
-      "height": 1200,
-      "sizeKb": 310,
+      "width": 1500,
+      "height": 1042,
+      "sizeKb": 275,
       "note": "Kullanıldığı yer: ASHİNA (Galeri), Site Galerisi (Yarışma)",
       "usedIn": [
         "ASHİNA (Galeri)",
@@ -494,9 +494,9 @@
       "file": "/media/galeri-iss-auv-havuz.jpg",
       "title": "Sualtı aracımız havuz testlerine hazırlanırken",
       "group": "Galeri fotoğrafları",
-      "width": 1536,
-      "height": 2048,
-      "sizeKb": 533,
+      "width": 1500,
+      "height": 1696,
+      "sizeKb": 421,
       "note": "Kullanıldığı yer: İSS (Galeri), Site Galerisi (Yarışma)",
       "usedIn": [
         "İSS (Galeri)",
@@ -536,7 +536,7 @@
       "group": "Galeri fotoğrafları",
       "width": 1200,
       "height": 675,
-      "sizeKb": 101,
+      "sizeKb": 94,
       "note": "Kullanıldığı yer: İDA (Galeri)",
       "usedIn": [
         "İDA (Galeri)"
@@ -649,7 +649,7 @@
       "group": "Galeri fotoğrafları",
       "width": 1200,
       "height": 675,
-      "sizeKb": 128,
+      "sizeKb": 136,
       "note": "Kullanıldığı yer: MATRİS (Galeri), Site Galerisi (Atölye)",
       "usedIn": [
         "MATRİS (Galeri)",
@@ -657,12 +657,50 @@
       ]
     },
     {
+      "file": "/media/galeri-topluluk-gemi-ziyareti.jpg",
+      "title": "Ekibimiz bir deniz kuvvetleri gemisi ziyaretinde",
+      "group": "Galeri fotoğrafları",
+      "width": 841,
+      "height": 500,
+      "sizeKb": 81,
+      "note": "Kullanıldığı yer: Site Galerisi (Etkinlik)",
+      "usedIn": [
+        "Site Galerisi (Etkinlik)"
+      ]
+    },
+    {
+      "file": "/media/galeri-odul-vitrini-kampus.jpg",
+      "title": "Kampüsümüzde kupa ve proje vitrinimiz",
+      "group": "Galeri fotoğrafları",
+      "width": 905,
+      "height": 766,
+      "sizeKb": 113,
+      "note": "Kullanıldığı yer: Etkinlikler, Seminerler ve Çalıştaylar (Faaliyet Galerisi), Site Galerisi (Etkinlik)",
+      "usedIn": [
+        "Etkinlikler, Seminerler ve Çalıştaylar (Faaliyet Galerisi)",
+        "Site Galerisi (Etkinlik)"
+      ]
+    },
+    {
+      "file": "/media/galeri-kampus-fuar-standi.jpg",
+      "title": "Kampüs içi tanıtım standımızda ekibimiz",
+      "group": "Galeri fotoğrafları",
+      "width": 1202,
+      "height": 751,
+      "sizeKb": 142,
+      "note": "Kullanıldığı yer: Etkinlikler, Seminerler ve Çalıştaylar (Faaliyet Galerisi), Site Galerisi (Etkinlik)",
+      "usedIn": [
+        "Etkinlikler, Seminerler ve Çalıştaylar (Faaliyet Galerisi)",
+        "Site Galerisi (Etkinlik)"
+      ]
+    },
+    {
       "file": "/media/galeri-matro-birincilik-30000.jpg",
       "title": "Yarışma birinciliği ödülümüzle topluluk sergimiz",
       "group": "Galeri fotoğrafları",
-      "width": 1800,
-      "height": 1186,
-      "sizeKb": 301,
+      "width": 1600,
+      "height": 917,
+      "sizeKb": 206,
       "note": "Kullanıldığı yer: Etkinlikler, Seminerler ve Çalıştaylar (Faaliyet Galerisi), Site Galerisi (Etkinlik)",
       "usedIn": [
         "Etkinlikler, Seminerler ve Çalıştaylar (Faaliyet Galerisi)",
@@ -783,6 +821,18 @@
       ]
     },
     {
+      "file": "/media/galeri-prusa-detay.jpg",
+      "title": "PRUSA otonom sualtı aracımızın detay görünümü",
+      "group": "Galeri fotoğrafları",
+      "width": 1303,
+      "height": 674,
+      "sizeKb": 112,
+      "note": "Kullanıldığı yer: İSS (Galeri)",
+      "usedIn": [
+        "İSS (Galeri)"
+      ]
+    },
+    {
       "file": "/media/galeri-prusa-teknofest.jpg",
       "title": "PRUSA ekibimizin TEKNOFEST 2026 sergileme alanı",
       "group": "Galeri fotoğrafları",
@@ -838,9 +888,9 @@
       "file": "/media/galeri-teknofest-2022-odul.jpg",
       "title": "TEKNOFEST Sanayide Dijital Teknolojileri Yarışması Temel Kategori'de Türkiye üçüncülüğü",
       "group": "Galeri fotoğrafları",
-      "width": 1800,
-      "height": 831,
-      "sizeKb": 258,
+      "width": 1600,
+      "height": 739,
+      "sizeKb": 202,
       "note": "Kullanıldığı yer: SANAYİDE DİJİTAL TEKNOLOJİLER (Galeri), Site Galerisi (Yarışma)",
       "usedIn": [
         "SANAYİDE DİJİTAL TEKNOLOJİLER (Galeri)",
@@ -864,9 +914,9 @@
       "file": "/media/galeri-tika-tarimsal-ika.jpg",
       "title": "MATROBOT ekibimiz Tarımsal İnsansız Kara Aracı Yarışması'nda",
       "group": "Galeri fotoğrafları",
-      "width": 1800,
-      "height": 1205,
-      "sizeKb": 308,
+      "width": 1600,
+      "height": 1072,
+      "sizeKb": 241,
       "note": "Kullanıldığı yer: MATROVER & LUNA (Galeri), Site Galerisi (Yarışma)",
       "usedIn": [
         "MATROVER & LUNA (Galeri)",
@@ -983,6 +1033,18 @@
       "width": 1282,
       "height": 613,
       "sizeKb": 161,
+      "note": "Kullanıldığı yer: ZEMHERİ (Galeri)",
+      "usedIn": [
+        "ZEMHERİ (Galeri)"
+      ]
+    },
+    {
+      "file": "/media/galeri-zemheri-roket-imza.jpg",
+      "title": "ZEMHERİ ekibimizin su altı roketi imzalanırken",
+      "group": "Galeri fotoğrafları",
+      "width": 840,
+      "height": 500,
+      "sizeKb": 53,
       "note": "Kullanıldığı yer: ZEMHERİ (Galeri)",
       "usedIn": [
         "ZEMHERİ (Galeri)"
@@ -1259,9 +1321,9 @@
       "file": "/media/odul-girisimcilik.jpg",
       "title": "TEKNOFEST Girişimcilik Yarışması Türkiye 1.liği ödül töreni",
       "group": "Yarışma afiş ve ödül görselleri",
-      "width": 560,
-      "height": 465,
-      "sizeKb": 46,
+      "width": 952,
+      "height": 1079,
+      "sizeKb": 151,
       "note": "Kullanıldığı yer: GİRİŞİMCİLİK VE İNOVASYON (Kapak), Etkinlikler, Seminerler ve Çalıştaylar (Faaliyet Galerisi)",
       "usedIn": [
         "GİRİŞİMCİLİK VE İNOVASYON (Kapak)",
@@ -2093,6 +2155,18 @@
       ]
     },
     {
+      "file": "/media/galeri-burkut-takim-ruhu-odulu.jpg",
+      "title": "BÜRKÜT ekibimizin Uçan Araba Simülasyon Yarışması En İyi Takım Ruhu Ödülü",
+      "group": "Galeri fotoğrafları",
+      "width": 600,
+      "height": 497,
+      "sizeKb": 67,
+      "note": "Kullanıldığı yer: BÜRKÜT (Galeri)",
+      "usedIn": [
+        "BÜRKÜT (Galeri)"
+      ]
+    },
+    {
       "file": "/media/galeri-bayraktar-ucan-araba.jpg",
       "title": "Selçuk Bayraktar ve Uçan Araba ekibimiz TEKNOFEST standında",
       "group": "Galeri fotoğrafları",
@@ -2196,7 +2270,7 @@
       "title": "genel arşivi görseli",
       "group": "Galeri fotoğrafları",
       "width": 1400,
-      "height": 1440,
+      "height": 1400,
       "sizeKb": 235,
       "note": "web site medya klasöründen aktarıldı (etkinlik/tanıtım-stand/17885019300252302.heic)",
       "usedIn": []
@@ -2216,7 +2290,7 @@
       "title": "genel arşivi görseli",
       "group": "Galeri fotoğrafları",
       "width": 1400,
-      "height": 1440,
+      "height": 1400,
       "sizeKb": 119,
       "note": "web site medya klasöründen aktarıldı (sponsorlar/ibraş/17950656764953133.webp)",
       "usedIn": []
@@ -2238,7 +2312,7 @@
       "title": "cevre-enerji arşivi görseli",
       "group": "Galeri fotoğrafları",
       "width": 1400,
-      "height": 1066,
+      "height": 933,
       "sizeKb": 190,
       "note": "Kullanıldığı yer: ALHAZEN (Galeri), Site Galerisi (Atölye)",
       "usedIn": [
@@ -2251,7 +2325,7 @@
       "title": "cevre-enerji arşivi görseli",
       "group": "Galeri fotoğrafları",
       "width": 1400,
-      "height": 1200,
+      "height": 1050,
       "sizeKb": 183,
       "note": "Kullanıldığı yer: ALHAZEN (Galeri)",
       "usedIn": [
@@ -2263,7 +2337,7 @@
       "title": "cevre-enerji arşivi görseli",
       "group": "Galeri fotoğrafları",
       "width": 1400,
-      "height": 1200,
+      "height": 1050,
       "sizeKb": 185,
       "note": "Kullanıldığı yer: ALHAZEN (Galeri), Site Galerisi (Atölye)",
       "usedIn": [
@@ -2286,7 +2360,7 @@
       "title": "cevre-enerji arşivi görseli",
       "group": "Galeri fotoğrafları",
       "width": 1400,
-      "height": 1200,
+      "height": 1050,
       "sizeKb": 194,
       "note": "web site medya klasöründen aktarıldı (takımlar/çevre ve enerji/WhatsApp Image 2025-10-02 at 14.23.14 (2).jpeg)",
       "usedIn": []
@@ -2306,7 +2380,7 @@
       "title": "insansiz-deniz-araci arşivi görseli",
       "group": "Galeri fotoğrafları",
       "width": 1400,
-      "height": 2000,
+      "height": 1867,
       "sizeKb": 130,
       "note": "Kullanıldığı yer: İDA (Galeri)",
       "usedIn": [
@@ -2318,7 +2392,7 @@
       "title": "insansiz-deniz-araci arşivi görseli",
       "group": "Galeri fotoğrafları",
       "width": 1400,
-      "height": 2000,
+      "height": 1867,
       "sizeKb": 209,
       "note": "Kullanıldığı yer: İDA (Galeri)",
       "usedIn": [
@@ -2330,7 +2404,7 @@
       "title": "insansiz-deniz-araci arşivi görseli",
       "group": "Galeri fotoğrafları",
       "width": 1400,
-      "height": 2048,
+      "height": 1867,
       "sizeKb": 262,
       "note": "Kullanıldığı yer: İDA (Galeri), Site Galerisi (Yarışma)",
       "usedIn": [
@@ -2343,7 +2417,7 @@
       "title": "insansiz-deniz-araci arşivi görseli",
       "group": "Galeri fotoğrafları",
       "width": 1400,
-      "height": 2048,
+      "height": 1867,
       "sizeKb": 310,
       "note": "Kullanıldığı yer: İDA (Galeri), Site Galerisi (Atölye)",
       "usedIn": [
@@ -2356,7 +2430,7 @@
       "title": "tika-ika arşivi görseli",
       "group": "Galeri fotoğrafları",
       "width": 1400,
-      "height": 900,
+      "height": 788,
       "sizeKb": 223,
       "note": "Kullanıldığı yer: MATROVER & LUNA (Galeri)",
       "usedIn": [
@@ -2368,7 +2442,7 @@
       "title": "tika-ika arşivi görseli",
       "group": "Galeri fotoğrafları",
       "width": 1400,
-      "height": 900,
+      "height": 788,
       "sizeKb": 203,
       "note": "Kullanıldığı yer: MATROVER & LUNA (Galeri)",
       "usedIn": [
@@ -2392,7 +2466,7 @@
       "title": "tika-ika arşivi görseli",
       "group": "Galeri fotoğrafları",
       "width": 1400,
-      "height": 1152,
+      "height": 788,
       "sizeKb": 158,
       "note": "Kullanıldığı yer: MATROVER & LUNA (Galeri)",
       "usedIn": [
@@ -2404,7 +2478,7 @@
       "title": "tika-ika arşivi görseli",
       "group": "Galeri fotoğrafları",
       "width": 1400,
-      "height": 1152,
+      "height": 788,
       "sizeKb": 212,
       "note": "Kullanıldığı yer: MATROVER & LUNA (Galeri), Site Galerisi (Atölye)",
       "usedIn": [
@@ -2417,7 +2491,7 @@
       "title": "tika-ika arşivi görseli",
       "group": "Galeri fotoğrafları",
       "width": 1400,
-      "height": 1200,
+      "height": 1050,
       "sizeKb": 259,
       "note": "Kullanıldığı yer: MATROVER & LUNA (Galeri)",
       "usedIn": [
@@ -2497,7 +2571,7 @@
       "title": "sanayide-dijital arşivi görseli",
       "group": "Galeri fotoğrafları",
       "width": 1400,
-      "height": 1512,
+      "height": 1050,
       "sizeKb": 151,
       "note": "web site medya klasöründen aktarıldı (takımlar/sanayide dijital teknolojileri/WhatsApp Image 2025-10-02 at 13.58.19.jpeg)",
       "usedIn": []
@@ -2507,7 +2581,7 @@
       "title": "sanayide-dijital arşivi görseli",
       "group": "Galeri fotoğrafları",
       "width": 1400,
-      "height": 2000,
+      "height": 1872,
       "sizeKb": 200,
       "note": "web site medya klasöründen aktarıldı (takımlar/sanayide dijital teknolojileri/WhatsApp Image 2025-10-02 at 13.58.22.jpeg)",
       "usedIn": []
@@ -2517,7 +2591,7 @@
       "title": "sanayide-dijital arşivi görseli",
       "group": "Galeri fotoğrafları",
       "width": 1400,
-      "height": 945,
+      "height": 646,
       "sizeKb": 138,
       "note": "web site medya klasöründen aktarıldı (takımlar/sanayide dijital teknolojileri/WhatsApp Image 2025-10-02 at 13.58.23 (1).jpeg)",
       "usedIn": []
@@ -2527,7 +2601,7 @@
       "title": "sanayide-dijital arşivi görseli",
       "group": "Galeri fotoğrafları",
       "width": 1400,
-      "height": 1148,
+      "height": 788,
       "sizeKb": 145,
       "note": "web site medya klasöründen aktarıldı (takımlar/sanayide dijital teknolojileri/WhatsApp Image 2025-10-02 at 13.58.23 (2).jpeg)",
       "usedIn": []
@@ -2537,7 +2611,7 @@
       "title": "sanayide-dijital arşivi görseli",
       "group": "Galeri fotoğrafları",
       "width": 1400,
-      "height": 2016,
+      "height": 1867,
       "sizeKb": 266,
       "note": "web site medya klasöründen aktarıldı (takımlar/sanayide dijital teknolojileri/WhatsApp Image 2025-10-02 at 13.58.23 (3).jpeg)",
       "usedIn": []
@@ -2547,7 +2621,7 @@
       "title": "sanayide-dijital arşivi görseli",
       "group": "Galeri fotoğrafları",
       "width": 1400,
-      "height": 1512,
+      "height": 1050,
       "sizeKb": 166,
       "note": "web site medya klasöründen aktarıldı (takımlar/sanayide dijital teknolojileri/WhatsApp Image 2025-10-02 at 13.58.24 (1).jpeg)",
       "usedIn": []
@@ -2557,7 +2631,7 @@
       "title": "sanayide-dijital arşivi görseli",
       "group": "Galeri fotoğrafları",
       "width": 1400,
-      "height": 1512,
+      "height": 1050,
       "sizeKb": 158,
       "note": "web site medya klasöründen aktarıldı (takımlar/sanayide dijital teknolojileri/WhatsApp Image 2025-10-02 at 13.58.24.jpeg)",
       "usedIn": []
@@ -2567,7 +2641,7 @@
       "title": "suru-iha arşivi görseli",
       "group": "Galeri fotoğrafları",
       "width": 1400,
-      "height": 899,
+      "height": 787,
       "sizeKb": 114,
       "note": "Kullanıldığı yer: MATRİS (Galeri)",
       "usedIn": [
@@ -2592,7 +2666,7 @@
       "title": "suru-iha arşivi görseli",
       "group": "Galeri fotoğrafları",
       "width": 1400,
-      "height": 1200,
+      "height": 1051,
       "sizeKb": 179,
       "note": "Kullanıldığı yer: MATRİS (Galeri), Site Galerisi (Yarışma)",
       "usedIn": [
@@ -2625,7 +2699,7 @@
       "title": "tika-ika arşivi görseli",
       "group": "Galeri fotoğrafları",
       "width": 1400,
-      "height": 1200,
+      "height": 1050,
       "sizeKb": 268,
       "note": "Kullanıldığı yer: MATROVER & LUNA (Galeri), Site Galerisi (Yarışma)",
       "usedIn": [
@@ -2672,7 +2746,7 @@
       "title": "burkut arşivi görseli",
       "group": "Galeri fotoğrafları",
       "width": 1400,
-      "height": 1200,
+      "height": 1050,
       "sizeKb": 209,
       "note": "Kullanıldığı yer: BÜRKÜT (Galeri), Site Galerisi (Atölye)",
       "usedIn": [
@@ -2690,6 +2764,30 @@
       "note": "Kullanıldığı yer: BÜRKÜT (Galeri)",
       "usedIn": [
         "BÜRKÜT (Galeri)"
+      ]
+    },
+    {
+      "file": "/media/galeri-girisim-75000-odul.jpg",
+      "title": "TEKNOFEST Girişim Yarışması En İyi Girişim Ödülü (75.000 TL)",
+      "group": "Yarışma afiş ve ödül görselleri",
+      "width": 713,
+      "height": 721,
+      "sizeKb": 103,
+      "note": "Kullanıldığı yer: GİRİŞİMCİLİK VE İNOVASYON (Galeri)",
+      "usedIn": [
+        "GİRİŞİMCİLİK VE İNOVASYON (Galeri)"
+      ]
+    },
+    {
+      "file": "/media/galeri-nasa-space-apps-2024-birincilik.jpg",
+      "title": "NASA Space Apps Challenge 2024 Bursa Birinciliği",
+      "group": "Yarışma afiş ve ödül görselleri",
+      "width": 549,
+      "height": 354,
+      "sizeKb": 31,
+      "note": "Kullanıldığı yer: GİRİŞİMCİLİK VE İNOVASYON (Galeri)",
+      "usedIn": [
+        "GİRİŞİMCİLİK VE İNOVASYON (Galeri)"
       ]
     },
     {
