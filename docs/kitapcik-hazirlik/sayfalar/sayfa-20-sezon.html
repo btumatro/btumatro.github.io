@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="tr"><head><meta charset="utf-8"><style>
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,700;0,800;0,900;1,800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&display=swap');
+
+@page { size: 210mm 297mm; margin: 0; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --c-bg: #FFFFFF; --c-ink: #0B1012; --c-text-muted: #475569; --c-text-subtle: #64748B;
+  --c-border: #CBD5E1; --c-volt: #0D9488; --c-volt-light: #F0FDFA; --c-medal: #D97706;
+  --c-medal-light: #FEF3C7; --c-surface: #F8FAFC;
+  --font-display: 'Barlow', sans-serif; --font-sans: 'Inter', sans-serif; --font-mono: 'JetBrains Mono', monospace;
+}
+
+body.page-sheet {
+  width: 1240px; height: 1754px; background: var(--c-bg); color: var(--c-ink); font-family: var(--font-sans);
+  display: flex; flex-direction: column; justify-content: space-between; padding: 44px 56px 36px 56px;
+  position: relative; overflow: hidden; -webkit-font-smoothing: antialiased;
+}
+
+.page-header {
+  display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--c-ink);
+  padding-bottom: 12px; margin-bottom: 16px; flex-shrink: 0;
+}
+.brand-left { display: flex; align-items: center; gap: 14px; }
+.header-logo { height: 36px; width: auto; object-fit: contain; }
+.dept-name { font-size: 11px; font-weight: 500; color: var(--c-text-muted); }
+.header-meta-right { display: flex; align-items: center; gap: 14px; }
+.section-tag { font-family: var(--font-mono); font-size: 11px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--c-volt); }
+.page-index-badge { font-family: var(--font-mono); font-size: 11px; font-weight: 700; border: 1.5px solid var(--c-ink); padding: 2px 7px; border-radius: 2px; }
+
+.page-footer {
+  display: flex; justify-content: space-between; align-items: center; border-top: 1.5px solid var(--c-ink);
+  padding-top: 10px; font-family: var(--font-mono); font-size: 11px; color: var(--c-text-subtle); flex-shrink: 0;
+}
+.footer-site { color: var(--c-ink); font-weight: 700; }
+.page-number { font-weight: 800; color: var(--c-ink); }
+
+.media-unit { display: flex; flex-direction: column; height: 100%; min-height: 0; overflow: hidden; }
+.img-box { width: 100%; flex: 1; min-height: 0; position: relative; overflow: hidden; background-color: #F8FAFC; border-radius: 4px; border: 1px solid var(--c-border); }
+.img-box img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.caption-bar { display: flex; align-items: center; gap: 8px; padding-top: 6px; font-family: var(--font-sans); line-height: 1.25; flex-shrink: 0; }
+.caption-tag {
+  font-family: var(--font-mono); font-size: 9px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase;
+  color: #FFFFFF; background-color: var(--c-ink); padding: 2px 6px; border-radius: 2px; white-space: nowrap;
+}
+.caption-text { font-size: 11px; font-weight: 500; color: #475569; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+.season-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-bottom: 20px; }
+.city-card { background: var(--c-surface); border: 1.5px solid var(--c-border); border-radius: 4px; padding: 14px; display: flex; flex-direction: column; gap: 4px; }
+.season-hero-box { width: 100%; height: 620px; margin-bottom: 6px; flex-shrink: 0; }
+</style></head>
+<body class="page-sheet">
+  <header class="page-header">
+    <div class="brand-left">
+      <img class="header-logo" src="file:///Users/wildgenie/Projects/btu-matro/public/logo-matro-siyah.png" alt="MATRO Logo">
+      <div class="dept-name">Bursa Teknik Üniversitesi // MATRO 2026 Sezon Özeti</div>
+    </div>
+    <div class="header-meta-right">
+      <div class="section-tag">Sezon Haritası</div>
+      <div class="page-index-badge">20</div>
+    </div>
+  </header>
+
+  <div style="margin-bottom: 16px;">
+    <div style="font-family: var(--font-mono); font-size: 11px; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color: var(--c-volt);">TEKNOFEST 2026 FİNALLERİ</div>
+    <h1 style="font-family: var(--font-display); font-size: 46px; font-weight: 900; line-height: 0.98; text-transform: uppercase; margin-top: 3px; margin-bottom: 5px;">Aynı Çatı, Farklı Şehirler, Tek Hedef</h1>
+    <p style="font-size: 15px; font-weight: 500; line-height: 1.45; color: #334155;">
+      2026 sezonunda 8 ayrı Ar-Ge takımımız Türkiye'nin dört bir yanında finallerde yarışarak üniversitemizi temsil etti.
+    </p>
+  </div>
+
+  <div class="season-grid">
+    <div class="city-card">
+      <div style="font-family: var(--font-mono); font-size: 10px; font-weight: 700; color: var(--c-volt);">MALATYA</div>
+      <div style="font-family: var(--font-display); font-size: 20px; font-weight: 800; text-transform: uppercase;">ASHİNA İHA</div>
+      <div style="font-size: 11px; color: #64748B;">TÜBİTAK Uluslararası İHA</div>
+    </div>
+    <div class="city-card">
+      <div style="font-family: var(--font-mono); font-size: 10px; font-weight: 700; color: var(--c-volt);">DİYARBAKIR</div>
+      <div style="font-family: var(--font-display); font-size: 20px; font-weight: 800; text-transform: uppercase;">PUSULA</div>
+      <div style="font-size: 11px; color: #64748B;">Sanayide Dijital AMR</div>
+    </div>
+    <div class="city-card">
+      <div style="font-family: var(--font-mono); font-size: 10px; font-weight: 700; color: var(--c-volt);">MARDİN</div>
+      <div style="font-family: var(--font-display); font-size: 20px; font-weight: 800; text-transform: uppercase;">LUNA İKA</div>
+      <div style="font-size: 11px; color: #64748B;">İnsansız Kara Aracı</div>
+    </div>
+    <div class="city-card">
+      <div style="font-family: var(--font-mono); font-size: 10px; font-weight: 700; color: var(--c-volt);">GAZİANTEP</div>
+      <div style="font-family: var(--font-display); font-size: 20px; font-weight: 800; text-transform: uppercase;">MATRİS</div>
+      <div style="font-size: 11px; color: #64748B;">HAVELSAN Sürü İHA</div>
+    </div>
+  </div>
+
+  <div class="media-unit season-hero-box">
+    <div class="img-box">
+      <img style="object-position: center 25%;" src="file:///Users/wildgenie/Projects/btu-matro/public/media/haber-teknofest-2026-finalleri.jpg" alt="TEKNOFEST 2026 Finalistleri">
+    </div>
+    <div class="caption-bar">
+      <span class="caption-tag">RESMÎ SEZON TABLOSU</span>
+      <span class="caption-text">2026 Sezonunda Malatya, Diyarbakır, Mardin ve Gaziantep etaplarında eşzamanlı yarışan takımlarımız</span>
+    </div>
+  </div>
+
+  <footer class="page-footer">
+    <div class="footer-site">btumatro.com // SEZON 2026</div>
+    <div class="page-number">SAYFA 20</div>
+  </footer>
+</body>
+</html>

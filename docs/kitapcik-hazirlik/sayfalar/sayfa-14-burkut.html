@@ -1,260 +1,65 @@
 <!DOCTYPE html>
-<html lang="tr">
-<head>
-<meta charset="utf-8">
-<style>
-
-@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,600;0,700;0,800;0,900;1,800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&display=swap');
+<html lang="tr"><head><meta charset="utf-8"><style>
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,700;0,800;0,900;1,800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&display=swap');
 
 @page { size: 210mm 297mm; margin: 0; }
 * { box-sizing: border-box; margin: 0; padding: 0; }
 :root {
-  --c-bg: #FFFFFF;
-  --c-ink: #0B1012;
-  --c-text-muted: #475569;
-  --c-text-subtle: #64748B;
-  --c-border: #CBD5E1;
-  --c-volt: #0D9488;
-  --c-volt-light: #F0FDFA;
-  --c-medal: #D97706;
-  --c-medal-light: #FEF3C7;
-  --c-surface: #F8FAFC;
-  --font-display: 'Barlow', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-mono: 'JetBrains Mono', monospace;
+  --c-bg: #FFFFFF; --c-ink: #0B1012; --c-text-muted: #475569; --c-text-subtle: #64748B;
+  --c-border: #CBD5E1; --c-volt: #0D9488; --c-volt-light: #F0FDFA; --c-medal: #D97706;
+  --c-medal-light: #FEF3C7; --c-surface: #F8FAFC;
+  --font-display: 'Barlow', sans-serif; --font-sans: 'Inter', sans-serif; --font-mono: 'JetBrains Mono', monospace;
 }
 
 body.page-sheet {
-  width: 1240px;
-  height: 1754px;
-  background-color: var(--c-bg);
-  color: var(--c-ink);
-  font-family: var(--font-sans);
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 44px 56px 36px 56px;
-  -webkit-font-smoothing: antialiased;
+  width: 1240px; height: 1754px; background: var(--c-bg); color: var(--c-ink); font-family: var(--font-sans);
+  display: flex; flex-direction: column; justify-content: space-between; padding: 44px 56px 36px 56px;
+  position: relative; overflow: hidden; -webkit-font-smoothing: antialiased;
 }
 
-/* Header */
 .page-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 2px solid var(--c-ink);
-  padding-bottom: 12px;
-  margin-bottom: 16px;
+  display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--c-ink);
+  padding-bottom: 12px; margin-bottom: 16px; flex-shrink: 0;
 }
 .brand-left { display: flex; align-items: center; gap: 14px; }
 .header-logo { height: 36px; width: auto; object-fit: contain; }
-.univ-name { font-family: var(--font-display); font-size: 15px; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; color: var(--c-ink); line-height: 1.1; }
-.dept-name { font-family: var(--font-sans); font-size: 11px; font-weight: 500; color: var(--c-text-muted); }
+.dept-name { font-size: 11px; font-weight: 500; color: var(--c-text-muted); }
 .header-meta-right { display: flex; align-items: center; gap: 14px; }
 .section-tag { font-family: var(--font-mono); font-size: 11px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--c-volt); }
-.page-index-badge { font-family: var(--font-mono); font-size: 11px; font-weight: 700; color: var(--c-ink); border: 1.5px solid var(--c-ink); padding: 2px 7px; border-radius: 2px; }
+.page-index-badge { font-family: var(--font-mono); font-size: 11px; font-weight: 700; border: 1.5px solid var(--c-ink); padding: 2px 7px; border-radius: 2px; }
 
-/* Footer */
 .page-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-top: 1.5px solid var(--c-ink);
-  padding-top: 10px;
-  font-family: var(--font-mono);
-  font-size: 11px;
-  color: var(--c-text-subtle);
-  letter-spacing: 0.05em;
+  display: flex; justify-content: space-between; align-items: center; border-top: 1.5px solid var(--c-ink);
+  padding-top: 10px; font-family: var(--font-mono); font-size: 11px; color: var(--c-text-subtle); flex-shrink: 0;
 }
-.page-footer .footer-site { color: var(--c-ink); font-weight: 700; }
-.page-footer .page-number { font-weight: 800; color: var(--c-ink); }
+.footer-site { color: var(--c-ink); font-weight: 700; }
+.page-number { font-weight: 800; color: var(--c-ink); }
 
-/* Tipografi */
-.eyebrow {
-  font-family: var(--font-mono);
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: var(--c-volt);
-}
-.headline {
-  font-family: var(--font-display);
-  font-size: 44px;
-  font-weight: 900;
-  line-height: 0.98;
-  letter-spacing: -0.03em;
-  text-transform: uppercase;
-  color: var(--c-ink);
-  margin-top: 3px;
-  margin-bottom: 5px;
-}
-.lead-text {
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 1.45;
-  color: #334155;
-}
-
-/* Görsel Çerçevesi & Sıfır Üst Yazı */
-.media-unit {
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-}
-.img-box {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  overflow: hidden;
-  background-color: #F8FAFC;
-  border-radius: 4px;
-  border: 1px solid var(--c-border);
-}
-.img-box img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.caption-bar {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding-top: 6px;
-  font-family: var(--font-sans);
-  line-height: 1.25;
-}
+.media-unit { display: flex; flex-direction: column; height: 100%; min-height: 0; overflow: hidden; }
+.img-box { width: 100%; flex: 1; min-height: 0; position: relative; overflow: hidden; background-color: #F8FAFC; border-radius: 4px; border: 1px solid var(--c-border); }
+.img-box img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.caption-bar { display: flex; align-items: center; gap: 8px; padding-top: 6px; font-family: var(--font-sans); line-height: 1.25; flex-shrink: 0; }
 .caption-tag {
-  font-family: var(--font-mono);
-  font-size: 9px;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  background-color: var(--c-ink);
-  padding: 2px 6px;
-  border-radius: 2px;
-  white-space: nowrap;
+  font-family: var(--font-mono); font-size: 9px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase;
+  color: #FFFFFF; background-color: var(--c-ink); padding: 2px 6px; border-radius: 2px; white-space: nowrap;
 }
-.caption-text {
-  font-size: 11px;
-  font-weight: 500;
-  color: #475569;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
+.caption-text { font-size: 11px; font-weight: 500; color: #475569; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 
-/* Bullet & Teknik Kutu */
-.bullet-list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-.bullet-list li {
-  display: flex;
-  align-items: flex-start;
-  gap: 8px;
-  font-size: 13.5px;
-  font-weight: 600;
-  color: var(--c-ink);
-  line-height: 1.35;
-}
-.bullet-list li::before {
-  content: "■";
-  color: var(--c-volt);
-  font-size: 9px;
-  margin-top: 3px;
-}
+.bullet-list { list-style: none; display: flex; flex-direction: column; gap: 8px; margin-top: 8px; }
+.bullet-list li { display: flex; align-items: flex-start; gap: 8px; font-size: 13.5px; font-weight: 600; color: var(--c-ink); }
+.bullet-list li::before { content: '■'; color: var(--c-volt); font-size: 9px; margin-top: 3px; }
 
-.tech-spec-box {
-  background: var(--c-surface);
-  border: 1.5px solid var(--c-border);
-  border-radius: 4px;
-  padding: 16px 18px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.box-title {
-  font-family: var(--font-mono);
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--c-ink);
-  border-bottom: 1.5px solid var(--c-ink);
-  padding-bottom: 6px;
-  display: flex;
-  justify-content: space-between;
-}
-.spec-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px 14px;
-}
-.spec-item {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-}
-.spec-label {
-  font-family: var(--font-mono);
-  font-size: 9px;
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--c-text-subtle);
-}
-.spec-value {
-  font-size: 12.5px;
-  font-weight: 600;
-  color: var(--c-ink);
-}
+.tech-box { background: var(--c-surface); border: 1.5px solid var(--c-border); border-radius: 4px; padding: 16px; display: flex; flex-direction: column; justify-content: space-between; }
 .award-pill {
-  background: var(--c-medal-light);
-  border: 1px solid #FCD34D;
-  color: #92400E;
-  padding: 7px 12px;
-  border-radius: 3px;
-  font-size: 11.5px;
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  background: var(--c-medal-light); border: 1px solid #FCD34D; color: #92400E; padding: 7px 12px;
+  border-radius: 3px; font-size: 11.5px; font-weight: 700; display: inline-flex; align-items: center; gap: 8px;
 }
-.award-pill .trophy-dot {
-  width: 6px;
-  height: 6px;
-  background: var(--c-medal);
-  border-radius: 50%;
-}
+.trophy-dot { width: 6px; height: 6px; background: var(--c-medal); border-radius: 50%; }
 
-.burkut-hero-strip {
-  width: 100%;
-  height: 520px;
-  margin-bottom: 16px;
-}
-.burkut-split {
-  display: grid;
-  grid-template-columns: 1.25fr 1fr;
-  gap: 24px;
-  margin-bottom: 16px;
-}
-.burkut-award-duo {
-  display: grid;
-  grid-template-columns: 1.3fr 0.7fr;
-  height: 360px;
-  gap: 16px;
-  margin-bottom: 4px;
-}
-</style>
-</head>
+.burkut-hero { width: 100%; height: 520px; margin-bottom: 20px; flex-shrink: 0; }
+.burkut-mid { display: grid; grid-template-columns: 1.25fr 1fr; gap: 24px; margin-bottom: 20px; flex-shrink: 0; }
+.burkut-lower { display: grid; grid-template-columns: 1.2fr 0.8fr; grid-template-rows: 370px; height: 370px; gap: 20px; margin-bottom: 4px; flex-shrink: 0; }
+</style></head>
 <body class="page-sheet">
   <header class="page-header">
     <div class="brand-left">
@@ -267,58 +72,62 @@ body.page-sheet {
     </div>
   </header>
 
-  <!-- Üst Hero: CEZERİ Simülatör Aracı Önünde BÜRKÜT Takımı -->
-  <div style="display: flex; flex-direction: column;">
-    <div class="media-box burkut-hero-strip">
+  <div class="media-unit burkut-hero">
+    <div class="img-box">
       <img style="object-position: center 30%;" src="file:///Users/wildgenie/Projects/btu-matro/public/media/galeri-burkut-simulasyon-ekip.jpg" alt="CEZERİ ve BÜRKÜT">
     </div>
-    <div class="caption-line">
+    <div class="caption-bar">
       <span class="caption-tag">YARIŞMA SAHNESİ</span>
-      <span class="caption-txt">BÜRKÜT ekibimiz TEKNOFEST'te CEZERİ uçan araba simülatör aracı önünde</span>
+      <span class="caption-text">BÜRKÜT ekibimiz TEKNOFEST'te CEZERİ uçan araba simülatör aracı önünde</span>
     </div>
   </div>
 
-  <div class="burkut-split">
+  <div class="burkut-mid">
     <div>
       <div style="font-family: var(--font-mono); font-size: 11px; font-weight: 700; color: var(--c-volt); margin-bottom: 4px;">GELECEĞİN HAVA TAŞITLARI</div>
       <h1 style="font-family: var(--font-display); font-size: 46px; font-weight: 900; line-height: 0.95; text-transform: uppercase;">BÜRKÜT</h1>
       <p style="font-size: 14px; line-height: 1.52; color: #475569; margin-top: 8px;">
-        <strong>BÜRKÜT</strong>, şehir içi kentsel hava hareketliliği için dikey iniş-kalkış yapabilen elektrikli uçan arabaların (eVTOL) otonom uçuş kontrol algoritmalarını ve kentsel koridor seyrüseferini geliştiren ekibimizdir.
+        <strong>BÜRKÜT</strong>, şehir içi hava taşımacılığına yönelik dikey iniş-kalkış yapabilen elektrikli hava araçlarının (eVTOL) otonom uçuş kontrolünü ve hava trafiği entegrasyonunu geliştiren ekibimizdir.
       </p>
+      <ul class="bullet-list">
+        <li>Geçiş dönemi (VTOL'den yatay uçuşa) aerodinamik kontrol modelleri</li>
+        <li>Kentsel kanyonlarda güvenli GPS destekli ve optik otonom seyrüsefer</li>
+      </ul>
     </div>
 
-    <div style="background: var(--c-surface); border: 1.5px solid var(--c-border); border-radius: 4px; padding: 16px; display: flex; flex-direction: column; justify-content: space-between;">
+    <div class="tech-box">
       <div style="font-family: var(--font-mono); font-size: 11px; font-weight: 700; border-bottom: 1.5px solid var(--c-ink); padding-bottom: 4px;">SİMÜLASYON PARAMETRELERİ</div>
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
-        <div><span style="font-family: var(--font-mono); font-size: 9px; color: var(--c-text-subtle);">MİMARİ</span><div style="font-size: 13px; font-weight: 700;">Tilt-Rotor Hibrit</div></div>
-        <div><span style="font-family: var(--font-mono); font-size: 9px; color: var(--c-text-subtle);">İTKİ</span><div style="font-size: 13px; font-weight: 700;">8x Eşeksenli Rotor</div></div>
-        <div><span style="font-family: var(--font-mono); font-size: 9px; color: var(--c-text-subtle);">MOTOR SİM.</span><div style="font-size: 13px; font-weight: 700;">Unreal + PX4 SITL</div></div>
-        <div><span style="font-family: var(--font-mono); font-size: 9px; color: var(--c-text-subtle);">OTONOMİ</span><div style="font-size: 13px; font-weight: 700;">Seviye 4 (Kentsel)</div></div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 10px 0;">
+        <div><span style="font-family: var(--font-mono); font-size: 9px; color: var(--c-text-subtle);">ARAÇ KONSEPTİ</span><div style="font-size: 13px; font-weight: 700;">Tilt-Rotor Hibrit</div></div>
+        <div><span style="font-family: var(--font-mono); font-size: 9px; color: var(--c-text-subtle);">İTKİ MİMARİSİ</span><div style="font-size: 13px; font-weight: 700;">8x Eşeksenli Rotor</div></div>
+        <div><span style="font-family: var(--font-mono); font-size: 9px; color: var(--c-text-subtle);">SİMÜLASYON</span><div style="font-size: 13px; font-weight: 700;">Unreal Engine + PX4</div></div>
+        <div><span style="font-family: var(--font-mono); font-size: 9px; color: var(--c-text-subtle);">OTONOMİ</span><div style="font-size: 13px; font-weight: 700;">Seviye 4 Kentsel</div></div>
       </div>
-      <div style="background: var(--c-medal-light); border: 1px solid #FCD34D; padding: 6px 10px; border-radius: 3px; font-size: 11px; font-weight: 700; color: #92400E;">
-        ★ EN İYİ TAKIM RUHU ÖDÜLÜ BİRİNCİSİ
+      <div class="award-pill">
+        <span class="trophy-dot"></span>
+        <span>EN İYİ TAKIM RUHU ÖDÜLÜ BİRİNCİSİ</span>
       </div>
     </div>
   </div>
 
-  <!-- Alt İkili: Selçuk Bayraktar Ödül Takdimi + Haluk Bayraktar Brifingi -->
-  <div class="burkut-award-duo">
-    <div style="display: flex; flex-direction: column;">
-      <div class="media-box" style="height: 100%;">
-        <img style="object-position: center 30%;" src="file:///Users/wildgenie/Projects/btu-matro/public/media/galeri-burkut-calisma.jpg" alt="Ödül Töreni">
+  <!-- Alt İkili: Selçuk Bayraktar Ödül Töreni (Tam boy, dev ödül çeki ve kupa net odakta!) + Haluk Bayraktar Brifingi -->
+  <div class="burkut-lower">
+    <div class="media-unit">
+      <div class="img-box">
+        <img style="object-position: center 40%; transform: scale(1.05);" src="file:///Users/wildgenie/Projects/btu-matro/public/media/galeri-burkut-calisma.jpg" alt="Ödül Töreni">
       </div>
-      <div class="caption-line">
+      <div class="caption-bar">
         <span class="caption-tag">ZİRVE ÖDÜLÜ</span>
-        <span class="caption-txt">Selçuk Bayraktar'dan TEKNOFEST Uçan Araba En İyi Takım Ruhu Ödülü takdimi</span>
+        <span class="caption-text">Selçuk Bayraktar'dan TEKNOFEST Uçan Araba En İyi Takım Ruhu Ödülü ve 75.000 TL ödül takdimi</span>
       </div>
     </div>
-    <div style="display: flex; flex-direction: column;">
-      <div class="media-box" style="height: 100%;">
-        <img style="object-position: center 25%;" src="file:///Users/wildgenie/Projects/btu-matro/public/media/galeri-bayraktar-ucan-araba.jpg" alt="Haluk Bayraktar">
+    <div class="media-unit">
+      <div class="img-box">
+        <img style="object-position: center 25%;" src="file:///Users/wildgenie/Projects/btu-matro/public/media/galeri-bayraktar-ucan-araba.jpg" alt="Haluk Bayraktar Brifingi">
       </div>
-      <div class="caption-line">
+      <div class="caption-bar">
         <span class="caption-tag">TEKNİK BRİFİNG</span>
-        <span class="caption-txt">Baykar Genel Müdürü Haluk Bayraktar'a otonomi algoritmaları sunumu</span>
+        <span class="caption-text">Baykar Genel Müdürü Haluk Bayraktar'a simülasyon algoritmaları sunumu</span>
       </div>
     </div>
   </div>

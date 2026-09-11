@@ -1,260 +1,65 @@
 <!DOCTYPE html>
-<html lang="tr">
-<head>
-<meta charset="utf-8">
-<style>
-
-@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,600;0,700;0,800;0,900;1,800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&display=swap');
+<html lang="tr"><head><meta charset="utf-8"><style>
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,700;0,800;0,900;1,800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&display=swap');
 
 @page { size: 210mm 297mm; margin: 0; }
 * { box-sizing: border-box; margin: 0; padding: 0; }
 :root {
-  --c-bg: #FFFFFF;
-  --c-ink: #0B1012;
-  --c-text-muted: #475569;
-  --c-text-subtle: #64748B;
-  --c-border: #CBD5E1;
-  --c-volt: #0D9488;
-  --c-volt-light: #F0FDFA;
-  --c-medal: #D97706;
-  --c-medal-light: #FEF3C7;
-  --c-surface: #F8FAFC;
-  --font-display: 'Barlow', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-mono: 'JetBrains Mono', monospace;
+  --c-bg: #FFFFFF; --c-ink: #0B1012; --c-text-muted: #475569; --c-text-subtle: #64748B;
+  --c-border: #CBD5E1; --c-volt: #0D9488; --c-volt-light: #F0FDFA; --c-medal: #D97706;
+  --c-medal-light: #FEF3C7; --c-surface: #F8FAFC;
+  --font-display: 'Barlow', sans-serif; --font-sans: 'Inter', sans-serif; --font-mono: 'JetBrains Mono', monospace;
 }
 
 body.page-sheet {
-  width: 1240px;
-  height: 1754px;
-  background-color: var(--c-bg);
-  color: var(--c-ink);
-  font-family: var(--font-sans);
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 44px 56px 36px 56px;
-  -webkit-font-smoothing: antialiased;
+  width: 1240px; height: 1754px; background: var(--c-bg); color: var(--c-ink); font-family: var(--font-sans);
+  display: flex; flex-direction: column; justify-content: space-between; padding: 44px 56px 36px 56px;
+  position: relative; overflow: hidden; -webkit-font-smoothing: antialiased;
 }
 
-/* Header */
 .page-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 2px solid var(--c-ink);
-  padding-bottom: 12px;
-  margin-bottom: 16px;
+  display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--c-ink);
+  padding-bottom: 12px; margin-bottom: 16px; flex-shrink: 0;
 }
 .brand-left { display: flex; align-items: center; gap: 14px; }
 .header-logo { height: 36px; width: auto; object-fit: contain; }
-.univ-name { font-family: var(--font-display); font-size: 15px; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; color: var(--c-ink); line-height: 1.1; }
-.dept-name { font-family: var(--font-sans); font-size: 11px; font-weight: 500; color: var(--c-text-muted); }
+.dept-name { font-size: 11px; font-weight: 500; color: var(--c-text-muted); }
 .header-meta-right { display: flex; align-items: center; gap: 14px; }
 .section-tag { font-family: var(--font-mono); font-size: 11px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--c-volt); }
-.page-index-badge { font-family: var(--font-mono); font-size: 11px; font-weight: 700; color: var(--c-ink); border: 1.5px solid var(--c-ink); padding: 2px 7px; border-radius: 2px; }
+.page-index-badge { font-family: var(--font-mono); font-size: 11px; font-weight: 700; border: 1.5px solid var(--c-ink); padding: 2px 7px; border-radius: 2px; }
 
-/* Footer */
 .page-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-top: 1.5px solid var(--c-ink);
-  padding-top: 10px;
-  font-family: var(--font-mono);
-  font-size: 11px;
-  color: var(--c-text-subtle);
-  letter-spacing: 0.05em;
+  display: flex; justify-content: space-between; align-items: center; border-top: 1.5px solid var(--c-ink);
+  padding-top: 10px; font-family: var(--font-mono); font-size: 11px; color: var(--c-text-subtle); flex-shrink: 0;
 }
-.page-footer .footer-site { color: var(--c-ink); font-weight: 700; }
-.page-footer .page-number { font-weight: 800; color: var(--c-ink); }
+.footer-site { color: var(--c-ink); font-weight: 700; }
+.page-number { font-weight: 800; color: var(--c-ink); }
 
-/* Tipografi */
-.eyebrow {
-  font-family: var(--font-mono);
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: var(--c-volt);
-}
-.headline {
-  font-family: var(--font-display);
-  font-size: 44px;
-  font-weight: 900;
-  line-height: 0.98;
-  letter-spacing: -0.03em;
-  text-transform: uppercase;
-  color: var(--c-ink);
-  margin-top: 3px;
-  margin-bottom: 5px;
-}
-.lead-text {
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 1.45;
-  color: #334155;
-}
-
-/* Görsel Çerçevesi & Sıfır Üst Yazı */
-.media-unit {
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-}
-.img-box {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  overflow: hidden;
-  background-color: #F8FAFC;
-  border-radius: 4px;
-  border: 1px solid var(--c-border);
-}
-.img-box img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.caption-bar {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding-top: 6px;
-  font-family: var(--font-sans);
-  line-height: 1.25;
-}
+.media-unit { display: flex; flex-direction: column; height: 100%; min-height: 0; overflow: hidden; }
+.img-box { width: 100%; flex: 1; min-height: 0; position: relative; overflow: hidden; background-color: #F8FAFC; border-radius: 4px; border: 1px solid var(--c-border); }
+.img-box img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.caption-bar { display: flex; align-items: center; gap: 8px; padding-top: 6px; font-family: var(--font-sans); line-height: 1.25; flex-shrink: 0; }
 .caption-tag {
-  font-family: var(--font-mono);
-  font-size: 9px;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  background-color: var(--c-ink);
-  padding: 2px 6px;
-  border-radius: 2px;
-  white-space: nowrap;
+  font-family: var(--font-mono); font-size: 9px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase;
+  color: #FFFFFF; background-color: var(--c-ink); padding: 2px 6px; border-radius: 2px; white-space: nowrap;
 }
-.caption-text {
-  font-size: 11px;
-  font-weight: 500;
-  color: #475569;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
+.caption-text { font-size: 11px; font-weight: 500; color: #475569; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 
-/* Bullet & Teknik Kutu */
-.bullet-list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-.bullet-list li {
-  display: flex;
-  align-items: flex-start;
-  gap: 8px;
-  font-size: 13.5px;
-  font-weight: 600;
-  color: var(--c-ink);
-  line-height: 1.35;
-}
-.bullet-list li::before {
-  content: "■";
-  color: var(--c-volt);
-  font-size: 9px;
-  margin-top: 3px;
-}
+.bullet-list { list-style: none; display: flex; flex-direction: column; gap: 8px; margin-top: 8px; }
+.bullet-list li { display: flex; align-items: flex-start; gap: 8px; font-size: 13.5px; font-weight: 600; color: var(--c-ink); }
+.bullet-list li::before { content: '■'; color: var(--c-volt); font-size: 9px; margin-top: 3px; }
 
-.tech-spec-box {
-  background: var(--c-surface);
-  border: 1.5px solid var(--c-border);
-  border-radius: 4px;
-  padding: 16px 18px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.box-title {
-  font-family: var(--font-mono);
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--c-ink);
-  border-bottom: 1.5px solid var(--c-ink);
-  padding-bottom: 6px;
-  display: flex;
-  justify-content: space-between;
-}
-.spec-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px 14px;
-}
-.spec-item {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-}
-.spec-label {
-  font-family: var(--font-mono);
-  font-size: 9px;
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--c-text-subtle);
-}
-.spec-value {
-  font-size: 12.5px;
-  font-weight: 600;
-  color: var(--c-ink);
-}
+.tech-box { background: var(--c-surface); border: 1.5px solid var(--c-border); border-radius: 4px; padding: 16px; display: flex; flex-direction: column; justify-content: space-between; }
 .award-pill {
-  background: var(--c-medal-light);
-  border: 1px solid #FCD34D;
-  color: #92400E;
-  padding: 7px 12px;
-  border-radius: 3px;
-  font-size: 11.5px;
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  background: var(--c-medal-light); border: 1px solid #FCD34D; color: #92400E; padding: 7px 12px;
+  border-radius: 3px; font-size: 11.5px; font-weight: 700; display: inline-flex; align-items: center; gap: 8px;
 }
-.award-pill .trophy-dot {
-  width: 6px;
-  height: 6px;
-  background: var(--c-medal);
-  border-radius: 50%;
-}
+.trophy-dot { width: 6px; height: 6px; background: var(--c-medal); border-radius: 50%; }
 
-.zemheri-hero {
-  width: 100%;
-  height: 540px;
-  margin-bottom: 16px;
-}
-.zemheri-mid {
-  display: grid;
-  grid-template-columns: 1.25fr 1fr;
-  gap: 24px;
-  margin-bottom: 16px;
-}
-.zemheri-lower {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  height: 360px;
-  gap: 16px;
-  margin-bottom: 4px;
-}
-</style>
-</head>
+.zemheri-hero { width: 100%; height: 530px; margin-bottom: 20px; flex-shrink: 0; }
+.zemheri-mid { display: grid; grid-template-columns: 1.25fr 1fr; gap: 24px; margin-bottom: 20px; flex-shrink: 0; }
+.zemheri-lower { display: grid; grid-template-columns: 0.9fr 1.1fr; grid-template-rows: 360px; height: 360px; gap: 20px; margin-bottom: 4px; flex-shrink: 0; }
+</style></head>
 <body class="page-sheet">
   <header class="page-header">
     <div class="brand-left">
@@ -267,13 +72,13 @@ body.page-sheet {
     </div>
   </header>
 
-  <div style="display: flex; flex-direction: column;">
-    <div class="media-box zemheri-hero">
-      <img style="object-position: center 20%;" src="file:///Users/wildgenie/Projects/btu-matro/public/media/galeri-zemheri-takim.jpg" alt="ZEMHERİ Ekibi">
+  <div class="media-unit zemheri-hero">
+    <div class="img-box">
+      <img style="object-position: center 25%;" src="file:///Users/wildgenie/Projects/btu-matro/public/media/galeri-zemheri-takim.jpg" alt="ZEMHERİ Ekibi">
     </div>
-    <div class="caption-line">
+    <div class="caption-bar">
       <span class="caption-tag">FİNALİST TAKIM</span>
-      <span class="caption-txt">ZEMHERİ sualtı roketi ekibimiz ödül töreni ve yarışma alanında prototip roketleriyle</span>
+      <span class="caption-text">ZEMHERİ sualtı roketi ekibimiz yarışma çadırında prototip roketleriyle</span>
     </div>
   </div>
 
@@ -282,41 +87,47 @@ body.page-sheet {
       <div style="font-family: var(--font-mono); font-size: 11px; font-weight: 700; color: var(--c-volt); margin-bottom: 4px;">SUALTI ROKETİ VE SAVUNMA SİSTEMLERİ</div>
       <h1 style="font-family: var(--font-display); font-size: 46px; font-weight: 900; line-height: 0.95; text-transform: uppercase;">ZEMHERİ & SARA</h1>
       <p style="font-size: 14px; line-height: 1.52; color: #475569; margin-top: 8px;">
-        <strong>ZEMHERİ</strong>, deniz tabanında konuşlu bir fırlatma kapsülünden ateşlenerek su yüzeyini aşıp havada hedefine yönelen yenilikçi sualtı roketi projemizdir. Yüksek hidrostatik basınca dayanıklı gövdesi su yüzeyinde güvenli ateşleme sağlar.
+        <strong>ZEMHERİ</strong>, deniz tabanında konuşlu bir fırlatma kapsülünden ateşlenerek su yüzeyini aşıp havada hedefine yönelen yenilikçi sualtı roketi projemizdir. Yüksek basınca dayanıklı gövdesi su yüzeyinde güvenli ateşleme sağlar.
       </p>
+      <ul class="bullet-list">
+        <li>Sualtından fırlatılmaya uygun çift kademeli kapsül mekanizması</li>
+        <li>Basınç sensörü tetiklemeli elektronik ateşleme ve telemetri sistemi</li>
+      </ul>
     </div>
 
-    <div style="background: var(--c-surface); border: 1.5px solid var(--c-border); border-radius: 4px; padding: 16px; display: flex; flex-direction: column; justify-content: space-between;">
+    <div class="tech-box">
       <div style="font-family: var(--font-mono); font-size: 11px; font-weight: 700; border-bottom: 1.5px solid var(--c-ink); padding-bottom: 4px;">ROKET PARAMETRELERİ</div>
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 10px 0;">
         <div><span style="font-family: var(--font-mono); font-size: 9px; color: var(--c-text-subtle);">FIRTLATMA</span><div style="font-size: 13px; font-weight: 700;">15 m Su Derinliği</div></div>
         <div><span style="font-family: var(--font-mono); font-size: 9px; color: var(--c-text-subtle);">İTKİ</span><div style="font-size: 13px; font-weight: 700;">Katı Yakıt Motoru</div></div>
         <div><span style="font-family: var(--font-mono); font-size: 9px; color: var(--c-text-subtle);">AVİYONİK</span><div style="font-size: 13px; font-weight: 700;">STM32 + 6-IMU</div></div>
         <div><span style="font-family: var(--font-mono); font-size: 9px; color: var(--c-text-subtle);">KURTARMA</span><div style="font-size: 13px; font-weight: 700;">Çift Paraşüt Sistemi</div></div>
       </div>
-      <div style="background: var(--c-medal-light); border: 1px solid #FCD34D; padding: 6px 10px; border-radius: 3px; font-size: 11px; font-weight: 700; color: #92400E;">
-        ★ TEKNOFEST 2026 MAVİ VATAN FİNALİSTİ
+      <div class="award-pill">
+        <span class="trophy-dot"></span>
+        <span>TEKNOFEST 2026 MAVİ VATAN FİNALİSTİ</span>
       </div>
     </div>
   </div>
 
+  <!-- Alt İkili: SARA Roket Fırlatma Kapsülü + Haluk Bayraktar'ın Roketi İncelediği An (Kapak görseli ve sınıf karesi tamamen çıkarıldı!) -->
   <div class="zemheri-lower">
-    <div style="display: flex; flex-direction: column;">
-      <div class="media-box" style="height: 100%;">
-        <img style="object-position: center center;" src="file:///Users/wildgenie/Projects/btu-matro/public/media/galeri-zemheri-sara.jpg" alt="SARA Kapsülü">
-      </div>
-      <div class="caption-line">
-        <span class="caption-tag">ATIŞ KAPSÜLÜ</span>
-        <span class="caption-txt">ZEMHERİ'nin SARA fırlatma kapsülü ve roket burun konisi testleri</span>
-      </div>
-    </div>
-    <div style="display: flex; flex-direction: column;">
-      <div class="media-box" style="height: 100%;">
-        <img style="object-position: center center;" src="file:///Users/wildgenie/Projects/btu-matro/public/media/video-zemheri-tanitim.jpg" alt="Atölye Montajı">
+    <div class="media-unit">
+      <div class="img-box">
+        <img style="object-position: center 30%;" src="file:///Users/wildgenie/Projects/btu-matro/public/media/galeri-zemheri-sara.jpg" alt="SARA Kapsülü">
       </div>
       <div class="caption-bar">
-        <span class="caption-tag">ATÖLYE MONTAJI</span>
-        <span class="caption-txt">Sualtı fırlatma tüpü sızdırmazlık contaları ve ateşleme mekanizması</span>
+        <span class="caption-tag">ATIŞ KAPSÜLÜ</span>
+        <span class="caption-text">ZEMHERİ'nin SARA sualtı roket fırlatma tüpü ve burun konisi testleri</span>
+      </div>
+    </div>
+    <div class="media-unit">
+      <div class="img-box">
+        <img style="object-position: center center;" src="file:///Users/wildgenie/Projects/btu-matro/public/media/takim-zemheri.jpg" alt="Haluk Bayraktar ZEMHERİ">
+      </div>
+      <div class="caption-bar">
+        <span class="caption-tag">JÜRİ İNCELEMESİ</span>
+        <span class="caption-text">Haluk Bayraktar'a ZEMHERİ sualtı roketi ve fırlatma istasyonu teknik sunumu</span>
       </div>
     </div>
   </div>
