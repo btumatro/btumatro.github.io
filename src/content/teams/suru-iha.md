@@ -9,6 +9,8 @@ gallery:
   - "/media/galeri-matris-saha.jpg"
   - "/media/galeri-matris-havelsan-stand.jpg"
   - "/media/galeri-matris-saha-ekip.jpg"
+  - "/media/galeri-matris-laptop-drone.jpg"
+  - "/media/galeri-matris-test-ucus.jpg"
   - "/media/webmedya-suru-iha-35.jpg"
   - "/media/galeri-matris-test-alani.jpg"
   - "/media/galeri-matris-dron-filo.jpg"

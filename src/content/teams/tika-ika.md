@@ -8,6 +8,7 @@ image: "/media/takim-luna-ika.jpg"
 gallery:
   - "/media/galeri-matrover-2025.jpg"
   - "/media/galeri-matrover-teknofest-cadir.jpg"
+  - "/media/galeri-matrover-teknofest-cadir-2.jpg"
   - "/media/galeri-matrover-parkur-ekip.jpg"
   - "/media/galeri-matrover-tarla-robot.jpg"
   - "/media/galeri-tika-tarimsal-ika.jpg"

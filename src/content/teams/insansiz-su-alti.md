@@ -8,6 +8,7 @@ image: "/media/takim-iss-sualti-araci.jpg"
 gallery:
   - "/media/takim-iss-ekip.jpg"
   - "/media/galeri-prusa-detay.jpg"
+  - "/media/galeri-iss-liman-ekip.jpg"
   - "/media/galeri-prusa-teknofest.jpg"
   - "/media/galeri-iss-auv-havuz.jpg"
   - "/media/galeri-iss-fuar-standi.jpg"

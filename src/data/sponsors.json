@@ -66,6 +66,33 @@
       "instagram": ""
     },
     {
+      "name": "YUNUSEMRE GM",
+      "package": "Altın",
+      "type": "Kurumsal Destek",
+      "amount": "",
+      "logo": "/media/logolar/yunusemre-gm.png",
+      "website": "",
+      "instagram": ""
+    },
+    {
+      "name": "WAGO",
+      "package": "Gümüş",
+      "type": "Hizmet + Malzeme",
+      "amount": "",
+      "logo": "/media/logolar/wago.png",
+      "website": "",
+      "instagram": ""
+    },
+    {
+      "name": "PLEKSİ",
+      "package": "Gümüş",
+      "type": "Hizmet + Malzeme",
+      "amount": "",
+      "logo": "/media/logolar/pleksi.png",
+      "website": "",
+      "instagram": ""
+    },
+    {
       "name": "KAYRA YEMEK",
       "package": "Altın",
       "type": "Nakit",

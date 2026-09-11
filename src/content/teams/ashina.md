@@ -9,6 +9,7 @@ gallery:
   - "/media/takim-ashina.jpg"
   - "/media/galeri-ashina-bayraktar.jpg"
   - "/media/galeri-ashina-model-ucak-ekip.jpg"
+  - "/media/galeri-ashina-quad-detay.jpg"
   - "/media/galeri-ashina-tubitak-sahne.jpg"
   - "/media/galeri-ashina-saha.jpg"
   - "/media/galeri-ashina-kompozit-uretim.jpg"

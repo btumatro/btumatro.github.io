@@ -314,6 +314,18 @@
       ]
     },
     {
+      "file": "/media/galeri-ashina-quad-detay.jpg",
+      "title": "ASHİNA ekibimizin quadkopter detayı",
+      "group": "Galeri fotoğrafları",
+      "width": 927,
+      "height": 404,
+      "sizeKb": 44,
+      "note": "Kullanıldığı yer: ASHİNA (Galeri)",
+      "usedIn": [
+        "ASHİNA (Galeri)"
+      ]
+    },
+    {
       "file": "/media/galeri-ashina-model-ucak-ekip.jpg",
       "title": "ASHİNA ekibimiz sabit kanat model uçağıyla",
       "group": "Galeri fotoğrafları",
@@ -644,6 +656,30 @@
       ]
     },
     {
+      "file": "/media/galeri-matris-laptop-drone.jpg",
+      "title": "MATRİS ekibimiz drone ve laptopuyla",
+      "group": "Galeri fotoğrafları",
+      "width": 601,
+      "height": 435,
+      "sizeKb": 56,
+      "note": "Kullanıldığı yer: MATRİS (Galeri)",
+      "usedIn": [
+        "MATRİS (Galeri)"
+      ]
+    },
+    {
+      "file": "/media/galeri-matris-test-ucus.jpg",
+      "title": "MATRİS ekibimizin test uçuşu",
+      "group": "Galeri fotoğrafları",
+      "width": 615,
+      "height": 415,
+      "sizeKb": 56,
+      "note": "Kullanıldığı yer: MATRİS (Galeri)",
+      "usedIn": [
+        "MATRİS (Galeri)"
+      ]
+    },
+    {
       "file": "/media/galeri-matris-saha.jpg",
       "title": "Matris ekip",
       "group": "Galeri fotoğrafları",
@@ -682,6 +718,18 @@
       ]
     },
     {
+      "file": "/media/galeri-kupa-rafi.jpg",
+      "title": "Kupa rafımızdan bir kare",
+      "group": "Galeri fotoğrafları",
+      "width": 605,
+      "height": 295,
+      "sizeKb": 30,
+      "note": "Kullanıldığı yer: Etkinlikler, Seminerler ve Çalıştaylar (Faaliyet Galerisi)",
+      "usedIn": [
+        "Etkinlikler, Seminerler ve Çalıştaylar (Faaliyet Galerisi)"
+      ]
+    },
+    {
       "file": "/media/galeri-kampus-fuar-standi.jpg",
       "title": "Kampüs içi tanıtım standımızda ekibimiz",
       "group": "Galeri fotoğrafları",
@@ -692,6 +740,18 @@
       "usedIn": [
         "Etkinlikler, Seminerler ve Çalıştaylar (Faaliyet Galerisi)",
         "Site Galerisi (Etkinlik)"
+      ]
+    },
+    {
+      "file": "/media/galeri-kampus-atolye-standi.jpg",
+      "title": "Kampüs atölye tanıtım standımız",
+      "group": "Galeri fotoğrafları",
+      "width": 552,
+      "height": 345,
+      "sizeKb": 41,
+      "note": "Kullanıldığı yer: Etkinlikler, Seminerler ve Çalıştaylar (Faaliyet Galerisi)",
+      "usedIn": [
+        "Etkinlikler, Seminerler ve Çalıştaylar (Faaliyet Galerisi)"
       ]
     },
     {
@@ -718,6 +778,18 @@
       "usedIn": [
         "Etkinlikler, Seminerler ve Çalıştaylar (Faaliyet Galerisi)",
         "Site Galerisi (Etkinlik)"
+      ]
+    },
+    {
+      "file": "/media/galeri-matrover-teknofest-cadir-2.jpg",
+      "title": "MATROVER ekibimiz TEKNOFEST çadırında (2)",
+      "group": "Galeri fotoğrafları",
+      "width": 840,
+      "height": 493,
+      "sizeKb": 89,
+      "note": "Kullanıldığı yer: MATROVER & LUNA (Galeri)",
+      "usedIn": [
+        "MATROVER & LUNA (Galeri)"
       ]
     },
     {
@@ -827,6 +899,18 @@
       "width": 1303,
       "height": 674,
       "sizeKb": 112,
+      "note": "Kullanıldığı yer: İSS (Galeri)",
+      "usedIn": [
+        "İSS (Galeri)"
+      ]
+    },
+    {
+      "file": "/media/galeri-iss-liman-ekip.jpg",
+      "title": "İSS ekibimiz limanda araçla birlikte",
+      "group": "Galeri fotoğrafları",
+      "width": 820,
+      "height": 458,
+      "sizeKb": 71,
       "note": "Kullanıldığı yer: İSS (Galeri)",
       "usedIn": [
         "İSS (Galeri)"
@@ -1342,6 +1426,66 @@
       "usedIn": [
         "Etkinlikler, Seminerler ve Çalıştaylar (Faaliyet)",
         "Site Galerisi (Yarışma)"
+      ]
+    },
+    {
+      "file": "/media/basinda-gundembursa-nasa-space-apps.jpg",
+      "title": "Gündem Bursa haber küpürü — NASA Space Apps Challenge",
+      "group": "Haber görselleri",
+      "width": 636,
+      "height": 580,
+      "sizeKb": 76,
+      "note": "Kullanıldığı yer: Basında Biz",
+      "usedIn": [
+        "Basında Biz"
+      ]
+    },
+    {
+      "file": "/media/basinda-aa-uyumayan-atolyeler.jpg",
+      "title": "Anadolu Ajansı haber küpürü — 'Uyumayan atölyeler'",
+      "group": "Haber görselleri",
+      "width": 744,
+      "height": 577,
+      "sizeKb": 95,
+      "note": "Kullanıldığı yer: Basında Biz",
+      "usedIn": [
+        "Basında Biz"
+      ]
+    },
+    {
+      "file": "/media/basinda-milliyet-twizy-fransa.jpg",
+      "title": "Milliyet ve diğer basın küpürleri — Twizy Contest Fransa finali",
+      "group": "Haber görselleri",
+      "width": 733,
+      "height": 744,
+      "sizeKb": 111,
+      "note": "Kullanıldığı yer: Basında Biz",
+      "usedIn": [
+        "Basında Biz"
+      ]
+    },
+    {
+      "file": "/media/basinda-aa-elektrikli-arac.jpg",
+      "title": "Anadolu Ajansı haber küpürü — elektrikli araç tasarımları",
+      "group": "Haber görselleri",
+      "width": 819,
+      "height": 716,
+      "sizeKb": 120,
+      "note": "Kullanıldığı yer: Basında Biz",
+      "usedIn": [
+        "Basında Biz"
+      ]
+    },
+    {
+      "file": "/media/basinda-aa-egitim-robotu.jpg",
+      "title": "Anadolu Ajansı haber küpürü — eğitim robotu",
+      "group": "Haber görselleri",
+      "width": 941,
+      "height": 751,
+      "sizeKb": 111,
+      "note": "Kullanıldığı yer: Basında Biz",
+      "usedIn": [
+        "Basında Biz"
       ]
     },
     {
@@ -1912,6 +2056,42 @@
       "note": "Kullanıldığı yer: MAYFLY (Logo)",
       "usedIn": [
         "MAYFLY (Logo)"
+      ]
+    },
+    {
+      "file": "/media/logolar/yunusemre-gm.png",
+      "title": "Yunusemre GM",
+      "group": "Sponsor logoları",
+      "width": 700,
+      "height": 163,
+      "sizeKb": 47,
+      "note": "Kullanıldığı yer: YUNUSEMRE GM (Logo)",
+      "usedIn": [
+        "YUNUSEMRE GM (Logo)"
+      ]
+    },
+    {
+      "file": "/media/logolar/wago.png",
+      "title": "Wago",
+      "group": "Sponsor logoları",
+      "width": 402,
+      "height": 145,
+      "sizeKb": 12,
+      "note": "Kullanıldığı yer: WAGO (Logo)",
+      "usedIn": [
+        "WAGO (Logo)"
+      ]
+    },
+    {
+      "file": "/media/logolar/pleksi.png",
+      "title": "Pleksi",
+      "group": "Sponsor logoları",
+      "width": 297,
+      "height": 105,
+      "sizeKb": 13,
+      "note": "Kullanıldığı yer: PLEKSİ (Logo)",
+      "usedIn": [
+        "PLEKSİ (Logo)"
       ]
     },
     {

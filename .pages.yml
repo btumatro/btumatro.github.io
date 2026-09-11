@@ -167,6 +167,7 @@ content:
           - { name: headline, label: Haber başlığı, type: string, required: true }
           - { name: date, label: Tarih, type: date, required: true }
           - { name: url, label: Haber bağlantısı, type: string, required: true }
+          - { name: image, label: Haber görseli (opsiyonel), type: image }
 
   - name: achievements
     label: Başarılarımız

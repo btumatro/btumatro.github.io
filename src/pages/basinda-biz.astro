@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import PageHero from '../components/PageHero.astro';
 import Section from '../components/Section.astro';
 import basindaBiz from '../data/basinda-biz.json';
+import { media } from '../lib/utils';
 
 const dateFmt = new Intl.DateTimeFormat('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' });
 const items = [...basindaBiz.items].sort(
@@ -23,27 +24,38 @@ const items = [...basindaBiz.items].sort(
   <Section>
     <div class="space-y-3">
       {
-        items.map(({ outlet, headline, date, url: link }, i) => (
+        items.map(({ outlet, headline, date, url: link, image }, i) => (
           <a
             href={link}
             target="_blank"
             rel="noopener noreferrer"
-            class="card reveal flex flex-col gap-2 p-5 transition-colors hover:bg-white/5 sm:flex-row sm:items-center sm:justify-between sm:gap-4"
+            class="card reveal flex flex-col gap-4 overflow-hidden p-5 transition-colors hover:bg-white/5 sm:flex-row sm:items-center"
             data-delay={i * 45}
           >
-            <div class="flex flex-col gap-1.5 sm:flex-row sm:items-center sm:gap-3">
-              <span class="w-fit rounded-md bg-volt-400/10 px-2.5 py-1 font-mono text-[0.65rem] tracking-wider text-volt-300 uppercase">
-                {outlet}
-              </span>
-              <h2 class="font-semibold text-mist-100">{headline}</h2>
-            </div>
-            <div class="flex shrink-0 items-center gap-2 text-mist-500">
-              <time datetime={date} class="font-mono text-[0.7rem]">
-                {dateFmt.format(new Date(date))}
-              </time>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M7 17 17 7M7 7h10v10" />
-              </svg>
+            {image && (
+              <img
+                src={media(image)!}
+                alt={headline}
+                loading="lazy"
+                decoding="async"
+                class="h-32 w-full shrink-0 rounded-lg bg-white/4 object-cover sm:h-20 sm:w-32"
+              />
+            )}
+            <div class="flex flex-1 flex-col gap-2 sm:flex-row sm:items-center sm:justify-between sm:gap-4">
+              <div class="flex flex-col gap-1.5 sm:flex-row sm:items-center sm:gap-3">
+                <span class="w-fit rounded-md bg-volt-400/10 px-2.5 py-1 font-mono text-[0.65rem] tracking-wider text-volt-300 uppercase">
+                  {outlet}
+                </span>
+                <h2 class="font-semibold text-mist-100">{headline}</h2>
+              </div>
+              <div class="flex shrink-0 items-center gap-2 text-mist-500">
+                <time datetime={date} class="font-mono text-[0.7rem]">
+                  {dateFmt.format(new Date(date))}
+                </time>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M7 17 17 7M7 7h10v10" />
+                </svg>
+              </div>
             </div>
           </a>
         ))

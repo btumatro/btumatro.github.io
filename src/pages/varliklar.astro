@@ -15,6 +15,7 @@ import Section from '../components/Section.astro';
 import assets from '../data/assets.json';
 import sponsors from '../data/sponsors.json';
 import gallery from '../data/gallery.json';
+import basindaBiz from '../data/basinda-biz.json';
 import { media, url } from '../lib/utils';
 
 const [teams, activities, haberler] = await Promise.all([
@@ -51,6 +52,7 @@ for (const s of sponsors.current ?? []) {
   note((s as { logo?: string }).logo ?? '', s.name);
   note((s as { image?: string }).image ?? '', s.name);
 }
+for (const b of basindaBiz.items) note((b as { image?: string }).image ?? '', 'Basında Biz');
 
 /** assets.json dışında kalmış dosya var mı? Liste sessizce eskimesin diye. */
 const known = new Set(assets.assets.map((a) => a.file));

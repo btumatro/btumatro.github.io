@@ -5,31 +5,36 @@
       "outlet": "Gündem Bursa",
       "headline": "NASA Space Apps Challenge Bursa'da: Teknoloji ve Uzay Tutkunları Bir Araya Geldi",
       "date": "2024-10-09",
-      "url": "https://www.gundembursa.com/haber/nasa-space-apps-challenge-bursa-da-teknoloji-ve-uzay-tutkunlari-bir-araya-geldi-304502.html"
+      "url": "https://www.gundembursa.com/haber/nasa-space-apps-challenge-bursa-da-teknoloji-ve-uzay-tutkunlari-bir-araya-geldi-304502.html",
+      "image": "/media/basinda-gundembursa-nasa-space-apps.jpg"
     },
     {
       "outlet": "Anadolu Ajansı",
       "headline": "'Uyumayan atölyeler'de beyin fırtınası yaparak proje üretiyorlar",
       "date": "2021-10-21",
-      "url": "https://www.aa.com.tr/tr/bilim-teknoloji/uyumayan-atolyelerde-beyin-firtinasi-yaparak-proje-uretiyorlar/2398409"
+      "url": "https://www.aa.com.tr/tr/bilim-teknoloji/uyumayan-atolyelerde-beyin-firtinasi-yaparak-proje-uretiyorlar/2398409",
+      "image": "/media/basinda-aa-uyumayan-atolyeler.jpg"
     },
     {
       "outlet": "Milliyet",
       "headline": "Mühendis adayları Fransa'da yarışacak",
       "date": "2020-11-13",
-      "url": "https://www.milliyet.com.tr/teknoloji/muhendis-adaylari-fransada-yarisacak-6353823"
+      "url": "https://www.milliyet.com.tr/teknoloji/muhendis-adaylari-fransada-yarisacak-6353823",
+      "image": "/media/basinda-milliyet-twizy-fransa.jpg"
     },
     {
       "outlet": "Anadolu Ajansı",
       "headline": "Mühendis adaylarından iki kişilik elektrikli araç için 'faydalı' mobil tasarımlar",
       "date": "2020-10-21",
-      "url": "https://www.aa.com.tr/tr/bilim-teknoloji/muhendis-adaylarindan-iki-kisilik-elektrikli-arac-icin-faydali-mobil-tasarimlar/2013672"
+      "url": "https://www.aa.com.tr/tr/bilim-teknoloji/muhendis-adaylarindan-iki-kisilik-elektrikli-arac-icin-faydali-mobil-tasarimlar/2013672",
+      "image": "/media/basinda-aa-elektrikli-arac.jpg"
     },
     {
       "outlet": "Bursa Teknik Üniversitesi",
       "headline": "BTÜ Öğrencileri Lise ve Ortaokullara Eğitim Robotuyla 'Kodlama' Öğretecek",
       "date": "2019-12-05",
-      "url": "https://btu.edu.tr/tr/haber/detay/4597/bt%C3%BC-%C3%B6%C4%9Frencileri-lise-ve-ortaokullara-e%C4%9Fitim-robotuyla-kodlama-%C3%B6%C4%9Fretecek"
+      "url": "https://btu.edu.tr/tr/haber/detay/4597/bt%C3%BC-%C3%B6%C4%9Frencileri-lise-ve-ortaokullara-e%C4%9Fitim-robotuyla-kodlama-%C3%B6%C4%9Fretecek",
+      "image": "/media/basinda-aa-egitim-robotu.jpg"
     }
   ]
 }
