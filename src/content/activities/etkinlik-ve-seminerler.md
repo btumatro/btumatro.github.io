@@ -14,7 +14,6 @@ gallery:
   - "/media/galeri-matro-kupa-vitrini.jpg"
   - "/media/galeri-iss-auv-sergi.jpg"
   - "/media/odul-girisimcilik.jpg"
-  - "/media/teknofest-standi.jpg"
   - "/media/topluluk-ekip-selfie.jpg"
   - "/media/galeri-2025-yil-ozeti.jpg"
   - "/media/galeri-matro-teknofest-2020.jpg"

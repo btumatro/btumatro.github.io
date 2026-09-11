@@ -14,7 +14,6 @@ gallery:
   - "/media/webmedya-suru-iha-35.jpg"
   - "/media/galeri-matris-test-alani.jpg"
   - "/media/galeri-matris-dron-filo.jpg"
-  - "/media/takim-matris-iha.jpg"
 badge: "2026 Finalisti"
 instagram: "btu_matris"
 aliases:

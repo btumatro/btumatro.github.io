@@ -4,7 +4,7 @@ type: Eğitim Kampı
 date: 2025-11-13
 endDate: "2026-01-09"
 order: 1
-image: "/media/ekip-kampus.jpg"
+image: "/media/topluluk-ekip-selfie.jpg"
 stats:
   - label: Ders Saati
     value: "32"

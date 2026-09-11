@@ -52,14 +52,9 @@
       "category": "Yarışma"
     },
     {
-      "image": "/media/galeri-pusula-sahne-ekip.jpg",
+      "image": "/media/takim-sanayide-dijital.jpg",
       "caption": "PUSULA ekibimiz yarışma sahnesinde",
       "category": "Yarışma"
-    },
-    {
-      "image": "/media/galeri-tusas-gezisi.jpg",
-      "caption": "TUSAŞ teknik gezimiz",
-      "category": "Teknik Gezi"
     },
     {
       "image": "/media/galeri-tubitak-mam-gezisi.jpg",
@@ -197,7 +192,7 @@
       "category": "Etkinlik"
     },
     {
-      "image": "/media/galeri-hktm-gezisi.jpg",
+      "image": "/media/galeri-hktm-ekip.jpg",
       "caption": "HKTM teknik gezimizden bir kare",
       "category": "Teknik Gezi"
     },
@@ -332,7 +327,7 @@
       "category": "Atölye"
     },
     {
-      "image": "/media/takim-matris-iha.jpg",
+      "image": "/media/webmedya-suru-iha-35.jpg",
       "caption": "MATRİS sürü İHA sistemimiz",
       "category": "Atölye"
     },
@@ -357,18 +352,8 @@
       "category": "Teknik Gezi"
     },
     {
-      "image": "/media/teknofest-standi.jpg",
-      "caption": "TEKNOFEST alanındaki standımız",
-      "category": "Etkinlik"
-    },
-    {
       "image": "/media/fuar-standi.jpg",
       "caption": "Fuar standımızda ziyaretçilerimizle",
-      "category": "Etkinlik"
-    },
-    {
-      "image": "/media/ekip-kampus.jpg",
-      "caption": "Kampüste topluluk üyelerimiz",
       "category": "Etkinlik"
     },
     {

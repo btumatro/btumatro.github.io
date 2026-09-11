@@ -202,16 +202,6 @@
       ]
     },
     {
-      "file": "/media/takim-luna.jpg",
-      "title": "Luna",
-      "group": "Takım kapak görselleri",
-      "width": 367,
-      "height": 275,
-      "sizeKb": 27,
-      "note": "",
-      "usedIn": []
-    },
-    {
       "file": "/media/takim-matris-2026.jpg",
       "title": "Matris 2026",
       "group": "Takım kapak görselleri",
@@ -221,19 +211,6 @@
       "note": "Kullanıldığı yer: MATRİS (Kapak)",
       "usedIn": [
         "MATRİS (Kapak)"
-      ]
-    },
-    {
-      "file": "/media/takim-matris-iha.jpg",
-      "title": "MATRİS sürü İHA sistemimiz",
-      "group": "Takım kapak görselleri",
-      "width": 670,
-      "height": 377,
-      "sizeKb": 39,
-      "note": "Kullanıldığı yer: MATRİS (Galeri), Site Galerisi (Atölye)",
-      "usedIn": [
-        "MATRİS (Galeri)",
-        "Site Galerisi (Atölye)"
       ]
     },
     {
@@ -256,9 +233,10 @@
       "width": 720,
       "height": 411,
       "sizeKb": 49,
-      "note": "Kullanıldığı yer: SANAYİDE DİJİTAL TEKNOLOJİLER (Kapak)",
+      "note": "Kullanıldığı yer: SANAYİDE DİJİTAL TEKNOLOJİLER (Kapak), Site Galerisi (Yarışma)",
       "usedIn": [
-        "SANAYİDE DİJİTAL TEKNOLOJİLER (Kapak)"
+        "SANAYİDE DİJİTAL TEKNOLOJİLER (Kapak)",
+        "Site Galerisi (Yarışma)"
       ]
     },
     {
@@ -434,46 +412,11 @@
       "width": 1200,
       "height": 1600,
       "sizeKb": 208,
-      "note": "Kullanıldığı yer: Teoriden sahaya: HKTM teknik g... (Haber Galerisi)",
+      "note": "Kullanıldığı yer: Teoriden sahaya: HKTM teknik g... (Haber Galerisi), Teknik Geziler ve Vizyon Programları (Faaliyet Galerisi), Site Galerisi (Teknik Gezi)",
       "usedIn": [
-        "Teoriden sahaya: HKTM teknik g... (Haber Galerisi)"
-      ]
-    },
-    {
-      "file": "/media/galeri-hktm-gezisi.jpg",
-      "title": "HKTM teknik gezimizden bir kare",
-      "group": "Galeri fotoğrafları",
-      "width": 1200,
-      "height": 900,
-      "sizeKb": 141,
-      "note": "Kullanıldığı yer: Teknik Geziler ve Vizyon Programları (Faaliyet Galerisi), Site Galerisi (Teknik Gezi)",
-      "usedIn": [
+        "Teoriden sahaya: HKTM teknik g... (Haber Galerisi)",
         "Teknik Geziler ve Vizyon Programları (Faaliyet Galerisi)",
         "Site Galerisi (Teknik Gezi)"
-      ]
-    },
-    {
-      "file": "/media/galeri-hktm-grup.jpg",
-      "title": "Hktm grup",
-      "group": "Galeri fotoğrafları",
-      "width": 1200,
-      "height": 900,
-      "sizeKb": 148,
-      "note": "Kullanıldığı yer: Teoriden sahaya: HKTM teknik g... (Haber Galerisi)",
-      "usedIn": [
-        "Teoriden sahaya: HKTM teknik g... (Haber Galerisi)"
-      ]
-    },
-    {
-      "file": "/media/galeri-hktm-sunum.jpg",
-      "title": "Hktm sunum",
-      "group": "Galeri fotoğrafları",
-      "width": 1200,
-      "height": 900,
-      "sizeKb": 141,
-      "note": "Kullanıldığı yer: Teoriden sahaya: HKTM teknik g... (Haber Galerisi)",
-      "usedIn": [
-        "Teoriden sahaya: HKTM teknik g... (Haber Galerisi)"
       ]
     },
     {
@@ -1250,19 +1193,6 @@
       ]
     },
     {
-      "file": "/media/ekip-kampus.jpg",
-      "title": "Kampüste topluluk üyelerimiz",
-      "group": "Faaliyet fotoğrafları",
-      "width": 753,
-      "height": 566,
-      "sizeKb": 76,
-      "note": "Kullanıldığı yer: Eğitim Kampları (Faaliyet), Site Galerisi (Etkinlik)",
-      "usedIn": [
-        "Eğitim Kampları (Faaliyet)",
-        "Site Galerisi (Etkinlik)"
-      ]
-    },
-    {
       "file": "/media/etkinlik-alper-gezeravci.jpg",
       "title": "İlk Türk astronot Alper Gezeravcı ve BTÜ Rektörü Prof. Dr. Naci Çağlar atölyemizde",
       "group": "Faaliyet fotoğrafları",
@@ -1326,18 +1256,6 @@
       ]
     },
     {
-      "file": "/media/galeri-tusas-gezisi.jpg",
-      "title": "TUSAŞ teknik gezimiz",
-      "group": "Faaliyet fotoğrafları",
-      "width": 742,
-      "height": 664,
-      "sizeKb": 92,
-      "note": "Kullanıldığı yer: Teknik Geziler ve Vizyon Programları (Faaliyet)",
-      "usedIn": [
-        "Teknik Geziler ve Vizyon Programları (Faaliyet)"
-      ]
-    },
-    {
       "file": "/media/galeri-tubitak-mam-gezisi.jpg",
       "title": "TÜBİTAK Marmara Araştırma Merkezi gezimiz",
       "group": "Faaliyet fotoğrafları",
@@ -1353,26 +1271,13 @@
       "file": "/media/gezi-turkish-technic.jpg",
       "title": "Turkish Technic teknik gezimiz",
       "group": "Faaliyet fotoğrafları",
-      "width": 357,
-      "height": 320,
-      "sizeKb": 29,
+      "width": 742,
+      "height": 664,
+      "sizeKb": 93,
       "note": "Kullanıldığı yer: Teknik Geziler ve Vizyon Programları (Faaliyet Galerisi), Site Galerisi (Teknik Gezi)",
       "usedIn": [
         "Teknik Geziler ve Vizyon Programları (Faaliyet Galerisi)",
         "Site Galerisi (Teknik Gezi)"
-      ]
-    },
-    {
-      "file": "/media/teknofest-standi.jpg",
-      "title": "TEKNOFEST alanındaki MATRO standımız",
-      "group": "Faaliyet fotoğrafları",
-      "width": 580,
-      "height": 362,
-      "sizeKb": 44,
-      "note": "Kullanıldığı yer: Etkinlikler, Seminerler ve Çalıştaylar (Faaliyet Galerisi), Site Galerisi (Etkinlik)",
-      "usedIn": [
-        "Etkinlikler, Seminerler ve Çalıştaylar (Faaliyet Galerisi)",
-        "Site Galerisi (Etkinlik)"
       ]
     },
     {
@@ -1703,9 +1608,9 @@
       "file": "/media/haber-teknofest-2026-diyarbakir.jpg",
       "title": "TEKNOFEST 2026 finali — Diyarbakır, PUSULA",
       "group": "Haber görselleri",
-      "width": 1200,
-      "height": 1500,
-      "sizeKb": 146,
+      "width": 1400,
+      "height": 1750,
+      "sizeKb": 225,
       "note": "Kullanıldığı yer: SANAYİDE DİJİTAL TEKNOLOJİLER (Galeri), TEKNOFEST 2026 finallerinde dö... (Haber Galerisi)",
       "usedIn": [
         "SANAYİDE DİJİTAL TEKNOLOJİLER (Galeri)",
@@ -2386,18 +2291,6 @@
       ]
     },
     {
-      "file": "/media/galeri-pusula-sahne-ekip.jpg",
-      "title": "PUSULA ekibimiz yarışma sahnesinde",
-      "group": "Galeri fotoğrafları",
-      "width": 717,
-      "height": 410,
-      "sizeKb": 57,
-      "note": "Kullanıldığı yer: SANAYİDE DİJİTAL TEKNOLOJİLER (Galeri)",
-      "usedIn": [
-        "SANAYİDE DİJİTAL TEKNOLOJİLER (Galeri)"
-      ]
-    },
-    {
       "file": "/media/galeri-pusula-atolye.jpg",
       "title": "PUSULA sanayi robotik platformu ve ekibimiz",
       "group": "Galeri fotoğrafları",
@@ -2414,12 +2307,13 @@
       "file": "/media/topluluk-ekip-selfie.jpg",
       "title": "Bursa Teknik Üniversitesi MATRO topluluk ekibi",
       "group": "Faaliyet fotoğrafları",
-      "note": "Kullanıldığı yer: Etkinlikler, Seminerler ve Çalıştaylar (Faaliyet Galerisi), Site Galerisi (Etkinlik)",
+      "note": "Kullanıldığı yer: Etkinlikler, Seminerler ve Çalıştaylar (Faaliyet Galerisi), Eğitim Kampları (Faaliyet Kapağı), Site Galerisi (Etkinlik)",
       "width": 1594,
       "height": 1198,
       "sizeKb": 256,
       "usedIn": [
         "Etkinlikler, Seminerler ve Çalıştaylar (Faaliyet Galerisi)",
+        "Eğitim Kampları (Faaliyet Kapağı)",
         "Site Galerisi (Etkinlik)"
       ]
     },
@@ -2823,9 +2717,10 @@
       "width": 1400,
       "height": 787,
       "sizeKb": 114,
-      "note": "Kullanıldığı yer: MATRİS (Galeri)",
+      "note": "Kullanıldığı yer: MATRİS (Galeri), Site Galerisi (Atölye)",
       "usedIn": [
-        "MATRİS (Galeri)"
+        "MATRİS (Galeri)",
+        "Site Galerisi (Atölye)"
       ]
     },
     {

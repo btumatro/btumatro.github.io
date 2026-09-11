@@ -6,14 +6,13 @@ endDate: ""
 order: 2
 image: "/media/gezi-togg.jpg"
 gallery:
-  - "/media/galeri-tusas-gezisi.jpg"
   - "/media/galeri-tubitak-mam-gezisi.jpg"
   - "/media/gezi-turkish-technic.jpg"
   - "/media/galeri-tubitak-sage-gezisi.jpg"
   - "/media/galeri-toyota-gezisi.jpg"
   - "/media/galeri-ermetal-gezisi.jpg"
   - "/media/galeri-teknopark-ankara.jpg"
-  - "/media/galeri-hktm-gezisi.jpg"
+  - "/media/galeri-hktm-ekip.jpg"
   - "/media/galeri-fabrika-gezisi.jpg"
 stats:
   - label: Ziyaret Edilen Kurum
