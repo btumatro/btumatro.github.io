@@ -1062,13 +1062,37 @@
       "file": "/media/gezi-togg.jpg",
       "title": "TOGG teknik gezimiz",
       "group": "Faaliyet fotoğrafları",
-      "width": 358,
-      "height": 320,
-      "sizeKb": 23,
+      "width": 742,
+      "height": 664,
+      "sizeKb": 72,
       "note": "Kullanıldığı yer: Teknik Geziler ve Vizyon Programları (Faaliyet), Site Galerisi (Teknik Gezi)",
       "usedIn": [
         "Teknik Geziler ve Vizyon Programları (Faaliyet)",
         "Site Galerisi (Teknik Gezi)"
+      ]
+    },
+    {
+      "file": "/media/galeri-tusas-gezisi.jpg",
+      "title": "TUSAŞ teknik gezimiz",
+      "group": "Faaliyet fotoğrafları",
+      "width": 742,
+      "height": 664,
+      "sizeKb": 92,
+      "note": "Kullanıldığı yer: Teknik Geziler ve Vizyon Programları (Faaliyet)",
+      "usedIn": [
+        "Teknik Geziler ve Vizyon Programları (Faaliyet)"
+      ]
+    },
+    {
+      "file": "/media/galeri-tubitak-mam-gezisi.jpg",
+      "title": "TÜBİTAK Marmara Araştırma Merkezi gezimiz",
+      "group": "Faaliyet fotoğrafları",
+      "width": 668,
+      "height": 509,
+      "sizeKb": 62,
+      "note": "Kullanıldığı yer: Teknik Geziler ve Vizyon Programları (Faaliyet)",
+      "usedIn": [
+        "Teknik Geziler ve Vizyon Programları (Faaliyet)"
       ]
     },
     {
@@ -1682,6 +1706,54 @@
       "note": "Kullanıldığı yer: KAYRA YEMEK (Logo)",
       "usedIn": [
         "KAYRA YEMEK (Logo)"
+      ]
+    },
+    {
+      "file": "/media/logolar/rov-expert.png",
+      "title": "ROV Expert",
+      "group": "Sponsor logoları",
+      "width": 426,
+      "height": 127,
+      "sizeKb": 19,
+      "note": "Kullanıldığı yer: ROV EXPERT (Logo)",
+      "usedIn": [
+        "ROV EXPERT (Logo)"
+      ]
+    },
+    {
+      "file": "/media/logolar/sahinbey-belediyesi.png",
+      "title": "Şahinbey Belediyesi",
+      "group": "Sponsor logoları",
+      "width": 346,
+      "height": 109,
+      "sizeKb": 6,
+      "note": "Kullanıldığı yer: ŞAHİNBEY BELEDİYESİ (Logo)",
+      "usedIn": [
+        "ŞAHİNBEY BELEDİYESİ (Logo)"
+      ]
+    },
+    {
+      "file": "/media/logolar/mayfly.png",
+      "title": "MayFly",
+      "group": "Sponsor logoları",
+      "width": 175,
+      "height": 73,
+      "sizeKb": 4,
+      "note": "Kullanıldığı yer: MAYFLY (Logo)",
+      "usedIn": [
+        "MAYFLY (Logo)"
+      ]
+    },
+    {
+      "file": "/media/logolar/mavios.png",
+      "title": "Mavios",
+      "group": "Sponsor logoları",
+      "width": 310,
+      "height": 50,
+      "sizeKb": 16,
+      "note": "Kullanıldığı yer: MAVIOS (Logo)",
+      "usedIn": [
+        "MAVIOS (Logo)"
       ]
     },
     {

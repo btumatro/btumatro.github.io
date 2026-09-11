@@ -6,6 +6,8 @@ endDate: ""
 order: 2
 image: "/media/gezi-togg.jpg"
 gallery:
+  - "/media/galeri-tusas-gezisi.jpg"
+  - "/media/galeri-tubitak-mam-gezisi.jpg"
   - "/media/gezi-turkish-technic.jpg"
   - "/media/galeri-tubitak-sage-gezisi.jpg"
   - "/media/galeri-toyota-gezisi.jpg"
@@ -38,3 +40,7 @@ summary: "TUSAŞ, TOGG, ASELSAN, TEI, Turkish Technic, Ermetal, HKTM ve Alp Hava
 - HKTM (Hidropar Hareket Kontrol Teknolojileri Merkezi)
 - Alp Havacılık
 - SAHA EXPO
+- Valeo
+- IDEF (Uluslararası Savunma Sanayii Fuarı)
+- Akın Robotics
+- WIN Eurasia

@@ -30,6 +30,42 @@
       "instagram": "tekyazcom"
     },
     {
+      "name": "ROV EXPERT",
+      "package": "Altın",
+      "type": "Hizmet + Malzeme",
+      "amount": "",
+      "logo": "/media/logolar/rov-expert.png",
+      "website": "",
+      "instagram": ""
+    },
+    {
+      "name": "ŞAHİNBEY BELEDİYESİ",
+      "package": "Altın",
+      "type": "Kurumsal Destek",
+      "amount": "",
+      "logo": "/media/logolar/sahinbey-belediyesi.png",
+      "website": "",
+      "instagram": ""
+    },
+    {
+      "name": "MAYFLY",
+      "package": "Altın",
+      "type": "Hizmet + Malzeme",
+      "amount": "",
+      "logo": "/media/logolar/mayfly.png",
+      "website": "",
+      "instagram": ""
+    },
+    {
+      "name": "MAVIOS",
+      "package": "Altın",
+      "type": "Hizmet + Malzeme",
+      "amount": "",
+      "logo": "/media/logolar/mavios.png",
+      "website": "",
+      "instagram": ""
+    },
+    {
       "name": "KAYRA YEMEK",
       "package": "Altın",
       "type": "Nakit",
