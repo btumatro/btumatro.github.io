@@ -1,5 +1,5 @@
 ---
-title: MATRO 2025-2026 1. Eğitim Kampı
+title: Eğitim Kampları
 type: Eğitim Kampı
 date: 2025-11-13
 endDate: "2026-01-09"
