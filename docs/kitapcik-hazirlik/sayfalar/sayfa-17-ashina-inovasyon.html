@@ -2,380 +2,126 @@
 <html lang="tr">
 <head>
 <meta charset="utf-8">
+<title>MATRO — Sayfa 17 ASHİNA İNOVASYON</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,700;0,800;0,900;1,800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
 <style>
+  @page { size: 210mm 297mm; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --c-bg: #FFFFFF; --c-ink: #0B1012; --c-text-muted: #475569; --c-text-subtle: #64748B;
+    --c-border: #CBD5E1; --c-volt: #0D9488; --c-volt-light: #F0FDFA; --c-medal: #D97706;
+    --c-medal-light: #FEF3C7; --c-surface: #F8FAFC;
+    --font-display: 'Barlow', sans-serif; --font-sans: 'Inter', sans-serif; --font-mono: 'JetBrains Mono', monospace;
+  }
+  body.page-sheet {
+    width: 1240px; height: 1754px; background: var(--c-bg); color: var(--c-ink); font-family: var(--font-sans);
+    display: flex; flex-direction: column; justify-content: space-between; padding: 44px 56px 36px 56px;
+    position: relative; overflow: hidden; -webkit-font-smoothing: antialiased;
+  }
+  .page-header {
+    display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--c-ink);
+    padding-bottom: 12px; margin-bottom: 16px;
+  }
+  .brand-left { display: flex; align-items: center; gap: 14px; }
+  .header-logo { height: 36px; width: auto; object-fit: contain; }
+  .dept-name { font-size: 11px; font-weight: 500; color: var(--c-text-muted); }
+  .header-meta-right { display: flex; align-items: center; gap: 14px; }
+  .section-tag { font-family: var(--font-mono); font-size: 11px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--c-volt); }
+  .page-index-badge { font-family: var(--font-mono); font-size: 11px; font-weight: 700; border: 1.5px solid var(--c-ink); padding: 2px 7px; border-radius: 2px; }
+  .page-footer {
+    display: flex; justify-content: space-between; align-items: center; border-top: 1.5px solid var(--c-ink);
+    padding-top: 10px; font-family: var(--font-mono); font-size: 11px; color: var(--c-text-subtle);
+  }
 
-@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,600;0,700;0,800;0,900;1,800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&display=swap');
+  .media-box { position: relative; background-color: #F8FAFC; border: 1px solid var(--c-border); border-radius: 4px; overflow: hidden; }
+  .media-box img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .caption-line { display: flex; align-items: center; gap: 8px; padding-top: 6px; font-family: var(--font-sans); line-height: 1.25; }
+  .caption-tag {
+    font-family: var(--font-mono); font-size: 9px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase;
+    color: #FFFFFF; background-color: var(--c-ink); padding: 2px 6px; border-radius: 2px; white-space: nowrap;
+  }
+  .caption-txt { font-size: 11px; font-weight: 500; color: #475569; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 
-@page { size: 210mm 297mm; margin: 0; }
-* { box-sizing: border-box; margin: 0; padding: 0; }
-:root {
-  --c-bg: #FFFFFF;
-  --c-ink: #0B1012;
-  --c-text-muted: #475569;
-  --c-text-subtle: #64748B;
-  --c-border: #CBD5E1;
-  --c-volt: #0D9488;
-  --c-volt-light: #F0FDFA;
-  --c-medal: #D97706;
-  --c-medal-light: #FEF3C7;
-  --c-surface: #F8FAFC;
-  --font-display: 'Barlow', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-mono: 'JetBrains Mono', monospace;
-}
-
-body.page-sheet {
-  width: 1240px;
-  height: 1754px;
-  background-color: var(--c-bg);
-  color: var(--c-ink);
-  font-family: var(--font-sans);
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 44px 56px 36px 56px;
-  -webkit-font-smoothing: antialiased;
-}
-
-/* Header */
-.page-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 2px solid var(--c-ink);
-  padding-bottom: 12px;
-  margin-bottom: 16px;
-}
-.brand-left { display: flex; align-items: center; gap: 14px; }
-.header-logo { height: 36px; width: auto; object-fit: contain; }
-.univ-name { font-family: var(--font-display); font-size: 15px; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; color: var(--c-ink); line-height: 1.1; }
-.dept-name { font-family: var(--font-sans); font-size: 11px; font-weight: 500; color: var(--c-text-muted); }
-.header-meta-right { display: flex; align-items: center; gap: 14px; }
-.section-tag { font-family: var(--font-mono); font-size: 11px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--c-volt); }
-.page-index-badge { font-family: var(--font-mono); font-size: 11px; font-weight: 700; color: var(--c-ink); border: 1.5px solid var(--c-ink); padding: 2px 7px; border-radius: 2px; }
-
-/* Footer */
-.page-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-top: 1.5px solid var(--c-ink);
-  padding-top: 10px;
-  font-family: var(--font-mono);
-  font-size: 11px;
-  color: var(--c-text-subtle);
-  letter-spacing: 0.05em;
-}
-.page-footer .footer-site { color: var(--c-ink); font-weight: 700; }
-.page-footer .page-number { font-weight: 800; color: var(--c-ink); }
-
-/* Tipografi */
-.eyebrow {
-  font-family: var(--font-mono);
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: var(--c-volt);
-}
-.headline {
-  font-family: var(--font-display);
-  font-size: 44px;
-  font-weight: 900;
-  line-height: 0.98;
-  letter-spacing: -0.03em;
-  text-transform: uppercase;
-  color: var(--c-ink);
-  margin-top: 3px;
-  margin-bottom: 5px;
-}
-.lead-text {
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 1.45;
-  color: #334155;
-}
-
-/* Görsel Çerçevesi & Sıfır Üst Yazı */
-.media-unit {
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-}
-.img-box {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  overflow: hidden;
-  background-color: #F8FAFC;
-  border-radius: 4px;
-  border: 1px solid var(--c-border);
-}
-.img-box img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.caption-bar {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding-top: 6px;
-  font-family: var(--font-sans);
-  line-height: 1.25;
-}
-.caption-tag {
-  font-family: var(--font-mono);
-  font-size: 9px;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  background-color: var(--c-ink);
-  padding: 2px 6px;
-  border-radius: 2px;
-  white-space: nowrap;
-}
-.caption-text {
-  font-size: 11px;
-  font-weight: 500;
-  color: #475569;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-/* Bullet & Teknik Kutu */
-.bullet-list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-.bullet-list li {
-  display: flex;
-  align-items: flex-start;
-  gap: 8px;
-  font-size: 13.5px;
-  font-weight: 600;
-  color: var(--c-ink);
-  line-height: 1.35;
-}
-.bullet-list li::before {
-  content: "■";
-  color: var(--c-volt);
-  font-size: 9px;
-  margin-top: 3px;
-}
-
-.tech-spec-box {
-  background: var(--c-surface);
-  border: 1.5px solid var(--c-border);
-  border-radius: 4px;
-  padding: 16px 18px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.box-title {
-  font-family: var(--font-mono);
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--c-ink);
-  border-bottom: 1.5px solid var(--c-ink);
-  padding-bottom: 6px;
-  display: flex;
-  justify-content: space-between;
-}
-.spec-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px 14px;
-}
-.spec-item {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-}
-.spec-label {
-  font-family: var(--font-mono);
-  font-size: 9px;
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--c-text-subtle);
-}
-.spec-value {
-  font-size: 12.5px;
-  font-weight: 600;
-  color: var(--c-ink);
-}
-.award-pill {
-  background: var(--c-medal-light);
-  border: 1px solid #FCD34D;
-  color: #92400E;
-  padding: 7px 12px;
-  border-radius: 3px;
-  font-size: 11.5px;
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-.award-pill .trophy-dot {
-  width: 6px;
-  height: 6px;
-  background: var(--c-medal);
-  border-radius: 50%;
-}
-
-.team-header-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  margin-bottom: 14px;
-}
-.team-branding { display: flex; align-items: center; gap: 18px; }
-.team-symbol { height: 50px; width: auto; object-fit: contain; }
-.team-titles { display: flex; flex-direction: column; }
-.team-eyebrow { font-family: var(--font-mono); font-size: 11.5px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--c-volt); }
-.team-main-name { font-family: var(--font-display); font-size: 48px; font-weight: 900; line-height: 0.95; letter-spacing: -0.03em; color: var(--c-ink); text-transform: uppercase; }
-.team-category { font-size: 14px; font-weight: 600; color: var(--c-text-muted); margin-top: 3px; }
-.upper-bento {
-  display: grid;
-  grid-template-columns: 1.8fr 1fr;
-  grid-template-rows: 245px 245px;
-  gap: 14px;
-  margin-bottom: 18px;
-}
-.hero-box { grid-column: 1 / 2; grid-row: 1 / 3; }
-.middle-split { display: grid; grid-template-columns: 1.25fr 1fr; gap: 24px; margin-bottom: 18px; }
-.desc-text p { font-size: 14px; line-height: 1.52; color: #475569; margin-bottom: 8px; }
-.lower-ribbon { display: grid; grid-template-columns: 1fr 1fr; height: 280px; gap: 14px; margin-bottom: 6px; }
+  /* Sayfa 17 Düzeni: Üst Geniş VTOL Hero + Orta İçerik + Alt İkili */
+  .vtol-hero { width: 100%; height: 560px; margin-bottom: 20px; }
+  .mid-ino { display: grid; grid-template-columns: 1.25fr 1fr; gap: 24px; margin-bottom: 20px; }
+  .lower-ino { display: grid; grid-template-columns: 1.15fr 0.85fr; height: 360px; gap: 16px; margin-bottom: 4px; }
+  .bullet-list { list-style: none; display: flex; flex-direction: column; gap: 8px; margin-top: 8px; }
+  .bullet-list li { display: flex; align-items: flex-start; gap: 8px; font-size: 13.5px; font-weight: 600; color: var(--c-ink); }
+  .bullet-list li::before { content: '■'; color: var(--c-volt); font-size: 9px; margin-top: 3px; }
+  .tech-box { background: var(--c-surface); border: 1.5px solid var(--c-border); border-radius: 4px; padding: 16px; display: flex; flex-direction: column; justify-content: space-between; }
 </style>
 </head>
 <body class="page-sheet">
   <header class="page-header">
     <div class="brand-left">
       <img class="header-logo" src="file:///Users/wildgenie/Projects/btu-matro/public/logo-matro-siyah.png" alt="MATRO Logo">
-      <div class="header-brand-text">
-        <div class="univ-name">Bursa Teknik Üniversitesi</div>
-        <div class="dept-name">MATRO // Ar-Ge Takım Portföyü</div>
-      </div>
+      <div class="dept-name">Bursa Teknik Üniversitesi // MATRO İnovatif Havacılık</div>
     </div>
     <div class="header-meta-right">
-      <div class="section-tag">İnovatif Havacılık Grubu</div>
+      <div class="section-tag">Hibrit VTOL İHA</div>
       <div class="page-index-badge">17</div>
     </div>
   </header>
 
-  <div class="team-header-row">
-    <div class="team-branding">
-      <img class="team-symbol" src="file:///Users/wildgenie/Projects/btu-matro/public/media/logolar/takimlar/ashina.png" alt="ASHİNA İNOVASYON Logo">
-      <div class="team-titles">
-        <div class="team-eyebrow">Ar-Ge Proje Takımı</div>
-        <h1 class="team-main-name">ASHİNA İNOVASYON</h1>
-        <div class="team-category">Hibrit Dikey Kalkışlı İHA (VTOL), Uzun Menzilli Kargo & Otonom Sivil Görevler</div>
-      </div>
+  <!-- Üst Hero: Gerçek Hibrit VTOL Prototipi (Atölye Zemininde 4+1 Motorlu Karbon Gövde) -->
+  <div style="display: flex; flex-direction: column;">
+    <div class="media-box vtol-hero">
+      <img style="object-position: center center;" src="file:///Users/wildgenie/Projects/btu-matro/public/media/galeri-ashina-uretim.jpg" alt="VTOL Prototip">
     </div>
-    <div class="award-pill">
-      <span class="trophy-dot"></span>
-      <span>İNOVATİF VTOL AR-GE</span>
+    <div class="caption-line">
+      <span class="caption-tag">ATÖLYE PROTOTİPİ</span>
+      <span class="caption-txt">Özdemir Bayraktar Atölyesinde üretilen 4 dikey kaldırma + 1 itici motorlu hibrit VTOL İHA gövdesi</span>
     </div>
   </div>
 
-  <div class="upper-bento">
-    <div class="media-unit hero-box">
-      <div class="img-box">
-        <img style="object-position: center center; transform: scale(1.0);" src="file:///Users/wildgenie/Projects/btu-matro/public/media/galeri-ashina-uretim.jpg" alt="ATÖLYE PROTOTİPİ">
-      </div>
-      <div class="caption-bar">
-        <span class="caption-tag">ATÖLYE PROTOTİPİ</span>
-        <span class="caption-text">Özdemir Bayraktar Atölyesinde üretilen 4+1 motorlu hibrit VTOL İHA mekanik montajı</span>
-      </div>
-    </div>
-
-    <div class="media-unit">
-      <div class="img-box">
-        <img style="object-position: center center; transform: scale(1.0);" src="file:///Users/wildgenie/Projects/btu-matro/public/media/tasarim-ashina-iha.jpg" alt="AERODİNAMİK CAD">
-      </div>
-      <div class="caption-bar">
-        <span class="caption-tag">AERODİNAMİK CAD</span>
-        <span class="caption-text">Yüksek taşıma kapasiteli taşıyıcı yüzey ve gövde optimizasyonu</span>
-      </div>
-    </div>
-
-    <div class="media-unit">
-      <div class="img-box">
-        <img style="object-position: center center; transform: scale(1.0);" src="file:///Users/wildgenie/Projects/btu-matro/public/media/galeri-ashina-kompozit-uretim.jpg" alt="KOMPOZİT İMALAT">
-      </div>
-      <div class="caption-bar">
-        <span class="caption-tag">KOMPOZİT İMALAT</span>
-        <span class="caption-text">Vakum infüzyon yöntemiyle üretilen hafif gövde panelleri</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="middle-split">
-    <div class="desc-text">
-      <p><strong>ASHİNA İNOVASYON</strong>, pist ihtiyacı olmadan dar alanlardan dikey havalanıp havada sabit kanatlı uçak verimliliğinde seyreden hibrit VTOL hava araçları geliştiren Ar-Ge ekibimizdir.</p>
-      <p>4 adet dikey kaldırma motoru ile kalkış ve iniş yapan araç, seyir irtifasına ulaştığında arka itici motorunu devreye alarak 120 km menzile kadar otonom kargo ve haritalama görevlerini yerine getirir.</p>
+  <div class="mid-ino">
+    <div>
+      <div style="font-family: var(--font-mono); font-size: 11px; font-weight: 700; color: var(--c-volt); margin-bottom: 4px;">ÖZEL HAVACILIK PROJESİ</div>
+      <h1 style="font-family: var(--font-display); font-size: 46px; font-weight: 900; line-height: 0.95; text-transform: uppercase;">ASHİNA İNOVASYON</h1>
+      <p style="font-size: 14px; line-height: 1.52; color: #475569; margin-top: 8px;">
+        <strong>ASHİNA İNOVASYON</strong>, pist ihtiyacı olmadan dar alanlardan dikey havalanıp havada sabit kanatlı uçak verimliliğinde seyreden hibrit VTOL hava araçları geliştiren Ar-Ge ekibimizdir. 4 adet dikey kaldırma motoru ile havalanır, seyir irtifasında itici motorla uzun menzil kateder.
+      </p>
       <ul class="bullet-list">
-        <li>Pistsiz kalkış ve inişle her türlü zorlu coğrafyada operasyon kabiliyeti</li><li>Hafif karbon fiber kompozit gövde ile 2.5 kg faydalı yük taşıma</li><li>Arıza anında motor yedeğiyle güvenli dikey acil iniş protokolü</li>
+        <li>Pistsiz kalkış-inişle her türlü zorlu coğrafyada operasyon kabiliyeti</li>
+        <li>Hafif karbon fiber kompozit gövde ile 2.5 kg faydalı yük taşıma</li>
       </ul>
     </div>
 
-    <div class="tech-spec-box">
-      <div class="box-title">
-        <span>Teknik Spesifikasyonlar</span>
-        <span>VTOL HİBRİT V1</span>
+    <div class="tech-box">
+      <div style="font-family: var(--font-mono); font-size: 11px; font-weight: 700; border-bottom: 1.5px solid var(--c-ink); padding-bottom: 4px;">VTOL PARAMETRELERİ</div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 10px 0;">
+        <div><span style="font-family: var(--font-mono); font-size: 9px; color: var(--c-text-subtle);">KANAT AÇIKLIĞI</span><div style="font-size: 13px; font-weight: 700;">2200 mm Sandviç</div></div>
+        <div><span style="font-family: var(--font-mono); font-size: 9px; color: var(--c-text-subtle);">İTKİ DÜZENİ</span><div style="font-size: 13px; font-weight: 700;">4x Lift + 1x Pusher</div></div>
+        <div><span style="font-family: var(--font-mono); font-size: 9px; color: var(--c-text-subtle);">FAYDALI YÜK</span><div style="font-size: 13px; font-weight: 700;">2.5 kg Kargo Bölmesi</div></div>
+        <div><span style="font-family: var(--font-mono); font-size: 9px; color: var(--c-text-subtle);">MENZİL</span><div style="font-size: 13px; font-weight: 700;">60 km // 75 Dakika</div></div>
       </div>
-      <div class="spec-grid">
-        
-        <div class="spec-item">
-          <span class="spec-label">Kanat Açıklığı</span>
-          <span class="spec-value">2200 mm Sandviç</span>
-        </div>
-        <div class="spec-item">
-          <span class="spec-label">İtki Düzeni</span>
-          <span class="spec-value">4x Lift + 1x Pusher</span>
-        </div>
-        <div class="spec-item">
-          <span class="spec-label">Faydalı Yük</span>
-          <span class="spec-value">2.5 kg Kargo Bölmesi</span>
-        </div>
-        <div class="spec-item">
-          <span class="spec-label">Menzil</span>
-          <span class="spec-value">60 km // 75 Dakika</span>
-        </div>
+      <div style="background: var(--c-medal-light); border: 1px solid #FCD34D; padding: 6px 10px; border-radius: 3px; font-size: 11px; font-weight: 700; color: #92400E;">
+        ★ İNOVATİF VTOL AR-GE SİSTEMİ
       </div>
     </div>
   </div>
 
-  <div class="lower-ribbon">
-    <div class="media-unit">
-      <div class="img-box">
-        <img style="object-position: center 25%; transform: scale(1.0);" src="file:///Users/wildgenie/Projects/btu-matro/public/media/galeri-ashina-saha.jpg" alt="UÇUŞ DOĞRULAMA">
+  <!-- Alt İkili: Selçuk Bayraktar ile Zirve Buluşması + Atölye Aviyonik Montajı (Sayfa 06'dan tamamen farklı!) -->
+  <div class="lower-ino">
+    <div style="display: flex; flex-direction: column;">
+      <div class="media-box" style="height: 100%;">
+        <img style="object-position: center 25%;" src="file:///Users/wildgenie/Projects/btu-matro/public/media/takim-ashina.jpg" alt="Selçuk Bayraktar ile Buluşma">
       </div>
-      <div class="caption-bar">
-        <span class="caption-tag">UÇUŞ DOĞRULAMA</span>
-        <span class="caption-text">Açık hava pistinde otonom mod geçişi (hover to cruise) telemetri takibi</span>
+      <div class="caption-line">
+        <span class="caption-tag">ZİRVE BULUŞMASI</span>
+        <span class="caption-txt">Selçuk Bayraktar'a ASHİNA otonom aviyonik ve motor mimarisi teknik brifingi</span>
       </div>
     </div>
-
-    <div class="media-unit">
-      <div class="img-box">
-        <img style="object-position: center 40%; transform: scale(1.05);" src="file:///Users/wildgenie/Projects/btu-matro/public/media/galeri-ashina-teknofest-grup.jpg" alt="HAVACILIK EKİBİ">
+    <div style="display: flex; flex-direction: column;">
+      <div class="media-box" style="height: 100%;">
+        <img style="object-position: center center;" src="file:///Users/wildgenie/Projects/btu-matro/public/media/webmedya-suru-iha-35.jpg" alt="Yer İstasyonu">
       </div>
-      <div class="caption-bar">
-        <span class="caption-tag">HAVACILIK EKİBİ</span>
-        <span class="caption-text">TÜBİTAK yarışma pistinde ASHİNA havacılık ekibimiz</span>
+      <div class="caption-line">
+        <span class="caption-tag">YER KONTROLÜ</span>
+        <span class="caption-txt">Uçuş öncesi telemetri bağı ve otonom rota planlaması testleri</span>
       </div>
     </div>
   </div>

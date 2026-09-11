@@ -2,386 +2,139 @@
 <html lang="tr">
 <head>
 <meta charset="utf-8">
+<title>MATRO — Sayfa 16 ALHAZEN</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,700;0,800;0,900;1,800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
 <style>
+  @page { size: 210mm 297mm; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --c-bg: #FFFFFF; --c-ink: #0B1012; --c-text-muted: #475569; --c-text-subtle: #64748B;
+    --c-border: #CBD5E1; --c-volt: #0D9488; --c-volt-light: #F0FDFA; --c-medal: #D97706;
+    --c-medal-light: #FEF3C7; --c-surface: #F8FAFC;
+    --font-display: 'Barlow', sans-serif; --font-sans: 'Inter', sans-serif; --font-mono: 'JetBrains Mono', monospace;
+  }
+  body.page-sheet {
+    width: 1240px; height: 1754px; background: var(--c-bg); color: var(--c-ink); font-family: var(--font-sans);
+    display: flex; flex-direction: column; justify-content: space-between; padding: 44px 56px 36px 56px;
+    position: relative; overflow: hidden; -webkit-font-smoothing: antialiased;
+  }
+  .page-header {
+    display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--c-ink);
+    padding-bottom: 12px; margin-bottom: 16px;
+  }
+  .brand-left { display: flex; align-items: center; gap: 14px; }
+  .header-logo { height: 36px; width: auto; object-fit: contain; }
+  .dept-name { font-size: 11px; font-weight: 500; color: var(--c-text-muted); }
+  .header-meta-right { display: flex; align-items: center; gap: 14px; }
+  .section-tag { font-family: var(--font-mono); font-size: 11px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--c-volt); }
+  .page-index-badge { font-family: var(--font-mono); font-size: 11px; font-weight: 700; border: 1.5px solid var(--c-ink); padding: 2px 7px; border-radius: 2px; }
+  .page-footer {
+    display: flex; justify-content: space-between; align-items: center; border-top: 1.5px solid var(--c-ink);
+    padding-top: 10px; font-family: var(--font-mono); font-size: 11px; color: var(--c-text-subtle);
+  }
 
-@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,600;0,700;0,800;0,900;1,800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&display=swap');
+  .media-box { position: relative; background-color: #F8FAFC; border: 1px solid var(--c-border); border-radius: 4px; overflow: hidden; }
+  .media-box img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .caption-line { display: flex; align-items: center; gap: 8px; padding-top: 6px; font-family: var(--font-sans); line-height: 1.25; }
+  .caption-tag {
+    font-family: var(--font-mono); font-size: 9px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase;
+    color: #FFFFFF; background-color: var(--c-ink); padding: 2px 6px; border-radius: 2px; white-space: nowrap;
+  }
+  .caption-txt { font-size: 11px; font-weight: 500; color: #475569; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 
-@page { size: 210mm 297mm; margin: 0; }
-* { box-sizing: border-box; margin: 0; padding: 0; }
-:root {
-  --c-bg: #FFFFFF;
-  --c-ink: #0B1012;
-  --c-text-muted: #475569;
-  --c-text-subtle: #64748B;
-  --c-border: #CBD5E1;
-  --c-volt: #0D9488;
-  --c-volt-light: #F0FDFA;
-  --c-medal: #D97706;
-  --c-medal-light: #FEF3C7;
-  --c-surface: #F8FAFC;
-  --font-display: 'Barlow', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-mono: 'JetBrains Mono', monospace;
-}
-
-body.page-sheet {
-  width: 1240px;
-  height: 1754px;
-  background-color: var(--c-bg);
-  color: var(--c-ink);
-  font-family: var(--font-sans);
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 44px 56px 36px 56px;
-  -webkit-font-smoothing: antialiased;
-}
-
-/* Header */
-.page-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 2px solid var(--c-ink);
-  padding-bottom: 12px;
-  margin-bottom: 16px;
-}
-.brand-left { display: flex; align-items: center; gap: 14px; }
-.header-logo { height: 36px; width: auto; object-fit: contain; }
-.univ-name { font-family: var(--font-display); font-size: 15px; font-weight: 800; letter-spacing: 0.05em; text-transform: uppercase; color: var(--c-ink); line-height: 1.1; }
-.dept-name { font-family: var(--font-sans); font-size: 11px; font-weight: 500; color: var(--c-text-muted); }
-.header-meta-right { display: flex; align-items: center; gap: 14px; }
-.section-tag { font-family: var(--font-mono); font-size: 11px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--c-volt); }
-.page-index-badge { font-family: var(--font-mono); font-size: 11px; font-weight: 700; color: var(--c-ink); border: 1.5px solid var(--c-ink); padding: 2px 7px; border-radius: 2px; }
-
-/* Footer */
-.page-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-top: 1.5px solid var(--c-ink);
-  padding-top: 10px;
-  font-family: var(--font-mono);
-  font-size: 11px;
-  color: var(--c-text-subtle);
-  letter-spacing: 0.05em;
-}
-.page-footer .footer-site { color: var(--c-ink); font-weight: 700; }
-.page-footer .page-number { font-weight: 800; color: var(--c-ink); }
-
-/* Tipografi */
-.eyebrow {
-  font-family: var(--font-mono);
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: var(--c-volt);
-}
-.headline {
-  font-family: var(--font-display);
-  font-size: 44px;
-  font-weight: 900;
-  line-height: 0.98;
-  letter-spacing: -0.03em;
-  text-transform: uppercase;
-  color: var(--c-ink);
-  margin-top: 3px;
-  margin-bottom: 5px;
-}
-.lead-text {
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 1.45;
-  color: #334155;
-}
-
-/* Görsel Çerçevesi & Sıfır Üst Yazı */
-.media-unit {
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-}
-.img-box {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  overflow: hidden;
-  background-color: #F8FAFC;
-  border-radius: 4px;
-  border: 1px solid var(--c-border);
-}
-.img-box img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.caption-bar {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding-top: 6px;
-  font-family: var(--font-sans);
-  line-height: 1.25;
-}
-.caption-tag {
-  font-family: var(--font-mono);
-  font-size: 9px;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  background-color: var(--c-ink);
-  padding: 2px 6px;
-  border-radius: 2px;
-  white-space: nowrap;
-}
-.caption-text {
-  font-size: 11px;
-  font-weight: 500;
-  color: #475569;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-/* Bullet & Teknik Kutu */
-.bullet-list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-.bullet-list li {
-  display: flex;
-  align-items: flex-start;
-  gap: 8px;
-  font-size: 13.5px;
-  font-weight: 600;
-  color: var(--c-ink);
-  line-height: 1.35;
-}
-.bullet-list li::before {
-  content: "■";
-  color: var(--c-volt);
-  font-size: 9px;
-  margin-top: 3px;
-}
-
-.tech-spec-box {
-  background: var(--c-surface);
-  border: 1.5px solid var(--c-border);
-  border-radius: 4px;
-  padding: 16px 18px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.box-title {
-  font-family: var(--font-mono);
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--c-ink);
-  border-bottom: 1.5px solid var(--c-ink);
-  padding-bottom: 6px;
-  display: flex;
-  justify-content: space-between;
-}
-.spec-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px 14px;
-}
-.spec-item {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-}
-.spec-label {
-  font-family: var(--font-mono);
-  font-size: 9px;
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--c-text-subtle);
-}
-.spec-value {
-  font-size: 12.5px;
-  font-weight: 600;
-  color: var(--c-ink);
-}
-.award-pill {
-  background: var(--c-medal-light);
-  border: 1px solid #FCD34D;
-  color: #92400E;
-  padding: 7px 12px;
-  border-radius: 3px;
-  font-size: 11.5px;
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-.award-pill .trophy-dot {
-  width: 6px;
-  height: 6px;
-  background: var(--c-medal);
-  border-radius: 50%;
-}
-
-.team-header-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  margin-bottom: 14px;
-}
-.team-branding { display: flex; align-items: center; gap: 18px; }
-.team-symbol { height: 50px; width: auto; object-fit: contain; }
-.team-titles { display: flex; flex-direction: column; }
-.team-eyebrow { font-family: var(--font-mono); font-size: 11.5px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--c-volt); }
-.team-main-name { font-family: var(--font-display); font-size: 48px; font-weight: 900; line-height: 0.95; letter-spacing: -0.03em; color: var(--c-ink); text-transform: uppercase; }
-.team-category { font-size: 14px; font-weight: 600; color: var(--c-text-muted); margin-top: 3px; }
-.upper-bento {
-  display: grid;
-  grid-template-columns: 1.8fr 1fr;
-  grid-template-rows: 245px 245px;
-  gap: 14px;
-  margin-bottom: 18px;
-}
-.hero-box { grid-column: 1 / 2; grid-row: 1 / 3; }
-.middle-split { display: grid; grid-template-columns: 1.25fr 1fr; gap: 24px; margin-bottom: 18px; }
-.desc-text p { font-size: 14px; line-height: 1.52; color: #475569; margin-bottom: 8px; }
-.lower-ribbon { display: grid; grid-template-columns: 1fr 1fr; height: 280px; gap: 14px; margin-bottom: 6px; }
+  /* Sayfa 16 İkili Dikey Hero Düzeni */
+  .hero-split-16 {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    height: 560px;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  .mid-alhazen { display: grid; grid-template-columns: 1.25fr 1fr; gap: 24px; margin-bottom: 20px; }
+  .lower-alhazen { width: 100%; height: 350px; margin-bottom: 4px; }
+  .bullet-list { list-style: none; display: flex; flex-direction: column; gap: 8px; margin-top: 8px; }
+  .bullet-list li { display: flex; align-items: flex-start; gap: 8px; font-size: 13.5px; font-weight: 600; color: var(--c-ink); }
+  .bullet-list li::before { content: '■'; color: var(--c-volt); font-size: 9px; margin-top: 3px; }
+  .tech-box { background: var(--c-surface); border: 1.5px solid var(--c-border); border-radius: 4px; padding: 16px; display: flex; flex-direction: column; justify-content: space-between; }
 </style>
 </head>
 <body class="page-sheet">
   <header class="page-header">
     <div class="brand-left">
       <img class="header-logo" src="file:///Users/wildgenie/Projects/btu-matro/public/logo-matro-siyah.png" alt="MATRO Logo">
-      <div class="header-brand-text">
-        <div class="univ-name">Bursa Teknik Üniversitesi</div>
-        <div class="dept-name">MATRO // Ar-Ge Takım Portföyü</div>
-      </div>
+      <div class="dept-name">Bursa Teknik Üniversitesi // MATRO Çevre, Biyoteknoloji & Sağlık</div>
     </div>
     <div class="header-meta-right">
-      <div class="section-tag">Biyoteknoloji & Sağlık Grubu</div>
+      <div class="section-tag">Çevre & Enerji Teknolojileri</div>
       <div class="page-index-badge">16</div>
     </div>
   </header>
 
-  <div class="team-header-row">
-    <div class="team-branding">
-      
-      <div class="team-titles">
-        <div class="team-eyebrow">Ar-Ge Proje Takımı</div>
-        <h1 class="team-main-name">ALHAZEN</h1>
-        <div class="team-category">Biyomedikal Cihaz Tasarımı, Optik Spektrometre & Sağlıkta Yapay Zekâ</div>
+  <!-- Üst İkili: Sol Stand ve Prototip İnceleme, Sağ Podyum Temsili (İki farklı gerçek kare!) -->
+  <div class="hero-split-16">
+    <div style="display: flex; flex-direction: column;">
+      <div class="media-box" style="height: 100%;">
+        <img style="object-position: center 30%;" src="file:///Users/wildgenie/Projects/btu-matro/public/media/galeri-alhazen-laboratuvar.jpg" alt="ALHAZEN Stand">
       </div>
-    </div>
-    <div class="award-pill">
-      <span class="trophy-dot"></span>
-      <span>BİYOMEDİKAL AR-GE SİSTEMİ</span>
-    </div>
-  </div>
-
-  <div class="upper-bento">
-    <div class="media-unit hero-box">
-      <div class="img-box">
-        <img style="object-position: center 30%; transform: scale(1.0);" src="file:///Users/wildgenie/Projects/btu-matro/public/media/galeri-alhazen-laboratuvar.jpg" alt="LABORATUVAR AR-GE">
-      </div>
-      <div class="caption-bar">
-        <span class="caption-tag">LABORATUVAR AR-GE</span>
-        <span class="caption-text">BTÜ Biyomühendislik laboratuvarında optik sensör ve biyokimyasal analiz çalışmaları</span>
+      <div class="caption-line">
+        <span class="caption-tag">YARIŞMA STANDI</span>
+        <span class="caption-txt">TEKNOFEST Çevre ve Enerji Teknolojileri standında jüri ve ziyaretçilerle</span>
       </div>
     </div>
 
-    <div class="media-unit">
-      <div class="img-box">
-        <img style="object-position: center center; transform: scale(1.0);" src="file:///Users/wildgenie/Projects/btu-matro/public/media/galeri-alhazen-analiz.jpg" alt="OPTİK ANALİZ">
+    <div style="display: flex; flex-direction: column;">
+      <div class="media-box" style="height: 100%;">
+        <img style="object-position: center 35%;" src="file:///Users/wildgenie/Projects/btu-matro/public/media/galeri-alhazen-analiz.jpg" alt="Podyum">
       </div>
-      <div class="caption-bar">
-        <span class="caption-tag">OPTİK ANALİZ</span>
-        <span class="caption-text">Taşınabilir spektrofotometre düzeneği ve mikroakışkan hücre tahlili</span>
-      </div>
-    </div>
-
-    <div class="media-unit">
-      <div class="img-box">
-        <img style="object-position: center center; transform: scale(1.0);" src="file:///Users/wildgenie/Projects/btu-matro/public/media/galeri-alhazen-ekipman.jpg" alt="ELEKTRONİK DİZGİ">
-      </div>
-      <div class="caption-bar">
-        <span class="caption-tag">ELEKTRONİK DİZGİ</span>
-        <span class="caption-text">Hassas analog ön uç (AFE) amplifikatör ve biyo-potansiyel devresi</span>
+      <div class="caption-line">
+        <span class="caption-tag">PODYUM</span>
+        <span class="caption-txt">ALHAZEN ekibimiz yarışma sahnesinde</span>
       </div>
     </div>
   </div>
 
-  <div class="middle-split">
-    <div class="desc-text">
-      <p><strong>ALHAZEN</strong>, optik prensipler ve yapay zekâ destekli görüntü analizi ile kan ve doku örneklerinde hızlı tanı koyan taşınabilir biyomedikal cihazlar geliştiren ekibimizdir.</p>
-      <p>Geliştirilen mikrosistemler, sahada laboratuvar ortamı gerektirmeden spektrometrik ölçümler yapar ve sonuçları hekime anında aktarır.</p>
+  <div class="mid-alhazen">
+    <div>
+      <div style="font-family: var(--font-mono); font-size: 11px; font-weight: 700; color: var(--c-volt); margin-bottom: 4px;">ÇEVRE, ENERJİ VE BİYOTEKNOLOJİ TAKIMI</div>
+      <h1 style="font-family: var(--font-display); font-size: 46px; font-weight: 900; line-height: 0.95; text-transform: uppercase;">ALHAZEN</h1>
+      <p style="font-size: 14px; line-height: 1.52; color: #475569; margin-top: 8px;">
+        <strong>ALHAZEN</strong>, çevre ve enerji verimliliği alanında optik prensipler ve elektrokimyasal analiz sistemleri geliştiren araştırma ekibimizdir. Saha ortamında taşınabilir spektrometrik ölçümler ve hidrojen yakıt hücresi katalizör analizleri gerçekleştirir.
+      </p>
       <ul class="bullet-list">
-        <li>Mikroakışkan çip entegrasyonuyla hızlı numune hazırlığı ve analizi</li><li>Hücresel anomalileri sınıflandıran yapay sinir ağı mimarisi</li><li>Düşük gürültülü analog sinyal işleme ve optik filtreleme</li>
+        <li>Optik spektrofotometre ve mikroakışkan hücre analizleri</li>
+        <li>Hassas analog ön uç amplifikasyonu ve düşük gürültülü sinyal işleme</li>
       </ul>
     </div>
 
-    <div class="tech-spec-box">
-      <div class="box-title">
-        <span>Teknik Spesifikasyonlar</span>
-        <span>ALHAZEN OPTİK TANI</span>
+    <div class="tech-box">
+      <div style="font-family: var(--font-mono); font-size: 11px; font-weight: 700; border-bottom: 1.5px solid var(--c-ink); padding-bottom: 4px;">SİSTEM PARAMETRELERİ</div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 10px 0;">
+        <div><span style="font-family: var(--font-mono); font-size: 9px; color: var(--c-text-subtle);">DALGA BOYU</span><div style="font-size: 13px; font-weight: 700;">340 nm – 850 nm</div></div>
+        <div><span style="font-family: var(--font-mono); font-size: 9px; color: var(--c-text-subtle);">ÇÖZÜNÜRLÜK</span><div style="font-size: 13px; font-weight: 700;">12-bit Hassas Dedektör</div></div>
+        <div><span style="font-family: var(--font-mono); font-size: 9px; color: var(--c-text-subtle);">ANALİZ</span><div style="font-size: 13px; font-weight: 700;">Spektrometrik Ölçüm</div></div>
+        <div><span style="font-family: var(--font-mono); font-size: 9px; color: var(--c-text-subtle);">MİMARİ</span><div style="font-size: 13px; font-weight: 700;">Düşük Güçlü Taşınabilir</div></div>
       </div>
-      <div class="spec-grid">
-        
-        <div class="spec-item">
-          <span class="spec-label">Dalga Boyu</span>
-          <span class="spec-value">340 nm – 850 nm</span>
-        </div>
-        <div class="spec-item">
-          <span class="spec-label">Çözünürlük</span>
-          <span class="spec-value">12-bit Hassas Dedektör</span>
-        </div>
-        <div class="spec-item">
-          <span class="spec-label">Yapay Zekâ</span>
-          <span class="spec-value">ResNet-18 Sınıflandırma</span>
-        </div>
-        <div class="spec-item">
-          <span class="spec-label">Güç Tüketimi</span>
-          <span class="spec-value">Taşınabilir Düşük Güç</span>
-        </div>
+      <div style="background: var(--c-medal-light); border: 1px solid #FCD34D; padding: 6px 10px; border-radius: 3px; font-size: 11px; font-weight: 700; color: #92400E;">
+        ★ TEKNOFEST ÇEVRE & ENERJİ FİNALİSTİ
       </div>
     </div>
   </div>
 
-  <div class="lower-ribbon">
-    <div class="media-unit">
-      <div class="img-box">
-        <img style="object-position: center center; transform: scale(1.0);" src="file:///Users/wildgenie/Projects/btu-matro/public/media/takim-alhazen.jpg" alt="BİYOMÜHENDİSLİK EKİBİ">
-      </div>
-      <div class="caption-bar">
-        <span class="caption-tag">BİYOMÜHENDİSLİK EKİBİ</span>
-        <span class="caption-text">ALHAZEN biyomedikal ve optik analiz geliştirme ekibimiz laboratuvarda</span>
-      </div>
+  <!-- Alt Şerit: Tek Geniş Gerçek Laboratuvar Analiz Karesi (Kafa kesintisi ve mükerrer görsel sıfırlandı!) -->
+  <div style="display: flex; flex-direction: column;">
+    <div class="media-box lower-alhazen">
+      <img style="object-position: center 40%;" src="file:///Users/wildgenie/Projects/btu-matro/public/media/webmedya-cevre-enerji-9.jpg" alt="Analiz">
     </div>
-
-    <div class="media-unit">
-      <div class="img-box">
-        <img style="object-position: center center; transform: scale(1.0);" src="file:///Users/wildgenie/Projects/btu-matro/public/media/webmedya-cevre-enerji-9.jpg" alt="KALİBRASYON">
-      </div>
-      <div class="caption-bar">
-        <span class="caption-tag">KALİBRASYON</span>
-        <span class="caption-text">Hassas optik sensörlerin standart solüsyonlarla kalibrasyon süreci</span>
-      </div>
+    <div class="caption-line">
+      <span class="caption-tag">LABORATUVAR NUMUNE ANALİZİ</span>
+      <span class="caption-txt">Yakıt hücresi katalizör solüsyonunun spektrofotometrik tahlili ve kalibrasyon süreci</span>
     </div>
   </div>
 
   <footer class="page-footer">
-    <div class="footer-site">btumatro.com // ALHAZEN</div>
+    <div class="footer-site">btumatro.com // ALHAZEN ÇEVRE & ENERJİ</div>
     <div class="page-number">SAYFA 16</div>
   </footer>
 </body>
