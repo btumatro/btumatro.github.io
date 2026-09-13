@@ -1,0 +1,48 @@
+{
+  "sources": {
+    "blue": "public/logo-matro-mavi.png",
+    "white": "public/logo-matro-beyaz.png",
+    "black": "public/logo-matro-siyah.png",
+    "btu": "public/logo-btu.png",
+    "tf": "docs/sticker-paketi/referanslar/TR_TEKNOFEST/t3-logo-TR-01.png"
+  },
+  "logoPolicy": "Kaynak PNG baytları değiştirilmeden SVG içine gömüldü. Logo yazıları yeniden yazılmadı.",
+  "items": [
+    {
+      "id": "01-matro-mavi",
+      "title": "MATRO / Mavi kimlik",
+      "svg": "01-matro-mavi.svg",
+      "png": "01-matro-mavi.png"
+    },
+    {
+      "id": "02-matro-gece",
+      "title": "MATRO / Gece vardiyası",
+      "svg": "02-matro-gece.svg",
+      "png": "02-matro-gece.png"
+    },
+    {
+      "id": "03-matro-siyah",
+      "title": "MATRO / Üretim etiketi",
+      "svg": "03-matro-siyah.svg",
+      "png": "03-matro-siyah.png"
+    },
+    {
+      "id": "04-btu-matro",
+      "title": "MATRO / BTÜ kimliği",
+      "svg": "04-btu-matro.svg",
+      "png": "04-btu-matro.png"
+    },
+    {
+      "id": "05-teknofest-matro",
+      "title": "MATRO / TEKNOFEST saha etiketi",
+      "svg": "05-teknofest-matro.svg",
+      "png": "05-teknofest-matro.png"
+    },
+    {
+      "id": "06-matro-devrede",
+      "title": "MATRO / Devrede",
+      "svg": "06-matro-devrede.svg",
+      "png": "06-matro-devrede.png"
+    }
+  ]
+}

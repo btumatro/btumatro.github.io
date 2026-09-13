@@ -2876,6 +2876,138 @@
         "GİRİŞİMCİLİK VE İNOVASYON (Galeri)",
         "Site Galerisi (Yarışma)"
       ]
+    },
+    {
+      "file": "/media/stickers/01-atolye.png",
+      "title": "MATRO ve atölye — 12 sticker",
+      "group": "Sticker tasarımları",
+      "width": 1024,
+      "height": 1536,
+      "sizeKb": 2164,
+      "note": "Yapay zekâ destekli raster tasarım paftası; kesim konturu içermez. Araç çizimleri stilize, takım/bölüm amblemleri konsepttir.",
+      "usedIn": [
+        "Sticker koleksiyonu"
+      ]
+    },
+    {
+      "file": "/media/stickers/02-araclar.png",
+      "title": "Araç koleksiyonu — 12 sticker",
+      "group": "Sticker tasarımları",
+      "width": 1024,
+      "height": 1536,
+      "sizeKb": 2455,
+      "note": "Yapay zekâ destekli raster tasarım paftası; kesim konturu içermez. Araç çizimleri stilize, takım/bölüm amblemleri konsepttir.",
+      "usedIn": [
+        "Sticker koleksiyonu"
+      ]
+    },
+    {
+      "file": "/media/stickers/03-takimlar.png",
+      "title": "Takımlar ve sistemler — 12 sticker",
+      "group": "Sticker tasarımları",
+      "width": 1024,
+      "height": 1536,
+      "sizeKb": 1975,
+      "note": "Yapay zekâ destekli raster tasarım paftası; kesim konturu içermez. Araç çizimleri stilize, takım/bölüm amblemleri konsepttir.",
+      "usedIn": [
+        "Sticker koleksiyonu"
+      ]
+    },
+    {
+      "file": "/media/stickers/04-kampus.png",
+      "title": "BTÜ, bölümler ve TEKNOFEST — 12 sticker",
+      "group": "Sticker tasarımları",
+      "width": 1024,
+      "height": 1536,
+      "sizeKb": 2461,
+      "note": "Yapay zekâ destekli raster tasarım paftası; kesim konturu içermez. Araç çizimleri stilize, takım/bölüm amblemleri konsepttir.",
+      "usedIn": [
+        "Sticker koleksiyonu"
+      ]
+    },
+    {
+      "file": "/media/stickers/05-yaratici.png",
+      "title": "Yaratıcı MATRO, BTÜ ve TEKNOFEST — 9 sticker",
+      "group": "Sticker tasarımları",
+      "width": 1024,
+      "height": 1536,
+      "sizeKb": 1922,
+      "note": "Konsept raster pafta. Logolar yeniden çizimdir; baskıda kurumsal asıllarla değiştirilmelidir.",
+      "usedIn": [
+        "Sticker koleksiyonu"
+      ]
+    },
+    {
+      "file": "/media/stickers/kurumsal/01-matro-mavi.png",
+      "title": "MATRO / Mavi kimlik",
+      "group": "Sticker tasarımları",
+      "width": 1200,
+      "height": 1520,
+      "sizeKb": 344,
+      "note": "Orijinal logo korunur. Aynı adla SVG sürümü de mevcut; logo raster, dış geometri ve metinler düzenlenebilir.",
+      "usedIn": [
+        "Kurumsal sticker serisi"
+      ]
+    },
+    {
+      "file": "/media/stickers/kurumsal/02-matro-gece.png",
+      "title": "MATRO / Gece vardiyası",
+      "group": "Sticker tasarımları",
+      "width": 1200,
+      "height": 1520,
+      "sizeKb": 486,
+      "note": "Orijinal logo korunur. Aynı adla SVG sürümü de mevcut; logo raster, dış geometri ve metinler düzenlenebilir.",
+      "usedIn": [
+        "Kurumsal sticker serisi"
+      ]
+    },
+    {
+      "file": "/media/stickers/kurumsal/03-matro-siyah.png",
+      "title": "MATRO / Üretim etiketi",
+      "group": "Sticker tasarımları",
+      "width": 1200,
+      "height": 1520,
+      "sizeKb": 271,
+      "note": "Orijinal logo korunur. Aynı adla SVG sürümü de mevcut; logo raster, dış geometri ve metinler düzenlenebilir.",
+      "usedIn": [
+        "Kurumsal sticker serisi"
+      ]
+    },
+    {
+      "file": "/media/stickers/kurumsal/04-btu-matro.png",
+      "title": "MATRO / BTÜ kimliği",
+      "group": "Sticker tasarımları",
+      "width": 1200,
+      "height": 1520,
+      "sizeKb": 263,
+      "note": "Orijinal logo korunur. Aynı adla SVG sürümü de mevcut; logo raster, dış geometri ve metinler düzenlenebilir.",
+      "usedIn": [
+        "Kurumsal sticker serisi"
+      ]
+    },
+    {
+      "file": "/media/stickers/kurumsal/05-teknofest-matro.png",
+      "title": "MATRO / TEKNOFEST saha etiketi",
+      "group": "Sticker tasarımları",
+      "width": 1200,
+      "height": 1520,
+      "sizeKb": 237,
+      "note": "Orijinal logo korunur. Aynı adla SVG sürümü de mevcut; logo raster, dış geometri ve metinler düzenlenebilir.",
+      "usedIn": [
+        "Kurumsal sticker serisi"
+      ]
+    },
+    {
+      "file": "/media/stickers/kurumsal/06-matro-devrede.png",
+      "title": "MATRO / Devrede",
+      "group": "Sticker tasarımları",
+      "width": 1200,
+      "height": 1520,
+      "sizeKb": 278,
+      "note": "Orijinal logo korunur. Aynı adla SVG sürümü de mevcut; logo raster, dış geometri ve metinler düzenlenebilir.",
+      "usedIn": [
+        "Kurumsal sticker serisi"
+      ]
     }
   ]
 }

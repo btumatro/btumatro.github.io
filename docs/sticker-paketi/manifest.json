@@ -1,0 +1,56 @@
+{
+  "date": "2026-09-13",
+  "format": "Raster PNG pafta; tekil kesim konturları yok",
+  "assets": [
+    "/media/stickers/01-atolye.png",
+    "/media/stickers/02-araclar.png",
+    "/media/stickers/03-takimlar.png",
+    "/media/stickers/04-kampus.png"
+  ],
+  "sources": [
+    {
+      "sheet": "02-araclar",
+      "refs": [
+        "tasarim-ashina-iha.jpg",
+        "galeri-matris-test-ucus.jpg",
+        "galeri-matrover-2025.jpg",
+        "webmedya-tika-ika-21.jpg",
+        "galeri-matrover-tarla-robot.jpg",
+        "tasarim-iss-auv-mor.jpg",
+        "galeri-iss-2021-icerde.jpg",
+        "galeri-zemheri-sara.jpg",
+        "webmedya-insansiz-deniz-araci-12.jpg",
+        "takim-luna-ika.jpg",
+        "galeri-lodos-deniz-test.jpg",
+        "galeri-prusa-detay.jpg"
+      ],
+      "kind": "fotoğraf/tasarım temelli illüstrasyon"
+    },
+    {
+      "sheet": "03-takimlar",
+      "refs": [
+        "galeri-mergen-hss.jpg",
+        "galeri-pusula-atolye.jpg",
+        "galeri-ashina-quad-detay.jpg"
+      ],
+      "kind": "konsept ve takım kimliği"
+    },
+    {
+      "sheet": "04-kampus",
+      "refs": [],
+      "kind": "konsept ve takım kimliği"
+    }
+  ],
+  "externalSources": [
+    "https://tercih.btu.edu.tr/tr/sayfa/sitemap",
+    "https://www.teknofest.org/tr/yarismalar/"
+  ],
+  "limits": [
+    "Site medya kökündeki 204 JPEG/PNG önizlemeyle tarandı; Drive arşivinin tamamı incelendi iddiası yok.",
+    "Alt adlar aynı araç anlamına gelmeyebilir. Görseli adıyla eşleştirilemeyen YAKLI, SEKSENOL, LUNAROV ve BTU DALAY için ayrı araç uydurulmadı.",
+    "BÜRKÜT, ANDROMEDA, ALHAZEN, ÇAĞRI ve tarım inovasyonu sembolik temsildir.",
+    "BTÜ stickerındaki yapı stilize temsildir; resmî bina çizimi ve resmî amblem değildir.",
+    "Üç alan MATRO rozetindeki araçlar temsili; gerçek MATRO filosu için araç paftasını kullanın.",
+    "Bölüm sloganları yaratıcı metindir; mevcut üyelerin bölüm dağılımı hakkında iddia değildir."
+  ]
+}
