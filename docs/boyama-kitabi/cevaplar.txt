@@ -1,0 +1,1 @@
+Eşleştirme: MATRİS–gökyüzü; LUNA–kara; LODOS–deniz yüzeyi; PRUSA–su altı. Sayma: 5 yıldız, 7 dişli, 6 pervane. Labirent DFS ile üretildi; 81 hücrenin tamamı bağlıdır.

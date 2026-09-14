@@ -25,3 +25,5 @@ pnpm-debug.log*
 
 # Claude Code yerel ayarları
 .claude/settings.local.json
+
+.venv-stickers/
