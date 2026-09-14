@@ -9,7 +9,7 @@ with ZipFile(docs / "matro-sticker-paketi.zip", "w", ZIP_DEFLATED) as archive:
         if path.is_file():
             archive.write(path, "assets/" + str(path.relative_to(root / "public/media/stickers")))
     for path in sorted(docs.rglob("*")):
-        if path.is_file() and path.suffix in {".md", ".txt", ".json", ".ai", ".pdf"}:
+        if path.is_file() and path.suffix in {".md", ".txt", ".json", ".ai", ".pdf", ".jpeg", ".jpg", ".png"}:
             archive.write(path, "kaynaklar/" + str(path.relative_to(docs)))
     for name in ["logo-btu.png", "logo-matro-siyah.png", "matro-logo-siyah.svg"]:
         archive.write(root / "public" / name, "kaynaklar/logolar/" + name)

@@ -3008,6 +3008,54 @@
       "usedIn": [
         "Kurumsal sticker serisi"
       ]
+    },
+    {
+      "file": "/media/stickers/08-araclar-duzeltilmis.png",
+      "title": "Güncellenmiş 8 araç — netleştirilmiş sticker paftası",
+      "group": "Sticker tasarımları",
+      "width": 1024,
+      "height": 1536,
+      "sizeKb": 2220,
+      "note": "Kullanıcının son araç seçimi esas alındı. MATRİS etiketi drone altına taşındı. Raster illüstrasyon; kesim dosyası değildir.",
+      "usedIn": [
+        "Sticker koleksiyonu"
+      ]
+    },
+    {
+      "file": "/media/stickers/09-araclar-referans.png",
+      "title": "Araç stickerları — güncel",
+      "group": "Sticker tasarımları",
+      "width": 1024,
+      "height": 1536,
+      "sizeKb": 2206,
+      "note": "LODOS bayrağı ve gri kabin, ZEMHERİ gri bant, MATROVER direkleri fotoğraflara göre düzeltildi.",
+      "usedIn": [
+        "Sticker koleksiyonu"
+      ]
+    },
+    {
+      "file": "/media/stickers/10-atolye-guncel.png",
+      "title": "Atölye — güncel",
+      "group": "Sticker tasarımları",
+      "width": 1027,
+      "height": 1531,
+      "sizeKb": 2207,
+      "note": "Çizgiler ve yazılar yeniden işlendi; MATRO imzaları eklendi. Raster çıktı; kaynak JPEG ayrıca referans arşivinde korunur.",
+      "usedIn": [
+        "Sticker koleksiyonu"
+      ]
+    },
+    {
+      "file": "/media/stickers/11-kampus-guncel.png",
+      "title": "Kampüs — güncel",
+      "group": "Sticker tasarımları",
+      "width": 1027,
+      "height": 1531,
+      "sizeKb": 2105,
+      "note": "Çizgiler ve yazılar yeniden işlendi; MATRO imzaları eklendi. Raster çıktı; kaynak JPEG ayrıca referans arşivinde korunur.",
+      "usedIn": [
+        "Sticker koleksiyonu"
+      ]
     }
   ]
 }
