@@ -1,0 +1,14 @@
+import fs from 'node:fs/promises';import sharp from 'sharp';
+const root='public/media/stickers/v2';const items=JSON.parse(await fs.readFile(root+'/manifest.json','utf8'));
+const titles={takimlar:'Takımlar ve araçlar',atolye:'Atölye ve üretim',kampus:'Kampüs ve bölümler'};
+for(const group of Object.keys(titles)) {
+ const list=items.filter(i=>i.group===group),size=600,cols=3,rows=Math.ceil(list.length/cols),layers=[];
+ for(let i=0;i<list.length;i++) {const input=await sharp(list[i].file).resize(550,550,{fit:'contain',background:{r:0,g:0,b:0,alpha:0}}).png().toBuffer();layers.push({input,left:(i%cols)*size+25,top:Math.floor(i/cols)*size+25});}
+ await sharp({create:{width:cols*size,height:rows*size,channels:4,background:{r:0,g:0,b:0,alpha:0}}}).composite(layers).png().toFile(`${root}/${group}-pafta.png`);
+}
+const html=`<!doctype html><html lang="tr"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MATRO Sticker Serisi V2</title><style>body{font:16px system-ui;background:#edf1f5;color:#142035;margin:32px}main{max-width:1200px;margin:auto}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}article{padding:16px;background:white;border:1px solid #ccd3dc;border-radius:12px}img{width:100%;height:240px;object-fit:contain;background:#e1e7ed}a{color:#0758a6}h2{margin-top:48px}</style><main><h1>MATRO Sticker Serisi V2</h1><p>30 ayrı şeffaf PNG. Renkli çizimler raster; ayrı SVG dosyaları yalnızca düzenlenebilir kesim konturlarıdır.</p><a href="matro-sticker-v2.zip">Tüm paketi indir</a>${Object.entries(titles).map(([g,t])=>`<h2>${t}</h2><p><a href="${g}-pafta.png">Grup paftası</a></p><div class="grid">${items.filter(i=>i.group===g).map(i=>`<article><img src="tekil/${g}/${i.name}.png" alt="${i.name}" loading="lazy"><h3>${i.name}</h3><a href="tekil/${g}/${i.name}.png" download>Şeffaf PNG</a> · <a href="tekil/${g}/${i.name}.kesim.svg" download>Kesim SVG</a></article>`).join('')}</div>`).join('')}</main></html>`;
+await fs.writeFile(root+'/index.html',html);
+const assets=JSON.parse(await fs.readFile('src/data/assets.json','utf8'));assets.assets=assets.assets.filter(a=>!a.file.startsWith('/media/stickers/v2/'));
+for(const i of items) assets.assets.push({file:'/'+i.file.replace(/^public\//,''),title:'MATRO sticker: '+i.name,group:'Sticker V2 / '+titles[i.group],width:i.width,height:i.height,sizeKb:Math.round((await fs.stat(i.file)).size/1024),note:'Şeffaf PNG; aynı klasörde ayrı .kesim.svg konturu. Renkli çizim rasterdır.',usedIn:['Sticker koleksiyonu']});
+await fs.writeFile('src/data/assets.json',JSON.stringify(assets,null,2)+'\n');
+let old=await fs.readFile('public/media/stickers/index.html','utf8');if(!old.includes('v2/index.html'))old=old.replace('</header>','<p><a href="v2/index.html">Yeni V2: 30 şeffaf sticker ve kesim konturları</a></p></header>');await fs.writeFile('public/media/stickers/index.html',old);

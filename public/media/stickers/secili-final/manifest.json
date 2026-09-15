@@ -1,0 +1,197 @@
+[
+  {
+    "name": "matro-btu",
+    "group": "atolye",
+    "file": "public/media/stickers/secili-final/atolye/matro-btu.png"
+  },
+  {
+    "name": "koddan-harekete",
+    "group": "atolye",
+    "file": "public/media/stickers/secili-final/atolye/koddan-harekete.png"
+  },
+  {
+    "name": "ciz-uret-test-et",
+    "group": "atolye",
+    "file": "public/media/stickers/secili-final/atolye/ciz-uret-test-et.png"
+  },
+  {
+    "name": "bir-test-daha",
+    "group": "atolye",
+    "file": "public/media/stickers/secili-final/atolye/bir-test-daha.png"
+  },
+  {
+    "name": "birlikte-uret",
+    "group": "atolye",
+    "file": "public/media/stickers/secili-final/atolye/birlikte-uret.png"
+  },
+  {
+    "name": "sahaya-hazir",
+    "group": "atolye",
+    "file": "public/media/stickers/secili-final/atolye/sahaya-hazir.png"
+  },
+  {
+    "name": "atolye-modu",
+    "group": "atolye",
+    "file": "public/media/stickers/secili-final/atolye/atolye-modu.png"
+  },
+  {
+    "name": "takim-isi",
+    "group": "atolye",
+    "file": "public/media/stickers/secili-final/atolye/takim-isi.png"
+  },
+  {
+    "name": "matro-bursa",
+    "group": "atolye",
+    "file": "public/media/stickers/secili-final/atolye/matro-bursa.png"
+  },
+  {
+    "name": "makine",
+    "group": "kampus",
+    "file": "public/media/stickers/secili-final/kampus/makine.png"
+  },
+  {
+    "name": "bilgisayar",
+    "group": "kampus",
+    "file": "public/media/stickers/secili-final/kampus/bilgisayar.png"
+  },
+  {
+    "name": "kimya",
+    "group": "kampus",
+    "file": "public/media/stickers/secili-final/kampus/kimya.png"
+  },
+  {
+    "name": "elektrik-elektronik",
+    "group": "kampus",
+    "file": "public/media/stickers/secili-final/kampus/elektrik-elektronik.png"
+  },
+  {
+    "name": "endustri",
+    "group": "kampus",
+    "file": "public/media/stickers/secili-final/kampus/endustri.png"
+  },
+  {
+    "name": "matroda-yerin-var",
+    "group": "kampus",
+    "file": "public/media/stickers/secili-final/kampus/matroda-yerin-var.png"
+  },
+  {
+    "name": "teknofest",
+    "group": "kampus",
+    "file": "public/media/stickers/secili-final/kampus/teknofest.png"
+  },
+  {
+    "name": "btu",
+    "group": "kampus",
+    "file": "public/media/stickers/secili-final/kampus/btu.png"
+  },
+  {
+    "name": "mekatronik",
+    "group": "kampus",
+    "file": "public/media/stickers/secili-final/kampus/mekatronik.png"
+  },
+  {
+    "name": "malzeme",
+    "group": "kampus",
+    "file": "public/media/stickers/secili-final/kampus/malzeme.png"
+  },
+  {
+    "name": "prusa",
+    "group": "takimlar",
+    "file": "public/media/stickers/secili-final/takimlar/prusa.png"
+  },
+  {
+    "name": "zemheri",
+    "group": "takimlar",
+    "file": "public/media/stickers/secili-final/takimlar/zemheri.png"
+  },
+  {
+    "name": "ashina",
+    "group": "takimlar",
+    "file": "public/media/stickers/secili-final/takimlar/ashina.png"
+  },
+  {
+    "name": "luna",
+    "group": "takimlar",
+    "file": "public/media/stickers/secili-final/takimlar/luna.png"
+  },
+  {
+    "name": "lodos",
+    "group": "takimlar",
+    "file": "public/media/stickers/secili-final/takimlar/lodos.png"
+  },
+  {
+    "name": "matris",
+    "group": "takimlar",
+    "file": "public/media/stickers/secili-final/takimlar/matris.png"
+  },
+  {
+    "name": "matrover",
+    "group": "takimlar",
+    "file": "public/media/stickers/secili-final/takimlar/matrover.png"
+  },
+  {
+    "name": "goksav",
+    "group": "takimlar",
+    "file": "public/media/stickers/secili-final/takimlar/goksav.png"
+  },
+  {
+    "name": "pusula",
+    "group": "takimlar",
+    "file": "public/media/stickers/secili-final/takimlar/pusula.png"
+  },
+  {
+    "name": "ashina-acik-govde",
+    "group": "takimlar",
+    "file": "public/media/stickers/secili-final/takimlar/ashina-acik-govde.png"
+  },
+  {
+    "name": "alhazen",
+    "group": "takimlar",
+    "file": "public/media/stickers/secili-final/takimlar/alhazen.png"
+  },
+  {
+    "name": "girisimcilik",
+    "group": "takimlar",
+    "file": "public/media/stickers/secili-final/takimlar/girisimcilik.png"
+  },
+  {
+    "name": "kara-hava-deniz",
+    "group": "takimlar",
+    "file": "public/media/stickers/secili-final/takimlar/kara-hava-deniz.png"
+  },
+  {
+    "name": "ben-robot-degilim",
+    "group": "yaratici",
+    "file": "public/media/stickers/secili-final/yaratici/ben-robot-degilim.png"
+  },
+  {
+    "name": "bende-calisiyordu",
+    "group": "yaratici",
+    "file": "public/media/stickers/secili-final/yaratici/bende-calisiyordu.png"
+  },
+  {
+    "name": "gece-vardiyasi",
+    "group": "yaratici",
+    "file": "public/media/stickers/secili-final/yaratici/gece-vardiyasi.png"
+  },
+  {
+    "name": "kagittan-gokyuzune",
+    "group": "yaratici",
+    "file": "public/media/stickers/secili-final/yaratici/kagittan-gokyuzune.png"
+  },
+  {
+    "name": "muhendis-yukleniyor",
+    "group": "yaratici",
+    "file": "public/media/stickers/secili-final/yaratici/muhendis-yukleniyor.png"
+  },
+  {
+    "name": "bir-vida-araniyor",
+    "group": "yaratici",
+    "file": "public/media/stickers/secili-final/yaratici/bir-vida-araniyor.png"
+  },
+  {
+    "name": "birlikte-uretiyoruz",
+    "group": "yaratici",
+    "file": "public/media/stickers/secili-final/yaratici/birlikte-uretiyoruz.png"
+  }
+]

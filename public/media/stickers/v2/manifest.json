@@ -1,0 +1,272 @@
+[
+  {
+    "group": "takimlar",
+    "name": "matris",
+    "file": "public/media/stickers/v2/tekil/takimlar/matris.png",
+    "width": 669,
+    "height": 466,
+    "alphaMin": 0,
+    "alphaMax": 255
+  },
+  {
+    "group": "takimlar",
+    "name": "matrover",
+    "file": "public/media/stickers/v2/tekil/takimlar/matrover.png",
+    "width": 451,
+    "height": 467,
+    "alphaMin": 0,
+    "alphaMax": 255
+  },
+  {
+    "group": "takimlar",
+    "name": "iss-auv",
+    "file": "public/media/stickers/v2/tekil/takimlar/iss-auv.png",
+    "width": 450,
+    "height": 391,
+    "alphaMin": 0,
+    "alphaMax": 255
+  },
+  {
+    "group": "takimlar",
+    "name": "iss-arsiv",
+    "file": "public/media/stickers/v2/tekil/takimlar/iss-arsiv.png",
+    "width": 393,
+    "height": 388,
+    "alphaMin": 0,
+    "alphaMax": 255
+  },
+  {
+    "group": "takimlar",
+    "name": "zemheri",
+    "file": "public/media/stickers/v2/tekil/takimlar/zemheri.png",
+    "width": 530,
+    "height": 366,
+    "alphaMin": 0,
+    "alphaMax": 255
+  },
+  {
+    "group": "takimlar",
+    "name": "luna",
+    "file": "public/media/stickers/v2/tekil/takimlar/luna.png",
+    "width": 450,
+    "height": 372,
+    "alphaMin": 0,
+    "alphaMax": 255
+  },
+  {
+    "group": "takimlar",
+    "name": "lodos",
+    "file": "public/media/stickers/v2/tekil/takimlar/lodos.png",
+    "width": 503,
+    "height": 387,
+    "alphaMin": 0,
+    "alphaMax": 255
+  },
+  {
+    "group": "takimlar",
+    "name": "prusa",
+    "file": "public/media/stickers/v2/tekil/takimlar/prusa.png",
+    "width": 461,
+    "height": 348,
+    "alphaMin": 0,
+    "alphaMax": 255
+  },
+  {
+    "group": "atolye",
+    "name": "matro-btu",
+    "file": "public/media/stickers/v2/tekil/atolye/matro-btu.png",
+    "width": 435,
+    "height": 455,
+    "alphaMin": 0,
+    "alphaMax": 255
+  },
+  {
+    "group": "atolye",
+    "name": "atolye-modu",
+    "file": "public/media/stickers/v2/tekil/atolye/atolye-modu.png",
+    "width": 419,
+    "height": 473,
+    "alphaMin": 0,
+    "alphaMax": 255
+  },
+  {
+    "group": "atolye",
+    "name": "ciz-uret-test-et",
+    "file": "public/media/stickers/v2/tekil/atolye/ciz-uret-test-et.png",
+    "width": 429,
+    "height": 457,
+    "alphaMin": 0,
+    "alphaMax": 255
+  },
+  {
+    "group": "atolye",
+    "name": "birlikte-uret",
+    "file": "public/media/stickers/v2/tekil/atolye/birlikte-uret.png",
+    "width": 415,
+    "height": 466,
+    "alphaMin": 0,
+    "alphaMax": 255
+  },
+  {
+    "group": "atolye",
+    "name": "bir-test-daha",
+    "file": "public/media/stickers/v2/tekil/atolye/bir-test-daha.png",
+    "width": 436,
+    "height": 442,
+    "alphaMin": 0,
+    "alphaMax": 255
+  },
+  {
+    "group": "atolye",
+    "name": "koddan-harekete",
+    "file": "public/media/stickers/v2/tekil/atolye/koddan-harekete.png",
+    "width": 435,
+    "height": 440,
+    "alphaMin": 0,
+    "alphaMax": 255
+  },
+  {
+    "group": "atolye",
+    "name": "matro-bursa",
+    "file": "public/media/stickers/v2/tekil/atolye/matro-bursa.png",
+    "width": 460,
+    "height": 300,
+    "alphaMin": 0,
+    "alphaMax": 255
+  },
+  {
+    "group": "atolye",
+    "name": "takim-isi",
+    "file": "public/media/stickers/v2/tekil/atolye/takim-isi.png",
+    "width": 386,
+    "height": 356,
+    "alphaMin": 0,
+    "alphaMax": 255
+  },
+  {
+    "group": "atolye",
+    "name": "sahaya-hazir",
+    "file": "public/media/stickers/v2/tekil/atolye/sahaya-hazir.png",
+    "width": 385,
+    "height": 402,
+    "alphaMin": 0,
+    "alphaMax": 255
+  },
+  {
+    "group": "kampus",
+    "name": "btu",
+    "file": "public/media/stickers/v2/tekil/kampus/btu.png",
+    "width": 371,
+    "height": 389,
+    "alphaMin": 0,
+    "alphaMax": 255
+  },
+  {
+    "group": "kampus",
+    "name": "teknofest",
+    "file": "public/media/stickers/v2/tekil/kampus/teknofest.png",
+    "width": 347,
+    "height": 378,
+    "alphaMin": 0,
+    "alphaMax": 255
+  },
+  {
+    "group": "kampus",
+    "name": "makine",
+    "file": "public/media/stickers/v2/tekil/kampus/makine.png",
+    "width": 339,
+    "height": 386,
+    "alphaMin": 0,
+    "alphaMax": 255
+  },
+  {
+    "group": "kampus",
+    "name": "bilgisayar",
+    "file": "public/media/stickers/v2/tekil/kampus/bilgisayar.png",
+    "width": 334,
+    "height": 386,
+    "alphaMin": 0,
+    "alphaMax": 255
+  },
+  {
+    "group": "kampus",
+    "name": "elektrik-elektronik",
+    "file": "public/media/stickers/v2/tekil/kampus/elektrik-elektronik.png",
+    "width": 336,
+    "height": 381,
+    "alphaMin": 0,
+    "alphaMax": 255
+  },
+  {
+    "group": "kampus",
+    "name": "mekatronik",
+    "file": "public/media/stickers/v2/tekil/kampus/mekatronik.png",
+    "width": 341,
+    "height": 388,
+    "alphaMin": 0,
+    "alphaMax": 255
+  },
+  {
+    "group": "kampus",
+    "name": "endustri",
+    "file": "public/media/stickers/v2/tekil/kampus/endustri.png",
+    "width": 329,
+    "height": 385,
+    "alphaMin": 0,
+    "alphaMax": 255
+  },
+  {
+    "group": "kampus",
+    "name": "mimarlik",
+    "file": "public/media/stickers/v2/tekil/kampus/mimarlik.png",
+    "width": 353,
+    "height": 389,
+    "alphaMin": 0,
+    "alphaMax": 255
+  },
+  {
+    "group": "kampus",
+    "name": "kimya",
+    "file": "public/media/stickers/v2/tekil/kampus/kimya.png",
+    "width": 331,
+    "height": 387,
+    "alphaMin": 0,
+    "alphaMax": 255
+  },
+  {
+    "group": "kampus",
+    "name": "orman",
+    "file": "public/media/stickers/v2/tekil/kampus/orman.png",
+    "width": 345,
+    "height": 438,
+    "alphaMin": 0,
+    "alphaMax": 255
+  },
+  {
+    "group": "kampus",
+    "name": "malzeme",
+    "file": "public/media/stickers/v2/tekil/kampus/malzeme.png",
+    "width": 338,
+    "height": 404,
+    "alphaMin": 0,
+    "alphaMax": 255
+  },
+  {
+    "group": "kampus",
+    "name": "matroda-yerin-var",
+    "file": "public/media/stickers/v2/tekil/kampus/matroda-yerin-var.png",
+    "width": 337,
+    "height": 398,
+    "alphaMin": 0,
+    "alphaMax": 255
+  },
+  {
+    "group": "takimlar",
+    "name": "ashina",
+    "file": "public/media/stickers/v2/tekil/takimlar/ashina.png",
+    "width": 1254,
+    "height": 1254,
+    "alphaMin": 0,
+    "alphaMax": 255
+  }
+]

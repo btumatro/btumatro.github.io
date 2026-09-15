@@ -1,0 +1,26 @@
+[
+  {
+    "name": "takimlar",
+    "width": 1024,
+    "height": 1536,
+    "transparentPixels": 673659,
+    "totalPixels": 1572864,
+    "alphaZeroPercent": 43
+  },
+  {
+    "name": "atolye",
+    "width": 1254,
+    "height": 1254,
+    "transparentPixels": 472416,
+    "totalPixels": 1572516,
+    "alphaZeroPercent": 30
+  },
+  {
+    "name": "kampus",
+    "width": 1027,
+    "height": 1532,
+    "transparentPixels": 480780,
+    "totalPixels": 1573364,
+    "alphaZeroPercent": 31
+  }
+]
