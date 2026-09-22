@@ -1,0 +1,240 @@
+{
+  "_not": "MATRO Sponsorluk Dergisi editoryal içeriği. Takım, başarı, sponsor, paket, tarihçe ve basın verileri sitenin kendi kaynaklarından (src/content, src/data) okunur; burada yalnız dergiye özel metinler ve fotoğraf seçimleri durur. Sponsorların bireysel destek tutarları bilerek gösterilmez.",
+  "sayi": "Sayı 01",
+  "donem": "2026–2027",
+  "kapak": {
+    "foto": "/media/mavi-vatan-ekipler.jpg",
+    "fotoKonum": "58% center",
+    "baslik": "Atölyede başlar, sahada kanıtlanır.",
+    "altbaslik": "Sponsorluk Dosyası ve Topluluk Dergisi",
+    "manset": [
+      "2026'da 8 takım TEKNOFEST finalinde",
+      "13 yıllık başarı arşivi",
+      "Sponsorluk kademeleri ve süreç"
+    ]
+  },
+  "editor": {
+    "baslik": "Editörden",
+    "paragraflar": [
+      "Elinizdeki dergi, MATRO'yu ilk kez tanıyacak bir kurum için hazırlandı. Kim olduğumuzu, neler ürettiğimizi, bu üretimin arkasındaki insanları ve desteğinizin nereye dönüşeceğini tek bir yerde, abartısız anlatmak istedik.",
+      "2013'te Bursa Teknik Üniversitesi'nde kurulan topluluğumuz bugün hava, kara, deniz ve su altı araçlarından endüstriyel robotiğe, haberleşmeden enerji teknolojilerine uzanan on üç proje takımını tek bir atölyede buluşturuyor. Her yıl yüzlerce yeni üye eğitim kamplarından geçiyor; bir kısmı sezon sonunda bir aracın elektronik kartını tasarlıyor, bir kısmı yarışma sahasında o aracı yönetiyor.",
+      "Bu üretim, sponsorlarımızın malzeme, hizmet, lisans ve nakit desteğiyle mümkün oluyor. Dergideki her rakam sitemizde yayımladığımız kayıtlardan hesaplandı; her fotoğraf kendi ekiplerimize ait.",
+      "2026–2027 sezonunda aynı yolu sizinle yürümek isteriz."
+    ],
+    "imza": "MATRO Yönetim Kurulu"
+  },
+  "fotolar": {
+    "bizKimiz": "/media/galeri-matrover-arazi-test.jpg",
+    "bizKimiz2": "/media/galeri-zemheri-atolye.jpg",
+    "finaller": "/media/galeri-zemheri-final.jpg",
+    "takimlarAcilis": "/media/galeri-ashina-tubitak-sahne.jpg",
+    "atolye": "/media/galeri-matrobot-tarla-test.jpg",
+    "egitim": "/media/galeri-egitim-kampi-1.jpg",
+    "toplum": "/media/galeri-tugay-ciner-atolye.jpg",
+    "sanayi": "/media/galeri-turkish-technic-hangar.jpg",
+    "sponsorlukAcilis": "/media/galeri-matrover-stand.jpg",
+    "gorunurluk": [
+      {
+        "foto": "/media/galeri-zemheri-atolye.jpg",
+        "not": "Yarışma alanında takım kıyafetlerinde sponsor logoları"
+      },
+      {
+        "foto": "/media/galeri-matris-havelsan-stand.jpg",
+        "not": "TEKNOFEST final alanında takım standı"
+      },
+      {
+        "foto": "/media/galeri-kampus-fuar-standi.jpg",
+        "not": "Kampüs etkinliklerinde tanıtım standı"
+      },
+      {
+        "foto": "/media/sponsor-platin-vatanjet.jpg",
+        "not": "Sosyal medyada sponsor duyurusu"
+      }
+    ],
+    "hedefler": "/media/galeri-tika-tarimsal-ika.jpg",
+    "kapanis": "/media/webmedya-tika-ika-18.jpg",
+    "sanayiSerit": [
+      {
+        "foto": "/media/galeri-ermetal-baretler.jpg",
+        "not": "Ermetal, Aralık 2025"
+      },
+      {
+        "foto": "/media/galeri-hktm-ekip.jpg",
+        "not": "HKTM, Mart 2026"
+      },
+      {
+        "foto": "/media/haber-alp-havacilik.jpg",
+        "not": "Alp Havacılık, Mart 2026"
+      }
+    ]
+  },
+  "takimlar": [
+    {
+      "dosya": "ashina",
+      "tam": true,
+      "foto": "/media/galeri-ashina-tubitak-sahne.jpg",
+      "ek": [
+        "/media/galeri-ashina-saha.jpg",
+        "/media/galeri-ashina-kompozit-uretim.jpg"
+      ]
+    },
+    {
+      "dosya": "tika-ika",
+      "tam": true,
+      "foto": "/media/galeri-matrover-arazi-test.jpg",
+      "ek": [
+        "/media/webmedya-tika-ika-16.jpg",
+        "/media/galeri-tika-tarimsal-ika.jpg"
+      ]
+    },
+    {
+      "dosya": "insansiz-deniz-araci",
+      "tam": true,
+      "foto": "/media/galeri-lodos-ekip-sahil.jpg",
+      "ek": [
+        "/media/galeri-lodos-deniz-test.jpg",
+        "/media/galeri-lodos-saha.jpg"
+      ],
+      "fotoKonum": "center 15%"
+    },
+    {
+      "dosya": "insansiz-su-alti",
+      "tam": true,
+      "foto": "/media/takim-iss-sualti-araci.jpg",
+      "ek": [
+        "/media/tasarim-iss-auv-mor.jpg",
+        "/media/galeri-prusa-detay.jpg"
+      ]
+    },
+    {
+      "dosya": "su-alti-roketi",
+      "tam": true,
+      "foto": "/media/takim-zemheri.jpg",
+      "ek": [
+        "/media/galeri-zemheri-sara.jpg",
+        "/media/galeri-zemheri-atolye.jpg"
+      ]
+    },
+    {
+      "dosya": "suru-iha",
+      "tam": true,
+      "foto": "/media/webmedya-suru-iha-35.jpg",
+      "ek": [
+        "/media/galeri-matris-test-alani.jpg",
+        "/media/galeri-matris-havelsan-stand.jpg"
+      ]
+    },
+    {
+      "dosya": "sanayide-dijital",
+      "tam": true,
+      "foto": "/media/galeri-pusula-atolye.jpg",
+      "ek": [
+        "/media/galeri-teknofest-2022-odul.jpg",
+        "/media/galeri-pusula-ekip-2025.jpg"
+      ]
+    },
+    {
+      "dosya": "ashina-h",
+      "foto": "/media/galeri-mergen-hss.jpg"
+    },
+    {
+      "dosya": "cevre-enerji",
+      "foto": "/media/galeri-alhazen-laboratuvar.jpg"
+    },
+    {
+      "dosya": "burkut",
+      "foto": "/media/galeri-burkut-simulasyon-ekip.jpg"
+    },
+    {
+      "dosya": "cagri",
+      "foto": "/media/cagri-team-cropped.jpg"
+    },
+    {
+      "dosya": "girisimcilik",
+      "foto": "/media/galeri-girisim-75000-odul.jpg"
+    },
+    {
+      "dosya": "ashina-inovasyon",
+      "foto": "/media/takim-ashina-inovasyon.jpg"
+    }
+  ],
+  "finalSehirleri": [
+    {
+      "sehir": "Malatya",
+      "takimlar": [
+        "ASHİNA"
+      ]
+    },
+    {
+      "sehir": "Mardin",
+      "takimlar": [
+        "LUNA İKA"
+      ]
+    },
+    {
+      "sehir": "Diyarbakır",
+      "takimlar": [
+        "PUSULA"
+      ]
+    },
+    {
+      "sehir": "Gaziantep",
+      "takimlar": [
+        "MATRİS"
+      ]
+    },
+    {
+      "sehir": "Mavi Vatan",
+      "takimlar": [
+        "LODOS",
+        "PRUSA",
+        "ZEMHERİ"
+      ]
+    }
+  ],
+  "neden": [
+    {
+      "baslik": "Sahada görünürlük",
+      "metin": "Logonuz TEKNOFEST final alanlarında, yarış araçlarında, takım kıyafetlerinde, fuar standlarında ve kampüs etkinliklerinde; aynı zamanda web sitemizde ve sosyal medya hesaplarımızda yer alır."
+    },
+    {
+      "baslik": "Genç mühendislerle erken temas",
+      "metin": "Eğitim kamplarımızdan her yıl yüzlerce öğrenci geçiyor. Sponsorlarımız staj, teknik gezi ve atölye buluşmalarıyla geleceğin mühendis adaylarını üniversite sıralarındayken tanıyor."
+    },
+    {
+      "baslik": "Yerli teknolojiye katkı",
+      "metin": "Takımlarımız motorundan kontrol kartına kadar pek çok alt sistemi kendisi tasarlıyor. Desteğiniz doğrudan yerli ve milli teknoloji geliştirme sürecine dönüşüyor."
+    },
+    {
+      "baslik": "Toplumsal etki",
+      "metin": "İlkokuldan liseye yüzlerce öğrenciye robotik ve kodlama eğitimi veriyor, Kardeş Okul Projesi ile teknolojiye erişimi kısıtlı okullara malzeme desteği sağlıyoruz."
+    },
+    {
+      "baslik": "Şeffaf ve resmî süreç",
+      "metin": "Sponsorluklar Bursa Teknik Üniversitesi Rektörlüğü'ne sunulan resmî form ile kayda geçer; nakit destekler üniversitenin şartlı bağış hesabı üzerinden alınır."
+    }
+  ],
+  "harcama": [
+    {
+      "baslik": "Malzeme ve üretim",
+      "metin": "Elektronik komponent, motor, batarya, kompozit ve mekanik parça; lazer kesim, CNC ve 3B baskı işçiliği."
+    },
+    {
+      "baslik": "Test ve saha",
+      "metin": "Havuz, deniz ve arazi testleri; prototiplerin tekrar tekrar üretilip denenmesi."
+    },
+    {
+      "baslik": "Yarışma katılımı",
+      "metin": "Final alanlarına araç ve ekip ulaşımı, konaklama ve yarışma süresince lojistik."
+    },
+    {
+      "baslik": "Eğitim ve atölye",
+      "metin": "Yeni üyeler için eğitim kampları, atölye ekipmanı ve mühendislik yazılımı lisansları."
+    }
+  ],
+  "kapanis": {
+    "baslik": "Bir sonraki sezonu birlikte kuralım.",
+    "metin": "Sponsorluk dosyamızın güncel hâlini ve takımlarımızın 2026–2027 hedeflerini içeren sunumumuzu sizinle paylaşmak için bir görüşme ayarlayalım.",
+    "eposta": "matroiletisim@gmail.com"
+  }
+}
