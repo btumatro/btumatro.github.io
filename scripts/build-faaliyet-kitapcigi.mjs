@@ -1,20 +1,27 @@
 #!/usr/bin/env node
 /**
- * MATRO 2025–2026 Faaliyet Kitapçığı — A4 dikey, baskıya uygun PDF.
+ * MATRO 2025–2026 Faaliyet Raporu — A4 dikey, kitap düzeninde baskıya uygun PDF.
  *
- * Kaynak veri: docs/faaliyet-kitapcigi-2025-26/icerik.json (faaliyet raporundan
- * temizlenmiş metinler; bütçe alanları bilerek yok). Bu betik veriden tek bir HTML
- * üretir (kitapcik.html — tarayıcıda açılıp sayfa sayfa incelenebilir), ardından
- * Puppeteer ile CSS @page ölçüsünü kullanarak PDF basar.
+ * Kaynaklar:
+ *   docs/faaliyet-kitapcigi-2025-26/icerik.json   faaliyet künyeleri (rapordan)
+ *   docs/faaliyet-kitapcigi-2025-26/metinler.json kart gövde metinleri
+ *   src/data/*.json, src/content/teams/*.md         topluluk bilgileri, takımlar, başarılar
  *
- * Rakamlar (faaliyet sayısı, toplam katılım, aylara göre dağılım, içindekiler sayfa
- * numaraları) elle yazılmaz, veriden hesaplanır.
+ * Her faaliyet numaralı bir karttadır (numara, ad, fotoğraf, açıklama, künye: tarih,
+ * yer, katılımcı, bütçe, araç gereç, iş birliği). Rakamlar (faaliyet, katılım, bütçe,
+ * derece sayıları, içindekiler sayfa numaraları) veriden hesaplanır.
+ *
+ * Sayfa düzeni kitap gibidir: tek numaralı sayfalar sağda, çiftler solda; cilt payı ve
+ * sayfa numarası buna göre yer değiştirir. Kart metni taşarsa fotoğraf yüksekliği
+ * otomatik küçültülür; hâlâ taşan kart varsa betik uyarır.
  *
  * Kullanım:
  *   node scripts/build-faaliyet-kitapcigi.mjs            # HTML + PDF
  *   node scripts/build-faaliyet-kitapcigi.mjs --html     # yalnız HTML
  */
 import puppeteer from 'puppeteer-core';
+import yaml from 'js-yaml';
+import sharp from 'sharp';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
@@ -22,14 +29,20 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const DIR = path.join(ROOT, 'docs/faaliyet-kitapcigi-2025-26');
 const CHROME = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
-const data = JSON.parse(fs.readFileSync(path.join(DIR, 'icerik.json'), 'utf8'));
-const sponsors = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/sponsors.json'), 'utf8'));
+const oku = (p) => JSON.parse(fs.readFileSync(path.join(ROOT, p), 'utf8'));
+const data = oku('docs/faaliyet-kitapcigi-2025-26/icerik.json');
+const metinler = oku('docs/faaliyet-kitapcigi-2025-26/metinler.json');
+const sponsors = oku('src/data/sponsors.json');
+const site = oku('src/data/site.json');
+const about = oku('src/data/about.json');
+const ach = oku('src/data/achievements.json');
+const ekip = oku('src/data/ekibimiz.json');
+const basin = oku('src/data/basinda-biz.json');
 
 // ---------- yardımcılar ----------
-const esc = (s = '') =>
-  String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
-/** '/media/x.jpg' → public/media; diğerleri kitapçık klasörüne göre. */
+const esc = (s = '') => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const src = (p) => (p.startsWith('/media/') ? `../../public${p}` : p);
+const img = (p, alt = '', konum = '') => `<img src="${esc(src(p))}" alt="${esc(alt)}"${konum ? ` style="object-position:${esc(konum)}"` : ''} />`;
 const AYLAR = ['Ocak', 'Şubat', 'Mart', 'Nisan', 'Mayıs', 'Haziran', 'Temmuz', 'Ağustos', 'Eylül', 'Ekim', 'Kasım', 'Aralık'];
 const AY_KISA = ['Oca', 'Şub', 'Mar', 'Nis', 'May', 'Haz', 'Tem', 'Ağu', 'Eyl', 'Eki', 'Kas', 'Ara'];
 function tarih(t, bitis) {
@@ -47,364 +60,416 @@ function tarih(t, bitis) {
   return `${f(t)} – ${f(bitis)}`;
 }
 const sayi = (n) => n.toLocaleString('tr-TR');
+const tl = (s) => (s ? Number(String(s).replace(/[^\d]/g, '')) : 0);
+const para = (n) => `${sayi(n)} TL`;
+function mdDosya(p) {
+  const s = fs.readFileSync(path.join(ROOT, p), 'utf8');
+  return yaml.load(s.match(/^---\n([\s\S]*?)\n---/)[1]);
+}
 
-// ---------- veriden türetilen rakamlar ----------
+// ---------- numaralı faaliyet listesi ----------
 const F = data.faaliyetler;
-const B = data.basarilar.filter((b) => b.katilim); // İKA derecesi proje olarak zaten sayılıyor
 const P = data.projeler;
-const toplamFaaliyet = F.length + B.length + P.length;
-const toplamKatilim =
-  F.reduce((a, f) => a + (f.katilim || 0), 0) +
-  B.reduce((a, b) => a + b.katilim, 0) +
-  P.reduce((a, p) => a + p.kisi, 0);
-const bolumSay = (id) => F.filter((f) => f.bolum === id).length;
+const DONEM = data.donem;
+const BOLUM_SIRA = ['topluluk', 'sanayi', 'stant', 'okullar', 'basari', 'teknofest', 'sosyal'];
+const bolumBul = (id) => data.bolumler.find((b) => b.id === id);
+const tarihSira = (t) => (t || '9999').padEnd(10, '-');
+const kayitlar = [];
+for (const bolum of BOLUM_SIRA) {
+  let grup;
+  if (bolum === 'teknofest') {
+    grup = P.map((p) => ({
+      bolum, anahtar: p.takim, ad: p.takim, altBaslik: `TEKNOFEST ${p.kategori}`, gorsel: p.gorsel, gorselNotu: p.gorselNotu, gorselKonum: p.gorselKonum,
+      ozet: p.ozet, tarih: p.tarih, yer: p.yer, katilim: p.kisi, butce: p.butce, arac: p.arac, isbirligi: p.isbirligi,
+      derece: p.vurgu ? 'Türkiye 3.sü' : '',
+    }));
+  } else {
+    grup = F.filter((f) => f.bolum === bolum).map((f) => ({ ...f, anahtar: f.ad }));
+    if (bolum === 'basari')
+      grup.push(
+        ...data.basarilar
+          .filter((b) => b.katilim)
+          .map((b) => ({ bolum, anahtar: b.baslik, ad: b.baslik, gorsel: b.gorsel, ozet: b.ozet, tarih: b.tarih, yer: b.kurum, katilim: b.katilim, butce: b.butce, arac: b.arac, isbirligi: b.isbirligi, derece: b.derece })),
+      );
+    grup.sort((a, b) => tarihSira(a.tarih).localeCompare(tarihSira(b.tarih)));
+  }
+  kayitlar.push(...grup);
+}
+kayitlar.forEach((k, i) => {
+  k.no = String(i + 1).padStart(2, '0');
+  k.metin = metinler[k.anahtar] || '';
+});
+// Fotoğraf oranına göre kart düzeni: yatay fotoğraflar kartın üstünde geniş, dikey ve
+// kareye yakın olanlar solda dikey sütunda durur; böylece kişiler ve araçlar kırpılmaz.
+const diskYolu = (p) => (p.startsWith('/media/') ? path.join(ROOT, 'public', p) : path.join(DIR, p));
+for (const k of kayitlar) {
+  if (!k.gorsel) continue;
+  const m = await sharp(diskYolu(k.gorsel)).metadata();
+  k.oran = m.width / m.height;
+}
+const eksik = kayitlar.filter((k) => !k.gorsel || !k.metin).map((k) => `${k.ad}${k.gorsel ? '' : ' (fotoğraf)'}${k.metin ? '' : ' (metin)'}`);
+if (eksik.length) throw new Error('Eksik içerik: ' + eksik.join(', '));
+
+// ---------- rakamlar ----------
+const toplamFaaliyet = kayitlar.length;
+const toplamKatilim = kayitlar.reduce((a, k) => a + (k.katilim || 0), 0);
+const toplamButce = kayitlar.reduce((a, k) => a + tl(k.butce), 0);
+const butceliSay = kayitlar.filter((k) => tl(k.butce)).length;
+const bolumListe = (id) => kayitlar.filter((k) => k.bolum === id);
 const gezi = F.filter((f) => f.bolum === 'sanayi' && /Gezi|Ziyaret/.test(f.ad));
 const okulKatilim = F.filter((f) => f.bolum === 'okullar').reduce((a, f) => a + f.katilim, 0);
 const projeKisi = P.reduce((a, p) => a + p.kisi, 0);
-const kurumSay = new Set([...data.isbirlikleri, ...F.flatMap((f) => f.isbirligi || [])]).size;
-
-// Aylara göre dağılım: yalnızca ay bilgisi olan kayıtlar (Eyl 2025 – Haz 2026).
+const kurumSay = new Set([...data.isbirlikleri, ...kayitlar.flatMap((k) => k.isbirligi || [])]).size;
+const A = ach.items;
+const dereceSay = A.length;
+const birincilik = A.filter((i) => /(^|[^0-9])1\./.test(i.degree)).length;
+const final2026 = A.filter((i) => i.year === 2026 && /finalist/i.test(i.degree));
+const takimDosyalari = fs.readdirSync(path.join(ROOT, 'src/content/teams')).filter((f) => f.endsWith('.md'));
 const aylar = [];
 for (let i = 0; i < 10; i++) {
   const d = new Date(2025, 8 + i, 1);
   aylar.push({ key: `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}`, ad: AY_KISA[d.getMonth()] });
 }
-const tarihli = [...F.filter((f) => f.listede !== false), ...data.basarilar.filter((b) => b.katilim)]
-  .filter((x) => /^\d{4}-\d{2}/.test(x.tarih));
+const tarihli = kayitlar.filter((k) => /^\d{4}-\d{2}/.test(k.tarih || '') && k.bolum !== 'teknofest');
 for (const a of aylar) a.n = tarihli.filter((x) => x.tarih.startsWith(a.key)).length;
 const ayMax = Math.max(...aylar.map((a) => a.n));
 
-// ---------- sayfa parçaları ----------
-let sayfaNo = 0;
-const icindekiler = [];
+// ---------- sayfa altyapısı ----------
 const pages = [];
-const DONEM = data.donem;
-
-function page(inner, { cls = '', footer = true, bolum = '' } = {}) {
-  sayfaNo += 1;
-  const n = String(sayfaNo).padStart(2, '0');
-  const foot = footer
-    ? `<footer class="run"><span>MATRO · Faaliyet Raporu ${DONEM}</span>${bolum ? `<span class="run-b">${esc(bolum)}</span>` : ''}<span class="pn">${n}</span></footer>`
-    : '';
-  pages.push(`<section class="page ${cls}">${inner}${foot}</section>`);
-  return sayfaNo;
-}
-const bolumBul = (id) => data.bolumler.find((b) => b.id === id);
-const meta = (f) =>
-  `<div class="meta"><span>${esc(tarih(f.tarih, f.bitis))}</span><span>${esc(f.yer)}</span>${f.katilim ? `<span>${sayi(f.katilim)} katılımcı</span>` : ''}</div>`;
-const img = (p, alt = '', cls = '', konum = '') =>
-  `<img class="${cls}" src="${esc(src(p))}" alt="${esc(alt)}"${konum ? ` style="object-position:${esc(konum)}"` : ''} />`;
-
-function kart(f, { buyuk = false } = {}) {
-  return `<article class="kart ${buyuk ? 'kart-l' : ''}">
-    ${f.gorsel ? `<figure>${img(f.gorsel, f.ad)}</figure>` : ''}
-    ${meta(f)}
-    <h3>${esc(f.ad)}</h3>
-    <p>${esc(f.ozet)}</p>
-    ${f.isbirligi?.length ? `<p class="ib">İş birliği: ${esc(f.isbirligi.join(', '))}</p>` : ''}
-  </article>`;
-}
-
-function bolumBaslik(id, { kisa = false } = {}) {
-  const b = bolumBul(id);
-  return `<header class="bb ${kisa ? 'bb-k' : ''}">
-    <div class="bb-no">${b.no}</div>
-    <div><p class="eyebrow">Bölüm ${b.no}</p><h2>${esc(b.baslik)}</h2>${kisa ? `<p class="lead">${esc(b.ozet)}</p>` : ''}</div>
-  </header>`;
-}
-
-function acilis(id, { ekstra = '' } = {}) {
-  const b = bolumBul(id);
-  const liste = F.filter((f) => f.bolum === id && f.listede !== false);
-  const no = page(
-    `<figure class="acilis-foto">${img(b.kapak, b.baslik)}</figure>
-    <div class="acilis-govde">
-      ${bolumBaslik(id)}
-      <div class="acilis-kolon">
-        <p class="lead">${esc(b.ozet)}</p>
-        <ol class="mini">${liste
-          .map((f) => `<li><span class="mini-t">${esc(tarih(f.tarih, f.bitis))}</span><span>${esc(f.ad)}</span><span class="mini-k">${f.katilim ? sayi(f.katilim) : ''}</span></li>`)
-          .join('')}</ol>
-      </div>
-      ${ekstra}
-    </div>`,
-    { cls: 'p-acilis', bolum: b.baslik },
-  );
-  icindekiler.push({ no: b.no, baslik: b.baslik, sayfa: no });
+const toc = [];
+/**
+ * Sayfa ekler. tam: kenar boşluksuz tam sayfa (kapaklar, bölüm açılışları).
+ * Tek numaralı sayfalar sağ sayfadır: cilt payı solda, numara sağda.
+ */
+function page(inner, { cls = '', bolum = '', tam = false, footer = true } = {}) {
+  const no = pages.length + 1;
+  const taraf = no % 2 ? 'sag' : 'sol';
+  const ust = !tam && bolum ? `<div class="ust"><span>${esc(bolum)}</span><span>MATRO · Faaliyet Raporu ${DONEM}</span></div>` : '';
+  const alt = footer ? `<div class="alt"><span class="pn">${String(no).padStart(2, '0')}</span></div>` : '';
+  pages.push(`<section class="page ${taraf} ${tam ? 'tam' : ''} ${cls}">${ust}<div class="icerik">${inner}</div>${alt}</section>`);
   return no;
 }
+const eyebrow = (t, cls = '') => `<p class="eyebrow ${cls}">${esc(t)}</p>`;
+const baslik = (kicker, h, lead = '') => `<header class="sb">${kicker ? eyebrow(kicker) : ''}<h2>${h}</h2>${lead ? `<p class="lead">${esc(lead)}</p>` : ''}</header>`;
 
 // ---------- 1. Kapak ----------
-const kapakFotolari = [
-  'gorseller/turkish-technic-workshop-2000.jpg',
-  '/media/galeri-matris-saha.jpg',
-  '/media/galeri-zemheri-sara.jpg',
-  '/media/galeri-tugay-ciner-atolye.jpg',
-  '/media/galeri-lodos-detay.jpg',
-  '/media/galeri-robot-gunleri-stant.jpg',
-  '/media/galeri-turkish-technic-hangar.jpg',
-];
 page(
-  `<div class="kapak-mozaik">${kapakFotolari.map((p, i) => `<div class="m m${i + 1}">${img(p)}</div>`).join('')}</div>
+  `<figure class="kapak-foto">${img('gorseller/turkish-technic-workshop-2000.jpg', 'Turkish Technic Workshop katılımcıları', 'center 40%')}</figure>
+  <div class="kapak-ust">
+    <div class="logolar"><img src="../../public/logo-matro-beyaz.png" alt="MATRO" /><i></i><img src="../../public/logo-btu-beyaz.png" alt="Bursa Teknik Üniversitesi" /></div>
+  </div>
   <div class="kapak-alt">
-    <div class="kapak-logolar"><img src="../../public/logo-matro-beyaz.png" alt="MATRO" /><span></span><img src="../../public/logo-btu-beyaz.png" alt="Bursa Teknik Üniversitesi" /></div>
-    <p class="eyebrow volt">Bursa Teknik Üniversitesi · Makine Teknolojileri Robot ve Otomasyon Topluluğu</p>
+    <p class="kapak-kurum">Bursa Teknik Üniversitesi<br />Makine Teknolojileri Robot ve Otomasyon Topluluğu</p>
     <h1>Faaliyet<br />Raporu</h1>
     <p class="kapak-donem">${DONEM}</p>
-    <p class="kapak-sayilar"><b>${toplamFaaliyet}</b> faaliyet <i></i> <b>${sayi(toplamKatilim)}</b> katılım <i></i> <b>${P.length}</b> TEKNOFEST projesi</p>
+    <ul class="kapak-rakam"><li><b>${toplamFaaliyet}</b>faaliyet</li><li><b>${sayi(toplamKatilim)}</b>katılım</li><li><b>${P.length}</b>TEKNOFEST projesi</li><li><b>${final2026.length}</b>2026 finalisti</li></ul>
   </div>`,
-  { cls: 'p-kapak dark', footer: false },
+  { cls: 'p-kapak koyu', tam: true, footer: false },
 );
 
-// ---------- 2. Sunuş + içindekiler (numaralar sonradan doldurulur) ----------
-const SUNUS_YER = pages.length;
-page('', { cls: 'p-sunus' });
-
-// ---------- 3. Sayılarla sezon ----------
+// ---------- 2. İç kapak ----------
+const kisi = (rol) => site.people.find((p) => p.role === rol)?.name || '';
+const adDuzelt = (s) => s.replace(/\b([A-ZÇĞİÖŞÜ])([A-ZÇĞİÖŞÜ]+)\b/g, (_, a, b) => a + b.toLocaleLowerCase('tr'));
 page(
-  `<header class="bb bb-k"><div><p class="eyebrow">Sezon özeti</p><h2>Sayılarla ${DONEM}</h2></div></header>
+  `<div class="ic-logolar"><img src="../../public/logo-matro-mavi.png" alt="MATRO" /><img src="../../public/logo-btu.png" alt="Bursa Teknik Üniversitesi" /></div>
+  <div class="ic-baslik">
+    ${eyebrow('Bursa Teknik Üniversitesi öğrenci toplulukları')}
+    <h1>MATRO<br /><span>${DONEM}</span><br />Faaliyet Raporu</h1>
+    <p class="lead">${esc(site.fullName)} (MATRO) tarafından ${DONEM} akademik yılında gerçekleştirilen eğitim, teknik gezi, stant, sosyal sorumluluk, yarışma ve proje faaliyetlerinin raporudur.</p>
+  </div>
+  <dl class="ic-kunye">
+    <dt>Topluluk</dt><dd>${esc(site.fullName)}</dd>
+    <dt>Kuruluş</dt><dd>${site.foundedYear}</dd>
+    <dt>Topluluk başkanı</dt><dd>${esc(adDuzelt(kisi('Topluluk Başkanı')))}</dd>
+    <dt>Akademik danışman</dt><dd>${esc(adDuzelt(kisi('Akademik Danışman')))}</dd>
+    <dt>Danışman mühendis</dt><dd>${esc(adDuzelt(kisi('Topluluk Danışman Mühendisi')))}</dd>
+    <dt>Hazırlayan</dt><dd>MATRO Yönetim Kurulu</dd>
+    <dt>Atölye</dt><dd>${esc(site.contact.workshop)}</dd>
+    <dt>İletişim</dt><dd>${esc(site.contact.emails[0])} · btumatro.com</dd>
+  </dl>`,
+  { cls: 'p-ic-kapak', footer: false },
+);
+
+// ---------- 3. Sunuş + içindekiler (sonra doldurulur) ----------
+const SUNUS = pages.length;
+page('');
+
+// ---------- 4. Biz kimiz ----------
+page(
+  `${baslik('Topluluk', 'Biz kimiz?')}
+  <div class="biz">
+    <div class="biz-metin">${about.intro.body.split('\n\n').map((p) => `<p>${esc(p)}</p>`).join('')}</div>
+    <figure class="biz-foto">${img('/media/galeri-matrover-arazi-test.jpg', 'LUNA İKA ekibi')}</figure>
+  </div>
+  <div class="vm">
+    <div>${eyebrow('Vizyon', 'volt')}<p class="alinti">${esc(about.vision)}</p></div>
+    <div>${eyebrow('Misyon', 'volt')}<p>${esc(about.mission)}</p></div>
+  </div>
+  <div class="degerler">${about.values.map((v, i) => `<div><span>${String(i + 1).padStart(2, '0')}</span><h3>${esc(v.title)}</h3><p>${esc(v.description)}</p></div>`).join('')}</div>
+  <ul class="kunye-serit"><li><b>${site.foundedYear}</b>kuruluş</li><li><b>${takimDosyalari.length}</b>proje takımı</li><li><b>${dereceSay}</b>kayıtlı derece</li><li><b>${birincilik}</b>birincilik</li></ul>`,
+  { cls: 'p-biz', bolum: 'Topluluk' },
+);
+toc.push({ no: '', baslik: 'Biz kimiz?', sayfa: pages.length });
+
+// ---------- 5. Tarihçe ----------
+page(
+  `${baslik('Topluluk', `${site.foundedYear}'ten bugüne`)}
+  <ol class="zaman">${about.timeline.map((t) => `<li><span class="yil">${esc(t.year)}</span><div><h3>${esc(t.title)}</h3><p>${esc(t.description)}</p></div></li>`).join('')}</ol>`,
+  { cls: 'p-tarihce', bolum: 'Topluluk' },
+);
+toc.push({ no: '', baslik: 'Tarihçe', sayfa: pages.length });
+
+// ---------- 6. Yapı ve takımlar ----------
+{
+  const sira = ['ashina', 'tika-ika', 'insansiz-deniz-araci', 'insansiz-su-alti', 'su-alti-roketi', 'suru-iha', 'sanayide-dijital', 'ashina-h', 'cevre-enerji', 'burkut', 'cagri', 'girisimcilik', 'ashina-inovasyon'];
+  const takimlar = sira.map((d) => mdDosya(`src/content/teams/${d}.md`));
+  page(
+    `${baslik('Topluluk', 'Nasıl çalışıyoruz?', ekip.hero.description)}
+    <div class="kurul">${ekip.boardTeams.map((b) => `<div><h3>${esc(b.name)}</h3><p>${esc(b.description)}</p></div>`).join('')}</div>
+    ${eyebrow(`${takimlar.length} proje takımı`, 'volt')}
+    <div class="takimlar">${takimlar
+      .map((t) => `<div class="tk"><figure>${img(t.image, t.title)}</figure><div><h4>${esc(t.title)}</h4><p>${esc(t.subtitle)}</p>${t.badge ? `<span>${esc(t.badge)}</span>` : ''}</div></div>`)
+      .join('')}</div>`,
+    { cls: 'p-yapi', bolum: 'Topluluk' },
+  );
+  toc.push({ no: '', baslik: 'Yapımız ve takımlarımız', sayfa: pages.length });
+}
+
+// ---------- 7. Sayılarla ----------
+page(
+  `${baslik('Sezon özeti', `Sayılarla ${DONEM}`)}
   <div class="stat-grid">
-    <div class="stat big"><b>${toplamFaaliyet}</b><span>faaliyet</span><em>eğitim, gezi, stant, okul programı, yarışma ve sosyal etkinlik</em></div>
+    <div class="stat big"><b>${toplamFaaliyet}</b><span>faaliyet</span><em>eğitim, gezi, stant, okul programı, yarışma, proje ve sosyal etkinlik</em></div>
     <div class="stat big"><b>${sayi(toplamKatilim)}</b><span>toplam katılım</span><em>faaliyet başına bildirilen katılımcı sayılarının toplamı</em></div>
     <div class="stat"><b>${P.length}</b><span>TEKNOFEST projesi</span><em>${projeKisi} öğrenci görev aldı</em></div>
     <div class="stat"><b>${gezi.length}</b><span>teknik gezi</span><em>havacılık, savunma, Ar-Ge ve sanayi</em></div>
-    <div class="stat"><b>${sayi(okulKatilim)}</b><span>okul öğrencisine ulaştık</span><em>${bolumSay('okullar')} okul programı</em></div>
+    <div class="stat"><b>${sayi(okulKatilim)}</b><span>okul öğrencisi</span><em>${bolumListe('okullar').length} okul programında</em></div>
     <div class="stat"><b>${kurumSay}+</b><span>kurumla iş birliği</span><em>sanayi, kamu, okul ve sivil toplum</em></div>
   </div>
   <div class="grafik">
-    <p class="eyebrow">Aylara göre faaliyet sayısı</p>
-    <div class="bars">${aylar
-      .map((a) => `<div class="bar"><span class="bar-n">${a.n || ''}</span><i style="height:${a.n ? (a.n / ayMax) * 100 : 0}%"></i><span class="bar-a">${a.ad}</span></div>`)
-      .join('')}</div>
-    <p class="not">Tarihi ay düzeyinde bilinen faaliyetler; sürekli yürüyen TEKNOFEST proje çalışmaları dahil değildir.</p>
+    ${eyebrow('Aylara göre faaliyet sayısı')}
+    <div class="bars">${aylar.map((a) => `<div class="bar"><span class="bar-n">${a.n || ''}</span><i style="height:${a.n ? (a.n / ayMax) * 100 : 0}%"></i><span class="bar-a">${a.ad}</span></div>`).join('')}</div>
+    <p class="not">Tarihi ay düzeyinde bilinen faaliyetler; sezon boyunca süren TEKNOFEST proje çalışmaları dahil değildir.</p>
   </div>
-  <div class="derece-serit">
-    <p class="eyebrow">Sezonun dereceleri</p>
-    <ul>${data.basarilar
-      .filter((b) => b.derece)
-      .map((b) => `<li><b>${esc(b.derece)}</b><span>${esc(b.baslik)}</span></li>`)
-      .join('')}</ul>
+  <div class="derece-serit">${eyebrow('Sezonun dereceleri')}
+    <ul>${data.basarilar.filter((b) => b.derece).map((b) => `<li><b>${esc(b.derece)}</b><span>${esc(b.baslik)}</span></li>`).join('')}<li><b>${final2026.length}</b><span>takım TEKNOFEST 2026 finalinde</span></li></ul>
   </div>`,
   { cls: 'p-sayilar', bolum: 'Sezon özeti' },
 );
+toc.push({ no: '', baslik: `Sayılarla ${DONEM}`, sayfa: pages.length });
 
-// ---------- 01 Topluluk ve Eğitim ----------
-acilis('topluluk');
-page(
-  `${bolumBaslik('topluluk', { kisa: false })}
-  <div class="grid-2x2">${F.filter((f) => f.bolum === 'topluluk').slice(1).map((f) => kart(f)).join('')}</div>`,
-  { cls: 'p-grid', bolum: 'Topluluk ve Eğitim' },
-);
-
-// ---------- 02 Sanayi ile Buluşma ----------
-const tt = F.find((f) => f.ad === 'Turkish Technic Teknik Gezisi');
-acilis('sanayi', {
-  ekstra: `<div class="one-cikan"><p class="eyebrow volt">Öne çıkan</p><h3>${esc(tt.ad)}</h3>${meta(tt)}<p>${esc(tt.ozet)}</p></div>`,
-});
-const ws = F.find((f) => f.ad === 'Turkish Technic Workshop');
-page(
-  `<figure class="tam-foto">${img(ws.gorsel, ws.ad)}</figure>
-  <div class="ozellik">
-    <div><p class="eyebrow">Kampüste sanayi</p><h2>${esc(ws.ad)}</h2>${meta(ws)}</div>
-    <div><p class="lead">${esc(ws.ozet)}</p><p class="ib">İş birliği: ${esc(ws.isbirligi.join(', '))}</p></div>
-  </div>`,
-  { cls: 'p-ozellik', bolum: 'Sanayi ile Buluşma' },
-);
-page(
-  `${bolumBaslik('sanayi')}
-  <div class="grid-3x2">${gezi.filter((f) => f !== tt).map((f) => kart(f)).join('')}</div>`,
-  { cls: 'p-grid', bolum: 'Sanayi ile Buluşma' },
-);
-
-// ---------- 03 Fuarlar ve Stantlar ----------
+// ---------- 8. Bütçe ----------
 {
-  const no = page(
-    `${bolumBaslik('stant', { kisa: true })}
-    <div class="grid-2x2">${F.filter((f) => f.bolum === 'stant').map((f) => kart(f)).join('')}</div>`,
-    { cls: 'p-grid', bolum: 'Fuarlar ve Stantlar' },
-  );
-  icindekiler.push({ no: '03', baslik: 'Fuarlar ve Stantlar', sayfa: no });
-}
-
-// ---------- 04 Yeni Nesil Mühendisler ----------
-const armutlu = F.find((f) => f.one && f.bolum === 'okullar');
-acilis('okullar', {
-  ekstra: `<div class="one-cikan sayi-kutu"><b>${armutlu.katilim}</b><div><p class="eyebrow volt">Sezonun en kalabalık buluşması</p><h3>${esc(armutlu.ad)}</h3><p>${esc(armutlu.yer)} · ${esc(tarih(armutlu.tarih))}</p></div></div>`,
-});
-page(
-  `${bolumBaslik('okullar')}
-  <div class="grid-2x2">${F.filter((f) => f.bolum === 'okullar' && f.gorsel && f.ad !== 'Tugay Ciner İlköğretim Okulu Atölye Ziyareti').map((f) => kart(f)).join('')}</div>`,
-  { cls: 'p-grid', bolum: 'Yeni Nesil Mühendisler' },
-);
-
-// ---------- 05 Deneyim ve Başarılar ----------
-{
-  const ana = data.basarilar[0];
-  const no = page(
-    `${bolumBaslik('basari', { kisa: true })}
-    <div class="basari-ust">
-      <figure>${img(ana.gorsel, ana.baslik)}</figure>
-      <div class="basari-ana"><span class="madalya">${esc(ana.derece)}</span><p class="eyebrow">${esc(ana.kurum)} · ${esc(tarih(ana.tarih))}</p><h3>${esc(ana.baslik)}</h3><p>${esc(ana.ozet)}</p></div>
-    </div>
-    <ul class="basari-liste">${data.basarilar
-      .slice(1)
-      .map(
-        (b) => `<li><span class="madalya ${b.derece ? '' : 'bos'}">${esc(b.derece || 'Katılım')}</span><div><h4>${esc(b.baslik)}</h4><p class="eyebrow">${esc(b.kurum)} · ${esc(tarih(b.tarih))}</p><p>${esc(b.ozet)}</p></div></li>`,
-      )
-      .join('')}</ul>`,
-    { cls: 'p-basari', bolum: 'Deneyim ve Başarılar' },
-  );
-  icindekiler.push({ no: '05', baslik: 'Deneyim ve Başarılar', sayfa: no });
-}
-{
-  const bes = data.basarilar.find((b) => b.baslik.includes('5 Dakikada'));
-  const deneyim = F.filter((f) => f.bolum === 'basari' && f.listede !== false);
-  const hack = data.basarilar.filter((b) => /Hackathon/.test(b.baslik));
+  const satir = BOLUM_SIRA.map((id) => {
+    const l = bolumListe(id);
+    return { ad: bolumBul(id).baslik, no: bolumBul(id).no, t: l.reduce((a, k) => a + tl(k.butce), 0), n: l.filter((k) => tl(k.butce)).length, top: l.length };
+  });
+  const max = Math.max(...satir.map((s) => s.t));
+  const ilk = [...kayitlar].sort((a, b) => tl(b.butce) - tl(a.butce)).slice(0, 8);
   page(
-    `<header class="bb bb-k"><div><p class="eyebrow">Bölüm 05</p><h2>Tecrübeyi paylaşmak</h2></div></header>
-    <figure class="genis-foto">${img(bes.gorsel, bes.baslik)}<figcaption>${esc(bes.baslik)} · ${esc(bes.kurum)} · ${esc(tarih(bes.tarih))}</figcaption></figure>
-    <div class="grid-2">
-      ${deneyim.map((f) => `<article class="kart kart-yatay ${f.gorsel ? '' : 'tek'}">${f.gorsel ? `<figure>${img(f.gorsel, f.ad)}</figure>` : ''}<div>${meta(f)}<h3>${esc(f.ad)}</h3><p>${esc(f.ozet)}</p></div></article>`).join('')}
-    </div>
-    <div class="hack">${hack.map((h) => `<figure>${img(h.gorsel, h.baslik)}<figcaption><b>${esc(h.baslik)}</b> · ${esc(h.kurum)}</figcaption></figure>`).join('')}</div>`,
-    { cls: 'p-deneyim', bolum: 'Deneyim ve Başarılar' },
+    `${baslik('Sezon özeti', 'Bütçe', `Faaliyet raporunda her etkinlik için bildirilen harcamaların bölümlere göre dağılımı. ${toplamFaaliyet} faaliyetin ${butceliSay} tanesinde harcama belirtilmiş; diğerleri kurum desteğiyle veya harcama olmadan gerçekleşti.`)}
+    <div class="butce-toplam"><b>${para(toplamButce)}</b><span>toplam harcama</span></div>
+    <ul class="butce-bar">${satir.map((s) => `<li><span class="bb-ad"><em>${s.no}</em>${esc(s.ad)}</span><span class="bb-cubuk"><i style="width:${max ? (s.t / max) * 100 : 0}%"></i></span><span class="bb-t">${s.t ? para(s.t) : '–'}</span><span class="bb-n">${s.n}/${s.top}</span></li>`).join('')}</ul>
+    ${eyebrow('En yüksek bütçeli faaliyetler')}
+    <ol class="butce-ilk">${ilk.map((k) => `<li><span class="no">${k.no}</span><span>${esc(k.ad)}${k.altBaslik ? ` <em>${esc(k.altBaslik.replace('TEKNOFEST ', ''))}</em>` : ''}</span><b>${esc(k.butce)}</b></li>`).join('')}</ol>
+    <p class="not">Tutarlar faaliyet raporundaki "Harcanan bütçe" satırlarından alınmıştır. Sponsorların ayni ve nakdi destekleri bu tutarlara dahil olabilir.</p>`,
+    { cls: 'p-butce', bolum: 'Sezon özeti' },
   );
+  toc.push({ no: '', baslik: 'Bütçe', sayfa: pages.length });
 }
 
-// ---------- 06 TEKNOFEST Projeleri ----------
-{
-  const no = page(
-    `${bolumBaslik('teknofest', { kisa: true })}
-    <div class="proje-ozet">
-      <div class="stat big"><b>${P.length}</b><span>yarışma projesi</span></div>
-      <div class="stat big"><b>${projeKisi}</b><span>öğrenci görev aldı</span></div>
-      <div class="stat big"><b>1</b><span>Türkiye derecesi</span><em>MATROVER · İKA 3.lüğü</em></div>
-    </div>
-    <table class="proje-tablo">
-      <thead><tr><th>Takım</th><th>Kategori</th><th class="r">Ekip</th></tr></thead>
-      <tbody>${P.map((p) => `<tr><td><b>${esc(p.takim)}</b></td><td>${esc(p.kategori)}</td><td class="r">${p.kisi}</td></tr>`).join('')}</tbody>
-    </table>
-    <p class="not">Takım çalışmaları BTÜ Özdemir Bayraktar TEKNOFEST Atölyesi'nde yürütülür. İş birliği yapılan kurumlar arasında TEKNOFEST, TUSAŞ, ASELSAN, TENMAK, Luna Robotics ve Crowtec yer alır.</p>`,
-    { cls: 'p-tf', bolum: 'TEKNOFEST Projeleri' },
-  );
-  icindekiler.push({ no: '06', baslik: 'TEKNOFEST Projeleri', sayfa: no });
-}
-function proje(p) {
-  const foto = p.gorsel
-    ? `<figure>${img(p.gorsel, p.takim, '', p.gorselKonum)}${p.gorselNotu ? `<figcaption>${esc(p.gorselNotu)}</figcaption>` : ''}</figure>`
-    : `<figure class="tipo"><span>${esc(p.takim)}</span><em>${esc(p.kategori)}</em></figure>`;
-  return `<article class="proje ${p.vurgu ? 'vurgu' : ''}">
-    ${foto}
-    <div class="proje-metin">
-      <p class="eyebrow">TEKNOFEST · ${esc(p.kategori)}</p>
-      <h3>${esc(p.takim)}</h3>
-      <p>${esc(p.ozet)}</p>
-      <ul class="etiket">${p.etiket.map((e) => `<li>${esc(e)}</li>`).join('')}</ul>
-      <p class="ekip"><b>${p.kisi}</b> kişilik ekip</p>
+// ---------- kart ----------
+function kart(k) {
+  const d = [
+    ['Tarih', k.tarih ? tarih(k.tarih, k.bitis) : `${DONEM} sezonu`],
+    ['Katılımcı', k.katilim ? `${sayi(k.katilim)} kişi` : '–'],
+    ['Bütçe', k.butce || '–'],
+    ['Yer', k.yer || '–'],
+    ['Araç gereç', k.arac || '–'],
+    ['İş birliği', k.isbirligi?.length ? k.isbirligi.join(', ') : '–'],
+  ];
+  const bolum = bolumBul(k.bolum);
+  // Fotoğraf kendi oranında gösterilir (kırpma yok ya da çok az):
+  //  - çok geniş (≥2,1) fotoğraf: kartın üstünde tam genişlik şerit
+  //  - diğerleri: solda, en fazla 92 mm yükseklik ve 102 mm genişlikte kendi oranında
+  //  - sayfada tek kart varsa: üstte tam genişlik, oranında (en fazla 150 mm)
+  const tekKart = k.tek;
+  const serit = !tekKart && k.oran >= 2.1;
+  let fotoStil = '';
+  let tip = 'yan';
+  if (tekKart) {
+    tip = 'ust';
+    fotoStil = `height:${Math.min(150, 174 / k.oran).toFixed(1)}mm`;
+  } else if (serit) {
+    tip = 'ust';
+    fotoStil = `height:${Math.min(70, 174 / k.oran).toFixed(1)}mm`;
+  } else {
+    const h = Math.min(92, 102 / k.oran);
+    fotoStil = `width:${(h * k.oran).toFixed(1)}mm;height:${h.toFixed(1)}mm`;
+  }
+  const dikey = tip === 'yan';
+  return `<article class="kart ${dikey ? 'dikey' : 'genis'}">
+    <header class="k-bas"><span class="k-no">${k.no}</span><div>${eyebrow(`${bolum.no} · ${bolum.baslik}${k.altBaslik ? ` · ${k.altBaslik.replace('TEKNOFEST ', 'TEKNOFEST · ')}` : ''}`)}<h3>${esc(k.ad)}</h3></div>${k.derece ? `<span class="k-derece">${esc(k.derece)}</span>` : ''}</header>
+    <figure class="k-foto" style="${fotoStil}">${img(k.gorsel, k.ad, k.gorselKonum || 'center 35%')}${k.gorselNotu ? `<figcaption>${esc(k.gorselNotu)}</figcaption>` : ''}</figure>
+    <div class="k-govde">
+      <div class="k-metin"><p class="k-spot">${esc(k.ozet)}</p><p>${esc(k.metin)}</p></div>
+      <dl class="k-kunye">${d.map(([a, v]) => `<div><dt>${a}</dt><dd>${esc(v)}</dd></div>`).join('')}</dl>
     </div>
   </article>`;
 }
-for (let i = 0; i < P.length; i += 2) {
-  page(`<div class="proje-sayfa">${proje(P[i])}${P[i + 1] ? proje(P[i + 1]) : ''}</div>`, {
-    cls: 'p-proje',
-    bolum: 'TEKNOFEST Projeleri',
-  });
-}
 
-// ---------- 07 Takım Ruhu ----------
-{
-  const s = F.filter((f) => f.bolum === 'sosyal');
+// ---------- bölüm açılışı (iç kapak) ----------
+function bolumAcilis(id) {
+  const b = bolumBul(id);
+  const l = bolumListe(id);
+  const katilim = l.reduce((a, k) => a + (k.katilim || 0), 0);
+  const butce = l.reduce((a, k) => a + tl(k.butce), 0);
   const no = page(
-    `${bolumBaslik('sosyal', { kisa: true })}
-    <div class="sosyal">
-      <article class="kart kart-l">${`<figure>${img(s[0].gorsel, s[0].ad)}</figure>`}${meta(s[0])}<h3>${esc(s[0].ad)}</h3><p>${esc(s[0].ozet)}</p></article>
-      <div class="grid-2">${s.slice(1).map((f) => kart(f)).join('')}</div>
+    `<figure class="ba-foto">${img(b.kapak || l[0].gorsel, b.baslik)}</figure>
+    <div class="ba-ust"><span class="ba-etiket">Bölüm</span><span class="ba-no">${b.no}</span></div>
+    <div class="ba-alt">
+      <h1>${esc(b.baslik)}</h1>
+      <p class="ba-lead">${esc(b.ozet)}</p>
+      <ul class="ba-rakam"><li><b>${l.length}</b>faaliyet</li><li><b>${sayi(katilim)}</b>katılım</li><li><b>${butce ? para(butce) : '–'}</b>bütçe</li></ul>
+      <ol class="ba-liste">${l.map((k) => `<li><span>${k.no}</span>${esc(k.ad)}${k.altBaslik ? ` <em>${esc(k.altBaslik.replace('TEKNOFEST ', ''))}</em>` : ''}</li>`).join('')}</ol>
     </div>`,
-    { cls: 'p-sosyal', bolum: 'Takım Ruhu' },
+    { cls: 'p-bolum koyu', tam: true },
   );
-  icindekiler.push({ no: '07', baslik: 'Takım Ruhu', sayfa: no });
+  toc.push({ no: b.no, baslik: b.baslik, sayfa: no });
+}
+function kartSayfalari(id) {
+  const l = bolumListe(id);
+  const b = bolumBul(id);
+  for (let i = 0; i < l.length; i += 2) {
+    const grup = l.slice(i, i + 2);
+    grup.forEach((k) => (k.tek = grup.length === 1));
+    page(`<div class="kartlar ${grup.length === 1 ? 'tek' : ''}">${grup.map(kart).join('')}</div>`, { cls: 'p-kart', bolum: `${b.no} · ${b.baslik}` });
+  }
 }
 
-// ---------- Sezon takvimi ----------
-{
-  const t = tarihli
-    .map((x) => ({ ad: x.ad || x.baslik, tarih: x.tarih, bitis: x.bitis, yer: x.yer || x.kurum }))
-    .sort((a, b) => a.tarih.localeCompare(b.tarih));
-  const no = page(
-    `<header class="bb bb-k"><div><p class="eyebrow">Kronoloji</p><h2>Sezon takvimi</h2></div></header>
-    <ol class="takvim">${t
-      .map((x) => `<li><span class="tk-t">${esc(tarih(x.tarih, x.bitis))}</span><span class="tk-a">${esc(x.ad)}</span><span class="tk-y">${esc(x.yer)}</span></li>`)
-      .join('')}</ol>`,
-    { cls: 'p-takvim', bolum: 'Sezon takvimi' },
-  );
-  icindekiler.push({ no: '', baslik: 'Sezon takvimi', sayfa: no });
+// ---------- bölümler ----------
+for (const id of BOLUM_SIRA) {
+  bolumAcilis(id);
+  if (id === 'teknofest') {
+    const bb = `${bolumBul(id).no} · ${bolumBul(id).baslik}`;
+    page(
+      `${baslik('Özel dosya', 'Bir aracın doğuşu', "Final alanında birkaç dakikalık bir görev. Arkasında on ay, yüzlerce saatlik atölye mesaisi, raporlar ve sayısız test var. Bir MATRO aracının Eylül'den Ağustos'a yolculuğu.")}
+      <ol class="dogus">${data.aracinDogusu.map((a, i) => `<li><span class="d-no">${i + 1}</span><div>${eyebrow(a.ay, 'volt')}<h3>${esc(a.baslik)}</h3><p>${esc(a.metin)}</p></div></li>`).join('')}</ol>
+      <div class="dogus-foto"><figure>${img('/media/tasarim-iss-auv-mor.jpg', 'İSS tasarımı')}<figcaption>Tasarım</figcaption></figure><figure>${img('/media/galeri-iss-auv-havuz.jpg', 'Havuz testi')}<figcaption>Test</figcaption></figure><figure>${img('/media/galeri-zemheri-final.jpg', 'Final alanı')}<figcaption>Final</figcaption></figure></div>`,
+      { cls: 'p-dogus', bolum: bb },
+    );
+    toc.push({ no: '', baslik: 'Özel dosya: Bir aracın doğuşu', sayfa: pages.length, alt: true });
+    page(
+      `${baslik('TEKNOFEST 2026', `${final2026.length} takım finalde`, "TEKNOFEST 2026 sezonunda takımlarımız Türkiye'nin dört bir yanındaki final alanlarında üniversitemizi temsil etti. Su Altı Roket kategorisine ilk kez katılan ZEMHERİ, ilk yılında finalist oldu.")}
+      <div class="finaller">${final2026.map((f) => `<div><b>${esc(f.team)}</b><span>${esc(f.category)}</span><em>${esc(f.competition.replace('TEKNOFEST — ', ''))}${data.finalYerleri[f.team] ? ` · ${esc(data.finalYerleri[f.team])}` : ''}</em></div>`).join('')}</div>
+      <figure class="finaller-foto">${img('/media/mavi-vatan-ekipler.jpg', 'Mavi Vatan')}<figcaption>TEKNOFEST Mavi Vatan: LODOS, PRUSA ve ZEMHERİ ekipleri</figcaption></figure>`,
+      { cls: 'p-finaller', bolum: bb },
+    );
+    toc.push({ no: '', baslik: 'TEKNOFEST 2026 finalleri', sayfa: pages.length, alt: true });
+  }
+  kartSayfalari(id);
 }
 
-// ---------- İş birlikleri ve destekçiler ----------
-{
-  const pk = ['Platin', 'Altın', 'Gümüş', 'Bronz'];
-  const sira = (s) => (pk.includes(s.package) ? pk.indexOf(s.package) : pk.length);
-  const logolar = sponsors.current
-    .filter((s) => s.logo)
-    .sort((a, b) => sira(a) - sira(b));
-  const no = page(
-    `<header class="bb bb-k"><div><p class="eyebrow">Teşekkür</p><h2>Birlikte ürettiklerimiz</h2><p class="lead">Bu sezon kapılarını açan kurumlara, atölyemize destek olan sponsorlarımıza ve bizi ağırlayan okullara teşekkür ederiz.</p></div></header>
-    <p class="eyebrow">İş birliği yapılan kurumlar</p>
-    <ul class="kurumlar">${data.isbirlikleri.map((k) => `<li>${esc(k)}</li>`).join('')}</ul>
-    <p class="eyebrow">${esc('2025–2026 sponsorlarımız')}</p>
-    <div class="logolar">${logolar
-      .map((s) => `<figure><img src="../../public${esc(s.logo)}" alt="${esc(s.name)}" /><figcaption>${esc(s.package)}</figcaption></figure>`)
-      .join('')}</div>`,
-    { cls: 'p-destek', bolum: 'Teşekkür' },
+// ---------- kapanış sayfaları ----------
+const kapanis = [];
+kapanis.push(() => {
+  const t = [...tarihli].sort((a, b) => a.tarih.localeCompare(b.tarih));
+  page(`${baslik('Kronoloji', 'Sezon takvimi')}<ol class="takvim">${t.map((x) => `<li><span class="tk-t">${esc(tarih(x.tarih, x.bitis))}</span><span class="tk-a"><em>${x.no}</em>${esc(x.ad)}</span><span class="tk-y">${esc(x.yer)}</span></li>`).join('')}</ol>`, { cls: 'p-takvim', bolum: 'Kapanış' });
+  toc.push({ no: '', baslik: 'Sezon takvimi', sayfa: pages.length });
+});
+kapanis.push(() => {
+  const pk = ['Platin', 'Altın', 'Gümüş', 'Bronz', 'Gönüllü'];
+  page(
+    `${baslik('Teşekkür', 'Birlikte ürettiklerimiz', sponsors.intro)}
+    ${eyebrow('İş birliği yapılan kurumlar', 'volt')}<ul class="kurumlar">${data.isbirlikleri.map((k) => `<li>${esc(k)}</li>`).join('')}</ul>
+    ${pk
+      .map((k) => {
+        const l = sponsors.current.filter((s) => s.package === k);
+        return l.length
+          ? `<div class="sp ${k.toLocaleLowerCase('tr')}">${eyebrow(`${k} sponsorlar · ${l.length}`)}<div>${l
+              .map((s) => (s.logo ? `<figure><img src="../../public${esc(s.logo)}" alt="${esc(s.name)}" /><figcaption>${esc(s.name)}</figcaption></figure>` : `<figure class="yazi"><span>${esc(s.name)}</span></figure>`))
+              .join('')}</div></div>`
+          : '';
+      })
+      .join('')}`,
+    { cls: 'p-destek', bolum: 'Kapanış' },
   );
-  icindekiler.push({ no: '', baslik: 'İş birlikleri ve sponsorlar', sayfa: no });
-}
+  toc.push({ no: '', baslik: 'İş birlikleri ve sponsorlar', sayfa: pages.length });
+});
+kapanis.push(() => {
+  page(
+    `${baslik('Gelecek sezon', about.goals2026.title.replace(/^./, (c) => c.toLocaleUpperCase('tr')), about.goals2026.description)}
+    <ol class="hedef">${about.goals2026.items.map((g, i) => `<li><span>${String(i + 1).padStart(2, '0')}</span>${esc(g)}</li>`).join('')}</ol>
+    <figure class="hedef-foto">${img('/media/galeri-tika-tarimsal-ika.jpg', 'Tarımsal İKA ekibi')}</figure>`,
+    { cls: 'p-hedef', bolum: 'Kapanış' },
+  );
+  toc.push({ no: '', baslik: '2026–2027 hedeflerimiz', sayfa: pages.length });
+});
+const karelerSayfasi = () => {
+  page(
+    `${baslik('Fotoğraf', 'Sahadan kareler', 'Takımlarımız atölyede, test alanında ve TEKNOFEST final alanlarında.')}
+    <div class="kareler">${data.kareler.map((k, i) => `<figure class="k${i + 1}">${img(k.gorsel, k.not)}<figcaption>${esc(k.not)}</figcaption></figure>`).join('')}</div>`,
+    { cls: 'p-kareler', bolum: 'Kapanış' },
+  );
+  toc.push({ no: '', baslik: 'Sahadan kareler', sayfa: pages.length });
+};
+const arsivSayfasi = () => {
+  page(
+    `${baslik('Arşiv', `${site.foundedYear}'ten bugüne ${dereceSay} derece`, ach.intro)}
+    <ol class="arsiv">${A.map((i) => `<li class="${i.featured ? 'one' : ''}"><span class="a-yil">${i.year}</span><span class="a-tk">${esc(i.team || '–')}</span><span class="a-kat">${esc(i.category)}<em>${esc(i.competition)}</em></span><span class="a-der ${/(^|[^0-9])1\.|dünya/i.test(i.degree) ? 'altin' : ''}">${esc(i.degree)}</span></li>`).join('')}</ol>`,
+    { cls: 'p-arsiv', bolum: 'Kapanış' },
+  );
+  toc.push({ no: '', baslik: 'Başarı arşivimiz', sayfa: pages.length });
+};
+const basinSayfasi = () => {
+  page(
+    `${baslik('Arşiv', 'Basında MATRO', basin.intro)}
+    <div class="basin">${basin.items.map((b) => `<article><figure>${img(b.image, b.outlet)}</figure>${eyebrow(`${b.outlet} · ${b.date.slice(0, 4)}`, 'volt')}<h3>${esc(b.headline)}</h3></article>`).join('')}</div>`,
+    { cls: 'p-basin', bolum: 'Kapanış' },
+  );
+  toc.push({ no: '', baslik: 'Basında MATRO', sayfa: pages.length });
+};
+// Arka kapak dahil toplam sayfa sayısı 4'ün katı olsun: gerekirse sırasıyla
+// fotoğraf, başarı arşivi ve basın sayfaları eklenir; kalan açık için not sayfası.
+const ekler = [karelerSayfasi, arsivSayfasi, basinSayfasi];
+const gereken = (4 - ((pages.length + kapanis.length + 1) % 4)) % 4;
+ekler.slice(0, gereken).forEach((f) => f());
+for (const f of kapanis) f();
+while ((pages.length + 1) % 4) page(`${baslik('', 'Notlar')}<div class="notlar"></div>`, { cls: 'p-not', bolum: 'Kapanış' });
 
-// ---------- Arka kapak ----------
 page(
   `<div class="arka">
     <img class="arka-logo" src="../../public/logo-matro-beyaz.png" alt="MATRO" />
-    <p class="arka-slogan">Atölyede başlayan fikirleri sahaya taşıyoruz.</p>
+    <p class="arka-slogan">Atölyede başlar.<br />Sahada kanıtlanır.</p>
     <div class="arka-alt">
       <div class="qr"><img src="gorseller/qr-btumatro.svg" alt="btumatro.com" /></div>
-      <dl>
-        <dt>Web</dt><dd>btumatro.com</dd>
-        <dt>E-posta</dt><dd>matroiletisim@gmail.com</dd>
-        <dt>Atölye</dt><dd>BTÜ Özdemir Bayraktar TEKNOFEST Atölyesi</dd>
-        <dt>Adres</dt><dd>Mimar Sinan Yerleşkesi, Yıldırım / Bursa</dd>
-      </dl>
+      <dl><dt>Web</dt><dd>btumatro.com</dd><dt>E-posta</dt><dd>${esc(site.contact.emails[0])}</dd><dt>Atölye</dt><dd>${esc(site.contact.workshop)}</dd><dt>Adres</dt><dd>Mimar Sinan Yerleşkesi, Yıldırım / Bursa</dd></dl>
+      <img class="arka-btu" src="../../public/logo-btu-beyaz.png" alt="BTÜ" />
     </div>
-    <p class="arka-not">Bursa Teknik Üniversitesi Makine Teknolojileri Robot ve Otomasyon Topluluğu · ${DONEM} Faaliyet Raporu</p>
   </div>`,
-  { cls: 'p-arka dark', footer: false },
+  { cls: 'p-arka koyu', tam: true, footer: false },
 );
 
-// ---------- Sunuş sayfasını içindekilerle doldur ----------
-pages[SUNUS_YER] = `<section class="page p-sunus">
+// ---------- sunuş + içindekiler ----------
+{
+  const govde = `${baslik('Sunuş', `Bir sezon, ${toplamFaaliyet} faaliyet`)}
   <div class="sunus">
-    <div>
-      <p class="eyebrow">Sunuş</p>
-      <h2>Bir sezon, ${toplamFaaliyet} faaliyet</h2>
+    <div class="sunus-metin">
       <p class="lead">MATRO; Bursa Teknik Üniversitesi'nde insansız hava, kara, deniz ve su altı sistemleri, robotik, haberleşme ve enerji teknolojileri alanlarında proje geliştiren öğrenci topluluğudur.</p>
-      <p>${DONEM} döneminde yeni üyelerimizi eğitim kamplarıyla atölyeye hazırladık, sanayinin önde gelen kuruluşlarına teknik geziler düzenledik, fuar ve festivallerde stant açtık, ilkokuldan liseye yüzlerce öğrenciyle buluştuk ve ${P.length} farklı TEKNOFEST kategorisinde proje yürüttük.</p>
-      <p>Bu kitapçık, topluluğumuzun üniversiteye sunduğu faaliyet raporundan derlenmiştir. Her sayfadaki tarih, yer ve katılımcı bilgisi o rapordaki kayda dayanır.</p>
+      <p>${DONEM} döneminde yeni üyelerimizi eğitim kamplarıyla atölyeye hazırladık, sanayinin önde gelen kuruluşlarına teknik geziler düzenledik, fuar ve festivallerde stant açtık, ilkokuldan liseye ${sayi(okulKatilim)} öğrenciyle buluştuk ve ${P.length} farklı TEKNOFEST kategorisinde proje yürüttük. Sezonun sonunda ${final2026.length} takımımız TEKNOFEST finallerinde üniversitemizi temsil etti.</p>
+      <p>Bu rapor, topluluğumuzun üniversiteye sunduğu faaliyet raporundan derlenmiştir. ${toplamFaaliyet} faaliyetin her biri numaralı bir kartta; tarih, yer, katılımcı sayısı, bütçe, kullanılan araç gereç ve iş birliği yapılan kurumlarla birlikte yer alıyor.</p>
+      <p>Bu sezon kapılarını açan kurumlara, destek veren sponsorlarımıza, bizi ağırlayan okullara ve atölyenin ışığını yakan tüm üyelerimize teşekkür ederiz.</p>
+      <p class="imza">MATRO Yönetim Kurulu</p>
     </div>
-    <nav class="toc">
-      <p class="eyebrow">İçindekiler</p>
-      <ol>
-        <li><span class="toc-no"></span><span>Sayılarla ${DONEM}</span><span class="toc-p">03</span></li>
-        ${icindekiler
-          .sort((a, b) => a.sayfa - b.sayfa)
-          .map((i) => `<li><span class="toc-no">${i.no}</span><span>${esc(i.baslik)}</span><span class="toc-p">${String(i.sayfa).padStart(2, '0')}</span></li>`)
-          .join('')}
-      </ol>
-    </nav>
-  </div>
-  <figure class="sunus-foto">${img('/media/galeri-tanisma-kahvaltisi-salon.jpg', 'Tanışma kahvaltısı')}</figure>
-  <footer class="run"><span>MATRO · Faaliyet Raporu ${DONEM}</span><span class="run-b">Sunuş</span><span class="pn">02</span></footer>
-</section>`;
+    <nav class="toc">${eyebrow('İçindekiler')}<ol>${toc
+      .sort((a, b) => a.sayfa - b.sayfa)
+      .map((t) => `<li class="${t.no ? 'ana' : ''} ${t.alt ? 'ic-alt' : ''}"><span class="t-no">${t.no}</span><span>${esc(t.baslik)}</span><span class="t-p">${String(t.sayfa).padStart(2, '0')}</span></li>`)
+      .join('')}</ol></nav>
+  </div>`;
+  pages[SUNUS] = pages[SUNUS].replace('<div class="icerik"></div>', `<div class="icerik">${govde}</div>`).replace('<section class="page', '<section class="page p-sunus');
+}
 
-// ---------- HTML ----------
+// ---------- HTML + PDF ----------
 const html = `<!doctype html>
 <html lang="tr"><head><meta charset="utf-8" />
 <title>MATRO Faaliyet Raporu ${DONEM}</title>
@@ -413,25 +478,43 @@ const html = `<!doctype html>
 ${pages.join('\n')}
 </body></html>`;
 fs.writeFileSync(path.join(DIR, 'kitapcik.html'), html);
-console.log(`HTML yazıldı: ${pages.length} sayfa, ${toplamFaaliyet} faaliyet, ${toplamKatilim} katılım`);
-if (pages.length % 4) console.warn(`Uyarı: sayfa sayısı (${pages.length}) 4'ün katı değil — tel dikiş için boş sayfa gerekir.`);
-
+console.log(`HTML yazıldı: ${pages.length} sayfa, ${toplamFaaliyet} faaliyet, ${toplamKatilim} katılım, ${para(toplamButce)}`);
+if (pages.length % 4) console.warn(`Uyarı: sayfa sayısı (${pages.length}) 4'ün katı değil.`);
 if (process.argv.includes('--html')) process.exit(0);
 
-// ---------- PDF ----------
 const browser = await puppeteer.launch({ executablePath: CHROME, headless: true });
 const tab = await browser.newPage();
 await tab.goto(pathToFileURL(path.join(DIR, 'kitapcik.html')).href, { waitUntil: 'networkidle0' });
-await tab.evaluate(async () => {
-  await document.fonts.ready;
-  await Promise.all([...document.images].map((i) => (i.complete ? null : new Promise((r) => (i.onload = i.onerror = r)))));
-});
-const eksik = await tab.evaluate(() => [...document.images].filter((i) => !i.naturalWidth).map((i) => i.getAttribute('src')));
-if (eksik.length) {
-  console.error('Yüklenemeyen görseller:', eksik);
+await tab.evaluate(() => document.fonts.ready);
+const kayip = await tab.evaluate(() => [...document.images].filter((i) => !i.naturalWidth).map((i) => i.getAttribute('src')));
+if (kayip.length) {
+  console.error('Yüklenemeyen görseller:', kayip);
   process.exit(1);
 }
-const out = path.join(DIR, `matro-faaliyet-raporu-2025-2026.pdf`);
+// Taşan kartlarda fotoğrafı kademeli küçült; ardından tüm sayfalarda taşma denetimi.
+const rapor = await tab.evaluate(() => {
+  const mm = 96 / 25.4;
+  for (const k of document.querySelectorAll('.kart')) {
+    const f = k.querySelector('.k-foto');
+    const r = f.getBoundingClientRect();
+    const oran = r.width / r.height;
+    let h = r.height / mm;
+    while (k.scrollHeight > k.clientHeight + 1 && h > 34) {
+      h -= 2;
+      f.style.height = `${h}mm`;
+      if (k.classList.contains('dikey')) f.style.width = `${h * oran}mm`;
+    }
+  }
+  const tasan = [];
+  document.querySelectorAll('.page').forEach((p, i) => {
+    const ic = p.querySelector('.icerik');
+    if (ic.scrollHeight > ic.clientHeight + 1) tasan.push(`sayfa ${i + 1}`);
+    p.querySelectorAll('.kart').forEach((k) => k.scrollHeight > k.clientHeight + 1 && tasan.push(`sayfa ${i + 1} kart ${k.querySelector('.k-no').textContent}`));
+  });
+  return tasan;
+});
+if (rapor.length) console.warn('Taşma:', rapor.join(', '));
+const out = path.join(DIR, 'matro-faaliyet-raporu-2025-2026.pdf');
 await tab.pdf({ path: out, preferCSSPageSize: true, printBackground: true });
 await browser.close();
 console.log('PDF:', path.relative(ROOT, out));

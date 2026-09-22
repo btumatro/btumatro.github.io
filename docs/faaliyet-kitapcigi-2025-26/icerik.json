@@ -1,5 +1,5 @@
 {
-  "_not": "Kaynak: 'MATRO Faaliyet Raporu 25-26.docx'. Harcanan bütçe alanları tanıtım kitapçığında bilerek gösterilmez. Görsel yolları bu klasöre görelidir; '/media/...' ile başlayanlar public/media altındadır. 'tarihNotu' dolu olanlar raporda hatalı/eksik yazılmış tarihlerdir, kesinleşince düzeltilmeli.",
+  "_not": "Kaynak: 'MATRO Faaliyet Raporu 25-26.docx'. Bütçe ve araç gereç alanları faaliyet raporundaki 'Harcanan bütçe' ve 'Kullanılan araç gereçler' satırlarından alındı; boş olanlar raporda '-' idi. Görsel yolları bu klasöre görelidir; '/media/...' ile başlayanlar public/media altındadır. 'tarihNotu' dolu olanlar raporda hatalı/eksik yazılmış tarihlerdir, kesinleşince düzeltilmeli.",
   "donem": "2025–2026",
   "bolumler": [
     {
@@ -20,7 +20,8 @@
       "id": "stant",
       "no": "03",
       "baslik": "Fuarlar ve Stantlar",
-      "ozet": "Robotlarımızı atölyeden çıkarıp fuar alanlarına, festivallere ve kampüs etkinliklerine taşıdık. Her stant, projelerimizi yeni insanlara anlatma ve iş birlikleri kurma fırsatı oldu."
+      "ozet": "Robotlarımızı atölyeden çıkarıp fuar alanlarına, festivallere ve kampüs etkinliklerine taşıdık. Her stant, projelerimizi yeni insanlara anlatma ve iş birlikleri kurma fırsatı oldu.",
+      "kapak": "/media/galeri-robot-gunleri-stant.jpg"
     },
     {
       "id": "okullar",
@@ -33,19 +34,22 @@
       "id": "basari",
       "no": "05",
       "baslik": "Deneyim ve Başarılar",
-      "ozet": "Yarışmalarda edindiğimiz tecrübeyi paylaşmayı, kazandığımız dereceler kadar önemsiyoruz."
+      "ozet": "Yarışmalarda edindiğimiz tecrübeyi paylaşmayı, kazandığımız dereceler kadar önemsiyoruz.",
+      "kapak": "/media/galeri-teknofest-5dk-anlat-odul.jpg"
     },
     {
       "id": "teknofest",
       "no": "06",
       "baslik": "TEKNOFEST Projeleri",
-      "ozet": "Hava, kara, deniz ve su altı sistemlerinden endüstriyel robotiğe, nükleer enerjiden tarım teknolojilerine uzanan on iki yarışma projesi, lisans ve lisansüstü öğrencilerinden oluşan takımlarla Özdemir Bayraktar TEKNOFEST Atölyesi'nde yürütüldü."
+      "ozet": "Hava, kara, deniz ve su altı sistemlerinden endüstriyel robotiğe, nükleer enerjiden tarım teknolojilerine uzanan on iki yarışma projesi, lisans ve lisansüstü öğrencilerinden oluşan takımlarla Özdemir Bayraktar TEKNOFEST Atölyesi'nde yürütüldü.",
+      "kapak": "/media/mavi-vatan-ekipler.jpg"
     },
     {
       "id": "sosyal",
       "no": "07",
       "baslik": "Takım Ruhu",
-      "ozet": "Atölyede uzun saatler geçiren ekiplerimizi sahada, parkta ve spor salonunda da bir araya getirdik."
+      "ozet": "Atölyede uzun saatler geçiren ekiplerimizi sahada, parkta ve spor salonunda da bir araya getirdik.",
+      "kapak": "/media/galeri-bahar-piknigi-grup.jpg"
     }
   ],
   "faaliyetler": [
@@ -56,7 +60,9 @@
       "tarih": "2025-10-15",
       "katilim": 150,
       "gorsel": "/media/galeri-tanisma-toplantisi-amfi.jpg",
-      "ozet": "Yeni üyelerimize topluluğun vizyonunu, çalışma alanlarını ve gelecek projelerini aktardığımız geniş katılımlı oryantasyon toplantısı."
+      "ozet": "Yeni üyelerimize topluluğun vizyonunu, çalışma alanlarını ve gelecek projelerini aktardığımız geniş katılımlı oryantasyon toplantısı.",
+      "butce": "1.500 TL",
+      "arac": "Konferans salonu, ses ve görüntü sistemleri, tanıtım sunumu, kürsü ve mikrofon"
     },
     {
       "bolum": "topluluk",
@@ -68,7 +74,9 @@
       "isbirligi": [
         "Bugii Lounge"
       ],
-      "ozet": "Yeni üyelerle kaynaşmak, iletişimi ve takım ruhunu güçlendirmek için düzenlediğimiz toplu kahvaltı."
+      "ozet": "Yeni üyelerle kaynaşmak, iletişimi ve takım ruhunu güçlendirmek için düzenlediğimiz toplu kahvaltı.",
+      "butce": "2.000 TL",
+      "arac": "Organizasyon ekipmanları"
     },
     {
       "bolum": "topluluk",
@@ -77,7 +85,9 @@
       "tarih": "2025-11-13",
       "katilim": 157,
       "gorsel": "/media/galeri-genel-egitim-2025.jpg",
-      "ozet": "Mühendislik yaklaşımı, proje geliştirme mantığı, tasarım süreçleri ve yazılımın temelleri; yeni üyelerin teknik süreçlere hızla uyum sağlaması için."
+      "ozet": "Mühendislik yaklaşımı, proje geliştirme mantığı, tasarım süreçleri ve yazılımın temelleri; yeni üyelerin teknik süreçlere hızla uyum sağlaması için.",
+      "butce": "1.250 TL",
+      "arac": "Sunum materyalleri, bilgisayar, projeksiyon ve eğitim içerikleri"
     },
     {
       "bolum": "topluluk",
@@ -87,7 +97,9 @@
       "bitis": "2026-01-09",
       "katilim": 157,
       "gorsel": "/media/galeri-egitim-kampi-1.jpg",
-      "ozet": "Bir ay süren yoğunlaştırılmış atölye ve eğitim programı: mühendislik temelleri, tasarım, takım çalışması ve problem çözme; öğrenilenler atölyede uygulandı."
+      "ozet": "Bir ay süren yoğunlaştırılmış atölye ve eğitim programı: mühendislik temelleri, tasarım, takım çalışması ve problem çözme; öğrenilenler atölyede uygulandı.",
+      "butce": "3.000 TL",
+      "arac": "Atölye ekipmanları, bilgisayarlar, sunum materyalleri ve eğitim içerikleri"
     },
     {
       "bolum": "topluluk",
@@ -97,7 +109,9 @@
       "bitis": "2026-03-01",
       "katilim": 90,
       "gorsel": "/media/galeri-egitim-kampi-2.jpg",
-      "ozet": "Proje dönemine hazırlık için ileri seviye tasarım, simülasyonla test, kodlama ve hata ayıklama; katılımcılar ekipler hâlinde teknik problemleri analiz etti."
+      "ozet": "Proje dönemine hazırlık için ileri seviye tasarım, simülasyonla test, kodlama ve hata ayıklama; katılımcılar ekipler hâlinde teknik problemleri analiz etti.",
+      "butce": "4.500 TL",
+      "arac": "Bilgisayarlar, simülasyon ortamları, kodlama araçları ve tasarım materyalleri"
     },
     {
       "bolum": "sanayi",
@@ -111,7 +125,9 @@
         "Turkish Technic"
       ],
       "one": true,
-      "ozet": "Havacılık, savunma ve motor alanındaki mühendislik faaliyetlerini hangarda yerinde inceledik. Katılımcılar teorik bilgilerini endüstriyel pratikle birleştirdi, sektördeki iş ve staj imkânları hakkında doğrudan bilgi aldı."
+      "ozet": "Havacılık, savunma ve motor alanındaki mühendislik faaliyetlerini hangarda yerinde inceledik. Katılımcılar teorik bilgilerini endüstriyel pratikle birleştirdi, sektördeki iş ve staj imkânları hakkında doğrudan bilgi aldı.",
+      "butce": null,
+      "arac": null
     },
     {
       "bolum": "sanayi",
@@ -123,7 +139,9 @@
       "isbirligi": [
         "TÜBİTAK MAM"
       ],
-      "ozet": "Türkiye'nin önde gelen Ar-Ge merkezlerinden birinde laboratuvarları, elektrikli araç projelerini ve ileri düzey mühendislik çalışmalarını gözlemledik."
+      "ozet": "Türkiye'nin önde gelen Ar-Ge merkezlerinden birinde laboratuvarları, elektrikli araç projelerini ve ileri düzey mühendislik çalışmalarını gözlemledik.",
+      "butce": null,
+      "arac": null
     },
     {
       "bolum": "sanayi",
@@ -137,7 +155,9 @@
         "Ermetal Grup Şirketleri",
         "Mekatronik Mühendisleri Derneği"
       ],
-      "ozet": "Mekatronik Mühendisleri Derneği iş birliğiyle üretim alanlarını, kullanılan teknolojileri ve çalışma süreçlerini yerinde tanıdık."
+      "ozet": "Mekatronik Mühendisleri Derneği iş birliğiyle üretim alanlarını, kullanılan teknolojileri ve çalışma süreçlerini yerinde tanıdık.",
+      "butce": null,
+      "arac": "Ulaşım ve bilgilendirme araçları"
     },
     {
       "bolum": "sanayi",
@@ -149,7 +169,9 @@
       "isbirligi": [
         "HKTM Hidropar Hareket Kontrol Teknolojileri Merkezi"
       ],
-      "ozet": "Hareket kontrol teknolojileri ve mekatronik sistemlerdeki mühendislik çözümlerini inceledik; firmanın yönetim kurulu başkanı ekibimizi ağırladı."
+      "ozet": "Hareket kontrol teknolojileri ve mekatronik sistemlerdeki mühendislik çözümlerini inceledik; firmanın yönetim kurulu başkanı ekibimizi ağırladı.",
+      "butce": "20.000 TL",
+      "arac": null
     },
     {
       "bolum": "sanayi",
@@ -164,7 +186,9 @@
         "PARGE"
       ],
       "one": true,
-      "ozet": "Havacılık teknolojileri ve uçak bakım-onarım süreçleri üzerine sunumun ardından düzenlenen workshop'ta katılımcılar gerçek saha problemleri üzerinde ekipler hâlinde çalıştı; sanayi ile mühendislik öğrencileri arasındaki bağ güçlendi."
+      "ozet": "Havacılık teknolojileri ve uçak bakım-onarım süreçleri üzerine sunumun ardından düzenlenen workshop'ta katılımcılar gerçek saha problemleri üzerinde ekipler hâlinde çalıştı; sanayi ile mühendislik öğrencileri arasındaki bağ güçlendi.",
+      "butce": null,
+      "arac": "BTÜ E Blok, Mavi Salon"
     },
     {
       "bolum": "sanayi",
@@ -176,7 +200,9 @@
       "isbirligi": [
         "Alp Havacılık"
       ],
-      "ozet": "Havacılıkta üretim, tasarım, bakım ve mühendislik süreçlerini; mühendislik ekiplerinin çalışma düzenini yerinde gözlemledik."
+      "ozet": "Havacılıkta üretim, tasarım, bakım ve mühendislik süreçlerini; mühendislik ekiplerinin çalışma düzenini yerinde gözlemledik.",
+      "butce": null,
+      "arac": "Ulaşım ve bilgilendirme araçları"
     },
     {
       "bolum": "sanayi",
@@ -188,7 +214,9 @@
       "isbirligi": [
         "GUHEM"
       ],
-      "ozet": "Türkiye'nin uzay vizyonunu inceledik; Türkiye Milli Uzay Programı kapsamında ilk astronotumuz Alper Gezeravcı'nın sunumunu dinledik."
+      "ozet": "Türkiye'nin uzay vizyonunu inceledik; Türkiye Milli Uzay Programı kapsamında ilk astronotumuz Alper Gezeravcı'nın sunumunu dinledik.",
+      "butce": null,
+      "arac": "Ulaşım ve bilgilendirme araçları"
     },
     {
       "bolum": "sanayi",
@@ -200,7 +228,9 @@
       "isbirligi": [
         "TUSAŞ"
       ],
-      "ozet": "Topluluğumuzu temsilen katıldığımız programda yerli ve milli havacılık ve uzay projelerini, üretim hatlarını ve mühendislik altyapısını yerinde inceledik."
+      "ozet": "Topluluğumuzu temsilen katıldığımız programda yerli ve milli havacılık ve uzay projelerini, üretim hatlarını ve mühendislik altyapısını yerinde inceledik.",
+      "butce": "6.000 TL",
+      "arac": "Ulaşım ve bilgilendirme araçları"
     },
     {
       "bolum": "stant",
@@ -209,7 +239,9 @@
       "tarih": "2025-11-13",
       "katilim": 20,
       "gorsel": "/media/galeri-robot-gunleri-stant.jpg",
-      "ozet": "Geliştirdiğimiz robotik projeleri ve kazandığımız ödülleri ziyaretçilere ve öğrencilere sergilediğimiz tanıtım standı."
+      "ozet": "Geliştirdiğimiz robotik projeleri ve kazandığımız ödülleri ziyaretçilere ve öğrencilere sergilediğimiz tanıtım standı.",
+      "butce": null,
+      "arac": "Tanıtım masası ve stant ekipmanları"
     },
     {
       "bolum": "stant",
@@ -222,7 +254,9 @@
       "isbirligi": [
         "GDG Bursa"
       ],
-      "ozet": "Bursa'nın en büyük yazılım ve teknoloji festivalinde topluluk partneri olarak projelerimizi yazılımcılara ve sektöre tanıttık."
+      "ozet": "Bursa'nın en büyük yazılım ve teknoloji festivalinde topluluk partneri olarak projelerimizi yazılımcılara ve sektöre tanıttık.",
+      "butce": "2.200 TL",
+      "arac": null
     },
     {
       "bolum": "stant",
@@ -234,7 +268,9 @@
       "isbirligi": [
         "BTSO"
       ],
-      "ozet": "Endüstriyel makine ve imalat teknolojilerindeki gelişmeleri takip etmek ve topluluğu tanıtmak için kendi standımızı açtık."
+      "ozet": "Endüstriyel makine ve imalat teknolojilerindeki gelişmeleri takip etmek ve topluluğu tanıtmak için kendi standımızı açtık.",
+      "butce": "2.500 TL",
+      "arac": "Araç ve şoför"
     },
     {
       "bolum": "stant",
@@ -243,7 +279,9 @@
       "tarih": "2026-05-06",
       "katilim": 20,
       "gorsel": "/media/galeri-uhalfest-stant.jpg",
-      "ozet": "Havacılık ve teknoloji festivalinde insansız sistem prototiplerimizi ve ödüllerimizi sergileyerek ziyaretçileri bilgilendirdik."
+      "ozet": "Havacılık ve teknoloji festivalinde insansız sistem prototiplerimizi ve ödüllerimizi sergileyerek ziyaretçileri bilgilendirdik.",
+      "butce": null,
+      "arac": "Tanıtım standı, afişler, insansız sistem prototipleri ve sunum materyalleri"
     },
     {
       "bolum": "okullar",
@@ -252,7 +290,9 @@
       "tarih": "2025-10-10",
       "katilim": 80,
       "gorsel": "/media/galeri-velikoy-lise-atolye.jpg",
-      "ozet": "Tekirdağ'dan gelen lise öğrencilerini atölyemizde ağırladık; takımlarımız araçlarını ve üretim süreçlerini anlattı."
+      "ozet": "Tekirdağ'dan gelen lise öğrencilerini atölyemizde ağırladık; takımlarımız araçlarını ve üretim süreçlerini anlattı.",
+      "butce": null,
+      "arac": "BTÜ Özdemir Bayraktar TEKNOFEST Atölyesi"
     },
     {
       "bolum": "okullar",
@@ -265,7 +305,10 @@
         "Armutlu Avukat Necati Toker İlkokulu"
       ],
       "one": true,
-      "ozet": "İlkokul öğrencilerine milli teknoloji hamlesini ve otonom araçlarımızı tanıtarak mühendisliği sevdirmeyi amaçlayan sosyal sorumluluk programı. Sezonun en kalabalık buluşması: 300 öğrenci."
+      "ozet": "İlkokul öğrencilerine milli teknoloji hamlesini ve otonom araçlarımızı tanıtarak mühendisliği sevdirmeyi amaçlayan sosyal sorumluluk programı. Sezonun en kalabalık buluşması: 300 öğrenci.",
+      "butce": "6.500 TL",
+      "arac": null,
+      "gorsel": "/media/galeri-okul-ziyareti-ortaokul.jpg"
     },
     {
       "bolum": "okullar",
@@ -274,7 +317,9 @@
       "tarih": "2026-05-09",
       "katilim": 35,
       "gorsel": "/media/galeri-arduino-egitimi-lise.jpg",
-      "ozet": "Lise öğrencilerine temel devre elemanlarını ve algoritma mantığını aktaran giriş seviyesi eğitim."
+      "ozet": "Lise öğrencilerine temel devre elemanlarını ve algoritma mantığını aktaran giriş seviyesi eğitim.",
+      "butce": "5.700 TL",
+      "arac": "Arduino"
     },
     {
       "bolum": "okullar",
@@ -286,7 +331,9 @@
       "isbirligi": [
         "Bursa Büyük Kolej"
       ],
-      "ozet": "Genç öğrencilere bilimi sevdirmek için robotik projelerimizi okul bünyesindeki standımızda sergiledik."
+      "ozet": "Genç öğrencilere bilimi sevdirmek için robotik projelerimizi okul bünyesindeki standımızda sergiledik.",
+      "butce": "3.000 TL",
+      "arac": "Araç ve şoför"
     },
     {
       "bolum": "okullar",
@@ -298,7 +345,9 @@
       "isbirligi": [
         "Uluslararası Murat Hüdavendigar Lisesi"
       ],
-      "ozet": "Liseli öğrencilere TEKNOFEST süreçlerini anlattık, takımlarımızın atölyelerini birlikte gezdik."
+      "ozet": "Liseli öğrencilere TEKNOFEST süreçlerini anlattık, takımlarımızın atölyelerini birlikte gezdik.",
+      "butce": null,
+      "arac": "BTÜ Özdemir Bayraktar TEKNOFEST Atölyesi"
     },
     {
       "bolum": "okullar",
@@ -310,7 +359,9 @@
       "isbirligi": [
         "Tugay Ciner İlköğretim Okulu"
       ],
-      "ozet": "İlköğretim öğrencilerinin teknoloji ve mühendislikle erken yaşta tanışması için atölye gezisi."
+      "ozet": "İlköğretim öğrencilerinin teknoloji ve mühendislikle erken yaşta tanışması için atölye gezisi.",
+      "butce": null,
+      "arac": "Atölye tanıtım materyalleri ve bilgilendirme araçları"
     },
     {
       "bolum": "basari",
@@ -318,7 +369,10 @@
       "yer": "Bursa Teknik Üniversitesi",
       "tarih": "2025",
       "katilim": 50,
-      "ozet": "Formula Student yarışmalarında görev alan üyelerimiz deneyimlerini aktardı. Aynı sezon 20 üyemiz araç tasarımı, mühendislik analizleri ve teknik raporlama çalışmalarında yer aldı."
+      "ozet": "Formula Student yarışmalarında görev alan ekip üyelerimiz deneyimlerini öğrencilere aktardı.",
+      "butce": "5.000 TL",
+      "arac": "Konferans salonu, projeksiyon, ses sistemi ve sunum materyalleri",
+      "gorsel": "gorseller/formula-student-pist.jpg"
     },
     {
       "bolum": "basari",
@@ -330,7 +384,9 @@
       "isbirligi": [
         "Bursa Teknik Üniversitesi"
       ],
-      "ozet": "Yarışmalarda derece elde eden üyelerimiz teknik deneyimlerini öğrencilerle paylaştı."
+      "ozet": "Yarışmalarda derece elde eden üyelerimiz teknik deneyimlerini öğrencilerle paylaştı.",
+      "butce": null,
+      "arac": "Sunum ekipmanları, projeksiyon ve ses sistemi"
     },
     {
       "bolum": "sosyal",
@@ -339,7 +395,9 @@
       "tarih": "2026-04-12",
       "katilim": 35,
       "gorsel": "/media/galeri-hali-saha-2026.jpg",
-      "ozet": "Atölyede ve teknik çalışmalarda aktif arkadaşlarımızın motivasyonu için vizeler öncesi dostluk maçı."
+      "ozet": "Atölyede ve teknik çalışmalarda aktif arkadaşlarımızın motivasyonu için vizeler öncesi dostluk maçı.",
+      "butce": "2.200 TL",
+      "arac": null
     },
     {
       "bolum": "sosyal",
@@ -348,7 +406,9 @@
       "tarih": "2026-05-16",
       "katilim": 40,
       "gorsel": "/media/galeri-bahar-piknigi-grup.jpg",
-      "ozet": "Dönem sonu stresini azaltmak ve ekip ruhunu güçlendirmek için bahar pikniği."
+      "ozet": "Dönem sonu stresini azaltmak ve ekip ruhunu güçlendirmek için bahar pikniği.",
+      "butce": "2.700 TL",
+      "arac": "Piknik ekipmanları, oturma alanları, toplu etkinlik malzemeleri"
     },
     {
       "bolum": "sosyal",
@@ -357,7 +417,9 @@
       "tarih": "2026",
       "katilim": 30,
       "gorsel": "/media/galeri-voleybol.jpg",
-      "ozet": "İletişimi ve takım çalışmasını geliştirmek için topluluk içi voleybol turnuvası."
+      "ozet": "İletişimi ve takım çalışmasını geliştirmek için topluluk içi voleybol turnuvası.",
+      "butce": "500 TL",
+      "arac": "Voleybol sahası, voleybol topları, spor ekipmanları"
     },
     {
       "bolum": "basari",
@@ -365,8 +427,10 @@
       "yer": "Bursa Teknik Üniversitesi",
       "tarih": "2025",
       "katilim": 20,
-      "listede": false,
-      "ozet": "Araç tasarımı, mühendislik analizleri ve teknik raporlama çalışmaları."
+      "ozet": "Formula Student yarışmasına hazırlık kapsamında araç tasarımı, mühendislik analizleri ve teknik raporlama süreçleri üzerinde çalışmalar yürütüldü.",
+      "butce": null,
+      "arac": "Bilgisayarlar, CAD yazılımları, teknik raporlama araçları ve tasarım programları",
+      "gorsel": "gorseller/formula-student-afis.jpg"
     }
   ],
   "basarilar": [
@@ -377,7 +441,12 @@
       "tarih": "2026-05-12",
       "ozet": "Ar-Ge ve inovasyon çalışmalarıyla geliştirilen, ticari potansiyeli yüksek projemiz teknik jüri değerlendirmesinde birincilik ödülüne layık görüldü.",
       "gorsel": "gorseller/genc-ticaret-odul-1500.jpg",
-      "katilim": 7
+      "katilim": 7,
+      "butce": null,
+      "arac": null,
+      "isbirligi": [
+        "Genç MÜSİAD Bursa"
+      ]
     },
     {
       "derece": "3.",
@@ -393,7 +462,12 @@
       "tarih": "2025-12-12",
       "ozet": "Proje süreçlerini sunan farklı takımlarımız aynı yarışmada üçüncülük, dördüncülük ve beşincilik elde etti.",
       "gorsel": "/media/galeri-teknofest-5dk-anlat-odul.jpg",
-      "katilim": 60
+      "katilim": 60,
+      "butce": null,
+      "arac": "Proje sunum materyalleri, bilgisayar ve teknik dokümanlar",
+      "isbirligi": [
+        "TEKNOFEST"
+      ]
     },
     {
       "derece": "3.",
@@ -402,7 +476,9 @@
       "tarih": "2025-12-29",
       "ozet": "Yazılım ve otonom sistem çözümleri üzerine hackathonda geliştirdiğimiz çözümle üçüncülük.",
       "gorsel": "/media/galeri-advance-up-hackathon.jpg",
-      "katilim": 4
+      "katilim": 4,
+      "butce": "15.000 TL",
+      "arac": "Dizüstü bilgisayarlar, yazılım geliştirme araçları, internet bağlantısı, sunum ekipmanları"
     },
     {
       "derece": "",
@@ -412,7 +488,12 @@
       "ozet": "Uzay teknolojileri ve veri analitiği odaklı hackathonda algoritma geliştirme çalışmaları yürüttük.",
       "gorsel": "/media/galeri-astro-hackathon.jpg",
       "katilim": 5,
-      "dereceNotu": "Rapor 'birincilik', site başarı listesi '5.lik' diyor; kesinleşene kadar derece yazılmadı."
+      "dereceNotu": "Rapor 'birincilik', site başarı listesi '5.lik' diyor; kesinleşene kadar derece yazılmadı.",
+      "butce": "2.750 TL",
+      "arac": "Bilgisayarlar, veri analizi yazılımları, internet bağlantısı ve sunum araçları",
+      "isbirligi": [
+        "Türkiye Uzay Ajansı"
+      ]
     }
   ],
   "projeler": [
@@ -426,7 +507,14 @@
         "Otonom uçuş",
         "Faydalı yük",
         "Aerodinamik"
-      ]
+      ],
+      "butce": "150.000 TL",
+      "arac": "İnsansız hava aracı platformu, tasarım ve analiz yazılımları, elektronik donanımlar",
+      "tarih": "2025",
+      "isbirligi": [
+        "TEKNOFEST"
+      ],
+      "yer": "TEKNOFEST"
     },
     {
       "takim": "MATRİS",
@@ -438,7 +526,14 @@
         "Sürü algoritmaları",
         "Haberleşme",
         "Gömülü yazılım"
-      ]
+      ],
+      "butce": "250.000 TL",
+      "arac": "İHA platformları, haberleşme sistemleri, gömülü yazılım ve kontrol algoritmaları",
+      "tarih": "2025",
+      "isbirligi": [
+        "TEKNOFEST"
+      ],
+      "yer": "TEKNOFEST"
     },
     {
       "takim": "ZEMHERİ",
@@ -450,7 +545,10 @@
         "Hidrodinamik",
         "Fırlatma mekanizması",
         "Simülasyon"
-      ]
+      ],
+      "butce": "270.000 TL",
+      "arac": "Tasarım ve hidrodinamik analiz yazılımları, simülasyon ortamları, prototipleme ekipmanları",
+      "yer": "Bursa Teknik Üniversitesi"
     },
     {
       "takim": "İSS",
@@ -462,7 +560,10 @@
         "Sızdırmazlık",
         "Görüntü işleme",
         "Otonom sürüş"
-      ]
+      ],
+      "butce": "150.000 TL",
+      "arac": "Prototip araç, sensörler, gömülü sistem donanımları, sızdırmazlık test ve simülasyon ortamları, görüntü işleme yazılımları",
+      "yer": "Bursa Teknik Üniversitesi"
     },
     {
       "takim": "LODOS",
@@ -474,7 +575,10 @@
         "Navigasyon",
         "Engel algılama",
         "Haritalama"
-      ]
+      ],
+      "butce": "120.000 TL",
+      "arac": "Otonom tekne prototipi, GPS/kamera ve mesafe sensörleri, navigasyon ve haritalama yazılımları",
+      "yer": "Bursa Teknik Üniversitesi"
     },
     {
       "takim": "GÖKSAV",
@@ -486,7 +590,10 @@
         "Hedef takibi",
         "Görüntü işleme",
         "Kontrol"
-      ]
+      ],
+      "butce": "90.000 TL",
+      "arac": "Kamera ve algılama sensörleri, görüntü işleme ve kontrol yazılımları, kule mekanik donanımı",
+      "yer": "Bursa Teknik Üniversitesi"
     },
     {
       "takim": "MATROVER",
@@ -498,7 +605,15 @@
         "Türkiye 3.sü",
         "En hızlı araç"
       ],
-      "vurgu": true
+      "vurgu": true,
+      "butce": "320.000 TL",
+      "arac": "BTÜ Özdemir Bayraktar TEKNOFEST Atölyesi, araç ve şoför",
+      "isbirligi": [
+        "TEKNOFEST",
+        "ASELSAN"
+      ],
+      "yer": "BTÜ TEKNOFEST Atölyesi / TEKNOFEST ASELSAN",
+      "tarih": "2025-03-05"
     },
     {
       "takim": "İleri Otonom Sistemler",
@@ -510,7 +625,16 @@
       "etiket": [
         "İKA + İHA",
         "Sensör füzyonu"
-      ]
+      ],
+      "butce": "450.000 TL",
+      "arac": "BTÜ Özdemir Bayraktar TEKNOFEST Atölyesi",
+      "tarih": "2026-03-10",
+      "isbirligi": [
+        "TEKNOFEST",
+        "TUSAŞ",
+        "Luna Robotics"
+      ],
+      "yer": "BTÜ TEKNOFEST Atölyesi / TEKNOFEST TUSAŞ"
     },
     {
       "takim": "PUSULA",
@@ -522,7 +646,11 @@
         "Manipülatör",
         "Kalite kontrol"
       ],
-      "gorselKonum": "78% center"
+      "gorselKonum": "78% center",
+      "butce": "50.000 TL",
+      "arac": "BTÜ Özdemir Bayraktar TEKNOFEST Atölyesi",
+      "yer": "BTÜ TEKNOFEST Atölyesi / TEKNOFEST",
+      "tarih": "2025-08-13"
     },
     {
       "takim": "Robolig",
@@ -533,7 +661,12 @@
         "Robot kolu",
         "Simülasyon",
         "Otomasyon"
-      ]
+      ],
+      "butce": "40.000 TL",
+      "arac": "Endüstriyel robot kolları, programlama ve simülasyon yazılımları, bilgisayarlar",
+      "gorsel": "gorseller/robolig-robot.jpg",
+      "gorselNotu": "Raporda Robolig başlığı altında yer alan görsel",
+      "yer": "Bursa Teknik Üniversitesi"
     },
     {
       "takim": "ALHAZEN",
@@ -544,7 +677,14 @@
       "etiket": [
         "Radyasyon takibi",
         "Müdahale robotu"
-      ]
+      ],
+      "butce": "15.000 TL",
+      "arac": "BTÜ Özdemir Bayraktar TEKNOFEST Atölyesi",
+      "tarih": "2025-12-09",
+      "isbirligi": [
+        "TENMAK"
+      ],
+      "yer": "BTÜ TEKNOFEST Atölyesi / TEKNOFEST TENMAK"
     },
     {
       "takim": "ASHİNA İNOVASYON",
@@ -556,7 +696,15 @@
       "etiket": [
         "Akıllı tarım",
         "Hastalık tespiti"
-      ]
+      ],
+      "butce": "18.000 TL",
+      "arac": "BTÜ Özdemir Bayraktar TEKNOFEST Atölyesi",
+      "isbirligi": [
+        "Luna Robotics",
+        "Crowtec"
+      ],
+      "yer": "BTÜ TEKNOFEST Atölyesi / TEKNOFEST",
+      "tarih": "2025-02-19"
     }
   ],
   "isbirlikleri": [
@@ -580,5 +728,67 @@
     "Luna Robotics",
     "Crowtec",
     "TEKNOFEST"
-  ]
+  ],
+  "kareler": [
+    {
+      "gorsel": "/media/galeri-ashina-tubitak-sahne.jpg",
+      "not": "ASHİNA"
+    },
+    {
+      "gorsel": "/media/galeri-matrover-teknofest-cadir.jpg",
+      "not": "MATROVER"
+    },
+    {
+      "gorsel": "/media/galeri-lodos-ekip-sahil.jpg",
+      "not": "LODOS"
+    },
+    {
+      "gorsel": "/media/galeri-iss-auv-havuz.jpg",
+      "not": "İSS havuz testi"
+    },
+    {
+      "gorsel": "/media/galeri-zemheri-final.jpg",
+      "not": "ZEMHERİ"
+    },
+    {
+      "gorsel": "/media/galeri-matris-havelsan-stand.jpg",
+      "not": "MATRİS"
+    }
+  ],
+  "aracinDogusu": [
+    {
+      "ay": "Eylül – Ekim",
+      "baslik": "Takım kurulur",
+      "metin": "Tanıtım günlerinde kayıt olan öğrenciler takım ön başvurusu yapar, en fazla üç takım tercih eder. Kısa görüşmelerin amacı eleme değil, doğru kişiyi doğru işe yerleştirmektir. Eski üyeler önceki sezonun dersini çıkarır; bu liste yeni aracın ilk tasarım girdisidir."
+    },
+    {
+      "ay": "Kasım – Ocak",
+      "baslik": "Eğitim ve başvuru",
+      "metin": "Yeni üyeler eğitim kampına girer: tasarım, imalat, elektronik ve yazılım. Kış aylarında TEKNOFEST başvuruları yapılır; takım kategorinin şartnamesini satır satır okur. Boyut ve ağırlık sınırı, güvenlik kuralları ve puanlama aracın her kararını belirler."
+    },
+    {
+      "ay": "Şubat – Nisan",
+      "baslik": "Kâğıt üzerindeki araç",
+      "metin": "Çoğu kategoride ilk eleme rapordur. Ön tasarım raporunda mimari ve gerekçeler, kritik tasarım raporunda hesaplar, analizler, devre şemaları ve test planı istenir. Raporun her bölümünü o alt sistemden sorumlu üye yazar."
+    },
+    {
+      "ay": "Mayıs – Temmuz",
+      "baslik": "Üretim ve test",
+      "metin": "Kompozit gövdeler, lazer kesim ve 3B baskı parçalar, lehimlenen kartlar. Ardından havuz, sahil, arazi ve açık alan testleri gelir. Başarısız her test bir mühendislik dersidir ve yeniden üretime döner."
+    },
+    {
+      "ay": "Ağustos – Eylül",
+      "baslik": "Final alanı",
+      "metin": "Araç, yedek parçalar ve ekip şehir dışına taşınır. 2026'da takımlarımız Malatya, Mardin, Diyarbakır, Gaziantep ve Gölcük'teki final alanlarındaydı. Görev süresi dakikalarla ölçülür; on ayın hesabı orada verilir."
+    }
+  ],
+  "finalYerleri": {
+    "ASHİNA": "Malatya",
+    "LUNA İKA": "Mardin",
+    "PUSULA": "Diyarbakır",
+    "MATRİS": "Gaziantep",
+    "LODOS": "Mavi Vatan · Gölcük",
+    "PRUSA": "Mavi Vatan · Gölcük",
+    "ZEMHERİ": "Mavi Vatan · Gölcük"
+  }
 }
