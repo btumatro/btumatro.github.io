@@ -5,7 +5,9 @@ date: 2025-12-15
 expiresOn: ""
 pinned: false
 draft: false
-image: "/media/haber-teknofest-bilgilendirme.jpg"
+image: "/media/galeri-teknofest-5dk-anlat-odul.jpg"
+gallery:
+  - "/media/haber-teknofest-bilgilendirme.jpg"
 link: "https://www.instagram.com/reel/DSPDmuqDIe4/"
 linkLabel: "Instagram gönderisi"
 teams: []
@@ -15,6 +17,10 @@ summary: "T3 Vakfı Yönetim Kurulu Başkanı Dr. Elvan Kuzucu Hıdır'ın jüri
 Üniversitemizde düzenlenen etkinlikte TEKNOFEST yarışma sürecinin başvurudan finallere uzanan tüm aşamalarını dinleme fırsatı bulduk.
 
 **T3 Vakfı Yönetim Kurulu Başkanı Dr. Elvan Kuzucu Hıdır**'ın jüri başkanlığında gerçekleşen sunumlar, yarışma sürecine dair yol gösterici bilgiler sundu; finalist takımlarımızın deneyim aktarımlarıyla daha da değer kazandı.
+
+## 5 Dakikada Anlat yarışması
+
+Etkinlik kapsamında düzenlenen **TEKNOFEST Yarışma Sürecini 5 Dakikada Anlat** yarışmasında, proje süreçlerini sunan takımlarımız **üçüncülük, dördüncülük ve beşincilik** dereceleri elde etti.
 
 ## Finalist takımlarımız
 

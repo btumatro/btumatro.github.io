@@ -5,8 +5,9 @@ date: 2025-12-06
 expiresOn: ""
 pinned: false
 draft: false
-image: "/media/haber-meexx.jpg"
+image: "/media/galeri-meexx-stant-foto.jpg"
 gallery:
+  - "/media/haber-meexx.jpg"
   - "/media/galeri-meexx-stand.jpg"
 link: ""
 linkLabel: ""

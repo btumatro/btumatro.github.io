@@ -5,7 +5,9 @@ date: 2025-12-20
 expiresOn: ""
 pinned: false
 draft: false
-image: "/media/haber-ermetal-gezisi.jpg"
+image: "/media/galeri-ermetal-baretler.jpg"
+gallery:
+  - "/media/haber-ermetal-gezisi.jpg"
 link: "https://www.instagram.com/reel/DSXReO9DfWs/"
 linkLabel: "Instagram gönderisi"
 teams: []

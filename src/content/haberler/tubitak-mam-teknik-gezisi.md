@@ -5,7 +5,9 @@ date: 2025-12-09
 expiresOn: ""
 pinned: false
 draft: false
-image: "/media/haber-tubitak-mam.jpg"
+image: "/media/galeri-tubitak-mam-atolye.jpg"
+gallery:
+  - "/media/haber-tubitak-mam.jpg"
 link: ""
 linkLabel: ""
 teams: []

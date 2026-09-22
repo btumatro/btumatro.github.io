@@ -6,6 +6,8 @@ expiresOn: ""
 pinned: false
 draft: false
 image: "/media/haber-genc-ticaret.jpg"
+gallery:
+  - "/media/galeri-genc-ticaret-odul.jpg"
 link: ""
 linkLabel: ""
 teams: []

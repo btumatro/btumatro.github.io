@@ -13,6 +13,9 @@ gallery:
   - "/media/galeri-teknopark-ankara.jpg"
   - "/media/galeri-hktm-ekip.jpg"
   - "/media/galeri-fabrika-gezisi.jpg"
+  - "/media/haber-guhem-ziyareti.jpg"
+  - "/media/galeri-tubitak-mam-atolye.jpg"
+  - "/media/galeri-ermetal-baretler.jpg"
 stats:
   - label: Ziyaret Edilen Kurum
     value: "19+"
@@ -37,6 +40,7 @@ summary: "TUSAŞ, TOGG, ASELSAN, TEI, Turkish Technic, Ermetal, HKTM ve Alp Hava
 - Ermetal
 - HKTM (Hidropar Hareket Kontrol Teknolojileri Merkezi)
 - Alp Havacılık
+- GUHEM (Gökmen Uzay Havacılık Eğitim Merkezi)
 - SAHA EXPO
 - Valeo
 - IDEF (Uluslararası Savunma Sanayii Fuarı)

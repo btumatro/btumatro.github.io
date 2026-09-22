@@ -7,6 +7,7 @@ pinned: false
 draft: false
 image: "/media/haber-turkish-technic-plaket.jpg"
 gallery:
+  - "/media/galeri-turkish-technic-workshop-grup.jpg"
   - "/media/galeri-turkish-technic-sinif.jpg"
   - "/media/galeri-turkish-technic-hangar.jpg"
   - "/media/galeri-turkish-technic-briefing.jpg"

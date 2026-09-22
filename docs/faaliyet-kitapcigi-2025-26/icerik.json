@@ -1,0 +1,584 @@
+{
+  "_not": "Kaynak: 'MATRO Faaliyet Raporu 25-26.docx'. Harcanan bütçe alanları tanıtım kitapçığında bilerek gösterilmez. Görsel yolları bu klasöre görelidir; '/media/...' ile başlayanlar public/media altındadır. 'tarihNotu' dolu olanlar raporda hatalı/eksik yazılmış tarihlerdir, kesinleşince düzeltilmeli.",
+  "donem": "2025–2026",
+  "bolumler": [
+    {
+      "id": "topluluk",
+      "no": "01",
+      "baslik": "Topluluk ve Eğitim",
+      "ozet": "Her dönem yeni üyelerle başlayan yolculuğumuz, tanışma buluşmaları ve atölyede biten eğitim kamplarıyla sürüyor. Amacımız, ilk gün amfide oturan öğrencinin sezon sonunda bir proje takımında sorumluluk alabilmesi.",
+      "kapak": "/media/galeri-tanisma-toplantisi-amfi.jpg"
+    },
+    {
+      "id": "sanayi",
+      "no": "02",
+      "baslik": "Sanayi ile Buluşma",
+      "ozet": "Teorik bilgiyi sahadaki uygulamayla birleştirmek için havacılık, savunma, otomotiv ve Ar-Ge kuruluşlarına teknik geziler düzenledik; sektörün mühendislerini kampüse davet ettik.",
+      "kapak": "/media/galeri-turkish-technic-hangar.jpg"
+    },
+    {
+      "id": "stant",
+      "no": "03",
+      "baslik": "Fuarlar ve Stantlar",
+      "ozet": "Robotlarımızı atölyeden çıkarıp fuar alanlarına, festivallere ve kampüs etkinliklerine taşıdık. Her stant, projelerimizi yeni insanlara anlatma ve iş birlikleri kurma fırsatı oldu."
+    },
+    {
+      "id": "okullar",
+      "no": "04",
+      "baslik": "Yeni Nesil Mühendisler",
+      "ozet": "İlkokuldan liseye kadar farklı yaş gruplarındaki öğrencilerle buluştuk. Atölyemizi gezdirdik, okullara robotlarımızı götürdük, Arduino ile ilk devrelerini kurdurduk.",
+      "kapak": "/media/galeri-tugay-ciner-atolye.jpg"
+    },
+    {
+      "id": "basari",
+      "no": "05",
+      "baslik": "Deneyim ve Başarılar",
+      "ozet": "Yarışmalarda edindiğimiz tecrübeyi paylaşmayı, kazandığımız dereceler kadar önemsiyoruz."
+    },
+    {
+      "id": "teknofest",
+      "no": "06",
+      "baslik": "TEKNOFEST Projeleri",
+      "ozet": "Hava, kara, deniz ve su altı sistemlerinden endüstriyel robotiğe, nükleer enerjiden tarım teknolojilerine uzanan on iki yarışma projesi, lisans ve lisansüstü öğrencilerinden oluşan takımlarla Özdemir Bayraktar TEKNOFEST Atölyesi'nde yürütüldü."
+    },
+    {
+      "id": "sosyal",
+      "no": "07",
+      "baslik": "Takım Ruhu",
+      "ozet": "Atölyede uzun saatler geçiren ekiplerimizi sahada, parkta ve spor salonunda da bir araya getirdik."
+    }
+  ],
+  "faaliyetler": [
+    {
+      "bolum": "topluluk",
+      "ad": "Tanışma ve Bilgilendirme Toplantısı",
+      "yer": "BTÜ Amfi",
+      "tarih": "2025-10-15",
+      "katilim": 150,
+      "gorsel": "/media/galeri-tanisma-toplantisi-amfi.jpg",
+      "ozet": "Yeni üyelerimize topluluğun vizyonunu, çalışma alanlarını ve gelecek projelerini aktardığımız geniş katılımlı oryantasyon toplantısı."
+    },
+    {
+      "bolum": "topluluk",
+      "ad": "Tanışma Kahvaltısı",
+      "yer": "Bugii Lounge",
+      "tarih": "2025-10-25",
+      "katilim": 65,
+      "gorsel": "/media/galeri-tanisma-kahvaltisi-salon.jpg",
+      "isbirligi": [
+        "Bugii Lounge"
+      ],
+      "ozet": "Yeni üyelerle kaynaşmak, iletişimi ve takım ruhunu güçlendirmek için düzenlediğimiz toplu kahvaltı."
+    },
+    {
+      "bolum": "topluluk",
+      "ad": "MATRO Genel Eğitim",
+      "yer": "BTÜ",
+      "tarih": "2025-11-13",
+      "katilim": 157,
+      "gorsel": "/media/galeri-genel-egitim-2025.jpg",
+      "ozet": "Mühendislik yaklaşımı, proje geliştirme mantığı, tasarım süreçleri ve yazılımın temelleri; yeni üyelerin teknik süreçlere hızla uyum sağlaması için."
+    },
+    {
+      "bolum": "topluluk",
+      "ad": "1. Eğitim Kampı",
+      "yer": "BTÜ",
+      "tarih": "2025-12-10",
+      "bitis": "2026-01-09",
+      "katilim": 157,
+      "gorsel": "/media/galeri-egitim-kampi-1.jpg",
+      "ozet": "Bir ay süren yoğunlaştırılmış atölye ve eğitim programı: mühendislik temelleri, tasarım, takım çalışması ve problem çözme; öğrenilenler atölyede uygulandı."
+    },
+    {
+      "bolum": "topluluk",
+      "ad": "2. Eğitim Kampı",
+      "yer": "BTÜ",
+      "tarih": "2026-02-26",
+      "bitis": "2026-03-01",
+      "katilim": 90,
+      "gorsel": "/media/galeri-egitim-kampi-2.jpg",
+      "ozet": "Proje dönemine hazırlık için ileri seviye tasarım, simülasyonla test, kodlama ve hata ayıklama; katılımcılar ekipler hâlinde teknik problemleri analiz etti."
+    },
+    {
+      "bolum": "sanayi",
+      "ad": "Turkish Technic Teknik Gezisi",
+      "yer": "Turkish Technic, İstanbul",
+      "tarih": "2025-12",
+      "tarihNotu": "Raporda 09.12.2025 yazıyor; TÜBİTAK MAM gezisiyle aynı gün, kontrol edilmeli.",
+      "katilim": 30,
+      "gorsel": "/media/galeri-turkish-technic-hangar.jpg",
+      "isbirligi": [
+        "Turkish Technic"
+      ],
+      "one": true,
+      "ozet": "Havacılık, savunma ve motor alanındaki mühendislik faaliyetlerini hangarda yerinde inceledik. Katılımcılar teorik bilgilerini endüstriyel pratikle birleştirdi, sektördeki iş ve staj imkânları hakkında doğrudan bilgi aldı."
+    },
+    {
+      "bolum": "sanayi",
+      "ad": "TÜBİTAK MAM Teknik Gezisi",
+      "yer": "TÜBİTAK Marmara Araştırma Merkezi",
+      "tarih": "2025-12-09",
+      "katilim": 10,
+      "gorsel": "/media/galeri-tubitak-mam-atolye.jpg",
+      "isbirligi": [
+        "TÜBİTAK MAM"
+      ],
+      "ozet": "Türkiye'nin önde gelen Ar-Ge merkezlerinden birinde laboratuvarları, elektrikli araç projelerini ve ileri düzey mühendislik çalışmalarını gözlemledik."
+    },
+    {
+      "bolum": "sanayi",
+      "ad": "ERTEV – Ermetal Teknik Gezisi",
+      "yer": "Ermetal Grup Şirketleri, Bursa",
+      "tarih": "2025-12-16",
+      "katilim": 20,
+      "gorsel": "/media/galeri-ermetal-baretler.jpg",
+      "isbirligi": [
+        "ERTEV",
+        "Ermetal Grup Şirketleri",
+        "Mekatronik Mühendisleri Derneği"
+      ],
+      "ozet": "Mekatronik Mühendisleri Derneği iş birliğiyle üretim alanlarını, kullanılan teknolojileri ve çalışma süreçlerini yerinde tanıdık."
+    },
+    {
+      "bolum": "sanayi",
+      "ad": "HKTM Teknik Gezisi",
+      "yer": "HKTM Fabrikası, Gebze",
+      "tarih": "2026-03-02",
+      "katilim": 38,
+      "gorsel": "/media/galeri-hktm-ekip.jpg",
+      "isbirligi": [
+        "HKTM Hidropar Hareket Kontrol Teknolojileri Merkezi"
+      ],
+      "ozet": "Hareket kontrol teknolojileri ve mekatronik sistemlerdeki mühendislik çözümlerini inceledik; firmanın yönetim kurulu başkanı ekibimizi ağırladı."
+    },
+    {
+      "bolum": "sanayi",
+      "ad": "Turkish Technic Workshop",
+      "yer": "BTÜ E Blok, Mavi Salon",
+      "tarih": "2026-03-10",
+      "katilim": 150,
+      "gorsel": "gorseller/turkish-technic-workshop-2000.jpg",
+      "isbirligi": [
+        "Turkish Technic",
+        "UHSST",
+        "PARGE"
+      ],
+      "one": true,
+      "ozet": "Havacılık teknolojileri ve uçak bakım-onarım süreçleri üzerine sunumun ardından düzenlenen workshop'ta katılımcılar gerçek saha problemleri üzerinde ekipler hâlinde çalıştı; sanayi ile mühendislik öğrencileri arasındaki bağ güçlendi."
+    },
+    {
+      "bolum": "sanayi",
+      "ad": "Alp Havacılık Teknik Gezisi",
+      "yer": "Alp Havacılık, Eskişehir",
+      "tarih": "2026-03-26",
+      "katilim": 28,
+      "gorsel": "/media/haber-alp-havacilik.jpg",
+      "isbirligi": [
+        "Alp Havacılık"
+      ],
+      "ozet": "Havacılıkta üretim, tasarım, bakım ve mühendislik süreçlerini; mühendislik ekiplerinin çalışma düzenini yerinde gözlemledik."
+    },
+    {
+      "bolum": "sanayi",
+      "ad": "GUHEM Ziyareti",
+      "yer": "Gökmen Uzay Havacılık Eğitim Merkezi, Bursa",
+      "tarih": "2026-04-07",
+      "katilim": 18,
+      "gorsel": "/media/haber-guhem-ziyareti.jpg",
+      "isbirligi": [
+        "GUHEM"
+      ],
+      "ozet": "Türkiye'nin uzay vizyonunu inceledik; Türkiye Milli Uzay Programı kapsamında ilk astronotumuz Alper Gezeravcı'nın sunumunu dinledik."
+    },
+    {
+      "bolum": "sanayi",
+      "ad": "TUSAŞ Teknik Gezi XL",
+      "yer": "TUSAŞ Tesisleri, Ankara",
+      "tarih": "2026-05-17",
+      "katilim": 3,
+      "gorsel": "/media/haber-tusas-teknik-gezi-xl.jpg",
+      "isbirligi": [
+        "TUSAŞ"
+      ],
+      "ozet": "Topluluğumuzu temsilen katıldığımız programda yerli ve milli havacılık ve uzay projelerini, üretim hatlarını ve mühendislik altyapısını yerinde inceledik."
+    },
+    {
+      "bolum": "stant",
+      "ad": "BTÜ Robot Günleri",
+      "yer": "Bursa Teknik Üniversitesi",
+      "tarih": "2025-11-13",
+      "katilim": 20,
+      "gorsel": "/media/galeri-robot-gunleri-stant.jpg",
+      "ozet": "Geliştirdiğimiz robotik projeleri ve kazandığımız ödülleri ziyaretçilere ve öğrencilere sergilediğimiz tanıtım standı."
+    },
+    {
+      "bolum": "stant",
+      "ad": "GDG Bursa DevFest",
+      "yer": "Merinos AKKM",
+      "tarih": "2025-11",
+      "tarihNotu": "Raporda 13.08.2025 yazıyor; sitedeki DevFest duyurusu Kasım 2025.",
+      "katilim": 50,
+      "gorsel": "/media/galeri-devfest-stant.jpg",
+      "isbirligi": [
+        "GDG Bursa"
+      ],
+      "ozet": "Bursa'nın en büyük yazılım ve teknoloji festivalinde topluluk partneri olarak projelerimizi yazılımcılara ve sektöre tanıttık."
+    },
+    {
+      "bolum": "stant",
+      "ad": "MEEXX Makine Fuarı",
+      "yer": "Bursa Fuar Merkezi",
+      "tarih": "2025-12-03",
+      "katilim": 50,
+      "gorsel": "/media/galeri-meexx-stant-foto.jpg",
+      "isbirligi": [
+        "BTSO"
+      ],
+      "ozet": "Endüstriyel makine ve imalat teknolojilerindeki gelişmeleri takip etmek ve topluluğu tanıtmak için kendi standımızı açtık."
+    },
+    {
+      "bolum": "stant",
+      "ad": "UHALFEST",
+      "yer": "UHALFEST Etkinlik Alanı",
+      "tarih": "2026-05-06",
+      "katilim": 20,
+      "gorsel": "/media/galeri-uhalfest-stant.jpg",
+      "ozet": "Havacılık ve teknoloji festivalinde insansız sistem prototiplerimizi ve ödüllerimizi sergileyerek ziyaretçileri bilgilendirdik."
+    },
+    {
+      "bolum": "okullar",
+      "ad": "Veliköy Mesleki ve Teknik Anadolu Lisesi",
+      "yer": "BTÜ Özdemir Bayraktar TEKNOFEST Atölyesi",
+      "tarih": "2025-10-10",
+      "katilim": 80,
+      "gorsel": "/media/galeri-velikoy-lise-atolye.jpg",
+      "ozet": "Tekirdağ'dan gelen lise öğrencilerini atölyemizde ağırladık; takımlarımız araçlarını ve üretim süreçlerini anlattı."
+    },
+    {
+      "bolum": "okullar",
+      "ad": "Yerli Malı Haftası: Milli Araçlarımızı Tanıyoruz",
+      "yer": "Armutlu Avukat Necati Toker İlkokulu",
+      "tarih": "2025-12",
+      "tarihNotu": "Raporda 28.12.2026 yazıyor (gelecek tarih); Yerli Malı Haftası nedeniyle Aralık 2025 varsayıldı.",
+      "katilim": 300,
+      "isbirligi": [
+        "Armutlu Avukat Necati Toker İlkokulu"
+      ],
+      "one": true,
+      "ozet": "İlkokul öğrencilerine milli teknoloji hamlesini ve otonom araçlarımızı tanıtarak mühendisliği sevdirmeyi amaçlayan sosyal sorumluluk programı. Sezonun en kalabalık buluşması: 300 öğrenci."
+    },
+    {
+      "bolum": "okullar",
+      "ad": "Arduino Eğitimi",
+      "yer": "Uluslararası Murat Hüdavendigar Lisesi",
+      "tarih": "2026-05-09",
+      "katilim": 35,
+      "gorsel": "/media/galeri-arduino-egitimi-lise.jpg",
+      "ozet": "Lise öğrencilerine temel devre elemanlarını ve algoritma mantığını aktaran giriş seviyesi eğitim."
+    },
+    {
+      "bolum": "okullar",
+      "ad": "Bursa Büyük Kolej Bilim Haftası",
+      "yer": "Bursa Büyük Kolej",
+      "tarih": "2026-05-13",
+      "katilim": 35,
+      "gorsel": "/media/galeri-buyuk-kolej-bilim-haftasi.jpg",
+      "isbirligi": [
+        "Bursa Büyük Kolej"
+      ],
+      "ozet": "Genç öğrencilere bilimi sevdirmek için robotik projelerimizi okul bünyesindeki standımızda sergiledik."
+    },
+    {
+      "bolum": "okullar",
+      "ad": "TEKNOFEST Tecrübe Paylaşımı ve Atölye Gezisi",
+      "yer": "BTÜ Özdemir Bayraktar TEKNOFEST Atölyesi",
+      "tarih": "2026-06-09",
+      "katilim": 25,
+      "gorsel": "/media/galeri-murat-hudavendigar-atolye.jpg",
+      "isbirligi": [
+        "Uluslararası Murat Hüdavendigar Lisesi"
+      ],
+      "ozet": "Liseli öğrencilere TEKNOFEST süreçlerini anlattık, takımlarımızın atölyelerini birlikte gezdik."
+    },
+    {
+      "bolum": "okullar",
+      "ad": "Tugay Ciner İlköğretim Okulu Atölye Ziyareti",
+      "yer": "BTÜ Özdemir Bayraktar TEKNOFEST Atölyesi",
+      "tarih": "2026-06-11",
+      "katilim": 25,
+      "gorsel": "/media/galeri-tugay-ciner-atolye.jpg",
+      "isbirligi": [
+        "Tugay Ciner İlköğretim Okulu"
+      ],
+      "ozet": "İlköğretim öğrencilerinin teknoloji ve mühendislikle erken yaşta tanışması için atölye gezisi."
+    },
+    {
+      "bolum": "basari",
+      "ad": "Formula Student Tecrübe Paylaşımı",
+      "yer": "Bursa Teknik Üniversitesi",
+      "tarih": "2025",
+      "katilim": 50,
+      "ozet": "Formula Student yarışmalarında görev alan üyelerimiz deneyimlerini aktardı. Aynı sezon 20 üyemiz araç tasarımı, mühendislik analizleri ve teknik raporlama çalışmalarında yer aldı."
+    },
+    {
+      "bolum": "basari",
+      "ad": "BTÜ Bilim Cafe Tecrübe Paylaşımı",
+      "yer": "Bursa Teknik Üniversitesi",
+      "tarih": "2025",
+      "katilim": 35,
+      "gorsel": "/media/galeri-bilim-cafe.jpg",
+      "isbirligi": [
+        "Bursa Teknik Üniversitesi"
+      ],
+      "ozet": "Yarışmalarda derece elde eden üyelerimiz teknik deneyimlerini öğrencilerle paylaştı."
+    },
+    {
+      "bolum": "sosyal",
+      "ad": "MATRO Halı Saha",
+      "yer": "BTÜ Halı Saha",
+      "tarih": "2026-04-12",
+      "katilim": 35,
+      "gorsel": "/media/galeri-hali-saha-2026.jpg",
+      "ozet": "Atölyede ve teknik çalışmalarda aktif arkadaşlarımızın motivasyonu için vizeler öncesi dostluk maçı."
+    },
+    {
+      "bolum": "sosyal",
+      "ad": "MATRO Piknik",
+      "yer": "Hüdavendigar Kent Parkı",
+      "tarih": "2026-05-16",
+      "katilim": 40,
+      "gorsel": "/media/galeri-bahar-piknigi-grup.jpg",
+      "ozet": "Dönem sonu stresini azaltmak ve ekip ruhunu güçlendirmek için bahar pikniği."
+    },
+    {
+      "bolum": "sosyal",
+      "ad": "MATRO Voleybol",
+      "yer": "BTÜ Spor Tesisleri",
+      "tarih": "2026",
+      "katilim": 30,
+      "gorsel": "/media/galeri-voleybol.jpg",
+      "ozet": "İletişimi ve takım çalışmasını geliştirmek için topluluk içi voleybol turnuvası."
+    },
+    {
+      "bolum": "basari",
+      "ad": "Formula Student Yarışması",
+      "yer": "Bursa Teknik Üniversitesi",
+      "tarih": "2025",
+      "katilim": 20,
+      "listede": false,
+      "ozet": "Araç tasarımı, mühendislik analizleri ve teknik raporlama çalışmaları."
+    }
+  ],
+  "basarilar": [
+    {
+      "derece": "1.",
+      "baslik": "Genç Ticaret Elçileri Yarışması",
+      "kurum": "Genç MÜSİAD Bursa",
+      "tarih": "2026-05-12",
+      "ozet": "Ar-Ge ve inovasyon çalışmalarıyla geliştirilen, ticari potansiyeli yüksek projemiz teknik jüri değerlendirmesinde birincilik ödülüne layık görüldü.",
+      "gorsel": "gorseller/genc-ticaret-odul-1500.jpg",
+      "katilim": 7
+    },
+    {
+      "derece": "3.",
+      "baslik": "TEKNOFEST İnsansız Kara Aracı",
+      "kurum": "TEKNOFEST 2025 · MATROVER",
+      "tarih": "2025",
+      "ozet": "Zorlu arazide otonom sürüş, haritalama ve çevre tanıma yapabilen aracımızla Türkiye üçüncülüğü ve en hızlı araç unvanı."
+    },
+    {
+      "derece": "3. 4. 5.",
+      "baslik": "TEKNOFEST Sürecini 5 Dakikada Anlat",
+      "kurum": "BTÜ Turkuaz Salon",
+      "tarih": "2025-12-12",
+      "ozet": "Proje süreçlerini sunan farklı takımlarımız aynı yarışmada üçüncülük, dördüncülük ve beşincilik elde etti.",
+      "gorsel": "/media/galeri-teknofest-5dk-anlat-odul.jpg",
+      "katilim": 60
+    },
+    {
+      "derece": "3.",
+      "baslik": "Advance-Up Hackathon",
+      "kurum": "Bursa Teknik Üniversitesi",
+      "tarih": "2025-12-29",
+      "ozet": "Yazılım ve otonom sistem çözümleri üzerine hackathonda geliştirdiğimiz çözümle üçüncülük.",
+      "gorsel": "/media/galeri-advance-up-hackathon.jpg",
+      "katilim": 4
+    },
+    {
+      "derece": "",
+      "baslik": "Astro Hackathon 5",
+      "kurum": "Türkiye Uzay Ajansı",
+      "tarih": "2026-04-01",
+      "ozet": "Uzay teknolojileri ve veri analitiği odaklı hackathonda algoritma geliştirme çalışmaları yürüttük.",
+      "gorsel": "/media/galeri-astro-hackathon.jpg",
+      "katilim": 5,
+      "dereceNotu": "Rapor 'birincilik', site başarı listesi '5.lik' diyor; kesinleşene kadar derece yazılmadı."
+    }
+  ],
+  "projeler": [
+    {
+      "takim": "ASHİNA",
+      "kategori": "İnsansız Hava Aracı",
+      "kisi": 8,
+      "gorsel": "/media/galeri-ashina-iha-gece.jpg",
+      "ozet": "Otonom uçuş, faydalı yük bırakma ve aerodinamik tasarım üzerine çalışıldı; geliştirilen İHA ile yarışma sürecine aktif katılım sağlandı.",
+      "etiket": [
+        "Otonom uçuş",
+        "Faydalı yük",
+        "Aerodinamik"
+      ]
+    },
+    {
+      "takim": "MATRİS",
+      "kategori": "Sürü İnsansız Hava Aracı",
+      "kisi": 15,
+      "gorsel": "/media/galeri-matris-saha.jpg",
+      "ozet": "Birden fazla İHA'nın koordineli görev icra edebilmesi için haberleşme, gömülü yazılım ve kontrol algoritmaları geliştirildi.",
+      "etiket": [
+        "Sürü algoritmaları",
+        "Haberleşme",
+        "Gömülü yazılım"
+      ]
+    },
+    {
+      "takim": "ZEMHERİ",
+      "kategori": "Su Altı Roket",
+      "kisi": 15,
+      "gorsel": "/media/galeri-zemheri-sara.jpg",
+      "ozet": "Su altından fırlatılıp hedef vurabilen roket sistemi tasarlandı; hidrodinamik gövde, fırlatma kararlılığı ve isabet üzerine çalışıldı.",
+      "etiket": [
+        "Hidrodinamik",
+        "Fırlatma mekanizması",
+        "Simülasyon"
+      ]
+    },
+    {
+      "takim": "İSS",
+      "kategori": "İnsansız Su Altı Sistemleri",
+      "kisi": 15,
+      "gorsel": "/media/galeri-iss-atolye-ekip.jpg",
+      "ozet": "Sızdırmazlık simülasyonları, otonom sürüş ve su altı nesne tespiti yapabilen prototip geliştirildi ve yarışmada performans sergilendi.",
+      "etiket": [
+        "Sızdırmazlık",
+        "Görüntü işleme",
+        "Otonom sürüş"
+      ]
+    },
+    {
+      "takim": "LODOS",
+      "kategori": "İnsansız Deniz Aracı",
+      "kisi": 15,
+      "gorsel": "/media/galeri-lodos-detay.jpg",
+      "ozet": "Su üstünde otonom rota takibi, engelden kaçış ve haritalama yapabilen otonom tekne geliştirildi, seyir performansı test edildi.",
+      "etiket": [
+        "Navigasyon",
+        "Engel algılama",
+        "Haritalama"
+      ]
+    },
+    {
+      "takim": "GÖKSAV",
+      "kategori": "Hava Savunma Sistemleri",
+      "kisi": 15,
+      "gorsel": "/media/galeri-mergen-hss.jpg",
+      "ozet": "Tehdit algılama, otonom hedef takibi ve kilitlenme kabiliyetine sahip entegre hava savunma kulesi üretildi.",
+      "etiket": [
+        "Hedef takibi",
+        "Görüntü işleme",
+        "Kontrol"
+      ]
+    },
+    {
+      "takim": "MATROVER",
+      "kategori": "İnsansız Kara Aracı",
+      "kisi": 35,
+      "gorsel": "gorseller/ika-sasi-1500.jpg",
+      "ozet": "Zorlu arazide otonom sürüş, haritalama ve çevre tanıma algoritmalarına sahip platform geliştirildi. Türkiye üçüncülüğü ve en hızlı araç unvanı kazanıldı; öğrenciler için staj ortamı oluştu.",
+      "etiket": [
+        "Türkiye 3.sü",
+        "En hızlı araç"
+      ],
+      "vurgu": true
+    },
+    {
+      "takim": "İleri Otonom Sistemler",
+      "kategori": "Tasarım ve Operasyon",
+      "kisi": 25,
+      "gorsel": "gorseller/ileri-otonom-cad.jpg",
+      "gorselNotu": "Tasarlanan İHA'nın CAD ortamındaki kavramsal görseli",
+      "ozet": "Lisans ve lisansüstü öğrencileriyle insansız kara ve hava araçlarının koordineli çalışması ve sensör füzyonu ile görev gereksinimlerinin karşılanması.",
+      "etiket": [
+        "İKA + İHA",
+        "Sensör füzyonu"
+      ]
+    },
+    {
+      "takim": "PUSULA",
+      "kategori": "Sanayide Robotik Uygulamalar",
+      "kisi": 20,
+      "gorsel": "/media/galeri-pusula-ekip-2025.jpg",
+      "ozet": "Fabrika otomasyon süreçlerine yönelik manipülatör tasarımı ve görüntü işleme tabanlı kalite kontrol projesi sunuldu.",
+      "etiket": [
+        "Manipülatör",
+        "Kalite kontrol"
+      ],
+      "gorselKonum": "78% center"
+    },
+    {
+      "takim": "Robolig",
+      "kategori": "Üniversite Düzeyi",
+      "kisi": 5,
+      "ozet": "Endüstriyel robot kollarının programlanması, hareket planlaması ve otonom üretim hatlarının simülasyonu üzerine hazırlık çalışmaları sürüyor.",
+      "etiket": [
+        "Robot kolu",
+        "Simülasyon",
+        "Otomasyon"
+      ]
+    },
+    {
+      "takim": "ALHAZEN",
+      "kategori": "Nükleer Enerji Teknolojileri",
+      "kisi": 12,
+      "gorsel": "/media/takim-alhazen.jpg",
+      "ozet": "Nükleer santral güvenliği, radyasyon takibi ve otonom müdahale robotları üzerine teorik ve pratik tasarım çalışması.",
+      "etiket": [
+        "Radyasyon takibi",
+        "Müdahale robotu"
+      ]
+    },
+    {
+      "takim": "ASHİNA İNOVASYON",
+      "kategori": "Tarım Teknolojileri",
+      "kisi": 12,
+      "gorsel": "/media/takim-ashina-inovasyon.jpg",
+      "gorselNotu": "Tasarlanan ürünün montajlanmış hâli",
+      "ozet": "Tarım arazilerinde otonom analiz, hastalık tespiti ve verimli ilaçlama yapabilen robotik sistem tasarlandı.",
+      "etiket": [
+        "Akıllı tarım",
+        "Hastalık tespiti"
+      ]
+    }
+  ],
+  "isbirlikleri": [
+    "Turkish Technic",
+    "TÜBİTAK MAM",
+    "TUSAŞ",
+    "ASELSAN",
+    "TENMAK",
+    "Türkiye Uzay Ajansı",
+    "GUHEM",
+    "HKTM",
+    "Alp Havacılık",
+    "Ermetal Grup",
+    "ERTEV",
+    "Mekatronik Mühendisleri Derneği",
+    "BTSO",
+    "GDG Bursa",
+    "Genç MÜSİAD Bursa",
+    "UHSST",
+    "PARGE",
+    "Luna Robotics",
+    "Crowtec",
+    "TEKNOFEST"
+  ]
+}

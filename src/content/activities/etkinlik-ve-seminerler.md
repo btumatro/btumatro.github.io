@@ -15,6 +15,10 @@ gallery:
   - "/media/topluluk-ekip-selfie.jpg"
   - "/media/galeri-2025-yil-ozeti.jpg"
   - "/media/galeri-matro-teknofest-2020.jpg"
+  - "/media/galeri-bilim-cafe.jpg"
+  - "/media/galeri-astro-hackathon.jpg"
+  - "/media/galeri-advance-up-hackathon.jpg"
+  - "/media/galeri-voleybol.jpg"
 stats: []
 summary: "Sektörel söyleşiler, kariyer günleri, hackathon organizasyonları ve teknoloji çalıştaylarıyla üyelerimizi alanında uzman isimlerle buluşturuyoruz."
 ---

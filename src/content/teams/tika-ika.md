@@ -23,6 +23,7 @@ gallery:
   - "/media/galeri-luna-arac-detay.jpg"
   - "/media/galeri-matrover-stand.jpg"
   - "/media/ika-saha-testi.jpg"
+  - "/media/galeri-ika-sasi.jpg"
 badge: "2026 Finalisti"
 instagram: ""
 aliases:

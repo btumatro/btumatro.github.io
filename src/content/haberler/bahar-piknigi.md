@@ -5,7 +5,9 @@ date: 2026-05-20
 expiresOn: ""
 pinned: false
 draft: false
-image: "/media/haber-bahar-piknigi.jpg"
+image: "/media/galeri-bahar-piknigi-grup.jpg"
+gallery:
+  - "/media/haber-bahar-piknigi.jpg"
 link: "https://www.instagram.com/reel/DYkeD1ttmps/"
 linkLabel: "Instagram gönderisi"
 teams: []

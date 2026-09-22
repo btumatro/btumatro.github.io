@@ -9,6 +9,10 @@ gallery:
   - "/media/fuar-standi-2.jpg"
   - "/media/galeri-meteksan-fuari.jpg"
   - "/media/fuar-ziyaret.jpg"
+  - "/media/galeri-meexx-stant-foto.jpg"
+  - "/media/galeri-uhalfest-stant.jpg"
+  - "/media/galeri-devfest-stant.jpg"
+  - "/media/galeri-robot-gunleri-stant.jpg"
 stats:
   - label: Fuar
     value: "15+"

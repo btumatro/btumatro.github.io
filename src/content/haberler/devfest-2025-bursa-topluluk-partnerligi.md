@@ -5,7 +5,9 @@ date: 2025-11-20
 expiresOn: ""
 pinned: false
 draft: false
-image: "/media/haber-devfest-bursa.jpg"
+image: "/media/galeri-devfest-stant.jpg"
+gallery:
+  - "/media/haber-devfest-bursa.jpg"
 link: ""
 linkLabel: ""
 teams: []

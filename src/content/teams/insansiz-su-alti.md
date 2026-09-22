@@ -18,6 +18,7 @@ gallery:
   - "/media/tasarim-iss-auv-onden.jpg"
   - "/media/galeri-iss-2021-disari.jpg"
   - "/media/galeri-iss-2021-icerde.jpg"
+  - "/media/galeri-iss-atolye-ekip.jpg"
 video: "/media/video-prusa-tanitim.mp4"
 videoPoster: "/media/video-prusa-tanitim.jpg"
 badge: "2026 Finalisti"

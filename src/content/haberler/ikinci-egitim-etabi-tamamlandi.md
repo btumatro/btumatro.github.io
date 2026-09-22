@@ -6,6 +6,8 @@ expiresOn: ""
 pinned: false
 draft: false
 image: "/media/haber-ikinci-egitim.jpg"
+gallery:
+  - "/media/galeri-egitim-kampi-2.jpg"
 link: "https://www.instagram.com/reel/DVyy02_DStE/"
 linkLabel: "Instagram gönderisi"
 teams: []

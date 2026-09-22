@@ -5,8 +5,10 @@ date: 2025-10-20
 expiresOn: ""
 pinned: false
 draft: false
-image: "/media/haber-tanisma-etkinligi.jpg"
+image: "/media/galeri-tanisma-toplantisi-amfi.jpg"
 gallery:
+  - "/media/galeri-tanisma-kahvaltisi-salon.jpg"
+  - "/media/haber-tanisma-etkinligi.jpg"
   - "/media/galeri-tanisma-kahvaltisi.jpg"
 link: ""
 linkLabel: ""

@@ -5,7 +5,9 @@ date: 2026-04-20
 expiresOn: ""
 pinned: false
 draft: false
-image: "/media/haber-hali-saha.jpg"
+image: "/media/galeri-hali-saha-2026.jpg"
+gallery:
+  - "/media/haber-hali-saha.jpg"
 link: "https://www.instagram.com/reel/DXCizE8jf8B/"
 linkLabel: "Instagram gönderisi"
 teams: []

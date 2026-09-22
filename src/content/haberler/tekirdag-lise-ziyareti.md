@@ -6,6 +6,9 @@ expiresOn: ""
 pinned: false
 draft: false
 image: "/media/haber-tekirdag-ziyaret.jpg"
+gallery:
+  - "/media/galeri-velikoy-lise-atolye.jpg"
+  - "/media/galeri-velikoy-lise-amfi.jpg"
 link: ""
 linkLabel: ""
 teams: []

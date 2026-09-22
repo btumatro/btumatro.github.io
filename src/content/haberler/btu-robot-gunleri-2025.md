@@ -5,7 +5,9 @@ date: 2025-11-25
 expiresOn: ""
 pinned: false
 draft: false
-image: "/media/haber-btu-robot-gunleri.jpg"
+image: "/media/galeri-robot-gunleri-stant.jpg"
+gallery:
+  - "/media/haber-btu-robot-gunleri.jpg"
 link: ""
 linkLabel: ""
 teams: []

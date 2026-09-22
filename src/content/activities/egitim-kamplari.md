@@ -5,6 +5,10 @@ date: 2025-11-13
 endDate: "2026-01-09"
 order: 1
 image: "/media/topluluk-ekip-selfie.jpg"
+gallery:
+  - "/media/galeri-genel-egitim-2025.jpg"
+  - "/media/galeri-egitim-kampi-1.jpg"
+  - "/media/galeri-egitim-kampi-2.jpg"
 stats:
   - label: Ders Saati
     value: "32"

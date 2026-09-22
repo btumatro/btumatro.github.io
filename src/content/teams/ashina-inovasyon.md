@@ -4,7 +4,7 @@ subtitle: Tarım Teknolojileri
 category: Tarım Teknolojileri
 status: Yeni Takım
 order: 9
-image: ""
+image: "/media/takim-ashina-inovasyon.jpg"
 badge: ""
 instagram: ""
 focus:
