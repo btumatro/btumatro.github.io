@@ -23,6 +23,7 @@
   "description": "Bursa Teknik Üniversitesi MATRO topluluğu web sitesi",
   "devDependencies": {
     "pdf-lib": "^1.17.1",
-    "puppeteer-core": "^25.10.0"
+    "puppeteer-core": "^25.10.0",
+    "qrcode": "^1.5.4"
   }
 }
