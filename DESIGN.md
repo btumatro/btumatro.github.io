@@ -157,3 +157,19 @@ farklı düzenler tercih edilir; hero görseline karartma bindirilmez.
 
 Doğrulama: 25 sayfalık Astro üretim derlemesi; 12 sayfanın 320, 768 ve 1440px genişlikte
 taşma/tek h1 kontrolleri; menü, takım filtreleri, galeri değişimi ve ana sayfa görsel yüklemeleri.
+
+## Basılı yayınlar
+
+Site dışındaki A4 yayınların kendi tasarım belgeleri var. Hepsi sitenin veri dosyalarını
+okur, HTML/CSS'ten Chrome ile PDF üretir; site ile aynı üç fontu ve aynı renk anlamlarını
+kullanır, ancak açık zeminde basıldığı için koyu camgöbeği (`#0f8c86`) ana vurgudur.
+
+| Yayın | Belge | Betik |
+|---|---|---|
+| Faaliyet Raporu 2025–2026 | `docs/faaliyet-kitapcigi-2025-26/DESIGN.md` | `scripts/build-faaliyet-kitapcigi.mjs` |
+| Sponsorluk Dergisi 2026–2027 | `docs/sponsorluk-dergisi-2026-27/DESIGN.md` | `scripts/build-sponsorluk-dergisi.mjs` |
+| MATRO Dergi, Sayı 01 | `docs/dergi-sayi-01/DESIGN.md` | `scripts/build-dergi-sayi-01.mjs` |
+
+Basılı yayınlarda ortak kural: `@font-face` tanımlarında her aile için `latin` ve
+`latin-ext` dosyaları ayrı `unicode-range` ile yüklenir; aksi hâlde Türkçe karakterler
+başlıklarda yedek fonta düşer.
