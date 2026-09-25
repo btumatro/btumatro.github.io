@@ -33,6 +33,11 @@ altTakimlar:
     aciklama: "ASELSAN İnsansız Sualtı Aracı Yarışması ekibimiz."
     basarilar:
       - "TEKNOFEST 2026 ASELSAN İnsansız Sualtı Aracı — Türkiye Finalisti"
+  - ad: "LUNA İSS"
+    yillar: "2025"
+    aciklama: "2025 sezonunda ASELSAN İnsansız Sualtı Sistemleri yarışmasında finale kalan ekip."
+    basarilar:
+      - "TEKNOFEST 2025 ASELSAN İnsansız Sualtı Sistemleri — Türkiye Finalisti (LUNA İSS)"
   - ad: "BTU AUV"
   - ad: "BTU DALAY"
 focus:

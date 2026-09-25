@@ -76,10 +76,12 @@
     const buSrc = img.currentSrc || img.src;
     if (grup?.dataset.lightboxListe) {
       try {
-        const srcler = JSON.parse(grup.dataset.lightboxListe) as string[];
-        const tam = srcler.map((s) => new URL(s, location.href).href);
-        const l = tam.map((s) => ({ src: s, aciklama: img.alt }));
-        return { liste: l, baslangic: Math.max(0, tam.indexOf(new URL(img.getAttribute('src') ?? buSrc, location.href).href)) };
+        // Liste ya yol dizisi ya da {src, aciklama} nesneleri olabilir.
+        const ham = JSON.parse(grup.dataset.lightboxListe) as (string | { src: string; aciklama?: string })[];
+        const l = ham.map((x) => (typeof x === 'string' ? { src: x, aciklama: img.alt } : { src: x.src, aciklama: x.aciklama ?? img.alt }))
+          .map((o) => ({ src: new URL(o.src, location.href).href, aciklama: o.aciklama }));
+        const bu = new URL(img.getAttribute('src') ?? buSrc, location.href).href;
+        return { liste: l, baslangic: Math.max(0, l.findIndex((o) => o.src === bu)) };
       } catch { /* liste bozuksa aşağıdaki yola düş */ }
     }
     const kapsam = grup ?? document;

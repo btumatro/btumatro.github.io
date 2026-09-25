@@ -1,4 +1,5 @@
 ---
+import { gorselAciklama } from '../lib/gorseller';
 import { url, media } from '../lib/utils';
 interface Props {
   slug: string;
@@ -17,7 +18,7 @@ const cover = media(image);
 ---
 <a href={url(`/takimlarimiz/${slug}`)} class="team-card reveal group" data-delay={delay} data-category={category}>
   <div class="team-photo">
-    {cover ? <img src={cover} alt={`${title} takımı`} loading="lazy" decoding="async" /> : <div class="team-placeholder" aria-hidden="true"><span>{title}</span><svg viewBox="0 0 120 120" fill="none"><circle cx="60" cy="60" r="42"/><path d="M60 0v120M0 60h120M18 18l84 84M18 102l84-84"/><circle cx="60" cy="60" r="24"/></svg></div>}
+    {cover ? <img src={cover} alt={gorselAciklama(image, `${title} takımı`)} loading="lazy" decoding="async" /> : <div class="team-placeholder" aria-hidden="true"><span>{title}</span><svg viewBox="0 0 120 120" fill="none"><circle cx="60" cy="60" r="42"/><path d="M60 0v120M0 60h120M18 18l84 84M18 102l84-84"/><circle cx="60" cy="60" r="24"/></svg></div>}
     {badge && <span class="team-badge">{badge}</span>}
   </div>
   <div class="team-meta"><span>{category}</span>{status === 'Yeni Takım' && <span>Yeni takım</span>}</div>

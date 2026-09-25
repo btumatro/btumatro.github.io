@@ -8,6 +8,7 @@
  * ilerler, fareyle üzerine gelince ya da odaklanınca durur, "hareketi azalt" tercihinde
  * hiç başlamaz. Tek slayt varsa düğmeler gösterilmez.
  */
+import { gorselAciklama } from '../lib/gorseller';
 import { media, url } from '../lib/utils';
 
 interface Slayt { image: string; caption?: string; alt?: string }
@@ -23,7 +24,7 @@ const coklu = slides.length > 1;
         {slides.map((s, i) => (
           <img
             src={media(s.image)!}
-            alt={s.alt || s.caption || 'MATRO'}
+            alt={s.alt || s.caption || gorselAciklama(s.image, 'MATRO')}
             class:list={['hero-slide', i === 0 && 'is-active']}
             data-caption={s.caption ?? ''}
             aria-hidden={i === 0 ? undefined : 'true'}

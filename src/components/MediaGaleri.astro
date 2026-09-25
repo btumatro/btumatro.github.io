@@ -11,6 +11,7 @@
  * çözülür; ikisi de ham CMS yolu (ör. "/media/foo.jpg") olarak verilir.
  */
 import { media } from '../lib/utils';
+import { gorselAciklama } from '../lib/gorseller';
 
 interface Props {
   cover?: string | null;
@@ -53,13 +54,15 @@ for (const raw of [cover, ...gallery]) {
   }
 }
 const ana = tum[0] ?? null;
+// Her görselin alt metni galerideki açıklamasından gelir; yoksa içeriğin başlığı kullanılır.
+const liste = tum.map((src, i) => ({ src, aciklama: gorselAciklama(src, tum.length > 1 ? `${alt} (${i + 1}/${tum.length})` : alt) }));
 const digerleri = tum.slice(1);
 ---
 
 {
   ana ? (
-    <div class:list={['medya-galeri', stretch && 'flex h-full flex-col', className]} data-lightbox-grup data-lightbox-liste={JSON.stringify(tum)}>
-      <img src={ana} alt={alt} loading="lazy" decoding="async" class={imgClass} data-ana-gorsel data-lightbox />
+    <div class:list={['medya-galeri', stretch && 'flex h-full flex-col', className]} data-lightbox-grup data-lightbox-liste={JSON.stringify(liste)}>
+      <img src={ana} alt={liste[0].aciklama} loading="lazy" decoding="async" class={imgClass} data-ana-gorsel data-lightbox />
       {digerleri.length > 0 && (
         <div class="mt-2 flex gap-1.5 overflow-x-auto pb-0.5" role="group" aria-label="Diğer görseller">
           {tum.map((src, i) => (
@@ -71,6 +74,7 @@ const digerleri = tum.slice(1);
               ]}
               data-kucuk-resim
               data-src={src}
+              data-aciklama={liste[i].aciklama}
               aria-label={`${i + 1}. görseli göster`}
               aria-pressed={i === 0}
             >
@@ -105,6 +109,7 @@ const digerleri = tum.slice(1);
     if (!ana || !src || ana.src === new URL(src, location.href).href) return;
 
     ana.src = src;
+    if (btn.dataset.aciklama) ana.alt = btn.dataset.aciklama;
     wrap?.querySelectorAll<HTMLButtonElement>('[data-kucuk-resim]').forEach((b) => {
       const active = b === btn;
       b.setAttribute('aria-pressed', String(active));
