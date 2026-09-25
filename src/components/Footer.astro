@@ -93,7 +93,28 @@ const year = new Date().getFullYear();
         />
       </a>
 
-      <p class="font-mono text-xs tracking-wide text-mist-500">Milli Teknoloji Hamlesi</p>
+      {
+        site.kurumlar?.length > 0 && (
+          <div class="flex items-center gap-4">
+            <span class="font-mono text-[0.6rem] tracking-[0.18em] text-mist-500 uppercase">
+              Üye olduğumuz<br />{site.kurumlar.length > 1 ? 'kurumlar' : 'kurum'}
+            </span>
+            <span class="h-9 w-px bg-white/12" aria-hidden="true"></span>
+            <ul class="space-y-1.5">
+              {site.kurumlar.map((k) => (
+                <li>
+                  {k.url ? (
+                    <a href={k.url} target="_blank" rel="noopener noreferrer" class="text-sm font-semibold text-mist-100 transition-colors hover:text-volt-300">{k.ad}</a>
+                  ) : (
+                    <span class="text-sm font-semibold text-mist-100">{k.ad}</span>
+                  )}
+                  {k.aciklama && <span class="block text-xs text-mist-500">{k.aciklama}</span>}
+                </li>
+              ))}
+            </ul>
+          </div>
+        )
+      }
     </div>
 
     <div class="mt-6 border-t border-white/10 pt-6 text-xs text-mist-500">

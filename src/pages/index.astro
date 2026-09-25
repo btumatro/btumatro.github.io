@@ -10,12 +10,15 @@ import BasvuruButonlari from '../components/BasvuruButonlari.astro';
 import home from '../data/home.json';
 import achievements from '../data/achievements.json';
 import sponsors from '../data/sponsors.json';
-import { url, media, achievementSummary, degreeTone, publishedNews, teamIndex, teamHref } from '../lib/utils';
+import { url, media, achievementSummary, degreeRank, degreeTone, publishedNews, teamIndex, teamHref } from '../lib/utils';
 
 const allTeams = (await getCollection('teams')).sort((a, b) => a.data.order - b.data.order);
 const teams = allTeams.filter(t => t.data.status !== 'Arşiv').slice(0, 6);
 const takimDizini = teamIndex(allTeams);
-const featured = achievements.items.filter(a => a.featured).slice(0, 6);
+const featured = achievements.items
+  .filter(a => a.featured)
+  .sort((a, b) => b.year - a.year || degreeRank(a.degree) - degreeRank(b.degree))
+  .slice(0, 6);
 const achievementStats = achievementSummary(achievements.items);
 const homeStats = home.stats.map((stat, index) => {
   if (index === 0) return { ...stat, value: achievementStats.records, label: 'Kayıtlı Derece' };
@@ -62,11 +65,11 @@ const bronzSponsors = sponsors.current.filter((s) => s.package === 'Bronz');
     <div>{announcements.map(item => <a href={url(`/haberler#${item.id}`)}><span>{item.data.title}</span><span aria-hidden="true">↗</span></a>)}</div>
   </aside>}
 
-  <Section eyebrow="Rakamlarla MATRO" title="Birlikte, yıllar içinde." class="home-stats">
+  <Section eyebrow="Sayılarla MATRO" title="Birlikte, yıllar içinde." class="home-stats">
     <div class="mt-9"><StatGrid stats={homeStats} /></div>
   </Section>
 
-  <Section eyebrow="Proje takımları" title="Bir merak. Bir takım. Bir proje." description="Havada, karada ve suyun altında. Her takımda başka bir mühendislik problemi, aynı üretme tutkusu." class="home-teams" id="takimlar">
+  <Section eyebrow="Proje takımları" title="Bir merak. Bir takım. Bir proje." description="Havada, karada ve denizde. Her takımda başka bir mühendislik problemi, aynı üretme tutkusu." class="home-teams" id="takimlar">
     <div class="section-action"><a class="text-link" href={url('/takimlarimiz')}>Tüm takımlar <span aria-hidden="true">↗</span></a></div>
     <div class="teams-grid">{teams.map((team, i) => <TeamCard slug={team.id} {...team.data} delay={(i % 3) * 50} />)}</div>
   </Section>

@@ -28,7 +28,7 @@ sponsorluk sunumunda doğrulanamadı ve kitapçıktan çıkarıldı (2026-09-11)
 - **Altın (7):** ROV Expert, Şahinbey Belediyesi, MayFly, Mavios, Yunusemre GM, Kayra Yemek, Biyolift
 - **Gümüş (3):** Wago, Pleksi, Akkuş Enerji
 - **Bronz (6):** İbraş Kauçuk, Finemold, Çakır Depolama Lojistik, Pınar Metal, Marka Lazer, TSG Sac İşleme Merkezi
-- **Gönüllü (5):** Dr. Tablet, Mercan Balıkçılık, Pocketbook, Off-ee, Komagene (logosu yok)
+- **Gönüllü (4):** Dr. Tablet, Mercan Balıkçılık, Pocketbook, Off-ee
 
 Kaynak: `MATRO_sponsorluk-sunumu-sablon.pdf` (2025-2027 dönemi) + `src/data/sponsors.json`.
 Wago, Pleksi ve Yunusemre GM logoları PDF'te vektör/metin olarak durduğu için

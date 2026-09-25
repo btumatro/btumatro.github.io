@@ -2,7 +2,7 @@
   "hero": {
     "eyebrow": "Bursa Teknik Üniversitesi · 2013'ten beri",
     "title": "Atölyede başlar.\nSahada kanıtlanır.",
-    "description": "Biz MATRO. Bursa Teknik Üniversitesi’nde hava, kara ve sualtı sistemleri geliştiren öğrenci topluluğuyuz. Birlikte tasarlıyor, üretiyor ve yarışıyoruz.",
+    "description": "Biz MATRO. Bursa Teknik Üniversitesi’nde havada, karada ve denizde çalışan robotik sistemler geliştiren öğrenci topluluğuyuz. Birlikte tasarlıyor, üretiyor ve yarışıyoruz.",
     "primaryCta": {
       "label": "Takımlarımızı keşfet",
       "href": "/takimlarimiz"
@@ -22,7 +22,7 @@
   "stats": [
     {
       "value": 50,
-      "suffix": "",
+      "suffix": "+",
       "label": "Kayıtlı Derece",
       "note": "2013–2026"
     },
@@ -34,13 +34,13 @@
     },
     {
       "value": 342,
-      "suffix": "",
+      "suffix": "+",
       "label": "Finalist Yarışmacı",
       "note": "2020–2025"
     },
     {
       "value": 35,
-      "suffix": "",
+      "suffix": "+",
       "label": "İlk 10'a Giren Takım",
       "note": "2020–2025"
     },

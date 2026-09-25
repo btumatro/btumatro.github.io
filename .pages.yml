@@ -70,7 +70,7 @@ content:
               - { name: href, label: Bağlantı, type: string }
 
       - name: stats
-        label: Rakamlarla MATRO (sayaçlar)
+        label: Sayılarla MATRO (sayaçlar)
         type: object
         list:
           collapsible: true
@@ -754,6 +754,15 @@ content:
             label: Akademik sayfa bağlantısı
             type: string
             description: "Örn: https://sayfam.btu.edu.tr/..." 
+      - name: kurumlar
+        label: Üye olduğumuz kurumlar (footer)
+        type: object
+        list:
+          collapsible: true
+        fields:
+          - { name: ad, label: Kurum adı, type: string, required: true }
+          - { name: aciklama, label: Kısa açıklama, type: string }
+          - { name: url, label: Bağlantı, type: string }
       - name: social
         label: Sosyal Medya
         type: object

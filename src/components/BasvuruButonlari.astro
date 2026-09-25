@@ -26,23 +26,49 @@ const period = join.applicationPeriod?.trim();
   applications.length > 0 &&
     (variant === 'kart' ? (
       <div class:list={['grid gap-4 md:grid-cols-3', className]}>
-        {applications.map((a, i) => (
-          <article id={a.anchor} class="card reveal flex scroll-mt-28 flex-col p-6" data-delay={i * 60}>
-            <span class="font-mono text-[0.62rem] tracking-[0.2em] text-mist-500 uppercase">
-              {String(i + 1).padStart(2, '0')}
-            </span>
-            <h3 class="mt-2 text-base font-bold text-mist-100">{a.title}</h3>
-            <p class="mt-2 flex-1 text-sm leading-relaxed text-mist-500">{a.description}</p>
-            <a
-              href={a.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              class="mt-5 inline-block rounded-xl border border-white/15 px-4 py-2.5 text-center text-sm font-semibold text-mist-100 transition-colors hover:border-volt-400/50 hover:text-volt-300"
+        {applications.map((a, i) => {
+          // İlk kart (topluluk kaydı) herkes için zorunlu adım; diğer iki başvurudan
+          // ayrışsın diye koyu mavi zeminle öne çıkarılır ve sonraki adımlara yönlendirir.
+          const ilk = i === 0;
+          const sonraki = applications.slice(1);
+          return (
+            <article
+              id={a.anchor}
+              class:list={['card reveal flex scroll-mt-28 flex-col p-6', ilk && 'border-volt-400/40 bg-volt-400/10']}
+              data-delay={i * 60}
             >
-              {a.buttonLabel}
-            </a>
-          </article>
-        ))}
+              <span class="font-mono text-[0.62rem] tracking-[0.2em] text-mist-500 uppercase">
+                {String(i + 1).padStart(2, '0')} {ilk ? '· Herkes için ilk adım' : '· Kayıttan sonra, isteğe bağlı'}
+              </span>
+              <h3 class="mt-2 text-base font-bold text-mist-100">{a.title}</h3>
+              <p class="mt-2 flex-1 text-sm leading-relaxed text-mist-500">{a.description}</p>
+              <a
+                href={a.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                class:list={[
+                  'mt-5 inline-block rounded-xl px-4 py-2.5 text-center text-sm font-semibold transition-colors',
+                  ilk
+                    ? 'bg-volt-400 text-ink-950 hover:bg-volt-300'
+                    : 'border border-white/15 text-mist-100 hover:border-volt-400/50 hover:text-volt-300',
+                ]}
+              >
+                {a.buttonLabel}
+              </a>
+              {ilk && sonraki.length > 0 && (
+                <p class="mt-4 text-xs leading-relaxed text-mist-500">
+                  Kaydını yaptın mı? Sırada:{' '}
+                  {sonraki.map((s, j) => (
+                    <>
+                      {j > 0 && ' veya '}
+                      <a href={`#${s.anchor}`} class="text-volt-300 underline-offset-2 hover:underline">{s.title}</a>
+                    </>
+                  ))}
+                </p>
+              )}
+            </article>
+          );
+        })}
       </div>
     ) : (
       <div class:list={['reveal', className]}>

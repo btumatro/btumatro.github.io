@@ -2,13 +2,13 @@
   "hero": {
     "eyebrow": "Bize Katılın",
     "title": "MATRO ailesine katıl, ilk projeni bu dönem yap",
-    "description": "Teknolojiye meraklı, sorumluluk sahibi ve takım çalışmasına inanan tüm Bursa Teknik Üniversitesi öğrencilerini aramıza bekliyoruz. Bölüm ayrımı yok — mekanik, elektronik, yazılım, tasarım, organizasyon ve iletişim alanlarında herkese yer var."
+    "description": "Teknolojiye meraklı, sorumluluk sahibi ve takım çalışmasına inanan tüm Bursa Teknik Üniversitesi öğrencilerini aramıza bekliyoruz. Bölüm ve sınıf ayrımı yok; mekanik, elektronik, yazılım, tasarım, organizasyon ve iletişim alanlarında herkese yer var."
   },
   "applications": [
     {
       "anchor": "topluluk-kaydi",
       "title": "Topluluk Kayıt Formu",
-      "description": "İlk adım. Topluluk üyeliğin bu formla başlar; ön koşul yoktur, tüm bölümlerden öğrencilere açıktır.",
+      "description": "İlk adım ve herkes için zorunlu. Ön koşul yok; bölüm ve sınıf ayrımı olmadan tüm BTÜ öğrencilerine açık. Kayıttan sonra istersen takıma veya yönetime ayrıca başvurursun.",
       "url": "https://docs.google.com/forms/d/e/1FAIpQLSfMgCHKihBA7zilbQnI2QfxbMTmjfrU-v7afIGuPeQx6zSUUw/viewform",
       "buttonLabel": "Kayıt formunu doldur"
     },
@@ -22,7 +22,7 @@
     {
       "anchor": "yonetim-basvurusu",
       "title": "Yönetim Kurulu Başvuru Formu",
-      "description": "Takım ve atölye, sponsorluk, organizasyon veya sosyal medya birimlerinde sorumluluk almak isteyenler için.",
+      "description": "Atölye sorumluluğu, sponsorluk, organizasyon veya sosyal medya birimlerinde görev almak isteyenler için.",
       "url": "https://docs.google.com/forms/d/e/1FAIpQLSffLpElNfRvIGQfX_p_teSanTIgPmtRn225CGaGmIq9laHvXg/viewform",
       "buttonLabel": "Yönetim kuruluna başvur"
     }
@@ -30,7 +30,7 @@
   "steps": [
     {
       "title": "Topluluk Kaydı",
-      "description": "Topluluk kayıt formunu doldurarak üyeliğini başlat. Ön bilgi ya da bölüm şartı yok; öğrenmeye istekli olman yeterli."
+      "description": "Topluluk kayıt formunu doldurarak üyeliğini başlat. Ön bilgi, bölüm ya da sınıf şartı yok; öğrenmeye istekli olman yeterli."
     },
     {
       "title": "Takım Ön Başvurusu",

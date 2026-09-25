@@ -120,11 +120,26 @@ export function packageTone(name: string): { ring: string; text: string; bg: str
 }
 
 /** Dereceyi madalya rengine eşler (1./2./3. ve özel ödüller) */
-export function degreeTone(degree: string): string {
+/**
+ * Derecenin sıralama değeri: küçük olan daha iyi. "Türkiye 3.sü" → 3; yalnızca özel ödül
+ * (ör. "En İyi Performans Ödülü") → 90; finalist → 100. Sayı, başında rakam olmayan ilk
+ * "N." kalıbından okunur; "31.lik" 31 sayılır, 1 değil.
+ */
+export function degreeRank(degree: string): number {
   const d = degree.toLocaleLowerCase('tr');
-  if (d.includes('1.')) return 'text-medal-400';
-  if (d.includes('2.') || d.includes('3.')) return 'text-mist-100';
-  if (d.includes('ödül')) return 'text-volt-300';
+  const m = d.match(/(?:^|[^0-9])(\d+)\./);
+  if (m) return Number(m[1]);
+  if (d.includes('ödül')) return 90;
+  return 100;
+}
+
+/** Derece rengi: birincilik altın, ikincilik gümüş, üçüncülük bronz, özel ödül mavi. */
+export function degreeTone(degree: string): string {
+  const rank = degreeRank(degree);
+  if (rank === 1) return 'text-medal-400';
+  if (rank === 2) return 'text-mist-100';
+  if (rank === 3) return 'text-bronze-400';
+  if (rank === 90 || degree.toLocaleLowerCase('tr').includes('ödül')) return 'text-volt-300';
   return 'text-mist-300';
 }
 

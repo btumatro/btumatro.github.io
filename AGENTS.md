@@ -127,8 +127,8 @@ ve her gün 06:00 TR'de (süresi geçen duyurular düşsün diye) otomatik build
    bağlantıları, kaldırılmış sponsorluk PDF'i) — bunlar güncel `main`'de yok ama eski commit'lerde
    duruyor. Kullanıcı "güncel içerikte olmaması yeterli" dedi, geçmişi temizlemeyi istemedi;
    bir daha sorulmadıkça `git filter-repo` ile depo geçmişini yeniden yazma.
-6. Küçük açık sorular (kullanıcıya sorulmuş, henüz yanıt yok): **Komagene** sponsor olarak
-   eklensin mi (tanışma etkinliğinin "lezzet sponsoru"ymuş); bazı ZEMHERİ haber tarihleri tahmin
+6. Küçük açık sorular: **Komagene** sponsor değil (yalnızca bir etkinlikte ikram yaptı),
+   Eylül 2026'da sponsor listesinden çıkarıldı, geri eklenmemeli. Bazı ZEMHERİ haber tarihleri tahmin
    (28 Ağustos), başvuru `expiresOn` tarihi tahmin (31 Ekim) — kesinleşince düzeltilmeli.
 
 ## Devir sırasında dikkat

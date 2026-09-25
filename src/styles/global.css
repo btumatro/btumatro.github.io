@@ -23,6 +23,8 @@
 
   --color-medal-400: #ffc247;
   --color-medal-500: #f5a300;
+  /* Derece skalası: altın medal-400, gümüş mist-100, bronz bronze-400 */
+  --color-bronze-400: #d9955b;
 
   /* ---- Tipografi ----
      Barlow, Bursa Teknik Üniversitesi'nin kurumsal yazı tipidir; başlıklarda

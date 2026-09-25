@@ -14,6 +14,19 @@ const sponsorNews = publishedNews(await getCollection('haberler')).filter(
   (entry) => entry.data.type === 'Sponsorluk',
 );
 const dateFmt = new Intl.DateTimeFormat('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' });
+
+/**
+ * Mevcut sponsorlar kademe hiyerarşisiyle gösterilir: üst kademe daha az sütunlu ve
+ * daha büyük kartlarla, alt kademeler giderek küçülür (25 Eylül 2026 toplantı kararı).
+ */
+const kademeler = [
+  { ad: 'Ana Sponsor', baslik: 'Ana Sponsor', grid: 'gap-4 sm:grid-cols-2', kart: 'p-8', logo: 'h-28 w-28', yazi: 'text-xl', tur: true },
+  { ad: 'Platin', baslik: 'Platin Sponsorlar', grid: 'gap-4 sm:grid-cols-3', kart: 'p-7', logo: 'h-24 w-24', yazi: 'text-lg', tur: true },
+  { ad: 'Altın', baslik: 'Altın Sponsorlar', grid: 'gap-3 grid-cols-2 md:grid-cols-4', kart: 'p-5', logo: 'h-16 w-16', yazi: 'text-sm', tur: true },
+  { ad: 'Gümüş', baslik: 'Gümüş Sponsorlar', grid: 'gap-3 grid-cols-3 md:grid-cols-5', kart: 'p-4', logo: 'h-12 w-12', yazi: 'text-xs', tur: false },
+  { ad: 'Bronz', baslik: 'Bronz Sponsorlar', grid: 'gap-3 grid-cols-3 md:grid-cols-6', kart: 'p-3', logo: 'h-10 w-10', yazi: 'text-xs', tur: false },
+  { ad: 'Gönüllü', baslik: 'Gönüllü Destekçiler', grid: 'gap-3 grid-cols-3 md:grid-cols-6', kart: 'p-3', logo: 'h-10 w-10', yazi: 'text-xs', tur: false },
+];
 ---
 
 <BaseLayout
@@ -25,12 +38,18 @@ const dateFmt = new Intl.DateTimeFormat('tr-TR', { day: 'numeric', month: 'long'
     title={sponsorship.hero.title}
     description={sponsorship.hero.description}
   >
-    <div class="reveal mt-8" data-delay="180">
+    <div class="reveal mt-8 flex flex-wrap items-center gap-3" data-delay="180">
       <a
         href={mailto}
         class="button-primary"
       >
         Sponsorluk dosyasını isteyin
+      </a>
+      <a
+        href={url('/iletisim')}
+        class="rounded-xl border border-white/15 px-6 py-3 text-sm font-semibold text-mist-100 transition-colors hover:border-volt-400/50 hover:text-volt-300"
+      >
+        İletişim bilgileri
       </a>
     </div>
   </PageHero>
@@ -149,32 +168,6 @@ const dateFmt = new Intl.DateTimeFormat('tr-TR', { day: 'numeric', month: 'long'
     </div>
   </Section>
 
-  <!-- Sponsor duyuru görselleri -->
-  {
-    sponsors.graphics?.images?.length > 0 && (
-      <Section eyebrow="Duyurular" title={sponsors.graphics.title} class="pt-0">
-        <div class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {sponsors.graphics.images.map((g, i) => (
-            <figure class="card reveal overflow-hidden" data-delay={(i % 3) * 55}>
-              <img
-                src={media(g.image)!}
-                alt={g.caption}
-                loading="lazy"
-                decoding="async"
-                class="w-full"
-              />
-              {g.caption && (
-                <figcaption class="border-t border-white/8 px-4 py-3 font-mono text-[0.62rem] tracking-[0.15em] text-mist-500 uppercase">
-                  {g.caption}
-                </figcaption>
-              )}
-            </figure>
-          ))}
-        </div>
-      </Section>
-    )
-  }
-
   <!-- Sponsorluk haberleri -->
   {
     sponsorNews.length > 0 && (
@@ -224,67 +217,47 @@ const dateFmt = new Intl.DateTimeFormat('tr-TR', { day: 'numeric', month: 'long'
 
   <!-- Mevcut sponsorlar -->
   <Section eyebrow="İş Ortaklarımız" title="Mevcut sponsorlarımız" description={sponsors.intro} class="pt-0">
-    <div class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-      {
-        sponsors.current.map((s, i) => {
-          const tone = packageTone(s.package);
-          const logo = media(s.logo);
-          return (
-            <article class="card reveal flex flex-col p-6" data-delay={(i % 3) * 55}>
-              {logo ? (
-                <img
-                  src={logo}
-                  alt={`${s.name} logosu`}
-                  loading="lazy"
-                  decoding="async"
-                  width="80"
-                  height="80"
-                  class="h-20 w-20 shrink-0 rounded-full object-contain ring-1 ring-white/10"
-                />
-              ) : (
-                <div class="flex h-20 w-20 items-center justify-center rounded-full bg-white/5 ring-1 ring-white/10">
-                  <span class="font-mono text-xl font-bold text-white/25">
-                    {s.name.trim().charAt(0)}
-                  </span>
-                </div>
-              )}
-
-              <p class="mt-4 text-base font-bold tracking-tight text-mist-100">{s.name}</p>
-
-              <div class="mt-3 flex flex-wrap items-center gap-2">
-                <span class={`rounded-md border px-2.5 py-1 font-mono text-[0.62rem] tracking-[0.12em] uppercase ${tone.ring} ${tone.bg} ${tone.text}`}>
-                  {s.package}
-                </span>
-                <span class="text-xs text-mist-500">{s.type}</span>
-              </div>
-
-              <div class="mt-4 flex flex-wrap items-center gap-x-4 gap-y-1">
-                {s.website && (
-                  <a
-                    href={s.website}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="text-xs font-semibold text-volt-400 hover:text-volt-300"
+    {
+      kademeler.map((k) => {
+        const liste = sponsors.current.filter((s) => s.package === k.ad);
+        if (liste.length === 0) return null;
+        const tone = packageTone(k.ad);
+        return (
+          <div class="reveal mt-10">
+            <h3 class={`font-mono text-[0.65rem] tracking-[0.2em] uppercase ${tone.text}`}>{k.baslik}</h3>
+            <div class:list={['mt-4 grid', k.grid]}>
+              {liste.map((s) => {
+                const logo = media(s.logo);
+                const baglanti = s.website || instagramUrl(s.instagram);
+                const Etiket = baglanti ? 'a' : 'div';
+                return (
+                  <Etiket
+                    {...(baglanti ? { href: baglanti, target: '_blank', rel: 'noopener noreferrer' } : {})}
+                    class:list={['card flex flex-col items-center text-center transition-colors', k.kart, baglanti && 'hover:border-volt-400/40']}
                   >
-                    Web sitesi →
-                  </a>
-                )}
-                {instagramUrl(s.instagram) && (
-                  <a
-                    href={instagramUrl(s.instagram)}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="text-xs font-semibold text-volt-400 hover:text-volt-300"
-                  >
-                    Instagram →
-                  </a>
-                )}
-              </div>
-            </article>
-          );
-        })
-      }
-    </div>
+                    {logo ? (
+                      <img
+                        src={logo}
+                        alt={`${s.name} logosu`}
+                        loading="lazy"
+                        decoding="async"
+                        class:list={['shrink-0 rounded-full object-contain ring-1 ring-white/10', k.logo]}
+                      />
+                    ) : (
+                      <div class:list={['flex shrink-0 items-center justify-center rounded-full bg-white/5 ring-1 ring-white/10', k.logo]}>
+                        <span class="font-mono font-bold text-white/25">{s.name.trim().charAt(0)}</span>
+                      </div>
+                    )}
+                    <p class:list={['mt-3 font-bold tracking-tight text-mist-100', k.yazi]}>{s.name}</p>
+                    {k.tur && <p class="mt-1 text-xs text-mist-500">{s.type}</p>}
+                  </Etiket>
+                );
+              })}
+            </div>
+          </div>
+        );
+      })
+    }
 
     {
       sponsors.past.length > 0 && (

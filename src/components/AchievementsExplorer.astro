@@ -1,5 +1,5 @@
 ---
-import { degreeTone, teamHref } from '../lib/utils';
+import { degreeRank, degreeTone, teamHref } from '../lib/utils';
 
 interface Achievement {
   year: number;
@@ -17,8 +17,14 @@ interface Props {
 const { items, teams = new Map<string, string>() } = Astro.props;
 const bag = (ad?: string) => teamHref(teams, ad);
 
+// Varsayılan sıra: önce yıl (yeniden eskiye), yıl içinde derece (birincilik önce,
+// özel ödüller sonra, finalistler en sonda). "Dereceye göre" düğmesi istemci tarafında
+// önce dereceyi, sonra yılı esas alarak yeniden sıralar.
 const sorted = [...items].sort(
-  (a, b) => b.year - a.year || a.competition.localeCompare(b.competition, 'tr')
+  (a, b) =>
+    b.year - a.year ||
+    degreeRank(a.degree) - degreeRank(b.degree) ||
+    a.competition.localeCompare(b.competition, 'tr')
 );
 const years = [...new Set(sorted.map((i) => i.year))].sort((a, b) => b - a);
 ---
@@ -70,9 +76,16 @@ const years = [...new Set(sorted.map((i) => i.year))].sort((a, b) => b - a);
     </div>
   </div>
 
-  <p id="ach-count" class="mt-4 font-mono text-xs text-mist-500" aria-live="polite">
-    {sorted.length} kayıt gösteriliyor
-  </p>
+  <div class="mt-4 flex flex-wrap items-center justify-between gap-3">
+    <p id="ach-count" class="font-mono text-xs text-mist-500" aria-live="polite">
+      {sorted.length} kayıt gösteriliyor
+    </p>
+    <div class="flex items-center gap-2" role="group" aria-label="Sıralama">
+      <span class="font-mono text-[0.62rem] tracking-[0.15em] text-mist-500 uppercase">Sırala</span>
+      <button type="button" data-sort="yil" aria-pressed="true" class="sort-btn rounded-lg border border-volt-400/50 bg-volt-400/10 px-3 py-1.5 font-mono text-xs text-volt-300 transition-colors">Yıla göre</button>
+      <button type="button" data-sort="derece" aria-pressed="false" class="sort-btn rounded-lg border border-white/12 px-3 py-1.5 font-mono text-xs text-mist-300 transition-colors hover:border-white/25 hover:text-mist-100">Dereceye göre</button>
+    </div>
+  </div>
 
   <!-- Masaüstü tablo -->
   <div class="mt-4 hidden overflow-x-auto rounded-2xl border border-white/10 md:block">
@@ -85,10 +98,12 @@ const years = [...new Set(sorted.map((i) => i.year))].sort((a, b) => b - a);
           <th scope="col" class="px-5 py-3.5 font-mono text-[0.65rem] tracking-[0.15em] text-mist-500 uppercase">Derece / Ödül</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody class="ach-list">
         {
-          sorted.map((a) => (
+          sorted.map((a, i) => (
             <tr
+              data-order={i}
+              data-rank={degreeRank(a.degree)}
               class="ach-row border-b border-white/6 transition-colors last:border-0 hover:bg-white/3"
               data-year={a.year}
               data-search={`${a.year} ${a.competition} ${a.category} ${a.degree} ${a.team ?? ''}`.toLocaleLowerCase('tr')}
@@ -118,10 +133,12 @@ const years = [...new Set(sorted.map((i) => i.year))].sort((a, b) => b - a);
   </div>
 
   <!-- Mobil kart listesi -->
-  <div class="mt-4 space-y-3 md:hidden">
+  <div class="ach-list mt-4 space-y-3 md:hidden">
     {
-      sorted.map((a) => (
+      sorted.map((a, i) => (
         <article
+          data-order={i}
+          data-rank={degreeRank(a.degree)}
           class="ach-row card p-4"
           data-year={a.year}
           data-search={`${a.year} ${a.competition} ${a.category} ${a.degree} ${a.team ?? ''}`.toLocaleLowerCase('tr')}
@@ -195,6 +212,27 @@ const years = [...new Set(sorted.map((i) => i.year))].sort((a, b) => b - a);
       apply();
     });
   });
+
+  const sortButtons = Array.from(document.querySelectorAll<HTMLButtonElement>('.sort-btn'));
+  function sortBy(mode: string) {
+    document.querySelectorAll<HTMLElement>('.ach-list').forEach((list) => {
+      const items = Array.from(list.querySelectorAll<HTMLElement>(':scope > .ach-row'));
+      const n = (el: HTMLElement, key: string) => Number(el.dataset[key] ?? 0);
+      items.sort((a, b) =>
+        mode === 'derece'
+          ? n(a, 'rank') - n(b, 'rank') || n(b, 'year') - n(a, 'year') || n(a, 'order') - n(b, 'order')
+          : n(a, 'order') - n(b, 'order'),
+      );
+      items.forEach((el) => list.appendChild(el));
+    });
+    sortButtons.forEach((b) => {
+      const on = b.dataset.sort === mode;
+      b.setAttribute('aria-pressed', String(on));
+      b.classList.remove(...ACTIVE, ...IDLE);
+      b.classList.add(...(on ? ACTIVE : IDLE));
+    });
+  }
+  sortButtons.forEach((btn) => btn.addEventListener('click', () => sortBy(btn.dataset.sort ?? 'yil')));
 
   search?.addEventListener('input', apply);
   apply();
