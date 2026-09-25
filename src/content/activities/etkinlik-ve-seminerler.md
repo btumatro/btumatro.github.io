@@ -6,7 +6,6 @@ order: 4
 image: "/media/galeri-matro-birincilik-30000.jpg"
 gallery:
   - "/media/galeri-odul-vitrini-kampus.jpg"
-  - "/media/galeri-kupa-rafi.jpg"
   - "/media/galeri-kampus-fuar-standi.jpg"
   - "/media/galeri-matro-kupa-vitrini.jpg"
   - "/media/galeri-iss-auv-sergi.jpg"
