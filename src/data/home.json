@@ -15,9 +15,38 @@
       "label": "Çalışmalarımıza destek ol",
       "href": "/sponsorluk"
     },
-    "backgroundImage": "/media/mavi-vatan-ekipler.jpg",
-    "imageCaption": "Mavi Vatan’da MATRO takımları",
-    "imageAlt": "Mavi Vatan etkinliğinde gemi güvertesinde bir araya gelen MATRO takımları"
+    "slides": [
+      {
+        "image": "/media/mavi-vatan-ekipler.jpg",
+        "caption": "Mavi Vatan'da MATRO takımları",
+        "alt": "Mavi Vatan etkinliğinde gemi güvertesinde bir araya gelen MATRO takımları"
+      },
+      {
+        "image": "/media/galeri-turkish-technic-hangar.jpg",
+        "caption": "Turkish Technic uçak bakım hangarında teknik gezimiz",
+        "alt": "MATRO üyeleri Turkish Airlines uçağının önünde"
+      },
+      {
+        "image": "/media/etkinlik-alper-gezeravci.jpg",
+        "caption": "İlk astronotumuz Alper Gezeravcı atölyemizde projelerimizi inceledi",
+        "alt": "Alper Gezeravcı atölyede MATRO projelerini inceliyor"
+      },
+      {
+        "image": "/media/galeri-matrover-teknofest-cadir.jpg",
+        "caption": "MATROVER ekibimiz TEKNOFEST 2025'te",
+        "alt": "MATROVER ekibi TEKNOFEST çadırında kara araçlarıyla"
+      },
+      {
+        "image": "/media/galeri-ashina-2026-ekip-2.jpg",
+        "caption": "ASHİNA ekibimiz TEKNOFEST 2026 İnsansız Hava Aracı Yarışması'nda",
+        "alt": "ASHİNA ekibi İHA'sıyla yarışma alanında"
+      },
+      {
+        "image": "/media/galeri-zemheri-liman-ekip.jpg",
+        "caption": "ZEMHERİ ekibimiz su altı roketiyle limanda",
+        "alt": "ZEMHERİ ekibi su altı roketiyle liman iskelesinde"
+      }
+    ]
   },
   "stats": [
     "kayitliDerece",

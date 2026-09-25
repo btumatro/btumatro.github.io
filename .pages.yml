@@ -44,12 +44,16 @@ content:
             label: Tanıtım metni
             type: text
             required: true
-          - name: backgroundImage
-            label: Giriş fotoğrafı
-            type: image
-            description: Başlığın altında geniş gösterilen gerçek ekip veya proje fotoğrafı.
-          - { name: imageAlt, label: Görsel açıklaması (erişilebilirlik), type: string }
-          - { name: imageCaption, label: Fotoğraf alt yazısı, type: string }
+          - name: slides
+            label: Ana sayfa slaytları
+            type: object
+            list:
+              collapsible: true
+            description: "Başlığın altında sırayla dönen fotoğraflar. Yatay ve en az 1200 px genişliğinde gerçek fotoğraflar seçin; ilk slayt sayfa açılınca görünür."
+            fields:
+              - { name: image, label: Fotoğraf, type: image, required: true }
+              - { name: caption, label: Alt yazı, type: string }
+              - { name: alt, label: Görsel açıklaması (erişilebilirlik), type: string }
           - name: primaryCta
             label: 1. Buton
             type: object

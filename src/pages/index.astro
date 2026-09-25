@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Section from '../components/Section.astro';
 import StatGrid from '../components/StatGrid.astro';
+import HeroSlider from '../components/HeroSlider.astro';
 import TeamCard from '../components/TeamCard.astro';
 import VideoEmbed from '../components/VideoEmbed.astro';
 import CtaBand from '../components/CtaBand.astro';
@@ -26,7 +27,6 @@ const news = publishedNews(await getCollection('haberler'));
 const announcements = news.filter(item => item.data.pinned).slice(0, 2);
 const latestNews = news.slice(0, 3);
 const dateFmt = new Intl.DateTimeFormat('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' });
-const heroImage = media(home.hero.backgroundImage);
 const platinSponsors = sponsors.current.filter((s) => s.package === 'Platin');
 const altinSponsors = sponsors.current.filter((s) => s.package === 'Altın');
 const gumusSponsors = sponsors.current.filter((s) => s.package === 'Gümüş');
@@ -49,10 +49,7 @@ const bronzSponsors = sponsors.current.filter((s) => s.package === 'Bronz');
         </div>
       </div>
     </div>
-    {heroImage && <figure class="hero-photo">
-      <img src={heroImage} alt={home.hero.imageAlt} fetchpriority="high" decoding="async" width="1600" height="900" />
-      <figcaption><span>{home.hero.imageCaption}</span><a href={url('/galeri')}>Fotoğraf arşivi <span aria-hidden="true">↗</span></a></figcaption>
-    </figure>}
+    <HeroSlider slides={home.hero.slides} />
     <div class="hero-bottom"><p>Makine Teknolojileri Robot ve Otomasyon Topluluğu</p><a href={url(home.hero.tertiaryCta.href)}>{home.hero.tertiaryCta.label} <span aria-hidden="true">↗</span></a></div>
   </section>
 
@@ -190,9 +187,6 @@ const bronzSponsors = sponsors.current.filter((s) => s.package === 'Bronz');
   h1 { white-space:pre-line; font-size:clamp(3.3rem,6.1vw,6rem); font-weight:600; line-height:1.02; letter-spacing:-.047em; text-wrap:initial; }
   .hero-intro>p { font-size:1rem; line-height:1.85; color:var(--color-mist-300); max-width:39ch; }
   .hero-actions { display:flex; flex-wrap:wrap; align-items:center; gap:1.5rem; margin-top:1.6rem; }
-  .hero-photo img { width:100%; height:clamp(300px,32vw,470px); object-fit:cover; object-position:50% 57%; }
-  .hero-photo figcaption { display:flex; gap:1rem; justify-content:space-between; padding:.85rem 0; font-size:.72rem; color:var(--color-mist-300); border-bottom:1px solid var(--edge); }
-  .hero-photo figcaption a { color:var(--color-mist-100); }
   .hero-bottom { padding:1.2rem 0; font-size:.72rem; color:var(--color-mist-500); }
   .hero-bottom a { color:var(--color-mist-300); }
   .notice-strip { display:grid; grid-template-columns:110px 1fr; gap:2rem; margin-top:1rem; }
@@ -231,6 +225,6 @@ const bronzSponsors = sponsors.current.filter((s) => s.package === 'Bronz');
   .sponsor-wall img { object-fit:contain; }
   .sponsor-wall span { font-size:.72rem; color:var(--color-mist-300); text-align:center; }
   @media(max-width:1050px) { .hero-heading { gap:2rem; grid-template-columns:1.4fr 1fr; } .hero-actions { gap:1rem; } .section-action { margin-top:1.5rem; justify-content:flex-start; } .sponsor-wall { grid-template-columns:repeat(4,minmax(0,1fr)); } }
-  @media(max-width:767px) { .home-hero { padding-top:1.7rem; } .hero-topline .eyebrow { max-width:27ch; font-size:.6rem; } .hero-about { font-size:.7rem; } .hero-heading { grid-template-columns:1fr; gap:1.5rem; padding:2rem 0; } h1 { font-size:clamp(2.6rem,8.6vw,4.3rem); } .hero-intro>p { font-size:.9rem; max-width:48ch; } .hero-photo img { height:auto; aspect-ratio:4/3; } .hero-photo figcaption { font-size:.65rem; } .hero-bottom { align-items:flex-start; font-size:.65rem; } .hero-bottom p { max-width:27ch; } .hero-bottom a { max-width:20ch; text-align:right; } .notice-strip { grid-template-columns:1fr; gap:0; } .teams-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:2.5rem 1rem; } .achievement-row { grid-template-columns:40px 1fr; gap:1rem; } .achievement-result { grid-column:2; text-align:left; flex-direction:row; align-items:center; justify-content:space-between; } .achievement-row h3 { font-size:1.1rem; } .achievement-result strong { font-size:1rem; } .news-grid { grid-template-columns:1fr; gap:2rem; } .news-story:not(.news-story-lead) { grid-template-columns:100px 1fr; gap:1rem; } .sponsor-wall { grid-template-columns:repeat(3,minmax(0,1fr)); } .sponsor-wall a { min-height:145px; } }
+  @media(max-width:767px) { .home-hero { padding-top:1.7rem; } .hero-topline .eyebrow { max-width:27ch; font-size:.6rem; } .hero-about { font-size:.7rem; } .hero-heading { grid-template-columns:1fr; gap:1.5rem; padding:2rem 0; } h1 { font-size:clamp(2.6rem,8.6vw,4.3rem); } .hero-intro>p { font-size:.9rem; max-width:48ch; } .hero-bottom { align-items:flex-start; font-size:.65rem; } .hero-bottom p { max-width:27ch; } .hero-bottom a { max-width:20ch; text-align:right; } .notice-strip { grid-template-columns:1fr; gap:0; } .teams-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:2.5rem 1rem; } .achievement-row { grid-template-columns:40px 1fr; gap:1rem; } .achievement-result { grid-column:2; text-align:left; flex-direction:row; align-items:center; justify-content:space-between; } .achievement-row h3 { font-size:1.1rem; } .achievement-result strong { font-size:1rem; } .news-grid { grid-template-columns:1fr; gap:2rem; } .news-story:not(.news-story-lead) { grid-template-columns:100px 1fr; gap:1rem; } .sponsor-wall { grid-template-columns:repeat(3,minmax(0,1fr)); } .sponsor-wall a { min-height:145px; } }
   @media(max-width:480px) { .teams-grid { grid-template-columns:1fr; } .hero-about span { margin-left:.3rem; } .hero-actions { gap:1.25rem; } }
 </style>

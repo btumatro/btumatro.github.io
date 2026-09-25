@@ -1,0 +1,134 @@
+---
+/**
+ * Ana sayfa fotoğraf carousel'i.
+ *
+ * Slaytlar `src/data/home.json` → `hero.slides` listesinden gelir (panelde "Ana sayfa
+ * slaytları"). Görseller üst üste durur, sırayla yumuşak geçişle değişir; alttaki
+ * açıklama ve noktalar etkin slayta göre güncellenir. Otomatik geçiş 6 saniyede bir
+ * ilerler, fareyle üzerine gelince ya da odaklanınca durur, "hareketi azalt" tercihinde
+ * hiç başlamaz. Tek slayt varsa düğmeler gösterilmez.
+ */
+import { media, url } from '../lib/utils';
+
+interface Slayt { image: string; caption?: string; alt?: string }
+interface Props { slides: Slayt[] }
+const slides = Astro.props.slides.filter((s) => media(s.image));
+const coklu = slides.length > 1;
+---
+
+{
+  slides.length > 0 && (
+    <figure class="hero-slider" data-slider aria-roledescription="carousel" aria-label="Topluluktan kareler">
+      <div class="hero-slides">
+        {slides.map((s, i) => (
+          <img
+            src={media(s.image)!}
+            alt={s.alt || s.caption || 'MATRO'}
+            class:list={['hero-slide', i === 0 && 'is-active']}
+            data-caption={s.caption ?? ''}
+            aria-hidden={i === 0 ? undefined : 'true'}
+            loading={i === 0 ? 'eager' : 'lazy'}
+            fetchpriority={i === 0 ? 'high' : undefined}
+            decoding="async"
+            width="1600"
+            height="900"
+          />
+        ))}
+        {coklu && (
+          <div class="hero-controls">
+            <button type="button" class="hero-arrow" data-onceki aria-label="Önceki fotoğraf">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6" /></svg>
+            </button>
+            <button type="button" class="hero-arrow" data-sonraki aria-label="Sonraki fotoğraf">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg>
+            </button>
+          </div>
+        )}
+      </div>
+      <figcaption>
+        <span data-aciklama aria-live="polite">{slides[0].caption}</span>
+        <span class="hero-caption-right">
+          {coklu && (
+            <span class="hero-dots" role="group" aria-label="Fotoğraf seç">
+              {slides.map((_, i) => (
+                <button type="button" data-nokta={i} aria-label={`${i + 1}. fotoğraf`} aria-current={i === 0 ? 'true' : undefined} />
+              ))}
+            </span>
+          )}
+          <a href={url('/galeri')}>Fotoğraf arşivi <span aria-hidden="true">↗</span></a>
+        </span>
+      </figcaption>
+    </figure>
+  )
+}
+
+<style>
+  .hero-slides { position: relative; overflow: hidden; height: clamp(300px, 32vw, 470px); background: var(--color-ink-900); }
+  .hero-slide { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 55%; opacity: 0; transition: opacity 0.9s ease; }
+  .hero-slide.is-active { opacity: 1; }
+  .hero-controls { position: absolute; inset: auto 0.75rem 0.75rem auto; display: flex; gap: 0.4rem; }
+  .hero-arrow { display: grid; place-items: center; width: 2.4rem; height: 2.4rem; border-radius: 999px; background: rgb(8 12 18 / 0.62); border: 1px solid rgb(255 255 255 / 0.18); color: var(--color-mist-100); cursor: pointer; transition: background 0.2s; }
+  .hero-arrow:hover, .hero-arrow:focus-visible { background: rgb(8 12 18 / 0.85); }
+  .hero-arrow svg { width: 1.1rem; height: 1.1rem; fill: none; stroke: currentColor; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+  figcaption { display: flex; gap: 1rem; justify-content: space-between; align-items: center; padding: 0.85rem 0; font-size: 0.72rem; color: var(--color-mist-300); border-bottom: 1px solid var(--edge); }
+  figcaption a { color: var(--color-mist-100); white-space: nowrap; }
+  .hero-caption-right { display: flex; align-items: center; gap: 1.1rem; }
+  .hero-dots { display: flex; gap: 0.35rem; }
+  .hero-dots button { width: 0.5rem; height: 0.5rem; border-radius: 999px; background: rgb(255 255 255 / 0.25); border: 0; padding: 0; cursor: pointer; transition: background 0.2s, width 0.2s; }
+  .hero-dots button[aria-current='true'] { width: 1.3rem; background: var(--color-volt-400); }
+  @media (max-width: 767px) {
+    .hero-slides { height: auto; aspect-ratio: 4 / 3; }
+    figcaption { font-size: 0.65rem; }
+    .hero-dots { display: none; }
+  }
+  @media (prefers-reduced-motion: reduce) { .hero-slide { transition: none; } }
+</style>
+
+<script>
+  document.querySelectorAll<HTMLElement>('[data-slider]').forEach((kok) => {
+    const slaytlar = Array.from(kok.querySelectorAll<HTMLImageElement>('.hero-slide'));
+    if (slaytlar.length < 2) return;
+    const noktalar = Array.from(kok.querySelectorAll<HTMLButtonElement>('[data-nokta]'));
+    const aciklama = kok.querySelector<HTMLElement>('[data-aciklama]');
+    const hareketAzalt = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    let etkin = 0;
+    let zamanlayici: number | undefined;
+
+    function goster(i: number) {
+      etkin = (i + slaytlar.length) % slaytlar.length;
+      slaytlar.forEach((s, k) => {
+        s.classList.toggle('is-active', k === etkin);
+        if (k === etkin) s.removeAttribute('aria-hidden');
+        else s.setAttribute('aria-hidden', 'true');
+      });
+      noktalar.forEach((n, k) => (k === etkin ? n.setAttribute('aria-current', 'true') : n.removeAttribute('aria-current')));
+      if (aciklama) aciklama.textContent = slaytlar[etkin].dataset.caption ?? '';
+      // Sıradaki görseli önceden yükle ki geçişte boş kare görünmesin.
+      const sonraki = slaytlar[(etkin + 1) % slaytlar.length];
+      if (sonraki.loading === 'lazy') sonraki.loading = 'eager';
+    }
+    function durdur() { window.clearInterval(zamanlayici); zamanlayici = undefined; }
+    function baslat() { if (!hareketAzalt && zamanlayici === undefined) zamanlayici = window.setInterval(() => goster(etkin + 1), 6000); }
+    function elle(i: number) { durdur(); goster(i); baslat(); }
+
+    kok.querySelector('[data-onceki]')?.addEventListener('click', () => elle(etkin - 1));
+    kok.querySelector('[data-sonraki]')?.addEventListener('click', () => elle(etkin + 1));
+    noktalar.forEach((n) => n.addEventListener('click', () => elle(Number(n.dataset.nokta))));
+    kok.addEventListener('mouseenter', durdur);
+    kok.addEventListener('mouseleave', baslat);
+    kok.addEventListener('focusin', durdur);
+    kok.addEventListener('focusout', baslat);
+    document.addEventListener('visibilitychange', () => (document.hidden ? durdur() : baslat()));
+
+    // Dokunmatik ekranda kaydırarak geçiş.
+    let baslangicX = 0;
+    kok.addEventListener('touchstart', (e) => { baslangicX = e.touches[0].clientX; }, { passive: true });
+    kok.addEventListener('touchend', (e) => {
+      const fark = e.changedTouches[0].clientX - baslangicX;
+      if (Math.abs(fark) > 40) elle(etkin + (fark < 0 ? 1 : -1));
+    });
+
+    goster(0);
+    baslat();
+  });
+</script>
