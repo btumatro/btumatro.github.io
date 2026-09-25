@@ -803,6 +803,15 @@ content:
             label: Akademik sayfa bağlantısı
             type: string
             description: "Örn: https://sayfam.btu.edu.tr/..." 
+      - name: vizyon
+        label: Footer alt satır logosu
+        type: object
+        description: "Telif satırının sağında görünen logo (Milli Teknoloji Hamlesi)."
+        fields:
+          - { name: ad, label: Ad, type: string }
+          - { name: aciklama, label: Açıklama, type: string }
+          - { name: url, label: Bağlantı, type: string }
+          - { name: logo, label: Logo (koyu zemine uygun), type: image }
       - name: kurumlar
         label: Üye olduğumuz kurumlar (footer)
         type: object

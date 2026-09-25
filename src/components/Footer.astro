@@ -127,8 +127,21 @@ const year = new Date().getFullYear();
       }
     </div>
 
-    <div class="mt-6 border-t border-white/10 pt-6 text-xs text-mist-500">
+    <div class="mt-6 flex flex-col gap-4 border-t border-white/10 pt-6 text-xs text-mist-500 sm:flex-row sm:items-center sm:justify-between">
       <p>© {year} {site.shortName} — {site.fullName}. Tüm hakları saklıdır.</p>
+      {
+        site.vizyon?.logo && (
+          <a
+            href={site.vizyon.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="shrink-0 transition-opacity hover:opacity-80"
+            title={site.vizyon.aciklama ? `${site.vizyon.ad} — ${site.vizyon.aciklama}` : site.vizyon.ad}
+          >
+            <img src={url(site.vizyon.logo)} alt={site.vizyon.ad} class="h-10 w-auto" loading="lazy" decoding="async" />
+          </a>
+        )
+      }
     </div>
   </div>
 </footer>
