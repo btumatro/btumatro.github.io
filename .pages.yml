@@ -812,6 +812,7 @@ content:
           - { name: ad, label: Kurum adı, type: string, required: true }
           - { name: aciklama, label: Kısa açıklama, type: string }
           - { name: url, label: Bağlantı, type: string }
+          - { name: logo, label: Logo (koyu zemine uygun), type: image, description: "Boşsa kurum adı yazıyla gösterilir." }
       - name: social
         label: Sosyal Medya
         type: object

@@ -100,17 +100,27 @@ const year = new Date().getFullYear();
               Üye olduğumuz<br />{site.kurumlar.length > 1 ? 'kurumlar' : 'kurum'}
             </span>
             <span class="h-9 w-px bg-white/12" aria-hidden="true"></span>
-            <ul class="space-y-1.5">
-              {site.kurumlar.map((k) => (
-                <li>
-                  {k.url ? (
-                    <a href={k.url} target="_blank" rel="noopener noreferrer" class="text-sm font-semibold text-mist-100 transition-colors hover:text-volt-300">{k.ad}</a>
-                  ) : (
+            <ul class="flex flex-wrap items-center gap-x-7 gap-y-3">
+              {site.kurumlar.map((k) => {
+                // Logosu olan kurum logoyla, olmayan adıyla gösterilir.
+                const icerik = k.logo ? (
+                  <img src={url(k.logo)} alt={k.ad} title={k.aciklama ? `${k.ad} — ${k.aciklama}` : k.ad} class="h-11 w-auto" loading="lazy" decoding="async" />
+                ) : (
+                  <span>
                     <span class="text-sm font-semibold text-mist-100">{k.ad}</span>
-                  )}
-                  {k.aciklama && <span class="block text-xs text-mist-500">{k.aciklama}</span>}
-                </li>
-              ))}
+                    {k.aciklama && <span class="block text-xs text-mist-500">{k.aciklama}</span>}
+                  </span>
+                );
+                return (
+                  <li>
+                    {k.url ? (
+                      <a href={k.url} target="_blank" rel="noopener noreferrer" class="block transition-opacity hover:opacity-80">{icerik}</a>
+                    ) : (
+                      icerik
+                    )}
+                  </li>
+                );
+              })}
             </ul>
           </div>
         )

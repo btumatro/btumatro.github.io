@@ -61,7 +61,14 @@
     {
       "ad": "Milli Teknoloji Kulüpler Birliği",
       "aciklama": "T.C. Sanayi ve Teknoloji Bakanlığı himayesinde, TÜBİTAK koordinasyonunda",
-      "url": "https://tubitak.gov.tr/tr/destekler/bilim-toplum/ulusal-destek-programlari/milli-teknoloji-kulupler-birligi"
+      "url": "https://tubitak.gov.tr/tr/destekler/bilim-toplum/ulusal-destek-programlari/milli-teknoloji-kulupler-birligi",
+      "logo": ""
+    },
+    {
+      "ad": "Milli Teknoloji Hamlesi",
+      "aciklama": "T.C. Sanayi ve Teknoloji Bakanlığı",
+      "url": "https://mth.tc",
+      "logo": "/media/logolar/milli-teknoloji-hamlesi-koyu-zemin.png"
     }
   ]
 }
