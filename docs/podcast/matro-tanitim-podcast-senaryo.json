@@ -1,0 +1,243 @@
+{
+  "title": "MATRO Tanıtım Podcasti",
+  "sequences": [
+    {
+      "sequenceId": 1,
+      "sequenceTitle": "MATRO nedir, atölyede bir gece",
+      "dialogues": [
+        {
+          "speaker": "Ayse",
+          "text": "Merhaba, hoş geldiniz. Bugün sizi Bursa Teknik Üniversitesi'nde gece yarısı bile ışığı yanan bir atölyeye götürüyoruz."
+        },
+        {
+          "speaker": "Can",
+          "text": "Özdemir Bayraktar Teknofest Atölyesi. Üniversitemizin pek çok yarışma takımının birlikte çalıştığı ortak bir üretim alanı."
+        },
+        {
+          "speaker": "Ayse",
+          "text": "Bugünkü konuğumuz da orada çalışan topluluklardan biri. Makine Teknolojileri Robot ve Otomasyon Topluluğu, kısaca MATRO."
+        },
+        {
+          "speaker": "Can",
+          "text": "MATRO iki bin on üçte kuruldu. Yani on üç yıldır bu kampüste robot, araç ve fikir üretiyor."
+        },
+        {
+          "speaker": "Ayse",
+          "text": "Peki Can, bir öğrenci topluluğu tam olarak ne üretir? Sonuçta burası bir fabrika değil."
+        },
+        {
+          "speaker": "Can",
+          "text": "Aslında şaşıracaksın. İnsansız hava araçları, insansız kara araçları, deniz üstünde kendi başına giden tekneler."
+        },
+        {
+          "speaker": "Ayse",
+          "text": "Su altında da var, değil mi?"
+        },
+        {
+          "speaker": "Can",
+          "text": "Var. Su altı araçları, hatta su altından fırlatılan bir roket. Bunun yanında hava savunma, kablosuz haberleşme, endüstriyel robotik ve enerji teknolojileri."
+        },
+        {
+          "speaker": "Ayse",
+          "text": "Yok artık. Hepsi tek bir topluluğun içinde mi?"
+        },
+        {
+          "speaker": "Can",
+          "text": "Tek bir çatı altında, on üç ayrı proje takımı. Her takımın kendi aracı, kendi yarışması, kendi hikâyesi var."
+        },
+        {
+          "speaker": "Ayse",
+          "text": "Bu arada topluluğun kuruluş amacı da çok net. Ülkemizin Milli Teknoloji Hamlesi hedefinin ışığında, teknolojide pay sahibi olmak."
+        },
+        {
+          "speaker": "Can",
+          "text": "Ve bunu öğrencilere pratik mühendislik deneyimi kazandırarak yapmak. Ders kitabında kalan bilgiyi, sahada çalışan bir sisteme dönüştürmek."
+        },
+        {
+          "speaker": "Ayse",
+          "text": "Peki o atölyede bir gece nasıl geçer? Gerçekten sabaha kadar mı çalışılıyor?"
+        },
+        {
+          "speaker": "Can",
+          "text": "Yarışma yaklaştığında evet. Masada bir devre kartı, elde lehim, ekranda yazılım. Bir vida eksik çıkar, bir kablo ters bağlanır, baştan alınır."
+        },
+        {
+          "speaker": "Ayse",
+          "text": "Ve sonra o meşhur cümle geliyor, bir test daha."
+        },
+        {
+          "speaker": "Can",
+          "text": "Tam olarak öyle. Topluluğun sloganı da bunu anlatıyor. Atölyede başlar, sahada kanıtlanır."
+        }
+      ]
+    },
+    {
+      "sequenceId": 2,
+      "sequenceTitle": "Takımlar ve Teknofest yolculuğu",
+      "dialogues": [
+        {
+          "speaker": "Ayse",
+          "text": "Sahada kanıtlanır dedin. O saha dediğimiz yer genelde Teknofest, değil mi?"
+        },
+        {
+          "speaker": "Can",
+          "text": "Evet. Ve iki bin yirmi altı sezonu MATRO için çok özel geçti. Sekiz takım Teknofest finaline kaldı."
+        },
+        {
+          "speaker": "Ayse",
+          "text": "Sekiz takım! Bunlar kimler, biraz sayar mısın?"
+        },
+        {
+          "speaker": "Can",
+          "text": "Aşina, insansız hava araçları yarışmasında Malatya'da finaldeydi. Luna İKA, insansız kara aracında Mardin'de."
+        },
+        {
+          "speaker": "Ayse",
+          "text": "Pusula, sanayide robotik uygulamalarda Diyarbakır'da. Matris ise sürü insansız hava aracında Gaziantep'te yarıştı."
+        },
+        {
+          "speaker": "Can",
+          "text": "Andromeda da akıllı fabrika sistemleri programlamada finalistti. Ve bir de Mavi Vatan var."
+        },
+        {
+          "speaker": "Ayse",
+          "text": "Mavi Vatan'da deniz ve su altı yarışmaları vardı. Orada üç takım birden finaldeydi."
+        },
+        {
+          "speaker": "Can",
+          "text": "Lodos insansız deniz aracıyla, Prusa insansız su altı aracıyla, Zemheri de su altı roketiyle."
+        },
+        {
+          "speaker": "Ayse",
+          "text": "Zemheri'nin hikâyesi ayrıca güzel. Su altı roket kategorisine ilk kez katıldılar ve ilk yıllarında finalist oldular."
+        },
+        {
+          "speaker": "Can",
+          "text": "Bir de iki bin yirmi beşi unutmayalım. Matrover ekibi insansız kara aracı yarışmasında, finale kalan yirmi sekiz takım arasında Türkiye üçüncüsü oldu."
+        },
+        {
+          "speaker": "Ayse",
+          "text": "Düşünsenize, zorlu bir arazide kendi başına yol bulan bir araç ve onu yapan öğrenciler."
+        },
+        {
+          "speaker": "Can",
+          "text": "Aslında bu başarıların arkasında uzun bir yol var. Bir araç, kâğıt üstünde bir çizgi olarak başlıyor."
+        },
+        {
+          "speaker": "Ayse",
+          "text": "Sonra raporlar geliyor, değil mi? Ön tasarım raporu, kritik tasarım raporu."
+        },
+        {
+          "speaker": "Can",
+          "text": "Evet, çoğu takım sahaya çıkmadan önce bu raporlarla değerlendiriliyor. Ardından üretim, havuzda, sahilde, arazide testler."
+        },
+        {
+          "speaker": "Ayse",
+          "text": "Ve final alanında birkaç dakikalık bir görev. On ayın emeği o birkaç dakikada sınanıyor."
+        },
+        {
+          "speaker": "Can",
+          "text": "Bu arada topluluğun başarı arşivi de çok geniş. Kayıtlı elli derece var, iki bin on üçten bugüne."
+        },
+        {
+          "speaker": "Ayse",
+          "text": "İlki de çok eski bir başarı, değil mi? Lagari adında bir insansız hava aracı."
+        },
+        {
+          "speaker": "Can",
+          "text": "Evet, iki bin on üçte Future Flight Design yarışmasında dünya ikinciliği. Yani topluluk daha kurulduğu yıl uluslararası sahneye çıkmış."
+        }
+      ]
+    },
+    {
+      "sequenceId": 3,
+      "sequenceTitle": "Eğitim, sanayi, okullar ve nasıl katılırım",
+      "dialogues": [
+        {
+          "speaker": "Ayse",
+          "text": "Can, dinleyenlerin aklında şu soru var bence. Ben hiç robot yapmadım, bu topluluk bana göre mi?"
+        },
+        {
+          "speaker": "Can",
+          "text": "Kesinlikle. Bölüm şartı yok, ön bilgi şartı yok. Zaten her yıl yeni üyeler için eğitim kampı düzenleniyor."
+        },
+        {
+          "speaker": "Ayse",
+          "text": "Geçen sezon bu kamp nasıldı?"
+        },
+        {
+          "speaker": "Can",
+          "text": "Otuz iki ders saatlik bir programdı. Mekanikte tasarım ve imalat, elektronikte devre ve kart tasarımı, yazılımda görüntü işleme ve gömülü yazılım."
+        },
+        {
+          "speaker": "Ayse",
+          "text": "Ve programı tamamlayan altmış bir üye sertifika aldı."
+        },
+        {
+          "speaker": "Can",
+          "text": "Üstelik sadece atölye değil. MATRO üyelerini sanayiyle de buluşturuyor."
+        },
+        {
+          "speaker": "Ayse",
+          "text": "Evet, geçen sezon Turkish Technic hangarları gezildi, TÜBİTAK Marmara Araştırma Merkezi, Ermetal, Alp Havacılık ziyaret edildi."
+        },
+        {
+          "speaker": "Can",
+          "text": "Bir de Gökmen Uzay Havacılık Eğitim Merkezi var. Orada ilk astronotumuz Alper Gezeravcı'nın sunumunu dinlediler."
+        },
+        {
+          "speaker": "Ayse",
+          "text": "Gerçekten inanılmaz. Peki topluluğun çocuklarla ilgili çalışmaları da var, değil mi?"
+        },
+        {
+          "speaker": "Can",
+          "text": "Var ve bence en güzel tarafı bu. Geçen sezon ilkokuldan liseye beş yüz öğrenciye ulaştılar."
+        },
+        {
+          "speaker": "Ayse",
+          "text": "Yerli Malı Haftası'nda üç yüz ilkokul öğrencisine milli teknoloji hamlesini ve otonom araçlarını anlattılar."
+        },
+        {
+          "speaker": "Can",
+          "text": "Liselilere Arduino eğitimi verdiler, çocukları atölyede ağırladılar. Belki o çocuklardan biri yıllar sonra bir yarışma takımında kendi aracını yapacak."
+        },
+        {
+          "speaker": "Ayse",
+          "text": "Rakamlarla toparlarsak, geçen sezon kırk beş faaliyet ve iki binden fazla katılım var."
+        },
+        {
+          "speaker": "Can",
+          "text": "Bütün bunlar sponsorların desteğiyle mümkün oluyor. Malzeme, hizmet, yazılım ve nakit desteğiyle araçlar sahaya çıkıyor."
+        },
+        {
+          "speaker": "Ayse",
+          "text": "Peki son soru. Katılmak isteyen ne yapmalı?"
+        },
+        {
+          "speaker": "Can",
+          "text": "Önce topluluk kayıt formunu dolduruyorsun. Yarışma takımında çalışmak istiyorsan takım ön başvurusunda üç tercih yapabiliyorsun."
+        },
+        {
+          "speaker": "Ayse",
+          "text": "Yarışma takımı istemeyenler için de yer var. Atölye, sponsorluk, organizasyon ve sosyal medya ekipleri."
+        },
+        {
+          "speaker": "Can",
+          "text": "Bütün başvuru bağlantıları topluluğun web sitesinde. Bir de Instagram hesapları var, btumatro."
+        },
+        {
+          "speaker": "Ayse",
+          "text": "O zaman son sözü sana bırakıyorum."
+        },
+        {
+          "speaker": "Can",
+          "text": "Topluluğun kapısı herkese açık. Gel, bir test daha yapalım."
+        },
+        {
+          "speaker": "Ayse",
+          "text": "Atölyede başlar, sahada kanıtlanır. Dinlediğiniz için teşekkürler, görüşmek üzere."
+        }
+      ]
+    }
+  ]
+}
