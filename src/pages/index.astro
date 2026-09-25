@@ -10,7 +10,8 @@ import BasvuruButonlari from '../components/BasvuruButonlari.astro';
 import home from '../data/home.json';
 import achievements from '../data/achievements.json';
 import sponsors from '../data/sponsors.json';
-import { url, media, achievementSummary, degreeRank, degreeTone, publishedNews, teamIndex, teamHref } from '../lib/utils';
+import { sayaclar, sayiMetni } from '../lib/sayilar';
+import { url, media, degreeRank, degreeTone, publishedNews, teamIndex, teamHref } from '../lib/utils';
 
 const allTeams = (await getCollection('teams')).sort((a, b) => a.data.order - b.data.order);
 const teams = allTeams.filter(t => t.data.status !== 'Arşiv').slice(0, 6);
@@ -19,13 +20,8 @@ const featured = achievements.items
   .filter(a => a.featured)
   .sort((a, b) => b.year - a.year || degreeRank(a.degree) - degreeRank(b.degree))
   .slice(0, 6);
-const achievementStats = achievementSummary(achievements.items);
-const homeStats = home.stats.map((stat, index) => {
-  if (index === 0) return { ...stat, value: achievementStats.records, label: 'Kayıtlı Derece' };
-  if (index === 1) return { ...stat, value: achievementStats.firstPlaces, label: 'Birincilik' };
-  if (index === 4) return { ...stat, value: achievementStats.finalists2026 };
-  return stat;
-});
+// Sayaçlar tek kaynaktan (src/data/sayilar.json + achievements.json) gelir.
+const homeStats = sayaclar(home.stats);
 const news = publishedNews(await getCollection('haberler'));
 const announcements = news.filter(item => item.data.pinned).slice(0, 2);
 const latestNews = news.slice(0, 3);
@@ -78,7 +74,7 @@ const bronzSponsors = sponsors.current.filter((s) => s.package === 'Bronz');
     <div class="mt-9"><VideoEmbed youtubeId={home.video.youtubeId} title={home.video.title} /></div>
   </Section>
 
-  <Section eyebrow={home.highlights.eyebrow} title={home.highlights.title} description={home.highlights.description} class="home-achievements">
+  <Section eyebrow={home.highlights.eyebrow} title={home.highlights.title} description={sayiMetni(home.highlights.description)} class="home-achievements">
     <div class="achievement-list mt-10">
       {featured.map(a => <article class="achievement-row reveal">
         <span class="achievement-year">{a.year}</span>

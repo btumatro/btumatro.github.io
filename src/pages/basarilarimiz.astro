@@ -8,20 +8,14 @@ import AchievementsExplorer from '../components/AchievementsExplorer.astro';
 import CtaBand from '../components/CtaBand.astro';
 import achievements from '../data/achievements.json';
 import { getCollection } from 'astro:content';
-import { achievementSummary, teamIndex } from '../lib/utils';
+import { teamIndex } from '../lib/utils';
+import { sayaclar, sayiMetni, sayiYaz } from '../lib/sayilar';
 
 const items = achievements.items;
 const takimDizini = teamIndex(await getCollection('teams'));
-const summary = achievementSummary(items);
 
-const stats = [
-  { value: summary.records, suffix: '', label: 'Kayıtlı Derece', note: `${summary.firstYear}–${summary.lastYear}` },
-  { value: summary.firstPlaces, suffix: '', label: 'Birincilik', note: 'Türkiye ve bölge' },
-  { value: summary.international, suffix: '', label: 'Uluslararası Başarı', note: 'Dünya çapında' },
-  { value: 342, suffix: '', label: 'Finalist Yarışmacı', note: '2020–2025' },
-  { value: 35, suffix: '', label: "İlk 10'a Giren Takım", note: '2020–2025' },
-  { value: summary.finalists2026, suffix: '', label: 'TEKNOFEST Finalisti', note: '2026 sezonu' },
-];
+// Sayaçlar tek kaynaktan gelir (src/lib/sayilar.ts).
+const stats = sayaclar(['kayitliDerece', 'birincilik', 'uluslararasi', 'finalistYarismaci', 'ilk10Takim', 'teknofestFinalist2026']);
 ---
 
 <BaseLayout
@@ -30,8 +24,8 @@ const stats = [
 >
   <PageHero
     eyebrow="Başarılarımız"
-    title={`${summary.records} kayıtlı derece, ${summary.firstPlaces} birincilik`}
-    description={achievements.intro}
+    title={`${sayiYaz('kayitliDerece')} kayıtlı derece, ${sayiYaz('birincilik')} birincilik`}
+    description={sayiMetni(achievements.intro)}
   />
 
   <Section>

@@ -20,42 +20,12 @@
     "imageAlt": "Mavi Vatan etkinliğinde gemi güvertesinde bir araya gelen MATRO takımları"
   },
   "stats": [
-    {
-      "value": 50,
-      "suffix": "+",
-      "label": "Kayıtlı Derece",
-      "note": "2013–2026"
-    },
-    {
-      "value": 7,
-      "suffix": "",
-      "label": "Birincilik",
-      "note": "Türkiye ve bölge"
-    },
-    {
-      "value": 500,
-      "suffix": "+",
-      "label": "Finalist Yarışmacı",
-      "note": "2013'ten bu yana"
-    },
-    {
-      "value": 35,
-      "suffix": "+",
-      "label": "İlk 10'a Giren Takım",
-      "note": "2020–2025"
-    },
-    {
-      "value": 8,
-      "suffix": "",
-      "label": "TEKNOFEST Finalisti",
-      "note": "2026 sezonu"
-    },
-    {
-      "value": 75,
-      "suffix": ".000+ TL",
-      "label": "Sosyal Sorumluluk Desteği",
-      "note": "Kardeş Okul Projesi"
-    }
+    "kayitliDerece",
+    "birincilik",
+    "finalistYarismaci",
+    "ilk10Takim",
+    "teknofestFinalist2026",
+    "kardesOkulTL"
   ],
   "video": {
     "title": "2025 Yılı MATRO'nun Hikayesi: Durmadan Devam",
@@ -65,6 +35,6 @@
   "highlights": {
     "eyebrow": "Öne Çıkanlar",
     "title": "Emeğin karşılığı.",
-    "description": "2020-2025 döneminde 35 takımımız ilk 10'a girdi, 342 yarışmacımız finalist oldu ve 22 derece ile özel ödül kazandık. 2026 sezonunda ise sekiz takımımız TEKNOFEST finallerinde yarıştı."
+    "description": "2013'ten bu yana {kayitliDerece} derece ve ödül kazandık: {birincilik} birincilik, {ozelOdul} özel ödül. {finalistYarismaci} yarışmacımız finalist oldu; 2026 sezonunda {teknofestFinalist2026} takımımız TEKNOFEST finallerinde yarıştı."
   }
 }

@@ -1,5 +1,5 @@
 {
-  "intro": "Topluluğumuz 2020-2025 döneminde 35 takımı ile ilk 10'a girdi, 342 yarışmacı ile finalist oldu ve 22 derece ile özel ödül kazandı. 2026 sezonunda ise sekiz takımımız TEKNOFEST finallerinde üniversitemizi temsil etti.",
+  "intro": "2013'ten bu yana {kayitliDerece} derece ve ödül: {birincilik} birincilik, {uluslararasi} uluslararası başarı, {ozelOdul} özel ödül. {finalistYarismaci} yarışmacımız finalist oldu, {ilk10Takim} takımımız ilk 10'a girdi. 2026 sezonunda {teknofestFinalist2026} takımımız TEKNOFEST finallerinde üniversitemizi temsil etti.",
   "items": [
     {
       "year": 2026,

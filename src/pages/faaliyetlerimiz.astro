@@ -5,6 +5,7 @@ import PageHero from '../components/PageHero.astro';
 import Section from '../components/Section.astro';
 import CtaBand from '../components/CtaBand.astro';
 import MediaGaleri from '../components/MediaGaleri.astro';
+import { sayiMetni } from '../lib/sayilar';
 
 const activities = (await getCollection('activities')).sort(
   (a, b) => a.data.order - b.data.order
@@ -73,7 +74,7 @@ const dateFmt = new Intl.DateTimeFormat('tr-TR', { day: 'numeric', month: 'long'
                           <dt class="font-mono text-[0.65rem] tracking-wider text-mist-500 uppercase">
                             {s.label}
                           </dt>
-                          <dd class="mt-0.5 font-mono text-lg font-bold text-volt-300">{s.value}</dd>
+                          <dd class="mt-0.5 font-mono text-lg font-bold text-volt-300">{sayiMetni(s.value)}</dd>
                         </div>
                       ))}
                     </dl>

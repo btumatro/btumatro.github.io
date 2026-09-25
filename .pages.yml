@@ -71,14 +71,11 @@ content:
 
       - name: stats
         label: Sayılarla MATRO (sayaçlar)
-        type: object
-        list:
-          collapsible: true
-        fields:
-          - { name: value, label: Sayı, type: number, required: true }
-          - { name: suffix, label: Son ek, type: string, description: "Örn: + veya %" }
-          - { name: label, label: Başlık, type: string, required: true }
-          - { name: note, label: Alt not, type: string }
+        type: select
+        list: true
+        description: "Ana sayfada gösterilecek sayaçlar. Değerler ve etiketler 'Sayılar' bölümünden düzenlenir."
+        options:
+          values: [kayitliDerece, birincilik, uluslararasi, ozelOdul, teknofestFinalist2026, finalistYarismaci, ilk10Takim, uyeSayisi, kardesOkulTL, egitimDonemi, egitimDersSaati, sertifikaliUye]
 
       - name: video
         label: Tanıtım Videosu
@@ -682,6 +679,27 @@ content:
             label: Takım
             type: string
             description: "İsteğe bağlı. Takım sayfasının dosya adı; görselin altında o takıma bağlantı çıkar. Örn: insansiz-kara-araci"
+
+  - name: sayilar
+    label: Sayılar (tüm sitedeki rakamlar)
+    type: file
+    path: src/data/sayilar.json
+    format: json
+    description: "Ana sayfa, Başarılar ve metinlerdeki tüm sayılar buradan gelir. Değeri boş bırakılanlar Başarılar listesinden otomatik hesaplanır. Metinlerde {anahtar} yazan yere değer konur, ör. {finalistYarismaci}."
+    fields:
+      - { name: aciklama, label: Açıklama, type: text, readonly: true }
+      - name: sayilar
+        label: Sayılar
+        type: object
+        list:
+          collapsible: true
+        fields:
+          - { name: anahtar, label: Anahtar (değiştirmeyin), type: string, required: true }
+          - { name: deger, label: Değer (boşsa otomatik), type: number }
+          - { name: ek, label: Son ek, type: string, description: "Örn: + veya .000+ TL" }
+          - { name: etiket, label: Etiket, type: string }
+          - { name: not, label: Alt not, type: string }
+          - { name: yuvarla, label: 5'in katına yuvarla, type: boolean }
 
   - name: assets
     label: Varlıklar (tanıtım dosyası)

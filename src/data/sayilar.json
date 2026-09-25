@@ -1,0 +1,17 @@
+{
+  "aciklama": "Sitedeki tüm sayılar buradan gelir. Değeri boş bırakılanlar (kayitliDerece, birincilik, uluslararasi, ozelOdul, teknofestFinalist2026) Başarılar listesinden otomatik hesaplanır. Metinlerde {anahtar} yazan yerlere buradaki değer konur.",
+  "sayilar": [
+    { "anahtar": "kayitliDerece", "ek": "+", "etiket": "Kayıtlı Derece", "not": "2013'ten bu yana", "yuvarla": true },
+    { "anahtar": "birincilik", "ek": "", "etiket": "Birincilik", "not": "Türkiye ve bölge" },
+    { "anahtar": "uluslararasi", "ek": "", "etiket": "Uluslararası Başarı", "not": "Dünya çapında" },
+    { "anahtar": "ozelOdul", "ek": "", "etiket": "Özel Ödül", "not": "Performans, sunum, takım ruhu" },
+    { "anahtar": "teknofestFinalist2026", "ek": "", "etiket": "TEKNOFEST Finalisti", "not": "2026 sezonu" },
+    { "anahtar": "finalistYarismaci", "deger": 500, "ek": "+", "etiket": "Finalist Yarışmacı", "not": "2013'ten bu yana" },
+    { "anahtar": "ilk10Takim", "deger": 35, "ek": "+", "etiket": "İlk 10'a Giren Takım", "not": "2020–2025" },
+    { "anahtar": "uyeSayisi", "deger": 800, "ek": "+", "etiket": "Üye", "not": "2013'ten bu yana" },
+    { "anahtar": "kardesOkulTL", "deger": 75, "ek": ".000+ TL", "etiket": "Sosyal Sorumluluk Desteği", "not": "Kardeş Okul Projesi" },
+    { "anahtar": "egitimDonemi", "deger": 2, "ek": "", "etiket": "Eğitim Dönemi", "not": "Güz ve bahar kampları" },
+    { "anahtar": "egitimDersSaati", "deger": 32, "ek": "", "etiket": "Ders Saati", "not": "1. eğitim kampı" },
+    { "anahtar": "sertifikaliUye", "deger": 61, "ek": "", "etiket": "Sertifikalı Üye", "not": "2025-2026" }
+  ]
+}
