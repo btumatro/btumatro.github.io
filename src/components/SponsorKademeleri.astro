@@ -1,0 +1,71 @@
+---
+/**
+ * Sponsor kademe grid'i: sponsorluk sayfası ve ana sayfa aynı bileşeni kullanır.
+ *
+ * Mevcut sponsorlar kademe hiyerarşisiyle gösterilir: üst kademe daha az sütunlu ve
+ * daha büyük kartlarla, alt kademeler giderek küçülür (25 Eylül 2026 toplantı kararı).
+ */
+const kademeler = [
+  { ad: 'Ana Sponsor', baslik: 'Ana Sponsor', grid: 'gap-4 sm:grid-cols-2', kart: 'p-8', logo: 'h-28 w-28', yazi: 'text-xl', tur: true },
+  { ad: 'Platin', baslik: 'Platin Sponsorlar', grid: 'gap-4 sm:grid-cols-3', kart: 'p-7', logo: 'h-24 w-24', yazi: 'text-lg', tur: true },
+  { ad: 'Altın', baslik: 'Altın Sponsorlar', grid: 'gap-3 grid-cols-2 md:grid-cols-4', kart: 'p-5', logo: 'h-16 w-16', yazi: 'text-sm', tur: true },
+  { ad: 'Gümüş', baslik: 'Gümüş Sponsorlar', grid: 'gap-3 grid-cols-3 md:grid-cols-5', kart: 'p-4', logo: 'h-12 w-12', yazi: 'text-xs', tur: false },
+  { ad: 'Bronz', baslik: 'Bronz Sponsorlar', grid: 'gap-3 grid-cols-3 md:grid-cols-6', kart: 'p-3', logo: 'h-10 w-10', yazi: 'text-xs', tur: false },
+  { ad: 'Gönüllü', baslik: 'Gönüllü Destekçiler', grid: 'gap-3 grid-cols-3 md:grid-cols-6', kart: 'p-3', logo: 'h-10 w-10', yazi: 'text-xs', tur: false },
+];
+
+import { media, packageTone, instagramUrl, url } from '../lib/utils';
+
+interface Sponsor { name: string; package: string; type?: string; logo?: string; website?: string; instagram?: string }
+interface Props {
+  sponsorlar: Sponsor[];
+  /** 'firma': kart firmanın sitesine/Instagram'ına gider; 'sponsorluk': sponsorluk sayfasına gider. */
+  hedef?: 'firma' | 'sponsorluk';
+  /** Yalnızca bu kademeler gösterilir (boşsa hepsi). */
+  dahil?: string[];
+}
+const { sponsorlar, hedef = 'firma', dahil } = Astro.props;
+const sponsors = { current: sponsorlar };
+---
+
+    {
+      kademeler.filter((k) => !dahil || dahil.includes(k.ad)).map((k) => {
+        const liste = sponsors.current.filter((s) => s.package === k.ad);
+        if (liste.length === 0) return null;
+        const tone = packageTone(k.ad);
+        return (
+          <div class="reveal mt-10">
+            <h3 class={`font-mono text-[0.65rem] tracking-[0.2em] uppercase ${tone.text}`}>{k.baslik}</h3>
+            <div class:list={['mt-4 grid', k.grid]}>
+              {liste.map((s) => {
+                const logo = media(s.logo);
+                const baglanti = hedef === 'sponsorluk' ? url('/sponsorluk') : s.website || instagramUrl(s.instagram);
+                const Etiket = baglanti ? 'a' : 'div';
+                return (
+                  <Etiket
+                    {...(baglanti ? { href: baglanti, target: '_blank', rel: 'noopener noreferrer' } : {})}
+                    class:list={['card flex flex-col items-center text-center transition-colors', k.kart, baglanti && 'hover:border-volt-400/40']}
+                  >
+                    {logo ? (
+                      <img
+                        src={logo}
+                        alt={`${s.name} logosu`}
+                        loading="lazy"
+                        decoding="async"
+                        class:list={['shrink-0 rounded-full object-contain ring-1 ring-white/10', k.logo]}
+                      />
+                    ) : (
+                      <div class:list={['flex shrink-0 items-center justify-center rounded-full bg-white/5 ring-1 ring-white/10', k.logo]}>
+                        <span class="font-mono font-bold text-white/25">{s.name.trim().charAt(0)}</span>
+                      </div>
+                    )}
+                    <p class:list={['mt-3 font-bold tracking-tight text-mist-100', k.yazi]}>{s.name}</p>
+                    {k.tur && <p class="mt-1 text-xs text-mist-500">{s.type}</p>}
+                  </Etiket>
+                );
+              })}
+            </div>
+          </div>
+        );
+      })
+    }
