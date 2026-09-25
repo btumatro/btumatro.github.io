@@ -1,5 +1,14 @@
 ---
-import { degreeRank, degreeTone, teamHref } from '../lib/utils';
+/**
+ * Başarılar gezgini.
+ *
+ * Varsayılan görünüm "Dereceye göre": kayıtlar DERECE_GRUPLARI'na ayrılır
+ * (birincilikler, ikincilikler, üçüncülükler, ilk 10, rapor dereceleri ve özel
+ * ödüller, finalistlikler) ve her grup kendi içinde önce dereceye, sonra yıla göre
+ * sıralanır. "Yıla göre" görünümü aynı kayıtları yeniden eskiye tek listede gösterir.
+ * Yıl düğmeleri ve arama kutusu iki görünümde de çalışır.
+ */
+import { DERECE_GRUPLARI, degreeRank, degreeTone, teamHref } from '../lib/utils';
 
 interface Achievement {
   year: number;
@@ -11,22 +20,32 @@ interface Achievement {
 }
 interface Props {
   items: Achievement[];
-  /** Takım adı → dosya adı eşlemesi; verilirse takım adları sayfasına bağlanır. */
+  /** Takım adı → sayfa eşlemesi; verilirse takım adları sayfasına bağlanır. */
   teams?: Map<string, string>;
 }
 const { items, teams = new Map<string, string>() } = Astro.props;
 const bag = (ad?: string) => teamHref(teams, ad);
 
-// Varsayılan sıra: önce yıl (yeniden eskiye), yıl içinde derece (birincilik önce,
-// özel ödüller sonra, finalistler en sonda). "Dereceye göre" düğmesi istemci tarafında
-// önce dereceyi, sonra yılı esas alarak yeniden sıralar.
-const sorted = [...items].sort(
+const dereceSirasi = [...items].sort(
+  (a, b) =>
+    degreeRank(a.degree) - degreeRank(b.degree) ||
+    b.year - a.year ||
+    a.competition.localeCompare(b.competition, 'tr')
+);
+const gruplar = DERECE_GRUPLARI.map((g) => ({
+  ...g,
+  kayitlar: dereceSirasi.filter((a) => g.icinde(degreeRank(a.degree))),
+})).filter((g) => g.kayitlar.length > 0);
+
+const yilSirasi = [...items].sort(
   (a, b) =>
     b.year - a.year ||
     degreeRank(a.degree) - degreeRank(b.degree) ||
     a.competition.localeCompare(b.competition, 'tr')
 );
-const years = [...new Set(sorted.map((i) => i.year))].sort((a, b) => b - a);
+const years = [...new Set(items.map((i) => i.year))].sort((a, b) => b - a);
+const aramaMetni = (a: Achievement) =>
+  `${a.year} ${a.competition} ${a.category} ${a.degree} ${a.team ?? ''}`.toLocaleLowerCase('tr');
 ---
 
 <div class="mt-10">
@@ -78,91 +97,73 @@ const years = [...new Set(sorted.map((i) => i.year))].sort((a, b) => b - a);
 
   <div class="mt-4 flex flex-wrap items-center justify-between gap-3">
     <p id="ach-count" class="font-mono text-xs text-mist-500" aria-live="polite">
-      {sorted.length} kayıt gösteriliyor
+      {items.length} kayıt gösteriliyor
     </p>
     <div class="flex items-center gap-2" role="group" aria-label="Sıralama">
       <span class="font-mono text-[0.62rem] tracking-[0.15em] text-mist-500 uppercase">Sırala</span>
-      <button type="button" data-sort="yil" aria-pressed="true" class="sort-btn rounded-lg border border-volt-400/50 bg-volt-400/10 px-3 py-1.5 font-mono text-xs text-volt-300 transition-colors">Yıla göre</button>
-      <button type="button" data-sort="derece" aria-pressed="false" class="sort-btn rounded-lg border border-white/12 px-3 py-1.5 font-mono text-xs text-mist-300 transition-colors hover:border-white/25 hover:text-mist-100">Dereceye göre</button>
+      <button type="button" data-view="derece" aria-pressed="true" class="view-btn rounded-lg border border-volt-400/50 bg-volt-400/10 px-3 py-1.5 font-mono text-xs text-volt-300 transition-colors">Dereceye göre</button>
+      <button type="button" data-view="yil" aria-pressed="false" class="view-btn rounded-lg border border-white/12 px-3 py-1.5 font-mono text-xs text-mist-300 transition-colors hover:border-white/25 hover:text-mist-100">Yıla göre</button>
     </div>
   </div>
 
-  <!-- Masaüstü tablo -->
-  <div class="mt-4 hidden overflow-x-auto rounded-2xl border border-white/10 md:block">
-    <table class="w-full min-w-[46rem] border-collapse text-left">
-      <thead>
-        <tr class="border-b border-white/10 bg-ink-850">
-          <th scope="col" class="px-5 py-3.5 font-mono text-[0.65rem] tracking-[0.15em] text-mist-500 uppercase">Yıl</th>
-          <th scope="col" class="px-5 py-3.5 font-mono text-[0.65rem] tracking-[0.15em] text-mist-500 uppercase">Yarışma</th>
-          <th scope="col" class="px-5 py-3.5 font-mono text-[0.65rem] tracking-[0.15em] text-mist-500 uppercase">Kategori</th>
-          <th scope="col" class="px-5 py-3.5 font-mono text-[0.65rem] tracking-[0.15em] text-mist-500 uppercase">Derece / Ödül</th>
-        </tr>
-      </thead>
-      <tbody class="ach-list">
-        {
-          sorted.map((a, i) => (
-            <tr
-              data-order={i}
-              data-rank={degreeRank(a.degree)}
-              class="ach-row border-b border-white/6 transition-colors last:border-0 hover:bg-white/3"
-              data-year={a.year}
-              data-search={`${a.year} ${a.competition} ${a.category} ${a.degree} ${a.team ?? ''}`.toLocaleLowerCase('tr')}
-            >
-              <td class="px-5 py-4 font-mono text-sm text-mist-500 tabular-nums">{a.year}</td>
-              <td class="px-5 py-4">
+  <!-- Dereceye göre: gruplu görünüm -->
+  <div class="ach-view mt-8 space-y-10" data-view="derece">
+    {
+      gruplar.map((g) => (
+        <section class="ach-group" aria-labelledby={`grup-${g.id}`}>
+          <h3 id={`grup-${g.id}`} class="flex items-baseline gap-3 border-b border-white/10 pb-3">
+            <span class={`text-lg font-bold tracking-tight ${g.ton}`}>{g.baslik}</span>
+            <span class="ach-group-count font-mono text-xs text-mist-500">{g.kayitlar.length}</span>
+          </h3>
+          <ul>
+            {g.kayitlar.map((a) => (
+              <li class="ach-row" data-year={a.year} data-search={aramaMetni(a)}>
+                <div class="ach-cells">
+                  <span class="font-mono text-sm text-mist-500 tabular-nums">{a.year}</span>
+                  <div class="min-w-0">
+                    <span class="text-sm font-semibold text-mist-100">{a.competition}</span>
+                    {a.team &&
+                      (bag(a.team) ? (
+                        <a href={bag(a.team)} class="mt-0.5 block font-mono text-[0.7rem] text-volt-400 underline decoration-volt-400/30 underline-offset-4 hover:text-volt-300 hover:decoration-volt-400">{a.team}</a>
+                      ) : (
+                        <span class="mt-0.5 block font-mono text-[0.7rem] text-volt-400">{a.team}</span>
+                      ))}
+                  </div>
+                  <span class="text-sm text-mist-300">{a.category}</span>
+                  <span class={`text-sm font-semibold ${degreeTone(a.degree)}`}>{a.degree}</span>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))
+    }
+  </div>
+
+  <!-- Yıla göre: tek liste -->
+  <div class="ach-view mt-8 hidden" data-view="yil">
+    <ul>
+      {
+        yilSirasi.map((a) => (
+          <li class="ach-row" data-year={a.year} data-search={aramaMetni(a)}>
+            <div class="ach-cells">
+              <span class="font-mono text-sm text-mist-500 tabular-nums">{a.year}</span>
+              <div class="min-w-0">
                 <span class="text-sm font-semibold text-mist-100">{a.competition}</span>
                 {a.team &&
                   (bag(a.team) ? (
-                    <a
-                      href={bag(a.team)}
-                      class="mt-0.5 block font-mono text-[0.7rem] text-volt-400 underline decoration-volt-400/30 underline-offset-4 hover:text-volt-300 hover:decoration-volt-400"
-                    >
-                      {a.team}
-                    </a>
+                    <a href={bag(a.team)} class="mt-0.5 block font-mono text-[0.7rem] text-volt-400 underline decoration-volt-400/30 underline-offset-4 hover:text-volt-300 hover:decoration-volt-400">{a.team}</a>
                   ) : (
                     <span class="mt-0.5 block font-mono text-[0.7rem] text-volt-400">{a.team}</span>
                   ))}
-              </td>
-              <td class="px-5 py-4 text-sm text-mist-300">{a.category}</td>
-              <td class={`px-5 py-4 text-sm font-semibold ${degreeTone(a.degree)}`}>{a.degree}</td>
-            </tr>
-          ))
-        }
-      </tbody>
-    </table>
-  </div>
-
-  <!-- Mobil kart listesi -->
-  <div class="ach-list mt-4 space-y-3 md:hidden">
-    {
-      sorted.map((a, i) => (
-        <article
-          data-order={i}
-          data-rank={degreeRank(a.degree)}
-          class="ach-row card p-4"
-          data-year={a.year}
-          data-search={`${a.year} ${a.competition} ${a.category} ${a.degree} ${a.team ?? ''}`.toLocaleLowerCase('tr')}
-        >
-          <div class="flex items-start justify-between gap-3">
-            <h3 class="text-sm font-semibold text-mist-100">{a.competition}</h3>
-            <span class="shrink-0 font-mono text-xs text-mist-500">{a.year}</span>
-          </div>
-          <p class="mt-1 text-xs text-mist-300">{a.category}</p>
-          {a.team &&
-            (bag(a.team) ? (
-              <a
-                href={bag(a.team)}
-                class="mt-1 block font-mono text-[0.7rem] text-volt-400 underline decoration-volt-400/30 underline-offset-4"
-              >
-                {a.team}
-              </a>
-            ) : (
-              <p class="mt-1 font-mono text-[0.7rem] text-volt-400">{a.team}</p>
-            ))}
-          <p class={`mt-2.5 text-sm font-semibold ${degreeTone(a.degree)}`}>{a.degree}</p>
-        </article>
-      ))
-    }
+              </div>
+              <span class="text-sm text-mist-300">{a.category}</span>
+              <span class={`text-sm font-semibold ${degreeTone(a.degree)}`}>{a.degree}</span>
+            </div>
+          </li>
+        ))
+      }
+    </ul>
   </div>
 
   <p id="ach-empty" class="hidden py-10 text-center text-sm text-mist-500">
@@ -170,9 +171,20 @@ const years = [...new Set(sorted.map((i) => i.year))].sort((a, b) => b - a);
   </p>
 </div>
 
+<style>
+  .ach-row { border-bottom: 1px solid rgb(255 255 255 / 0.06); }
+  .ach-cells { display: grid; gap: 0.25rem 1.25rem; padding: 0.9rem 0.25rem; grid-template-columns: 3.5rem 1fr; }
+  .ach-cells > :nth-child(3), .ach-cells > :nth-child(4) { grid-column: 2; }
+  @media (min-width: 768px) {
+    .ach-cells { grid-template-columns: 4rem minmax(0, 1.4fr) minmax(0, 1fr) minmax(0, 1fr); align-items: baseline; }
+    .ach-cells > :nth-child(3), .ach-cells > :nth-child(4) { grid-column: auto; }
+  }
+</style>
+
 <script>
-  const rows = Array.from(document.querySelectorAll<HTMLElement>('.ach-row'));
-  const buttons = Array.from(document.querySelectorAll<HTMLButtonElement>('.year-filter'));
+  const views = Array.from(document.querySelectorAll<HTMLElement>('.ach-view'));
+  const yearButtons = Array.from(document.querySelectorAll<HTMLButtonElement>('.year-filter'));
+  const viewButtons = Array.from(document.querySelectorAll<HTMLButtonElement>('.view-btn'));
   const search = document.getElementById('ach-search') as HTMLInputElement | null;
   const count = document.getElementById('ach-count');
   const empty = document.getElementById('ach-empty');
@@ -181,59 +193,56 @@ const years = [...new Set(sorted.map((i) => i.year))].sort((a, b) => b - a);
   const IDLE = ['border-white/12', 'text-mist-300'];
 
   let activeYear = 'all';
+  let activeView = 'derece';
 
-  function apply() {
-    const q = (search?.value ?? '').toLocaleLowerCase('tr').trim();
-    let visible = 0;
-
-    rows.forEach((row) => {
-      const yearOk = activeYear === 'all' || row.dataset.year === activeYear;
-      const searchOk = !q || (row.dataset.search ?? '').includes(q);
-      const show = yearOk && searchOk;
-      row.classList.toggle('hidden', !show);
-      if (show) visible += 1;
-    });
-
-    // Masaüstü + mobil aynı kaydı iki kez içerdiği için ikiye bölüyoruz
-    const unique = Math.round(visible / 2);
-    if (count) count.textContent = `${unique} kayıt gösteriliyor`;
-    empty?.classList.toggle('hidden', unique > 0);
-  }
-
-  buttons.forEach((btn) => {
-    btn.addEventListener('click', () => {
-      activeYear = btn.dataset.year ?? 'all';
-      buttons.forEach((b) => {
-        const on = b === btn;
-        b.setAttribute('aria-pressed', String(on));
-        b.classList.remove(...ACTIVE, ...IDLE);
-        b.classList.add(...(on ? ACTIVE : IDLE));
-      });
-      apply();
-    });
-  });
-
-  const sortButtons = Array.from(document.querySelectorAll<HTMLButtonElement>('.sort-btn'));
-  function sortBy(mode: string) {
-    document.querySelectorAll<HTMLElement>('.ach-list').forEach((list) => {
-      const items = Array.from(list.querySelectorAll<HTMLElement>(':scope > .ach-row'));
-      const n = (el: HTMLElement, key: string) => Number(el.dataset[key] ?? 0);
-      items.sort((a, b) =>
-        mode === 'derece'
-          ? n(a, 'rank') - n(b, 'rank') || n(b, 'year') - n(a, 'year') || n(a, 'order') - n(b, 'order')
-          : n(a, 'order') - n(b, 'order'),
-      );
-      items.forEach((el) => list.appendChild(el));
-    });
-    sortButtons.forEach((b) => {
-      const on = b.dataset.sort === mode;
+  function mark(buttons: HTMLButtonElement[], isOn: (b: HTMLButtonElement) => boolean) {
+    buttons.forEach((b) => {
+      const on = isOn(b);
       b.setAttribute('aria-pressed', String(on));
       b.classList.remove(...ACTIVE, ...IDLE);
       b.classList.add(...(on ? ACTIVE : IDLE));
     });
   }
-  sortButtons.forEach((btn) => btn.addEventListener('click', () => sortBy(btn.dataset.sort ?? 'yil')));
 
+  function apply() {
+    const q = (search?.value ?? '').toLocaleLowerCase('tr').trim();
+    let visible = 0;
+    views.forEach((view) => {
+      const on = view.dataset.view === activeView;
+      view.classList.toggle('hidden', !on);
+      view.querySelectorAll<HTMLElement>('.ach-row').forEach((row) => {
+        const show =
+          (activeYear === 'all' || row.dataset.year === activeYear) &&
+          (!q || (row.dataset.search ?? '').includes(q));
+        row.classList.toggle('hidden', !show);
+        if (on && show) visible += 1;
+      });
+      // Boş kalan derece grubu tamamen gizlenir, sayacı görünen kayıtları gösterir.
+      view.querySelectorAll<HTMLElement>('.ach-group').forEach((group) => {
+        const n = group.querySelectorAll('.ach-row:not(.hidden)').length;
+        group.classList.toggle('hidden', n === 0);
+        const c = group.querySelector('.ach-group-count');
+        if (c) c.textContent = String(n);
+      });
+    });
+    if (count) count.textContent = `${visible} kayıt gösteriliyor`;
+    empty?.classList.toggle('hidden', visible > 0);
+  }
+
+  yearButtons.forEach((btn) =>
+    btn.addEventListener('click', () => {
+      activeYear = btn.dataset.year ?? 'all';
+      mark(yearButtons, (b) => b === btn);
+      apply();
+    }),
+  );
+  viewButtons.forEach((btn) =>
+    btn.addEventListener('click', () => {
+      activeView = btn.dataset.view ?? 'derece';
+      mark(viewButtons, (b) => b === btn);
+      apply();
+    }),
+  );
   search?.addEventListener('input', apply);
   apply();
 </script>

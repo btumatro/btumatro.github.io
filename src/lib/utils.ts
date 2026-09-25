@@ -125,17 +125,31 @@ export function packageTone(name: string): { ring: string; text: string; bg: str
 
 /** Dereceyi madalya rengine eşler (1./2./3. ve özel ödüller) */
 /**
- * Derecenin sıralama değeri: küçük olan daha iyi. "Türkiye 3.sü" → 3; yalnızca özel ödül
- * (ör. "En İyi Performans Ödülü") → 90; finalist → 100. Sayı, başında rakam olmayan ilk
- * "N." kalıbından okunur; "31.lik" 31 sayılır, 1 değil.
+ * Derecenin sıralama değeri: küçük olan daha iyi.
+ * - "Türkiye 3.sü" → 3. Sayı, başında rakam olmayan ilk "N." kalıbından okunur;
+ *   "31.lik" 31 sayılır, 1 değil.
+ * - Yalnızca rapor aşaması derecesi ("Rapor 3.sü", "Ön Değerlendirme Raporu 2.si")
+ *   → 80,0N: sahadaki derecelerden sonra, özel ödüllerden önce gelir.
+ * - Yalnızca özel ödül ("En İyi Performans Ödülü") → 90; finalist → 100.
  */
 export function degreeRank(degree: string): number {
   const d = degree.toLocaleLowerCase('tr');
   const m = d.match(/(?:^|[^0-9])(\d+)\./);
+  if (m && /rapor/.test(d)) return 80 + Number(m[1]) / 100;
   if (m) return Number(m[1]);
   if (d.includes('ödül')) return 90;
   return 100;
 }
+
+/** Başarılar sayfasındaki derece grupları; sıra, sayfadaki gösterim sırasıdır. */
+export const DERECE_GRUPLARI = [
+  { id: 'birincilik', baslik: 'Birincilikler', ton: 'text-medal-400', icinde: (r: number) => r === 1 },
+  { id: 'ikincilik', baslik: 'İkincilikler', ton: 'text-mist-100', icinde: (r: number) => r === 2 },
+  { id: 'ucunculuk', baslik: 'Üçüncülükler', ton: 'text-bronze-400', icinde: (r: number) => r === 3 },
+  { id: 'ilk-10', baslik: 'İlk 10 dereceleri', ton: 'text-mist-300', icinde: (r: number) => r >= 4 && r <= 10 },
+  { id: 'ozel', baslik: 'Rapor dereceleri ve özel ödüller', ton: 'text-volt-300', icinde: (r: number) => r >= 80 && r < 100 },
+  { id: 'finalist', baslik: 'Finalistlikler', ton: 'text-mist-500', icinde: (r: number) => r === 100 || (r > 10 && r < 80) },
+] as const;
 
 /** Derece rengi: birincilik altın, ikincilik gümüş, üçüncülük bronz, özel ödül mavi. */
 export function degreeTone(degree: string): string {
@@ -143,7 +157,7 @@ export function degreeTone(degree: string): string {
   if (rank === 1) return 'text-medal-400';
   if (rank === 2) return 'text-mist-100';
   if (rank === 3) return 'text-bronze-400';
-  if (rank === 90 || degree.toLocaleLowerCase('tr').includes('ödül')) return 'text-volt-300';
+  if ((rank >= 80 && rank < 100) || degree.toLocaleLowerCase('tr').includes('ödül')) return 'text-volt-300';
   return 'text-mist-300';
 }
 
