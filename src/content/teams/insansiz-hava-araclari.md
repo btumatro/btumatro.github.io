@@ -1,12 +1,11 @@
 ---
 title: İnsansız Hava Araçları Sistemleri
 subtitle: "ASHİNA · BÜRKÜT · ÇAĞRI · GÖKSAV"
-category: Havacılık
+category: Hava Araçları
 status: Aktif
 order: 1
 image: "/media/takim-ashina-2026.jpg"
 gallery:
-  - "/media/takim-ashina.jpg"
   - "/media/galeri-ashina-bayraktar.jpg"
   - "/media/galeri-ashina-model-ucak-ekip.jpg"
   - "/media/galeri-ashina-quad-detay.jpg"

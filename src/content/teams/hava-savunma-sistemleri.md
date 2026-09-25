@@ -1,7 +1,7 @@
 ---
 title: Hava Savunma Sistemleri
 subtitle: "GÖKSAV"
-category: Savunma
+category: Savunma ve Haberleşme
 status: Aktif
 order: 8
 image: "/media/takim-goksav.jpg"

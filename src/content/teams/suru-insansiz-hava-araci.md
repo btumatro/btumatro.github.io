@@ -1,7 +1,7 @@
 ---
 title: Sürü İnsansız Hava Aracı
 subtitle: "MATRİS"
-category: Havacılık
+category: Hava Araçları
 status: Aktif
 order: 6
 image: "/media/takim-matris-2026.jpg"

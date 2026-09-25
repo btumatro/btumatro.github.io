@@ -13,9 +13,9 @@ import home from '../data/home.json';
 import achievements from '../data/achievements.json';
 import sponsors from '../data/sponsors.json';
 import { sayaclar, sayiMetni } from '../lib/sayilar';
-import { url, media, degreeRank, degreeTone, publishedNews, teamIndex, teamHref } from '../lib/utils';
+import { takimSirala, url, media, degreeRank, degreeTone, publishedNews, teamIndex, teamHref } from '../lib/utils';
 
-const allTeams = (await getCollection('teams')).sort((a, b) => a.data.order - b.data.order);
+const allTeams = (await getCollection('teams')).sort(takimSirala);
 const teams = allTeams.filter(t => t.data.status !== 'Arşiv').slice(0, 6);
 const takimDizini = teamIndex(allTeams);
 const featured = achievements.items

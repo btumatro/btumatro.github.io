@@ -1,7 +1,7 @@
 ---
 title: Kablosuz Haberleşme
 subtitle: "ÇAĞRI"
-category: Haberleşme
+category: Savunma ve Haberleşme
 status: Aktif
 order: 11
 image: "/media/cagri-team-cropped.jpg"

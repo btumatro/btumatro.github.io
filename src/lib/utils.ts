@@ -219,3 +219,22 @@ export function teamHref(index: Map<string, string>, name?: string | null): stri
   const slug = index.get(name.trim().toLocaleLowerCase('tr'));
   return slug ? url(`/takimlarimiz/${slug}`) : null;
 }
+
+/** Takım kategorileri, sayfalarda gösterim sırasıyla (toplantı kararı: hava, kara, deniz önce). */
+export const TAKIM_KATEGORILERI = [
+  'Hava Araçları',
+  'Kara Araçları',
+  'Deniz ve Su Altı',
+  'Savunma ve Haberleşme',
+  'Endüstri ve Enerji',
+  'Ar-Ge ve Girişimcilik',
+] as const;
+
+/** Takımları önce kategori sırasına, sonra kendi `order` alanına göre sıralar. */
+export function takimSirala<T extends { data: { category: string; order: number } }>(a: T, b: T): number {
+  const k = (c: string) => {
+    const i = (TAKIM_KATEGORILERI as readonly string[]).indexOf(c);
+    return i === -1 ? 99 : i;
+  };
+  return k(a.data.category) - k(b.data.category) || a.data.order - b.data.order;
+}

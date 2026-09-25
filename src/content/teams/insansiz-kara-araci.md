@@ -20,10 +20,10 @@ gallery:
   - "/media/webmedya-tika-ika-17.jpg"
   - "/media/webmedya-tika-ika-18.jpg"
   - "/media/galeri-matrobot-tarla-test.jpg"
-  - "/media/galeri-luna-arac-detay.jpg"
   - "/media/galeri-matrover-stand.jpg"
-  - "/media/ika-saha-testi.jpg"
   - "/media/galeri-ika-sasi.jpg"
+  - "/media/gorsel-twizy-emizy-birincilik.jpg"
+  - "/media/gorsel-twizy-matrobot-iletisim.jpg"
 badge: "2026 Türkiye 9.su"
 instagram: ""
 aliases:
@@ -57,6 +57,12 @@ altTakimlar:
     basarilar:
       - "TEKNOFEST 2024 Bilişim Vadisi Tarımsal İnsansız Kara Aracı — Türkiye 5.si"
       - "TEKNOFEST 2021 Bilişim Vadisi Tarımsal İnsansız Kara Aracı — Türkiye 5.si"
+      - "Renault Twizy Contest — En İyi İletişim Ödülü"
+  - ad: "EMİZY"
+    yillar: "2021"
+    aciklama: "Renault Twizy Contest otonom mobilite yarışmasında yarışan ekip."
+    basarilar:
+      - "Renault Twizy Contest — Türkiye 1.si"
   - ad: "YAKLI"
     yillar: "2023"
     aciklama: "Tarımsal insansız kara aracı (TİKA) kategorisinde yarışan ekip."
@@ -87,6 +93,7 @@ achievements:
   - "TEKNOFEST 2022 TARNET TİKA — Türkiye 5.si (ROVER TEAM)"
   - "TEKNOFEST 2021 Bilişim Vadisi TİKA — Türkiye 5.si (MATROBOT)"
   - "TEKNOFEST 2019 Tarım Teknolojileri — Türkiye 3.sü (BTÜ İKA)"
+  - "Renault Twizy Contest 2021 — Türkiye 1.si (EMİZY), En İyi İletişim Ödülü (MATROBOT)"
 summary: "2019'dan bu yana her sezon finale kalan; MATROVER, LUNA ve TİKA araçlarıyla 2024'te Türkiye 5.si, 2025'te Türkiye 3.sü, 2026'da Türkiye 9.su olan insansız kara aracı takımımız."
 ---
 

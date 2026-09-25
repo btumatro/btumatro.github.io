@@ -1,7 +1,7 @@
 ---
 title: İnsansız Su Altı Sistemleri
 subtitle: "PRUSA"
-category: Sualtı Sistemleri
+category: Deniz ve Su Altı
 status: Aktif
 order: 4
 image: "/media/takim-iss-sualti-araci.jpg"
@@ -10,9 +10,7 @@ gallery:
   - "/media/galeri-prusa-detay.jpg"
   - "/media/galeri-iss-liman-ekip.jpg"
   - "/media/galeri-prusa-teknofest.jpg"
-  - "/media/galeri-iss-auv-havuz.jpg"
   - "/media/galeri-iss-fuar-standi.jpg"
-  - "/media/galeri-iss-auv-sergi.jpg"
   - "/media/tasarim-iss-auv-mor.jpg"
   - "/media/tasarim-iss-auv-izometrik.jpg"
   - "/media/tasarim-iss-auv-onden.jpg"

@@ -1,7 +1,7 @@
 ---
 title: İnsansız Deniz Aracı
 subtitle: "LODOS"
-category: Deniz Araçları
+category: Deniz ve Su Altı
 status: Aktif
 order: 3
 image: "/media/takim-lodos.jpg"
@@ -13,8 +13,6 @@ gallery:
   - "/media/galeri-lodos-teknofest.jpg"
   - "/media/galeri-lodos-saha.jpg"
   - "/media/galeri-lodos-ekip-sahil.jpg"
-  - "/media/webmedya-insansiz-deniz-araci-11.jpg"
-  - "/media/webmedya-insansiz-deniz-araci-12.jpg"
   - "/media/galeri-lodos-deniz-test.jpg"
   - "/media/galeri-lodos-sahil-ekip.jpg"
   - "/media/galeri-lodos-govde-uretim.jpg"

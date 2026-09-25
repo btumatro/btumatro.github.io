@@ -7,19 +7,20 @@ import TeamCard from '../../components/TeamCard.astro';
 import CtaBand from '../../components/CtaBand.astro';
 import BasvuruButonlari from '../../components/BasvuruButonlari.astro';
 import about from '../../data/about.json';
+import { TAKIM_KATEGORILERI, takimSirala } from '../../lib/utils';
 
 const teams = (await getCollection('teams'))
   .filter((t) => t.data.status !== 'Arşiv')
-  .sort((a, b) => a.data.order - b.data.order);
+  .sort(takimSirala);
 
-const categories = [...new Set(teams.map((t) => t.data.category))].sort((a, b) =>
-  a.localeCompare(b, 'tr')
-);
+// Filtre düğmeleri sabit kategori sırasında; listede olmayan kategori sona eklenir.
+const mevcut = new Set(teams.map((t) => t.data.category));
+const categories = [...TAKIM_KATEGORILERI.filter((c) => mevcut.has(c)), ...[...mevcut].filter((c) => !(TAKIM_KATEGORILERI as readonly string[]).includes(c))];
 ---
 
 <BaseLayout
   title="Takımlarımız"
-  description="ASHİNA, BÜRKÜT, ÇAĞRI, TİKA, İSS ve daha fazlası — MATRO bünyesinde faaliyet gösteren proje takımları ve çalışma alanları."
+  description="Hava, kara ve deniz araçlarından savunma, endüstri ve enerjiye: MATRO bünyesindeki proje takımları, alt takımları ve araçları."
 >
   <PageHero
     eyebrow="Proje ekipleri"

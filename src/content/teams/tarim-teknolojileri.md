@@ -1,7 +1,7 @@
 ---
 title: Tarım Teknolojileri
 subtitle: "ASHİNA İNOVASYON"
-category: Tarım Teknolojileri
+category: Ar-Ge ve Girişimcilik
 status: Yeni Takım
 order: 9
 image: "/media/takim-ashina-inovasyon.jpg"

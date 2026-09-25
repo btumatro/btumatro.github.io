@@ -1,12 +1,11 @@
 ---
 title: Ürünleşme ve Teknoloji Girişimciliği
 subtitle: "SYNTAX · SCENDERS"
-category: Girişimcilik
+category: Ar-Ge ve Girişimcilik
 status: Aktif
 order: 13
 image: "/media/odul-girisimcilik.jpg"
 gallery:
-  - "/media/galeri-girisim-75000-odul.jpg"
   - "/media/galeri-nasa-space-apps-2024-birincilik.jpg"
   - "/media/galeri-advance-up-syntax.jpg"
 badge: ""

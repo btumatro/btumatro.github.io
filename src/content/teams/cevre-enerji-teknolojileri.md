@@ -1,12 +1,11 @@
 ---
 title: Çevre, Enerji ve Nükleer Enerji Teknolojileri
 subtitle: "ALHAZEN"
-category: Çevre & Enerji
+category: Endüstri ve Enerji
 status: Aktif
 order: 12
 image: "/media/takim-alhazen.jpg"
 gallery:
-  - "/media/webmedya-cevre-enerji-4.jpg"
   - "/media/galeri-alhazen-laboratuvar.jpg"
   - "/media/webmedya-cevre-enerji-6.jpg"
   - "/media/galeri-alhazen-ekipman.jpg"

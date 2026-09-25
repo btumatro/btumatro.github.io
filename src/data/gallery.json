@@ -165,9 +165,9 @@
     },
     {
       "image": "/media/gorsel-twizy-matrobot-iletisim.jpg",
-      "caption": "Renault Twizy Mobility Challenge En İyi İletişim Ödülü (MATROBOT)",
+      "caption": "Renault Twizy Contest En İyi İletişim Ödülü (MATROBOT)",
       "category": "Ödül ve Derece",
-      "takim": "ucan-araba-simulasyonu"
+      "takim": "insansiz-kara-araci"
     },
     {
       "image": "/media/tasarim-ashina-iha-2026.jpg",
@@ -177,9 +177,9 @@
     },
     {
       "image": "/media/gorsel-twizy-emizy-birincilik.jpg",
-      "caption": "Renault Twizy Mobility Challenge Türkiye birinciliğimiz (EMİZY)",
+      "caption": "Renault Twizy Contest Türkiye birinciliğimiz (EMİZY)",
       "category": "Ödül ve Derece",
-      "takim": "ucan-araba-simulasyonu"
+      "takim": "insansiz-kara-araci"
     },
     {
       "image": "/media/galeri-pusula-atolye.jpg",
@@ -195,13 +195,13 @@
     },
     {
       "image": "/media/galeri-matris-test-alani.jpg",
-      "caption": "MATRİS sürü hava araçlarının yer kontrol istasyonu telemetri testleri",
+      "caption": "MATRİS ekibimiz sürü İHA'larıyla test sahasında",
       "category": "Atölye",
       "takim": "suru-insansiz-hava-araci"
     },
     {
       "image": "/media/galeri-matris-dron-filo.jpg",
-      "caption": "MATRİS sürü İHA ekibimizin çoklu araç koordinasyon testleri",
+      "caption": "MATRİS ekibimiz TEKNOFEST'te Selçuk Bayraktar ile",
       "category": "Yarışma",
       "takim": "suru-insansiz-hava-araci"
     },
@@ -215,12 +215,6 @@
       "image": "/media/galeri-matrobot-tarla-test.jpg",
       "caption": "MATROBOT tarımsal otonom kara aracı açık tarla sürüş testinde",
       "category": "Yarışma",
-      "takim": "insansiz-kara-araci"
-    },
-    {
-      "image": "/media/galeri-luna-arac-detay.jpg",
-      "caption": "LUNA kara aracı aktüatör ve yüksek torklu tahrik sistemi montajı",
-      "category": "Araçlar",
       "takim": "insansiz-kara-araci"
     },
     {
@@ -255,7 +249,7 @@
     },
     {
       "image": "/media/galeri-alhazen-ekipman.jpg",
-      "caption": "ALHAZEN ekibimizin enerji depolama ve analiz test düzeneği",
+      "caption": "ALHAZEN ekibimiz TEKNOFEST yarışma alanında",
       "category": "Atölye",
       "takim": "cevre-enerji-teknolojileri"
     },
@@ -267,7 +261,7 @@
     },
     {
       "image": "/media/galeri-alhazen-laboratuvar.jpg",
-      "caption": "ALHAZEN Çevre ve Enerji ekibimiz yakıt pili ve hidrojen laboratuvarında",
+      "caption": "ALHAZEN ekibimiz TEKNOFEST Çevre ve Enerji Teknolojileri yarışma alanında",
       "category": "Atölye",
       "takim": "cevre-enerji-teknolojileri"
     },
@@ -548,12 +542,6 @@
       "takim": "insansiz-deniz-araci"
     },
     {
-      "image": "/media/takim-ashina.jpg",
-      "caption": "ASHİNA ekibimiz insansız hava aracıyla",
-      "category": "Yarışma",
-      "takim": "insansiz-hava-araclari"
-    },
-    {
       "image": "/media/galeri-matris-saha-montaj.jpg",
       "caption": "MATRİS ekibimiz sahada montajda",
       "category": "Yarışma",
@@ -757,18 +745,6 @@
       "caption": "ASHİNA İHA ekibimiz TÜBİTAK yarışma sahnesi önünde",
       "category": "Yarışma",
       "takim": "insansiz-hava-araclari"
-    },
-    {
-      "image": "/media/galeri-iss-auv-havuz.jpg",
-      "caption": "Sualtı aracımız havuz testlerine hazırlanırken",
-      "category": "Yarışma",
-      "takim": "insansiz-su-alti-sistemleri"
-    },
-    {
-      "image": "/media/galeri-iss-auv-sergi.jpg",
-      "caption": "Sualtı aracımız kampüs tanıtım gününde",
-      "category": "Etkinlik",
-      "takim": "insansiz-su-alti-sistemleri"
     },
     {
       "image": "/media/galeri-ashina-kompozit-uretim.jpg",

@@ -1,7 +1,7 @@
 ---
 title: Sanayide Robotik Uygulamalar ve Dijital Teknolojiler
 subtitle: "PUSULA · ANDROMEDA"
-category: Dijital Teknolojiler
+category: Endüstri ve Enerji
 status: Aktif
 order: 7
 image: "/media/takim-sanayide-dijital.jpg"

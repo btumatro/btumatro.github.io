@@ -1,7 +1,7 @@
 ---
 title: Su Altı Roket Sistemleri
 subtitle: "ZEMHERİ"
-category: Sualtı Sistemleri
+category: Deniz ve Su Altı
 status: Yeni Takım
 order: 5
 image: "/media/takim-zemheri.jpg"

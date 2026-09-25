@@ -405,8 +405,9 @@ content:
       - { name: subtitle, label: Aktif takımlar, type: string, description: "Kartta ve başlık altında görünür. Bu sezon aktif alt takım adları. Örn: LUNA veya ASHİNA · BÜRKÜT · ÇAĞRI" }
       - name: category
         label: Kategori
-        type: string
-        description: "Örn: Havacılık, Savunma, Kara Araçları…"
+        type: select
+        options:
+          values: [Hava Araçları, Kara Araçları, Deniz ve Su Altı, Savunma ve Haberleşme, Endüstri ve Enerji, Ar-Ge ve Girişimcilik]
       - name: status
         label: Durum
         type: select
