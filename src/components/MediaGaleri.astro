@@ -58,8 +58,8 @@ const digerleri = tum.slice(1);
 
 {
   ana ? (
-    <div class:list={['medya-galeri', stretch && 'flex h-full flex-col', className]}>
-      <img src={ana} alt={alt} loading="lazy" decoding="async" class={imgClass} data-ana-gorsel />
+    <div class:list={['medya-galeri', stretch && 'flex h-full flex-col', className]} data-lightbox-grup data-lightbox-liste={JSON.stringify(tum)}>
+      <img src={ana} alt={alt} loading="lazy" decoding="async" class={imgClass} data-ana-gorsel data-lightbox />
       {digerleri.length > 0 && (
         <div class="mt-2 flex gap-1.5 overflow-x-auto pb-0.5" role="group" aria-label="Diğer görseller">
           {tum.map((src, i) => (

@@ -1,0 +1,119 @@
+---
+/**
+ * Tam ekrana yakın görsel önizleme (lightbox). BaseLayout'a bir kez eklenir.
+ *
+ * Kullanım: tıklanabilir görsele `data-lightbox` verilir. Görsel bir
+ * `[data-lightbox-grup]` içindeyse önizlemede o gruptaki görünür görseller arasında
+ * oklarla gezilir. Grubun `data-lightbox-liste` özniteliği (JSON dizi) varsa liste
+ * oradan alınır; MediaGaleri kapak+galeri listesini bu yolla verir. Açıklama,
+ * görselin `data-lightbox-aciklama` özniteliğinden, yoksa `alt` metninden gelir.
+ *
+ * Klavye: sol/sağ ok ile geçiş, Esc ile kapatma. Dokunmatikte yana kaydırma.
+ */
+---
+
+<dialog id="lightbox" class="lightbox" aria-label="Görsel önizleme">
+  <div class="lb-cerceve">
+    <img id="lb-gorsel" alt="" />
+    <p class="lb-alt"><span id="lb-aciklama"></span><span id="lb-sayac" class="lb-sayac"></span></p>
+  </div>
+  <button type="button" class="lb-dugme lb-kapat" data-lb-kapat aria-label="Kapat">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" /></svg>
+  </button>
+  <button type="button" class="lb-dugme lb-onceki" data-lb-onceki aria-label="Önceki görsel">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6" /></svg>
+  </button>
+  <button type="button" class="lb-dugme lb-sonraki" data-lb-sonraki aria-label="Sonraki görsel">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6" /></svg>
+  </button>
+</dialog>
+
+<style is:global>
+  [data-lightbox] { cursor: zoom-in; }
+  .lightbox { width: 100vw; height: 100dvh; max-width: none; max-height: none; margin: 0; padding: 0; border: 0; background: rgb(4 7 11 / 0.94); color: var(--color-mist-100); }
+  .lightbox::backdrop { background: rgb(4 7 11 / 0.8); }
+  .lightbox[open] { display: grid; place-items: center; }
+  .lb-cerceve { display: flex; flex-direction: column; align-items: center; gap: 0.75rem; max-width: 94vw; }
+  #lb-gorsel { max-width: 94vw; max-height: calc(100dvh - 7rem); object-fit: contain; border-radius: 0.5rem; box-shadow: 0 20px 60px rgb(0 0 0 / 0.5); }
+  .lb-alt { display: flex; gap: 1rem; align-items: baseline; justify-content: center; max-width: 80ch; padding: 0 1rem; font-size: 0.85rem; color: var(--color-mist-300); text-align: center; }
+  .lb-sayac { flex-shrink: 0; font-family: var(--font-mono, monospace); font-size: 0.7rem; color: var(--color-mist-500); }
+  .lb-dugme { position: fixed; display: grid; place-items: center; width: 3rem; height: 3rem; border-radius: 999px; background: rgb(255 255 255 / 0.08); border: 1px solid rgb(255 255 255 / 0.16); color: var(--color-mist-100); cursor: pointer; transition: background 0.2s; }
+  .lb-dugme:hover, .lb-dugme:focus-visible { background: rgb(255 255 255 / 0.18); }
+  .lb-dugme svg { width: 1.3rem; height: 1.3rem; fill: none; stroke: currentColor; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+  .lb-kapat { top: 1rem; right: 1rem; }
+  .lb-onceki { left: 1rem; top: 50%; transform: translateY(-50%); }
+  .lb-sonraki { right: 1rem; top: 50%; transform: translateY(-50%); }
+  .lightbox.tek .lb-onceki, .lightbox.tek .lb-sonraki, .lightbox.tek .lb-sayac { display: none; }
+  @media (max-width: 640px) {
+    .lb-onceki, .lb-sonraki { top: auto; bottom: 1rem; transform: none; }
+    #lb-gorsel { max-height: calc(100dvh - 9rem); }
+  }
+</style>
+
+<script>
+  type Oge = { src: string; aciklama: string };
+  const dlg = document.getElementById('lightbox') as HTMLDialogElement | null;
+  const gorsel = document.getElementById('lb-gorsel') as HTMLImageElement | null;
+  const aciklamaEl = document.getElementById('lb-aciklama');
+  const sayac = document.getElementById('lb-sayac');
+  let liste: Oge[] = [];
+  let etkin = 0;
+
+  function goster(i: number) {
+    if (!gorsel || liste.length === 0) return;
+    etkin = (i + liste.length) % liste.length;
+    const o = liste[etkin];
+    gorsel.src = o.src;
+    gorsel.alt = o.aciklama;
+    if (aciklamaEl) aciklamaEl.textContent = o.aciklama;
+    if (sayac) sayac.textContent = `${etkin + 1} / ${liste.length}`;
+    // Komşu görselleri önceden yükle.
+    [etkin + 1, etkin - 1].forEach((k) => { const n = liste[(k + liste.length) % liste.length]; if (n) new Image().src = n.src; });
+  }
+
+  function grupListesi(img: HTMLImageElement): { liste: Oge[]; baslangic: number } {
+    const grup = img.closest<HTMLElement>('[data-lightbox-grup]');
+    const buSrc = img.currentSrc || img.src;
+    if (grup?.dataset.lightboxListe) {
+      try {
+        const srcler = JSON.parse(grup.dataset.lightboxListe) as string[];
+        const tam = srcler.map((s) => new URL(s, location.href).href);
+        const l = tam.map((s) => ({ src: s, aciklama: img.alt }));
+        return { liste: l, baslangic: Math.max(0, tam.indexOf(new URL(img.getAttribute('src') ?? buSrc, location.href).href)) };
+      } catch { /* liste bozuksa aşağıdaki yola düş */ }
+    }
+    const kapsam = grup ?? document;
+    // Filtreyle gizlenmiş (görünmeyen) görseller atlanır.
+    const imgs = Array.from(kapsam.querySelectorAll<HTMLImageElement>('img[data-lightbox]')).filter((x) => x.offsetParent !== null || x === img);
+    const l = imgs.map((x) => ({ src: x.currentSrc || x.src, aciklama: x.dataset.lightboxAciklama || x.alt }));
+    return { liste: l, baslangic: Math.max(0, imgs.indexOf(img)) };
+  }
+
+  document.addEventListener('click', (e) => {
+    const hedef = (e.target as HTMLElement).closest?.('img[data-lightbox]') as HTMLImageElement | null;
+    if (!hedef || !dlg) return;
+    e.preventDefault();
+    const g = grupListesi(hedef);
+    liste = g.liste;
+    dlg.classList.toggle('tek', liste.length < 2);
+    goster(g.baslangic);
+    dlg.showModal();
+  });
+
+  dlg?.querySelector('[data-lb-kapat]')?.addEventListener('click', () => dlg.close());
+  dlg?.querySelector('[data-lb-onceki]')?.addEventListener('click', () => goster(etkin - 1));
+  dlg?.querySelector('[data-lb-sonraki]')?.addEventListener('click', () => goster(etkin + 1));
+  // Görselin dışındaki boş alana tıklanınca kapanır.
+  dlg?.addEventListener('click', (e) => { if (e.target === dlg || (e.target as HTMLElement).classList.contains('lb-cerceve')) dlg.close(); });
+  dlg?.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowRight') goster(etkin + 1);
+    if (e.key === 'ArrowLeft') goster(etkin - 1);
+  });
+  let baslangicX = 0;
+  dlg?.addEventListener('touchstart', (e) => { baslangicX = e.touches[0].clientX; }, { passive: true });
+  dlg?.addEventListener('touchend', (e) => {
+    const fark = e.changedTouches[0].clientX - baslangicX;
+    if (Math.abs(fark) > 50) goster(etkin + (fark < 0 ? 1 : -1));
+  });
+  dlg?.addEventListener('close', () => { if (gorsel) gorsel.removeAttribute('src'); });
+</script>

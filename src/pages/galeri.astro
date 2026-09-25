@@ -53,12 +53,13 @@ const takimSecenekleri = [...new Set(images.map((i) => i.takim).filter((t): t is
     <p id="galeri-bos" class="hidden py-10 text-center text-sm text-mist-500">Bu seçimde görsel yok.</p>
     {
       images.length > 0 ? (
-        <div id="galeri-akis" class="columns-1 gap-4 sm:columns-2 lg:columns-3 [&>*]:mb-4">
+        <div id="galeri-akis" data-lightbox-grup class="columns-1 gap-4 sm:columns-2 lg:columns-3 [&>*]:mb-4">
           {images.map((img, i) => (
             <figure class="galeri-oge card reveal group overflow-hidden break-inside-avoid" data-delay={(i % 3) * 55} data-kategori={img.category ?? ''} data-takim={img.takim ?? ''}>
               <img
                 src={media(img.image)!}
                 alt={img.caption || 'MATRO galeri görseli'}
+                data-lightbox
                 loading="lazy"
                 decoding="async"
                 class="w-full transition-transform duration-500 group-hover:scale-[1.03]"
