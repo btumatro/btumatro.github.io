@@ -7,6 +7,8 @@ order: 8
 image: "/media/takim-goksav.jpg"
 gallery:
   - "/media/galeri-mergen-hss.jpg"
+  - "/media/tasarim-hava-savunma-tareti.jpg"
+  - "/media/galeri-hava-savunma-balon-testi.jpg"
 badge: ""
 instagram: ""
 aliases:

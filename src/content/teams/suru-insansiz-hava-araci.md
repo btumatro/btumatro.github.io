@@ -14,6 +14,10 @@ gallery:
   - "/media/webmedya-suru-iha-35.jpg"
   - "/media/galeri-matris-test-alani.jpg"
   - "/media/galeri-matris-dron-filo.jpg"
+  - "/media/galeri-matris-atolye-cadir.jpg"
+  - "/media/galeri-matris-iha-ekip.jpg"
+  - "/media/galeri-matris-saha-montaj.jpg"
+  - "/media/galeri-matris-2026-ekip-saha.jpg"
 badge: "2026 Finalisti"
 instagram: "btu_matris"
 aliases:

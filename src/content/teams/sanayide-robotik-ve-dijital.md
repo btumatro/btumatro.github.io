@@ -15,6 +15,12 @@ gallery:
   - "/media/webmedya-sanayide-dijital-24.jpg"
   - "/media/webmedya-sanayide-dijital-25.jpg"
   - "/media/webmedya-sanayide-dijital-26.jpg"
+  - "/media/galeri-sirius-atolye.jpg"
+  - "/media/galeri-sirius-arena.jpg"
+  - "/media/galeri-pusula-2026-ekip.jpg"
+  - "/media/galeri-pusula-sirius-ekip.jpg"
+  - "/media/galeri-pusula-teknofest-calisma.jpg"
+  - "/media/galeri-sirius-govde.jpg"
 badge: "2026 Finalisti"
 instagram: "pusula_takim"
 aliases:

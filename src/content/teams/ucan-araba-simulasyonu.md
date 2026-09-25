@@ -14,6 +14,7 @@ gallery:
   - "/media/galeri-burkut-calisma.jpg"
   - "/media/galeri-burkut-simulasyon-ekip.jpg"
   - "/media/webmedya-burkut-46.jpg"
+  - "/media/galeri-burkut-cezeri-odul.jpg"
 badge: ""
 instagram: ""
 aliases:
