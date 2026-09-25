@@ -221,7 +221,7 @@ toc.push({ no: '', baslik: 'Tarihçe', sayfa: pages.length });
 
 // ---------- 6. Yapı ve takımlar ----------
 {
-  const sira = ['ashina', 'tika-ika', 'insansiz-deniz-araci', 'insansiz-su-alti', 'su-alti-roketi', 'suru-iha', 'sanayide-dijital', 'ashina-h', 'cevre-enerji', 'burkut', 'cagri', 'girisimcilik', 'ashina-inovasyon'];
+  const sira = ['insansiz-hava-araclari', 'insansiz-kara-araci', 'insansiz-deniz-araci', 'insansiz-su-alti-sistemleri', 'su-alti-roket-sistemleri', 'suru-insansiz-hava-araci', 'sanayide-robotik-ve-dijital', 'hava-savunma-sistemleri', 'cevre-enerji-teknolojileri', 'ucan-araba-simulasyonu', 'kablosuz-haberlesme', 'teknoloji-girisimciligi', 'tarim-teknolojileri'];
   const takimlar = sira.map((d) => mdDosya(`src/content/teams/${d}.md`));
   page(
     `${baslik('Topluluk', 'Nasıl çalışıyoruz?', ekip.hero.description)}

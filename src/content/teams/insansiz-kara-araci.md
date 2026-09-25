@@ -1,6 +1,6 @@
 ---
-title: İKA
-subtitle: İnsansız Kara Aracı ve Tarımsal İnsansız Kara Aracı
+title: İnsansız Kara Aracı ve Tarımsal İnsansız Kara Aracı
+subtitle: "LUNA"
 category: Kara Araçları
 status: Aktif
 order: 2
@@ -27,6 +27,7 @@ gallery:
 badge: "2026 Türkiye 9.su"
 instagram: ""
 aliases:
+  - "İKA"
   - "MATROVER"
   - "LUNA"
   - "LUNA İKA"
@@ -37,6 +38,42 @@ aliases:
   - "ROVER TEAM"
   - "SEKSENOL"
   - "TİKA"
+altTakimlar:
+  - ad: "LUNA"
+    aktif: true
+    yillar: "2025–2026"
+    aciklama: "ASELSAN İnsansız Kara Aracı Yarışması'nda yarışan güncel ekibimiz."
+    basarilar:
+      - "TEKNOFEST 2026 ASELSAN İnsansız Kara Aracı — Türkiye 9.su (LUNA İKA)"
+      - "TEKNOFEST 2025 ASELSAN İnsansız Kara Aracı — Türkiye Finalisti"
+  - ad: "MATROVER"
+    yillar: "2025"
+    aciklama: "ASELSAN İnsansız Kara Aracı Yarışması'nda finale kalan 28 takım arasından Türkiye 3.sü olan ekip."
+    basarilar:
+      - "TEKNOFEST 2025 ASELSAN İnsansız Kara Aracı — Türkiye 3.sü"
+  - ad: "MATROBOT"
+    yillar: "2021, 2024"
+    aciklama: "Tarımsal insansız kara aracı (TİKA) kategorisinde yarışan ekip."
+    basarilar:
+      - "TEKNOFEST 2024 Bilişim Vadisi Tarımsal İnsansız Kara Aracı — Türkiye 5.si"
+      - "TEKNOFEST 2021 Bilişim Vadisi Tarımsal İnsansız Kara Aracı — Türkiye 5.si"
+  - ad: "YAKLI"
+    yillar: "2023"
+    aciklama: "Tarımsal insansız kara aracı (TİKA) kategorisinde yarışan ekip."
+    basarilar:
+      - "TEKNOFEST 2023 Bilişim Vadisi TİKA — Türkiye Finalisti"
+  - ad: "ROVER TEAM"
+    yillar: "2022"
+    aciklama: "Tarımsal insansız kara aracı (TİKA) kategorisinde yarışan ekip."
+    basarilar:
+      - "TEKNOFEST 2022 TARNET TİKA — Türkiye 5.si"
+  - ad: "BTÜ İKA"
+    yillar: "2019"
+    aciklama: "Tarım teknolojileri kategorisinde yarışan ilk kara aracı ekibimiz."
+    basarilar:
+      - "TEKNOFEST 2019 TARNET Tarım Teknolojileri — Türkiye 3.sü"
+  - ad: "LUNAROV"
+  - ad: "SEKSENOL"
 focus:
   - Otonom arazi sürüşü
   - Haritalama ve rota planlama

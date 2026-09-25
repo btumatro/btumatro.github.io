@@ -1,6 +1,6 @@
 ---
-title: BÜRKÜT
-subtitle: Uçan Araba Simülasyonu · ASHİNA bünyesinde
+title: Uçan Araba Simülasyonu
+subtitle: "BÜRKÜT"
 category: Simülasyon & Otonomi
 status: Aktif
 order: 10
@@ -19,6 +19,16 @@ instagram: ""
 aliases:
   - "BÜRKÜT"
   - "EMİZY"
+altTakimlar:
+  - ad: "BÜRKÜT"
+    aktif: true
+    yillar: "2024"
+    ust: "ASHİNA bünyesinde"
+    aciklama: "Uçan araba konseptinin otonom uçuş ve kontrol katmanını simülasyon ortamında geliştiren ekip."
+    basarilar:
+      - "TEKNOFEST 2024 BAYKAR Uçan Araba Simülasyon — Türkiye Finalisti (1.547 başvurudan 31 finalist)"
+      - "TEKNOFEST 2024 BAYKAR Uçan Araba Simülasyon — En İyi Takım Ruhu Ödülü"
+  - ad: "EMİZY"
 focus:
   - Otonom uçuş simülasyonları
   - Kalman filtresi tabanlı sensör füzyonu

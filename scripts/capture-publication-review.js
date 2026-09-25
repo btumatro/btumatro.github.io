@@ -2,7 +2,7 @@
  * Salt okunur canlı site denetimi; formları göndermez. Ekran görüntüleri yereldir.
  */
 async (page) => {
-  const routes = ['/', '/hakkimizda/', '/ekibimiz/', '/bize-katilin/', '/iletisim/', '/basarilarimiz/', '/faaliyetlerimiz/', '/galeri/', '/haberler/', '/sponsorluk/', '/takimlarimiz/', '/varliklar/', ...['ashina', 'ashina-h', 'ashina-inovasyon', 'burkut', 'cagri', 'cevre-enerji', 'girisimcilik', 'insansiz-deniz-araci', 'insansiz-su-alti', 'sanayide-dijital', 'su-alti-roketi', 'suru-iha', 'tika-ika'].map(x => '/takimlarimiz/' + x + '/')];
+  const routes = ['/', '/hakkimizda/', '/ekibimiz/', '/bize-katilin/', '/iletisim/', '/basarilarimiz/', '/faaliyetlerimiz/', '/galeri/', '/haberler/', '/sponsorluk/', '/takimlarimiz/', '/varliklar/', ...['insansiz-hava-araclari', 'hava-savunma-sistemleri', 'tarim-teknolojileri', 'ucan-araba-simulasyonu', 'kablosuz-haberlesme', 'cevre-enerji-teknolojileri', 'teknoloji-girisimciligi', 'insansiz-deniz-araci', 'insansiz-su-alti-sistemleri', 'sanayide-robotik-ve-dijital', 'su-alti-roket-sistemleri', 'suru-insansiz-hava-araci', 'insansiz-kara-araci'].map(x => '/takimlarimiz/' + x + '/')];
   const results = [];
   for (const width of [1440, 390]) {
     await page.setViewportSize({ width, height: 900 });

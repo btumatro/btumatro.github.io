@@ -167,7 +167,10 @@ export function instagramUrl(handle?: string | null): string | null {
  * yeni bir alt takım eklendiğinde koda dokunmadan panelden tanımlanabilir.
  */
 export function teamIndex(
-  teams: { id: string; data: { title: string; aliases?: string[] } }[]
+  teams: {
+    id: string;
+    data: { title: string; aliases?: string[]; altTakimlar?: { ad: string; sayfa?: string }[] };
+  }[]
 ): Map<string, string> {
   const index = new Map<string, string>();
   const key = (s: string) => s.trim().toLocaleLowerCase('tr');
@@ -175,7 +178,25 @@ export function teamIndex(
     index.set(key(t.data.title), t.id);
     for (const a of t.data.aliases ?? []) if (a.trim()) index.set(key(a), t.id);
   }
+  // Alt takım adları, türe ait sayfadaki kendi kartına bağlanır. Kendi sayfası olan
+  // alt takımlar (sayfa alanı dolu) o sayfanın başlığı/alias'ı üzerinden eşleşir.
+  for (const t of teams) {
+    for (const alt of t.data.altTakimlar ?? []) {
+      if (!alt.ad.trim()) continue;
+      index.set(key(alt.ad), alt.sayfa?.trim() ? alt.sayfa.trim() : `${t.id}#${altTakimAnchor(alt.ad)}`);
+    }
+  }
   return index;
+}
+
+/** Alt takım adından sayfa içi bağlantı kimliği: "LUNA İKA" → "luna-ika". */
+export function altTakimAnchor(ad: string): string {
+  const harf: Record<string, string> = { ç: 'c', ğ: 'g', ı: 'i', ö: 'o', ş: 's', ü: 'u', â: 'a', î: 'i', û: 'u' };
+  return ad
+    .toLocaleLowerCase('tr')
+    .replace(/[çğıöşüâîû]/g, (c) => harf[c] ?? c)
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-|-$/g, '');
 }
 
 /** Takım adına karşılık gelen sayfa yolu; eşleşme yoksa null. */

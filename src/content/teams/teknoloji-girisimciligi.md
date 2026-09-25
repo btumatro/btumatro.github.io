@@ -1,6 +1,6 @@
 ---
-title: GİRİŞİMCİLİK VE İNOVASYON
-subtitle: Ürünleşme ve Teknoloji Girişimciliği
+title: Ürünleşme ve Teknoloji Girişimciliği
+subtitle: "SYNTAX · SCENDERS"
 category: Girişimcilik
 status: Aktif
 order: 13
@@ -12,17 +12,34 @@ gallery:
 badge: ""
 instagram: ""
 aliases:
+  - "GİRİŞİMCİLİK VE İNOVASYON"
   - "INNOSENS"
   - "SYNTAX"
   - "SCENDERS"
   - "GİRİŞİMCİLİK"
+altTakimlar:
+  - ad: "INNOSENS"
+    yillar: "2023"
+    aciklama: "Robot teknolojileri alanında kurulan girişim."
+    basarilar:
+      - "TEKNOFEST 2023 T3 Girişimcilik — Türkiye 1.si (75.000 TL)"
+  - ad: "SYNTAX"
+    aktif: true
+    yillar: "2026"
+    basarilar:
+      - "Advance-Up Hackathon 2026 — Türkiye 3.sü"
+  - ad: "SCENDERS"
+    aktif: true
+    yillar: "2026"
+    basarilar:
+      - "Türkiye Uzay Ajansı Astro Hackathon 2026 — Bölge 5.si"
 focus:
   - Teknoloji girişimciliği
   - Ürünleşme ve iş modeli tasarımı
   - Hackathon ve fikir yarışmaları
 achievements:
-  - "Türkiye Uzay Ajansı Astro Hackathon 2026 — 5.lik (SCENDERS)"
-  - "Advance-Up Hackathon 2025 — Türkiye 3.sü (SYNTAX)"
+  - "Türkiye Uzay Ajansı Astro Hackathon 2026 — Bölge 5.si (SCENDERS)"
+  - "Advance-Up Hackathon 2026 — Türkiye 3.sü (SYNTAX)"
   - "TEKNOFEST 2023 T3 Girişimcilik — Türkiye 1.si (INNOSENS Robot Teknolojileri, 75.000 TL)"
   - "GDG Yapay Zekâ Hackathonu 2024 — Türkiye 1.si"
   - "NASA Space Apps Challenge 2024 — Bölge 1.si"

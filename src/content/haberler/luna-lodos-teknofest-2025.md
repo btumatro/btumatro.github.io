@@ -9,7 +9,7 @@ image: "/media/haber-luna-lodos.jpg"
 link: ""
 linkLabel: ""
 teams:
-  - "tika-ika"
+  - "insansiz-kara-araci"
   - "insansiz-deniz-araci"
 summary: "Aylar süren hazırlık sürecinin ardından LUNA ve LODOS ekiplerimiz TEKNOFEST 2025 yarışmaları için yarışma alanına hareket etti."
 ---

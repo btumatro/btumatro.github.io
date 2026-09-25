@@ -1,6 +1,6 @@
 ---
-title: MATRİS
-subtitle: Sürü İnsansız Hava Aracı
+title: Sürü İnsansız Hava Aracı
+subtitle: "MATRİS"
 category: Havacılık
 status: Aktif
 order: 6
@@ -19,6 +19,13 @@ instagram: "btu_matris"
 aliases:
   - "MATRİS"
   - "SÜRÜ İHA"
+altTakimlar:
+  - ad: "MATRİS"
+    aktif: true
+    yillar: "2026"
+    aciklama: "Şubat 2026'da kurulan ve ilk sezonunda finale kalan sürü İHA ekibimiz."
+    basarilar:
+      - "TEKNOFEST 2026 HAVELSAN Sürü İnsansız Hava Aracı — Türkiye Finalisti (165 başvurudan 19 finalist)"
 focus:
   - Sürü halinde otonom uçuş
   - Çoklu araç koordinasyonu

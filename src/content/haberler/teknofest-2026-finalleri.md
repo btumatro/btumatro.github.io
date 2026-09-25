@@ -13,10 +13,10 @@ gallery:
 link: "https://www.instagram.com/p/DdGJr1cjfko/"
 linkLabel: "Instagram gönderisi"
 teams:
-  - "ashina"
-  - "sanayide-dijital"
-  - "tika-ika"
-  - "suru-iha"
+  - "insansiz-hava-araclari"
+  - "sanayide-robotik-ve-dijital"
+  - "insansiz-kara-araci"
+  - "suru-insansiz-hava-araci"
 summary: "Aynı çatı, farklı şehirler, tek hedef: ASHİNA, PUSULA, LUNA İKA ve MATRİS takımlarımız TEKNOFEST 2026 finallerinde Türkiye'nin dört ayrı şehrinde üniversitemizi temsil ediyor."
 ---
 

@@ -1,12 +1,16 @@
 ---
-title: ASHİNA İNOVASYON
-subtitle: Tarım Teknolojileri
+title: Tarım Teknolojileri
+subtitle: "ASHİNA İNOVASYON"
 category: Tarım Teknolojileri
 status: Yeni Takım
 order: 9
 image: "/media/takim-ashina-inovasyon.jpg"
 badge: ""
 instagram: ""
+altTakimlar:
+  - ad: "ASHİNA İNOVASYON"
+    aktif: true
+    aciklama: "Araştırma Proje Yarışması Tarım Kategorisi kapsamında çalışan araştırma ekibi."
 focus:
   - Akıllı tarım çözümleri
   - Sürdürülebilir üretim teknolojileri

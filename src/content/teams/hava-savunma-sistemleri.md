@@ -1,6 +1,6 @@
 ---
-title: GÖKSAV
-subtitle: Hava Savunma Sistemleri (ASHİNA-H)
+title: Hava Savunma Sistemleri
+subtitle: "GÖKSAV"
 category: Savunma
 status: Aktif
 order: 8
@@ -14,6 +14,17 @@ aliases:
   - "ASHİNA-H"
   - "MERGEN"
   - "MERGEN HSS"
+altTakimlar:
+  - ad: "GÖKSAV"
+    aktif: true
+    yillar: "2025"
+    ust: "ASHİNA-H"
+    aciklama: "ASELSAN Hava Savunma Sistemleri Yarışması ekibimiz."
+    basarilar:
+      - "TEKNOFEST 2025 ASELSAN Hava Savunma Sistemleri — Rapor 3.sü"
+  - ad: "MERGEN"
+    tur: "Araç"
+    aciklama: "Hedef takip odaklı hava savunma sistemi."
 focus:
   - Hava savunma sistem entegrasyonu
   - Radar ve sensör takibi

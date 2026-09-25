@@ -400,8 +400,8 @@ content:
       primary: title
       sort: [order, title]
     fields:
-      - { name: title, label: Takım adı, type: string, required: true }
-      - { name: subtitle, label: Alt başlık, type: string, description: "Örn: İnsansız Hava Araçları Sistemleri" }
+      - { name: title, label: Alan adı, type: string, required: true, description: "Takım türü. Örn: İnsansız Kara Aracı. Özel adlar (LUNA, ASHİNA) aşağıdaki Takımlar ve araçlar listesine girer." }
+      - { name: subtitle, label: Aktif takımlar, type: string, description: "Kartta ve başlık altında görünür. Bu sezon aktif alt takım adları. Örn: LUNA veya ASHİNA · BÜRKÜT · ÇAĞRI" }
       - name: category
         label: Kategori
         type: string
@@ -435,11 +435,33 @@ content:
         type: string
         description: "Sadece kullanıcı adı, @ olmadan. Örn: btu_matris. Boşsa bağlantı gösterilmez."
       - name: aliases
-        label: Alt takım adları
+        label: Diğer adlar
         type: string
         list:
           collapsible: true
-        description: "Başarı listesinde bu adlar geçtiğinde bu takım sayfasına bağlanır. Örn: LODOS, MATROVER."
+        description: "Başarı listesinde bu adlar geçtiğinde bu sayfaya bağlanır (eski adlar, farklı yazımlar). Alt takımları aşağıdaki listeye ekleyin."
+      - name: altTakimlar
+        label: Takımlar ve araçlar
+        type: object
+        list:
+          collapsible: true
+        description: "Bu alandaki özel adlı takımlar ve araçlar (ör. LUNA, MATROVER). Sayfanın altında açılır kart olarak görünür; başarı listesindeki aynı ad bu karta bağlanır."
+        fields:
+          - { name: ad, label: Ad, type: string, required: true }
+          - name: tur
+            label: Tür
+            type: select
+            options:
+              values: ["", Takım, Araç]
+          - { name: aktif, label: Bu sezon aktif, type: boolean }
+          - { name: yillar, label: Yıllar, type: string, description: "Örn: 2025–2026" }
+          - { name: ust, label: Bağlı olduğu ekip, type: string, description: "Örn: ASHİNA bünyesinde" }
+          - { name: sayfa, label: Kendi sayfası (dosya adı), type: string, description: "Doluysa kart bu takım sayfasına gider. Örn: ucan-araba-simulasyonu" }
+          - { name: aciklama, label: Kısa açıklama, type: text }
+          - name: basarilar
+            label: Dereceler
+            type: string
+            list: true
       - name: focus
         label: Odak alanları
         type: string

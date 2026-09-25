@@ -7,7 +7,7 @@
   "packages": [
     {
       "name": "Platin",
-      "range": "101.000 TL ve üzeri",
+      "range": "151.000 TL ve üzeri",
       "highlight": true,
       "benefits": [
         "Sosyal medyada platin temalı teşekkür paylaşımı",
@@ -24,7 +24,7 @@
     },
     {
       "name": "Altın",
-      "range": "51.000 – 100.000 TL",
+      "range": "81.000 TL – 150.000 TL",
       "highlight": false,
       "benefits": [
         "Sosyal medyada altın temalı teşekkür paylaşımı",
@@ -39,7 +39,7 @@
     },
     {
       "name": "Gümüş",
-      "range": "26.000 – 50.000 TL",
+      "range": "41.000 TL – 80.000 TL",
       "highlight": false,
       "benefits": [
         "Sosyal medyada gümüş temalı teşekkür paylaşımı",
@@ -53,7 +53,7 @@
     },
     {
       "name": "Bronz",
-      "range": "11.000 – 25.000 TL",
+      "range": "20.000 TL – 40.000 TL",
       "highlight": false,
       "benefits": [
         "Sosyal medyada bronz temalı teşekkür paylaşımı",
@@ -87,7 +87,7 @@
     "description": "Sponsorluk dosyamızı ve bu yılki proje hedeflerimizi içeren sunumumuzu sizinle paylaşalım.",
     "buttonLabel": "Sponsorluk için iletişime geçin"
   },
-  "packagesNote": "Kademeler ve tanınan haklar MATRO 2026-2027 sponsorluk dosyasına göredir. Sponsorluk, Bursa Teknik Üniversitesi'nin resmî sponsorluk süreciyle kayda geçer. Tanıtım standlarında satış ve pazarlama yapılamaz.",
+  "packagesNote": "Tanınan haklar MATRO 2026-2027 sponsorluk dosyasına göredir. Sponsorluk, Bursa Teknik Üniversitesi'nin resmî sponsorluk süreciyle kayda geçer. Tanıtım standlarında satış ve pazarlama yapılamaz.",
   "officialForm": {
     "title": "Sponsorluk süreci nasıl işliyor?",
     "description": "Sponsorluk, Bursa Teknik Üniversitesi Rektörlüğü'ne sunulan resmî bir form ile kayda geçer. Formu, ilgili tüm belgeleri ve bağış hesabı bilgilerini görüşmemizin ardından size biz iletiyoruz.",

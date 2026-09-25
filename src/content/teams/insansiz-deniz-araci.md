@@ -1,6 +1,6 @@
 ---
-title: İDA
-subtitle: İnsansız Deniz Aracı
+title: İnsansız Deniz Aracı
+subtitle: "LODOS"
 category: Deniz Araçları
 status: Aktif
 order: 3
@@ -22,7 +22,15 @@ videoPoster: "/media/video-lodos-tanitim.jpg"
 badge: "2026 Finalisti"
 instagram: "lodos.tech"
 aliases:
+  - "İDA"
   - "LODOS"
+altTakimlar:
+  - ad: "LODOS"
+    aktif: true
+    yillar: "2026"
+    aciklama: "Gövdesinden otonom kontrol sistemine kadar aracını kendi atölyesinde üreten ekip; Mavi Vatan finallerinde yarıştı."
+    basarilar:
+      - "TEKNOFEST 2026 ASELSAN İnsansız Deniz Aracı — Türkiye Finalisti"
 focus:
   - Deniz üstü otonomi
   - Rotalandırma ve seyir algoritmaları

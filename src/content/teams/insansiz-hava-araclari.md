@@ -1,6 +1,6 @@
 ---
-title: ASHİNA
-subtitle: İnsansız Hava Araçları Sistemleri
+title: İnsansız Hava Araçları Sistemleri
+subtitle: "ASHİNA · BÜRKÜT · ÇAĞRI · GÖKSAV"
 category: Havacılık
 status: Aktif
 order: 1
@@ -24,6 +24,34 @@ aliases:
   - "LAGARİ"
   - "FIRAT"
   - "YELKOVAN"
+altTakimlar:
+  - ad: "ASHİNA"
+    aktif: true
+    aciklama: "Güncel İHA takımımız. TÜBİTAK Uluslararası İHA ve Serbest Görev İHA yarışmalarında yarışır; BÜRKÜT, ÇAĞRI ve ASHİNA-H da aynı ekibin takımlarıdır."
+    basarilar:
+      - "TEKNOFEST 2026 TÜBİTAK Uluslararası İnsansız Hava Araçları — Türkiye Finalisti"
+      - "TEKNOFEST 2024 TÜBİTAK Uluslararası Serbest Görev İHA — Türkiye 19.su"
+      - "TEKNOFEST 2023 İnsansız Hava Araçları — En İyi Performans Ödülü"
+      - "TEKNOFEST 2022 İnsansız Hava Araçları — Türkiye 4.sü"
+      - "TEKNOFEST 2021 İnsansız Hava Araçları — Türkiye 3.sü"
+  - ad: "BÜRKÜT"
+    aktif: true
+    ust: "ASHİNA bünyesinde"
+    sayfa: "ucan-araba-simulasyonu"
+  - ad: "ÇAĞRI"
+    aktif: true
+    ust: "ASHİNA bünyesinde"
+    sayfa: "kablosuz-haberlesme"
+  - ad: "GÖKSAV"
+    aktif: true
+    ust: "ASHİNA-H"
+    sayfa: "hava-savunma-sistemleri"
+  - ad: "LAGARİ"
+    yillar: "2013"
+    basarilar:
+      - "Future Flight Design (FFD'13) — Dünya 2.si"
+  - ad: "FIRAT"
+  - ad: "YELKOVAN"
 focus:
   - Otonom İHA sistemleri
   - Derin öğrenme tabanlı görüntü işleme

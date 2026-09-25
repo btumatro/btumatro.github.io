@@ -11,7 +11,7 @@ gallery:
 link: "https://www.instagram.com/reel/DcitY77teii/"
 linkLabel: "Instagram gönderisi"
 teams:
-  - "su-alti-roketi"
+  - "su-alti-roket-sistemleri"
 summary: "ROKETSAN tarafından bu yıl ikinci kez düzenlenen Su Altı Roket kategorisinde ilk kez yarışan ZEMHERİ takımımız finalist oldu ve hakem heyetinin takdirini topladı."
 ---
 

@@ -70,7 +70,7 @@
   },
   "takimlar": [
     {
-      "dosya": "ashina",
+      "dosya": "insansiz-hava-araclari",
       "tam": true,
       "foto": "/media/galeri-ashina-tubitak-sahne.jpg",
       "ek": [
@@ -79,7 +79,7 @@
       ]
     },
     {
-      "dosya": "tika-ika",
+      "dosya": "insansiz-kara-araci",
       "tam": true,
       "foto": "/media/galeri-matrover-arazi-test.jpg",
       "ek": [
@@ -98,7 +98,7 @@
       "fotoKonum": "center 15%"
     },
     {
-      "dosya": "insansiz-su-alti",
+      "dosya": "insansiz-su-alti-sistemleri",
       "tam": true,
       "foto": "/media/takim-iss-sualti-araci.jpg",
       "ek": [
@@ -107,7 +107,7 @@
       ]
     },
     {
-      "dosya": "su-alti-roketi",
+      "dosya": "su-alti-roket-sistemleri",
       "tam": true,
       "foto": "/media/takim-zemheri.jpg",
       "ek": [
@@ -116,7 +116,7 @@
       ]
     },
     {
-      "dosya": "suru-iha",
+      "dosya": "suru-insansiz-hava-araci",
       "tam": true,
       "foto": "/media/webmedya-suru-iha-35.jpg",
       "ek": [
@@ -125,7 +125,7 @@
       ]
     },
     {
-      "dosya": "sanayide-dijital",
+      "dosya": "sanayide-robotik-ve-dijital",
       "tam": true,
       "foto": "/media/galeri-pusula-atolye.jpg",
       "ek": [
@@ -134,27 +134,27 @@
       ]
     },
     {
-      "dosya": "ashina-h",
+      "dosya": "hava-savunma-sistemleri",
       "foto": "/media/galeri-mergen-hss.jpg"
     },
     {
-      "dosya": "cevre-enerji",
+      "dosya": "cevre-enerji-teknolojileri",
       "foto": "/media/galeri-alhazen-laboratuvar.jpg"
     },
     {
-      "dosya": "burkut",
+      "dosya": "ucan-araba-simulasyonu",
       "foto": "/media/galeri-burkut-simulasyon-ekip.jpg"
     },
     {
-      "dosya": "cagri",
+      "dosya": "kablosuz-haberlesme",
       "foto": "/media/cagri-team-cropped.jpg"
     },
     {
-      "dosya": "girisimcilik",
+      "dosya": "teknoloji-girisimciligi",
       "foto": "/media/galeri-girisim-75000-odul.jpg"
     },
     {
-      "dosya": "ashina-inovasyon",
+      "dosya": "tarim-teknolojileri",
       "foto": "/media/takim-ashina-inovasyon.jpg"
     }
   ],

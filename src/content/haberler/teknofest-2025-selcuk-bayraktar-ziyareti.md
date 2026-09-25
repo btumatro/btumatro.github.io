@@ -9,7 +9,7 @@ image: "/media/takim-luna-ika.jpg"
 link: ""
 linkLabel: ""
 teams:
-  - "tika-ika"
+  - "insansiz-kara-araci"
 summary: "İnsansız Kara Aracı yarışmasında yer alan MATROVER ekibimiz, TEKNOFEST 2025'te standımızı ziyaret eden Selçuk Bayraktar ile bir araya geldi."
 ---
 

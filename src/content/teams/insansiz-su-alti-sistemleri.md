@@ -1,6 +1,6 @@
 ---
-title: İSS
-subtitle: İnsansız Su Altı Sistemleri
+title: İnsansız Su Altı Sistemleri
+subtitle: "PRUSA"
 category: Sualtı Sistemleri
 status: Aktif
 order: 4
@@ -24,9 +24,19 @@ videoPoster: "/media/video-prusa-tanitim.jpg"
 badge: "2026 Finalisti"
 instagram: "prusateam"
 aliases:
+  - "İSS"
   - "PRUSA"
   - "BTU AUV"
   - "BTU DALAY"
+altTakimlar:
+  - ad: "PRUSA"
+    aktif: true
+    yillar: "2026"
+    aciklama: "ASELSAN İnsansız Sualtı Aracı Yarışması ekibimiz."
+    basarilar:
+      - "TEKNOFEST 2026 ASELSAN İnsansız Sualtı Aracı — Türkiye Finalisti"
+  - ad: "BTU AUV"
+  - ad: "BTU DALAY"
 focus:
   - Otonom sualtı aracı (AUV) tasarımı
   - Sualtı görüntü işleme

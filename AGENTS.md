@@ -57,10 +57,18 @@ ve her gün 06:00 TR'de (süresi geçen duyurular düşsün diye) otomatik build
   eşleşmeleri saymamaya dikkat eder — bkz. dosyadaki yorum).
 - **Taslak/süreli içerik**: `haberler` koleksiyonunda `draft: true` hiç yayınlanmaz,
   `expiresOn` geçmişse içerik düşer (`publishedNews()` bunu `src/lib/utils.ts`'de yapar).
+- **Takım yapısı (Eylül 2026)**: takım sayfaları **türe göre** adlandırılır. `title` takım
+  türüdür ("İnsansız Kara Aracı ve Tarımsal İnsansız Kara Aracı"), `subtitle` bu sezon aktif
+  alt takımların adlarıdır ("LUNA"), dosya adı/slug türün adıdır (`insansiz-kara-araci`).
+  Özel adlı takımlar ve araçlar (LUNA, MATROVER, ASHİNA, BÜRKÜT…) `altTakimlar: []` listesine
+  girer; sayfanın altında açılır kart olarak görünür, başarı listesindeki aynı ad
+  `/takimlarimiz/<slug>#<ad>` kartına bağlanır. Kendi sayfası olan alt takımda `sayfa` alanı
+  doldurulur (ör. ASHİNA altındaki BÜRKÜT → `ucan-araba-simulasyonu`). Eski slug'lar
+  (`tika-ika`, `ashina`…) `astro.config.mjs` → `redirects` ile yeni adreslere yönlenir.
 - **Görsel/takım/haber ilişkileri**: bir haberin `teams: []` alanı ilgili takım sayfalarına
-  bağlanır (dosya adıyla, `tika-ika` gibi); bir takımın `aliases: []` alanı, başarı listesinde
-  geçen alt takım adlarını (LODOS, MATROVER…) o takımın sayfasına bağlar (`teamIndex()`/
-  `teamHref()`). Yeni alt takım eklerken `aliases`'a eklemeyi unutma.
+  bağlanır (dosya adıyla, `insansiz-kara-araci` gibi); `aliases: []` eski adları ve farklı
+  yazımları (İDA, LUNA İKA…) o sayfaya bağlar (`teamIndex()`/`teamHref()`). Yeni alt takım
+  eklerken `altTakimlar`'a eklemeyi unutma.
 
 ## Görsel kuralları
 
@@ -91,8 +99,8 @@ ve her gün 06:00 TR'de (süresi geçen duyurular düşsün diye) otomatik build
 1. **MediaGaleri her yerde bağlandı ama tam doldurulmadı.** Bileşen ve şema hazır
    (`src/components/MediaGaleri.astro`, üç koleksiyonda da `gallery` alanı var, `haberler.astro`/
    `faaliyetlerimiz.astro`/`takimlarimiz/[slug].astro` bağlı). Şu an gerçek çoklu görseli olan
-   içerikler: takımlardan `tika-ika`, `insansiz-deniz-araci`, `insansiz-su-alti`, `suru-iha`,
-   `su-alti-roketi`, `ashina`; haberlerden `turkish-technic-muhendislik-calistayi`,
+   içerikler: takımlardan `insansiz-kara-araci`, `insansiz-deniz-araci`, `insansiz-su-alti-sistemleri`,
+   `suru-insansiz-hava-araci`, `su-alti-roket-sistemleri`, `insansiz-hava-araclari`; haberlerden `turkish-technic-muhendislik-calistayi`,
    `hktm-teknik-gezisi`, `zemheri-su-alti-roketi-finalist`. **Geri kalan tüm takım/haber/faaliyet
    kayıtlarının `gallery` alanı boş** — kullanıcının paylaştığı Google Drive klasöründe
    (bkz. aşağıdaki link) çok daha fazla ham fotoğraf var, işlenip eklenmeyi bekliyor.

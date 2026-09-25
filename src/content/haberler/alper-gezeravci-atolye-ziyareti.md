@@ -11,8 +11,8 @@ gallery:
 link: ""
 linkLabel: ""
 teams:
-  - "sanayide-dijital"
-  - "tika-ika"
+  - "sanayide-robotik-ve-dijital"
+  - "insansiz-kara-araci"
   - "insansiz-deniz-araci"
 summary: "Türkiye'nin ilk astronotu Alper Gezeravcı ve BTÜ Rektörü Prof. Dr. Naci Çağlar, atölyemizi ziyaret ederek takımlarımızın projelerini inceledi."
 ---

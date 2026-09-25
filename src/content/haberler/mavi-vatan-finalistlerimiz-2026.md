@@ -15,8 +15,8 @@ link: "https://www.instagram.com/p/DcO-NgqNSsj/"
 linkLabel: "Instagram gönderisi"
 teams:
   - "insansiz-deniz-araci"
-  - "su-alti-roketi"
-  - "insansiz-su-alti"
+  - "su-alti-roket-sistemleri"
+  - "insansiz-su-alti-sistemleri"
 summary: "LODOS İnsansız Deniz Aracı, PRUSA İnsansız Sualtı Aracı ve ZEMHERİ Su Altı Roket kategorilerinde TEKNOFEST 2026 finaline kaldı."
 ---
 

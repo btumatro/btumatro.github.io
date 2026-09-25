@@ -1,6 +1,6 @@
 ---
-title: ALHAZEN
-subtitle: Çevre, Enerji ve Nükleer Enerji Teknolojileri
+title: Çevre, Enerji ve Nükleer Enerji Teknolojileri
+subtitle: "ALHAZEN"
 category: Çevre & Enerji
 status: Aktif
 order: 12
@@ -14,6 +14,14 @@ badge: "2026 Ön Rapor Türkiye 2.si"
 instagram: ""
 aliases:
   - "ALHAZEN"
+altTakimlar:
+  - ad: "ALHAZEN"
+    aktif: true
+    yillar: "2025–2026"
+    aciklama: "Yakıt hücresi katalizörlerinden nükleer enerji çevrimi tasarımına uzanan enerji ekibimiz."
+    basarilar:
+      - "TEKNOFEST 2026 Nükleer Enerji Teknolojileri Tasarım Yarışması — Ön Değerlendirme Raporu Türkiye 2.si"
+      - "TEKNOFEST 2025 ENERJİSA Çevre ve Enerji Teknolojileri — Türkiye 7.si"
 focus:
   - Nükleer enerji çevrimi ve sistem tasarımı
   - Termodinamik, ısı transferi ve COMSOL simülasyonu

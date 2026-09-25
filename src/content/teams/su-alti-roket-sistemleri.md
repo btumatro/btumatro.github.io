@@ -1,6 +1,6 @@
 ---
-title: ZEMHERİ
-subtitle: Su Altı Roket Sistemleri
+title: Su Altı Roket Sistemleri
+subtitle: "ZEMHERİ"
 category: Sualtı Sistemleri
 status: Yeni Takım
 order: 5
@@ -18,6 +18,18 @@ badge: "2026 Türkiye 9.su"
 instagram: ""
 aliases:
   - "SARA"
+altTakimlar:
+  - ad: "ZEMHERİ"
+    aktif: true
+    yillar: "2026"
+    aciklama: "ROKETSAN Su Altı Roket Yarışması'na ilk kez katılan ekibimiz."
+    basarilar:
+      - "TEKNOFEST 2026 ROKETSAN Su Altı Roket Yarışması — Türkiye 9.su"
+      - "Kritik Tasarım Raporu — Türkiye 4.sü"
+  - ad: "SARA"
+    tur: "Araç"
+    ust: "ZEMHERİ"
+    aciklama: "ZEMHERİ ekibinin su altı roket prototiplerinden biri."
 focus:
   - Su altı roket gövde ve itki tasarımı
   - Sızdırmazlık ve basınç dayanımı

@@ -192,7 +192,7 @@ const icKapak = `<section class="sayfa-tek ic-kapak">
 const tocYer = '<!--TOC-->';
 
 // Takımlar
-const takimSira = ['ashina', 'tika-ika', 'insansiz-deniz-araci', 'insansiz-su-alti', 'su-alti-roketi', 'suru-iha', 'sanayide-dijital', 'ashina-h', 'cevre-enerji', 'burkut', 'cagri', 'girisimcilik', 'ashina-inovasyon'];
+const takimSira = ['insansiz-hava-araclari', 'insansiz-kara-araci', 'insansiz-deniz-araci', 'insansiz-su-alti-sistemleri', 'su-alti-roket-sistemleri', 'suru-insansiz-hava-araci', 'sanayide-robotik-ve-dijital', 'hava-savunma-sistemleri', 'cevre-enerji-teknolojileri', 'ucan-araba-simulasyonu', 'kablosuz-haberlesme', 'teknoloji-girisimciligi', 'tarim-teknolojileri'];
 function takimlar() {
   const kart = (dosya) => {
     const s = fs.readFileSync(path.join(ROOT, `src/content/teams/${dosya}.md`), 'utf8');

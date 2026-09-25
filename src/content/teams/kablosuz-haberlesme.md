@@ -1,12 +1,20 @@
 ---
-title: ÇAĞRI
-subtitle: Kablosuz Haberleşme · ASHİNA bünyesinde
+title: Kablosuz Haberleşme
+subtitle: "ÇAĞRI"
 category: Haberleşme
 status: Aktif
 order: 11
 image: "/media/cagri-team-cropped.jpg"
 badge: ""
 instagram: ""
+altTakimlar:
+  - ad: "ÇAĞRI"
+    aktif: true
+    yillar: "2024"
+    ust: "ASHİNA bünyesinde"
+    aciklama: "Karıştırma altında kesintisiz veri iletimi üzerine çalışan haberleşme ekibi."
+    basarilar:
+      - "TEKNOFEST 2024 ULAK Kablosuz Haberleşme — Türkiye 6.sı (400+ başvurudan 16 finalist)"
 focus:
   - Yazılım tabanlı radyo (SDR) mimarileri
   - Jammer (sinyal karıştırıcı) engelleme algoritmaları

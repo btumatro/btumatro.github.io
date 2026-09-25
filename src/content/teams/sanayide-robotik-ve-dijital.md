@@ -1,6 +1,6 @@
 ---
-title: PUSULA
-subtitle: Sanayide Robotik Uygulamalar ve Dijital Teknolojiler
+title: Sanayide Robotik Uygulamalar ve Dijital Teknolojiler
+subtitle: "PUSULA · ANDROMEDA"
 category: Dijital Teknolojiler
 status: Aktif
 order: 7
@@ -20,6 +20,25 @@ instagram: "pusula_takim"
 aliases:
   - "PUSULA"
   - "ANDROMEDA"
+altTakimlar:
+  - ad: "PUSULA"
+    aktif: true
+    yillar: "2025–2026"
+    aciklama: "Sanayide Robotik Uygulamalar ve Sanayide Dijital Teknolojiler yarışmalarında yarışan ekibimiz."
+    basarilar:
+      - "TEKNOFEST 2026 KOSGEB Sanayide Robotik Uygulamalar — Türkiye Finalisti"
+      - "TEKNOFEST 2025 Sanayide Dijital Teknolojiler — Türkiye 8.si"
+  - ad: "SIRIUS"
+    tur: "Araç"
+    yillar: "2026"
+    ust: "PUSULA"
+    aciklama: "Paleti depodan üretim hattına kendi başına taşıyan otonom forklift."
+  - ad: "ANDROMEDA"
+    aktif: true
+    yillar: "2026"
+    aciklama: "Mesleki Yetenek Yarışması Akıllı Fabrika Sistemleri Programlama kategorisinde yarışan ekip."
+    basarilar:
+      - "TEKNOFEST 2026 Akıllı Fabrika Sistemleri Programlama — Türkiye Finalisti"
 focus:
   - Otonom mobil robotlar ve fabrika içi lojistik
   - ROS 2, SLAM ve navigasyon

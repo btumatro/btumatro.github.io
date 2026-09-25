@@ -24,6 +24,25 @@ const teams = defineCollection({
     instagram: z.string().default(''),
     /** Bu takım çatısı altındaki alt takım adları. Başarı listesinde bağlantı kurmak için kullanılır. */
     aliases: z.array(z.string()).default([]),
+    /**
+     * Bu türün altındaki takım ve araçlar. Sayfanın altında açılır kartlar olarak
+     * listelenir; her kartın bağlantısı `#ad` biçimindedir (bkz. altTakimAnchor).
+     * `sayfa` doluysa kart, o alt takımın kendi sayfasına yönlendirir.
+     */
+    altTakimlar: z
+      .array(
+        z.object({
+          ad: z.string(),
+          tur: z.enum(['', 'Takım', 'Araç']).default(''),
+          aktif: z.boolean().default(false),
+          yillar: z.string().default(''),
+          ust: z.string().default(''),
+          sayfa: z.string().default(''),
+          aciklama: z.string().default(''),
+          basarilar: z.array(z.string()).default([]),
+        }),
+      )
+      .default([]),
     focus: z.array(z.string()).default([]),
     achievements: z.array(z.string()).default([]),
     summary: z.string().default(''),
