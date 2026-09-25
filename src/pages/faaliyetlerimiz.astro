@@ -1,5 +1,6 @@
 ---
 import { getCollection, render } from 'astro:content';
+import IcerikGovdesi from '../components/IcerikGovdesi.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import PageHero from '../components/PageHero.astro';
 import Section from '../components/Section.astro';
@@ -65,7 +66,7 @@ const dateFmt = new Intl.DateTimeFormat('tr-TR', { day: 'numeric', month: 'long'
                   <h2 class="mt-3 text-xl font-bold tracking-tight text-mist-100">
                     {entry.data.title}
                   </h2>
-                  <p class="mt-2 leading-relaxed text-mist-300">{entry.data.summary}</p>
+                  <p class="mt-2 leading-relaxed text-mist-300">{sayiMetni(entry.data.summary)}</p>
 
                   {entry.data.stats.length > 0 && (
                     <dl class="mt-5 flex flex-wrap gap-6">
@@ -99,7 +100,7 @@ const dateFmt = new Intl.DateTimeFormat('tr-TR', { day: 'numeric', month: 'long'
                       </svg>
                     </summary>
                     <div class="prose-matro mt-4 border-t border-white/8 pt-4 text-sm">
-                      <Content />
+                      <IcerikGovdesi entry={entry} />
                     </div>
                   </details>
                 </div>

@@ -1,5 +1,6 @@
 ---
 import { getCollection, render } from 'astro:content';
+import IcerikGovdesi from '../components/IcerikGovdesi.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import PageHero from '../components/PageHero.astro';
 import Section from '../components/Section.astro';
@@ -101,7 +102,7 @@ const takimlar = new Map(
                           </svg>
                         </summary>
                         <div class="prose-matro mt-4 border-t border-white/8 pt-4 text-sm">
-                          <Content />
+                          <IcerikGovdesi entry={entry} />
                         </div>
                       </details>
                     </div>

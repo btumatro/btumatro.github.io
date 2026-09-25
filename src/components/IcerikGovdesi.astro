@@ -1,0 +1,16 @@
+---
+/**
+ * Markdown içerik gövdesi. İşlenmiş HTML'deki {anahtar} yer tutucuları
+ * `sayiMetni()` ile sayilar.json / achievements.json değerleriyle doldurulur;
+ * böylece metinlerdeki sayılar da tek kaynaktan gelir.
+ */
+import { render } from 'astro:content';
+import { sayiMetni } from '../lib/sayilar';
+
+interface Props { entry: { rendered?: { html?: string } } & Parameters<typeof render>[0] }
+const { entry } = Astro.props;
+const html = entry.rendered?.html;
+const Content = html ? null : (await render(entry)).Content;
+---
+
+{html ? <Fragment set:html={sayiMetni(html)} /> : Content && <Content />}

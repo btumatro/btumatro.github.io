@@ -1,5 +1,6 @@
 ---
 import { getCollection, render, type CollectionEntry } from 'astro:content';
+import IcerikGovdesi from '../../components/IcerikGovdesi.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import CtaBand from '../../components/CtaBand.astro';
 import BasvuruButonlari from '../../components/BasvuruButonlari.astro';
@@ -151,7 +152,7 @@ const others = (await getCollection('teams'))
 
     <div class="container-matro grid gap-12 py-14 md:py-20 lg:grid-cols-[1.5fr_1fr]">
       <div class="prose-matro reveal max-w-none">
-        <Content />
+        <IcerikGovdesi entry={team} />
       </div>
 
       <aside class="space-y-5">
