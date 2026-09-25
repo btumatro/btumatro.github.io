@@ -6,6 +6,7 @@ import BasvuruButonlari from '../../components/BasvuruButonlari.astro';
 import { altTakimAnchor, instagramUrl, url } from '../../lib/utils';
 import MediaGaleri from '../../components/MediaGaleri.astro';
 import LocalVideo from '../../components/LocalVideo.astro';
+import galeri from '../../data/gallery.json';
 
 export async function getStaticPaths() {
   const teams = await getCollection('teams');
@@ -22,6 +23,8 @@ interface Props {
 const { team } = Astro.props;
 const { Content } = await render(team);
 const takimInstagram = instagramUrl(team.data.instagram);
+// Genel galeride bu takıma etiketlenmiş kare sayısı; varsa filtreli galeriye bağlantı verilir.
+const galeriSayisi = (galeri.images as { takim?: string }[]).filter((g) => g.takim === team.id).length;
 
 // Alt takımlar: aktif olanlar önce, sonra listedeki sıra korunur.
 const altTakimlar = [...team.data.altTakimlar].sort((a, b) => Number(b.aktif) - Number(a.aktif));
@@ -126,6 +129,15 @@ const others = (await getCollection('teams'))
         class="mx-auto mt-10 max-w-3xl"
         imgClass="aspect-[16/9] w-full rounded-2xl border border-white/10 object-cover"
       />
+      {
+        galeriSayisi > 0 && (
+          <p class="mx-auto mt-4 max-w-3xl text-right">
+            <a href={`${url('/galeri')}?takim=${team.id}`} class="text-sm font-semibold text-volt-400 hover:text-volt-300">
+              Galeride bu takımın {galeriSayisi} karesi ↗
+            </a>
+          </p>
+        )
+      }
       {
         team.data.video && (
           <LocalVideo

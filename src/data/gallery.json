@@ -9,7 +9,13 @@
     {
       "image": "/media/galeri-odul-vitrini-kampus.jpg",
       "caption": "Kampüsümüzde kupa ve proje vitrinimiz",
-      "category": "Etkinlik"
+      "category": "Ödül ve Derece"
+    },
+    {
+      "image": "/media/galeri-ashina-2024-serbest-gorev-ekip.jpg",
+      "caption": "ASHİNA ekibimiz TEKNOFEST 2024 Uluslararası Serbest Görev İHA Yarışması'nda",
+      "category": "Yarışma",
+      "takim": "insansiz-hava-araclari"
     },
     {
       "image": "/media/galeri-kampus-fuar-standi.jpg",
@@ -19,47 +25,85 @@
     {
       "image": "/media/galeri-ashina-bayraktar.jpg",
       "caption": "ASHİNA ekibimiz, Selçuk Bayraktar ile İHA standımızda",
-      "category": "Yarışma"
+      "category": "Yarışma",
+      "takim": "insansiz-hava-araclari"
+    },
+    {
+      "image": "/media/galeri-ashina-atolye-iha.jpg",
+      "caption": "ASHİNA İHA'sı atölyede",
+      "category": "Araçlar",
+      "takim": "insansiz-hava-araclari"
     },
     {
       "image": "/media/galeri-ashina-model-ucak-ekip.jpg",
       "caption": "ASHİNA ekibimiz sabit kanat model uçağıyla",
-      "category": "Yarışma"
+      "category": "Yarışma",
+      "takim": "insansiz-hava-araclari"
     },
     {
       "image": "/media/galeri-matrover-teknofest-cadir.jpg",
       "caption": "MATROVER ekibimiz TEKNOFEST çadırında",
-      "category": "Yarışma"
+      "category": "Yarışma",
+      "takim": "insansiz-kara-araci"
+    },
+    {
+      "image": "/media/galeri-ashina-pist-testi.jpg",
+      "caption": "ASHİNA ekibi pistte uçuş testinde",
+      "category": "Atölye",
+      "takim": "insansiz-hava-araclari"
     },
     {
       "image": "/media/galeri-matrover-parkur-ekip.jpg",
       "caption": "MATROVER ekibimiz yarışma parkurunda",
-      "category": "Yarışma"
+      "category": "Yarışma",
+      "takim": "insansiz-kara-araci"
     },
     {
       "image": "/media/galeri-zemheri-liman-ekip.jpg",
       "caption": "ZEMHERİ ekibimiz roketiyle limanda",
-      "category": "Yarışma"
+      "category": "Yarışma",
+      "takim": "su-alti-roket-sistemleri"
+    },
+    {
+      "image": "/media/galeri-ashina-gece-testi.jpg",
+      "caption": "ASHİNA ekibi gece testlerinde",
+      "category": "Atölye",
+      "takim": "insansiz-hava-araclari"
     },
     {
       "image": "/media/galeri-lodos-liman-ekip.jpg",
       "caption": "LODOS ekibimiz teknesiyle limanda",
-      "category": "Yarışma"
+      "category": "Yarışma",
+      "takim": "insansiz-deniz-araci"
     },
     {
       "image": "/media/galeri-matris-havelsan-stand.jpg",
       "caption": "MATRİS ekibimiz HAVELSAN Sürü İHA standında",
-      "category": "Yarışma"
+      "category": "Yarışma",
+      "takim": "suru-insansiz-hava-araci"
+    },
+    {
+      "image": "/media/galeri-ashina-hangar.jpg",
+      "caption": "ASHİNA İHA'sı hangarda",
+      "category": "Araçlar",
+      "takim": "insansiz-hava-araclari"
     },
     {
       "image": "/media/takim-sanayide-dijital.jpg",
       "caption": "PUSULA ekibimiz yarışma sahnesinde",
-      "category": "Yarışma"
+      "category": "Yarışma",
+      "takim": "sanayide-robotik-ve-dijital"
     },
     {
       "image": "/media/galeri-tubitak-mam-gezisi.jpg",
       "caption": "TÜBİTAK Marmara Araştırma Merkezi gezimiz",
       "category": "Teknik Gezi"
+    },
+    {
+      "image": "/media/galeri-ashina-teknofest-cadir.jpg",
+      "caption": "ASHİNA ekibimiz TEKNOFEST yarışma çadırında",
+      "category": "Yarışma",
+      "takim": "insansiz-hava-araclari"
     },
     {
       "image": "/media/etkinlik-alper-gezeravci.jpg",
@@ -69,27 +113,50 @@
     {
       "image": "/media/galeri-matrover-2025.jpg",
       "caption": "MATROVER otonom arazi aracı açık saha testlerinde",
-      "category": "Atölye"
+      "category": "Atölye",
+      "takim": "insansiz-kara-araci"
+    },
+    {
+      "image": "/media/galeri-ashina-teknofest-stand.jpg",
+      "caption": "ASHİNA ekibimiz TEKNOFEST standında",
+      "category": "Yarışma",
+      "takim": "insansiz-hava-araclari"
     },
     {
       "image": "/media/takim-alhazen.jpg",
       "caption": "ALHAZEN ekibimizin hidrojen yakıt pili ve ileri malzeme çalışmaları",
-      "category": "Atölye"
+      "category": "Atölye",
+      "takim": "cevre-enerji-teknolojileri"
     },
     {
       "image": "/media/galeri-pusula-ekip-2025.jpg",
       "caption": "PUSULA ekibimiz ve sanayi robotik platformu",
-      "category": "Yarışma"
+      "category": "Yarışma",
+      "takim": "sanayide-robotik-ve-dijital"
+    },
+    {
+      "image": "/media/galeri-ashina-doner-kanat-2025.jpg",
+      "caption": "ASHİNA'nın 2025 döner kanat İHA'sı",
+      "category": "Araçlar",
+      "takim": "insansiz-hava-araclari"
     },
     {
       "image": "/media/galeri-matris-saha.jpg",
       "caption": "MATRİS sürü İHA ekibi yer istasyonu ve uçuş testlerinde",
-      "category": "Atölye"
+      "category": "Atölye",
+      "takim": "suru-insansiz-hava-araci"
     },
     {
       "image": "/media/galeri-alper-gezeravci-detay.jpg",
       "caption": "İlk Türk astronot Alper Gezeravcı Özdemir Bayraktar Atölyemizde kara aracı şasisini incelerken",
-      "category": "Etkinlik"
+      "category": "Etkinlik",
+      "takim": "insansiz-kara-araci"
+    },
+    {
+      "image": "/media/galeri-ashina-iha-tasima-cantasi.jpg",
+      "caption": "ASHİNA İHA'sı taşıma çantasında",
+      "category": "Araçlar",
+      "takim": "insansiz-hava-araclari"
     },
     {
       "image": "/media/topluluk-ekip-selfie.jpg",
@@ -99,97 +166,176 @@
     {
       "image": "/media/gorsel-twizy-matrobot-iletisim.jpg",
       "caption": "Renault Twizy Mobility Challenge En İyi İletişim Ödülü (MATROBOT)",
-      "category": "Yarışma"
+      "category": "Ödül ve Derece",
+      "takim": "ucan-araba-simulasyonu"
+    },
+    {
+      "image": "/media/tasarim-ashina-iha-2026.jpg",
+      "caption": "ASHİNA'nın TEKNOFEST 2026 İHA tasarımı",
+      "category": "Tasarım",
+      "takim": "insansiz-hava-araclari"
     },
     {
       "image": "/media/gorsel-twizy-emizy-birincilik.jpg",
       "caption": "Renault Twizy Mobility Challenge Türkiye birinciliğimiz (EMİZY)",
-      "category": "Yarışma"
+      "category": "Ödül ve Derece",
+      "takim": "ucan-araba-simulasyonu"
     },
     {
       "image": "/media/galeri-pusula-atolye.jpg",
       "caption": "PUSULA ekibi sanayi robotik taşıyıcı platformu atölye mekanik montajında",
-      "category": "Atölye"
+      "category": "Atölye",
+      "takim": "sanayide-robotik-ve-dijital"
+    },
+    {
+      "image": "/media/galeri-ashina-2026-ekip.jpg",
+      "caption": "ASHİNA ekibimiz TEKNOFEST 2026 İnsansız Hava Aracı Yarışması'nda",
+      "category": "Yarışma",
+      "takim": "insansiz-hava-araclari"
     },
     {
       "image": "/media/galeri-matris-test-alani.jpg",
       "caption": "MATRİS sürü hava araçlarının yer kontrol istasyonu telemetri testleri",
-      "category": "Atölye"
+      "category": "Atölye",
+      "takim": "suru-insansiz-hava-araci"
     },
     {
       "image": "/media/galeri-matris-dron-filo.jpg",
       "caption": "MATRİS sürü İHA ekibimizin çoklu araç koordinasyon testleri",
-      "category": "Yarışma"
+      "category": "Yarışma",
+      "takim": "suru-insansiz-hava-araci"
+    },
+    {
+      "image": "/media/galeri-ashina-2026-ekip-2.jpg",
+      "caption": "ASHİNA ekibimiz İHA'sıyla TEKNOFEST 2026 yarışma alanında",
+      "category": "Yarışma",
+      "takim": "insansiz-hava-araclari"
     },
     {
       "image": "/media/galeri-matrobot-tarla-test.jpg",
       "caption": "MATROBOT tarımsal otonom kara aracı açık tarla sürüş testinde",
-      "category": "Yarışma"
+      "category": "Yarışma",
+      "takim": "insansiz-kara-araci"
     },
     {
       "image": "/media/galeri-luna-arac-detay.jpg",
       "caption": "LUNA kara aracı aktüatör ve yüksek torklu tahrik sistemi montajı",
-      "category": "Atölye"
+      "category": "Araçlar",
+      "takim": "insansiz-kara-araci"
+    },
+    {
+      "image": "/media/galeri-burkut-cezeri-odul.jpg",
+      "caption": "BÜRKÜT ekibimiz TEKNOFEST 2024 Uçan Araba Simülasyon Yarışması'nda",
+      "category": "Yarışma",
+      "takim": "ucan-araba-simulasyonu"
     },
     {
       "image": "/media/galeri-lodos-sahil-ekip.jpg",
       "caption": "LODOS ekibimiz göl ve deniz testleri öncesinde hazırlık aşamasında",
-      "category": "Atölye"
+      "category": "Atölye",
+      "takim": "insansiz-deniz-araci"
     },
     {
       "image": "/media/galeri-lodos-deniz-test.jpg",
       "caption": "LODOS insansız deniz aracı su üstü otonom seyir testlerinde",
-      "category": "Yarışma"
+      "category": "Yarışma",
+      "takim": "insansiz-deniz-araci"
+    },
+    {
+      "image": "/media/tasarim-hava-savunma-tareti.jpg",
+      "caption": "TEKNOFEST 2025 hava savunma sistemi tasarımımız",
+      "category": "Tasarım",
+      "takim": "hava-savunma-sistemleri"
     },
     {
       "image": "/media/galeri-burkut-simulasyon-ekip.jpg",
       "caption": "BÜRKÜT otonom uçuş simülasyonu ekibi çalışma istasyonlarında",
-      "category": "Atölye"
+      "category": "Atölye",
+      "takim": "ucan-araba-simulasyonu"
     },
     {
       "image": "/media/galeri-alhazen-ekipman.jpg",
       "caption": "ALHAZEN ekibimizin enerji depolama ve analiz test düzeneği",
-      "category": "Atölye"
+      "category": "Atölye",
+      "takim": "cevre-enerji-teknolojileri"
+    },
+    {
+      "image": "/media/galeri-hava-savunma-balon-testi.jpg",
+      "caption": "Hava savunma sisteminin balon hedeflerle testi",
+      "category": "Atölye",
+      "takim": "hava-savunma-sistemleri"
     },
     {
       "image": "/media/galeri-alhazen-laboratuvar.jpg",
       "caption": "ALHAZEN Çevre ve Enerji ekibimiz yakıt pili ve hidrojen laboratuvarında",
-      "category": "Atölye"
+      "category": "Atölye",
+      "takim": "cevre-enerji-teknolojileri"
     },
     {
       "image": "/media/galeri-zemheri-final.jpg",
       "caption": "ZEMHERİ ekibimiz TEKNOFEST 2026 Mavi Vatan finalinde",
-      "category": "Yarışma"
+      "category": "Yarışma",
+      "takim": "su-alti-roket-sistemleri"
+    },
+    {
+      "image": "/media/galeri-zemheri-gece-roket.jpg",
+      "caption": "ZEMHERİ su altı roketi gece testine hazır",
+      "category": "Araçlar",
+      "takim": "su-alti-roket-sistemleri"
     },
     {
       "image": "/media/galeri-zemheri-sara.jpg",
       "caption": "ZEMHERİ'nin SARA aracı Özdemir Bayraktar Teknoloji Atölyesi'nde",
-      "category": "Atölye"
+      "category": "Araçlar",
+      "takim": "su-alti-roket-sistemleri"
     },
     {
       "image": "/media/galeri-prusa-teknofest.jpg",
       "caption": "PRUSA ekibimizin TEKNOFEST 2026 sergileme alanı",
-      "category": "Yarışma"
+      "category": "Yarışma",
+      "takim": "insansiz-su-alti-sistemleri"
+    },
+    {
+      "image": "/media/galeri-zemheri-gece-iskele-testi.jpg",
+      "caption": "ZEMHERİ ekibi gece iskele testinde",
+      "category": "Atölye",
+      "takim": "su-alti-roket-sistemleri"
     },
     {
       "image": "/media/galeri-lodos-teknofest.jpg",
       "caption": "LODOS ekibimiz TEKNOFEST 2026 standında",
-      "category": "Yarışma"
+      "category": "Yarışma",
+      "takim": "insansiz-deniz-araci"
     },
     {
       "image": "/media/galeri-lodos-saha.jpg",
       "caption": "LODOS ekibimiz yarışma sahasında",
-      "category": "Yarışma"
+      "category": "Yarışma",
+      "takim": "insansiz-deniz-araci"
+    },
+    {
+      "image": "/media/galeri-zemheri-teknofest-cadir.jpg",
+      "caption": "ZEMHERİ ekibimiz Su Altı Roket Yarışması çadırında",
+      "category": "Yarışma",
+      "takim": "su-alti-roket-sistemleri"
     },
     {
       "image": "/media/galeri-lodos-ekip-sahil.jpg",
       "caption": "LODOS ekibimiz ve insansız deniz aracı",
-      "category": "Yarışma"
+      "category": "Yarışma",
+      "takim": "insansiz-deniz-araci"
     },
     {
       "image": "/media/haber-tusas-ziyareti.jpg",
       "caption": "TUSAŞ heyeti atölyemizde LODOS prototipini incelerken",
-      "category": "Etkinlik"
+      "category": "Etkinlik",
+      "takim": "insansiz-deniz-araci"
+    },
+    {
+      "image": "/media/galeri-zemheri-atolye-onu.jpg",
+      "caption": "ZEMHERİ ekibimiz Özdemir Bayraktar TEKNOFEST Atölyesi önünde",
+      "category": "Atölye",
+      "takim": "su-alti-roket-sistemleri"
     },
     {
       "image": "/media/galeri-hktm-ekip.jpg",
@@ -202,6 +348,12 @@
       "category": "Teknik Gezi"
     },
     {
+      "image": "/media/galeri-zemheri-ekip-roket.jpg",
+      "caption": "ZEMHERİ ekibimiz roketiyle yarışma alanında",
+      "category": "Yarışma",
+      "takim": "su-alti-roket-sistemleri"
+    },
+    {
       "image": "/media/galeri-turkish-technic-hangar.jpg",
       "caption": "Turkish Technic teknik gezimizde uçak bakım hangarında ekip fotoğrafı",
       "category": "Teknik Gezi"
@@ -210,6 +362,12 @@
       "image": "/media/galeri-turkish-technic-briefing.jpg",
       "caption": "Turkish Technic teknik gezimizde saha bilgilendirmesi",
       "category": "Teknik Gezi"
+    },
+    {
+      "image": "/media/galeri-zemheri-atolye-calisma.jpg",
+      "caption": "ZEMHERİ ekibi atölye çalışmasında",
+      "category": "Atölye",
+      "takim": "su-alti-roket-sistemleri"
     },
     {
       "image": "/media/galeri-turkish-technic-atolye.jpg",
@@ -222,14 +380,28 @@
       "category": "Teknik Gezi"
     },
     {
+      "image": "/media/galeri-zemheri-havuz-testi.jpg",
+      "caption": "ZEMHERİ ekibi havuz testlerinde",
+      "category": "Atölye",
+      "takim": "su-alti-roket-sistemleri"
+    },
+    {
       "image": "/media/takim-zemheri.jpg",
       "caption": "ZEMHERİ ekibimiz su altı roketiyle TEKNOFEST 2026 finalinde",
-      "category": "Yarışma"
+      "category": "Yarışma",
+      "takim": "su-alti-roket-sistemleri"
     },
     {
       "image": "/media/galeri-zemheri-atolye.jpg",
       "caption": "ZEMHERİ ekibimiz yarışma alanında son hazırlıklarda",
-      "category": "Yarışma"
+      "category": "Yarışma",
+      "takim": "su-alti-roket-sistemleri"
+    },
+    {
+      "image": "/media/galeri-zemheri-havuz-dalis.jpg",
+      "caption": "ZEMHERİ roketi havuzda ilk dalma denemesinde",
+      "category": "Araçlar",
+      "takim": "su-alti-roket-sistemleri"
     },
     {
       "image": "/media/haber-alp-havacilik.jpg",
@@ -242,9 +414,16 @@
       "category": "Teknik Gezi"
     },
     {
+      "image": "/media/galeri-sirius-atolye.jpg",
+      "caption": "Otonom forklift SIRIUS atölyede",
+      "category": "Araçlar",
+      "takim": "sanayide-robotik-ve-dijital"
+    },
+    {
       "image": "/media/galeri-matrover-stand.jpg",
       "caption": "MATROVER ekibimiz TEKNOFEST standında",
-      "category": "Yarışma"
+      "category": "Yarışma",
+      "takim": "insansiz-kara-araci"
     },
     {
       "image": "/media/mavi-vatan-ekipler.jpg",
@@ -252,34 +431,64 @@
       "category": "Yarışma"
     },
     {
+      "image": "/media/galeri-sirius-arena.jpg",
+      "caption": "SIRIUS Sanayide Robotik Uygulamalar yarışma alanında",
+      "category": "Yarışma",
+      "takim": "sanayide-robotik-ve-dijital"
+    },
+    {
       "image": "/media/takim-lodos.jpg",
       "caption": "LODOS ekibimiz insansız deniz aracıyla TEKNOFEST 2026 finalinde",
-      "category": "Yarışma"
+      "category": "Yarışma",
+      "takim": "insansiz-deniz-araci"
     },
     {
       "image": "/media/galeri-lodos-ekip.jpg",
       "caption": "LODOS ekibimiz yarışma alanında",
-      "category": "Yarışma"
+      "category": "Yarışma",
+      "takim": "insansiz-deniz-araci"
+    },
+    {
+      "image": "/media/galeri-pusula-2026-ekip.jpg",
+      "caption": "PUSULA ekibimiz TEKNOFEST 2026 Sanayide Robotik Uygulamalar finalinde",
+      "category": "Yarışma",
+      "takim": "sanayide-robotik-ve-dijital"
     },
     {
       "image": "/media/haber-teknofest-2026-finalleri.jpg",
       "caption": "TEKNOFEST 2026 finali — Malatya, ASHİNA",
-      "category": "Yarışma"
+      "category": "Yarışma",
+      "takim": "insansiz-hava-araclari"
     },
     {
       "image": "/media/haber-teknofest-2026-diyarbakir.jpg",
       "caption": "TEKNOFEST 2026 finali — Diyarbakır, PUSULA",
-      "category": "Yarışma"
+      "category": "Yarışma",
+      "takim": "sanayide-robotik-ve-dijital"
+    },
+    {
+      "image": "/media/galeri-pusula-sirius-ekip.jpg",
+      "caption": "PUSULA ekibimiz SIRIUS ile yarışma alanında",
+      "category": "Yarışma",
+      "takim": "sanayide-robotik-ve-dijital"
     },
     {
       "image": "/media/haber-teknofest-2026-mardin.jpg",
       "caption": "TEKNOFEST 2026 finali — Mardin, LUNA İKA",
-      "category": "Yarışma"
+      "category": "Yarışma",
+      "takim": "insansiz-kara-araci"
     },
     {
       "image": "/media/haber-teknofest-2026-gaziantep.jpg",
       "caption": "TEKNOFEST 2026 finali — Gaziantep, MATRİS",
-      "category": "Yarışma"
+      "category": "Yarışma",
+      "takim": "suru-insansiz-hava-araci"
+    },
+    {
+      "image": "/media/galeri-pusula-teknofest-calisma.jpg",
+      "caption": "PUSULA ekibimiz yarışma alanında son hazırlıklarda",
+      "category": "Yarışma",
+      "takim": "sanayide-robotik-ve-dijital"
     },
     {
       "image": "/media/haber-mavi-vatan-finalistleri.jpg",
@@ -292,54 +501,98 @@
       "category": "Etkinlik"
     },
     {
+      "image": "/media/galeri-sirius-govde.jpg",
+      "caption": "SIRIUS'un gövdesi",
+      "category": "Araçlar",
+      "takim": "sanayide-robotik-ve-dijital"
+    },
+    {
       "image": "/media/atolye-araclar.jpg",
       "caption": "Atölyemizde sergilenen proje araçlarımız",
-      "category": "Atölye"
+      "category": "Araçlar"
     },
     {
       "image": "/media/takim-matrover.jpg",
       "caption": "MATROVER ekibimiz TEKNOFEST yarışma alanında",
-      "category": "Yarışma"
+      "category": "Yarışma",
+      "takim": "insansiz-kara-araci"
+    },
+    {
+      "image": "/media/galeri-matris-atolye-cadir.jpg",
+      "caption": "MATRİS ekibimiz yarışma çadırında İHA'ları hazırlarken",
+      "category": "Yarışma",
+      "takim": "suru-insansiz-hava-araci"
     },
     {
       "image": "/media/ika-saha-testi.jpg",
       "caption": "İnsansız kara aracımızın saha testleri",
-      "category": "Yarışma"
+      "category": "Yarışma",
+      "takim": "insansiz-kara-araci"
     },
     {
       "image": "/media/takim-iss-sualti-araci.jpg",
       "caption": "İnsansız sualtı aracımız havuz testinde",
-      "category": "Yarışma"
+      "category": "Araçlar",
+      "takim": "insansiz-su-alti-sistemleri"
+    },
+    {
+      "image": "/media/galeri-matris-iha-ekip.jpg",
+      "caption": "MATRİS ekibimiz sürü İHA'larıyla",
+      "category": "Araçlar",
+      "takim": "suru-insansiz-hava-araci"
     },
     {
       "image": "/media/takim-ida.jpg",
       "caption": "İnsansız deniz aracı ekibimiz yarışma alanında",
-      "category": "Yarışma"
+      "category": "Yarışma",
+      "takim": "insansiz-deniz-araci"
     },
     {
       "image": "/media/takim-ashina.jpg",
       "caption": "ASHİNA ekibimiz insansız hava aracıyla",
-      "category": "Yarışma"
+      "category": "Yarışma",
+      "takim": "insansiz-hava-araclari"
+    },
+    {
+      "image": "/media/galeri-matris-saha-montaj.jpg",
+      "caption": "MATRİS ekibimiz sahada montajda",
+      "category": "Yarışma",
+      "takim": "suru-insansiz-hava-araci"
     },
     {
       "image": "/media/takim-goksav.jpg",
       "caption": "GÖKSAV hava savunma sistemi prototipi",
-      "category": "Atölye"
+      "category": "Araçlar",
+      "takim": "hava-savunma-sistemleri"
     },
     {
       "image": "/media/webmedya-suru-iha-35.jpg",
       "caption": "MATRİS sürü İHA sistemimiz",
-      "category": "Atölye"
+      "category": "Araçlar",
+      "takim": "suru-insansiz-hava-araci"
+    },
+    {
+      "image": "/media/galeri-matris-2026-ekip-saha.jpg",
+      "caption": "MATRİS ekibimiz TEKNOFEST 2026 Sürü İHA Yarışması sahasında",
+      "category": "Yarışma",
+      "takim": "suru-insansiz-hava-araci"
     },
     {
       "image": "/media/odul-girisimcilik.jpg",
       "caption": "TEKNOFEST Girişimcilik Yarışması Türkiye 1.liği ödül töreni",
-      "category": "Yarışma"
+      "category": "Ödül ve Derece",
+      "takim": "teknoloji-girisimciligi"
     },
     {
       "image": "/media/odul-toreni.jpg",
       "caption": "Ödül töreninden bir kare",
-      "category": "Yarışma"
+      "category": "Ödül ve Derece"
+    },
+    {
+      "image": "/media/galeri-lodos-govde-uretim.jpg",
+      "caption": "LODOS gövdesinin atölyede üretimi",
+      "category": "Atölye",
+      "takim": "insansiz-deniz-araci"
     },
     {
       "image": "/media/gezi-togg.jpg",
@@ -352,6 +605,12 @@
       "category": "Teknik Gezi"
     },
     {
+      "image": "/media/galeri-lodos-ic-aksam.jpg",
+      "caption": "LODOS'un iç aksam ve entegrasyon çalışmaları",
+      "category": "Atölye",
+      "takim": "insansiz-deniz-araci"
+    },
+    {
       "image": "/media/fuar-standi.jpg",
       "caption": "Fuar standımızda ziyaretçilerimizle",
       "category": "Etkinlik"
@@ -359,7 +618,14 @@
     {
       "image": "/media/galeri-iss-fuar-standi.jpg",
       "caption": "İSS ekibimiz, sualtı aracımız ve kupalarımızla kampüs fuarında",
-      "category": "Yarışma"
+      "category": "Yarışma",
+      "takim": "insansiz-su-alti-sistemleri"
+    },
+    {
+      "image": "/media/galeri-lodos-havuz-testi.jpg",
+      "caption": "LODOS ekibi havuz testlerinde",
+      "category": "Atölye",
+      "takim": "insansiz-deniz-araci"
     },
     {
       "image": "/media/galeri-meexx-stand.jpg",
@@ -372,6 +638,12 @@
       "category": "Etkinlik"
     },
     {
+      "image": "/media/galeri-lodos-teknofest-cadir.jpg",
+      "caption": "LODOS ekibimiz TEKNOFEST yarışma çadırında",
+      "category": "Yarışma",
+      "takim": "insansiz-deniz-araci"
+    },
+    {
       "image": "/media/galeri-2025-yil-ozeti.jpg",
       "caption": "2025 yılından kareler",
       "category": "Etkinlik"
@@ -380,6 +652,12 @@
       "image": "/media/haber-btu-robot-gunleri.jpg",
       "caption": "BTÜ Robot Günleri 2025'te standımız",
       "category": "Etkinlik"
+    },
+    {
+      "image": "/media/galeri-lodos-juri.jpg",
+      "caption": "LODOS ekibimiz jüriye aracını tanıtırken",
+      "category": "Yarışma",
+      "takim": "insansiz-deniz-araci"
     },
     {
       "image": "/media/haber-hali-saha.jpg",
@@ -392,64 +670,82 @@
       "category": "Etkinlik"
     },
     {
+      "image": "/media/galeri-lodos-tcg-anadolu.jpg",
+      "caption": "LODOS, TCG Anadolu önünde",
+      "category": "Araçlar",
+      "takim": "insansiz-deniz-araci"
+    },
+    {
       "image": "/media/galeri-ashina-teknofest-grup.jpg",
       "caption": "ASHİNA ekibimiz TEKNOFEST'te LAGARİ-FIRAT-YELKOVAN İHA'larıyla",
-      "category": "Yarışma"
+      "category": "Yarışma",
+      "takim": "insansiz-hava-araclari"
     },
     {
       "image": "/media/galeri-ashina-uretim.jpg",
       "caption": "ASHİNA İHA gövde üretim aşamasında",
-      "category": "Atölye"
+      "category": "Atölye",
+      "takim": "insansiz-hava-araclari"
     },
     {
       "image": "/media/galeri-tika-tarimsal-ika.jpg",
       "caption": "MATROBOT ekibimiz Tarımsal İnsansız Kara Aracı Yarışması'nda",
-      "category": "Yarışma"
+      "category": "Yarışma",
+      "takim": "insansiz-kara-araci"
     },
     {
       "image": "/media/galeri-iss-2021-disari.jpg",
       "caption": "İSS ekibimiz 2021 sezonunda",
-      "category": "Etkinlik"
+      "category": "Etkinlik",
+      "takim": "insansiz-su-alti-sistemleri"
     },
     {
       "image": "/media/galeri-iss-2021-icerde.jpg",
       "caption": "İSS ekibimiz sualtı aracı prototipiyle",
-      "category": "Atölye"
+      "category": "Atölye",
+      "takim": "insansiz-su-alti-sistemleri"
     },
     {
       "image": "/media/galeri-teknofest-2022-odul.jpg",
       "caption": "TEKNOFEST Sanayide Dijital Teknolojileri Yarışması Temel Kategori'de Türkiye üçüncülüğü",
-      "category": "Yarışma"
+      "category": "Ödül ve Derece",
+      "takim": "sanayide-robotik-ve-dijital"
     },
     {
       "image": "/media/tasarim-iss-auv-onden.jpg",
       "caption": "İSS otonom sualtı aracının önden tasarım görüntüsü",
-      "category": "Tasarım"
+      "category": "Tasarım",
+      "takim": "insansiz-su-alti-sistemleri"
     },
     {
       "image": "/media/tasarim-iss-auv-izometrik.jpg",
       "caption": "İSS sualtı aracının itki üniteleri ve kamera yerleşimi",
-      "category": "Tasarım"
+      "category": "Tasarım",
+      "takim": "insansiz-su-alti-sistemleri"
     },
     {
       "image": "/media/tasarim-iss-auv-mor.jpg",
       "caption": "İSS sualtı aracının gövde ve kaplama tasarımı",
-      "category": "Tasarım"
+      "category": "Tasarım",
+      "takim": "insansiz-su-alti-sistemleri"
     },
     {
       "image": "/media/tasarim-ashina-iha.jpg",
       "caption": "ASHİNA sabit kanat İHA'sının kafes kanat yapısı tasarımı",
-      "category": "Tasarım"
+      "category": "Tasarım",
+      "takim": "insansiz-hava-araclari"
     },
     {
       "image": "/media/galeri-advance-up-syntax.jpg",
       "caption": "SYNTAX ekibimiz Advance-Up Hackathon Türkiye üçüncülüğü ödül töreninde",
-      "category": "Yarışma"
+      "category": "Ödül ve Derece",
+      "takim": "teknoloji-girisimciligi"
     },
     {
       "image": "/media/galeri-bayraktar-ucan-araba.jpg",
       "caption": "Selçuk Bayraktar ve Uçan Araba ekibimiz TEKNOFEST standında",
-      "category": "Yarışma"
+      "category": "Yarışma",
+      "takim": "ucan-araba-simulasyonu"
     },
     {
       "image": "/media/galeri-matro-teknofest-2020.jpg",
@@ -459,37 +755,42 @@
     {
       "image": "/media/galeri-ashina-tubitak-sahne.jpg",
       "caption": "ASHİNA İHA ekibimiz TÜBİTAK yarışma sahnesi önünde",
-      "category": "Yarışma"
+      "category": "Yarışma",
+      "takim": "insansiz-hava-araclari"
     },
     {
       "image": "/media/galeri-iss-auv-havuz.jpg",
       "caption": "Sualtı aracımız havuz testlerine hazırlanırken",
-      "category": "Yarışma"
+      "category": "Yarışma",
+      "takim": "insansiz-su-alti-sistemleri"
     },
     {
       "image": "/media/galeri-iss-auv-sergi.jpg",
       "caption": "Sualtı aracımız kampüs tanıtım gününde",
-      "category": "Etkinlik"
+      "category": "Etkinlik",
+      "takim": "insansiz-su-alti-sistemleri"
     },
     {
       "image": "/media/galeri-ashina-kompozit-uretim.jpg",
       "caption": "ASHİNA kanat kalıbında vakum infüzyonu ile kompozit üretim",
-      "category": "Atölye"
+      "category": "Atölye",
+      "takim": "insansiz-hava-araclari"
     },
     {
       "image": "/media/galeri-ashina-saha.jpg",
       "caption": "ASHİNA ekibi TEKNOFEST uçuş sahasında",
-      "category": "Yarışma"
+      "category": "Yarışma",
+      "takim": "insansiz-hava-araclari"
     },
     {
       "image": "/media/galeri-matro-kupa-vitrini.jpg",
       "caption": "Topluluk kupa vitrinimiz",
-      "category": "Etkinlik"
+      "category": "Ödül ve Derece"
     },
     {
       "image": "/media/galeri-matro-birincilik-30000.jpg",
       "caption": "Yarışma birinciliği ödülümüzle topluluk sergimiz",
-      "category": "Etkinlik"
+      "category": "Ödül ve Derece"
     },
     {
       "image": "/media/galeri-tubitak-sage-gezisi.jpg",
@@ -524,7 +825,8 @@
     {
       "image": "/media/galeri-sanayide-dijital-arena.jpg",
       "caption": "Sanayide Dijital Teknolojiler yarışma arenasında aracımız",
-      "category": "Yarışma"
+      "category": "Yarışma",
+      "takim": "sanayide-robotik-ve-dijital"
     }
   ]
 }

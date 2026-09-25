@@ -677,7 +677,11 @@ content:
             label: Kategori
             type: select
             options:
-              values: [Atölye, Yarışma, Teknik Gezi, Etkinlik, Tasarım, Sponsor]
+              values: [Yarışma, Atölye, Araçlar, Ödül ve Derece, Teknik Gezi, Etkinlik, Tasarım, Sponsor]
+          - name: takim
+            label: Takım
+            type: string
+            description: "İsteğe bağlı. Takım sayfasının dosya adı; görselin altında o takıma bağlantı çıkar. Örn: insansiz-kara-araci"
 
   - name: assets
     label: Varlıklar (tanıtım dosyası)
