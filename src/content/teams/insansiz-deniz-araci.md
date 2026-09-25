@@ -30,17 +30,23 @@ focus:
 achievements:
   - "TEKNOFEST 2026 ASELSAN İnsansız Deniz Aracı — Türkiye Finalisti (LODOS)"
   - "TEKNOFEST 2025 ASELSAN İnsansız Deniz Aracı — Türkiye Finalisti"
-summary: "LODOS ekibiyle 2025 ve 2026 TEKNOFEST İnsansız Deniz Aracı yarışmalarında finale kalan; deniz üstü otonom seyir ve keşif sistemleri geliştiren takımımız."
+summary: "LODOS ekibiyle 2025 ve 2026 TEKNOFEST İnsansız Deniz Aracı yarışmalarında finale kalan; gövdesinden otonom kontrol sistemine kadar aracını kendi atölyesinde üreten deniz aracı takımımız."
 ---
 
-İnsansız Deniz Aracı takımı, su üstü platformlarında otonom seyir ve görev kabiliyeti geliştirmeye odaklanır.
+İnsansız Deniz Aracı takımı, su üstü platformlarında otonom seyir ve görev kabiliyeti geliştirir. Takım, **TEKNOFEST 2025 ASELSAN İnsansız Deniz Aracı Yarışması**'nda Türkiye finalisti oldu. 2026 sezonunda **LODOS** ekibi aynı kategoride yeniden Türkiye finalisti olarak Mavi Vatan finallerinde yarıştı.
+
+## LODOS'un yolculuğu
+
+- **Atölye ve üretim:** Gövde bilgisayarda tasarlandı, ardından atölyede el işçiliğiyle üretildi. Gövde inşası, zımparalama, epoksi ve yalıtım çalışmaları uzun saatler sürdü.
+- **İç aksam ve entegrasyon:** Mekanik üretimin ardından motor sürücüleri, batarya yönetim sistemleri ve otonom kontrol kartları gövdeye yerleştirildi.
+- **Saha ve havuz testleri:** Atölyede geliştirilen sistemler ilk kez suyla buluştu. Algoritmalar denendi, sensör kalibrasyonu ve itki sistemi havuz kenarında doğrulandı.
+- **TEKNOFEST alanı:** Yarışma çadırında mekanik ve donanımsal sistemlerin son kontrolleri yapıldı.
+- **Jüri ve sektör buluşması:** Aracın kabiliyetleri ve otonom altyapısı jüriye aktarıldı, proje savunma sanayii temsilcilerine tanıtıldı.
 
 ## Çalışma alanları
 
 - Deniz üstü otonomi ve engelden kaçınma
 - Rotalandırma, seyir planlama ve dalga koşullarında stabilite
-- Keşif, gözetleme ve veri toplama yükleri
+- Gövde tasarımı ve kompozit üretim
 
-## Başarı
-
-Takım, **TEKNOFEST 2025 ASELSAN İnsansız Deniz Aracı Yarışması**'nda **Türkiye finalisti** olmuştur. 2026 sezonunda **LODOS** ekibimiz aynı kategoride yeniden Türkiye finalisti oldu.
+Aylar süren emeğimizin sonunda ortaya çıkan LODOS ile ülkemizin Mavi Vatan stratejisine ve Milli Teknoloji Hamlesi'ne katkı sağlamaktan onur duyuyoruz.

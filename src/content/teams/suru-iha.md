@@ -24,19 +24,33 @@ focus:
   - Çoklu araç koordinasyonu
   - Görev dağıtım algoritmaları
 achievements:
-  - "TEKNOFEST 2026 HAVELSAN Sürü İnsansız Hava Aracı — Türkiye Finalisti (MATRİS)"
-  - "TEKNOFEST 2024 HAVELSAN Sürü İHA — Türkiye 9.su ve Türkiye Finalisti"
-summary: "Birden fazla hava aracının koordineli otonom uçuşu üzerine çalışan; TEKNOFEST HAVELSAN Sürü İHA yarışmasında 2024'te Türkiye 9.su, 2026'da Türkiye finalisti olan takımımız."
+  - "TEKNOFEST 2026 HAVELSAN Sürü İnsansız Hava Aracı — Türkiye Finalisti (MATRİS, 165 başvurudan 19 finalist)"
+  - "TEKNOFEST 2024 HAVELSAN Sürü İHA — Türkiye 9.su"
+summary: "TEKNOFEST HAVELSAN Sürü İHA yarışmasında 2024'te Türkiye 9.su olan sürü İHA ekibimizin 2026 kadrosu MATRİS, 165 başvuru arasından finale kalan 19 takımdan biri oldu."
 ---
 
-MATRİS takımı, birden fazla insansız hava aracının merkezi ve dağıtık mimarilerle koordineli hareket etmesi üzerine çalışır.
+Sürü İHA ekibimiz; birbiriyle haberleşen, görevi aralarında paylaşan ve biri düşse bile görevi sürdüren İHA'lar geliştirir. Bu tür sistemler orman yangını, afet taraması, keşif ve savunma alanlarında kullanılır. Ekip, üç ve daha fazla döner kanat İHA'nın görevleri otonom olarak sürü halinde yerine getirmesini sağlar. 2026 sezonunda **MATRİS** adıyla yarıştı.
 
-## Teknik odak
+## Yarışmada ne isteniyor?
 
-- Sürü halinde otonom uçuş ve formasyon koruma
-- Çoklu araç arası haberleşme ve çakışma önleme
-- Görev dağıtım ve yeniden planlama algoritmaları
+HAVELSAN yürütücülüğündeki TEKNOFEST Sürü İHA Yarışması'nda takımlar 3–10 kişiden oluşur ve iki görevde değerlendirilir:
 
-## Başarı
+- **Dinamik sürü kabiliyeti (tamamen otonom):** Tek komutla kalkış ve formasyon, QR kodu okuyup komutu uygulama, sürüden ayrılıp renkli alana iniş, dönüş ve otonom iniş.
+- **Yarı otonom sürü kontrolü:** Operatör tek bir kumandayla sürünün tamamını yönetir: ileri-geri, sağa-sola, yükselme-alçalma, dönme ve formasyonu eğme.
 
-**TEKNOFEST 2024 HAVELSAN Sürü İHA Yarışması**'nda Türkiye 9.su olarak finalde yer almıştır. 2026 sezonunda da Türkiye finalisti olarak Gaziantep'te yarışmıştır.
+## 2026 sezonu
+
+- **Şubat:** Takım kuruldu, başvuru yapıldı
+- **Mart:** Ön Tasarım Raporu
+- **Nisan:** Simülasyonda ilk sürü uçuşu
+- **Haziran:** Kritik Tasarım Raporu
+- **Temmuz:** Üretim ve uçuş testleri
+- **Eylül:** Final
+
+165 başvuru arasından finale kalan 19 takımdan biri olan MATRİS, Gaziantep'teki finalde yarıştı.
+
+## İHA'ları kendimiz kurduk
+
+- **Mekanik:** Gövde tasarımı, 3B baskı, montaj
+- **Elektronik:** Güç dağıtımı, uçuş kontrol kartı, kamera
+- **Yazılım:** Otonom uçuş, görüntü işleme, haberleşme

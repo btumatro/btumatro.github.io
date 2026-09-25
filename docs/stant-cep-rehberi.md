@@ -234,9 +234,9 @@ sistemleri · Kablosuz haberleşme · Çevre ve enerji teknolojileri · Akıllı
 |---|---|---|
 | **ASHİNA** | İnsansız hava araçları. Kendi motorunu ve atış birimini üretiyor. | 2026 TEKNOFEST finalisti |
 | **MATRİS** | Sürü İHA — birden fazla hava aracının koordineli otonom uçuşu. | 2026 finalisti · 2024'te Türkiye 9.su |
-| **MATROVER & LUNA** | Otonom kara araçları; tarımsal ekim ve ilaçlama robot kolları. | 2026 finalisti · 2025'te Türkiye 3.sü |
+| **İKA (MATROVER, LUNA)** | Otonom kara araçları; manuel ve otonom koşu, görüntü işlemeyle hedefleme. | 2024 Türkiye 5.si · 2025 Türkiye 3.sü · 2026 Türkiye 9.su |
 | **GÖKSAV (ASHİNA-H)** | Hava savunma; radar-sensör takibi ve bertaraf mekanizmaları. | 2025 rapor aşamasında Türkiye 3.sü |
-| **BÜRKÜT** | Uçan araba simülasyonu, otonom uçuş algoritmaları. | 2020 Türkiye 1.si · 2024 En İyi Takım Ruhu |
+| **BÜRKÜT (ASHİNA)** | Uçan araba simülasyonu, otonom uçuş algoritmaları. | 2020 Türkiye 1.si · 2024 En İyi Takım Ruhu |
 
 ---
 
@@ -248,7 +248,7 @@ sistemleri · Kablosuz haberleşme · Çevre ve enerji teknolojileri · Akıllı
 |---|---|---|
 | **İDA / LODOS** | İnsansız deniz aracı; deniz üstü otonom seyir ve keşif. | 2025 ve 2026 TEKNOFEST finalisti |
 | **İSS / PRUSA** | Otonom sualtı aracı; sualtı görüntü işleme, sızdırmazlık. | 2026 finalisti · Singapur SAUVC dünya finalisti |
-| **ZEMHERİ / SARA** | Su altı roketi; gövde, itki ve atış düzeneği tasarımı. | İlk katılımında 2026 Türkiye finalisti |
+| **ZEMHERİ / SARA** | Su altı roketi; gövde, itki ve atış düzeneği tasarımı. | İlk katılımında KTR Türkiye 4.sü, finalde 2026 Türkiye 9.su |
 
 **Alt bölüm — "Bunu sorarlarsa":**
 > **"Su altı roketi ne demek?"** — TEKNOFEST'in bu yıl ikinci kez düzenlenen
@@ -263,9 +263,9 @@ sistemleri · Kablosuz haberleşme · Çevre ve enerji teknolojileri · Akıllı
 
 | Takım | Ne yapıyor | Öne çıkan |
 |---|---|---|
-| **SANAYİDE DİJİTAL / PUSULA** | Endüstri 4.0, IoT ve dijital ikiz; üretimi dijitalleştiriyor. | 2026 finalisti · 2021'de Türkiye 3.sü |
-| **ÇAĞRI** | Kablosuz haberleşme; karıştırma altında kesintisiz veri iletimi. | 397 takım arasından Türkiye 6.sı |
-| **ALHAZEN** | Çevre ve enerji; yenilenebilir enerji, depolama, sıfır atık. | 2025 Türkiye 7.si |
+| **PUSULA** | Otonom forklift SIRIUS; fabrika içi lojistik, ROS 2 ve SLAM. | 2026 finalisti · 2021'de Türkiye 3.sü |
+| **ÇAĞRI (ASHİNA)** | Kablosuz haberleşme; karıştırma altında kesintisiz veri iletimi. | 2024 Türkiye 6.sı (16 finalist arasında) |
+| **ALHAZEN** | Enerji; yakıt hücresi katalizörleri, nükleer enerji çevrimi tasarımı. | 2025 Türkiye 7.si · 2026 nükleer ön rapor Türkiye 2.si |
 | **GİRİŞİMCİLİK VE İNOVASYON** | Fikri ürüne ve şirkete dönüştürme, hackathonlar. | INNOSENS ile Girişimcilik Türkiye 1.si |
 | **ASHİNA İNOVASYON** | Tarım teknolojileri üzerine çalışan yeni araştırma takımımız. | Yeni takım |
 

@@ -96,7 +96,11 @@ export function achievementSummary(items: AchievementRecord[]) {
   return {
     records: items.length,
     firstPlaces: items.filter((item) => /(^|[^0-9])1\./.test(item.degree)).length,
-    finalists2026: items.filter((item) => item.year === 2026 && /finalist/i.test(item.degree)).length,
+    // Finalde yarışan takım: finalist yazanlar ve finalde sıralama alanlar ("Türkiye 9.su").
+    // Yalnızca rapor aşaması dereceleri ("Ön Değerlendirme Raporu 2.si") finalist sayılmaz.
+    finalists2026: items.filter(
+      (item) => item.year === 2026 && /teknofest/i.test(item.competition) && !/rapor/i.test(item.degree),
+    ).length,
     international: items.filter((item) =>
       /dünya|singapore|france|nasa|italian|uluslararası|bölge/i.test(`${item.competition} ${item.degree}`),
     ).length,

@@ -7,51 +7,60 @@
   "packages": [
     {
       "name": "Platin",
-      "range": "151.000 TL ve üzeri",
+      "range": "101.000 TL ve üzeri",
       "highlight": true,
       "benefits": [
-        "Yarışma finallerinde BTÜ standının arka fonunda logo",
-        "Yarışma alanında ve yarış araçlarında logo",
-        "BTÜ web sayfası ve sosyal medya hesaplarında paylaşım",
-        "Üniversitenin uygun alanlarında pano, afiş ve görsellerde yıl boyu logo",
-        "Broşür ve basılı tanıtım materyallerinde logo",
-        "Yarışmacı tişört, bandana vb. giyim malzemelerinde logo",
-        "Üniversite içi organizasyonlarda yılda iki kez ücretsiz tanıtım standı"
+        "Sosyal medyada platin temalı teşekkür paylaşımı",
+        "Yılda 1 gönderi ve 3 hikâye şeklinde reklam paylaşımı",
+        "Instagram öne çıkanlarda firmaya özel bölüm",
+        "Firma ile ilgili paylaşımlarda etiketlenme ve linktree'de web sitesi bağlantısı",
+        "Stantlarda mega logo, firma bayrağı ve broşür",
+        "Firmayla anlaşmalı tanıtım videosu paylaşımı",
+        "Firma çalışanlarıyla üniversitede yılda 2 seminer / söyleşi",
+        "Web sitesi, takım tişörtleri ve proje robotlarında mega logo",
+        "TV, belgesel ve reklam çekimlerinde mega logo ve firma bayrağı",
+        "\"Atölye günlükleri\" paylaşımlarında yılda 4 kez logo"
       ]
     },
     {
       "name": "Altın",
-      "range": "81.000 TL – 150.000 TL",
+      "range": "51.000 – 100.000 TL",
       "highlight": false,
       "benefits": [
-        "Yarışma finallerinde BTÜ standının arka fonunda logo",
-        "Yarışma alanında ve yarış araçlarında logo",
-        "BTÜ web sayfası ve sosyal medya hesaplarında paylaşım",
-        "Üniversitenin uygun alanlarında pano, afiş ve görsellerde yıl boyu logo",
-        "Broşür ve basılı tanıtım materyallerinde logo",
-        "Yarışmacı tişört, bandana vb. giyim malzemelerinde logo",
-        "Üniversite içi organizasyonlarda ücretsiz tanıtım standı"
+        "Sosyal medyada altın temalı teşekkür paylaşımı",
+        "Yılda 2 hikâye şeklinde reklam paylaşımı",
+        "Instagram öne çıkanlarda ortak bölümde yer alma",
+        "Firma ile ilgili paylaşımlarda etiketlenme ve linktree'de web sitesi bağlantısı",
+        "Stantlarda ve çekimlerde ana pankartta büyük logo",
+        "Firma çalışanlarıyla üniversitede yılda 1 seminer / söyleşi",
+        "Web sitesi, takım tişörtleri ve proje robotlarında büyük logo",
+        "\"Atölye günlükleri\" paylaşımlarında yılda 2 kez logo"
       ]
     },
     {
       "name": "Gümüş",
-      "range": "41.000 TL – 80.000 TL",
+      "range": "26.000 – 50.000 TL",
       "highlight": false,
       "benefits": [
-        "Yarışma finallerinde BTÜ standının arka fonunda logo",
-        "BTÜ web sayfası ve sosyal medya hesaplarında paylaşım",
-        "Üniversitenin uygun alanlarında pano, afiş ve görsellerde yıl boyu logo",
-        "Yarışmayla ilgili broşür ve basılı tanıtım materyallerinde logo"
+        "Sosyal medyada gümüş temalı teşekkür paylaşımı",
+        "Instagram öne çıkanlarda ortak bölümde yer alma",
+        "Firma ile ilgili paylaşımlarda etiketlenme",
+        "Stantlarda ve çekimlerde ana pankartta orta boy logo",
+        "Firma çalışanlarıyla üniversitede yılda 1 seminer / söyleşi",
+        "Web sitesi, takım tişörtleri ve proje robotlarında orta boy logo",
+        "\"Atölye günlükleri\" paylaşımlarında yılda 1 kez logo"
       ]
     },
     {
       "name": "Bronz",
-      "range": "20.000 TL – 40.000 TL",
+      "range": "11.000 – 25.000 TL",
       "highlight": false,
       "benefits": [
-        "Yarışma finallerinde BTÜ standının arka fonunda logo",
-        "Üniversitenin uygun alanlarında pano, afiş ve görsellerde yıl boyu logo",
-        "Broşür ve basılı tanıtım materyallerinde logo"
+        "Sosyal medyada bronz temalı teşekkür paylaşımı",
+        "Instagram öne çıkanlarda ortak bölümde yer alma",
+        "Firma ile ilgili paylaşımlarda etiketlenme",
+        "Stantlarda ve çekimlerde ana pankartta küçük logo",
+        "Web sitesi, takım tişörtleri ve proje robotlarında küçük logo"
       ]
     }
   ],
@@ -78,7 +87,7 @@
     "description": "Sponsorluk dosyamızı ve bu yılki proje hedeflerimizi içeren sunumumuzu sizinle paylaşalım.",
     "buttonLabel": "Sponsorluk için iletişime geçin"
   },
-  "packagesNote": "Kademeler ve sponsor firmaya tanınan haklar, Bursa Teknik Üniversitesi'nin resmî sponsorluk yönergesine göre belirlenmiştir. Tanıtım standlarında satış ve pazarlama yapılamaz. Sponsorluk görsellerinde logo paylaşımları sponsorluk derecesine göre belirlenir.",
+  "packagesNote": "Kademeler ve tanınan haklar MATRO 2026-2027 sponsorluk dosyasına göredir. Sponsorluk, Bursa Teknik Üniversitesi'nin resmî sponsorluk süreciyle kayda geçer. Tanıtım standlarında satış ve pazarlama yapılamaz.",
   "officialForm": {
     "title": "Sponsorluk süreci nasıl işliyor?",
     "description": "Sponsorluk, Bursa Teknik Üniversitesi Rektörlüğü'ne sunulan resmî bir form ile kayda geçer. Formu, ilgili tüm belgeleri ve bağış hesabı bilgilerini görüşmemizin ardından size biz iletiyoruz.",

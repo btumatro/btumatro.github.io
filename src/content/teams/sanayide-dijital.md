@@ -1,6 +1,6 @@
 ---
-title: SANAYİDE DİJİTAL TEKNOLOJİLER
-subtitle: Endüstri 4.0 ve Dijital İkiz
+title: PUSULA
+subtitle: Sanayide Robotik Uygulamalar ve Dijital Teknolojiler
 category: Dijital Teknolojiler
 status: Aktif
 order: 7
@@ -21,28 +21,45 @@ aliases:
   - "PUSULA"
   - "ANDROMEDA"
 focus:
-  - Endüstri 4.0 uygulamaları
-  - Nesnelerin interneti (IoT)
-  - Dijital ikiz (digital twin)
+  - Otonom mobil robotlar ve fabrika içi lojistik
+  - ROS 2, SLAM ve navigasyon
+  - Endüstri 4.0 ve dijital teknolojiler
 achievements:
   - "TEKNOFEST 2026 KOSGEB Sanayide Robotik Uygulamalar — Türkiye Finalisti (PUSULA)"
   - "TEKNOFEST 2026 Mesleki Yetenek Yarışması Akıllı Fabrika Sistemleri Programlama — Türkiye Finalisti (ANDROMEDA)"
   - "TEKNOFEST 2025 Sanayide Dijital Teknolojiler — Türkiye 8.si (PUSULA)"
   - "TEKNOFEST 2024 Sanayide Dijital Teknolojiler — Türkiye Finalisti"
   - "TEKNOFEST 2021 Sanayide Dijital Teknolojiler — Türkiye 3.sü"
-summary: "2021'de Türkiye 3.sü, 2025'te Türkiye 8.si olan; Endüstri 4.0, IoT ve dijital ikiz uygulamalarıyla üretim süreçlerini dijitalleştiren takımımız."
+summary: "Palet taşıyan otonom forklift SIRIUS ile TEKNOFEST 2026 Sanayide Robotik Uygulamalar finalisti olan; 2021'de Türkiye 3.sü, 2025'te Türkiye 8.si olan endüstriyel robotik takımımız."
 ---
 
-Sanayide Dijital Teknolojiler takımı, üretim hatlarının dijitalleşmesine yönelik uygulamalar geliştirir.
+PUSULA, üretim hatlarında robotik ve dijital teknolojiler üzerine çalışan takımımızdır. TEKNOFEST Sanayide Dijital Teknolojiler kategorisinde 2021'de **Türkiye 3.sü**, 2025'te **Türkiye 8.si** olmuş, 2024'te finalde yer almıştır. 2026 sezonunda **ANDROMEDA** ekibimiz de Mesleki Yetenek Yarışması Akıllı Fabrika Sistemleri Programlama kategorisinde Türkiye finalisti oldu.
 
-## Çalışma alanları
+## SIRIUS: otonom forklift
 
-- Endüstri 4.0 mimarileri ve akıllı üretim
-- IoT sensör ağları ve veri toplama altyapıları
-- Dijital ikiz (digital twin) modelleri ve kestirimci bakım
+2026 sezonunun aracı **SIRIUS**, paleti depodan üretim hattına kendi başına taşıyan otonom bir forklifttir. Sanayi ve Teknoloji Bakanlığı ile KOSGEB yürütücülüğündeki **TEKNOFEST Sanayide Robotik Uygulamalar Yarışması**'nda Türkiye finalisti olarak Diyarbakır'da yarıştı.
 
-## Başarı
+Yarışmada robot dışarıdan müdahale olmadan üç işi yapar:
 
-Takım, TEKNOFEST 2021 Sanayide Dijital Teknolojiler kategorisinde **Türkiye 3.sü**, 2025 yılında **Türkiye 8.si** olmuş; 2024 yılında da finalde yer almıştır.
+1. **Haritalama:** Alanı sensörleriyle algılayıp dijital harita çıkarır.
+2. **Görev:** Otomasyon sisteminden gelen görevle alma noktasına gider.
+3. **Taşıma:** Yükü alır, bırakma noktasına götürüp indirir.
 
-2026 sezonunda **PUSULA** ekibimiz KOSGEB Sanayide Robotik Uygulamalar Yarışması'nda Diyarbakır'da, **ANDROMEDA** ekibimiz ise Mesleki Yetenek Yarışması Akıllı Fabrika Sistemleri Programlama kategorisinde Türkiye finalisti oldu.
+Parkurda uzaktan kumanda yoktur, enerji araç üstündeki bataryadan sağlanır.
+
+## Ekip
+
+9 öğrenci, 3 alt ekip ve 1 araç:
+
+- **Mekanik:** Şasi, gövde, kaldırma kulesi ve çatal
+- **Elektronik ve güç:** Batarya paketi, güç dağıtımı, emniyet devresi
+- **Yazılım:** ROS 2, navigasyon, görev ağacı, web panel
+
+## Mimari
+
+- **Arayüz:** Tarayıcıdan açılan yerel web paneli
+- **Otonomi:** ROS 2 Humble, SLAM Toolbox, Nav2, EKF, py_trees
+- **Denetim:** Python üst seviye karar, C++ alt seviye denetleyiciler (Arduino Mega, ESP32)
+- **Sensörler:** LiDAR, kamera, IMU, enkoder, mesafe, limit anahtarı, akım, sıcaklık ve gaz sensörleri
+
+Görev akışının her adımı py_trees'te ayrı bir davranış düğümüdür. Bir adım başarısız olursa akış orada durur ve panelde hangi adımda kalındığı görünür. Palete yanaşmada kamera, enkoder ve LiDAR bağımsız çalışır; tek bir sensörün arızası görevi durdurmaz. 70 cm içinde engel görülürse araç durur, engel kalkınca kaldığı yerden devam eder.

@@ -31,7 +31,9 @@ focus:
   - Yerli fırçasız motor üretimi
 achievements:
   - "TEKNOFEST 2026 TÜBİTAK Uluslararası İnsansız Hava Araçları — Türkiye Finalisti (ASHİNA)"
-  - "TEKNOFEST 2024 Uluslararası Serbest Görev İHA — Türkiye 19.su (685 takım arasından finalist)"
+  - "TEKNOFEST 2024 TÜBİTAK Uluslararası Serbest Görev İHA — Türkiye 19.su (2.333 takım arasından 73 finalist)"
+  - "TEKNOFEST 2024 BAYKAR Uçan Araba Simülasyon — Türkiye Finalisti ve En İyi Takım Ruhu Ödülü (ASHİNA - BÜRKÜT)"
+  - "TEKNOFEST 2024 ULAK Kablosuz Haberleşme — Türkiye 6.sı (ASHİNA - ÇAĞRI)"
   - "TEKNOFEST 2023 İnsansız Hava Araçları — En İyi Performans Ödülü"
   - "TEKNOFEST 2022 İnsansız Hava Araçları — Türkiye 4.sü"
   - "TEKNOFEST 2021 İnsansız Hava Araçları — Türkiye 3.sü"
@@ -39,20 +41,36 @@ achievements:
 summary: "\"Tamamen Otonom; Havadan Tespit, Karadan İmha\" senaryosunu hayata geçiren, kendi motorunu ve atış birimini üreten İHA takımımız."
 ---
 
-Adını Göktürk Kağanlığı'nın kurucu Türk soyundan alan ASHİNA, topluluğumuzun en köklü ve en geniş kapsamlı proje takımıdır. **LAGARİ**, **FIRAT** ve **YELKOVAN** alt takımlarıyla farklı İHA kategorilerinde yarışmaktadır.
+Adını Göktürk Kağanlığı'nın temelini atan Türk soyundan alan ASHİNA, topluluğumuzun en köklü İHA takımıdır. Öztürk ve Göktürk takımlarının bayrağını devralmıştır. **LAGARİ**, **FIRAT** ve **YELKOVAN** önceki dönemlerin araç ve takım adlarıdır.
 
-## Ne yapıyoruz?
+## Tek ekip, üç takım
 
-Takım, **"Tamamen Otonom; Havadan Tespit, Karadan İmha"** senaryosunu uçtan uca hayata geçirdi. Bu senaryo kapsamında hava aracı hedefi otonom olarak tespit ediyor, konum bilgisini yer istasyonuna iletiyor ve kara birimi imhayı gerçekleştiriyor.
+ASHİNA, 2024 sezonunda aynı ekipten üç takımla TEKNOFEST finallerine kaldı:
+
+- **ASHİNA:** Uluslararası Serbest Görev İHA Yarışması (TÜBİTAK). 2.333 takım arasından 73 finalist içinde yer aldı ve Türkiye 19.su oldu.
+- **ASHİNA - BÜRKÜT:** Uçan Araba Simülasyon Yarışması (BAYKAR - Cezeri). 1.547 başvuru arasından 31 finalistten biri oldu, En İyi Takım Ruhu Ödülü'nü kazandı.
+- **ASHİNA - ÇAĞRI:** Kablosuz Haberleşme Yarışması (ULAK Haberleşme). 400'ü aşkın başvuru arasından 16 finalistten biri olup Türkiye 6.sı oldu.
+
+2025 sezonunda ekip dört takımla yarıştı: Uluslararası Döner Kanat Kategorisi İHA (TÜBİTAK), Uçan Araba Simülasyon (BAYKAR - Cezeri), Hava Savunma Sistemleri (ASELSAN) ve Araştırma Projeleri (TÜBİTAK). 2026'da TÜBİTAK Uluslararası İnsansız Hava Araçları Yarışması'nda Türkiye finalisti olarak Malatya'da yarıştı.
+
+## Hedeflerimiz
+
+- Yerli ve milli teknolojiler üzerine çalışıp ülke ekonomisine katkı sağlamak
+- Bünyesindeki mühendis adaylarının alanında başarılı mühendisler olmasına katkıda bulunmak
+- Ar-Ge ve mühendislik alanlarında gelişmek, çözüm noktası olmak
 
 ## Öne çıkan teknolojiler
 
-- Kendi imkânlarımızla tasarlanıp üretilen **fırçasız DC motor**
-- Akım sınırlayıcı devre tasarımı
-- **2 eksenli elektromanyetik atış birimi**
+- TEKNOFEST serbest görev senaryosu: **"Tamamen Otonom; Havadan Tespit, Karadan İmha"**
+- Takım tarafından geliştirilen **yerli İHA kontrol istasyonu**
+- Kendi imkânlarımızla tasarlanıp üretilen **yerli BLDC İHA motoru**
 - Derin öğrenme tabanlı hedef tespit ve takip algoritmaları
-- 5 farklı haberleşme sistemini tek noktadan yöneten, takım tarafından tasarlanmış **yer kontrol istasyonu**
 
-## Güncel durum
+## Sürdürülebilirlik
 
-Takım, TEKNOFEST 2026 **TÜBİTAK Uluslararası İnsansız Hava Araçları Yarışması**'nda Türkiye finalisti olarak Malatya'da üniversitemizi temsil etmiştir.
+ASHİNA, başarının yalnızca bugünkü projelerle değil, oluşturulan mühendislik kültürünün geleceğe aktarılmasıyla ölçüldüğüne inanır:
+
+- **Mezuniyet sonrası destek:** Mezun üyeler, sektörde edindikleri deneyimi güncel projelere aktararak sistem tasarımı ve kritik alt bileşenlerde teknik danışmanlık yapar. Yeni katılan üyelere "usta-çırak" ilişkisi içinde saha deneyimi ve problem çözme yetkinliği kazandırılır.
+- **Sosyal sorumluluk:** Nilüfer Anadolu İmam Hatip Lisesi gibi okullara teknik mentorluk verilir. Bursa başta olmak üzere üniversite ve lise takımlarıyla bilgi paylaşılır.
+
+> "Bilgi paylaşıldıkça çoğalır; hedefimiz sadece proje üreten bir takım değil, geleceğin mühendislik dünyasına yön veren bir takım olmaktır."

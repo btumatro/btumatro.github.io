@@ -13,7 +13,7 @@
       "year": 2026,
       "competition": "TEKNOFEST — ASELSAN",
       "category": "İnsansız Kara Aracı",
-      "degree": "Türkiye Finalisti",
+      "degree": "Türkiye 9.su",
       "team": "LUNA İKA",
       "featured": false
     },
@@ -37,7 +37,7 @@
       "year": 2026,
       "competition": "TEKNOFEST — ROKETSAN",
       "category": "Su Altı Roket Yarışması",
-      "degree": "Türkiye Finalisti",
+      "degree": "Türkiye 9.su — KTR 4.sü",
       "team": "ZEMHERİ",
       "featured": true
     },
@@ -69,7 +69,7 @@
       "year": 2026,
       "competition": "Genç MÜSİAD — Genç Ticaret Elçileri",
       "category": "Girişimcilik",
-      "degree": "1.lik",
+      "degree": "Türkiye 1.si",
       "team": "GİRİŞİMCİLİK",
       "featured": true
     },
@@ -77,17 +77,24 @@
       "year": 2026,
       "competition": "Türkiye Uzay Ajansı — Astro Hackathon",
       "category": "Uzay Teknolojileri",
-      "degree": "5.lik",
+      "degree": "Bölge 5.si",
       "team": "SCENDERS",
       "featured": false
     },
     {
-      "year": 2025,
+      "year": 2026,
       "competition": "Advance-Up Hackathon",
       "category": "Girişimcilik",
-      "degree": "3.lük",
+      "degree": "Türkiye 3.sü",
       "team": "SYNTAX",
       "featured": false
+    },
+    {
+      "year": 2026,
+      "competition": "TEKNOFEST",
+      "category": "Nükleer Enerji Teknolojileri Tasarım Yarışması — Enerji Çevrimi Tasarımı",
+      "degree": "Ön Değerlendirme Raporu Türkiye 2.si",
+      "team": "ALHAZEN"
     },
     {
       "year": 2025,
@@ -139,7 +146,7 @@
     },
     {
       "year": 2025,
-      "competition": "TEKNOFEST — SANKO",
+      "competition": "TEKNOFEST — ENERJİSA",
       "category": "Çevre ve Enerji Teknolojileri",
       "degree": "Türkiye 7.si",
       "team": "ALHAZEN",
@@ -181,7 +188,7 @@
       "year": 2024,
       "competition": "TEKNOFEST — BAYKAR",
       "category": "Uçan Araba Simülasyonu",
-      "degree": "En İyi Takım Ruhu Ödülü & 31.lik",
+      "degree": "Türkiye Finalisti — En İyi Takım Ruhu Ödülü",
       "team": "BÜRKÜT",
       "featured": true
     },
@@ -198,7 +205,7 @@
       "competition": "TEKNOFEST — HAVELSAN",
       "category": "Sürü İnsansız Hava Aracı",
       "degree": "Türkiye 9.su",
-      "team": "MATRİS",
+      "team": "SÜRÜ İHA",
       "featured": false
     },
     {

@@ -41,8 +41,8 @@ Aynı donanım, yazılım değiştirilerek bambaşka bir haberleşme sistemine d
 esneklik, frekans atlama ve uyarlamalı algoritmaları denemek için idealdir.
 
 > **Kutu — MATRO'da:** ÇAĞRI takımımız 2024 TEKNOFEST Kablosuz Haberleşme Yarışması'nda,
-> karıştırma etkisi altındaki frekanslardan kaçarak veriyi eksiksiz iletti ve 397 takım
-> arasından Türkiye 6.sı oldu. Takım; SDR mimarileri, karıştırıcıyı tespit edip kaçan
+> karıştırma etkisi altındaki frekanslardan kaçarak veriyi eksiksiz iletti ve 400'ü aşkın
+> başvuru arasından finale kalan 16 takım içinde Türkiye 6.sı oldu. Takım; SDR mimarileri, karıştırıcıyı tespit edip kaçan
 > algoritmalar ve zorlu koşullarda kesintisiz veri iletimi üzerine çalışıyor.
 
 > **Kutu — Neden önemli?** Karıştırmaya dayanıklı haberleşme yalnızca savunma

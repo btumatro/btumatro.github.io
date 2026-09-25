@@ -1,6 +1,6 @@
 ---
 title: ÇAĞRI
-subtitle: Kablosuz Haberleşme
+subtitle: Kablosuz Haberleşme · ASHİNA bünyesinde
 category: Haberleşme
 status: Aktif
 order: 11
@@ -12,11 +12,11 @@ focus:
   - Jammer (sinyal karıştırıcı) engelleme algoritmaları
   - Zorlu şartlarda kesintisiz veri iletimi
 achievements:
-  - "TEKNOFEST 2024 Kablosuz Haberleşme (ULAK) — Türkiye 6.sı (397 takım arasından)"
-summary: "Karıştırma etkisi altındaki frekans dinamiğini yöneterek veriyi başarıyla ileten, 397 takım arasından Türkiye 6.sı olan haberleşme takımımız."
+  - "TEKNOFEST 2024 ULAK Kablosuz Haberleşme — Türkiye 6.sı (400+ başvurudan 16 finalist)"
+summary: "ASHİNA bünyesinde yarışan; TEKNOFEST 2024 Kablosuz Haberleşme Yarışması'nda 400'ü aşkın başvuru arasından 16 finalist içinde Türkiye 6.sı olan haberleşme takımımız."
 ---
 
-ÇAĞRI, elektronik harp koşullarında dahi ayakta kalabilen kablosuz haberleşme sistemleri geliştirmeye odaklanmıştır.
+ÇAĞRI, **ASHİNA** ekibinin bünyesinde yarışan ve elektronik harp koşullarında dahi ayakta kalabilen kablosuz haberleşme sistemleri geliştirmeye odaklanmıştır.
 
 ## Teknik odak
 
@@ -26,4 +26,4 @@ summary: "Karıştırma etkisi altındaki frekans dinamiğini yöneterek veriyi 
 
 ## Başarı
 
-2024 TEKNOFEST Kablosuz Haberleşme Yarışması'nda karıştırma etkisi altındaki frekanslardan dinamiği yöneterek kaçmayı başaran takım, veriyi eksiksiz ileterek **397 takım arasından Türkiye 6.sı** oldu.
+2024 TEKNOFEST Kablosuz Haberleşme Yarışması'nda karıştırma etkisi altındaki frekanslardan dinamiği yöneterek kaçmayı başaran takım, veriyi eksiksiz ileterek 400'ü aşkın başvuru arasından finale kalan 16 takım içinde **Türkiye 6.sı** oldu.
