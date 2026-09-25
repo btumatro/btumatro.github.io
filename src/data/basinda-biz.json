@@ -2,6 +2,13 @@
   "intro": "Ulusal ve yerel basında yer alan projelerimiz, başarılarımız ve etkinliklerimizden bir seçki.",
   "items": [
     {
+      "outlet": "Nöbetçi Gazete",
+      "headline": "BTÜ'lü gençler TEKNOFEST'e damga vuracak",
+      "date": "2025-05-29",
+      "url": "https://www.nobetcigazete.com/btulu-gencler-teknofeste-damga-vuracak",
+      "image": "/media/basinda-nobetci-teknofest-2025.jpg"
+    },
+    {
       "outlet": "Gündem Bursa",
       "headline": "NASA Space Apps Challenge Bursa'da: Teknoloji ve Uzay Tutkunları Bir Araya Geldi",
       "date": "2024-10-09",
@@ -9,11 +16,32 @@
       "image": "/media/basinda-gundembursa-nasa-space-apps.jpg"
     },
     {
+      "outlet": "Vitrin Haber",
+      "headline": "BTÜ'lü öğrenciler TEKNOFEST'ten 4 ödülle döndü",
+      "date": "2024-10-08",
+      "url": "https://www.vitrinhaber.com/btulu-ogrenciler-teknofestten-4-odulle-dondu",
+      "image": "/media/basinda-vitrin-teknofest-2024-odul.jpg"
+    },
+    {
+      "outlet": "Bursa Teknik Üniversitesi",
+      "headline": "Teknofest-2023 İstanbul'da BTÜ Stantına Yoğun İlgi",
+      "date": "2023-05-03",
+      "url": "https://tyk.btu.edu.tr/tr/duyuru/detay/45289/teknofest-2023-i%CC%87stanbulda-bt%C3%BC-stant%C4%B1na-yo%C4%9Fun-i%CC%87lgi",
+      "image": "/media/basinda-btu-teknofest-2023-stant.jpg"
+    },
+    {
       "outlet": "Anadolu Ajansı",
       "headline": "'Uyumayan atölyeler'de beyin fırtınası yaparak proje üretiyorlar",
       "date": "2021-10-21",
       "url": "https://www.aa.com.tr/tr/bilim-teknoloji/uyumayan-atolyelerde-beyin-firtinasi-yaparak-proje-uretiyorlar/2398409",
       "image": "/media/basinda-aa-uyumayan-atolyeler.jpg"
+    },
+    {
+      "outlet": "Ekonomim",
+      "headline": "TEKNOFEST Savaşan İHA Şampiyonu BTÜ ÖZTÜRK",
+      "date": "2021-09-10",
+      "url": "https://www.ekonomim.com/sehirler/teknofest-savasan-iha-sampiyonu-btu-ozturk-haberi-633391",
+      "image": "/media/basinda-ekonomim-ozturk-savasan-iha.jpg"
     },
     {
       "outlet": "Milliyet",
