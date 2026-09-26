@@ -2,6 +2,8 @@
 
 Bu klasör, 26 Eylül 2026'da hazırlanan yaklaşık 31 saniyelik dikey MATRO site ve radyo tanıtımının son sürümünü, seçilmiş kaynak medyalarını, Gemini Omni sahne promptlarını ve tekrar render betiğini içerir.
 
+Güncel araç sticker'ları, yeniden üretilmiş Omni klipleri ve seçilen alternatif chibi kapanışı kullanan **V2** için [`v2/README.md`](v2/README.md)'ye bak.
+
 ## İçerik
 
 - `output/MATRO-Radyo-Reels-final.mp4`: teslim edilen 720 × 1280, 24 fps, H.264/AAC video.
