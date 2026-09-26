@@ -74,3 +74,24 @@ vocals, singing, rap, long intro, fade out ending, sad
 - Jingle paketinde model istasyon adını yanlış telaffuz ederse ("Matro" yerine "Metro"
   gibi), yalnızca doğru okunan kısımlar kesilir.
 - Parçaları `~/Downloads`'a bırakın; kesme, döngü ve miks betikle yapılır.
+
+## Üretim sonucu
+
+| Bölüm | Üretilen dosya | Kullanım |
+|---|---|---|
+| §1 Jingle paketi | `ses/08-matro-radyo-jingle.mp4` (Saha Bizim, 0:55) | Açılış 0–14,2 sn, kapanış 45,8–53,4 sn |
+| §2 DJ yatağı | `ses/09-dj-yatagi-the-hourly-brief.mp4` | DJ bağlantıları |
+| §3 Hikâye yatağı | `ses/10-hikaye-yatagi-a-measure-of-intent.mp4` | Hikâye bölümleri |
+| §4 Bülten yatağı | `ses/11-bulten-yatagi-unfolding-blueprints.mp4` | Bülten |
+| §5 Tema müziği | Üretilmedi | Yerine hikâye yatağının girişi kullanılıyor |
+| (ek) | `ses/12-gece-yatagi-the-midnight-invention.mp4` | "Atölyede gece" bağlantısı |
+
+Dosyalar ada göre değil sese göre eşleştirildi (tempo, tiz enerji ve spektrogram
+karşılaştırması). Jingle model tarafından tek parça üretildi, ayrı kimlikler hâlinde
+değil; kesitler dalga biçimi ve altyazı zamanlarına göre seçildi.
+
+## Sıradaki müzik ihtiyaçları
+
+- **Tema müziği (§5):** Hikâye kuşağının açılış ve kapanışı için hâlâ gerekli.
+- **İkinci DJ yatağı:** Tek yatak 8 bağlantıda tekrar ediyor; farklı tempoda ikinci bir
+  sözsüz yatak (ör. 96 BPM chill-funk) çeşitlilik sağlar.

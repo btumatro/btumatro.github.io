@@ -3,6 +3,9 @@
 Sitedeki radyonun "art arda çalan dosyalar"dan gerçek bir radyo yayınına dönüşmesi için
 değerlendirme ve plan. Eylül 2026.
 
+> **Durum: uygulandı** (commit `3156ebe`). Güncel yayın akışı ve yeniden üretme adımları
+> §5'te. §1–§4 planın ilk hâlidir, karar gerekçesi olarak korunuyor.
+
 ## 1. Mevcut durumun değerlendirmesi
 
 **Ses (düzeltildi, `scripts/radyo-yayin.mjs`):**
@@ -106,3 +109,68 @@ Promptlar: `docs/topluluk-sarkisi/prompt-taslaklari/v8-radyo-paketi.md`
 5. Oynatıcı: liste blokları gösterir ("Link + şarkı adı"); ilerleme çubuğu bloğun
    tamamını kapsar.
 6. Ölçüm: tüm bloklar -11/-12 LUFS; konuşma altındaki müzik konuşmanın 15–18 dB altında.
+
+## 5. Uygulanan yayın (Eylül 2026)
+
+`src/data/radyo.json`, 14 öğe, yaklaşık 31 dakika. Tüm bloklar -12 LUFS civarında ölçülür
+(konuşma -15 LUFS mono olarak normalize edilir, şarkılar -12 LUFS).
+
+| # | Dosya (`public/media/ses/`) | İçerik | Yatak / şarkı |
+|---|---|---|---|
+| 1 | `jingle-acilis.mp3` (0:14) | İstasyon kimliği | Jingle 0–14,2 sn |
+| 2 | `blok-01-hikaye-1.mp3` (1:54) | MATRO Hikâyesi 1. bölüm (`ses/sekans-01.wav`) | Hikâye yatağı |
+| 3 | `blok-02-atolyede-baslar.mp3` (3:01) | Link l1, talk-up | Atölyede Başlar |
+| 4 | `blok-03-gece-yarisi-mesaisi.mp3` (3:26) | Bunu biliyor muydunuz? (l2) | Gece Yarısı Mesaisi |
+| 5 | `blok-04-hikaye-2.mp3` (2:32) | l3 + hikâye 2. bölüm, güncel bilgilerle yeniden yazıldı | Hikâye yatağı |
+| 6 | `jingle-kapanis.mp3` (0:07) | İstasyon kimliği | Jingle 45,8–53,4 sn |
+| 7 | `blok-05-bulten.mp3` (0:48) | MATRO bülteni | Bülten yatağı |
+| 8 | `blok-06-atolyeden-goklere.mp3` (3:32) | Link l4 (ASHİNA) | Atölyeden Göklere |
+| 9 | `blok-07-suru.mp3` (3:15) | Link l5 (MATRİS) | Sürü |
+| 10 | `blok-08-derinden-goklere.mp3` (3:23) | Radyo sözlüğü: KTR (l6) | Derinden Göklere |
+| 11 | `blok-09-atolyede-baslar-2.mp3` (3:30) | Takım spotu: PUSULA (l7) | Atölyede Başlar (2. sürüm) |
+| 12 | `blok-10-the-bursa-shift.mp3` (3:15) | Atölyede gece (l8) | Gece yatağı, The Bursa Shift |
+| 13 | `blok-11-hikaye-3.mp3` (2:08) | MATRO Hikâyesi 3. bölüm ve kapanış (`ses/sekans-03.wav`) | Hikâye yatağı |
+| 14 | `jingle-kapanis.mp3` | Yayın sonu kimliği | |
+
+Plandan sapmalar:
+
+- **Tema müziği** üretilmedi; hikâye bölümleri doğrudan hikâye yatağıyla açılıp kapanıyor.
+- **Bülten** elle yazıldı (`radyo-v2/bulten.json`); sitedeki haberlerden otomatik üretim
+  henüz yok. Yeni haber çıktığında senaryo güncellenip yeniden seslendirilmeli.
+- **Gece yatağı** (The Midnight Invention) plana sonradan eklendi.
+- `radyo-aralari/` ve `ses/radyo/` eski sürümün ara anonslarıdır; yayında değildir,
+  yalnızca kaynak olarak duruyor. `matro-tanitim-podcast*.mp3` ve `sekans-02.wav` de öyle.
+
+### Dosya düzeni
+
+- `docs/podcast/radyo-v2/*.json`: link, bülten ve hikâye 2 senaryoları (Ayşe ve Can).
+- `docs/podcast/ses/radyo-v2/*.mp3`: bu senaryoların TTS kayıtları.
+- `docs/topluluk-sarkisi/ses/*.mp4`: şarkılar, jingle ve yataklar (bkz. oradaki README).
+- `scripts/radyo-yayin.mjs`: blokları üretir; `scripts/podcast-tts.mjs`: seslendirir.
+- Oynatıcı: `src/components/Radyo.astro`, başlıktaki düğme ve ipucu `src/components/Header.astro`.
+
+### Yeniden üretme
+
+```bash
+# 1. Senaryoyu düzenle, sonra seslendir (GEMINI_API_KEY ortamda olmalı; ekrana yazdırma)
+node scripts/podcast-tts.mjs --senaryo docs/podcast/radyo-v2/bulten.json --cikti radyo-v2/bulten
+
+# 2. İlgili bloğu yeniden miksle (ad filtresi isteğe bağlı; boş bırakılırsa hepsi)
+node scripts/radyo-yayin.mjs bulten
+
+# 3. Ölçüm (-12 ±0,5 LUFS beklenir)
+ffmpeg -hide_banner -nostats -i public/media/ses/blok-05-bulten.mp3 -af ebur128 -f null - 2>&1 | grep "I:"
+```
+
+Yeni şarkı eklemek için: MP4'ü `docs/topluluk-sarkisi/ses/` altına numarayla koy, bir link
+senaryosu yaz (back-announce, tek bilgi, front-announce), seslendir, `radyo-yayin.mjs`
+içindeki `bloklar` listesine `linkSarki(...)` satırı ekle, `src/data/radyo.json`'a bloğu ve
+kapağını (`public/media/ses/*.jpg`) ekle. Yatak ofsetlerini bloklar arasında farklı tut ki
+aynı yatak kesiti art arda duyulmasın.
+
+### Açık işler
+
+- Bülteni `src/content/haberler`'den otomatik yazan üretici.
+- Tema müziği ve ikinci bir DJ yatağı (promptlar `v8-radyo-paketi.md` sonunda).
+- Yapay zekâ müzik aracının ticari kullanım/telif koşullarının kontrolü.
+

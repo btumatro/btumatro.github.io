@@ -23,3 +23,9 @@ vocals, singing, rap, spoken words, choir, lyrics, aggressive drums, distortion,
 
 - Sözsüz olduğu için olgu kontrolü gerekmez.
 - Atölye sesleri ritmin önüne geçmemeli; kısık doku olarak kalmalı.
+
+## Üretim sonucu
+
+- Dosya: `ses/07-the-bursa-shift.mp4`, başlık **The Bursa Shift** (2:57), sözsüz.
+- Radyoda "Atölyede gece" bağlantısından sonra çalar; aynı zamanda eski radyo
+  sürümünde konuşmaların müzik yatağıydı.

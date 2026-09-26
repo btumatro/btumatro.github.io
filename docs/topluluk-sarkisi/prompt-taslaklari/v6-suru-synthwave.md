@@ -21,3 +21,10 @@ vocals, singing, rap, spoken words, choir, lyrics, lo-fi, acoustic guitar, sad, 
 ## Notlar
 
 - Pervane sesleri çok baskın olursa "subtle propeller textures" olarak yumuşatın.
+
+## Üretim sonucu
+
+- Dosya: `ses/06-suru.mp4`, başlık **Sürü** (2:59), sözsüz.
+- Videonun görüntüsü koyu zeminde dönen bir şekil olduğu için kapak Gemini ile üretildi
+  (`public/media/ses/06-suru.jpg`, `scripts/gemini-gorsel.mjs`).
+- Radyoda MATRİS bağlantısından sonra çalar.

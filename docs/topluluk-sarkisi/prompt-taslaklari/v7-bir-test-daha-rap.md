@@ -60,3 +60,9 @@ MATRO, MATRO, atölyeden sahaya
   aracı, PRUSA su altı aracı, ZEMHERİ su altı roketi, PUSULA sanayide robotik, ALHAZEN enerji).
 - "Aşina" yazımı telaffuz için; ekranda/altyazıda ASHİNA olarak yazılmalı.
 - Sözlerde derece iddiası bilerek yok; ileride değişecek sayılar şarkıyı eskitmesin.
+
+## Üretim sonucu
+
+- Dosya: `ses/04-gece-yarisi-mesaisi.mp4`, başlık **Gece Yarısı Mesaisi** (2:57).
+- Sesteki gerçek sözler: `sozler/04-gece-yarisi-mesaisi.md`.
+- Radyoda "Bunu biliyor muydunuz?" bağlantısından sonra çalar.

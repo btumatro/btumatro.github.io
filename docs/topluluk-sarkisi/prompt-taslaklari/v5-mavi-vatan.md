@@ -54,3 +54,9 @@ Mavi Vatan, Mavi Vatan
 - Olgu kontrolü: LODOS insansız deniz aracı, PRUSA insansız su altı aracı, ZEMHERİ su altı
   roketi takımıdır (site verisiyle uyumlu). Sözlerde derece veya sayı iddiası yok.
 - Model sözleri değiştirirse, yayından önce `sozler/` klasörüne gerçek sözleri çıkarın.
+
+## Üretim sonucu
+
+- Dosya: `ses/05-derinden-goklere.mp4`, başlık **Derinden Göklere** (2:55).
+- Sesteki gerçek sözler: `sozler/05-derinden-goklere.md`.
+- Radyoda "Radyo sözlüğü: KTR" bağlantısından sonra çalar.

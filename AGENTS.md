@@ -40,6 +40,8 @@ ve her gün 06:00 TR'de (süresi geçen duyurular düşsün diye) otomatik build
 - `scripts/*.mjs` — tek seferlik/yeniden çalıştırılabilir üretim betikleri (marka varlıkları,
   OG görseli, sponsor logo kırpma — `node scripts/<isim>.mjs`)
 - `.pages.yml` — Pages CMS şeması, Türkçe etiketlerle
+- `docs/podcast/`, `docs/topluluk-sarkisi/` — MATRO Radyo senaryoları, şarkılar, promptlar
+  (bkz. aşağıdaki MATRO Radyo bölümü)
 
 ## Sabit kurallar (bunları bozma)
 
@@ -69,6 +71,23 @@ ve her gün 06:00 TR'de (süresi geçen duyurular düşsün diye) otomatik build
   bağlanır (dosya adıyla, `insansiz-kara-araci` gibi); `aliases: []` eski adları ve farklı
   yazımları (İDA, LUNA İKA…) o sayfaya bağlar (`teamIndex()`/`teamHref()`). Yeni alt takım
   eklerken `altTakimlar`'a eklemeyi unutma.
+
+## MATRO Radyo
+
+Sitenin altında açılan, varsayılan olarak durdurulmuş radyo çalar (`src/components/Radyo.astro`;
+başlıktaki düğme ve "Radyomuzu dinlediniz mi?" ipucu `Header.astro`'da). Çalma listesi
+`src/data/radyo.json`, sesler `public/media/ses/` (blok MP3'leri, jingle'lar, kapaklar).
+
+- Her blok tek dosya: DJ bağlantısı yatak üstünde, son cümlede şarkı altta girer (talk-up).
+  Bloklar `node scripts/radyo-yayin.mjs [ad]` ile üretilir; kaynaklar
+  `docs/topluluk-sarkisi/ses/*.mp4` (şarkı/jingle/yatak) ve `docs/podcast/ses/` (konuşma).
+- Konuşmalar Gemini TTS ile: `node scripts/podcast-tts.mjs --senaryo <json> --cikti <yol>`.
+  Kapak görselleri `scripts/gemini-gorsel.mjs`. Anahtar yalnızca ortamdan
+  (`GEMINI_API_KEY`) okunur; hiçbir dosyaya, loga veya çıktıya yazılmaz.
+- Güncel akış, ses hedefleri ve yeni şarkı ekleme adımları: `docs/podcast/RADYO-YAYIN-PLANI.md` §5.
+  Şarkı, jingle ve yatak listesi ile promptlar: `docs/topluluk-sarkisi/README.md`.
+- İpucu durumu: `matro-radyo-ipucu-kapali` (localStorage, "Bir daha gösterme") ve
+  `matro-radyo-ipucu-goruldu` (sessionStorage); çalma durumu `matro-radyo` (sessionStorage).
 
 ## Görsel kuralları
 
