@@ -18,22 +18,16 @@ Eylül 2026.
 | `ses/01-atolyede-baslar.mp4` | Atölyede Başlar | 2:53 | Anthemic Pop-Rock | Orijinal sözler, "Mavi Vatan" ve "su altı" dahil (bkz. `prompt-taslaklari/v1`) |
 | `ses/02-atolyede-baslar-v2.mp4` | Atölyede Başlar (2. sürüm) | 3:02 | Turkish Pop-Rock | Gemini'nin üretimde yeniden yazdığı sözler; "Milli Teknoloji Hamlesi" ve "Mavi Vatan" geçiyor |
 | `ses/03-atolyeden-goklere.mp4` | Atölyeden Göklere | 3:03 | Turkish Pop-Rock | Gemini'nin yeniden yazdığı, daha yüksek enerjili sözler; "Milli Teknoloji Hamlesi", "Mavi Vatan", "BTÜ" geçiyor |
+| `ses/04-gece-yarisi-mesaisi.mp4` | Gece Yarısı Mesaisi | 2:57 | Türkçe rap | `v7` sözleri birebir; başa "Bursa Teknik Üniversitesi, MATRO", sona slogan eklenmiş |
+| `ses/05-derinden-goklere.mp4` | Derinden Göklere | 2:55 | Pop-rock düet | `v5` (Mavi Vatan) sözleri birebir |
+| `ses/06-suru.mp4` | Sürü | 3:00 | Synthwave, sözsüz | `v6` |
+| `ses/07-the-bursa-shift.mp4` | The Bursa Shift | 2:57 | Lo-fi, sözsüz | `v4` (Gece Vardiyası) |
 
 **Önemli:** 2. ve 3. şarkının sözleri `prompt-taslaklari/v2` ve `v3` belgelerindeki
 sözlerle birebir aynı değildir; model üretim sırasında sözleri değiştirdi. Paylaşırken
 veya altyazı hazırlarken her zaman `sozler/` klasöründeki metni kullanın.
 
-## Sıradaki şarkılar (promptlar hazır, üretilmedi)
-
-| Prompt | Tür | Radyodaki yeri |
-|---|---|---|
-| `prompt-taslaklari/v4-gece-vardiyasi-lofi.md` | Sözsüz lo-fi | "Atölyede bir gece" arasından sonra |
-| `prompt-taslaklari/v5-mavi-vatan.md` | Türkçe pop-rock, düet | "Karada ve denizde" arasından sonra |
-| `prompt-taslaklari/v6-suru-synthwave.md` | Sözsüz synthwave | Hava takımları arasından sonra |
-| `prompt-taslaklari/v7-bir-test-daha-rap.md` | Türkçe rap, takım yoklaması | "Bunu biliyor muydunuz?" arasından sonra |
-
-Üretilen şarkı `ses/` klasörüne konur; radyo için sesi 128 kbps MP3 olarak
-`public/media/ses/` altına çıkarılıp `src/data/radyo.json` listesine eklenir.
+Tüm şarkılar radyoda (`src/data/radyo.json`); sesler `public/media/ses/` altında 128 kbps MP3.
 
 ## Kullanım önerisi
 

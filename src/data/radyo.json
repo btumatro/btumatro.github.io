@@ -26,6 +26,12 @@
       "kapak": "/logo-matro-beyaz.png"
     },
     {
+      "baslik": "Gece Yarısı Mesaisi",
+      "tur": "Topluluk şarkısı · Rap",
+      "dosya": "/media/ses/04-gece-yarisi-mesaisi.mp3",
+      "kapak": "/media/ses/04-gece-yarisi-mesaisi.jpg"
+    },
+    {
       "baslik": "Takımlar ve TEKNOFEST yolculuğu",
       "tur": "Podcast · 2. bölüm",
       "dosya": "/media/ses/podcast-bolum-02.mp3",
@@ -44,21 +50,33 @@
       "kapak": "/media/ses/03-atolyeden-goklere.jpg"
     },
     {
+      "baslik": "Sürü",
+      "tur": "Enstrümantal",
+      "dosya": "/media/ses/06-suru.mp3",
+      "kapak": "/media/ses/06-suru.jpg"
+    },
+    {
       "baslik": "Radyo sözlüğü",
       "tur": "Radyo arası",
       "dosya": "/media/ses/ara-06-radyo-sozlugu.mp3",
       "kapak": "/logo-matro-beyaz.png"
     },
     {
-      "baslik": "Takım spotu: PUSULA ve ALHAZEN",
-      "tur": "Radyo arası",
-      "dosya": "/media/ses/ara-08-takim-spotu.mp3",
-      "kapak": "/logo-matro-beyaz.png"
-    },
-    {
       "baslik": "Karada ve denizde",
       "tur": "Radyo arası",
       "dosya": "/media/ses/ara-03-karada-ve-denizde.mp3",
+      "kapak": "/logo-matro-beyaz.png"
+    },
+    {
+      "baslik": "Derinden Göklere",
+      "tur": "Topluluk şarkısı",
+      "dosya": "/media/ses/05-derinden-goklere.mp3",
+      "kapak": "/media/ses/05-derinden-goklere.jpg"
+    },
+    {
+      "baslik": "Takım spotu: PUSULA ve ALHAZEN",
+      "tur": "Radyo arası",
+      "dosya": "/media/ses/ara-08-takim-spotu.mp3",
       "kapak": "/logo-matro-beyaz.png"
     },
     {
@@ -72,6 +90,12 @@
       "tur": "Radyo arası",
       "dosya": "/media/ses/ara-07-atolyede-bir-gece.mp3",
       "kapak": "/logo-matro-beyaz.png"
+    },
+    {
+      "baslik": "The Bursa Shift",
+      "tur": "Enstrümantal · Lo-fi",
+      "dosya": "/media/ses/07-the-bursa-shift.mp3",
+      "kapak": "/media/ses/07-the-bursa-shift.jpg"
     },
     {
       "baslik": "Eğitim, sanayi ve nasıl katılırım",
