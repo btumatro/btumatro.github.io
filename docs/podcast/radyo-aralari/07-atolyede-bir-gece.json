@@ -1,0 +1,35 @@
+{
+  "title": "Atölyede bir gece",
+  "sequences": [
+    {
+      "sequenceId": 1,
+      "sequenceTitle": "Atölyede bir gece",
+      "dialogues": [
+        {
+          "speaker": "Can",
+          "text": "Saat gece ikiyi geçiyor. Atölyede ışıklar hâlâ açık."
+        },
+        {
+          "speaker": "Ayse",
+          "text": "Bir masada deniz aracının gövdesi zımparalanıyor, epoksi kokusu havada."
+        },
+        {
+          "speaker": "Can",
+          "text": "Öbür masada su altı roketinin elektroniği bir kez daha kontrol ediliyor. Yarın havuz testi var."
+        },
+        {
+          "speaker": "Ayse",
+          "text": "Biri bir kablonun ters bağlandığını fark ediyor. Kimse şikâyet etmiyor, baştan alınıyor."
+        },
+        {
+          "speaker": "Can",
+          "text": "Çünkü yarışma sahasında birkaç dakikalık görev, aylar süren bu gecelerin karşılığı."
+        },
+        {
+          "speaker": "Ayse",
+          "text": "Atölyede başlar, sahada kanıtlanır."
+        }
+      ]
+    }
+  ]
+}

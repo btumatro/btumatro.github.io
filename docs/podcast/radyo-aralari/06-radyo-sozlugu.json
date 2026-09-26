@@ -1,0 +1,35 @@
+{
+  "title": "Radyo sözlüğü",
+  "sequences": [
+    {
+      "sequenceId": 1,
+      "sequenceTitle": "Radyo sözlüğü",
+      "dialogues": [
+        {
+          "speaker": "Ayse",
+          "text": "Radyo sözlüğü zamanı. Bugünün ilk kelimesi, Ö T R."
+        },
+        {
+          "speaker": "Can",
+          "text": "Ön Tasarım Raporu. TEKNOFEST'te takımın aracını ilk kez kâğıt üstünde anlattığı rapor. Birçok takım bu aşamada elenir."
+        },
+        {
+          "speaker": "Ayse",
+          "text": "İkinci kelime, K T R."
+        },
+        {
+          "speaker": "Can",
+          "text": "Kritik Tasarım Raporu. Artık fikir değil, üretime hazır bir tasarım isteniyor. Zemheri su altı roketi, ilk yılında bu raporda Türkiye dördüncüsü oldu."
+        },
+        {
+          "speaker": "Ayse",
+          "text": "Son kelime, otonom."
+        },
+        {
+          "speaker": "Can",
+          "text": "Aracın insan kumandası olmadan kendi kararını vermesi. Bizim takımların çoğunun asıl derdi de bu."
+        }
+      ]
+    }
+  ]
+}

@@ -2,9 +2,9 @@
   "baslik": "MATRO Radyo",
   "parcalar": [
     {
-      "baslik": "MATRO Tanıtım Podcasti",
-      "tur": "Podcast",
-      "dosya": "/media/ses/matro-tanitim-podcast.mp3",
+      "baslik": "MATRO nedir? Atölyede bir gece",
+      "tur": "Podcast · 1. bölüm",
+      "dosya": "/media/ses/podcast-bolum-01.mp3",
       "kapak": "/logo-matro-beyaz.png"
     },
     {
@@ -20,6 +20,18 @@
       "kapak": "/media/ses/01-atolyede-baslar.jpg"
     },
     {
+      "baslik": "Bunu biliyor muydunuz?",
+      "tur": "Radyo arası",
+      "dosya": "/media/ses/ara-05-bunu-biliyor-muydunuz.mp3",
+      "kapak": "/logo-matro-beyaz.png"
+    },
+    {
+      "baslik": "Takımlar ve TEKNOFEST yolculuğu",
+      "tur": "Podcast · 2. bölüm",
+      "dosya": "/media/ses/podcast-bolum-02.mp3",
+      "kapak": "/logo-matro-beyaz.png"
+    },
+    {
       "baslik": "Gökyüzündeki takımlarımız",
       "tur": "Radyo arası",
       "dosya": "/media/ses/ara-02-gokyuzundeki-takimlar.mp3",
@@ -30,6 +42,18 @@
       "tur": "Topluluk şarkısı",
       "dosya": "/media/ses/03-atolyeden-goklere.mp3",
       "kapak": "/media/ses/03-atolyeden-goklere.jpg"
+    },
+    {
+      "baslik": "Radyo sözlüğü",
+      "tur": "Radyo arası",
+      "dosya": "/media/ses/ara-06-radyo-sozlugu.mp3",
+      "kapak": "/logo-matro-beyaz.png"
+    },
+    {
+      "baslik": "Takım spotu: PUSULA ve ALHAZEN",
+      "tur": "Radyo arası",
+      "dosya": "/media/ses/ara-08-takim-spotu.mp3",
+      "kapak": "/logo-matro-beyaz.png"
     },
     {
       "baslik": "Karada ve denizde",
@@ -44,9 +68,15 @@
       "kapak": "/media/ses/02-atolyede-baslar-v2.jpg"
     },
     {
-      "baslik": "Aramıza katıl",
+      "baslik": "Atölyede bir gece",
       "tur": "Radyo arası",
-      "dosya": "/media/ses/ara-04-aramiza-katil.mp3",
+      "dosya": "/media/ses/ara-07-atolyede-bir-gece.mp3",
+      "kapak": "/logo-matro-beyaz.png"
+    },
+    {
+      "baslik": "Eğitim, sanayi ve nasıl katılırım",
+      "tur": "Podcast · 3. bölüm",
+      "dosya": "/media/ses/podcast-bolum-03.mp3",
       "kapak": "/logo-matro-beyaz.png"
     }
   ]

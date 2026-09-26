@@ -1,0 +1,31 @@
+{
+  "title": "Bunu biliyor muydunuz?",
+  "sequences": [
+    {
+      "sequenceId": 1,
+      "sequenceTitle": "Bunu biliyor muydunuz?",
+      "dialogues": [
+        {
+          "speaker": "Can",
+          "text": "Bunu biliyor muydunuz? MATRO daha kurulduğu yıl, iki bin on üçte, dünya ikinciliği kazandı."
+        },
+        {
+          "speaker": "Ayse",
+          "text": "Lagari adlı insansız hava aracı tasarımıyla, Future Flight Design yarışmasında."
+        },
+        {
+          "speaker": "Can",
+          "text": "Bir tane daha. İki bin yirmi ikide sualtı ekibimiz Singapur'daki otonom sualtı aracı yarışmasında dünya finalistiydi."
+        },
+        {
+          "speaker": "Ayse",
+          "text": "Ve iki bin yirmi birde, Fransa'daki Renault Twizy yarışmasında dünya dördüncülüğü geldi."
+        },
+        {
+          "speaker": "Can",
+          "text": "Kısacası bu topluluk sadece Türkiye'de değil, dünyada da sahaya çıkıyor."
+        }
+      ]
+    }
+  ]
+}

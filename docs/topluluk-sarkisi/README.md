@@ -23,6 +23,18 @@ Eylül 2026.
 sözlerle birebir aynı değildir; model üretim sırasında sözleri değiştirdi. Paylaşırken
 veya altyazı hazırlarken her zaman `sozler/` klasöründeki metni kullanın.
 
+## Sıradaki şarkılar (promptlar hazır, üretilmedi)
+
+| Prompt | Tür | Radyodaki yeri |
+|---|---|---|
+| `prompt-taslaklari/v4-gece-vardiyasi-lofi.md` | Sözsüz lo-fi | "Atölyede bir gece" arasından sonra |
+| `prompt-taslaklari/v5-mavi-vatan.md` | Türkçe pop-rock, düet | "Karada ve denizde" arasından sonra |
+| `prompt-taslaklari/v6-suru-synthwave.md` | Sözsüz synthwave | Hava takımları arasından sonra |
+| `prompt-taslaklari/v7-bir-test-daha-rap.md` | Türkçe rap, takım yoklaması | "Bunu biliyor muydunuz?" arasından sonra |
+
+Üretilen şarkı `ses/` klasörüne konur; radyo için sesi 128 kbps MP3 olarak
+`public/media/ses/` altına çıkarılıp `src/data/radyo.json` listesine eklenir.
+
 ## Kullanım önerisi
 
 - **Atölyede Başlar:** Yarışma günü, TEKNOFEST ve tanıtım videoları.

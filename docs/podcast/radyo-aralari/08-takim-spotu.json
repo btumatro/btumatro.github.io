@@ -1,0 +1,35 @@
+{
+  "title": "Takım spotu",
+  "sequences": [
+    {
+      "sequenceId": 1,
+      "sequenceTitle": "Takım spotu",
+      "dialogues": [
+        {
+          "speaker": "Ayse",
+          "text": "Takım spotu. Bu kez daha az konuşulan iki takımımız."
+        },
+        {
+          "speaker": "Can",
+          "text": "İlki Pusula. Takımın aracı Sirius, paleti depodan üretim hattına kendi başına taşıyan otonom bir forklift."
+        },
+        {
+          "speaker": "Ayse",
+          "text": "Uzaktan kumanda yok. Alanı haritalıyor, görevi alıyor, yükü götürüp bırakıyor. İki bin yirmi altıda Sanayide Robotik Uygulamalar finalindeydi."
+        },
+        {
+          "speaker": "Can",
+          "text": "İkincisi Alhazen. İlk sezonunda yakıt hücreleri üzerine çalıştılar, Çevre ve Enerji yarışmasında Türkiye yedincisi oldular."
+        },
+        {
+          "speaker": "Ayse",
+          "text": "Bu sezon çıtayı yükselttiler. Nükleer enerji tasarım yarışmasında ön değerlendirme raporunda Türkiye ikincisi oldular."
+        },
+        {
+          "speaker": "Can",
+          "text": "Robotikten nükleer enerjiye. MATRO'nun ne kadar geniş olduğunu gösteren iki takım."
+        }
+      ]
+    }
+  ]
+}
