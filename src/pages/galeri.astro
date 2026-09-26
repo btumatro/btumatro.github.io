@@ -30,7 +30,7 @@ const takimSecenekleri = [...new Set(images.map((i) => i.takim).filter((t): t is
     {
       images.length > 0 && (
         <div class="mb-8 flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
-          <div class="flex flex-wrap gap-2" role="group" aria-label="Kategoriye göre filtrele">
+          <div class="flex min-w-0 flex-1 flex-wrap gap-2" role="group" aria-label="Kategoriye göre filtrele">
             <button type="button" data-kategori="" aria-pressed="true" class="galeri-filtre rounded-lg border border-volt-400/50 bg-volt-400/10 px-3.5 py-2 font-mono text-xs tracking-wider text-volt-300 transition-colors">
               TÜMÜ <span class="opacity-60">{images.length}</span>
             </button>
@@ -40,9 +40,9 @@ const takimSecenekleri = [...new Set(images.map((i) => i.takim).filter((t): t is
               </button>
             ))}
           </div>
-          <label class="flex items-center gap-2 text-xs text-mist-500">
+          <label class="flex w-full min-w-0 items-center gap-2 text-xs text-mist-500 lg:w-auto lg:shrink-0">
             <span class="font-mono tracking-[0.15em] uppercase">Takım</span>
-            <select id="galeri-takim" class="rounded-lg border border-white/12 bg-ink-900 px-3 py-2 text-sm text-mist-100 focus:border-volt-400/50 focus:outline-none">
+            <select id="galeri-takim" class="min-w-0 flex-1 truncate rounded-lg lg:max-w-xs lg:flex-none border border-white/12 bg-ink-900 px-3 py-2 text-sm text-mist-100 focus:border-volt-400/50 focus:outline-none">
               <option value="">Tüm takımlar</option>
               {takimSecenekleri.map((t) => <option value={t.id}>{t.ad}</option>)}
             </select>
