@@ -1,0 +1,199 @@
+---
+/**
+ * MATRO Radyo: topluluk şarkıları ve podcast için küçük oynatıcı.
+ *
+ * Header'daki "Radyo" düğmesi (`[data-radyo-ac]`) ekranın altında ince bir oynatıcı
+ * açar. Varsayılan olarak kapalı ve sessizdir; ses dosyası kişi oynat'a basana kadar
+ * indirilmez (`preload="none"`). Parça listesi `src/data/radyo.json`'dan gelir
+ * (panelde "Radyo").
+ *
+ * Sayfa değişince çalan parça, konum ve oynatıcının açık olup olmadığı tarayıcı
+ * oturumunda saklanır; yeni sayfada aynı yerden devam etmeye çalışır. Tarayıcı
+ * otomatik oynatmayı engellerse oynatıcı duraklatılmış hâlde, kaldığı yerde bekler.
+ */
+import radyo from '../data/radyo.json';
+import { url } from '../lib/utils';
+
+const parcalar = radyo.parcalar.map((p) => ({ ...p, dosya: url(p.dosya), kapak: url(p.kapak) }));
+---
+
+<section id="radyo" class="radyo" hidden aria-label={radyo.baslik} data-parcalar={JSON.stringify(parcalar)}>
+  <audio id="radyo-ses" preload="none"></audio>
+  <div class="radyo-ic">
+    <img id="radyo-kapak" class="radyo-kapak" src={parcalar[0]?.kapak} alt="" width="48" height="48" />
+    <div class="radyo-bilgi">
+      <p class="radyo-ust"><span class="radyo-canli" aria-hidden="true"></span>{radyo.baslik} · <span id="radyo-tur">{parcalar[0]?.tur}</span></p>
+      <p id="radyo-baslik" class="radyo-baslik">{parcalar[0]?.baslik}</p>
+      <div class="radyo-ilerleme">
+        <span id="radyo-sure-gecen">0:00</span>
+        <input id="radyo-cubuk" type="range" min="0" max="1000" value="0" aria-label="Parçada ilerle" />
+        <span id="radyo-sure-toplam">0:00</span>
+      </div>
+    </div>
+    <div class="radyo-dugmeler">
+      <button type="button" data-radyo-onceki aria-label="Önceki parça">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6v12M18 6l-9 6 9 6z" /></svg>
+      </button>
+      <button type="button" id="radyo-oynat" class="radyo-oynat" aria-label="Oynat">
+        <svg viewBox="0 0 24 24" aria-hidden="true" class="ikon-oynat"><path d="M8 5l11 7-11 7z" /></svg>
+        <svg viewBox="0 0 24 24" aria-hidden="true" class="ikon-durdur" hidden><path d="M7 5h4v14H7zM13 5h4v14h-4z" /></svg>
+      </button>
+      <button type="button" data-radyo-sonraki aria-label="Sonraki parça">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6v12M6 6l9 6-9 6z" /></svg>
+      </button>
+      <button type="button" id="radyo-liste-dugme" aria-label="Çalma listesi" aria-expanded="false" aria-controls="radyo-liste">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h11M4 12h11M4 17h7M18 10v8M18 18a2 2 0 1 1-2-2h2" /></svg>
+      </button>
+      <button type="button" data-radyo-kapat aria-label="Radyoyu kapat">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" /></svg>
+      </button>
+    </div>
+  </div>
+  <ol id="radyo-liste" class="radyo-liste" hidden>
+    {
+      parcalar.map((p, i) => (
+        <li>
+          <button type="button" data-radyo-parca={i}>
+            <span class="radyo-liste-no">{String(i + 1).padStart(2, '0')}</span>
+            <span class="radyo-liste-ad">{p.baslik}</span>
+            <span class="radyo-liste-tur">{p.tur}</span>
+          </button>
+        </li>
+      ))
+    }
+  </ol>
+</section>
+
+<style is:global>
+  .radyo { position: fixed; z-index: 60; left: 0; right: 0; bottom: 0; background: rgb(10 14 20 / 0.96); backdrop-filter: blur(14px); border-top: 1px solid rgb(255 255 255 / 0.1); color: var(--color-mist-100); }
+  .radyo-ic { display: flex; align-items: center; gap: 0.9rem; max-width: 72rem; margin: 0 auto; padding: 0.65rem 1rem; }
+  .radyo-kapak { width: 3rem; height: 3rem; border-radius: 0.4rem; object-fit: cover; background: var(--color-ink-800); flex-shrink: 0; }
+  .radyo-bilgi { flex: 1; min-width: 0; }
+  .radyo-ust { display: flex; align-items: center; gap: 0.4rem; font-family: var(--font-mono, monospace); font-size: 0.6rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-volt-300); }
+  .radyo-canli { width: 0.4rem; height: 0.4rem; border-radius: 999px; background: var(--color-mist-500); }
+  .radyo.caliyor .radyo-canli { background: var(--color-ember-400); box-shadow: 0 0 0 3px rgb(255 77 99 / 0.25); }
+  .radyo-baslik { margin-top: 0.15rem; font-size: 0.88rem; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .radyo-ilerleme { display: flex; align-items: center; gap: 0.5rem; margin-top: 0.3rem; font-family: var(--font-mono, monospace); font-size: 0.62rem; color: var(--color-mist-500); }
+  .radyo-ilerleme input { flex: 1; min-width: 0; accent-color: var(--color-volt-400); height: 0.9rem; }
+  .radyo-dugmeler { display: flex; align-items: center; gap: 0.25rem; }
+  .radyo-dugmeler button { display: grid; place-items: center; width: 2.2rem; height: 2.2rem; border-radius: 999px; color: var(--color-mist-300); cursor: pointer; transition: background 0.2s, color 0.2s; }
+  .radyo-dugmeler button:hover, .radyo-dugmeler button:focus-visible { background: rgb(255 255 255 / 0.08); color: var(--color-mist-100); }
+  .radyo-dugmeler svg { width: 1.1rem; height: 1.1rem; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  .radyo-dugmeler .radyo-oynat { width: 2.7rem; height: 2.7rem; background: var(--color-volt-400); color: var(--color-ink-950); }
+  .radyo-dugmeler .radyo-oynat:hover { background: var(--color-volt-300); color: var(--color-ink-950); }
+  .radyo-oynat svg { fill: currentColor; stroke: none; }
+  .radyo-liste { max-width: 72rem; margin: 0 auto; padding: 0 1rem 0.75rem; display: grid; gap: 0.2rem; }
+  .radyo-liste button { display: flex; width: 100%; align-items: baseline; gap: 0.75rem; padding: 0.45rem 0.6rem; border-radius: 0.4rem; text-align: left; font-size: 0.82rem; color: var(--color-mist-300); cursor: pointer; }
+  .radyo-liste button:hover, .radyo-liste button[aria-current='true'] { background: rgb(255 255 255 / 0.06); color: var(--color-mist-100); }
+  .radyo-liste-no { font-family: var(--font-mono, monospace); font-size: 0.65rem; color: var(--color-mist-500); }
+  .radyo-liste-ad { flex: 1; }
+  .radyo-liste-tur { font-size: 0.65rem; color: var(--color-mist-500); }
+  body.radyo-acik { padding-bottom: 5.5rem; }
+  @media (max-width: 640px) {
+    .radyo-ic { flex-wrap: wrap; gap: 0.6rem; }
+    .radyo-bilgi { flex-basis: calc(100% - 3.6rem); }
+    .radyo-dugmeler { width: 100%; justify-content: space-between; }
+    body.radyo-acik { padding-bottom: 9rem; }
+  }
+</style>
+
+<script>
+  type Parca = { baslik: string; tur: string; dosya: string; kapak: string };
+  const kok = document.getElementById('radyo') as HTMLElement | null;
+  const ses = document.getElementById('radyo-ses') as HTMLAudioElement | null;
+  if (kok && ses) {
+    const parcalar = JSON.parse(kok.dataset.parcalar ?? '[]') as Parca[];
+    const $ = <T extends HTMLElement>(id: string) => document.getElementById(id) as T;
+    const kapak = $<HTMLImageElement>('radyo-kapak');
+    const baslik = $('radyo-baslik');
+    const tur = $('radyo-tur');
+    const cubuk = $<HTMLInputElement>('radyo-cubuk');
+    const gecen = $('radyo-sure-gecen');
+    const toplam = $('radyo-sure-toplam');
+    const oynat = $<HTMLButtonElement>('radyo-oynat');
+    const liste = $('radyo-liste');
+    const listeDugme = $<HTMLButtonElement>('radyo-liste-dugme');
+    const ANAHTAR = 'matro-radyo';
+    let sira = 0;
+    let surukleniyor = false;
+
+    const oku = (): { sira?: number; zaman?: number; caliyor?: boolean; acik?: boolean } => {
+      try { return JSON.parse(sessionStorage.getItem(ANAHTAR) ?? '{}'); } catch { return {}; }
+    };
+    const yaz = () => {
+      try {
+        sessionStorage.setItem(ANAHTAR, JSON.stringify({ sira, zaman: ses.currentTime || 0, caliyor: !ses.paused, acik: !kok.hidden }));
+      } catch { /* depolama kapalıysa durum saklanmaz */ }
+    };
+    const dk = (s: number) => (Number.isFinite(s) ? `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, '0')}` : '0:00');
+
+    function yukle(i: number, zaman = 0) {
+      sira = (i + parcalar.length) % parcalar.length;
+      const p = parcalar[sira];
+      ses.src = p.dosya;
+      ses.preload = 'none';
+      kapak.src = p.kapak;
+      baslik.textContent = p.baslik;
+      tur.textContent = p.tur;
+      if (zaman > 0) ses.addEventListener('loadedmetadata', () => { ses.currentTime = zaman; }, { once: true });
+      liste.querySelectorAll<HTMLButtonElement>('[data-radyo-parca]').forEach((b) =>
+        Number(b.dataset.radyoParca) === sira ? b.setAttribute('aria-current', 'true') : b.removeAttribute('aria-current'),
+      );
+      cubuk.value = '0';
+      gecen.textContent = dk(zaman);
+      toplam.textContent = '0:00';
+    }
+    function durumuGoster() {
+      const calıyor = !ses.paused;
+      kok.classList.toggle('caliyor', calıyor);
+      oynat.setAttribute('aria-label', calıyor ? 'Duraklat' : 'Oynat');
+      oynat.querySelector('.ikon-oynat')?.toggleAttribute('hidden', calıyor);
+      oynat.querySelector('.ikon-durdur')?.toggleAttribute('hidden', !calıyor);
+      document.querySelectorAll<HTMLElement>('[data-radyo-ac]').forEach((d) => d.classList.toggle('radyo-caliyor', calıyor));
+    }
+    function ac() { kok.hidden = false; document.body.classList.add('radyo-acik'); yaz(); }
+    function kapat() { ses.pause(); kok.hidden = true; document.body.classList.remove('radyo-acik'); yaz(); }
+    const cal = () => ses.play().catch(() => durumuGoster());
+
+    document.querySelectorAll<HTMLElement>('[data-radyo-ac]').forEach((d) =>
+      d.addEventListener('click', () => (kok.hidden ? ac() : kapat())),
+    );
+    oynat.addEventListener('click', () => (ses.paused ? cal() : ses.pause()));
+    kok.querySelector('[data-radyo-onceki]')?.addEventListener('click', () => {
+      const devam = !ses.paused;
+      if (ses.currentTime > 5) { ses.currentTime = 0; return; }
+      yukle(sira - 1); if (devam) cal();
+    });
+    kok.querySelector('[data-radyo-sonraki]')?.addEventListener('click', () => { const devam = !ses.paused; yukle(sira + 1); if (devam) cal(); });
+    kok.querySelector('[data-radyo-kapat]')?.addEventListener('click', kapat);
+    listeDugme.addEventListener('click', () => {
+      liste.hidden = !liste.hidden;
+      listeDugme.setAttribute('aria-expanded', String(!liste.hidden));
+    });
+    liste.querySelectorAll<HTMLButtonElement>('[data-radyo-parca]').forEach((b) =>
+      b.addEventListener('click', () => { yukle(Number(b.dataset.radyoParca)); cal(); }),
+    );
+
+    ses.addEventListener('play', () => { durumuGoster(); yaz(); });
+    ses.addEventListener('pause', () => { durumuGoster(); yaz(); });
+    ses.addEventListener('ended', () => { yukle(sira + 1); cal(); });
+    ses.addEventListener('loadedmetadata', () => { toplam.textContent = dk(ses.duration); });
+    ses.addEventListener('timeupdate', () => {
+      if (!surukleniyor && ses.duration) cubuk.value = String(Math.round((ses.currentTime / ses.duration) * 1000));
+      gecen.textContent = dk(ses.currentTime);
+    });
+    cubuk.addEventListener('input', () => { surukleniyor = true; if (ses.duration) gecen.textContent = dk((Number(cubuk.value) / 1000) * ses.duration); });
+    cubuk.addEventListener('change', () => {
+      surukleniyor = false;
+      if (ses.duration) ses.currentTime = (Number(cubuk.value) / 1000) * ses.duration;
+    });
+    window.addEventListener('pagehide', yaz);
+
+    // Önceki sayfadan kalan durumu geri yükle. Varsayılan: kapalı ve duraklatılmış.
+    const d = oku();
+    yukle(d.sira ?? 0, d.zaman ?? 0);
+    if (d.acik) { kok.hidden = false; document.body.classList.add('radyo-acik'); }
+    if (d.acik && d.caliyor) { ses.preload = 'auto'; cal(); }
+    durumuGoster();
+  }
+</script>

@@ -685,6 +685,25 @@ content:
             type: string
             description: "İsteğe bağlı. Takım sayfasının dosya adı; görselin altında o takıma bağlantı çıkar. Örn: insansiz-kara-araci"
 
+  - name: radyo
+    label: Radyo (şarkılar ve podcast)
+    type: file
+    path: src/data/radyo.json
+    format: json
+    description: "Header'daki Radyo düğmesiyle açılan oynatıcının parça listesi. Ses dosyası MP3 olmalı (128 kbps yeterli)."
+    fields:
+      - { name: baslik, label: Radyo adı, type: string }
+      - name: parcalar
+        label: Parçalar
+        type: object
+        list:
+          collapsible: true
+        fields:
+          - { name: baslik, label: Parça adı, type: string, required: true }
+          - { name: tur, label: Tür, type: string, description: "Örn: Topluluk şarkısı, Podcast" }
+          - { name: dosya, label: Ses dosyası (MP3), type: file, required: true }
+          - { name: kapak, label: Kapak görseli, type: image }
+
   - name: sayilar
     label: Sayılar (tüm sitedeki rakamlar)
     type: file

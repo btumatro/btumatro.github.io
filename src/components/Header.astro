@@ -101,6 +101,19 @@ const groupActive = (item: (typeof NAV)[number]) =>
     </nav>
 
     <div class="flex items-center gap-2">
+      <button
+        type="button"
+        data-radyo-ac
+        class="radyo-dugme inline-flex h-10 items-center gap-2 rounded-lg border border-white/12 px-3 text-[0.8rem] font-semibold text-mist-100 transition-colors hover:border-volt-400/50 hover:text-volt-300"
+        aria-controls="radyo"
+        title="MATRO Radyo: topluluk şarkıları ve podcast"
+      >
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M4 10h16v10H4zM7 10l10-5" /><circle cx="9" cy="15" r="2" /><path d="M14 14h3M14 17h3" />
+        </svg>
+        <span class="hidden sm:inline">Radyo</span>
+        <span class="radyo-nokta" aria-hidden="true"></span>
+      </button>
       <a
         href={url('/bize-katilin')}
         class="hidden rounded-sm bg-volt-400 px-4 py-2 text-[0.85rem] font-semibold text-ink-950 transition-transform hover:scale-[1.03] sm:inline-block"
@@ -184,6 +197,10 @@ const groupActive = (item: (typeof NAV)[number]) =>
   .nav-group.is-open .nav-caret {
     transform: rotate(180deg);
   }
+  .radyo-nokta { display: none; width: 0.45rem; height: 0.45rem; border-radius: 999px; background: var(--color-ember-400); }
+  :global(.radyo-caliyor) .radyo-nokta { display: inline-block; animation: radyo-nabiz 1.2s ease-in-out infinite; }
+  @keyframes radyo-nabiz { 50% { opacity: 0.35; } }
+  @media (prefers-reduced-motion: reduce) { :global(.radyo-caliyor) .radyo-nokta { animation: none; } }
 </style>
 
 <script>
