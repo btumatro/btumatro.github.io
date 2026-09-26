@@ -196,7 +196,7 @@ def html_p07():
   <!-- Üst Hero: 16:9 Geniş Kadraj (Tüm öğrenciler ve 2 rover tam kadrajda, sıfır kesinti) -->
   <div class="media-unit rover-hero">
     <div class="img-box">
-      <img style="object-position: center 30%;" src="{asset_url('public/media/takim-matrover.jpg')}" alt="MATROVER Ekibi">
+      <img style="object-position: center 30%;" src="{asset_url('public/media/galeri-matrover-teknofest-cadir.jpg')}" alt="MATROVER Ekibi">
     </div>
     <div class="caption-bar">
       <span class="caption-tag">ROVER SAHASI</span>
@@ -511,7 +511,7 @@ def html_p10():
   <div class="zemheri-lower">
     <div class="media-unit">
       <div class="img-box">
-        <img style="object-position: center 30%;" src="{asset_url('public/media/galeri-zemheri-final.jpg')}" alt="Mavi Vatan Finali">
+        <img style="object-position: center 30%;" src="{asset_url('public/media/mavi-vatan-ekipler.jpg')}" alt="Mavi Vatan Finali">
       </div>
       <div class="caption-bar">
         <span class="caption-tag">MAVİ VATAN FİNALİ</span>

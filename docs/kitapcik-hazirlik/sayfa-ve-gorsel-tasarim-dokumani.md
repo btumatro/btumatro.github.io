@@ -214,7 +214,7 @@ Mekanik gövde, algılama, hareket kontrolü ve görev planlama birlikte ele al�
 - Görev odaklı araç geliştirme
 
 **Kullanılacak Görsel Dosyaları:**
-- `[ANA]` `/media/takim-matrover.jpg`
+- `[ANA]` `/media/galeri-matrover-teknofest-cadir.jpg`
   - **Altyazı / Alt Metni:** MATROVER standında ekip ve araç.
   - **Hedef Genişlik:** ~180 mm | **Kırpım:** konu_ve_yazıları_koru
 - `[DETAY]` `/media/takim-luna.jpg`
@@ -556,7 +556,7 @@ Yayın anındaki veri tabanında {{basari_kaydi}} kayıt ve {{birincilik}} birin
 - Tam listeye QR bağlantısı
 
 **Kullanılacak Görsel Dosyaları:**
-- `[ANA]` `/media/odul-toreni.jpg`
+- `[ANA]` `/media/webmedya-tika-ika-16.jpg`
   - **Altyazı / Alt Metni:** Bir ödül töreninden MATRO ekibi.
   - **Hedef Genişlik:** ~180 mm | **Kırpım:** konu_ve_yazıları_koru
 

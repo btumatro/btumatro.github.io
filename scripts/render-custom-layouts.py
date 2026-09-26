@@ -389,7 +389,7 @@ def render_page_07():
     <div class="left-photo-column">
       <div class="left-photo-card" style="flex: 1.3;">
         <div class="media-box" style="height: 100%;">
-          <img style="object-position: center 30%;" src="{asset_url('public/media/takim-matrover.jpg')}" alt="MATROVER Ekibi">
+          <img style="object-position: center 30%;" src="{asset_url('public/media/galeri-matrover-teknofest-cadir.jpg')}" alt="MATROVER Ekibi">
         </div>
         <div class="caption-line">
           <span class="caption-tag">YARIŞMA ÇADIRI</span>
@@ -1007,7 +1007,7 @@ def render_page_18():
   <div class="startup-trophy-duo">
     <div style="display: flex; flex-direction: column;">
       <div class="media-box" style="height: 100%;">
-        <img style="object-position: center center;" src="{asset_url('public/media/galeri-matro-kupa-vitrini.jpg')}" alt="Kupa Vitrini">
+        <img style="object-position: center center;" src="{asset_url('public/media/galeri-teknofest-2022-odul.jpg')}" alt="Kupa Vitrini">
       </div>
       <div class="caption-line">
         <span class="caption-tag">BAŞARI HAFIZASI</span>

@@ -11,7 +11,7 @@ gallery:
   - "/media/galeri-zemheri-atolye.jpg"
   - "/media/galeri-zemheri-takim.jpg"
   - "/media/galeri-zemheri-sara.jpg"
-  - "/media/galeri-zemheri-final.jpg"
+  - "/media/mavi-vatan-ekipler.jpg"
   - "/media/galeri-zemheri-gece-roket.jpg"
   - "/media/galeri-zemheri-gece-iskele-testi.jpg"
   - "/media/galeri-zemheri-teknofest-cadir.jpg"

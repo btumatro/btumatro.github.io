@@ -57,7 +57,7 @@ const JOBS = [
   ['image32.png', 'galeri-advance-up-hackathon.jpg', 1200],
   ['image33.png', 'galeri-astro-hackathon.jpg', 1200],
   ['image34.png', 'galeri-uhalfest-stant.jpg', 1200],
-  ['image35.png', 'galeri-ashina-iha-gece.jpg', 1200],
+  ['image35.png', 'galeri-ashina-atolye.jpg', 1200],
   ['image38.jpeg', 'galeri-iss-atolye-ekip.jpg', 1600],
   ['image43.jpeg', 'galeri-ika-sasi.jpg', 1200],
   ['image46.png', 'takim-ashina-inovasyon.jpg', 1200],

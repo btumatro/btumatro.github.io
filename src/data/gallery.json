@@ -2,11 +2,6 @@
   "intro": "Atölyeden yarışma sahasına, teknik gezilerden ödül törenlerine MATRO'dan kareler.",
   "images": [
     {
-      "image": "/media/galeri-topluluk-gemi-ziyareti.jpg",
-      "caption": "Ekibimiz bir deniz kuvvetleri gemisi ziyaretinde",
-      "category": "Etkinlik"
-    },
-    {
       "image": "/media/cagri-team-cropped.jpg",
       "caption": "ÇAĞRI ekibimiz TEKNOFEST 2024 Kablosuz Haberleşme Yarışması'nda",
       "category": "Yarışma",
@@ -68,18 +63,6 @@
       "takim": "insansiz-hava-araclari"
     },
     {
-      "image": "/media/galeri-ashina-model-ucak-ekip.jpg",
-      "caption": "ASHİNA ekibimiz sabit kanat model uçağıyla",
-      "category": "Yarışma",
-      "takim": "insansiz-hava-araclari"
-    },
-    {
-      "image": "/media/galeri-ashina-iha-gece.jpg",
-      "caption": "ASHİNA İHA'sı gece uçuşu öncesinde",
-      "category": "Araçlar",
-      "takim": "insansiz-hava-araclari"
-    },
-    {
       "image": "/media/galeri-matrover-teknofest-cadir.jpg",
       "caption": "MATROVER ekibimiz TEKNOFEST çadırında",
       "category": "Yarışma",
@@ -135,12 +118,6 @@
       "image": "/media/galeri-buyuk-kolej-bilim-haftasi.jpg",
       "caption": "Bilim haftasında öğrencilere projelerimizi tanıttık",
       "category": "Etkinlik"
-    },
-    {
-      "image": "/media/galeri-lodos-liman-ekip.jpg",
-      "caption": "LODOS ekibimiz teknesiyle limanda",
-      "category": "Yarışma",
-      "takim": "insansiz-deniz-araci"
     },
     {
       "image": "/media/galeri-burkut-takim-ruhu-odulu.jpg",
@@ -320,12 +297,6 @@
       "takim": "insansiz-kara-araci"
     },
     {
-      "image": "/media/galeri-matris-saha-ekip.jpg",
-      "caption": "MATRİS ekibimiz sürü İHA'larıyla sahada",
-      "category": "Yarışma",
-      "takim": "suru-insansiz-hava-araci"
-    },
-    {
       "image": "/media/tasarim-ashina-iha-2026.jpg",
       "caption": "ASHİNA'nın TEKNOFEST 2026 İHA tasarımı",
       "category": "Tasarım",
@@ -366,12 +337,6 @@
       "caption": "ASHİNA ekibimiz TEKNOFEST 2026 İnsansız Hava Aracı Yarışması'nda",
       "category": "Yarışma",
       "takim": "insansiz-hava-araclari"
-    },
-    {
-      "image": "/media/galeri-matrover-teknofest-cadir-2.jpg",
-      "caption": "MATROVER ekibimiz TEKNOFEST çadırında",
-      "category": "Yarışma",
-      "takim": "insansiz-kara-araci"
     },
     {
       "image": "/media/galeri-matris-test-alani.jpg",
@@ -507,12 +472,6 @@
       "image": "/media/galeri-tugay-ciner-atolye.jpg",
       "caption": "Öğrenci ziyaretçilerimiz atölyede",
       "category": "Etkinlik"
-    },
-    {
-      "image": "/media/galeri-zemheri-final.jpg",
-      "caption": "ZEMHERİ ekibimiz TEKNOFEST 2026 Mavi Vatan finalinde",
-      "category": "Yarışma",
-      "takim": "su-alti-roket-sistemleri"
     },
     {
       "image": "/media/galeri-turkish-technic-sinif.jpg",
@@ -961,21 +920,10 @@
       "takim": "sanayide-robotik-ve-dijital"
     },
     {
-      "image": "/media/atolye-araclar.jpg",
-      "caption": "Atölyemizde sergilenen proje araçlarımız",
-      "category": "Araçlar"
-    },
-    {
       "image": "/media/webmedya-sanayide-dijital-24.jpg",
       "caption": "PUSULA ekibi batarya paketi üretiminde",
       "category": "Atölye",
       "takim": "sanayide-robotik-ve-dijital"
-    },
-    {
-      "image": "/media/takim-matrover.jpg",
-      "caption": "MATROVER ekibimiz TEKNOFEST yarışma alanında",
-      "category": "Yarışma",
-      "takim": "insansiz-kara-araci"
     },
     {
       "image": "/media/webmedya-sanayide-dijital-25.jpg",
@@ -994,12 +942,6 @@
       "caption": "PUSULA ekibi lehim çalışmasında",
       "category": "Atölye",
       "takim": "sanayide-robotik-ve-dijital"
-    },
-    {
-      "image": "/media/ika-saha-testi.jpg",
-      "caption": "İnsansız kara aracımızın saha testleri",
-      "category": "Yarışma",
-      "takim": "insansiz-kara-araci"
     },
     {
       "image": "/media/webmedya-tika-ika-15.jpg",
@@ -1024,12 +966,6 @@
       "caption": "MATRİS ekibimiz sürü İHA'larıyla",
       "category": "Araçlar",
       "takim": "suru-insansiz-hava-araci"
-    },
-    {
-      "image": "/media/webmedya-tika-ika-17.jpg",
-      "caption": "İnsansız kara aracı ekibimiz ödül töreninde",
-      "category": "Ödül ve Derece",
-      "takim": "insansiz-kara-araci"
     },
     {
       "image": "/media/takim-ida.jpg",
@@ -1074,11 +1010,6 @@
       "takim": "teknoloji-girisimciligi"
     },
     {
-      "image": "/media/odul-toreni.jpg",
-      "caption": "Ödül töreninden bir kare",
-      "category": "Ödül ve Derece"
-    },
-    {
       "image": "/media/galeri-lodos-govde-uretim.jpg",
       "caption": "LODOS gövdesinin atölyede üretimi",
       "category": "Atölye",
@@ -1104,12 +1035,6 @@
       "image": "/media/fuar-standi.jpg",
       "caption": "Fuar standımızda ziyaretçilerimizle",
       "category": "Etkinlik"
-    },
-    {
-      "image": "/media/galeri-iss-fuar-standi.jpg",
-      "caption": "İSS ekibimiz, sualtı aracımız ve kupalarımızla kampüs fuarında",
-      "category": "Yarışma",
-      "takim": "insansiz-su-alti-sistemleri"
     },
     {
       "image": "/media/galeri-lodos-havuz-testi.jpg",
@@ -1142,12 +1067,6 @@
       "image": "/media/haber-btu-robot-gunleri.jpg",
       "caption": "BTÜ Robot Günleri 2025'te standımız",
       "category": "Etkinlik"
-    },
-    {
-      "image": "/media/galeri-lodos-juri.jpg",
-      "caption": "LODOS ekibimiz jüriye aracını tanıtırken",
-      "category": "Yarışma",
-      "takim": "insansiz-deniz-araci"
     },
     {
       "image": "/media/haber-hali-saha.jpg",
@@ -1243,12 +1162,6 @@
       "category": "Yarışma"
     },
     {
-      "image": "/media/galeri-ashina-tubitak-sahne.jpg",
-      "caption": "ASHİNA İHA ekibimiz TÜBİTAK yarışma sahnesi önünde",
-      "category": "Yarışma",
-      "takim": "insansiz-hava-araclari"
-    },
-    {
       "image": "/media/galeri-ashina-kompozit-uretim.jpg",
       "caption": "ASHİNA kanat kalıbında vakum infüzyonu ile kompozit üretim",
       "category": "Atölye",
@@ -1259,11 +1172,6 @@
       "caption": "ASHİNA ekibi TEKNOFEST uçuş sahasında",
       "category": "Yarışma",
       "takim": "insansiz-hava-araclari"
-    },
-    {
-      "image": "/media/galeri-matro-kupa-vitrini.jpg",
-      "caption": "Topluluk kupa vitrinimiz",
-      "category": "Ödül ve Derece"
     },
     {
       "image": "/media/galeri-matro-birincilik-30000.jpg",

@@ -161,7 +161,7 @@ def p19():
   <div class="lower-bento-2">
     <div class="media-unit">
       <div class="img-box">
-        <img style="object-position: center center;" src="{asset_url('public/media/galeri-matro-kupa-vitrini.jpg')}" alt="Kupa Vitrini">
+        <img style="object-position: center center;" src="{asset_url('public/media/galeri-teknofest-2022-odul.jpg')}" alt="Kupa Vitrini">
       </div>
       <div class="caption-bar">
         <span class="caption-tag">KUPA VİTRİNİ</span>

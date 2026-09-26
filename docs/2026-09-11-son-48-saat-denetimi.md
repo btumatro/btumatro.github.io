@@ -51,7 +51,7 @@ Bu çalışma bir denetim ve kitapçık planıdır. Bulguların tamamı düzelti
 | `galeri-lodos-sahil-ekip.jpg` | Kapalı alanda tekne gövdesi | Sahil ekip fotoğrafı açıklamasını düzelt |
 | `galeri-alhazen-laboratuvar.jpg`, `galeri-alhazen-ekipman.jpg`, `galeri-alhazen-analiz.jpg` | Yarışma/stant ekip fotoğrafları | Laboratuvar, ekipman ve analiz isimlerinin ima ettiği bağlamları kaldır |
 | `galeri-matrobot-tarla-test.jpg` | Yarışma stantları önünde grup | Tarla testi olarak sunma |
-| `galeri-iss-fuar-standi.jpg` | Sualtı aracı ve topluluk sergisi; varlık başlığı Renault Twizy aracından söz ediyor | Başlığı gerçek araçla eşleştir |
+| `galeri-iss-auv-sergi.jpg` | Sualtı aracı ve topluluk sergisi; varlık başlığı Renault Twizy aracından söz ediyor | Başlığı gerçek araçla eşleştir |
 
 Bu adlandırmaların bir kısmı `61b3699` ve `f0663b9` içindeki anlamsal yeniden adlandırma sırasında ortaya çıkmış. Dosya adları doğrulama kaynağı kabul edilmemeli. Site galerisi, takım galerisi, assets başlığı, kaynak manifesti ve kitapçık açıklaması birlikte düzeltilmeli.
 

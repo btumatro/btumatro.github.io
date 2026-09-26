@@ -26,8 +26,8 @@
   "fotolar": {
     "bizKimiz": "/media/galeri-matrover-arazi-test.jpg",
     "bizKimiz2": "/media/galeri-zemheri-atolye.jpg",
-    "finaller": "/media/galeri-zemheri-final.jpg",
-    "takimlarAcilis": "/media/galeri-ashina-tubitak-sahne.jpg",
+    "finaller": "/media/mavi-vatan-ekipler.jpg",
+    "takimlarAcilis": "/media/galeri-ashina-teknofest-grup.jpg",
     "atolye": "/media/galeri-matrobot-tarla-test.jpg",
     "egitim": "/media/galeri-egitim-kampi-1.jpg",
     "toplum": "/media/galeri-tugay-ciner-atolye.jpg",
@@ -72,7 +72,7 @@
     {
       "dosya": "insansiz-hava-araclari",
       "tam": true,
-      "foto": "/media/galeri-ashina-tubitak-sahne.jpg",
+      "foto": "/media/galeri-ashina-teknofest-grup.jpg",
       "ek": [
         "/media/galeri-ashina-saha.jpg",
         "/media/galeri-ashina-kompozit-uretim.jpg"

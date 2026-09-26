@@ -3,7 +3,7 @@ title: Kardeş Okul Projesi
 type: Sosyal Sorumluluk
 endDate: ""
 order: 5
-image: "/media/atolye-araclar.jpg"
+image: "/media/galeri-odul-vitrini-kampus.jpg"
 stats:
   - label: Destek
     value: "75.000+ TL"

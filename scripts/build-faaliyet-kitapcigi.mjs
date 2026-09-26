@@ -355,7 +355,7 @@ for (const id of BOLUM_SIRA) {
     page(
       `${baslik('Özel dosya', 'Bir aracın doğuşu', "Final alanında birkaç dakikalık bir görev. Arkasında on ay, yüzlerce saatlik atölye mesaisi, raporlar ve sayısız test var. Bir MATRO aracının Eylül'den Ağustos'a yolculuğu.")}
       <ol class="dogus">${data.aracinDogusu.map((a, i) => `<li><span class="d-no">${i + 1}</span><div>${eyebrow(a.ay, 'volt')}<h3>${esc(a.baslik)}</h3><p>${esc(a.metin)}</p></div></li>`).join('')}</ol>
-      <div class="dogus-foto"><figure>${img('/media/tasarim-iss-auv-mor.jpg', 'İSS tasarımı')}<figcaption>Tasarım</figcaption></figure><figure>${img('/media/galeri-iss-auv-havuz.jpg', 'Havuz testi')}<figcaption>Test</figcaption></figure><figure>${img('/media/galeri-zemheri-final.jpg', 'Final alanı')}<figcaption>Final</figcaption></figure></div>`,
+      <div class="dogus-foto"><figure>${img('/media/tasarim-iss-auv-mor.jpg', 'İSS tasarımı')}<figcaption>Tasarım</figcaption></figure><figure>${img('/media/galeri-iss-auv-havuz.jpg', 'Havuz testi')}<figcaption>Test</figcaption></figure><figure>${img('/media/mavi-vatan-ekipler.jpg', 'Final alanı')}<figcaption>Final</figcaption></figure></div>`,
       { cls: 'p-dogus', bolum: bb },
     );
     toc.push({ no: '', baslik: 'Özel dosya: Bir aracın doğuşu', sayfa: pages.length, alt: true });

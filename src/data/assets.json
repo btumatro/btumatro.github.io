@@ -74,19 +74,6 @@
       "usedIn": []
     },
     {
-      "file": "/media/galeri-iss-fuar-standi.jpg",
-      "title": "İSS ekibimiz, sualtı aracımız ve kupalarımızla kampüs fuarında",
-      "group": "Galeri fotoğrafları",
-      "width": 1598,
-      "height": 1004,
-      "sizeKb": 366,
-      "note": "Kullanıldığı yer: İSS (Galeri), Site Galerisi (Yarışma)",
-      "usedIn": [
-        "İSS (Galeri)",
-        "Site Galerisi (Yarışma)"
-      ]
-    },
-    {
       "file": "/media/takim-alhazen.jpg",
       "title": "ALHAZEN ekibimizin hidrojen yakıt pili ve ileri malzeme çalışmaları",
       "group": "Takım kapak görselleri",
@@ -227,19 +214,6 @@
       ]
     },
     {
-      "file": "/media/takim-matrover.jpg",
-      "title": "MATROVER ekibimiz TEKNOFEST yarışma alanında",
-      "group": "Takım kapak görselleri",
-      "width": 700,
-      "height": 368,
-      "sizeKb": 59,
-      "note": "Kullanıldığı yer: İKA (Galeri), Site Galerisi (Yarışma)",
-      "usedIn": [
-        "İKA (Galeri)",
-        "Site Galerisi (Yarışma)"
-      ]
-    },
-    {
       "file": "/media/takim-sanayide-dijital.jpg",
       "title": "Sanayide dijital",
       "group": "Takım kapak görselleri",
@@ -311,18 +285,6 @@
       "width": 927,
       "height": 404,
       "sizeKb": 44,
-      "note": "Kullanıldığı yer: ASHİNA (Galeri)",
-      "usedIn": [
-        "ASHİNA (Galeri)"
-      ]
-    },
-    {
-      "file": "/media/galeri-ashina-model-ucak-ekip.jpg",
-      "title": "ASHİNA ekibimiz sabit kanat model uçağıyla",
-      "group": "Galeri fotoğrafları",
-      "width": 517,
-      "height": 398,
-      "sizeKb": 46,
       "note": "Kullanıldığı yer: ASHİNA (Galeri)",
       "usedIn": [
         "ASHİNA (Galeri)"
@@ -524,18 +486,6 @@
       ]
     },
     {
-      "file": "/media/galeri-lodos-liman-ekip.jpg",
-      "title": "LODOS ekibimiz teknesiyle limanda",
-      "group": "Galeri fotoğrafları",
-      "width": 701,
-      "height": 498,
-      "sizeKb": 90,
-      "note": "Kullanıldığı yer: İDA (Galeri)",
-      "usedIn": [
-        "İDA (Galeri)"
-      ]
-    },
-    {
       "file": "/media/galeri-lodos-ekip.jpg",
       "title": "LODOS ekibimiz yarışma alanında",
       "group": "Galeri fotoğrafları",
@@ -600,18 +550,6 @@
       ]
     },
     {
-      "file": "/media/galeri-matris-saha-ekip.jpg",
-      "title": "MATRİS ekibimiz saha testinde",
-      "group": "Galeri fotoğrafları",
-      "width": 623,
-      "height": 488,
-      "sizeKb": 65,
-      "note": "Kullanıldığı yer: MATRİS (Galeri)",
-      "usedIn": [
-        "MATRİS (Galeri)"
-      ]
-    },
-    {
       "file": "/media/galeri-matris-laptop-drone.jpg",
       "title": "MATRİS ekibimiz drone ve laptopuyla",
       "group": "Galeri fotoğrafları",
@@ -646,18 +584,6 @@
       "usedIn": [
         "MATRİS (Galeri)",
         "Site Galerisi (Atölye)"
-      ]
-    },
-    {
-      "file": "/media/galeri-topluluk-gemi-ziyareti.jpg",
-      "title": "Ekibimiz bir deniz kuvvetleri gemisi ziyaretinde",
-      "group": "Galeri fotoğrafları",
-      "width": 841,
-      "height": 500,
-      "sizeKb": 81,
-      "note": "Kullanıldığı yer: Site Galerisi (Etkinlik)",
-      "usedIn": [
-        "Site Galerisi (Etkinlik)"
       ]
     },
     {
@@ -697,31 +623,6 @@
       "usedIn": [
         "Etkinlikler, Seminerler ve Çalıştaylar (Faaliyet Kapağı)",
         "Site Galerisi (Etkinlik)"
-      ]
-    },
-    {
-      "file": "/media/galeri-matro-kupa-vitrini.jpg",
-      "title": "Topluluk kupa vitrinimiz",
-      "group": "Galeri fotoğrafları",
-      "width": 1154,
-      "height": 657,
-      "sizeKb": 108,
-      "note": "Kullanıldığı yer: Etkinlikler, Seminerler ve Çalıştaylar (Faaliyet Galerisi), Site Galerisi (Etkinlik)",
-      "usedIn": [
-        "Etkinlikler, Seminerler ve Çalıştaylar (Faaliyet Galerisi)",
-        "Site Galerisi (Etkinlik)"
-      ]
-    },
-    {
-      "file": "/media/galeri-matrover-teknofest-cadir-2.jpg",
-      "title": "MATROVER ekibimiz TEKNOFEST çadırında (2)",
-      "group": "Galeri fotoğrafları",
-      "width": 840,
-      "height": 493,
-      "sizeKb": 89,
-      "note": "Kullanıldığı yer: İKA (Galeri)",
-      "usedIn": [
-        "İKA (Galeri)"
       ]
     },
     {
@@ -1080,19 +981,6 @@
       ]
     },
     {
-      "file": "/media/galeri-zemheri-final.jpg",
-      "title": "ZEMHERİ ekibimiz TEKNOFEST 2026 Mavi Vatan finalinde",
-      "group": "Galeri fotoğrafları",
-      "width": 1200,
-      "height": 676,
-      "sizeKb": 139,
-      "note": "Kullanıldığı yer: ZEMHERİ (Galeri), Site Galerisi (Yarışma)",
-      "usedIn": [
-        "ZEMHERİ (Galeri)",
-        "Site Galerisi (Yarışma)"
-      ]
-    },
-    {
       "file": "/media/galeri-zemheri-sara.jpg",
       "title": "ZEMHERİ'nin SARA aracı Özdemir Bayraktar Teknoloji Atölyesi'nde",
       "group": "Galeri fotoğrafları",
@@ -1130,19 +1018,6 @@
       "usedIn": []
     },
     {
-      "file": "/media/ika-saha-testi.jpg",
-      "title": "İnsansız kara aracımızın saha testleri",
-      "group": "Galeri fotoğrafları",
-      "width": 306,
-      "height": 332,
-      "sizeKb": 28,
-      "note": "Kullanıldığı yer: İKA (Galeri), Site Galerisi (Yarışma)",
-      "usedIn": [
-        "İKA (Galeri)",
-        "Site Galerisi (Yarışma)"
-      ]
-    },
-    {
       "file": "/media/ika-yarisma-alani.jpg",
       "title": "İnsansız kara aracı yarışma alanı",
       "group": "Galeri fotoğrafları",
@@ -1164,19 +1039,6 @@
         "Mavi Vatan'da üç takımımız TEK... (Haber Kapağı)",
         "Site Galerisi (Yarışma)",
         "Ana Sayfa (Hero Görseli)"
-      ]
-    },
-    {
-      "file": "/media/atolye-araclar.jpg",
-      "title": "Atölyemizde sergilenen proje araçlarımız",
-      "group": "Faaliyet fotoğrafları",
-      "width": 723,
-      "height": 542,
-      "sizeKb": 61,
-      "note": "Kullanıldığı yer: Kardeş Okul Projesi (Faaliyet), Site Galerisi (Atölye)",
-      "usedIn": [
-        "Kardeş Okul Projesi (Faaliyet)",
-        "Site Galerisi (Atölye)"
       ]
     },
     {
@@ -1303,19 +1165,6 @@
       "note": "Kullanıldığı yer: GİRİŞİMCİLİK VE İNOVASYON (Kapak), Etkinlikler, Seminerler ve Çalıştaylar (Faaliyet Galerisi)",
       "usedIn": [
         "GİRİŞİMCİLİK VE İNOVASYON (Kapak)",
-        "Etkinlikler, Seminerler ve Çalıştaylar (Faaliyet Galerisi)",
-        "Site Galerisi (Yarışma)"
-      ]
-    },
-    {
-      "file": "/media/odul-toreni.jpg",
-      "title": "Ödül töreninden bir kare",
-      "group": "Yarışma afiş ve ödül görselleri",
-      "width": 404,
-      "height": 261,
-      "sizeKb": 30,
-      "note": "Kullanıldığı yer: Etkinlikler, Seminerler ve Çalıştaylar (Faaliyet Galerisi), Site Galerisi (Yarışma)",
-      "usedIn": [
         "Etkinlikler, Seminerler ve Çalıştaylar (Faaliyet Galerisi)",
         "Site Galerisi (Yarışma)"
       ]
@@ -2265,19 +2114,6 @@
       ]
     },
     {
-      "file": "/media/galeri-ashina-tubitak-sahne.jpg",
-      "title": "ASHİNA İHA ekibimiz TÜBİTAK yarışma sahnesi önünde",
-      "group": "Galeri fotoğrafları",
-      "note": "Kullanıldığı yer: ASHİNA (Galeri), Site Galerisi (Yarışma)",
-      "width": 1599,
-      "height": 1081,
-      "sizeKb": 178,
-      "usedIn": [
-        "ASHİNA (Galeri)",
-        "Site Galerisi (Yarışma)"
-      ]
-    },
-    {
       "file": "/media/galeri-pusula-atolye.jpg",
       "title": "PUSULA sanayi robotik platformu ve ekibimiz",
       "group": "Galeri fotoğrafları",
@@ -2505,18 +2341,6 @@
       "width": 1400,
       "height": 788,
       "sizeKb": 203,
-      "note": "Kullanıldığı yer: İKA (Galeri)",
-      "usedIn": [
-        "İKA (Galeri)"
-      ]
-    },
-    {
-      "file": "/media/webmedya-tika-ika-17.jpg",
-      "title": "tika-ika arşivi görseli",
-      "group": "Galeri fotoğrafları",
-      "width": 900,
-      "height": 1600,
-      "sizeKb": 236,
       "note": "Kullanıldığı yer: İKA (Galeri)",
       "usedIn": [
         "İKA (Galeri)"
