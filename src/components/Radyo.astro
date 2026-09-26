@@ -189,6 +189,24 @@ const parcalar = radyo.parcalar.map((p) => ({ ...p, dosya: url(p.dosya), kapak: 
     });
     window.addEventListener('pagehide', yaz);
 
+    // İlk ziyarette, birkaç saniye sonra Radyo düğmesinin altında küçük bir ipucu gösterilir.
+    // Bir kez gösterildikten sonra tarayıcıda hatırlanır; radyo açıksa hiç gösterilmez.
+    const ipucu = document.getElementById('radyo-ipucu');
+    const IPUCU = 'matro-radyo-ipucu';
+    const ipucuGoruldu = () => { try { return localStorage.getItem(IPUCU) === '1'; } catch { return true; } };
+    const ipucuKapat = () => { if (ipucu) ipucu.hidden = true; try { localStorage.setItem(IPUCU, '1'); } catch { /* yok say */ } };
+    if (ipucu && !ipucuGoruldu()) {
+      window.setTimeout(() => {
+        if (!kok.hidden || ipucuGoruldu()) return;
+        ipucu.hidden = false;
+        try { localStorage.setItem(IPUCU, '1'); } catch { /* yok say */ }
+        window.setTimeout(() => { ipucu.hidden = true; }, 15000);
+      }, 3500);
+      ipucu.querySelector('[data-radyo-ipucu-dinle]')?.addEventListener('click', () => { ipucuKapat(); ac(); cal(); });
+      ipucu.querySelector('[data-radyo-ipucu-kapat]')?.addEventListener('click', ipucuKapat);
+      document.querySelectorAll('[data-radyo-ac]').forEach((d) => d.addEventListener('click', ipucuKapat));
+    }
+
     // Önceki sayfadan kalan durumu geri yükle. Varsayılan: kapalı ve duraklatılmış.
     const d = oku();
     yukle(d.sira ?? 0, d.zaman ?? 0);

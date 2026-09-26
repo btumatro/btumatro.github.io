@@ -2,6 +2,12 @@
   "baslik": "MATRO Radyo",
   "parcalar": [
     {
+      "baslik": "MATRO Radyo",
+      "tur": "Jingle",
+      "dosya": "/media/ses/jingle-acilis.mp3",
+      "kapak": "/media/ses/radyo-arasi-kapak.jpg"
+    },
+    {
       "baslik": "MATRO nedir? Atölyede bir gece",
       "tur": "Podcast · 1. bölüm",
       "dosya": "/media/ses/podcast-bolum-01.mp3",
@@ -102,6 +108,12 @@
       "tur": "Podcast · 3. bölüm",
       "dosya": "/media/ses/podcast-bolum-03.mp3",
       "kapak": "/media/ses/podcast-kapak.jpg"
+    },
+    {
+      "baslik": "MATRO Radyo: atölyeden sahaya",
+      "tur": "Jingle",
+      "dosya": "/media/ses/jingle-kapanis.mp3",
+      "kapak": "/media/ses/radyo-arasi-kapak.jpg"
     }
   ]
 }

@@ -101,6 +101,7 @@ const groupActive = (item: (typeof NAV)[number]) =>
     </nav>
 
     <div class="flex items-center gap-2">
+      <div class="relative">
       <button
         type="button"
         data-radyo-ac
@@ -114,6 +115,15 @@ const groupActive = (item: (typeof NAV)[number]) =>
         <span class="hidden sm:inline">Radyo</span>
         <span class="radyo-nokta" aria-hidden="true"></span>
       </button>
+      <div id="radyo-ipucu" class="radyo-ipucu" hidden role="dialog" aria-label="MATRO Radyo">
+        <p class="radyo-ipucu-baslik">MATRO Radyo</p>
+        <p class="radyo-ipucu-metin">Radyomuzu dinlediniz mi? Topluluk şarkılarımız ve podcastimiz burada.</p>
+        <div class="radyo-ipucu-dugmeler">
+          <button type="button" data-radyo-ipucu-dinle class="radyo-ipucu-dinle">Dinle</button>
+          <button type="button" data-radyo-ipucu-kapat class="radyo-ipucu-kapat">Sonra</button>
+        </div>
+      </div>
+      </div>
       <a
         href={url('/bize-katilin')}
         class="hidden rounded-sm bg-volt-400 px-4 py-2 text-[0.85rem] font-semibold text-ink-950 transition-transform hover:scale-[1.03] sm:inline-block"
@@ -197,6 +207,17 @@ const groupActive = (item: (typeof NAV)[number]) =>
   .nav-group.is-open .nav-caret {
     transform: rotate(180deg);
   }
+  .radyo-ipucu { position: absolute; top: calc(100% + 0.7rem); right: 0; width: 16rem; padding: 0.9rem 1rem; border-radius: 0.75rem; background: var(--color-ink-900); border: 1px solid rgb(117 213 208 / 0.35); box-shadow: 0 12px 40px rgb(0 0 0 / 0.45); z-index: 70; }
+  .radyo-ipucu::before { content: ''; position: absolute; top: -0.4rem; right: 1.1rem; width: 0.75rem; height: 0.75rem; background: var(--color-ink-900); border-left: 1px solid rgb(117 213 208 / 0.35); border-top: 1px solid rgb(117 213 208 / 0.35); transform: rotate(45deg); }
+  .radyo-ipucu:not([hidden]) { animation: radyo-ipucu-gel 0.35s ease-out; }
+  @keyframes radyo-ipucu-gel { from { opacity: 0; transform: translateY(-4px); } }
+  .radyo-ipucu-baslik { font-family: var(--font-mono, monospace); font-size: 0.6rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--color-volt-300); }
+  .radyo-ipucu-metin { margin-top: 0.3rem; font-size: 0.82rem; line-height: 1.45; color: var(--color-mist-100); }
+  .radyo-ipucu-dugmeler { display: flex; gap: 0.5rem; margin-top: 0.75rem; }
+  .radyo-ipucu-dinle { padding: 0.4rem 0.9rem; border-radius: 0.5rem; background: var(--color-volt-400); color: var(--color-ink-950); font-size: 0.8rem; font-weight: 600; cursor: pointer; }
+  .radyo-ipucu-kapat { padding: 0.4rem 0.7rem; border-radius: 0.5rem; color: var(--color-mist-300); font-size: 0.8rem; cursor: pointer; }
+  .radyo-ipucu-kapat:hover { color: var(--color-mist-100); }
+  @media (prefers-reduced-motion: reduce) { .radyo-ipucu:not([hidden]) { animation: none; } }
   .radyo-nokta { display: none; width: 0.45rem; height: 0.45rem; border-radius: 999px; background: var(--color-ember-400); }
   :global(.radyo-caliyor) .radyo-nokta { display: inline-block; animation: radyo-nabiz 1.2s ease-in-out infinite; }
   @keyframes radyo-nabiz { 50% { opacity: 0.35; } }
