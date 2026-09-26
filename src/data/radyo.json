@@ -5,13 +5,13 @@
       "baslik": "MATRO nedir? Atölyede bir gece",
       "tur": "Podcast · 1. bölüm",
       "dosya": "/media/ses/podcast-bolum-01.mp3",
-      "kapak": "/logo-matro-beyaz.png"
+      "kapak": "/media/ses/podcast-kapak.jpg"
     },
     {
       "baslik": "Sırada topluluk şarkımız",
       "tur": "Radyo arası",
       "dosya": "/media/ses/ara-01-sirada-sarkimiz.mp3",
-      "kapak": "/logo-matro-beyaz.png"
+      "kapak": "/media/ses/radyo-arasi-kapak.jpg"
     },
     {
       "baslik": "Atölyede Başlar",
@@ -23,7 +23,7 @@
       "baslik": "Bunu biliyor muydunuz?",
       "tur": "Radyo arası",
       "dosya": "/media/ses/ara-05-bunu-biliyor-muydunuz.mp3",
-      "kapak": "/logo-matro-beyaz.png"
+      "kapak": "/media/ses/radyo-arasi-kapak.jpg"
     },
     {
       "baslik": "Gece Yarısı Mesaisi",
@@ -35,13 +35,13 @@
       "baslik": "Takımlar ve TEKNOFEST yolculuğu",
       "tur": "Podcast · 2. bölüm",
       "dosya": "/media/ses/podcast-bolum-02.mp3",
-      "kapak": "/logo-matro-beyaz.png"
+      "kapak": "/media/ses/podcast-kapak.jpg"
     },
     {
       "baslik": "Gökyüzündeki takımlarımız",
       "tur": "Radyo arası",
       "dosya": "/media/ses/ara-02-gokyuzundeki-takimlar.mp3",
-      "kapak": "/logo-matro-beyaz.png"
+      "kapak": "/media/ses/radyo-arasi-kapak.jpg"
     },
     {
       "baslik": "Atölyeden Göklere",
@@ -59,13 +59,13 @@
       "baslik": "Radyo sözlüğü",
       "tur": "Radyo arası",
       "dosya": "/media/ses/ara-06-radyo-sozlugu.mp3",
-      "kapak": "/logo-matro-beyaz.png"
+      "kapak": "/media/ses/radyo-arasi-kapak.jpg"
     },
     {
       "baslik": "Karada ve denizde",
       "tur": "Radyo arası",
       "dosya": "/media/ses/ara-03-karada-ve-denizde.mp3",
-      "kapak": "/logo-matro-beyaz.png"
+      "kapak": "/media/ses/radyo-arasi-kapak.jpg"
     },
     {
       "baslik": "Derinden Göklere",
@@ -77,7 +77,7 @@
       "baslik": "Takım spotu: PUSULA ve ALHAZEN",
       "tur": "Radyo arası",
       "dosya": "/media/ses/ara-08-takim-spotu.mp3",
-      "kapak": "/logo-matro-beyaz.png"
+      "kapak": "/media/ses/radyo-arasi-kapak.jpg"
     },
     {
       "baslik": "Atölyede Başlar (2. sürüm)",
@@ -89,7 +89,7 @@
       "baslik": "Atölyede bir gece",
       "tur": "Radyo arası",
       "dosya": "/media/ses/ara-07-atolyede-bir-gece.mp3",
-      "kapak": "/logo-matro-beyaz.png"
+      "kapak": "/media/ses/radyo-arasi-kapak.jpg"
     },
     {
       "baslik": "The Bursa Shift",
@@ -101,7 +101,7 @@
       "baslik": "Eğitim, sanayi ve nasıl katılırım",
       "tur": "Podcast · 3. bölüm",
       "dosya": "/media/ses/podcast-bolum-03.mp3",
-      "kapak": "/logo-matro-beyaz.png"
+      "kapak": "/media/ses/podcast-kapak.jpg"
     }
   ]
 }
