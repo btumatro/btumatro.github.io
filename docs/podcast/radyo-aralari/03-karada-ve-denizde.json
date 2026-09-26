@@ -1,0 +1,35 @@
+{
+  "title": "Karada ve denizde",
+  "sequences": [
+    {
+      "sequenceId": 1,
+      "sequenceTitle": "Karada ve denizde",
+      "dialogues": [
+        {
+          "speaker": "Ayse",
+          "text": "Gökyüzünden inelim. Karada ve denizde de çalışan takımlarımız var."
+        },
+        {
+          "speaker": "Can",
+          "text": "İnsansız kara aracı takımımız iki bin on dokuzdan beri her sezon finalde. İki bin yirmi beşte Matrover, yirmi sekiz finalist arasında Türkiye üçüncüsü oldu."
+        },
+        {
+          "speaker": "Ayse",
+          "text": "İki bin yirmi altıda da Luna İKA, Mardin'deki finalde Türkiye dokuzuncusu oldu."
+        },
+        {
+          "speaker": "Can",
+          "text": "Denizde Lodos var. Gövdesinden otonom kontrol kartına kadar aracını kendi yapan ekip, Mavi Vatan finallerinde yarıştı."
+        },
+        {
+          "speaker": "Ayse",
+          "text": "Su altında ise Prusa ve Zemheri. Zemheri, su altı roket yarışmasına ilk kez katıldı; kritik tasarım raporunda Türkiye dördüncüsü, finalde dokuzuncu oldu."
+        },
+        {
+          "speaker": "Can",
+          "text": "Havada, karada, denizde. Bu tempoya ikinci bir sürüm yakışır. Sırada Atölyede Başlar'ın ikinci sürümü."
+        }
+      ]
+    }
+  ]
+}

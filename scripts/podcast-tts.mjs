@@ -11,6 +11,8 @@
  *   node scripts/podcast-tts.mjs --demo            # ilk sekansın ilk 6 repliği
  *   node scripts/podcast-tts.mjs                   # tüm sekanslar + birleşik MP3 + müzikli MP3
  *   node scripts/podcast-tts.mjs --sadece-miks     # TTS'siz; mevcut MP3'ten müzikli sürümü yeniden üret
+ *   node scripts/podcast-tts.mjs --senaryo docs/podcast/radyo-aralari/01-x.json --cikti radyo/01-x
+ *                                                  # başka bir senaryo; müziksiz tek MP3 (radyo araları)
  */
 import { execFileSync } from 'node:child_process';
 import fs from 'node:fs';
@@ -24,7 +26,10 @@ const MODEL = process.env.TTS_MODEL || 'gemini-2.5-flash-preview-tts';
 const VOICES = { Can: 'Alnilam', Ayse: 'Aoede' };
 const KEY = process.env.GEMINI_API_KEY;
 
-const script = JSON.parse(fs.readFileSync(path.join(DIR, 'matro-tanitim-podcast-senaryo.json'), 'utf8'));
+const arg = (ad) => { const i = process.argv.indexOf(ad); return i > -1 ? process.argv[i + 1] : undefined; };
+const senaryoYolu = arg('--senaryo');
+const ciktiAdi = arg('--cikti');
+const script = JSON.parse(fs.readFileSync(senaryoYolu ? path.resolve(ROOT, senaryoYolu) : path.join(DIR, 'matro-tanitim-podcast-senaryo.json'), 'utf8'));
 const demo = process.argv.includes('--demo');
 const sequences = demo
   ? [{ ...script.sequences[0], sequenceId: 0, dialogues: script.sequences[0].dialogues.slice(0, 6) }]
@@ -102,9 +107,10 @@ if (process.argv.includes('--sadece-miks')) {
 const wavlar = [];
 for (const s of sequences) {
   const metin = s.dialogues.map((d) => `${d.speaker}: ${d.text}`).join('\n');
-  const ad = demo ? 'demo' : `sekans-${String(s.sequenceId).padStart(2, '0')}`;
+  const ad = demo ? 'demo' : ciktiAdi ? `${ciktiAdi}-sekans-${String(s.sequenceId).padStart(2, '0')}` : `sekans-${String(s.sequenceId).padStart(2, '0')}`;
   console.log(`Sekans ${s.sequenceId} (${s.dialogues.length} replik, ${metin.split(/\s+/).length} kelime)...`);
   const pcm = await tts(metin);
+  fs.mkdirSync(path.dirname(path.join(OUT, ad)), { recursive: true });
   const pcmYol = path.join(OUT, `${ad}.pcm`);
   const wav = path.join(OUT, `${ad}.wav`);
   fs.writeFileSync(pcmYol, pcm);
@@ -116,7 +122,7 @@ for (const s of sequences) {
 }
 
 // Sekanslar arasına 0,6 sn sessizlik koyup tek MP3'e birleştir.
-const hedef = path.join(OUT, demo ? 'matro-tanitim-demo.mp3' : 'matro-tanitim-podcast.mp3');
+const hedef = path.join(OUT, demo ? 'matro-tanitim-demo.mp3' : ciktiAdi ? `${ciktiAdi}.mp3` : 'matro-tanitim-podcast.mp3');
 const girdiler = wavlar.flatMap((w) => ['-i', w]);
 const filtre = wavlar.length > 1
   ? wavlar.map((_, i) => `[${i}:a]apad=pad_dur=0.6[a${i}];`).join('') + wavlar.map((_, i) => `[a${i}]`).join('') + `concat=n=${wavlar.length}:v=0:a=1[o]`
@@ -124,4 +130,6 @@ const filtre = wavlar.length > 1
 execFileSync('ffmpeg', ['-v', 'error', '-y', ...girdiler, '-filter_complex', filtre, '-map', '[o]', '-ar', '24000', '-ac', '1', '-c:a', 'libmp3lame', '-q:a', '2', hedef]);
 const toplam = sureOku(hedef);
 console.log(`MP3: ${path.relative(ROOT, hedef)} (${Math.floor(toplam / 60)} dk ${Math.round(toplam % 60)} sn)`);
-if (!demo) muzikliSurum(hedef, path.join(OUT, 'matro-tanitim-podcast-muzikli.mp3'));
+if (!demo && !ciktiAdi) muzikliSurum(hedef, path.join(OUT, 'matro-tanitim-podcast-muzikli.mp3'));
+// Tek sekanslı çıktılarda ara WAV dosyası MP3'e dönüştükten sonra silinir.
+if (ciktiAdi) wavlar.forEach((w) => fs.rmSync(w));

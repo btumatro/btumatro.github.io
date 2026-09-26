@@ -1,0 +1,39 @@
+{
+  "title": "Gökyüzündeki takımlarımız",
+  "sequences": [
+    {
+      "sequenceId": 1,
+      "sequenceTitle": "Gökyüzündeki takımlarımız",
+      "dialogues": [
+        {
+          "speaker": "Can",
+          "text": "Şarkının adı atölyede başlar ama bazı takımlarımız için hikâye gökyüzünde devam ediyor."
+        },
+        {
+          "speaker": "Ayse",
+          "text": "İnsansız hava araçları takımımız Aşina, iki bin yirmi altıda TÜBİTAK Uluslararası İnsansız Hava Araçları Yarışması'nda Türkiye finalistiydi."
+        },
+        {
+          "speaker": "Can",
+          "text": "İki bin yirmi dörtte ise Aşina tek ekip, üç takım olarak finale kaldı. Serbest görev yarışmasında iki bin üç yüz otuz üç takım arasından on dokuzuncu oldu."
+        },
+        {
+          "speaker": "Ayse",
+          "text": "Aynı ekipten Bürküt, uçan araba simülasyon yarışmasında En İyi Takım Ruhu Ödülü'nü aldı. Çağrı ise kablosuz haberleşmede Türkiye altıncısı oldu."
+        },
+        {
+          "speaker": "Can",
+          "text": "Bir de Matris var. Şubat ayında kurulan sürü İHA takımımız, yüz altmış beş başvuru arasından finale kalan on dokuz takımdan biri oldu."
+        },
+        {
+          "speaker": "Ayse",
+          "text": "Hava savunmada da Göksav, iki bin yirmi beşte rapor aşamasında Türkiye üçüncüsüydü."
+        },
+        {
+          "speaker": "Can",
+          "text": "Bu kadar gökyüzü konuşmuşken şarkı da ona uygun olsun. Sırada Atölyeden Göklere."
+        }
+      ]
+    }
+  ]
+}

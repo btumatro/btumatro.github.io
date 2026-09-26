@@ -1,0 +1,39 @@
+{
+  "title": "Aramıza katıl",
+  "sequences": [
+    {
+      "sequenceId": 1,
+      "sequenceTitle": "Aramıza katıl",
+      "dialogues": [
+        {
+          "speaker": "Ayse",
+          "text": "MATRO Radyo'nun sonuna geldik. Kapanmadan önce bir soru: Bu takımlardan birinde sen de olmak ister misin?"
+        },
+        {
+          "speaker": "Can",
+          "text": "Bölüm ve sınıf ayrımı yok. Hiç robot yapmadıysan da sorun değil, çünkü her yıl iki dönem eğitim veriyoruz."
+        },
+        {
+          "speaker": "Ayse",
+          "text": "Güzde temel eğitim kampı var. Geçen sezon otuz iki ders saatlik kampı tamamlayan altmış bir üyemiz sertifika aldı."
+        },
+        {
+          "speaker": "Can",
+          "text": "Baharda ise proje dönemine hazırlayan ikinci kamp var. Tasarım, simülasyon ve kodlama üzerine."
+        },
+        {
+          "speaker": "Ayse",
+          "text": "Başvurmak için önce topluluk kayıt formunu dolduruyorsun. Takımda çalışmak istersen takım ön başvurusunda üç tercih yapabiliyorsun."
+        },
+        {
+          "speaker": "Can",
+          "text": "Bütün bağlantılar btumatro nokta com adresinde. Instagram'da da btumatro olarak bizi bulabilirsin."
+        },
+        {
+          "speaker": "Ayse",
+          "text": "Atölyede başlar, sahada kanıtlanır. Dinlediğiniz için teşekkürler."
+        }
+      ]
+    }
+  ]
+}

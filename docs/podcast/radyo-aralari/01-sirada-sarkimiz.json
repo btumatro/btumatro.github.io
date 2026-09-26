@@ -1,0 +1,31 @@
+{
+  "title": "Sırada topluluk şarkımız",
+  "sequences": [
+    {
+      "sequenceId": 1,
+      "sequenceTitle": "Sırada topluluk şarkımız",
+      "dialogues": [
+        {
+          "speaker": "Ayse",
+          "text": "MATRO Radyo'dasınız. Podcastimizi dinlediyseniz artık bizi biraz tanıyorsunuz."
+        },
+        {
+          "speaker": "Can",
+          "text": "Şimdi sözü müziğe bırakıyoruz. Sırada topluluk şarkımız var."
+        },
+        {
+          "speaker": "Ayse",
+          "text": "Adı, sloganımızdan geliyor. Atölyede başlar."
+        },
+        {
+          "speaker": "Can",
+          "text": "Gece yarısı lehim kokusu, masada bir prototip ve bir test daha diyen bir ekip. Şarkı tam olarak bunu anlatıyor."
+        },
+        {
+          "speaker": "Ayse",
+          "text": "Sesi açın, buyurun."
+        }
+      ]
+    }
+  ]
+}

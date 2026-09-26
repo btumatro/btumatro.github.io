@@ -1,9 +1,53 @@
 {
   "baslik": "MATRO Radyo",
   "parcalar": [
-    { "baslik": "Atölyede Başlar", "tur": "Topluluk şarkısı", "dosya": "/media/ses/01-atolyede-baslar.mp3", "kapak": "/media/ses/01-atolyede-baslar.jpg" },
-    { "baslik": "Atölyeden Göklere", "tur": "Topluluk şarkısı", "dosya": "/media/ses/03-atolyeden-goklere.mp3", "kapak": "/media/ses/03-atolyeden-goklere.jpg" },
-    { "baslik": "Atölyede Başlar (2. sürüm)", "tur": "Topluluk şarkısı", "dosya": "/media/ses/02-atolyede-baslar-v2.mp3", "kapak": "/media/ses/02-atolyede-baslar-v2.jpg" },
-    { "baslik": "MATRO Tanıtım Podcasti", "tur": "Podcast", "dosya": "/media/ses/matro-tanitim-podcast.mp3", "kapak": "/logo-matro-beyaz.png" }
+    {
+      "baslik": "MATRO Tanıtım Podcasti",
+      "tur": "Podcast",
+      "dosya": "/media/ses/matro-tanitim-podcast.mp3",
+      "kapak": "/logo-matro-beyaz.png"
+    },
+    {
+      "baslik": "Sırada topluluk şarkımız",
+      "tur": "Radyo arası",
+      "dosya": "/media/ses/ara-01-sirada-sarkimiz.mp3",
+      "kapak": "/logo-matro-beyaz.png"
+    },
+    {
+      "baslik": "Atölyede Başlar",
+      "tur": "Topluluk şarkısı",
+      "dosya": "/media/ses/01-atolyede-baslar.mp3",
+      "kapak": "/media/ses/01-atolyede-baslar.jpg"
+    },
+    {
+      "baslik": "Gökyüzündeki takımlarımız",
+      "tur": "Radyo arası",
+      "dosya": "/media/ses/ara-02-gokyuzundeki-takimlar.mp3",
+      "kapak": "/logo-matro-beyaz.png"
+    },
+    {
+      "baslik": "Atölyeden Göklere",
+      "tur": "Topluluk şarkısı",
+      "dosya": "/media/ses/03-atolyeden-goklere.mp3",
+      "kapak": "/media/ses/03-atolyeden-goklere.jpg"
+    },
+    {
+      "baslik": "Karada ve denizde",
+      "tur": "Radyo arası",
+      "dosya": "/media/ses/ara-03-karada-ve-denizde.mp3",
+      "kapak": "/logo-matro-beyaz.png"
+    },
+    {
+      "baslik": "Atölyede Başlar (2. sürüm)",
+      "tur": "Topluluk şarkısı",
+      "dosya": "/media/ses/02-atolyede-baslar-v2.mp3",
+      "kapak": "/media/ses/02-atolyede-baslar-v2.jpg"
+    },
+    {
+      "baslik": "Aramıza katıl",
+      "tur": "Radyo arası",
+      "dosya": "/media/ses/ara-04-aramiza-katil.mp3",
+      "kapak": "/logo-matro-beyaz.png"
+    }
   ]
 }
