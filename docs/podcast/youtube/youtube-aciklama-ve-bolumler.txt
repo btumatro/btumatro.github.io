@@ -1,0 +1,26 @@
+YouTube başlığı önerisi:
+MATRO Radyo — Atölyeden Sahaya | Topluluk Şarkıları, Hikâyeler ve Podcast
+
+Açıklama:
+MATRO Radyo'nun tam yayını: topluluk hikâyeleri, takım spotları, bülten, şarkılar ve istasyon jingle'ları. Bursa Teknik Üniversitesi Makine Teknolojileri Robot ve Otomasyon Topluluğu.
+
+Bölümler:
+00:00 MATRO Radyo
+00:14 MATRO Hikâyesi: MATRO nedir?
+02:09 Atölyede Başlar
+05:10 Gece Yarısı Mesaisi
+08:36 MATRO Hikâyesi: Takımlar ve TEKNOFEST
+11:09 MATRO Radyo
+11:17 MATRO bülteni
+12:05 Atölyeden Göklere
+15:37 Sürü
+18:52 Derinden Göklere
+22:16 Atölyede Başlar (2. sürüm)
+25:47 The Bursa Shift
+29:02 MATRO Hikâyesi: Eğitim ve katılım
+31:10 MATRO Radyo: atölyeden sahaya
+
+Site: https://btumatro.com
+Instagram: https://instagram.com/btumatro/
+
+Bu dosya, radyo çalarının src/data/radyo.json içindeki 14 parçalık sırasını korur.
