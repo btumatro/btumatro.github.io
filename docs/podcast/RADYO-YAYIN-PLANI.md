@@ -5,7 +5,7 @@ değerlendirme ve plan. Eylül 2026.
 
 ## 1. Mevcut durumun değerlendirmesi
 
-**Ses (düzeltildi, `scripts/radyo-miks.mjs`):**
+**Ses (düzeltildi, `scripts/radyo-yayin.mjs`):**
 
 - Replik arası boşluk ortalama 0,23 sn idi, nefes alınmıyordu. Artık her boşluğa 0,4 sn
   ekleniyor (~0,65 sn).
@@ -100,7 +100,7 @@ Promptlar: `docs/topluluk-sarkisi/prompt-taslaklari/v8-radyo-paketi.md`
    ayıklanması; podcast 2. bölümün güncel bilgilerle yeniden yazılması.
 2. Bülten üreticisi: `src/content/haberler`'den son 3 yayındaki haberin kısa metni.
 3. TTS: Gemini, Can ve Ayşe sesleri (`scripts/podcast-tts.mjs --senaryo`).
-4. Blok miksi: `scripts/radyo-miks.mjs` genişletilir. Link yatak üstünde çalar, son cümle
+4. Blok miksi: `scripts/radyo-yayin.mjs` genişletilir. Link yatak üstünde çalar, son cümle
    şarkı girişiyle çakıştırılır (talk-up, sidechain), jingle'lar araya girer, blok başına
    tek MP3 üretilir.
 5. Oynatıcı: liste blokları gösterir ("Link + şarkı adı"); ilerleme çubuğu bloğun

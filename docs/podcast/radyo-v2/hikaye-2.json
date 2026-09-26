@@ -1,0 +1,83 @@
+{
+  "title": "MATRO Hikâyesi 2. bölüm (güncel)",
+  "sequences": [
+    {
+      "sequenceId": 1,
+      "sequenceTitle": "Takımlar ve Teknofest yolculuğu",
+      "dialogues": [
+        {
+          "speaker": "Ayse",
+          "text": "Sahada kanıtlanır dedin. O saha dediğimiz yer genelde Teknofest, değil mi?"
+        },
+        {
+          "speaker": "Can",
+          "text": "Evet. Ve iki bin yirmi altı sezonu MATRO için çok özel geçti. Sekiz takım Teknofest finaline kaldı."
+        },
+        {
+          "speaker": "Ayse",
+          "text": "Sekiz takım! Bunlar kimler, biraz sayar mısın?"
+        },
+        {
+          "speaker": "Can",
+          "text": "Aşina, insansız hava araçları yarışmasında Malatya'da finaldeydi. Luna İKA, insansız kara aracında Mardin'de yarıştı ve Türkiye dokuzuncusu oldu."
+        },
+        {
+          "speaker": "Ayse",
+          "text": "Pusula, sanayide robotik uygulamalarda Diyarbakır'da. Matris ise sürü insansız hava aracında Gaziantep'te yarıştı."
+        },
+        {
+          "speaker": "Can",
+          "text": "Andromeda da akıllı fabrika sistemleri programlamada finalistti. Ve bir de Mavi Vatan var."
+        },
+        {
+          "speaker": "Ayse",
+          "text": "Mavi Vatan'da deniz ve su altı yarışmaları vardı. Orada üç takım birden finaldeydi."
+        },
+        {
+          "speaker": "Can",
+          "text": "Lodos insansız deniz aracıyla, Prusa insansız su altı aracıyla, Zemheri de su altı roketiyle."
+        },
+        {
+          "speaker": "Ayse",
+          "text": "Zemheri'nin hikâyesi ayrıca güzel. Su altı roket kategorisine ilk kez katıldılar; kritik tasarım raporunda Türkiye dördüncüsü, finalde dokuzuncu oldular."
+        },
+        {
+          "speaker": "Can",
+          "text": "Bir de iki bin yirmi beşi unutmayalım. Matrover ekibi insansız kara aracı yarışmasında, finale kalan yirmi sekiz takım arasında Türkiye üçüncüsü oldu."
+        },
+        {
+          "speaker": "Ayse",
+          "text": "Düşünsenize, zorlu bir arazide kendi başına yol bulan bir araç ve onu yapan öğrenciler."
+        },
+        {
+          "speaker": "Can",
+          "text": "Aslında bu başarıların arkasında uzun bir yol var. Bir araç, kâğıt üstünde bir çizgi olarak başlıyor."
+        },
+        {
+          "speaker": "Ayse",
+          "text": "Sonra raporlar geliyor, değil mi? Ön tasarım raporu, kritik tasarım raporu."
+        },
+        {
+          "speaker": "Can",
+          "text": "Evet, çoğu takım sahaya çıkmadan önce bu raporlarla değerlendiriliyor. Ardından üretim, havuzda, sahilde, arazide testler."
+        },
+        {
+          "speaker": "Ayse",
+          "text": "Ve final alanında birkaç dakikalık bir görev. On ayın emeği o birkaç dakikada sınanıyor."
+        },
+        {
+          "speaker": "Can",
+          "text": "Bu arada topluluğun başarı arşivi de çok geniş. Kayıtlı elliden fazla derece var, iki bin on üçten bugüne."
+        },
+        {
+          "speaker": "Ayse",
+          "text": "İlki de çok eski bir başarı, değil mi? Lagari adında bir insansız hava aracı."
+        },
+        {
+          "speaker": "Can",
+          "text": "Evet, iki bin on üçte Future Flight Design yarışmasında dünya ikinciliği. Yani topluluk daha kurulduğu yıl uluslararası sahneye çıkmış."
+        }
+      ]
+    }
+  ]
+}

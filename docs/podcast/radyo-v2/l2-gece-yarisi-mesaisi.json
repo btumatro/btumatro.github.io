@@ -1,0 +1,31 @@
+{
+  "title": "Link: Gece Yarısı Mesaisi",
+  "sequences": [
+    {
+      "sequenceId": 1,
+      "sequenceTitle": "Link: Gece Yarısı Mesaisi",
+      "dialogues": [
+        {
+          "speaker": "Ayse",
+          "text": "Atölyede Başlar'dı. Şimdi kısa bir bunu biliyor muydunuz."
+        },
+        {
+          "speaker": "Can",
+          "text": "İki bin yirmi ikide sualtı ekibimiz, Singapur'daki otonom sualtı aracı yarışmasında dünya finalistiydi."
+        },
+        {
+          "speaker": "Ayse",
+          "text": "Bir yıl önce de Fransa'daki Renault Twizy yarışmasında dünya dördüncülüğü geldi."
+        },
+        {
+          "speaker": "Can",
+          "text": "İki bin yirmi dörtte ise NASA Space Apps'te bölge birinciliği."
+        },
+        {
+          "speaker": "Ayse",
+          "text": "Bütün takımları tek şarkıda saymak zor ama biri denedi. Sırada rap var: Gece Yarısı Mesaisi."
+        }
+      ]
+    }
+  ]
+}

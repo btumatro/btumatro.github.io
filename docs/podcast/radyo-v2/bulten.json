@@ -1,0 +1,31 @@
+{
+  "title": "MATRO bülteni",
+  "sequences": [
+    {
+      "sequenceId": 1,
+      "sequenceTitle": "MATRO bülteni",
+      "dialogues": [
+        {
+          "speaker": "Ayse",
+          "text": "MATRO bülteni. Güncel başlıklar, kısa kısa."
+        },
+        {
+          "speaker": "Can",
+          "text": "İlk haber: iki bin yirmi altı, yirmi yedi dönemi topluluk kayıtları ve takım ön başvuruları açıldı. Ön koşul yok; önce topluluğa kayıt, sonra takım ön başvurusu."
+        },
+        {
+          "speaker": "Ayse",
+          "text": "Yönetim kurulu başvuruları da açık. Atölye, sponsorluk, organizasyon ya da sosyal medyada sorumluluk almak isteyenleri bekliyoruz."
+        },
+        {
+          "speaker": "Can",
+          "text": "TEKNOFEST iki bin yirmi altı sezonu tamamlandı. Sekiz takımımız finaldeydi; Luna İKA ve Zemheri Türkiye dokuzuncusu oldu."
+        },
+        {
+          "speaker": "Ayse",
+          "text": "Bütün başvuru bağlantıları btumatro nokta com adresinde. Bülten bu kadar, müzikle devam ediyoruz."
+        }
+      ]
+    }
+  ]
+}

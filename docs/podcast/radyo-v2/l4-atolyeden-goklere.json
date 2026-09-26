@@ -1,0 +1,27 @@
+{
+  "title": "Link: Atölyeden Göklere",
+  "sequences": [
+    {
+      "sequenceId": 1,
+      "sequenceTitle": "Link: Atölyeden Göklere",
+      "dialogues": [
+        {
+          "speaker": "Ayse",
+          "text": "MATRO Radyo'da devam ediyoruz. Biraz yükseğe çıkalım."
+        },
+        {
+          "speaker": "Can",
+          "text": "İnsansız hava araçları takımımız Aşina, tek ekip ama üç takım gibi çalışıyor. İki bin yirmi dörtte Bürküt uçan araba simülasyonunda En İyi Takım Ruhu Ödülü'nü aldı, Çağrı da kablosuz haberleşmede Türkiye altıncısı oldu."
+        },
+        {
+          "speaker": "Ayse",
+          "text": "Hava savunmada Göksav, iki bin yirmi beşte rapor aşamasında Türkiye üçüncüsüydü."
+        },
+        {
+          "speaker": "Can",
+          "text": "Gökyüzüne yakışan şarkı belli. Sırada Atölyeden Göklere."
+        }
+      ]
+    }
+  ]
+}

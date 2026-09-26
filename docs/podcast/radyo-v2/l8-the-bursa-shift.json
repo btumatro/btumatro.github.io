@@ -1,0 +1,23 @@
+{
+  "title": "Link: The Bursa Shift",
+  "sequences": [
+    {
+      "sequenceId": 1,
+      "sequenceTitle": "Link: The Bursa Shift",
+      "dialogues": [
+        {
+          "speaker": "Can",
+          "text": "Atölyede Başlar'ın ikinci sürümüydü. Saat ilerliyor, atölyede ışıklar hâlâ açık."
+        },
+        {
+          "speaker": "Ayse",
+          "text": "Bir masada deniz aracının gövdesi zımparalanıyor, öbüründe bir kod son kez derleniyor."
+        },
+        {
+          "speaker": "Can",
+          "text": "Bu anlar için sakin bir parça. Sırada The Bursa Shift."
+        }
+      ]
+    }
+  ]
+}

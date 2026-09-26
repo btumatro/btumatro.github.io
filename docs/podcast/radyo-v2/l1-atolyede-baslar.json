@@ -1,0 +1,27 @@
+{
+  "title": "Link: Atölyede Başlar",
+  "sequences": [
+    {
+      "sequenceId": 1,
+      "sequenceTitle": "Link: Atölyede Başlar",
+      "dialogues": [
+        {
+          "speaker": "Ayse",
+          "text": "MATRO Hikâyesi'nin ilk bölümüyle açtık. MATRO Radyo'dasınız, ben Ayşe."
+        },
+        {
+          "speaker": "Can",
+          "text": "Ben de Can. Bölümde atölyeden, gece yarısı hâlâ yanan ışıklardan bahsettik."
+        },
+        {
+          "speaker": "Ayse",
+          "text": "O gecelerin bir de şarkısı var. Adını sloganımızdan alıyor."
+        },
+        {
+          "speaker": "Can",
+          "text": "Sesi açın. Sırada Atölyede Başlar."
+        }
+      ]
+    }
+  ]
+}

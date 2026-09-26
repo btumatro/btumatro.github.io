@@ -8,105 +8,75 @@
       "kapak": "/media/ses/radyo-arasi-kapak.jpg"
     },
     {
-      "baslik": "MATRO nedir? Atölyede bir gece",
+      "baslik": "MATRO Hikâyesi: MATRO nedir?",
       "tur": "Podcast · 1. bölüm",
-      "dosya": "/media/ses/podcast-bolum-01.mp3",
+      "dosya": "/media/ses/blok-01-hikaye-1.mp3",
       "kapak": "/media/ses/podcast-kapak.jpg"
-    },
-    {
-      "baslik": "Sırada topluluk şarkımız",
-      "tur": "Radyo arası",
-      "dosya": "/media/ses/ara-01-sirada-sarkimiz.mp3",
-      "kapak": "/media/ses/radyo-arasi-kapak.jpg"
     },
     {
       "baslik": "Atölyede Başlar",
-      "tur": "Topluluk şarkısı",
-      "dosya": "/media/ses/01-atolyede-baslar.mp3",
+      "tur": "DJ + topluluk şarkısı",
+      "dosya": "/media/ses/blok-02-atolyede-baslar.mp3",
       "kapak": "/media/ses/01-atolyede-baslar.jpg"
     },
     {
-      "baslik": "Bunu biliyor muydunuz?",
-      "tur": "Radyo arası",
-      "dosya": "/media/ses/ara-05-bunu-biliyor-muydunuz.mp3",
-      "kapak": "/media/ses/radyo-arasi-kapak.jpg"
-    },
-    {
       "baslik": "Gece Yarısı Mesaisi",
-      "tur": "Topluluk şarkısı · Rap",
-      "dosya": "/media/ses/04-gece-yarisi-mesaisi.mp3",
+      "tur": "Bunu biliyor muydunuz? + rap",
+      "dosya": "/media/ses/blok-03-gece-yarisi-mesaisi.mp3",
       "kapak": "/media/ses/04-gece-yarisi-mesaisi.jpg"
     },
     {
-      "baslik": "Takımlar ve TEKNOFEST yolculuğu",
+      "baslik": "MATRO Hikâyesi: Takımlar ve TEKNOFEST",
       "tur": "Podcast · 2. bölüm",
-      "dosya": "/media/ses/podcast-bolum-02.mp3",
+      "dosya": "/media/ses/blok-04-hikaye-2.mp3",
       "kapak": "/media/ses/podcast-kapak.jpg"
     },
     {
-      "baslik": "Gökyüzündeki takımlarımız",
-      "tur": "Radyo arası",
-      "dosya": "/media/ses/ara-02-gokyuzundeki-takimlar.mp3",
+      "baslik": "MATRO Radyo",
+      "tur": "Jingle",
+      "dosya": "/media/ses/jingle-kapanis.mp3",
+      "kapak": "/media/ses/radyo-arasi-kapak.jpg"
+    },
+    {
+      "baslik": "MATRO bülteni",
+      "tur": "Bülten",
+      "dosya": "/media/ses/blok-05-bulten.mp3",
       "kapak": "/media/ses/radyo-arasi-kapak.jpg"
     },
     {
       "baslik": "Atölyeden Göklere",
-      "tur": "Topluluk şarkısı",
-      "dosya": "/media/ses/03-atolyeden-goklere.mp3",
+      "tur": "Gökyüzündeki takımlar + şarkı",
+      "dosya": "/media/ses/blok-06-atolyeden-goklere.mp3",
       "kapak": "/media/ses/03-atolyeden-goklere.jpg"
     },
     {
       "baslik": "Sürü",
-      "tur": "Enstrümantal",
-      "dosya": "/media/ses/06-suru.mp3",
+      "tur": "MATRİS için enstrümantal",
+      "dosya": "/media/ses/blok-07-suru.mp3",
       "kapak": "/media/ses/06-suru.jpg"
     },
     {
-      "baslik": "Radyo sözlüğü",
-      "tur": "Radyo arası",
-      "dosya": "/media/ses/ara-06-radyo-sozlugu.mp3",
-      "kapak": "/media/ses/radyo-arasi-kapak.jpg"
-    },
-    {
-      "baslik": "Karada ve denizde",
-      "tur": "Radyo arası",
-      "dosya": "/media/ses/ara-03-karada-ve-denizde.mp3",
-      "kapak": "/media/ses/radyo-arasi-kapak.jpg"
-    },
-    {
       "baslik": "Derinden Göklere",
-      "tur": "Topluluk şarkısı",
-      "dosya": "/media/ses/05-derinden-goklere.mp3",
+      "tur": "Radyo sözlüğü + şarkı",
+      "dosya": "/media/ses/blok-08-derinden-goklere.mp3",
       "kapak": "/media/ses/05-derinden-goklere.jpg"
     },
     {
-      "baslik": "Takım spotu: PUSULA ve ALHAZEN",
-      "tur": "Radyo arası",
-      "dosya": "/media/ses/ara-08-takim-spotu.mp3",
-      "kapak": "/media/ses/radyo-arasi-kapak.jpg"
-    },
-    {
       "baslik": "Atölyede Başlar (2. sürüm)",
-      "tur": "Topluluk şarkısı",
-      "dosya": "/media/ses/02-atolyede-baslar-v2.mp3",
+      "tur": "Takım spotu + şarkı",
+      "dosya": "/media/ses/blok-09-atolyede-baslar-2.mp3",
       "kapak": "/media/ses/02-atolyede-baslar-v2.jpg"
     },
     {
-      "baslik": "Atölyede bir gece",
-      "tur": "Radyo arası",
-      "dosya": "/media/ses/ara-07-atolyede-bir-gece.mp3",
-      "kapak": "/media/ses/radyo-arasi-kapak.jpg"
-    },
-    {
       "baslik": "The Bursa Shift",
-      "tur": "Enstrümantal · Lo-fi",
-      "dosya": "/media/ses/07-the-bursa-shift.mp3",
+      "tur": "Atölyede gece + lo-fi",
+      "dosya": "/media/ses/blok-10-the-bursa-shift.mp3",
       "kapak": "/media/ses/07-the-bursa-shift.jpg"
     },
     {
-      "baslik": "Eğitim, sanayi ve nasıl katılırım",
+      "baslik": "MATRO Hikâyesi: Eğitim ve katılım",
       "tur": "Podcast · 3. bölüm",
-      "dosya": "/media/ses/podcast-bolum-03.mp3",
+      "dosya": "/media/ses/blok-11-hikaye-3.mp3",
       "kapak": "/media/ses/podcast-kapak.jpg"
     },
     {

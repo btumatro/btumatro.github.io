@@ -1,0 +1,23 @@
+{
+  "title": "Link: Sürü",
+  "sequences": [
+    {
+      "sequenceId": 1,
+      "sequenceTitle": "Link: Sürü",
+      "dialogues": [
+        {
+          "speaker": "Ayse",
+          "text": "Atölyeden Göklere'ydi. Şimdi sözsüz bir parça, sürü İHA takımımız Matris'e."
+        },
+        {
+          "speaker": "Can",
+          "text": "Şubatta kurulan takım, ilk sezonunda yüz altmış beş başvuru arasından finale kaldı."
+        },
+        {
+          "speaker": "Ayse",
+          "text": "Sesi açın. Sırada Sürü."
+        }
+      ]
+    }
+  ]
+}

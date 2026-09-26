@@ -1,0 +1,19 @@
+{
+  "title": "Link: Hikâyeye dönüş",
+  "sequences": [
+    {
+      "sequenceId": 1,
+      "sequenceTitle": "Link: Hikâyeye dönüş",
+      "dialogues": [
+        {
+          "speaker": "Can",
+          "text": "Gece Yarısı Mesaisi'ydi. Aşina'dan Alhazen'e bütün takımlarımızın yoklamasıydı."
+        },
+        {
+          "speaker": "Ayse",
+          "text": "Şimdi hikâyemize dönüyoruz. MATRO Hikâyesi, ikinci bölüm: takımlar ve TEKNOFEST yolculuğu."
+        }
+      ]
+    }
+  ]
+}

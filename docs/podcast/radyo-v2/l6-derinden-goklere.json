@@ -1,0 +1,27 @@
+{
+  "title": "Link: Derinden Göklere",
+  "sequences": [
+    {
+      "sequenceId": 1,
+      "sequenceTitle": "Link: Derinden Göklere",
+      "dialogues": [
+        {
+          "speaker": "Ayse",
+          "text": "Sürü'ydü. Radyo sözlüğü zamanı: K T R."
+        },
+        {
+          "speaker": "Can",
+          "text": "Kritik Tasarım Raporu. Artık fikir değil, üretime hazır bir tasarım isteniyor."
+        },
+        {
+          "speaker": "Ayse",
+          "text": "Zemheri su altı roketi, ilk yılında bu raporda Türkiye dördüncüsü oldu. Denizde Lodos, su altında Prusa ve Zemheri; üçü de Mavi Vatan finallerindeydi."
+        },
+        {
+          "speaker": "Can",
+          "text": "Bu şarkı onlar için. Sırada Derinden Göklere."
+        }
+      ]
+    }
+  ]
+}

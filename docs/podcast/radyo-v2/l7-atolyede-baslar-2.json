@@ -1,0 +1,31 @@
+{
+  "title": "Link: Atölyede Başlar (2. sürüm)",
+  "sequences": [
+    {
+      "sequenceId": 1,
+      "sequenceTitle": "Link: Atölyede Başlar (2. sürüm)",
+      "dialogues": [
+        {
+          "speaker": "Ayse",
+          "text": "Derinden Göklere'ydi. Şimdi takım spotu."
+        },
+        {
+          "speaker": "Can",
+          "text": "Pusula'nın aracı Sirius, paleti depodan üretim hattına kendi başına taşıyan otonom bir forklift."
+        },
+        {
+          "speaker": "Ayse",
+          "text": "Alhazen ise enerjide. Bu sezon nükleer enerji tasarım yarışmasında ön değerlendirme raporunda Türkiye ikincisi oldular."
+        },
+        {
+          "speaker": "Can",
+          "text": "Karada da boş durmadık. İnsansız kara aracı takımımız iki bin on dokuzdan beri her sezon finalde."
+        },
+        {
+          "speaker": "Ayse",
+          "text": "Topluluk şarkımızın ikinci sürümüyle devam. Sırada Atölyede Başlar."
+        }
+      ]
+    }
+  ]
+}
