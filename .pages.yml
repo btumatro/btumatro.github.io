@@ -822,6 +822,12 @@ content:
             label: Akademik sayfa bağlantısı
             type: string
             description: "Örn: https://sayfam.btu.edu.tr/..." 
+      - name: hazirlayan
+        label: Siteyi hazırlayan (footer)
+        type: object
+        fields:
+          - { name: ad, label: Ad soyad, type: string }
+          - { name: url, label: Profil bağlantısı, type: string }
       - name: vizyon
         label: Footer alt satır logosu
         type: object

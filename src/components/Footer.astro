@@ -128,7 +128,21 @@ const year = new Date().getFullYear();
     </div>
 
     <div class="mt-6 flex flex-col gap-4 border-t border-white/10 pt-6 text-xs text-mist-500 sm:flex-row sm:items-center sm:justify-between">
-      <p>© {year} {site.shortName} — {site.fullName}. Tüm hakları saklıdır.</p>
+      <div class="space-y-1">
+        <p>© {year} {site.shortName} — {site.fullName}. Tüm hakları saklıdır.</p>
+        {
+          site.hazirlayan?.ad && (
+            <p>
+              Siteyi hazırlayan:{' '}
+              {site.hazirlayan.url ? (
+                <a href={site.hazirlayan.url} target="_blank" rel="noopener noreferrer" class="text-mist-300 underline decoration-white/20 underline-offset-4 transition-colors hover:text-volt-300">{site.hazirlayan.ad}</a>
+              ) : (
+                <span class="text-mist-300">{site.hazirlayan.ad}</span>
+              )}
+            </p>
+          )
+        }
+      </div>
       {
         site.vizyon?.logo && (
           <a
