@@ -189,23 +189,27 @@ const parcalar = radyo.parcalar.map((p) => ({ ...p, dosya: url(p.dosya), kapak: 
     });
     window.addEventListener('pagehide', yaz);
 
-    // İlk ziyarette, birkaç saniye sonra Radyo düğmesinin altında küçük bir ipucu gösterilir.
-    // Bir kez gösterildikten sonra tarayıcıda hatırlanır; radyo açıksa hiç gösterilmez.
+    // Radyo ipucu: her ziyarette (tarayıcı oturumunda bir kez) birkaç saniye sonra Radyo
+    // düğmesinin altında çıkar. "Sonra" o ziyaret için gizler; "Bir daha gösterme" kalıcıdır.
+    // Radyo açıksa ya da dinleniyorsa gösterilmez.
     const ipucu = document.getElementById('radyo-ipucu');
-    const IPUCU = 'matro-radyo-ipucu';
-    const ipucuGoruldu = () => { try { return localStorage.getItem(IPUCU) === '1'; } catch { return true; } };
-    const ipucuKapat = () => { if (ipucu) ipucu.hidden = true; try { localStorage.setItem(IPUCU, '1'); } catch { /* yok say */ } };
-    if (ipucu && !ipucuGoruldu()) {
+    const KALICI = 'matro-radyo-ipucu-kapali';
+    const OTURUM = 'matro-radyo-ipucu-goruldu';
+    const depo = (d: Storage, k: string) => { try { return d.getItem(k) === '1'; } catch { return true; } };
+    const isaretle = (d: Storage, k: string) => { try { d.setItem(k, '1'); } catch { /* depolama kapalı */ } };
+    const ipucuGizle = () => { if (ipucu) ipucu.hidden = true; isaretle(sessionStorage, OTURUM); };
+    if (ipucu && !depo(localStorage, KALICI) && !depo(sessionStorage, OTURUM)) {
       window.setTimeout(() => {
-        if (!kok.hidden || ipucuGoruldu()) return;
+        if (!kok.hidden || depo(sessionStorage, OTURUM)) return;
         ipucu.hidden = false;
-        try { localStorage.setItem(IPUCU, '1'); } catch { /* yok say */ }
+        isaretle(sessionStorage, OTURUM);
         window.setTimeout(() => { ipucu.hidden = true; }, 15000);
       }, 3500);
-      ipucu.querySelector('[data-radyo-ipucu-dinle]')?.addEventListener('click', () => { ipucuKapat(); ac(); cal(); });
-      ipucu.querySelector('[data-radyo-ipucu-kapat]')?.addEventListener('click', ipucuKapat);
-      document.querySelectorAll('[data-radyo-ac]').forEach((d) => d.addEventListener('click', ipucuKapat));
     }
+    ipucu?.querySelector('[data-radyo-ipucu-dinle]')?.addEventListener('click', () => { ipucuGizle(); ac(); cal(); });
+    ipucu?.querySelector('[data-radyo-ipucu-kapat]')?.addEventListener('click', ipucuGizle);
+    ipucu?.querySelector('[data-radyo-ipucu-bir-daha]')?.addEventListener('click', () => { ipucuGizle(); isaretle(localStorage, KALICI); });
+    document.querySelectorAll('[data-radyo-ac]').forEach((d) => d.addEventListener('click', ipucuGizle));
 
     // Önceki sayfadan kalan durumu geri yükle. Varsayılan: kapalı ve duraklatılmış.
     const d = oku();

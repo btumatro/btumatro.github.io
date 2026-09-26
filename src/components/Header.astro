@@ -122,6 +122,7 @@ const groupActive = (item: (typeof NAV)[number]) =>
           <button type="button" data-radyo-ipucu-dinle class="radyo-ipucu-dinle">Dinle</button>
           <button type="button" data-radyo-ipucu-kapat class="radyo-ipucu-kapat">Sonra</button>
         </div>
+        <button type="button" data-radyo-ipucu-bir-daha class="radyo-ipucu-bir-daha">Bir daha gösterme</button>
       </div>
       </div>
       <a
@@ -217,6 +218,8 @@ const groupActive = (item: (typeof NAV)[number]) =>
   .radyo-ipucu-dinle { padding: 0.4rem 0.9rem; border-radius: 0.5rem; background: var(--color-volt-400); color: var(--color-ink-950); font-size: 0.8rem; font-weight: 600; cursor: pointer; }
   .radyo-ipucu-kapat { padding: 0.4rem 0.7rem; border-radius: 0.5rem; color: var(--color-mist-300); font-size: 0.8rem; cursor: pointer; }
   .radyo-ipucu-kapat:hover { color: var(--color-mist-100); }
+  .radyo-ipucu-bir-daha { margin-top: 0.55rem; font-size: 0.7rem; color: var(--color-mist-500); text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
+  .radyo-ipucu-bir-daha:hover { color: var(--color-mist-300); }
   @media (prefers-reduced-motion: reduce) { .radyo-ipucu:not([hidden]) { animation: none; } }
   .radyo-nokta { display: none; width: 0.45rem; height: 0.45rem; border-radius: 999px; background: var(--color-ember-400); }
   :global(.radyo-caliyor) .radyo-nokta { display: inline-block; animation: radyo-nabiz 1.2s ease-in-out infinite; }
