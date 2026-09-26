@@ -1,0 +1,14 @@
+{
+  "title": "MATRO Radyo kısa tanıtım",
+  "sequences": [{"sequenceId":1,"sequenceTitle":"Frekans bulundu","dialogues":[
+    {"speaker":"Ayse","text":"Frekans bulundu. MATRO Radyo yayında!"},
+    {"speaker":"Can","text":"Atölyede başlar, sahada kanıtlanır."},
+    {"speaker":"Ayse","text":"Havada, karada ve denizde robotik sistemler geliştiriyoruz."},
+    {"speaker":"Can","text":"Takımlarımızı, projelerimizi ve başarılarımızı sitemizde keşfet."},
+    {"speaker":"Ayse","text":"Profildeki linke tıklayın, MATRO’yu yakından tanıyın."},
+    {"speaker":"Can","text":"Sonra sitedeki Radyo düğmesine dokun."},
+    {"speaker":"Ayse","text":"Topluluk şarkıları ve MATRO hikâyeleri seni bekliyor."},
+    {"speaker":"Can","text":"Frekansın adı: MATRO Radyo."},
+    {"speaker":"Ayse","text":"MATRO Radyo. Atölyeden sahaya!"}
+  ]}]
+}
