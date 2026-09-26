@@ -13,6 +13,7 @@ ASSETS = HERE / "assets"
 OUTPUT = HERE / "output" / "MATRO-Radyo-Reels-v2.mp4"
 W, H, FPS = 720, 1280, 24
 DURATION = 30.958
+MUSIC_FADE_OUT = 2.8
 
 
 def run(args):
@@ -59,7 +60,7 @@ def main():
         )
         audio_graph = (
             f"[4:a]atrim=0:{DURATION},asetpts=PTS-STARTPTS,volume=0.42,"
-            "afade=t=in:st=1.3:d=0.7,afade=t=out:st=29.8:d=1.15[music];"
+            f"afade=t=in:st=1.3:d=0.7,afade=t=out:st={DURATION - MUSIC_FADE_OUT:.3f}:d={MUSIC_FADE_OUT}[music];"
             "[5:a]loudnorm=I=-16:TP=-1.5:LRA=7,adelay=1500|1500,asplit=2[voice][duckkey];"
             f"[duckkey]apad=whole_dur={DURATION}[duckpad];"
             "[music][duckpad]sidechaincompress=threshold=0.035:ratio=7:attack=25:release=420[ducked];"
