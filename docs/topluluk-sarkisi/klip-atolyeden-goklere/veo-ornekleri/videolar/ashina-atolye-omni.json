@@ -1,0 +1,7 @@
+{
+  "model": "gemini-omni-1.1-flash",
+  "scene": "ashina-atolye",
+  "reference": "referanslar/ashina-atolye-ilk-kare.jpg",
+  "prompt": "An eight-second single continuous documentary close shot of this exact electronics workbench photograph. A restrained 30-centimetre camera push-in toward the existing electronics assembly. No person enters. The wires, capacitors, boards, taped components, yellow base, cutting mat, pliers and surrounding workbench stay in their exact locations and shapes; nothing assembles itself or moves independently. Soft practical workshop light with restrained warm highlights and natural material texture, cinematic but unmistakably real. Keep the background cabinets and papers stable. No new tools, no spinning blades, no sparks, no captions, no new readable text, no cuts, no dialogue or music.",
+  "interaction_id": "v1_ChdBenU0YXMzc0RmTGx2ZElQNDlmaS1RZxIXQXp1NGFzM3NEZkxsdmRJUDQ5ZmktUWc"
+}

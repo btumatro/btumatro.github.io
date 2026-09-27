@@ -1,0 +1,7 @@
+{
+  "model": "gemini-omni-1.1-flash",
+  "scene": "prusa-sinematik",
+  "reference": "../ana-kareler/prusa-sinematik.png",
+  "prompt": "Animate this exact professional workshop documentary still as one continuous eight-second shot. The red PRUSA underwater vehicle remains stationary on the table. Camera makes only a slow 20-centimetre lateral slide at the same height; soft window light shifts very slightly across the existing shell. Preserve the exact red vented body, front grille, cream ducted thrusters and their current positions and count. Do not rotate propellers or add anything. No water, bubbles, lights, people, text, redesign, cuts, dialogue or music.",
+  "interaction_id": "v1_ChdHejY0YXBETUZfTDl4TjhQdzlEVnVBdxIXR3o2NGFwRE1GX0w5eE44UHc5RFZ1QXc"
+}

@@ -1,0 +1,9 @@
+{
+  "model": "gemini-3-pro-image",
+  "references": [
+    "galeri-ashina-sunum-elektronik-masa.jpg",
+    "galeri-ashina-uretim.jpg"
+  ],
+  "prompt": "Make one premium 16:9 cinematic documentary photograph based on the supplied real ASHİNA workshop photographs. Primary subject is the exact unfinished electronics assembly on the yellow box from the FIRST image, with its existing green circuit board, tall black capacitors, heat-shrink wiring and surrounding tools. Keep all components plausible and physically attached in the same places. The SECOND image is context for the team aircraft development only; do not combine a plane with the electronics or add a plane to this shot. Camera at bench height with a 50 mm lens look, tight but breathable composition, gentle directional window light from camera left, practical workshop shadows, a hint of warmer background depth, natural surfaces and subtle film grain. Professional exposure and color grading, photographic not illustrated, no neon, no glowing circuits, no sparks, no people, no text, no duplicated components or tools.",
+  "interaction_id": "v1_ChdzVHk0YXN1bktLR2MyOG9QNU8zUm9ROBIXc1R5NGFzdW5LS0djMjhvUDVPM1JvUTg"
+}

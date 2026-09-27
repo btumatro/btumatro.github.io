@@ -1,0 +1,7 @@
+{
+  "model": "gemini-omni-1.1-flash",
+  "scene": "prusa-workshop-concept",
+  "reference": "../assets/konsept-prusa-atolye.png",
+  "prompt": "Animate this polished cinematic PRUSA workshop still as one continuous eight-second shot. The exact red underwater vehicle stays fixed on the workbench; camera makes a slow low lateral dolly past its nose, revealing the existing cream ducted thrusters and workshop depth. Preserve exact vehicle shape and all visible component counts. Soft practical light, subtle parallax only; no propeller movement, water, bubbles, new parts, text, logos, cuts, dialogue or music.",
+  "interaction_id": "v1_ChdOazY0YXNySU02LWIyOG9QZ2ZUUTZBcxIXTms2NGFzcklNNi1iMjhvUGdmVFE2QXM"
+}

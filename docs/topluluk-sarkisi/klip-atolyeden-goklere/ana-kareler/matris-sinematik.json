@@ -1,0 +1,9 @@
+{
+  "model": "gemini-3-pro-image",
+  "references": [
+    "galeri-matris-sunum-saha-iki-iha.jpg",
+    "galeri-matris-test-ucus.jpg"
+  ],
+  "prompt": "Use the two provided photographs as the sole technical identity reference for the MATRİS team aircraft. Create one premium 16:9 cinematic documentary still, as if photographed professionally at the real outdoor test field. Exactly TWO distinct exposed-frame quadcopters rest on short field grass, one near camera left and one behind to the right, each retaining its own real rotor count, arms, landing legs, exposed electronics, antennas, colors and proportions from the reference photographs. Low camera at grass height, 50 mm lens look, restrained shallow depth of field, late-afternoon side light with coherent soft shadows, neutral real grass, slight atmospheric depth. Composition follows a subtle diagonal between the two machines and leaves breathable negative space above. Fine natural photographic grain, realistic imperfections, no glossy CGI, no neon, no lens flare. No people, no extra drones, no invented rotors or panels, no text, no logos, no captions. Prioritize technical fidelity over dramatic effect.",
+  "interaction_id": "v1_ChdtVHU0YXFlZ0xxM2Z4czBQdTlEMTJBaxIXbVR1NGFxZWdMcTNmeHMwUHU5RDEyQWs"
+}

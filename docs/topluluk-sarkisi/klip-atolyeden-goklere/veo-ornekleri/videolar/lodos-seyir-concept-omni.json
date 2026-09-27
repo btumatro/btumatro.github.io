@@ -1,0 +1,7 @@
+{
+  "model": "gemini-omni-1.1-flash",
+  "scene": "lodos-seyir-concept",
+  "reference": "../assets/konsept-lodos-seyir.png",
+  "prompt": "Animate this already-created cinematic concept frame as one restrained eight-second documentary visualization. The same current grey LODOS boat proceeds slowly in the direction already shown, leaving only a small natural wake. Camera tracks parallel at water height with a very gentle lateral move. Preserve the existing raised opaque cabin, Turkish flag, grey angular hull, side pontoons, red LODOS lettering and all visible proportions exactly. Keep the current shoreline, sea and light direction. No redesign, extra hardware, windows, boats, people, signs, text, splash spectacle, cuts, dialogue or music.",
+  "interaction_id": "v1_Chd2VXE0YXJPNUg2dUEzYm9QbE1EQjZBZxIXdlVxNGFyTzVINnVBM2JvUGxNREI2QWc"
+}

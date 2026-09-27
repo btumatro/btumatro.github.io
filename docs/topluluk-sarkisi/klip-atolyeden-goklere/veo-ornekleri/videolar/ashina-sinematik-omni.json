@@ -1,0 +1,7 @@
+{
+  "model": "gemini-omni-1.1-flash",
+  "scene": "ashina-sinematik",
+  "reference": "../ana-kareler/ashina-sinematik.png",
+  "prompt": "Animate this exact professional workshop documentary still as one continuous eight-second shot. The camera makes only a slow 20-centimetre forward move at bench height. The existing unfinished electronics assembly, tall capacitors, exposed wires, tools and cutting mat remain completely still and physically identical throughout. Gentle natural window light and soft background depth, with no sparks, glowing electronics, autonomous assembly, extra tools, people, text, cuts, dialogue or music.",
+  "interaction_id": "v1_ChdIRDI0YXE2aEY0R2MyOG9QNHF6S21RbxIXSEQyNGFxNmhGNEdjMjhvUDRxekttUW8"
+}

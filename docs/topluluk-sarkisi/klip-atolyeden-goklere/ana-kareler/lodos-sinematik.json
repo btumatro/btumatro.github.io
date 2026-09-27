@@ -1,0 +1,9 @@
+{
+  "model": "gemini-3-pro-image",
+  "references": [
+    "galeri-lodos-ekip-sahil.jpg",
+    "takim-lodos.jpg"
+  ],
+  "prompt": "Use BOTH supplied photographs to identify the current grey LODOS unmanned surface boat, not any older white version. Make a premium 16:9 cinematic documentary still of THIS EXACT grey boat alone, stationary on its EXISTING small launch trolley at a Bursa waterfront pier just before the test. Preserve the raised opaque grey cabin with the Turkish flag on top, the compact angular hull, side pontoon arrangement, current red LODOS lettering, the existing trolley structure and all visible hardware proportions. Do not redesign the hull, add windows, antenna, knobs, wings, extra boats, or change the lettering. No people in the new frame. Camera 35 mm at boat height, three-quarter front view that stays close to the reference geometry. Natural overcast late-afternoon light with a warm break near the horizon, restrained cool shadows, real concrete, real water, coherent contact shadows. Clean professional exposure and subtle film grain. Understated factual documentary photograph, not CGI, not a concept redesign. No title or graphical overlay.",
+  "interaction_id": "v1_Chc3anU0YXJTR0ZORDF4TjhQd2VHU3FBVRIXN2p1NGFyU0dGTkQxeE44UHdlR1NxQVU"
+}

@@ -1,0 +1,7 @@
+{
+  "model": "gemini-omni-1.1-flash",
+  "scene": "prusa-sualti-concept",
+  "reference": "../assets/konsept-prusa-sualti.png",
+  "prompt": "Animate this already-created cinematic underwater concept as one unbroken eight-second shot. The single red PRUSA ROV remains the same size, shape and orientation while gliding forward very slowly through the clear test pool; camera tracks alongside at the same depth. Preserve the rounded red vented shell, front grille and exact visible cream ducted thrusters and positions. Natural sun caustics drift softly across the pool, restrained documentary color, no dramatic bubbles or particles. Do not add arms, thrusters, lights, cables, people, text or logos; no redesign, cuts, dialogue or music. Clearly a cinematic visualization, not archival test footage.",
+  "interaction_id": "v1_ChcxVXE0YXZlb09aVGx4TjhQbXJibHNBcxIXMVVxNGF2ZW9PWlRseE44UG1yYmxzQXM"
+}

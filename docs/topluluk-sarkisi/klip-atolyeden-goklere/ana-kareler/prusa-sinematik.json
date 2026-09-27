@@ -1,0 +1,9 @@
+{
+  "model": "gemini-3-pro-image",
+  "references": [
+    "galeri-prusa-detay.jpg",
+    "galeri-prusa-teknofest.jpg"
+  ],
+  "prompt": "Create a single premium 16:9 cinematic documentary still of the ACTUAL red PRUSA unmanned underwater vehicle in the two provided event photographs. This is an improved professional product photograph at a real workshop display table, NOT underwater and NOT a redesign. Match its unique wide red vented upper shell, rounded honeycomb nose grille, cream-colored ducted side thrusters, frame arrangement and compact proportions exactly. Three-quarter low front angle at table height, 50 mm lens look, soft directional window light and restrained cool shadow with fine natural grain. Background workshop is softly out of focus. The vehicle rests physically on the table and casts a coherent contact shadow. Remove the event placard and surrounding people from the new composition, but preserve the actual vehicle. No extra propellers, fins, wires, lights, logos, text, people, water, bubbles or sci-fi glow. Photographic not CGI.",
+  "interaction_id": "v1_ChdZVDI0YXJpbENaS3N4TjhQaTdhcDJBURIXWVQyNGFyaWxDWktzeE44UGk3YXAyQVE"
+}

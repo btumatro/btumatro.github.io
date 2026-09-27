@@ -1,0 +1,7 @@
+{
+  "model": "gemini-omni-1.1-flash",
+  "scene": "matris-sinematik",
+  "reference": "../ana-kareler/matris-sinematik.png",
+  "prompt": "Animate this exact professional documentary still as one continuous eight-second film shot. Two separate real quadcopters remain grounded in their exact positions. Camera makes only a restrained 20-centimetre lateral dolly at grass height, with delicate natural grass movement and stable late-afternoon shadows. Preserve both aircraft frame geometry, exact rotor and arm count, antennas, legs, colors and distance throughout. No flight, no new hardware, no morphing or melting, no people, no text, no cuts, no dialogue or music.",
+  "interaction_id": "v1_Chdlank0YXJfS0c0R2MyOG9QNHF6S21RbxIXZWp5NGFyX0tHNEdjMjhvUDRxekttUW8"
+}

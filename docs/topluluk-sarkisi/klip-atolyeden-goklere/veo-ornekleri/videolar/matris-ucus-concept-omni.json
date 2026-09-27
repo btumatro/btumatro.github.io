@@ -1,0 +1,7 @@
+{
+  "model": "gemini-omni-1.1-flash",
+  "scene": "matris-ucus-concept",
+  "reference": "../assets/konsept-matris-suru-ucus.png",
+  "prompt": "Animate this already-created cinematic concept frame as one continuous eight-second shot. The exact two separate MATRİS quadcopters hold their present low hover and spacing over the test field. Camera makes a slow lateral tracking move at low height; grass and shadows move naturally. Preserve each aircraft frame, rotor count, arm count, landing gear, exposed electronics, color and relative position. This is an AI visualization, not race footage. No third drone, no new hardware, no morphing, no camera orbit, no text or logos, no cuts, no dialogue or music.",
+  "interaction_id": "v1_Chd3RXE0YXRDUElvdjd2ZElQbE1mWmdRRRIXd0VxNGF0Q1BJb3Y3dmRJUGxNZlpnUUU"
+}

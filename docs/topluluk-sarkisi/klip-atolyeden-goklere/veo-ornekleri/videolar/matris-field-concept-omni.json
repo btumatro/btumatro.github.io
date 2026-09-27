@@ -1,0 +1,7 @@
+{
+  "model": "gemini-omni-1.1-flash",
+  "scene": "matris-field-concept",
+  "reference": "../assets/konsept-matris-saha.png",
+  "prompt": "Animate this polished cinematic MATRİS field still as one eight-second shot. Both exact quadcopters remain grounded in their original positions. The camera makes a slow low push-in between foreground grass and the nearer aircraft; only grass tips and natural light shift gently. Preserve exactly two aircraft and every visible rotor, arm, landing leg and electronic detail. No takeoff, new drone, invented parts, text, logos, cuts, dialogue or music.",
+  "interaction_id": "v1_ChdnMDY0YXFPWUpfenV4czBQZzhySmdBaxIXZzA2NGFxT1lKX3p1eHMwUGc4ckpnQWs"
+}

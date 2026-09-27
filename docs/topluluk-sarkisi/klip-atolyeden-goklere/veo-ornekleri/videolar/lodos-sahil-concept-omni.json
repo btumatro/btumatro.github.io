@@ -1,0 +1,7 @@
+{
+  "model": "gemini-omni-1.1-flash",
+  "scene": "lodos-sahil-concept",
+  "reference": "../assets/konsept-lodos-guncel-sahil.png",
+  "prompt": "Animate this polished cinematic LODOS coastal still as a restrained eight-second image-to-video shot. The exact grey unmanned surface vessel stays in the shown position, moving forward only very slowly on calm water; a small natural wake forms behind it. Low waterline camera tracks parallel with a gentle dolly. Preserve hull, cabin, pontoons, flag, lettering and proportions exactly. No new hardware, vessels, people, text, dramatic spray, cuts, dialogue or music.",
+  "interaction_id": "v1_ChdZRTY0YXBXTkVMV0VrZFVQazVLUW9BWRIXWUU2NGFwV05FTFdFa2RVUGs1S1FvQVk"
+}

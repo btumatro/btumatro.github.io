@@ -1,0 +1,7 @@
+{
+  "model": "gemini-omni-1.1-flash",
+  "scene": "gece-iskele-concept",
+  "reference": "../assets/konsept-gece-iskele.png",
+  "prompt": "Animate this already-created cinematic night-test visualization as a single continuous eight-second observational shot. Keep the same small group, work light, pier, equipment and skyline in their exact positions; people stay mostly still and natural. Camera makes a slow push-in along the real wooden boards toward the testing area. Only subtle water reflections and distant lights shimmer; preserve deep night exposure, practical lighting and natural shadows. No launch, no added people or equipment, no exaggerated movement, no neon, no text, no logos, no cuts, no dialogue or music.",
+  "interaction_id": "v1_ChY0VXE0YXFMZk5NLUt2ZElQcjk2OVNBEhY0VXE0YXFMZk5NLUt2ZElQcjk2OVNB"
+}

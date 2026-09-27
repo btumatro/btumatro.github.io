@@ -1,0 +1,7 @@
+{
+  "model": "gemini-omni-1.1-flash",
+  "scene": "zemheri-gece",
+  "reference": "referanslar/zemheri-ilk-kare.jpg",
+  "prompt": "An eight-second single unbroken documentary shot from this exact night pier photograph. The people continue their existing careful preparation with only tiny natural movements; the person at the water edge keeps the same posture and does not enter the water. The practical work light softly shimmers on the dark water and the distant city lights flicker gently. Camera makes a slow, stable 30-centimetre lateral move along the pier at the same eye level. Preserve the exact people count, pier boards, cables, equipment, shoreline and light positions. Natural night exposure, detailed shadows, restrained cinematic contrast, no fantasy effects. Do not invent a rocket launch, new people, signs, text, dramatic gestures or cuts. No dialogue or music.",
+  "interaction_id": "v1_Chc2am00YXB1UkpmUE9uc0VQczZHNjJBaxIXNmptNGFwdVJKZlBPbnNFUHM2RzYyQWs"
+}

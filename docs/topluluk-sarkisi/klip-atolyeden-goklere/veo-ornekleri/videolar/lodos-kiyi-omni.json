@@ -1,0 +1,7 @@
+{
+  "model": "gemini-omni-1.1-flash",
+  "scene": "lodos-kiyi",
+  "reference": "referanslar/lodos-ilk-kare.jpg",
+  "prompt": "An eight-second single unbroken documentary shot based on this exact team photograph at the waterfront. The current grey LODOS unmanned boat remains stationary on its trolley at the same place. The camera makes a subtle smooth push toward the boat while the people keep relaxed natural poses with only tiny real-life movements. Preserve the exact raised opaque grey cabin, Turkish flag on top, grey hull, red LODOS lettering, red wheel, trolley, team clothing, human identities and number of people. Real waterfront daylight, slightly restrained cinematic contrast and natural skin tones. The boat must not enter the water or turn into a different model. No added controls, windows, antennas, hulls, faces, hands, signs, text or cuts. No dialogue or music.",
+  "interaction_id": "v1_ChdNenE0YXEyd0pxLWIyOG9QeV9QUTZBcxIXTXpxNGFxMndKcS1iMjhvUHlfUFE2QXM"
+}

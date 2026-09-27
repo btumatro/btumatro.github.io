@@ -1,0 +1,9 @@
+{
+  "model": "gemini-3-pro-image",
+  "references": [
+    "galeri-zemheri-gece-iskele-testi.jpg",
+    "galeri-zemheri-sunum-gece-su-testi.jpg"
+  ],
+  "prompt": "Create one professional 16:9 cinematic documentary still of the actual night water test in the supplied photographs. Preserve the same simple wooden pier, practical white work light at the water edge, dark water, distant city lights and restrained team activity. Photograph from a lower position near the pier boards with a 35 mm lens look, strong foreground wood texture leading toward the small working group. Faces are not foregrounded; workers are natural silhouettes and nobody has an exaggerated expression. Keep equipment and people physically plausible, no rocket launch, no fire, no new machinery. Deep navy night shadows, warm city lights, a single cool work light, detailed but natural exposure, subtle fine grain, no neon, no fantasy glow, no text, no logo, no invented event.",
+  "interaction_id": "v1_ChdCRHk0YXRQcERKYlEyOG9QcTZPWjBBMBIXQkR5NGF0UHBESmJRMjhvUHE2T1owQTA"
+}

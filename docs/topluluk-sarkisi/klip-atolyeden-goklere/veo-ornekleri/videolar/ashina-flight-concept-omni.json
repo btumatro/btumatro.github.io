@@ -1,0 +1,7 @@
+{
+  "model": "gemini-omni-1.1-flash",
+  "scene": "ashina-flight-concept",
+  "reference": "../assets/konsept-ashina-atolye.png",
+  "prompt": "Animate this already-created cinematic concept frame as one restrained eight-second shot. Keep the exact single fixed-wing ASHINA aircraft, all wings, motors, propellers, landing gear and proportions completely unchanged and stationary in the workshop. Only the camera performs a slow low dolly from left to right, revealing a little more depth in the existing hangar; practical window light stays steady. Preserve the image as a cinematic visualization, not archival footage. No takeoff, no spinning propellers, no extra aircraft, no added parts, no people, no text, no logos, no sparks, no cuts, no dialogue or music.",
+  "interaction_id": "v1_ChdzMHE0YXRXNUtzTG9uc0VQb3J2UHVRVRIXczBxNGF0VzVLc0xvbnNFUG9ydlB1UVU"
+}

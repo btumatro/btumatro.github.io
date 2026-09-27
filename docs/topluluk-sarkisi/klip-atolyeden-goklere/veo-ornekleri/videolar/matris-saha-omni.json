@@ -1,0 +1,7 @@
+{
+  "model": "gemini-omni-1.1-flash",
+  "scene": "matris-saha",
+  "reference": "referanslar/matris-ilk-kare.jpg",
+  "prompt": "An eight-second single continuous documentary shot of the two actual quadcopters in this exact reference photograph, resting in the same positions on the grass. The camera makes a very slow low lateral track from left to right, giving subtle depth between the nearer and farther aircraft. The aircraft stay grounded; no takeoff. Only tiny natural grass motion in the breeze. Preserve exactly two separate aircraft, their existing rotor and arm counts, landing legs, exposed electronics, colors, proportions, background fence and field markings. Physically plausible late afternoon light, gentle shallow depth of field, restrained cinematic color, real field texture. No extra drones, no morphing parts, no new signage or text, no cuts, no dialogue or music.",
+  "interaction_id": "v1_ChdOanE0YXNpQkdMMnFuc0VQa28tTGlBaxIXTmpxNGFzaUJHTDJxbnNFUGtvLUxpQWs"
+}

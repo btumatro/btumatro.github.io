@@ -1,0 +1,7 @@
+{
+  "model": "gemini-omni-1.1-flash",
+  "scene": "ashina-vakum-concept",
+  "reference": "../assets/konsept-ashina-vakum-islem.png",
+  "prompt": "Animate this polished cinematic ASHINA workshop still as one calm eight-second documentary shot. Slow macro-to-medium slider move across the existing vacuum bagging work, maintaining the exact aircraft part, tools, gloved hands and bench layout. Only restrained hand movement as the existing material is checked; no new tools, no new people, no invented aircraft parts, no sparks, no readable text, no logos, no cuts, dialogue or music.",
+  "interaction_id": "v1_ChdEMDY0YXZhTUxwRG54TjhQeExMRzhROBIXRDA2NGF2YU1McERueE44UHhMTEc4UTg"
+}

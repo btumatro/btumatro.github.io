@@ -1,0 +1,7 @@
+{
+  "model": "gemini-omni-1.1-flash",
+  "scene": "ashina-kalkis-concept",
+  "reference": "../assets/konsept-ashina-kalkis.png",
+  "prompt": "Animate this already-created cinematic concept frame as a single eight-second AI visualization of the exact fixed-wing ASHINA aircraft shown. The aircraft makes a short, believable low takeoff from the same runway and climbs only slightly; use a gentle low tracking camera that follows from behind-left. Keep its wing outline, fuselage, visible motors, propellers, landing gear and markings exactly consistent with the reference. No dramatic banking, no extra aircraft, no new hardware, no morphing, no extra rotors, no text, no logos, no crowd, no cuts, dialogue or music. This is a concept visualization, not documentary footage.",
+  "interaction_id": "v1_Chd3VXU0YXFYdUVmemx4TjhQa0tYeDhBOBIXd1V1NGFxWHVFZnpseE44UGtLWHg4QTg"
+}

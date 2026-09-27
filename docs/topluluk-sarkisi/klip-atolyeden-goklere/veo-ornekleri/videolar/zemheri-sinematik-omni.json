@@ -1,0 +1,7 @@
+{
+  "model": "gemini-omni-1.1-flash",
+  "scene": "zemheri-sinematik",
+  "reference": "../ana-kareler/zemheri-sinematik.png",
+  "prompt": "Animate this exact professional night documentary still as one continuous eight-second shot. Camera makes a very slow low 20-centimetre lateral move along the wooden pier. The existing team members make only small natural hand and posture movements while the real work light reflects softly on the water. Preserve the pier, four people, white-and-red cylindrical test object, practical light, shore and city lights. No launch, no spectacle, no extra faces or equipment, no visual effects, no text, no cuts, no dialogue or music.",
+  "interaction_id": "v1_Chdlank0YXAyQ0daRG54TjhQeExMRzhROBIXZWp5NGFwMkNHWkRueE44UHhMTEc4UTg"
+}

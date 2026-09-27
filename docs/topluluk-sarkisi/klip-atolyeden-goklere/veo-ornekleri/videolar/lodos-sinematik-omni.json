@@ -1,0 +1,7 @@
+{
+  "model": "gemini-omni-1.1-flash",
+  "scene": "lodos-sinematik",
+  "reference": "../ana-kareler/lodos-sinematik.png",
+  "prompt": "Animate this exact professional documentary still as one continuous eight-second shot. The current grey LODOS boat and its existing trolley stay entirely stationary on the pier. Camera performs only a very slow 20-centimetre push from the same three-quarter front angle; sea surface moves gently and clouds drift almost imperceptibly. Preserve every visible aspect of the existing hull, raised cabin, Turkish flag, red LODOS letters, side pontoon, trolley, red wheel and their proportions. No extra parts, no redesign, no launching, no people, no text overlays, no cuts, no dialogue or music.",
+  "interaction_id": "v1_Chdlenk0YXVPM0M0UDJ4TjhQdjZfeG1BMBIXZXp5NGF1TzNDNFAyeE44UHY2X3htQTA"
+}
