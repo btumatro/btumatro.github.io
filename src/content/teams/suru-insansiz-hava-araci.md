@@ -6,6 +6,10 @@ status: Aktif
 order: 6
 image: "/media/takim-matris-2026.jpg"
 gallery:
+  - "/media/galeri-matris-sunum-yakin-montaj.jpg"
+  - "/media/galeri-matris-sunum-masa-montaj.jpg"
+  - "/media/galeri-matris-sunum-saha-iki-iha.jpg"
+  - "/media/galeri-matris-sunum-saha-test.jpg"
   - "/media/galeri-matris-saha.jpg"
   - "/media/galeri-matris-havelsan-stand.jpg"
   - "/media/galeri-matris-test-alani.jpg"
@@ -64,3 +68,5 @@ HAVELSAN yürütücülüğündeki TEKNOFEST Sürü İHA Yarışması'nda takıml
 - **Mekanik:** Gövde tasarımı, 3B baskı, montaj
 - **Elektronik:** Güç dağıtımı, uçuş kontrol kartı, kamera
 - **Yazılım:** Otonom uçuş, görüntü işleme, haberleşme
+
+Ekip İHA'ları yarışma alanında monte edip birden fazla araçla saha hazırlığı yaptı.

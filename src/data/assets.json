@@ -1,6 +1,26 @@
 {
   "intro": "Tanıtım ve sponsorluk dosyası hazırlarken kullanılabilecek tüm görsel, video ve logo dosyalarının dökümü. Bu sayfa site menüsünde görünmez; yalnızca /varliklar adresinden açılır ve arama motorlarına kapalıdır.",
   "assets": [
+    {"file": "/media/galeri-ashina-sunum-gece-montaj.jpg", "title": "ASHİNA ekibi gece saha testinde İHA montajı yaparken", "group": "Takım sunumu fotoğrafları", "width": 1229, "height": 554, "sizeKb": 64, "note": "Kaynak: takım tanıtım sunumu. Kullanıldığı yer: takım sayfası ve site galerisi.", "usedIn": ["insansiz-hava-araclari", "Site Galerisi"]},
+    {"file": "/media/galeri-ashina-sunum-ekip-iha.jpg", "title": "ASHİNA ekibi ve İHA aracı", "group": "Takım sunumu fotoğrafları", "width": 797, "height": 796, "sizeKb": 100, "note": "Kaynak: takım tanıtım sunumu. Kullanıldığı yer: takım sayfası ve site galerisi.", "usedIn": ["insansiz-hava-araclari", "Site Galerisi"]},
+    {"file": "/media/galeri-ashina-sunum-elektronik-masa.jpg", "title": "ASHİNA'nın atölyedeki elektronik çalışması", "group": "Takım sunumu fotoğrafları", "width": 1600, "height": 901, "sizeKb": 195, "note": "Kaynak: takım tanıtım sunumu. Kullanıldığı yer: takım sayfası ve site galerisi.", "usedIn": ["insansiz-hava-araclari", "Site Galerisi"]},
+    {"file": "/media/galeri-ashina-sunum-elektronik.jpg", "title": "ASHİNA'nın elektronik prototip ayrıntısı", "group": "Takım sunumu fotoğrafları", "width": 1200, "height": 1600, "sizeKb": 169, "note": "Kaynak: takım tanıtım sunumu. Kullanıldığı yer: takım sayfası ve site galerisi.", "usedIn": ["insansiz-hava-araclari", "Site Galerisi"]},
+    {"file": "/media/galeri-zemheri-sunum-gece-su-testi.jpg", "title": "ZEMHERİ aracı gece su testinde", "group": "Takım sunumu fotoğrafları", "width": 1530, "height": 2040, "sizeKb": 188, "note": "Kaynak: takım tanıtım sunumu. Kullanıldığı yer: takım sayfası ve site galerisi.", "usedIn": ["su-alti-roket-sistemleri", "Site Galerisi"]},
+    {"file": "/media/galeri-zemheri-sunum-roket-inceleme.jpg", "title": "ZEMHERİ ekibi yarışma alanında aracı incelerken", "group": "Takım sunumu fotoğrafları", "width": 1600, "height": 1200, "sizeKb": 173, "note": "Kaynak: takım tanıtım sunumu. Kullanıldığı yer: takım sayfası ve site galerisi.", "usedIn": ["su-alti-roket-sistemleri", "Site Galerisi"]},
+    {"file": "/media/galeri-zemheri-sunum-yarisma-kontrol.jpg", "title": "ZEMHERİ ekibi yarışmada elektronik sistemi kontrol ederken", "group": "Takım sunumu fotoğrafları", "width": 1600, "height": 1200, "sizeKb": 302, "note": "Kaynak: takım tanıtım sunumu. Kullanıldığı yer: takım sayfası ve site galerisi.", "usedIn": ["su-alti-roket-sistemleri", "Site Galerisi"]},
+    {"file": "/media/galeri-zemheri-sunum-yarisma-hazirligi.jpg", "title": "ZEMHERİ aracı yarışma alanında hazırlanırken", "group": "Takım sunumu fotoğrafları", "width": 1500, "height": 2000, "sizeKb": 289, "note": "Kaynak: takım tanıtım sunumu. Kullanıldığı yer: takım sayfası ve site galerisi.", "usedIn": ["su-alti-roket-sistemleri", "Site Galerisi"]},
+    {"file": "/media/galeri-zemheri-sunum-ekip-arac.jpg", "title": "ZEMHERİ ekibi yarışma alanında araçlarıyla", "group": "Takım sunumu fotoğrafları", "width": 1600, "height": 1200, "sizeKb": 240, "note": "Kaynak: takım tanıtım sunumu. Kullanıldığı yer: takım sayfası ve site galerisi.", "usedIn": ["su-alti-roket-sistemleri", "Site Galerisi"]},
+    {"file": "/media/galeri-zemheri-sunum-atolye-genis.jpg", "title": "ZEMHERİ ekibinin atölye çalışması", "group": "Takım sunumu fotoğrafları", "width": 1600, "height": 1200, "sizeKb": 158, "note": "Kaynak: takım tanıtım sunumu. Kullanıldığı yer: takım sayfası ve site galerisi.", "usedIn": ["su-alti-roket-sistemleri", "Site Galerisi"]},
+    {"file": "/media/galeri-zemheri-sunum-govde-montaj.jpg", "title": "ZEMHERİ ekibi gövde parçalarını hazırlarken", "group": "Takım sunumu fotoğrafları", "width": 1600, "height": 1200, "sizeKb": 169, "note": "Kaynak: takım tanıtım sunumu. Kullanıldığı yer: takım sayfası ve site galerisi.", "usedIn": ["su-alti-roket-sistemleri", "Site Galerisi"]},
+    {"file": "/media/galeri-zemheri-sunum-calisma-masasi.jpg", "title": "ZEMHERİ aracının atölye masasındaki montajı", "group": "Takım sunumu fotoğrafları", "width": 1530, "height": 2040, "sizeKb": 356, "note": "Kaynak: takım tanıtım sunumu. Kullanıldığı yer: takım sayfası ve site galerisi.", "usedIn": ["su-alti-roket-sistemleri", "Site Galerisi"]},
+    {"file": "/media/galeri-zemheri-sunum-elektronik-kontrol.jpg", "title": "ZEMHERİ ekibi elektronik testinde", "group": "Takım sunumu fotoğrafları", "width": 1530, "height": 2040, "sizeKb": 234, "note": "Kaynak: takım tanıtım sunumu. Kullanıldığı yer: takım sayfası ve site galerisi.", "usedIn": ["su-alti-roket-sistemleri", "Site Galerisi"]},
+    {"file": "/media/galeri-matris-sunum-yakin-montaj.jpg", "title": "MATRİS ekibi yarışma alanında İHA montajında", "group": "Takım sunumu fotoğrafları", "width": 1200, "height": 989, "sizeKb": 127, "note": "Kaynak: takım tanıtım sunumu. Kullanıldığı yer: takım sayfası ve site galerisi.", "usedIn": ["suru-insansiz-hava-araci", "Site Galerisi"]},
+    {"file": "/media/galeri-matris-sunum-masa-montaj.jpg", "title": "MATRİS ekibi araçlarını masada hazırlarken", "group": "Takım sunumu fotoğrafları", "width": 1600, "height": 701, "sizeKb": 149, "note": "Kaynak: takım tanıtım sunumu. Kullanıldığı yer: takım sayfası ve site galerisi.", "usedIn": ["suru-insansiz-hava-araci", "Site Galerisi"]},
+    {"file": "/media/galeri-matris-sunum-saha-iki-iha.jpg", "title": "MATRİS'in iki İHA'sı saha testinde", "group": "Takım sunumu fotoğrafları", "width": 1600, "height": 701, "sizeKb": 366, "note": "Kaynak: takım tanıtım sunumu. Kullanıldığı yer: takım sayfası ve site galerisi.", "usedIn": ["suru-insansiz-hava-araci", "Site Galerisi"]},
+    {"file": "/media/galeri-matris-sunum-saha-test.jpg", "title": "MATRİS İHA'ları saha testinde", "group": "Takım sunumu fotoğrafları", "width": 848, "height": 480, "sizeKb": 47, "note": "Kaynak: takım tanıtım sunumu. Kullanıldığı yer: takım sayfası ve site galerisi.", "usedIn": ["suru-insansiz-hava-araci", "Site Galerisi"]},
+    {"file": "/media/galeri-sirius-sunum-arac-mudahale.jpg", "title": "PUSULA ekibi SIRIUS aracı üzerinde çalışırken", "group": "Takım sunumu fotoğrafları", "width": 1200, "height": 1600, "sizeKb": 293, "note": "Kaynak: takım tanıtım sunumu. Kullanıldığı yer: takım sayfası ve site galerisi.", "usedIn": ["sanayide-robotik-ve-dijital", "Site Galerisi"]},
+    {"file": "/media/galeri-sirius-sunum-yarisma-parkuru.jpg", "title": "SIRIUS otonom forklift yarışma parkurunda", "group": "Takım sunumu fotoğrafları", "width": 1024, "height": 576, "sizeKb": 57, "note": "Kaynak: takım tanıtım sunumu. Kullanıldığı yer: takım sayfası ve site galerisi.", "usedIn": ["sanayide-robotik-ve-dijital", "Site Galerisi"]},
+    {"file": "/media/galeri-sirius-sunum-ekip-arac.jpg", "title": "PUSULA ekibi SIRIUS aracıyla", "group": "Takım sunumu fotoğrafları", "width": 1600, "height": 2546, "sizeKb": 381, "note": "Kaynak: takım tanıtım sunumu. Kullanıldığı yer: takım sayfası ve site galerisi.", "usedIn": ["sanayide-robotik-ve-dijital", "Site Galerisi"]},
     {
       "file": "/media/tasarim-ashina-iha.jpg",
       "title": "ASHİNA sabit kanat İHA'sının kafes kanat yapısı tasarımı",
@@ -982,15 +1002,15 @@
     },
     {
       "file": "/media/galeri-zemheri-sara.jpg",
-      "title": "ZEMHERİ'nin SARA aracı Özdemir Bayraktar Teknoloji Atölyesi'nde",
+      "title": "ZEMHERİ ekibinin farklı yarışma kategorisindeki SARA aracı Özdemir Bayraktar Teknoloji Atölyesi'nde",
       "group": "Galeri fotoğrafları",
       "width": 1200,
       "height": 1600,
       "sizeKb": 285,
-      "note": "Kullanıldığı yer: ZEMHERİ (Galeri), Site Galerisi (Atölye)",
+      "note": "Kullanıldığı yer: ekip sayfası ve site galerisi. SARA aynı ekibin farklı kategori aracıdır; ZEMHERİ roketinin prototipi değildir.",
       "usedIn": [
-        "ZEMHERİ (Galeri)",
-        "Site Galerisi (Atölye)"
+        "su-alti-roket-sistemleri",
+        "Site Galerisi (Araçlar)"
       ]
     },
     {

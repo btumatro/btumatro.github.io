@@ -1,6 +1,26 @@
 {
   "intro": "Atölyeden yarışma sahasına, teknik gezilerden ödül törenlerine MATRO'dan kareler.",
   "images": [
+    { "image": "/media/galeri-ashina-sunum-gece-montaj.jpg", "caption": "ASHİNA ekibi gece saha testinde İHA montajı yaparken", "category": "Atölye", "takim": "insansiz-hava-araclari" },
+    { "image": "/media/galeri-ashina-sunum-ekip-iha.jpg", "caption": "ASHİNA ekibi ve İHA aracı", "category": "Yarışma", "takim": "insansiz-hava-araclari" },
+    { "image": "/media/galeri-ashina-sunum-elektronik-masa.jpg", "caption": "ASHİNA'nın atölyedeki elektronik çalışması", "category": "Atölye", "takim": "insansiz-hava-araclari" },
+    { "image": "/media/galeri-ashina-sunum-elektronik.jpg", "caption": "ASHİNA'nın elektronik prototip ayrıntısı", "category": "Atölye", "takim": "insansiz-hava-araclari" },
+    { "image": "/media/galeri-zemheri-sunum-gece-su-testi.jpg", "caption": "ZEMHERİ aracı gece su testinde", "category": "Yarışma", "takim": "su-alti-roket-sistemleri" },
+    { "image": "/media/galeri-zemheri-sunum-roket-inceleme.jpg", "caption": "ZEMHERİ ekibi yarışma alanında aracı incelerken", "category": "Yarışma", "takim": "su-alti-roket-sistemleri" },
+    { "image": "/media/galeri-zemheri-sunum-yarisma-kontrol.jpg", "caption": "ZEMHERİ ekibi yarışmada elektronik sistemi kontrol ederken", "category": "Yarışma", "takim": "su-alti-roket-sistemleri" },
+    { "image": "/media/galeri-zemheri-sunum-yarisma-hazirligi.jpg", "caption": "ZEMHERİ aracı yarışma alanında hazırlanırken", "category": "Yarışma", "takim": "su-alti-roket-sistemleri" },
+    { "image": "/media/galeri-zemheri-sunum-ekip-arac.jpg", "caption": "ZEMHERİ ekibi yarışma alanında araçlarıyla", "category": "Yarışma", "takim": "su-alti-roket-sistemleri" },
+    { "image": "/media/galeri-zemheri-sunum-atolye-genis.jpg", "caption": "ZEMHERİ ekibinin atölye çalışması", "category": "Atölye", "takim": "su-alti-roket-sistemleri" },
+    { "image": "/media/galeri-zemheri-sunum-govde-montaj.jpg", "caption": "ZEMHERİ ekibi gövde parçalarını hazırlarken", "category": "Atölye", "takim": "su-alti-roket-sistemleri" },
+    { "image": "/media/galeri-zemheri-sunum-calisma-masasi.jpg", "caption": "ZEMHERİ aracının atölye masasındaki montajı", "category": "Atölye", "takim": "su-alti-roket-sistemleri" },
+    { "image": "/media/galeri-zemheri-sunum-elektronik-kontrol.jpg", "caption": "ZEMHERİ ekibi elektronik testinde", "category": "Atölye", "takim": "su-alti-roket-sistemleri" },
+    { "image": "/media/galeri-matris-sunum-yakin-montaj.jpg", "caption": "MATRİS ekibi yarışma alanında İHA montajında", "category": "Atölye", "takim": "suru-insansiz-hava-araci" },
+    { "image": "/media/galeri-matris-sunum-masa-montaj.jpg", "caption": "MATRİS ekibi araçlarını masada hazırlarken", "category": "Atölye", "takim": "suru-insansiz-hava-araci" },
+    { "image": "/media/galeri-matris-sunum-saha-iki-iha.jpg", "caption": "MATRİS'in iki İHA'sı saha testinde", "category": "Araçlar", "takim": "suru-insansiz-hava-araci" },
+    { "image": "/media/galeri-matris-sunum-saha-test.jpg", "caption": "MATRİS İHA'ları saha testinde", "category": "Yarışma", "takim": "suru-insansiz-hava-araci" },
+    { "image": "/media/galeri-sirius-sunum-arac-mudahale.jpg", "caption": "PUSULA ekibi SIRIUS aracı üzerinde çalışırken", "category": "Atölye", "takim": "sanayide-robotik-ve-dijital" },
+    { "image": "/media/galeri-sirius-sunum-yarisma-parkuru.jpg", "caption": "SIRIUS otonom forklift yarışma parkurunda", "category": "Yarışma", "takim": "sanayide-robotik-ve-dijital" },
+    { "image": "/media/galeri-sirius-sunum-ekip-arac.jpg", "caption": "PUSULA ekibi SIRIUS aracıyla", "category": "Yarışma", "takim": "sanayide-robotik-ve-dijital" },
     {
       "image": "/media/cagri-team-cropped.jpg",
       "caption": "ÇAĞRI ekibimiz TEKNOFEST 2024 Kablosuz Haberleşme Yarışması'nda",
@@ -263,7 +283,7 @@
     },
     {
       "image": "/media/galeri-lodos-detay.jpg",
-      "caption": "LODOS'un elektronik aksamı",
+      "caption": "LODOS'un önceki dönem beyaz gövdeli aracının elektronik aksamı",
       "category": "Atölye",
       "takim": "insansiz-deniz-araci"
     },
@@ -409,7 +429,7 @@
     },
     {
       "image": "/media/galeri-lodos-deniz-test.jpg",
-      "caption": "LODOS insansız deniz aracı su üstü otonom seyir testlerinde",
+      "caption": "LODOS'un önceki dönem beyaz gövdeli aracı atölyede",
       "category": "Yarışma",
       "takim": "insansiz-deniz-araci"
     },
@@ -491,7 +511,7 @@
     },
     {
       "image": "/media/galeri-zemheri-sara.jpg",
-      "caption": "ZEMHERİ'nin SARA aracı Özdemir Bayraktar Teknoloji Atölyesi'nde",
+      "caption": "ZEMHERİ ekibinin farklı yarışma kategorisindeki SARA aracı Özdemir Bayraktar Teknoloji Atölyesi'nde",
       "category": "Araçlar",
       "takim": "su-alti-roket-sistemleri"
     },
@@ -1011,7 +1031,7 @@
     },
     {
       "image": "/media/galeri-lodos-govde-uretim.jpg",
-      "caption": "LODOS gövdesinin atölyede üretimi",
+      "caption": "LODOS'un önceki dönem beyaz gövdesinin atölyede üretimi",
       "category": "Atölye",
       "takim": "insansiz-deniz-araci"
     },
@@ -1027,7 +1047,7 @@
     },
     {
       "image": "/media/galeri-lodos-ic-aksam.jpg",
-      "caption": "LODOS'un iç aksam ve entegrasyon çalışmaları",
+      "caption": "LODOS'un önceki dönem aracının gövde ve iç aksam çalışmaları",
       "category": "Atölye",
       "takim": "insansiz-deniz-araci"
     },

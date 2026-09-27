@@ -6,6 +6,10 @@ status: Aktif
 order: 1
 image: "/media/takim-ashina-2026.jpg"
 gallery:
+  - "/media/galeri-ashina-sunum-gece-montaj.jpg"
+  - "/media/galeri-ashina-sunum-ekip-iha.jpg"
+  - "/media/galeri-ashina-sunum-elektronik-masa.jpg"
+  - "/media/galeri-ashina-sunum-elektronik.jpg"
   - "/media/galeri-ashina-bayraktar.jpg"
   - "/media/galeri-ashina-saha.jpg"
   - "/media/galeri-ashina-quad-detay.jpg"
@@ -101,6 +105,8 @@ ASHİNA, 2024 sezonunda aynı ekipten üç takımla TEKNOFEST finallerine kaldı
 - Takım tarafından geliştirilen **yerli İHA kontrol istasyonu**
 - Kendi imkânlarımızla tasarlanıp üretilen **yerli BLDC İHA motoru**
 - Derin öğrenme tabanlı hedef tespit ve takip algoritmaları
+
+Ekip elektronik bileşenleri atölyede hazırladı, İHA'yı gece saha çalışmasında monte etti ve yarışma alanında test etti.
 
 ## Sürdürülebilirlik
 

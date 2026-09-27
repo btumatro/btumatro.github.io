@@ -6,19 +6,19 @@ status: Aktif
 order: 3
 image: "/media/takim-lodos.jpg"
 gallery:
-  - "/media/takim-ida.jpg"
   - "/media/galeri-lodos-ekip-sahil.jpg"
-  - "/media/galeri-lodos-ekip.jpg"
-  - "/media/galeri-lodos-detay.jpg"
-  - "/media/galeri-lodos-teknofest.jpg"
   - "/media/galeri-lodos-saha.jpg"
-  - "/media/galeri-lodos-deniz-test.jpg"
+  - "/media/galeri-lodos-ekip.jpg"
+  - "/media/galeri-lodos-teknofest.jpg"
   - "/media/galeri-lodos-sahil-ekip.jpg"
-  - "/media/galeri-lodos-govde-uretim.jpg"
-  - "/media/galeri-lodos-ic-aksam.jpg"
-  - "/media/galeri-lodos-havuz-testi.jpg"
   - "/media/galeri-lodos-teknofest-cadir.jpg"
   - "/media/galeri-lodos-tcg-anadolu.jpg"
+  - "/media/takim-ida.jpg"
+  - "/media/galeri-lodos-govde-uretim.jpg"
+  - "/media/galeri-lodos-ic-aksam.jpg"
+  - "/media/galeri-lodos-detay.jpg"
+  - "/media/galeri-lodos-deniz-test.jpg"
+  - "/media/galeri-lodos-havuz-testi.jpg"
 video: "/media/video-lodos-tanitim.mp4"
 videoPoster: "/media/video-lodos-tanitim.jpg"
 badge: "2026 Finalisti"
@@ -44,6 +44,8 @@ summary: "LODOS ekibiyle 2025 ve 2026 TEKNOFEST İnsansız Deniz Aracı yarışm
 ---
 
 İnsansız Deniz Aracı takımı, su üstü platformlarında otonom seyir ve görev kabiliyeti geliştirir. Takım, **TEKNOFEST 2025 ASELSAN İnsansız Deniz Aracı Yarışması**'nda Türkiye finalisti oldu. 2026 sezonunda **LODOS** ekibi aynı kategoride yeniden Türkiye finalisti olarak Mavi Vatan finallerinde yarıştı.
+
+2026 sezonunda yükseltilmiş, opak kabinli gri bir araç geliştirildi. Beyaz gövdeli tekne önceki dönem çalışmasıdır.
 
 ## LODOS'un yolculuğu
 

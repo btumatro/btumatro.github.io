@@ -6,6 +6,9 @@ status: Aktif
 order: 7
 image: "/media/takim-sanayide-dijital.jpg"
 gallery:
+  - "/media/galeri-sirius-sunum-arac-mudahale.jpg"
+  - "/media/galeri-sirius-sunum-yarisma-parkuru.jpg"
+  - "/media/galeri-sirius-sunum-ekip-arac.jpg"
   - "/media/galeri-pusula-ekip-2025.jpg"
   - "/media/galeri-pusula-atolye.jpg"
   - "/media/galeri-sanayide-dijital-arena.jpg"
@@ -88,3 +91,5 @@ Parkurda uzaktan kumanda yoktur, enerji araç üstündeki bataryadan sağlanır.
 - **Sensörler:** LiDAR, kamera, IMU, enkoder, mesafe, limit anahtarı, akım, sıcaklık ve gaz sensörleri
 
 Görev akışının her adımı py_trees'te ayrı bir davranış düğümüdür. Bir adım başarısız olursa akış orada durur ve panelde hangi adımda kalındığı görünür. Palete yanaşmada kamera, enkoder ve LiDAR bağımsız çalışır; tek bir sensörün arızası görevi durdurmaz. 70 cm içinde engel görülürse araç durur, engel kalkınca kaldığı yerden devam eder.
+
+Ekip, SIRIUS'un mekanik ve elektronik sistemleri üzerinde yarışma alanında çalıştı; aracı palet taşıma parkurunda denedi.
