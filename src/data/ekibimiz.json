@@ -30,7 +30,8 @@
     "Sponsorluk Ekibi",
     "Organizasyon Ekibi",
     "Sosyal Medya Ekibi",
-    "Takım Kaptanları"
+    "Takım Kaptanları",
+    "Ekip Üyeleri"
   ],
   "people": [
     {
@@ -241,87 +242,87 @@
     },
     {
       "name": "Rumeysa Akarsu",
-      "group": "Organizasyon Ekibi",
+      "group": "Ekip Üyeleri",
       "role": "Ekip Üyesi",
       "photo": "/media/ekip/rumeysa-akarsu.jpg",
-      "order": 11
+      "order": 1
     },
     {
       "name": "Zeynep Seher Yolasığmaz",
-      "group": "Organizasyon Ekibi",
+      "group": "Ekip Üyeleri",
       "role": "Ekip Üyesi",
       "photo": "/media/ekip/zeynep-seher-yolasigmaz.jpg",
-      "order": 12
+      "order": 2
     },
     {
       "name": "Berat Eren Karakaş",
-      "group": "Organizasyon Ekibi",
+      "group": "Ekip Üyeleri",
       "role": "Ekip Üyesi",
       "photo": "/media/ekip/berat-eren-karakas.jpg",
-      "order": 13
+      "order": 3
     },
     {
       "name": "Zehra Bulut",
       "group": "Organizasyon Ekibi",
       "role": "Ekip Üyesi",
       "photo": "/media/ekip/zehra-bulut.jpg",
-      "order": 14
+      "order": 11
     },
     {
       "name": "Aslıhan Okumuş",
-      "group": "Organizasyon Ekibi",
+      "group": "Ekip Üyeleri",
       "role": "Ekip Üyesi",
       "photo": "/media/ekip/aslihan-okumus.jpg",
-      "order": 15
+      "order": 4
     },
     {
       "name": "Melek Özkeser",
-      "group": "Organizasyon Ekibi",
+      "group": "Ekip Üyeleri",
       "role": "Ekip Üyesi",
       "photo": "/media/ekip/melek-ozkeser.jpg",
-      "order": 16
+      "order": 5
     },
     {
       "name": "Emine Sultan Güneş",
-      "group": "Organizasyon Ekibi",
+      "group": "Ekip Üyeleri",
       "role": "Ekip Üyesi",
       "photo": "/media/ekip/emine-sultan-gunes.jpg",
-      "order": 17
+      "order": 6
     },
     {
       "name": "Melisa Aydirek",
-      "group": "Organizasyon Ekibi",
+      "group": "Ekip Üyeleri",
       "role": "Ekip Üyesi",
       "photo": "/media/ekip/melisa-aydirek.jpg",
-      "order": 18
+      "order": 7
     },
     {
       "name": "Eslem Kılıç",
-      "group": "Organizasyon Ekibi",
+      "group": "Ekip Üyeleri",
       "role": "Ekip Üyesi",
       "photo": "/media/ekip/eslem-kilic.jpg",
-      "order": 19
+      "order": 8
     },
     {
       "name": "Esma Demirkıyık",
-      "group": "Organizasyon Ekibi",
+      "group": "Ekip Üyeleri",
       "role": "Ekip Üyesi",
       "photo": "/media/ekip/esma-demirkiyik.jpg",
-      "order": 20
+      "order": 9
     },
     {
       "name": "Muhammed Efe Coşkunpınar",
-      "group": "Organizasyon Ekibi",
+      "group": "Ekip Üyeleri",
       "role": "Ekip Üyesi",
       "photo": "/media/ekip/muhammed-efe-coskunpinar.jpg",
-      "order": 21
+      "order": 10
     },
     {
       "name": "Adem Bağlan",
-      "group": "Organizasyon Ekibi",
+      "group": "Ekip Üyeleri",
       "role": "Ekip Üyesi",
       "photo": "/media/ekip/adem-baglan.jpg",
-      "order": 22
+      "order": 11
     }
   ]
 }
