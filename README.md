@@ -211,3 +211,7 @@ Görselin ilgili alana (örn. *Kapak görseli*) seçildiğinden ve **Save** yap�
 **Site bozuk görünüyor / stiller yok**
 `site.config.mjs` içindeki `SITE_URL` ile sitenin gerçek adresi uyuşmuyor olabilir. Depo adı
 `btumatro.github.io` olduğu için `BASE_PATH` her zaman `'/'` kalmalıdır.
+
+## Kaynakların durumu ve temizlik
+
+MATRO deposunda bu eğitimin ve genel amaçlı üretim skill'lerinin kopyası tutulmaz; gelecekteki BTÜ MATRO'ya özgü yapay zekâ eğitimi ayrı kapsamda hazırlanır.

@@ -72,6 +72,10 @@ ve her gün 06:00 TR'de (süresi geçen duyurular düşsün diye) otomatik build
   yazımları (İDA, LUNA İKA…) o sayfaya bağlar (`teamIndex()`/`teamHref()`). Yeni alt takım
   eklerken `altTakimlar`'a eklemeyi unutma.
 
+## Eğitim içeriklerinin yeri
+
+Genel amaçlı yapay zekâ, çok modlu içerik üretimi semineri, prompt/skill kütüphanesi ve bunların örnek çıktıları `/Users/wildgenie/Projects/icerik-uretimi-egitim` deposunda tutulur. Bu repoda yalnızca MATRO web sitesi ve yayınlanacak topluluk içeriği bulunmalıdır. Gelecekte MATRO üyelerine yönelik ayrı bir yapay zekâ eğitimi hazırlanırsa, MATRO'ya özgü kapsam ve doğrulanmış kaynaklar o eğitim deposunda ayrı bir çalışma olarak üretilir; genel eğitim dosyaları buraya kopyalanmaz.
+
 ## MATRO Radyo
 
 Sitenin altında açılan, varsayılan olarak durdurulmuş radyo çalar (`src/components/Radyo.astro`;
