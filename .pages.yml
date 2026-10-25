@@ -382,7 +382,6 @@ content:
                 - Organizasyon Ekibi
                 - Sosyal Medya Ekibi
                 - Takım Kaptanları
-                - Ekip Üyeleri
           - { name: photo, label: Fotoğraf, type: image }
           - name: order
             label: Sıralama

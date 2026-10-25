@@ -30,299 +30,197 @@
     "Sponsorluk Ekibi",
     "Organizasyon Ekibi",
     "Sosyal Medya Ekibi",
-    "Takım Kaptanları",
-    "Ekip Üyeleri"
+    "Takım Kaptanları"
   ],
   "people": [
     {
+      "name": "Mehmet Onur Genç",
+      "group": "Danışman",
+      "role": "Akademik Danışman",
+      "order": 1,
+      "photo": "/media/ekip/mehmet-onur-genc.jpg"
+    },
+    {
+      "name": "Bilgehan Zeki Özaytaç",
+      "group": "Danışman",
+      "role": "Yazılım Danışmanı",
+      "order": 2,
+      "photo": "/media/ekip/bilgehan-zeki-ozaytac.jpg"
+    },
+    {
+      "name": "Muhammed Ataman",
+      "group": "Danışman",
+      "role": "Sektör Danışmanı",
+      "order": 3,
+      "photo": "/media/ekip/muhammed-ataman.jpg"
+    },
+    {
+      "name": "Irmak Karaağaç",
+      "group": "Başkanlık",
+      "role": "Topluluk Başkanı",
+      "order": 1,
+      "photo": "/media/ekip/irmak-karaagac.jpg"
+    },
+    {
+      "name": "Ömer Cihan Demir",
+      "group": "Atölye Ekibi",
+      "role": "Ekip Lideri",
+      "order": 1,
+      "photo": "/media/ekip/omer-cihan-demir.jpg"
+    },
+    {
+      "name": "Duygu Solak",
+      "group": "Atölye Ekibi",
+      "role": "Ekip Üyesi",
+      "order": 2,
+      "photo": "/media/ekip/duygu-solak.jpg"
+    },
+    {
+      "name": "Zeynep Seher Yolasığmaz",
+      "group": "Atölye Ekibi",
+      "role": "Ekip Üyesi",
+      "order": 3,
+      "photo": "/media/ekip/zeynep-seher-yolasigmaz.jpg"
+    },
+    {
       "name": "Gülsiye Begüm Gümüş",
       "group": "Organizasyon Ekibi",
-      "role": "Ekip Üyesi",
+      "role": "Organizasyon ve Sponsorluk Ekip Lideri",
       "order": 1,
       "photo": "/media/ekip/gulsiye-begum-gumus.jpg"
-    },
-    {
-      "name": "Nurseda Yavuz",
-      "group": "Organizasyon Ekibi",
-      "role": "Ekip Üyesi",
-      "order": 2
-    },
-    {
-      "name": "Almina Yanar",
-      "group": "Organizasyon Ekibi",
-      "role": "Ekip Üyesi",
-      "order": 3
-    },
-    {
-      "name": "Buse Kayhan",
-      "group": "Organizasyon Ekibi",
-      "role": "Ekip Üyesi",
-      "order": 4
     },
     {
       "name": "Bilgehan Zeki Özaytaç",
       "group": "Organizasyon Ekibi",
       "role": "Ekip Üyesi",
-      "order": 5
-    },
-    {
-      "name": "Havanur Kılınçer",
-      "group": "Organizasyon Ekibi",
-      "role": "Ekip Üyesi",
-      "order": 6
-    },
-    {
-      "name": "Ömer Cihan Demir",
-      "group": "Organizasyon Ekibi",
-      "role": "Ekip Üyesi",
-      "order": 7,
-      "photo": "/media/ekip/omer-cihan-demir.jpg"
-    },
-    {
-      "name": "İrem Azra Kaya",
-      "group": "Organizasyon Ekibi",
-      "role": "Ekip Üyesi",
-      "order": 8
-    },
-    {
-      "name": "Mehmet Furkan Ketme",
-      "group": "Organizasyon Ekibi",
-      "role": "Ekip Üyesi",
-      "order": 9
-    },
-    {
-      "name": "Melih Gür",
-      "group": "Sponsorluk Ekibi",
-      "role": "Ekip Üyesi",
-      "order": 1
-    },
-    {
-      "name": "Refika Abacı",
-      "group": "Sponsorluk Ekibi",
-      "role": "Ekip Üyesi",
-      "order": 2
-    },
-    {
-      "name": "İlayda Çınar",
-      "group": "Sponsorluk Ekibi",
-      "role": "Ekip Üyesi",
-      "order": 3
-    },
-    {
-      "name": "İrem Azra Kaya",
-      "group": "Sponsorluk Ekibi",
-      "role": "Ekip Üyesi",
-      "order": 4
-    },
-    {
-      "name": "Yusuf Sarsıcı",
-      "group": "Sponsorluk Ekibi",
-      "role": "Ekip Üyesi",
-      "order": 5,
-      "photo": "/media/ekip/yusuf-sarsici.jpg"
-    },
-    {
-      "name": "Oğuzhan Dursun",
-      "group": "Sponsorluk Ekibi",
-      "role": "Ekip Üyesi",
-      "order": 6
-    },
-    {
-      "name": "Hatice Sena Aşık",
-      "group": "Sponsorluk Ekibi",
-      "role": "Ekip Üyesi",
-      "order": 7
-    },
-    {
-      "name": "Samet İhsan",
-      "group": "Sponsorluk Ekibi",
-      "role": "Ekip Üyesi",
-      "order": 8
-    },
-    {
-      "name": "Kerem Ali Altunışık",
-      "group": "Atölye Ekibi",
-      "role": "Ekip Üyesi",
-      "order": 1
-    },
-    {
-      "name": "Oğuzhan Dursun",
-      "group": "Atölye Ekibi",
-      "role": "Ekip Üyesi",
-      "order": 2
-    },
-    {
-      "name": "Hatice Sena Aşık",
-      "group": "Atölye Ekibi",
-      "role": "Ekip Üyesi",
-      "order": 3
-    },
-    {
-      "name": "Ömer Cihan Demir",
-      "group": "Atölye Ekibi",
-      "role": "Ekip Üyesi",
-      "order": 4,
-      "photo": "/media/ekip/omer-cihan-demir.jpg"
-    },
-    {
-      "name": "Almina Yanar",
-      "group": "Atölye Ekibi",
-      "role": "Ekip Üyesi",
-      "order": 5
-    },
-    {
-      "name": "Buse Kayhan",
-      "group": "Atölye Ekibi",
-      "role": "Ekip Üyesi",
-      "order": 6
-    },
-    {
-      "name": "Feyza Karabıçak",
-      "group": "Sosyal Medya Ekibi",
-      "role": "Ekip Üyesi",
-      "order": 1,
-      "photo": "/media/ekip/feyza-karabicak.jpg"
-    },
-    {
-      "name": "Feride Şirin",
-      "group": "Sosyal Medya Ekibi",
-      "role": "Ekip Üyesi",
-      "order": 2
-    },
-    {
-      "name": "Samet İhsan",
-      "group": "Sosyal Medya Ekibi",
-      "role": "Ekip Üyesi",
-      "order": 3
-    },
-    {
-      "name": "Ömer Cihan Demir",
-      "group": "Sosyal Medya Ekibi",
-      "role": "Ekip Üyesi",
-      "order": 4,
-      "photo": "/media/ekip/omer-cihan-demir.jpg"
-    },
-    {
-      "name": "Mehmet Furkan Ketme",
-      "group": "Sosyal Medya Ekibi",
-      "role": "Ekip Üyesi",
-      "order": 5
-    },
-    {
-      "name": "Yusuf Sarsıcı",
-      "group": "Sosyal Medya Ekibi",
-      "role": "Ekip Üyesi",
-      "order": 6,
-      "photo": "/media/ekip/yusuf-sarsici.jpg"
-    },
-    {
-      "name": "Hatice Sena Aşık",
-      "group": "Sosyal Medya Ekibi",
-      "role": "Ekip Üyesi",
-      "order": 7
-    },
-    {
-      "name": "Nurseda Yavuz",
-      "group": "Sosyal Medya Ekibi",
-      "role": "Ekip Üyesi",
-      "order": 8
-    },
-    {
-      "name": "İlayda Çınar",
-      "group": "Sosyal Medya Ekibi",
-      "role": "Ekip Üyesi",
-      "order": 9
+      "order": 2,
+      "photo": "/media/ekip/bilgehan-zeki-ozaytac.jpg"
     },
     {
       "name": "Nusret Bircan Keser",
       "group": "Organizasyon Ekibi",
       "role": "Ekip Üyesi",
-      "photo": "/media/ekip/nusret-bircan-keser.jpg",
-      "order": 10
+      "order": 3,
+      "photo": "/media/ekip/nusret-bircan-keser.jpg"
     },
     {
       "name": "Rumeysa Akarsu",
-      "group": "Ekip Üyeleri",
+      "group": "Organizasyon Ekibi",
       "role": "Ekip Üyesi",
-      "photo": "/media/ekip/rumeysa-akarsu.jpg",
-      "order": 1
+      "order": 4,
+      "photo": "/media/ekip/rumeysa-akarsu.jpg"
     },
     {
-      "name": "Zeynep Seher Yolasığmaz",
-      "group": "Ekip Üyeleri",
+      "name": "Emine Sultan Güneş",
+      "group": "Organizasyon Ekibi",
       "role": "Ekip Üyesi",
-      "photo": "/media/ekip/zeynep-seher-yolasigmaz.jpg",
-      "order": 2
+      "order": 5,
+      "photo": "/media/ekip/emine-sultan-gunes.jpg"
     },
     {
-      "name": "Berat Eren Karakaş",
-      "group": "Ekip Üyeleri",
+      "name": "Almina Yanar",
+      "group": "Organizasyon Ekibi",
       "role": "Ekip Üyesi",
-      "photo": "/media/ekip/berat-eren-karakas.jpg",
-      "order": 3
+      "order": 6,
+      "photo": "/media/ekip/almina-yanar.jpg"
+    },
+    {
+      "name": "Elif Melisa Köse",
+      "group": "Organizasyon Ekibi",
+      "role": "Ekip Üyesi",
+      "order": 7,
+      "photo": "/media/ekip/elif-melisa-kose.jpg"
     },
     {
       "name": "Zehra Bulut",
       "group": "Organizasyon Ekibi",
       "role": "Ekip Üyesi",
-      "photo": "/media/ekip/zehra-bulut.jpg",
-      "order": 11
-    },
-    {
-      "name": "Aslıhan Okumuş",
-      "group": "Ekip Üyeleri",
-      "role": "Ekip Üyesi",
-      "photo": "/media/ekip/aslihan-okumus.jpg",
-      "order": 4
-    },
-    {
-      "name": "Melek Özkeser",
-      "group": "Ekip Üyeleri",
-      "role": "Ekip Üyesi",
-      "photo": "/media/ekip/melek-ozkeser.jpg",
-      "order": 5
-    },
-    {
-      "name": "Emine Sultan Güneş",
-      "group": "Ekip Üyeleri",
-      "role": "Ekip Üyesi",
-      "photo": "/media/ekip/emine-sultan-gunes.jpg",
-      "order": 6
-    },
-    {
-      "name": "Melisa Aydirek",
-      "group": "Ekip Üyeleri",
-      "role": "Ekip Üyesi",
-      "photo": "/media/ekip/melisa-aydirek.jpg",
-      "order": 7
-    },
-    {
-      "name": "Eslem Kılıç",
-      "group": "Ekip Üyeleri",
-      "role": "Ekip Üyesi",
-      "photo": "/media/ekip/eslem-kilic.jpg",
-      "order": 8
-    },
-    {
-      "name": "Esma Demirkıyık",
-      "group": "Ekip Üyeleri",
-      "role": "Ekip Üyesi",
-      "photo": "/media/ekip/esma-demirkiyik.jpg",
-      "order": 9
-    },
-    {
-      "name": "Muhammed Efe Coşkunpınar",
-      "group": "Ekip Üyeleri",
-      "role": "Ekip Üyesi",
-      "photo": "/media/ekip/muhammed-efe-coskunpinar.jpg",
-      "order": 10
+      "order": 8,
+      "photo": "/media/ekip/zehra-bulut.jpg"
     },
     {
       "name": "Adem Bağlan",
-      "group": "Ekip Üyeleri",
+      "group": "Sponsorluk Ekibi",
       "role": "Ekip Üyesi",
-      "photo": "/media/ekip/adem-baglan.jpg",
-      "order": 11
+      "order": 1,
+      "photo": "/media/ekip/adem-baglan.jpg"
+    },
+    {
+      "name": "Yusuf Sarsıcı",
+      "group": "Sponsorluk Ekibi",
+      "role": "Ekip Üyesi",
+      "order": 2,
+      "photo": "/media/ekip/yusuf-sarsici.jpg"
+    },
+    {
+      "name": "Elif Naz Köksoy",
+      "group": "Sponsorluk Ekibi",
+      "role": "Ekip Üyesi",
+      "order": 3,
+      "photo": "/media/ekip/elif-naz-koksoy.jpg"
+    },
+    {
+      "name": "Berat Eren Karakaş",
+      "group": "Sponsorluk Ekibi",
+      "role": "Ekip Üyesi",
+      "order": 4,
+      "photo": "/media/ekip/berat-eren-karakas.jpg"
+    },
+    {
+      "name": "Muhammed Efe Coşkunpınar",
+      "group": "Sponsorluk Ekibi",
+      "role": "Ekip Üyesi",
+      "order": 5,
+      "photo": "/media/ekip/muhammed-efe-coskunpinar.jpg"
+    },
+    {
+      "name": "Ela Ural",
+      "group": "Sponsorluk Ekibi",
+      "role": "Ekip Üyesi",
+      "order": 6,
+      "photo": "/media/ekip/ela-ural.jpg"
+    },
+    {
+      "name": "Feyza Karabıçak",
+      "group": "Sosyal Medya Ekibi",
+      "role": "Ekip Lideri",
+      "order": 1,
+      "photo": "/media/ekip/feyza-karabicak.jpg"
+    },
+    {
+      "name": "Melek Özkeser",
+      "group": "Sosyal Medya Ekibi",
+      "role": "Ekip Üyesi",
+      "order": 2,
+      "photo": "/media/ekip/melek-ozkeser.jpg"
+    },
+    {
+      "name": "Melisa Aydirek",
+      "group": "Sosyal Medya Ekibi",
+      "role": "Ekip Üyesi",
+      "order": 3,
+      "photo": "/media/ekip/melisa-aydirek.jpg"
+    },
+    {
+      "name": "Eslem Kılıç",
+      "group": "Sosyal Medya Ekibi",
+      "role": "Ekip Üyesi",
+      "order": 4,
+      "photo": "/media/ekip/eslem-kilic.jpg"
+    },
+    {
+      "name": "Esma Demirkıyık",
+      "group": "Sosyal Medya Ekibi",
+      "role": "Ekip Üyesi",
+      "order": 5,
+      "photo": "/media/ekip/esma-demirkiyik.jpg"
+    },
+    {
+      "name": "Aslıhan Okumuş",
+      "group": "Sosyal Medya Ekibi",
+      "role": "Ekip Üyesi",
+      "order": 6,
+      "photo": "/media/ekip/aslihan-okumus.jpg"
     }
   ]
 }
