@@ -359,6 +359,13 @@ content:
         list:
           collapsible: true
         description: Kişiler bu sırayla gruplanır. Buradaki adlar, aşağıdaki "Ekip" alanıyla birebir aynı yazılmalıdır.
+      - { name: formerTitle, label: Eski üyeler başlığı, type: string }
+      - { name: formerIntro, label: Eski üyeler açıklaması, type: text }
+      - name: formerMembers
+        label: Eski ekip üyeleri
+        type: string
+        list: true
+        description: Önceki dönemlerde görev alan arkadaşlarımız. Yalnızca ad soyad yazılır.
       - name: people
         label: Kişiler
         type: object

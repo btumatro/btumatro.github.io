@@ -155,6 +155,18 @@ const initials = (name: string) =>
     )
   }
 
+  {
+    ekip.formerMembers?.length > 0 && (
+      <Section eyebrow="Teşekkürler" title={ekip.formerTitle} description={ekip.formerIntro} class="pt-0">
+        <ul class="mt-8 flex flex-wrap gap-2.5">
+          {ekip.formerMembers.map((ad) => (
+            <li class="rounded-full border border-white/10 bg-white/[0.03] px-4 py-2 text-sm text-mist-300">{ad}</li>
+          ))}
+        </ul>
+      </Section>
+    )
+  }
+
   <Section eyebrow="Kareler" title="Topluluk hayatından" class="pt-0">
     <FotoSerit categories={['Etkinlik', 'Teknik Gezi']} limit={6} class="mt-10" />
   </Section>
