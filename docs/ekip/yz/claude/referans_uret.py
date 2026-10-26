@@ -14,7 +14,7 @@ OUT = E + 'yz/claude/'
 GENC = "a young university student; keep exactly the age seen in the photos, do NOT make them look older"
 KISI = {
  'mehmet-onur-genc': "Mehmet Onur, the academic advisor: dark wavy hair, full dark beard, warm smile, dark suit and tie. Keep exactly the age seen in the photos; do NOT make him look older",
- 'bilgehan-zeki-ozaytac': "Bilgehan (Zeki): bald head, short dark beard with some grey, dark rectangular glasses in most casual photos. Keep exactly the age seen in the photos; do NOT make him look older",
+ 'bilgehan-zeki-ozaytac': "Bilgehan (Zeki): bald head, short fully DARK beard (no grey hair at all), dark rectangular glasses in most casual photos. Keep exactly the age seen in the photos; do NOT make him look older",
  'muhammed-ataman': "Muhammed, a young man under 30: thick dark wavy hair swept back, full dark beard. Do NOT make him look older",
  'irmak-karaagac': "Irmak, " + GENC + ": she wears a hijab, friendly smile",
  'omer-cihan-demir': "Ömer, " + GENC + ": short dark hair with a quiff, trimmed dark beard",
@@ -29,7 +29,7 @@ GRUP = {
  'muhammed-ataman-grup': {'muhammed-ataman': 'the bearded man in black on the far LEFT'},
 }
 # kullanıcının kendi onaylı avatar çizimleri (kimlik + stil için)
-OZEL = {'bilgehan-zeki-ozaytac': [PK + 'zeki_avatar_1024.jpg', A + 'morph_07_yakin_plan_mimik.jpg']}
+OZEL = {'bilgehan-zeki-ozaytac': [E + 'orijinal/bilgehan-zeki-ozaytac-referans-sayfasi.png', PK + 'zeki_avatar_1024.jpg', A + 'morph_07_yakin_plan_mimik.jpg']}
 
 def img(p, m=1024):
     im = ImageOps.exif_transpose(Image.open(p)).convert('RGB'); im.thumbnail((m, m))
@@ -43,7 +43,7 @@ def fotolar(slug):
         grup = next((g for g in GRUP if ad.startswith(g)), None)
         if grup and slug in GRUP[grup]:
             L.append((p, 'group photo; this person is ' + GRUP[grup][slug] + '; ignore everyone else'))
-        elif not grup and ad.startswith(slug):
+        elif not grup and ad.startswith(slug) and 'referans-sayfasi' not in ad:
             L.append((p, 'photo of this person'))
     for p, n in [(E + f'alternatif/{slug}.jpg', 'another photo'), (E + f'yz/codex/gri-fon/{slug}.jpg', 'studio portrait of this person')]:
         if os.path.exists(p): L.append((p, n))
@@ -54,7 +54,7 @@ def ilk_tur(slug):
     for f, n in fotolar(slug):
         p += [{"text": n + ':'}, img(f)]
     for f in OZEL.get(slug, []):
-        p += [{"text": "approved illustrated avatar of this same person:"}, img(f)]
+        p += [{"text": ("THE MAIN APPROVED REFERENCE SHEET of this person (follow this face, age, beard colour and build most closely):" if "referans-sayfasi" in f else "approved illustrated avatar of this same person:")}, img(f, 1536)]
     return p
 
 def cagir(slug, p2, oran, cikti):
@@ -106,14 +106,16 @@ def sayfa(slug, h):
     return cagir(slug, p2, '3:2', OUT + f'referans-sayfasi/{h}-{slug}.jpg')
 
 def portre(slug, h):
-    ornek = stil_ornekleri(h)
-    p2 = [{"text": "Earlier approved drawings of other team members in this exact style (match the rendering; identity only from the real photos):"}] + [img(x, 768) for x in ornek]
+    # shortcut: en çok 2 stil örneği; fazlası kimliği karıştırıp başka kişiyi çizdirdi (Bilgehan yerine Irmak)
+    ornek = [x for x in stil_ornekleri(h) if slug not in x][:2]
+    p2 = [{"text": "STYLE ONLY: drawings of OTHER, DIFFERENT people. Copy only their rendering; never draw these people:"}] + [img(x, 512) for x in ornek]
     if h == 'a':
         p2 += [{"text": "Style references (copy ONLY the drawing style):"}, img(A + 'morph_07_yakin_plan_mimik.jpg')]
     if h == 'b':
         p2 += [{"text": "Style reference (copy ONLY the drawing style):"}, img(A + 'KARAKTER_KIMLIK_PAFTASI_v1.jpg')]
-    p2.append({"text": f"Now draw a head-and-shoulders portrait of THIS person in {STIL6[h]} Instantly recognisable: same face, beard/hair, hijab or glasses as in the photos. "
-               "Do NOT make them look older, no wrinkles, no extra weight, no beautifying, no big eyes. Centred, square 1:1. No text."})
+    p2.append({"text": f"Now draw a head-and-shoulders portrait of the person from the REAL PHOTOS in the first message ({KISI[slug].split(':')[0]}), not anyone from the style images. Keep every accessory from the photos (glasses, hijab, beard). Draw in {STIL6[h]}"})
+    p2.append({"text": f"Portrait of THIS person in {STIL6[h]} Instantly recognisable: same face, beard/hair, hijab or glasses as in the photos. "
+               "Do NOT make them look older, no wrinkles, no extra weight, no beautifying, no big eyes. Same outfit as in the studio portrait. Centred, square 1:1. No text."})
     return cagir(slug, p2, '1:1', OUT + f'stil-ornekleri/{h}-{slug}.jpg')
 
 if __name__ == '__main__':
