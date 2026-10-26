@@ -49,3 +49,49 @@ Kalan 20 kadrajda da ince çerçeve/dikdörtgen izi vardı; `docs/ekip/yz/codex/
 - **Zorunlu otomatik kontrol:** her çıktıda `blur(3) - blur(25)` farkı üzerinde uzun düz yatay/dikey kenar ara (ör. satır/sütun boyunca tutarlı basamak, Hough çizgileri); yapıştırma sınırına denk gelen düz çizgi bulunursa o çıktıyı teslim etme, yeniden dene. Ayrıca gözle 2x büyütüp kontrol et.
 - Referans: her kişinin kesilmemiş tüm orijinalleri ilk turda (Ek istek 3'teki kural aynen).
 - Pafta: `docs/ekip/kontrol/agy-eksikler.jpg` — numara+isim; orijinal | yeni kadraj | (varsa) yeni vesikalık. Teslim edemediğin kişileri raporda açıkça yaz.
+
+## Ek istek 5 (26 Ekim, kullanıcı): yalnız gri fon ve kadraj, siteye dokunma
+- Beyaz fonlu vesikalık ÜRETME (kullanıcı istemiyor). `vesikalik/` klasörü kaldırıldı.
+- Mevcut 26 gri fonu silme/üzerine yazma. Yalnız şu üç kişi için yeni gri fon üret, `docs/ekip/yz/codex/gri-fon-yeni/<slug>.jpg` olarak kaydet: gulsiye-begum-gumus (fondan kopuk, küçük, kesilip yapıştırılmış gibi), melek-ozkeser ve nusret-bircan-keser (selfie açısı ve kesik kafa kalmış). Gerçek stüdyo çekimi gibi: kişi kadraja ortalı, baş-omuz, kafa kesilmeden, fonla aynı ışıkta.
+- Kadraj: Ek istek 4 aynen (26 kişi, Poisson karışımı, zorunlu dikiş kontrolü).
+- Her kişide kesilmemiş tüm orijinaller ilk turda referans.
+- `public/media/ekip/` ve site dosyalarına DOKUNMA; seçimi kullanıcı yapacak.
+- Pafta: `docs/ekip/kontrol/agy-eksikler.jpg` — numara+isim; orijinal | yeni kadraj | (varsa) yeni gri fon.
+
+## Ek istek 6 (26 Ekim, kullanıcı): stilize karakter denemesi (Ek istek 5 bittikten sonra)
+- Önce Ek istek 5'in eksikleri tamam mı kontrol et; gri fonlarda diğerlerine uymayan (ölçek, ortalama, ışık, kesik kafa, kesilip yapıştırılmış görünüm) başka kişi varsa onu da `gri-fon-yeni/`'ye yeniden üret.
+- Sonra stilize karakter denemesi: `docs/ekip/yz/codex/stilize/<slug>.jpg`, 1:1. Stil: tek ve tutarlı, yarı gerçekçi dijital illüstrasyon / yumuşak 3B animasyon karakteri havası; düz orta-gri fon (gri fonlarla aynı ton), baş-omuz, kişinin yüz hatları, saç, gözlük, başörtüsü, sakal ve kıyafeti tanınır kalmalı. Karikatür abartısı, büyük göz, güzelleştirme YOK; kişi arkadaşları tarafından hemen tanınmalı.
+- Önce 3 kişilik pilot (ör. adem-baglan, irmak-karaagac, muhammed-ataman), pilotu `docs/ekip/kontrol/stilize-pilot.jpg` paftasıyla kaydet (orijinal | gri fon | stilize), sonra 26 kişinin tamamı.
+- Referans: kesilmemiş orijinaller + o kişinin gri fon portresi, aynı sohbet bağlamında.
+- Pafta: `docs/ekip/kontrol/stilize.jpg` (numara+isim; orijinal | stilize). Site dosyalarına dokunma.
+
+## Ek istek 7 (26 Ekim, kullanıcı): 1-2 örnek karakter sheet (stilize pilottan sonra)
+- Stilize pilotundaki 3 kişiden en iyi tutan 1-2 kişi için karakter sheet hazırla: `docs/ekip/yz/codex/karakter-sheet/<slug>.jpg` (yatay, ör. 16:9 ya da 3:2).
+- İçerik: önden / üç çeyrek / yandan / arkadan dönüş (turnaround), 3-4 yüz ifadesi (gülümseme, ciddi, şaşkın, konuşurken), renk paleti şeridi (ten, saç, kıyafet, başörtüsü/gözlük), kısa ölçü/oran notu; isim etiketi Türkçe, emoji yok. Arka plan düz açık-gri pafta.
+- Tutarlılık: tüm pozlarda aynı kişi, aynı kıyafet ve aksesuar; stilize karakterin kendisi ana referans, kesilmemiş orijinaller yüz benzerliği için yanında. Aynı sohbet bağlamında üret.
+- Bu skill'leri OKU ve yöntemlerini uygula (Claude Code eklenti dosyaları, salt okunur):
+  - /Users/wildgenie/.claude/plugins/cache/wildgenie-private/yz-medya-atolyesi/1.9.0/skills/karakter-rig-ve-avatar/SKILL.md
+  - /Users/wildgenie/.claude/plugins/cache/wildgenie-private/yz-medya-atolyesi/1.9.0/skills/gorsel-video-uretim-cekirdek/references/karakter-urun-tutarliligi.md
+  - /Users/wildgenie/.claude/plugins/cache/wildgenie-private/yz-medya-atolyesi/1.9.0/skills/pafta-taslak-sozlugu/SKILL.md
+  - /Users/wildgenie/.claude/plugins/cache/wildgenie-private/yz-medya-atolyesi/1.9.0/skills/gorsel-istem-ve-duzenleme/SKILL.md
+- Raporda hangi skill'den hangi kuralı uyguladığını kısaca yaz.
+
+## Ek istek 8 (26 Ekim, kullanıcı): stil = Zeki'nin reels karakter tarzı (Ek istek 6 stil tanımının yerine geçer)
+Stil referansları (salt okunur, kopyalama): /Users/wildgenie/Projects/gemini-prompt-arena/kaynak/avatar/KARAKTER_KIMLIK_PAFTASI_v1.jpg, /Users/wildgenie/Projects/gemini-prompt-arena/kaynak/avatar/ANA_REFERANS_SAYFASI_v2.jpg, /Users/wildgenie/Projects/gemini-prompt-arena/kaynak/avatar/zeki_kimlik_ve_konusma.jpg ve aynı klasördeki sahne kareleri. Tarz: düz 2B çizgi film, temiz koyu kontur, düz renk + hafif tek ton gölge, sade sıcak gri-bej fon, gerçekçi orantı (büyük göz yok). Karakter sheet düzeni de bu paftadaki gibi: önden + üç çeyrek tam boy, altta 4 yüz ifadesi.
+- Önce yalnız STİL PİLOTU: 3 kişi (adem-baglan, irmak-karaagac, muhammed-ataman) baş-omuz portre → `docs/ekip/yz/codex/stilize/`, pafta `docs/ekip/kontrol/stilize-pilot.jpg` (orijinal | gri fon | stilize).
+- Sonra 1-2 karakter sheet (Ek istek 7 kuralları + yukarıdaki düzen) → `docs/ekip/yz/codex/karakter-sheet/`.
+- 26 kişinin tamamına GEÇME; kullanıcı pilotu görüp karar verecek.
+
+### Ek istek 8 düzeltmesi (kullanıcı): ana stil SAHNE karelerinden alınır
+Asıl istenen tarz karakter paftasındaki düz 2B değil, reels sahne karelerindeki tarz. Ana stil referansları:
+- /Users/wildgenie/Projects/gemini-prompt-arena/kaynak/avatar/morph_07_yakin_plan_mimik.jpg (yakın plan portre — en önemli referans)
+- /Users/wildgenie/Projects/gemini-prompt-arena/kaynak/avatar/01_sahne_zeki_ve_ani_masada_00_00.jpg, /Users/wildgenie/Projects/gemini-prompt-arena/kaynak/avatar/10_sahne_zeki_kisisel_itiraf_cene_elde_05_38.jpg, /Users/wildgenie/Projects/gemini-prompt-arena/kaynak/avatar/11_sahne_universiteli_ela_macbook_06_20.jpg, /Users/wildgenie/Projects/gemini-prompt-arena/kaynak/avatar/morph_01_iki_el_acik_anlatim.jpg
+- /Users/wildgenie/Downloads/Podcast_Bolum2_Produksiyon_Paketi/source/stills/generated/referans-paftalari/zeki-karakter-devamlilik.jpg
+Tarz: çizgi roman / grafik roman illüstrasyonu; ince koyu mürekkep konturu, boyalı yumuşak gölgeleme, sinematik ışık (sıcak lamba ışığı + soğuk lacivert dolgu), gerçekçi orantı, sakin ve doğal ifade. Stilize portrelerde fon: koyu lacivert-gri, sade, hafif sıcak ışık vurgusu (sahnelerdeki gibi). KARAKTER_KIMLIK_PAFTASI yalnız karakter sheet DÜZENİ için (önden + üç çeyrek tam boy + 4 ifade); çizim tarzı yine sahne kareleri gibi olacak.
+
+## Ek istek 9 (26 Ekim, kullanıcı): eksik kadrajları tamamla — BAŞKA HİÇBİR ŞEY YAPMA
+Durum: 26 gri fon tamam (Gülsiye/Melek/Nusret yenileri `gri-fon/`'a taşındı). Kadrajda 18 kabul edilen dosya var; onlara DOKUNMA. Stilize/karakter sheet bu turda YOK.
+- Yeniden üretilecek kadrajlar (8): adem-baglan, almina-yanar, duygu-solak, ela-ural, zeynep-seher-yolasigmaz, melisa-aydirek, nusret-bircan-keser, eslem-kilic.
+- Son turdaki hata: Melisa, Nusret, Eslem ve Zeynep'te arka plan tamamen değişmiş, başka odaya dönmüştü. Bu YASAK. Kadraj = aynı fotoğrafın kenarlarını genişletmek: orijinal karenin tüm pikselleri (yüz + arka plan) korunur, Gemini yalnızca dışarıda kalan şeridi aynı sahnenin devamı olarak doldurur. Önce kesilmemiş orijinal fotoğrafta (`docs/ekip/orijinal/<slug>*.jpg`) zaten kare dışında kalan gerçek alan varsa ÖNCE onu kullan (orijinalden daha geniş kırp), Gemini'yi yalnız gerçek alan yetmezse çağır.
+- Kontrol: çıktıyı orijinal kareyle hizalayıp karşılaştır; orijinal karenin içindeki arka plan değişmişse ya da dikiş izi varsa teslim etme. Başarısız kişiyi raporda yaz, uydurma çıktı koyma.
+- Pafta: `docs/ekip/kontrol/kadraj-eksikler.jpg` (numara+isim; sitede | yeni kadraj). Site dosyalarına dokunma, commit/push yok.
