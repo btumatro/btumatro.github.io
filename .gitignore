@@ -27,3 +27,6 @@ pnpm-debug.log*
 .claude/settings.local.json
 
 .venv-stickers/
+
+# brag skill çıktıları
+brag-output-*/
