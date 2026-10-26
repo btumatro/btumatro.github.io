@@ -75,6 +75,17 @@ def ilk_tur(slug):
         p += [{"text": ("THE MAIN APPROVED REFERENCE SHEET of this person (follow this face, age, beard colour and build most closely):" if "referans-sayfasi" in f else "approved illustrated avatar of this same person:")}, img(f, 1536)]
     return p
 
+def gemini_kayit(istem, cikti, kod, hata, oran):
+    # gemini-atolyesi/gemini-kayit biçimi; gapi yerine REST kullanıldığı için elle yazılır
+    d = os.environ.get('GAPI_KAYIT_DIZINI', os.path.expanduser('~/gemini-kayit'))
+    os.makedirs(d, exist_ok=True)
+    import datetime
+    z = datetime.datetime.now().astimezone().isoformat(timespec='seconds')
+    out = {"path": cikti, "size_bytes": os.path.getsize(cikti)} if kod == 0 else {}
+    with open(f'{d}/{z[:10]}.jsonl', 'a') as fh:
+        fh.write(json.dumps({"zaman": z, "komut": "gemini-rest-python", "argumanlar": ["generateContent", "-m", URL.split('/models/')[1].split(':')[0], "--aspect-ratio", oran, "--cok-turlu"],
+                             "cikis_kodu": kod, "stdout": out, "stderr": hata, "istem": istem, "kaynak": os.path.relpath(__file__)}, ensure_ascii=False) + '\n')
+
 def cagir(slug, p2, oran, cikti):
     p1 = ilk_tur(slug)
     temiz = lambda ps: [{k: v for k, v in x.items() if k != '_yol'} for x in ps]
@@ -94,10 +105,12 @@ def cagir(slug, p2, oran, cikti):
                 if "inlineData" in q:
                     os.makedirs(os.path.dirname(cikti), exist_ok=True)
                     Image.open(io.BytesIO(base64.b64decode(q["inlineData"]["data"]))).convert('RGB').save(cikti, quality=90)
+                    gemini_kayit({"tur1": kayit_parcalari(p1), "model_yaniti": "OK", "tur2": kayit_parcalari(p2)}, cikti, 0, '', oran)
                     return os.path.basename(cikti) + ' tamam'
             hata = 'görsel yok'
         except Exception as e:
             hata = str(e)[:120]
+    gemini_kayit({"tur1": kayit_parcalari(p1), "model_yaniti": "OK", "tur2": kayit_parcalari(p2)}, cikti, 1, hata, oran)
     return os.path.basename(cikti) + ' HATA ' + hata
 
 # pafta-taslak-sozlugu "Kimlik paftası (karakter)" düzeni

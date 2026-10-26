@@ -1,0 +1,46 @@
+{
+ "model": "gemini-3-pro-image",
+ "uretici": "Claude (önceki oturum)",
+ "betik": [
+  "docs/ekip/yz/talimatlar/claude-onceki/ekip_gorsel.py",
+  "docs/ekip/yz/talimatlar/claude-onceki/toplu.py"
+ ],
+ "istem_sabitleri": {
+  "ekip_gorsel.py": [
+   "The reference image is a grid of 17 portrait photos of real members of a university robotics club. Create ONE group picture where all 17 people appear together, each one clearly recognizable from their own reference portrait: keep each person's face shape, skin tone, hair or headscarf style and color, glasses, and beard exactly. Exactly 17 people, no extra people, no duplicates. Scene: a bright university robotics workshop, people standing and sitting in two or three rows, friendly confident expressions, around them a small unmanned ground vehicle, a quadcopter drone, an underwater ROV and a robot arm on workbenches. Everyone wears casual clothes in dark navy and black with small lime green accents. No text, no letters, no logos, no watermarks. Wide 16:9 composition. Style: ",
+   "modern flat vector editorial illustration, clean geometric shapes, soft gradients, limited palette of deep navy, slate and lime green accents.",
+   "stylized 3D animated feature film look, soft global illumination, appealing slightly stylized proportions, warm cinematic lighting.",
+   "graphic novel illustration, confident ink lines with muted watercolor washes, dynamic but readable composition.",
+   "https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image:generateContent"
+  ],
+  "toplu.py": [
+   "Create ONE group illustration. Copy the art style, composition, camera angle, lighting and the way people are posed and arranged from the STYLE REFERENCE image, but replace its people with the 20 real people above. The style reference shows fewer people; our picture must have MORE: exactly 20, in three rows of 7, 7 and 6. It must contain EXACTLY 20 people, persons 1 to 20, each drawn with the same face, hair or headscarf, glasses, beard and clothing as their own reference, nobody added, nobody repeated, no background crowd. Faces must match each person's real photo closely (face shape, eyes, nose, skin tone, age, hair or headscarf, glasses, beard), stylized only as much as the style requires. There are 8 men and 12 women; 7 of the women wear headscarves. Back row standing, left to right: ",
+   ". Front row seated on workshop stools, left to right: ",
+   ". All faces clearly visible, friendly smiles, looking at the viewer. Setting: our real workshop from the photos, with the camouflage ground vehicle on the floor at one side and the purple underwater ROV and white underwater rocket on a workbench at the other side, drones on a shelf. Before finishing, count the people: back row 7, middle row 7, front row 6, total 20; nobody hidden behind others, every face fully visible. Absolutely no text, no numbers, no names, no labels, no logos anywhere.",
+   "man, wavy dark hair, full dark beard, black fleece jacket",
+   "woman, grey patterned headscarf, sunglasses on top of head, burgundy sweater",
+   "man about 30, short thick dark hair, full trimmed beard, long narrow face, black t-shirt",
+   "young man, white hard hat, neon yellow safety vest, thin moustache",
+   "woman, dark brown headscarf, round thin gold glasses, cream sweater",
+   "young man, voluminous dark quiff, short beard, green-white scarf, navy jacket",
+   "woman, mauve-brown patterned silk headscarf, rust brown dress",
+   "woman, short dark hair with bangs, thick black glasses, navy t-shirt",
+   "man, curly light brown hair, thin metal glasses, moustache, black sweatshirt",
+   "woman, dark brown patterned headscarf, brown top, big smile",
+   "woman, blue-grey headscarf, beige trench coat, big smile",
+   "woman, long dark auburn hair, sunglasses on head, white crochet top",
+   "woman, navy satin headscarf, sparkly navy top",
+   "woman, long light brown hair, gold top, red lipstick",
+   "woman, long wavy brown hair, black cat-eye glasses, light striped shirt",
+   "woman, long dark hair, sunglasses on head, white tank top, gold bracelets",
+   "young man, dark wavy hair, black t-shirt, blue lanyard",
+   "man, short dark hair, goatee beard, black blazer, white shirt",
+   "bald man, blue rectangular glasses, short greying beard, brown t-shirt",
+   "Workshop reference photos (our real workshop: yellow steel columns and beams, dark grey walls, white workbenches and cabinets, blue tool pegboard). Ignore the people in these photos:",
+   "Our vehicles (match their shapes and colors, not this drawing style):",
+   "STYLE REFERENCE (art style and layout only, ignore its faces):",
+   "https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image:generateContent"
+  ]
+ },
+ "not": "çağrı başına istem saklanmadı; istemler bu betiklerdeki sabitlerden kuruluyor"
+}

@@ -46,3 +46,7 @@ python3 -c "import sys; sys.path.insert(0,'docs/ekip/yz/claude'); import referan
 ## Kontrol
 
 Benzerlik gri fona göre değil, gerçek fotoğraflara göre kontrol edilir: `docs/ekip/kontrol/suluboya-1.jpg` ve `-2.jpg` (site karesi, orijinal, gri fon, suluboya).
+
+## Gemini çağrı kaydı
+
+Betik her çağrıyı `gemini-atolyesi/gemini-kayit` biçiminde `~/gemini-kayit/YYYY-MM-DD.jsonl` dosyasına da yazar (`gapi` yerine REST kullanıldığı için elle). Geçmiş çağrılar `docs/ekip/yz/talimatlar/gemini_kayit_doldur.py` ile sonradan eklendi; kopyası `docs/ekip/yz/talimatlar/gemini-kayit/`. Diğer ekip görsellerinin (agy, ilk tur, elenenler, `stilize/`, `karikatur/`) yanındaki `.istem.json` dosyaları `docs/ekip/yz/talimatlar/istem_yan_dosya.py` ile yazıldı.

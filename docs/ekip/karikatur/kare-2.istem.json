@@ -1,0 +1,21 @@
+{
+ "model": "gemini-3-pro-image",
+ "uretici": "Claude (önceki oturum)",
+ "betik": [
+  "docs/ekip/yz/talimatlar/claude-onceki/karikatur.py"
+ ],
+ "istem_sabitleri": {
+  "karikatur.py": [
+   "Style: funny editorial cartoon, clean bold ink outlines with soft watercolor fills, expressive exaggerated faces, warm colors, keep both characters clearly recognizable from the references. Wholesome slapstick humor, nothing violent or scary. Absolutely no text, no letters, no speech bubbles, no captions. Square panel.",
+   "Panel: Character A stands in the workshop holding her phone, looking sheepish and pleading with puppy eyes, hands pressed together, asking for a favor; in the background on the wall hangs a framed team group illustration.",
+   "Panel: Character B at a workbench rolls up his sleeves with an evil-genius grin, glasses glinting, lifting a comically giant pink pencil eraser like a hero holding a sword; the framed team group illustration is in front of him.",
+   "Panel: Character B scrubs the framed team group illustration with the giant pink eraser, eraser crumbs flying; inside the picture Character A is half-erased (her lower half is faded to blank paper) and she stares out with the shocked wide-eyed face of a tiny startled monkey, hands to cheeks. The other people in the picture keep smiling.",
+   "Panel: plot twist. Character B stares in disbelief, jaw dropped, eraser falling from his hand, because the framed team group illustration is now filled with MANY copies of Character A in every spot, all smiling and giving thumbs up; a small laptop on the bench glows proudly.",
+   "Character A, Irmak: young woman, plain brown headscarf, olive-brown jacket:",
+   "Character B, Bilgehan: bald man, blue rectangular glasses, short dark beard, dark brown t-shirt:",
+   "Team group picture style reference (yellow steel workshop):",
+   "https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image:generateContent"
+  ]
+ },
+ "not": "çağrı başına istem saklanmadı; istemler bu betiklerdeki sabitlerden kuruluyor"
+}

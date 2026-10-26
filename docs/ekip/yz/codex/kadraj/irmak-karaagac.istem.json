@@ -1,0 +1,262 @@
+{
+ "model": "gemini-3-pro-image",
+ "uretici": "agy (Antigravity CLI)",
+ "gorev_notu": "docs/ekip/yz/CODEX-GOREV.md",
+ "betik": [
+  "docs/ekip/yz/talimatlar/agy/uret_26_kadraj_poisson.py",
+  "docs/ekip/yz/talimatlar/agy/uret_ek9_8kadraj.py",
+  "docs/ekip/yz/talimatlar/agy/fix_ek10_2kadraj.py"
+ ],
+ "cagrilar": {
+  "turn1_kadraj": [
+   {
+    "zaman": "2026-10-25T22:20:34Z",
+    "istem": {
+     "contents": [
+      {
+       "role": "user",
+       "parts": [
+        {
+         "text": "We are preparing three consistent square portraits for team member 'irmak-karaagac' in a multi-turn conversation. First, here are ALL available real reference photographs of this exact person (4 unique photos) so you lock in their exact facial identity, bone structure, eyes, eyebrows, nose, mouth, skin tone, hair/headscarf, glasses, and clothing:"
+        },
+        {
+         "text": "Reference photo — Current 600x600 site portrait:"
+        },
+        {
+         "inlineData": {
+          "mimeType": "image/jpeg",
+          "sha256": "9e9adc30ee35c3a9",
+          "base64_len": 62632
+         }
+        },
+        {
+         "text": "Reference photo — Original photo (irmak-karaagac.jpg) / Canva raw image (e0f54ab9-ba97-4792-88cc-d4036d3be9bc.jpg):"
+        },
+        {
+         "inlineData": {
+          "mimeType": "image/jpeg",
+          "sha256": "f261bf4b9b529f5c",
+          "base64_len": 172856
+         }
+        },
+        {
+         "text": "Reference photo — Alternative square crop (irmak-karaagac.jpg):"
+        },
+        {
+         "inlineData": {
+          "mimeType": "image/jpeg",
+          "sha256": "49a901997e1fabe4",
+          "base64_len": 72812
+         }
+        },
+        {
+         "text": "Reference photo — Close-up face reference (irmak-karaagac):"
+        },
+        {
+         "inlineData": {
+          "mimeType": "image/jpeg",
+          "sha256": "601b2121e6eb3a43",
+          "base64_len": 211992
+         }
+        },
+        {
+         "text": "Now here is their current square site photo placed on a flat neutral grey (RGB 128,128,128) canvas to add headroom at the top and shoulder room at the sides/bottom:"
+        },
+        {
+         "inlineData": {
+          "mimeType": "image/jpeg",
+          "sha256": "f8234d960a830046",
+          "base64_len": 101236
+         }
+        },
+        {
+         "text": "TASK 1 (Framing / Outpaint): Replace ONLY the flat grey border areas (top, left, right, bottom) by naturally extending the existing scene, background, hair or headscarf, and shoulders/clothing so it looks like a wider original camera shot. CRITICAL: Do NOT move, shift, resize, or change anything inside the existing photo area; the person's face and position must stay pixel-identical in the exact same coordinates. No new people, hands, objects, or text. Output the full 1:1 square image."
+        }
+       ]
+      }
+     ],
+     "generationConfig": {
+      "responseModalities": [
+       "TEXT",
+       "IMAGE"
+      ],
+      "imageConfig": {
+       "aspectRatio": "1:1"
+      }
+     }
+    },
+    "referanslar": null
+   }
+  ],
+  "kadraj_soft_guide_test": [
+   {
+    "zaman": "2026-10-25T23:22:57Z",
+    "istem": null,
+    "referanslar": [
+     {
+      "file": "irmak-karaagac-bilgehan-1.jpg",
+      "sha256_16": "82e35ee44d2090f4",
+      "size": [
+       1200,
+       1600
+      ]
+     },
+     {
+      "file": "irmak-karaagac-bilgehan-2.jpg",
+      "sha256_16": "b928b914fc518476",
+      "size": [
+       1200,
+       1600
+      ]
+     },
+     {
+      "file": "irmak-karaagac-bilgehan-3.jpg",
+      "sha256_16": "f3f9833a1bc678ca",
+      "size": [
+       1200,
+       1600
+      ]
+     },
+     {
+      "file": "irmak-karaagac.jpg",
+      "sha256_16": "0d9c109a80c4f107",
+      "size": [
+       600,
+       600
+      ]
+     },
+     {
+      "file": "irmak-karaagac.jpg",
+      "sha256_16": "61f78cd63674f4de",
+      "size": [
+       1074,
+       1600
+      ]
+     },
+     {
+      "file": "soft_guide.jpg",
+      "sha256_16": "a00df7cad9191d4e",
+      "size": [
+       600,
+       600
+      ]
+     }
+    ]
+   }
+  ],
+  "kadraj_clean_zoomout": [
+   {
+    "zaman": "2026-10-25T23:25:40Z",
+    "istem": null,
+    "referanslar": [
+     {
+      "file": "irmak-karaagac-bilgehan-1.jpg",
+      "sha256_16": "82e35ee44d2090f4",
+      "size": [
+       1200,
+       1600
+      ]
+     },
+     {
+      "file": "irmak-karaagac-bilgehan-2.jpg",
+      "sha256_16": "b928b914fc518476",
+      "size": [
+       1200,
+       1600
+      ]
+     },
+     {
+      "file": "irmak-karaagac-bilgehan-3.jpg",
+      "sha256_16": "f3f9833a1bc678ca",
+      "size": [
+       1200,
+       1600
+      ]
+     },
+     {
+      "file": "irmak-karaagac.jpg",
+      "sha256_16": "0d9c109a80c4f107",
+      "size": [
+       600,
+       600
+      ]
+     },
+     {
+      "file": "irmak-karaagac.jpg",
+      "sha256_16": "61f78cd63674f4de",
+      "size": [
+       1074,
+       1600
+      ]
+     },
+     {
+      "file": "clean_target_crop.jpg",
+      "sha256_16": "d128bacf1988fe8d",
+      "size": [
+       600,
+       600
+      ]
+     }
+    ]
+   }
+  ],
+  "kadraj_ek5_try1": [
+   {
+    "zaman": "2026-10-25T23:33:34Z",
+    "istem": null,
+    "referanslar": [
+     {
+      "file": "irmak-karaagac-bilgehan-1.jpg",
+      "sha256_16": "82e35ee44d2090f4",
+      "size": [
+       1200,
+       1600
+      ]
+     },
+     {
+      "file": "irmak-karaagac-bilgehan-2.jpg",
+      "sha256_16": "b928b914fc518476",
+      "size": [
+       1200,
+       1600
+      ]
+     },
+     {
+      "file": "irmak-karaagac-bilgehan-3.jpg",
+      "sha256_16": "f3f9833a1bc678ca",
+      "size": [
+       1200,
+       1600
+      ]
+     },
+     {
+      "file": "irmak-karaagac.jpg",
+      "sha256_16": "0d9c109a80c4f107",
+      "size": [
+       600,
+       600
+      ]
+     },
+     {
+      "file": "irmak-karaagac.jpg",
+      "sha256_16": "61f78cd63674f4de",
+      "size": [
+       1074,
+       1600
+      ]
+     },
+     {
+      "file": "grey_canvas_600.jpg",
+      "sha256_16": "b51b652ac3076b2a",
+      "size": [
+       600,
+       600
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "istem_sabitleri": null,
+ "not": "agy çağrı kaydındaki istemler ve referanslar"
+}

@@ -1,0 +1,7 @@
+{
+ "model": "gemini-3-pro-image",
+ "uretici": "Claude",
+ "betik": "docs/ekip/yz/claude/referans_uret.py",
+ "surum": "Bilgehan referans sayfası eklendi, stil örneği 6",
+ "not": "elendi; tam istem saklanmadı, güncel betikten yukarıdaki farkla kurulur"
+}

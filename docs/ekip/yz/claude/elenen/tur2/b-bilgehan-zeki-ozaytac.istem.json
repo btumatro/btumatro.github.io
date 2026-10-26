@@ -1,0 +1,7 @@
+{
+ "model": "gemini-3-pro-image",
+ "uretici": "Claude",
+ "betik": "docs/ekip/yz/claude/referans_uret.py",
+ "surum": "kır sakal tarifi düzeltildi, kıyafet stüdyo portresine bağlandı; Bilgehan referans sayfası yoktu",
+ "not": "elendi; tam istem saklanmadı, güncel betikten yukarıdaki farkla kurulur"
+}

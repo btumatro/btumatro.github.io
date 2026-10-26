@@ -1,0 +1,148 @@
+{
+ "model": "gemini-3-pro-image",
+ "uretici": "agy (Antigravity CLI)",
+ "gorev_notu": "docs/ekip/yz/CODEX-GOREV.md",
+ "betik": [
+  "docs/ekip/yz/talimatlar/agy/uret_26_kadraj_poisson.py",
+  "docs/ekip/yz/talimatlar/agy/uret_ek9_8kadraj.py",
+  "docs/ekip/yz/talimatlar/agy/fix_ek10_2kadraj.py"
+ ],
+ "cagrilar": {
+  "turn1_kadraj": [
+   {
+    "zaman": "2026-10-25T22:22:23Z",
+    "istem": {
+     "contents": [
+      {
+       "role": "user",
+       "parts": [
+        {
+         "text": "We are preparing three consistent square portraits for team member 'rumeysa-akarsu' in a multi-turn conversation. First, here are ALL available real reference photographs of this exact person (3 unique photos) so you lock in their exact facial identity, bone structure, eyes, eyebrows, nose, mouth, skin tone, hair/headscarf, glasses, and clothing:"
+        },
+        {
+         "text": "Reference photo — Current 600x600 site portrait:"
+        },
+        {
+         "inlineData": {
+          "mimeType": "image/jpeg",
+          "sha256": "2160a693b97bfefe",
+          "base64_len": 122288
+         }
+        },
+        {
+         "text": "Reference photo — Original photo (rumeysa-akarsu-canva.jpg) / Canva raw image (e00f142d-d4ee-4893-a859-db99ae749c08.jpg):"
+        },
+        {
+         "inlineData": {
+          "mimeType": "image/jpeg",
+          "sha256": "9bde4fa5756fb8bc",
+          "base64_len": 192068
+         }
+        },
+        {
+         "text": "Reference photo — Original photo (rumeysa-akarsu.jpg):"
+        },
+        {
+         "inlineData": {
+          "mimeType": "image/jpeg",
+          "sha256": "df8b8903c4533296",
+          "base64_len": 475292
+         }
+        },
+        {
+         "text": "Now here is their current square site photo placed on a flat neutral grey (RGB 128,128,128) canvas to add headroom at the top and shoulder room at the sides/bottom:"
+        },
+        {
+         "inlineData": {
+          "mimeType": "image/jpeg",
+          "sha256": "a2e760374709176f",
+          "base64_len": 184248
+         }
+        },
+        {
+         "text": "TASK 1 (Framing / Outpaint): Replace ONLY the flat grey border areas (top, left, right, bottom) by naturally extending the existing scene, background, hair or headscarf, and shoulders/clothing so it looks like a wider original camera shot. CRITICAL: Do NOT move, shift, resize, or change anything inside the existing photo area; the person's face and position must stay pixel-identical in the exact same coordinates. No new people, hands, objects, or text. Output the full 1:1 square image."
+        }
+       ]
+      }
+     ],
+     "generationConfig": {
+      "responseModalities": [
+       "TEXT",
+       "IMAGE"
+      ],
+      "imageConfig": {
+       "aspectRatio": "1:1"
+      }
+     }
+    },
+    "referanslar": null
+   }
+  ],
+  "kadraj_ek5_try1": [
+   {
+    "zaman": "2026-10-25T23:34:53Z",
+    "istem": null,
+    "referanslar": [
+     {
+      "file": "rumeysa-akarsu.jpg",
+      "sha256_16": "62b6187d41d36521",
+      "size": [
+       1600,
+       1200
+      ]
+     },
+     {
+      "file": "rumeysa-akarsu-canva.jpg",
+      "sha256_16": "b33eef0bd4cefd04",
+      "size": [
+       779,
+       829
+      ]
+     },
+     {
+      "file": "grey_canvas_600.jpg",
+      "sha256_16": "6781b539526b34d2",
+      "size": [
+       600,
+       600
+      ]
+     }
+    ]
+   }
+  ],
+  "kadraj_ek5_try2": [
+   {
+    "zaman": "2026-10-25T23:35:09Z",
+    "istem": null,
+    "referanslar": [
+     {
+      "file": "rumeysa-akarsu.jpg",
+      "sha256_16": "62b6187d41d36521",
+      "size": [
+       1600,
+       1200
+      ]
+     },
+     {
+      "file": "rumeysa-akarsu-canva.jpg",
+      "sha256_16": "b33eef0bd4cefd04",
+      "size": [
+       779,
+       829
+      ]
+     },
+     {
+      "file": "grey_canvas_600.jpg",
+      "sha256_16": "6781b539526b34d2",
+      "size": [
+       600,
+       600
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "istem_sabitleri": null,
+ "not": "agy çağrı kaydındaki istemler ve referanslar"
+}

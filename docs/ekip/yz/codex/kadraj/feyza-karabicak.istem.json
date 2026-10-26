@@ -1,0 +1,102 @@
+{
+ "model": "gemini-3-pro-image",
+ "uretici": "agy (Antigravity CLI)",
+ "gorev_notu": "docs/ekip/yz/CODEX-GOREV.md",
+ "betik": [
+  "docs/ekip/yz/talimatlar/agy/uret_26_kadraj_poisson.py",
+  "docs/ekip/yz/talimatlar/agy/uret_ek9_8kadraj.py",
+  "docs/ekip/yz/talimatlar/agy/fix_ek10_2kadraj.py"
+ ],
+ "cagrilar": {
+  "kadraj_ek4": [
+   {
+    "zaman": "2026-10-25T23:20:03Z",
+    "istem": "Yukarıda aynı kişinin kesilmemiş orijinal referans fotoğrafları verilmiştir. SON GÖRSELDEKİ fotoğrafı temel alarak, aynı sahneyi, aynı arka planı, aynı kıyafeti/başörtüsünü/gözlüğü ve kişinin birebir aynı yüzünü/ifadesini koruyarak 1:1 kare kadraj düzeltmesi yap:\n- Baş yatayda tam ortada olsun.\n- Başın, saçın veya başörtüsünün en üst noktası ile üst kenar arasında rahat bir boşluk (en az %12-%15 tavan/arka plan payı) bulunsun, kafa üst kenara değmesin.\n- Alt kısımda her iki omuz net biçimde görünsün.\n- Kişiyi çok küçültme veya aşırı uzaklaştırma; standart bir ekip kartı portresi ölçeğinde (baş-omuz) olsun.\n- Arka planı doğal dokusuyla kesintisiz devam ettir; hiçbir çerçeve, kutu izi, kenar çizgisi veya yapay nesne olmasın.",
+    "referanslar": [
+     {
+      "file": "feyza-karabicak.jpg",
+      "sha256_16": "46781dde9d1fcca9",
+      "size": [
+       1520,
+       1520
+      ]
+     },
+     {
+      "file": "feyza-karabicak-canva.jpg",
+      "sha256_16": "9e9c9e20a8da1f02",
+      "size": [
+       1520,
+       1520
+      ]
+     }
+    ]
+   }
+  ],
+  "kadraj_soft_guide_test": [
+   {
+    "zaman": "2026-10-25T23:23:21Z",
+    "istem": null,
+    "referanslar": [
+     {
+      "file": "feyza-karabicak.jpg",
+      "sha256_16": "46781dde9d1fcca9",
+      "size": [
+       1520,
+       1520
+      ]
+     },
+     {
+      "file": "feyza-karabicak-canva.jpg",
+      "sha256_16": "9e9c9e20a8da1f02",
+      "size": [
+       1520,
+       1520
+      ]
+     },
+     {
+      "file": "soft_guide.jpg",
+      "sha256_16": "233fcd5b1afb0fbd",
+      "size": [
+       600,
+       600
+      ]
+     }
+    ]
+   }
+  ],
+  "kadraj_ek5_try1": [
+   {
+    "zaman": "2026-10-25T23:37:05Z",
+    "istem": null,
+    "referanslar": [
+     {
+      "file": "feyza-karabicak.jpg",
+      "sha256_16": "46781dde9d1fcca9",
+      "size": [
+       1520,
+       1520
+      ]
+     },
+     {
+      "file": "feyza-karabicak-canva.jpg",
+      "sha256_16": "9e9c9e20a8da1f02",
+      "size": [
+       1520,
+       1520
+      ]
+     },
+     {
+      "file": "grey_canvas_600.jpg",
+      "sha256_16": "275b0113c528d249",
+      "size": [
+       600,
+       600
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "istem_sabitleri": null,
+ "not": "agy çağrı kaydındaki istemler ve referanslar"
+}

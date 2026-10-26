@@ -1,0 +1,234 @@
+{
+ "model": "gemini-3-pro-image",
+ "uretici": "agy (Antigravity CLI)",
+ "gorev_notu": "docs/ekip/yz/CODEX-GOREV.md",
+ "betik": [
+  "docs/ekip/yz/talimatlar/agy/codex_uret.py",
+  "docs/ekip/yz/talimatlar/agy/iyilestir.py",
+  "docs/ekip/yz/talimatlar/agy/uret_gri_fon_yeni.py"
+ ],
+ "cagrilar": {
+  "turn1_grifon": [
+   {
+    "zaman": "2026-10-25T22:32:12Z",
+    "istem": {
+     "contents": [
+      {
+       "role": "user",
+       "parts": [
+        {
+         "text": "We are creating studio portraits for team member 'melisa-aydirek' in a multi-turn conversation. First, here are ALL available original reference photographs of this exact person (3 unique photos):"
+        },
+        {
+         "text": "Reference photo — Current 600x600 site portrait:"
+        },
+        {
+         "inlineData": {
+          "mimeType": "image/jpeg",
+          "sha256": "dad0e7f52dc916a8",
+          "base64_len": 67216
+         }
+        },
+        {
+         "text": "Reference photo — Original photo (melisa-aydirek-canva.jpg) / Canva raw image (ee7687f3-7b48-4a25-b82f-ae776d18adb5.jpg):"
+        },
+        {
+         "inlineData": {
+          "mimeType": "image/jpeg",
+          "sha256": "39a078426f3cad0e",
+          "base64_len": 187008
+         }
+        },
+        {
+         "text": "Reference photo — Original photo (melisa-aydirek.jpg):"
+        },
+        {
+         "inlineData": {
+          "mimeType": "image/jpeg",
+          "sha256": "bb308f679d479200",
+          "base64_len": 191004
+         }
+        },
+        {
+         "text": "Here is the framing-corrected portrait (`kadraj`) of this person where their original face is 100% preserved and the head-and-shoulders framing is centered with headroom:"
+        },
+        {
+         "inlineData": {
+          "mimeType": "image/jpeg",
+          "sha256": "f72b8811d87099b2",
+          "base64_len": 120652
+         }
+        },
+        {
+         "text": "And here is our target medium-grey studio backdrop reference (`bilgehan-zeki-ozaytac.jpg` — note the medium-grey seamless studio background with subtle vignette and clean studio lighting):"
+        },
+        {
+         "inlineData": {
+          "mimeType": "image/jpeg",
+          "sha256": "2f064048d3ef396e",
+          "base64_len": 75324
+         }
+        },
+        {
+         "text": "TASK 1 (Natural Medium-Grey Studio Portrait / Gri Fon): Using the framing-corrected portrait and all original reference photos of this person above, produce a natural head-and-shoulders studio portrait on a flat medium-grey studio background matching Bilgehan's studio backdrop (NOT pure white, NOT black). IMPORTANT:\n1. NO stiff biometric/ID rules: preserve the person's natural head angle, posture, authentic expression/smile, hairstyle or headscarf wrap, glasses (if worn), and clothing from their framing-corrected photo.\n2. Keep their face 100% faithful to the real person—do NOT beautify, smooth skin texture, slim the face, change eye/nose/lip/eyebrow shape, or alter age.\n3. Head-and-shoulders framing with comfortable headroom above the hair/headscarf and both shoulders visible. If a hand is raised to the face/hair in a selfie, remove/lower the hand cleanly.\n4. Soft, even professional studio lighting on the subject that matches the medium-grey backdrop, sharp focus across the subject, no shallow depth-of-field blur, no text or logos. \nPerson details: Long straight dark brown hair, warm tan skin, dark brown eyes, red lipstick, slight playful smile, wearing a beige/gold sleeveless top."
+        }
+       ]
+      }
+     ],
+     "generationConfig": {
+      "responseModalities": [
+       "TEXT",
+       "IMAGE"
+      ],
+      "imageConfig": {
+       "aspectRatio": "1:1"
+      }
+     }
+    },
+    "referanslar": null
+   }
+  ],
+  "turn3_grifon_fix": [
+   {
+    "zaman": "2026-10-25T22:41:46Z",
+    "istem": {
+     "contents": [
+      {
+       "role": "user",
+       "parts": [
+        {
+         "text": "We are creating studio portraits for team member 'melisa-aydirek' in a multi-turn conversation. First, here are ALL available original reference photographs of this exact person (3 unique photos):"
+        },
+        {
+         "text": "Reference photo — Current 600x600 site portrait:"
+        },
+        {
+         "inlineData": {
+          "mimeType": "image/jpeg",
+          "sha256": "dad0e7f52dc916a8",
+          "base64_len": 67216
+         }
+        },
+        {
+         "text": "Reference photo — Original photo (melisa-aydirek-canva.jpg) / Canva raw image (ee7687f3-7b48-4a25-b82f-ae776d18adb5.jpg):"
+        },
+        {
+         "inlineData": {
+          "mimeType": "image/jpeg",
+          "sha256": "39a078426f3cad0e",
+          "base64_len": 187008
+         }
+        },
+        {
+         "text": "Reference photo — Original photo (melisa-aydirek.jpg):"
+        },
+        {
+         "inlineData": {
+          "mimeType": "image/jpeg",
+          "sha256": "bb308f679d479200",
+          "base64_len": 191004
+         }
+        },
+        {
+         "text": "Here is the framing-corrected portrait (`kadraj`) of this person where their original face is 100% preserved and the head-and-shoulders framing is centered with headroom:"
+        },
+        {
+         "inlineData": {
+          "mimeType": "image/jpeg",
+          "sha256": "f72b8811d87099b2",
+          "base64_len": 120652
+         }
+        },
+        {
+         "text": "And here is our target medium-grey studio backdrop reference (`bilgehan-zeki-ozaytac.jpg` — note the medium-grey seamless studio background with subtle vignette and clean studio lighting):"
+        },
+        {
+         "inlineData": {
+          "mimeType": "image/jpeg",
+          "sha256": "2f064048d3ef396e",
+          "base64_len": 75324
+         }
+        },
+        {
+         "text": "TASK 1 (Natural Medium-Grey Studio Portrait / Gri Fon): Using the framing-corrected portrait and all original reference photos of this person above, produce a natural head-and-shoulders studio portrait on a flat medium-grey studio background matching Bilgehan's studio backdrop (NOT pure white, NOT black). IMPORTANT:\n1. NO stiff biometric/ID rules: preserve the person's natural head angle, posture, authentic expression/smile, hairstyle or headscarf wrap, glasses (if worn), and clothing from their framing-corrected photo.\n2. Keep their face 100% faithful to the real person—do NOT beautify, smooth skin texture, slim the face, change eye/nose/lip/eyebrow shape, or alter age.\n3. Head-and-shoulders framing with comfortable headroom above the hair/headscarf and both shoulders visible. If a hand is raised to the face/hair in a selfie, remove/lower the hand cleanly.\n4. Soft, even professional studio lighting on the subject that matches the medium-grey backdrop, sharp focus across the subject, no shallow depth-of-field blur, no text or logos. \nPerson details: Long straight dark brown hair, warm tan skin, dark brown eyes, red lipstick, slight playful smile, wearing a beige/gold sleeveless top."
+        }
+       ]
+      },
+      {
+       "parts": [
+        {
+         "inlineData": {
+          "mimeType": "image/jpeg",
+          "sha256": "ad29df6be4e912e0",
+          "base64_len": 909572
+         }
+        }
+       ],
+       "role": "model"
+      },
+      {
+       "role": "user",
+       "parts": [
+        {
+         "text": "TASK 2 (Standard White-Background Studio Vesikalık): Now, in the same conversation for this EXACT same person, create a standard white-background studio portrait (vesikalık) for our team cards. IMPORTANT:\n1. Plain pure white seamless studio background (#FFFFFF).\n2. Front-facing head-and-shoulders portrait, centered, eyes at ~40% from the top, comfortable headroom above the hair/headscarf, both shoulders visible, soft even studio lighting.\n3. Preserve the exact same person's facial identity from the original photos and previous turn—do NOT beautify, slim, smooth skin, or change eye shape, eyebrow arch, nose shape, lips, jawline, or glasses.\n4. Keep their own clothing tidied up (remove outdoor caps, safety hard hats, or sunglasses resting on top of the head if any; keep prescription eyeglasses and headscarves). No hands, no text, no logos. Photorealistic studio camera photo. \nPerson details: Long straight dark brown hair, warm tan skin, dark brown eyes, red lipstick, slight playful smile, wearing a beige/gold sleeveless top."
+        }
+       ]
+      },
+      {
+       "parts": [
+        {
+         "inlineData": {
+          "mimeType": "image/jpeg",
+          "sha256": "072f5a20d3fd652d",
+          "base64_len": 849828
+         }
+        }
+       ],
+       "role": "model"
+      },
+      {
+       "role": "user",
+       "parts": [
+        {
+         "text": "Keep her exact pose and face from this photo:"
+        },
+        {
+         "inlineData": {
+          "mimeType": "image/jpeg",
+          "sha256": "b5e72159b8584637",
+          "base64_len": 93760
+         }
+        },
+        {
+         "text": "Target medium-grey studio backdrop:"
+        },
+        {
+         "inlineData": {
+          "mimeType": "image/jpeg",
+          "sha256": "2f064048d3ef396e",
+          "base64_len": 75324
+         }
+        },
+        {
+         "text": "For the medium-grey studio portrait (gri-fon), do NOT force a front-facing pose that changes her face! Keep her exact 3/4 pose, head tilt, playful side smile, red lipstick, dark brown eyes, long straight dark brown hair, and gold/beige sleeveless top from the attached `kadraj` photo—ONLY replace the background with the seamless medium-grey studio backdrop matching Bilgehan's studio portrait and unify the studio lighting."
+        }
+       ]
+      }
+     ],
+     "generationConfig": {
+      "responseModalities": [
+       "TEXT",
+       "IMAGE"
+      ],
+      "imageConfig": {
+       "aspectRatio": "1:1"
+      }
+     }
+    },
+    "referanslar": null
+   }
+  ]
+ },
+ "istem_sabitleri": null,
+ "not": "agy çağrı kaydındaki istemler ve referanslar"
+}

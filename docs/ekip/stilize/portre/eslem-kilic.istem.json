@@ -1,0 +1,38 @@
+{
+ "model": "gemini-3-pro-image",
+ "uretici": "Claude (önceki oturum)",
+ "betik": [
+  "docs/ekip/yz/talimatlar/claude-onceki/portre.py",
+  "docs/ekip/yz/talimatlar/claude-onceki/portre2.py",
+  "docs/ekip/yz/talimatlar/claude-onceki/duzelt.py"
+ ],
+ "istem_sabitleri": {
+  "portre.py": [
+   "Create a portrait illustration of the exact person in the reference photo. Faithful likeness is the top priority: keep their face shape, eye shape, nose, lips, eyebrows, skin tone, age, hair or headscarf (same color, pattern and wrapping), glasses frame shape and color, beard or moustache exactly as in the photo. Do not beautify, slim, or change ethnicity. Same clothing colors as the photo. Framing: head and shoulders, facing the viewer as in the photo, head centered horizontally, generous space above the head (about 15 percent of the height), shoulders reaching the bottom edge. Style: soft editorial watercolor and colored pencil illustration, visible paper texture, gentle warm light. Background: plain warm cream paper with a very light watercolor wash, nothing else. No text, no logos, no frame. Square image.",
+   "https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image:generateContent"
+  ],
+  "portre2.py": [
+   "Style: soft editorial watercolor and colored pencil illustration, visible paper texture, gentle warm light. Framing: head and shoulders bust, head about 40 percent of the image height, generous space above the head, centered, cropped at mid-chest. Background: plain warm cream paper with a very light watercolor wash. No text, no logos, no frame. Square image. Faithful likeness is the top priority: keep face shape, eyes, nose, lips, eyebrows, skin tone, age, hair or headscarf, glasses and beard exactly; do not beautify or slim.",
+   "All three references are the same man, mid 30s: wavy dark brown hair swept back with some volume, full dark beard and moustache neatly trimmed, warm brown eyes, slight friendly smile, rounded cheeks. Keep his real proportions and age. Black zip-up fleece jacket. ",
+   "All four references are close-ups of the same man, around 30 years old. Copy his exact facial structure: long narrow face with a strong jaw, short thick dark hair cut short on the sides with a little volume on top, thick straight dark eyebrows, slightly hooded deep-set eyes, long straight prominent nose, full dark beard trimmed close on the cheeks, dark moustache. He is NOT a generic young model: keep his real proportions and age. Natural friendly smile showing teeth, black t-shirt. ",
+   "Draw a portrait of the young woman wearing the brown headscarf (not the bald man with glasses): same headscarf color and wrapping, same olive-brown jacket, gentle smile. ",
+   "All references show the same bald man with a short dark beard and moustache: in the group photos he is the bald man wearing blue rectangular glasses (not the other people). Draw a portrait of him only, wearing his blue rectangular glasses, short greying dark beard, calm friendly smile, dark brown t-shirt. ",
+   "https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image:generateContent",
+   "Create a portrait illustration from these reference photos. "
+  ],
+  "duzelt.py": [
+   "He is a 21-year-old university student; draw him young (early twenties), not older. Long narrow face, prominent straight nose, thick straight eyebrows close to the eyes, deep-set eyes, short thick dark hair, full dark beard. Use a calm closed-mouth slight smile as in the close-up photo.",
+   "The face is too small and generic. Make the head much larger (about 40 percent of image height). Her face is round and soft with full cheeks, warm skin tone, almond eyes, gentle closed smile; patterned mauve-brown satin headscarf wrapped loosely as in the photo.",
+   "The face is too small and generic. Make the head larger (about 40 percent of image height). Her face: long oval face, pale skin, thick dark straight eyebrows, light hazel eyes, straight nose, soft closed smile; plain brown headscarf; olive-brown jacket.",
+   "The portrait looks like a different woman. Her face is rounder with fuller cheeks, warm tan skin, large dark brown eyes, dark brown hair (not light), a playful slight side smile and red lipstick, head slightly tilted as in the photo.",
+   "The head is far too small and he looks too old. Make the head large (about 40 percent of image height) and draw him younger-looking, smooth skin, no deep wrinkles, beard mostly dark with only a little grey. Bald round head, blue rectangular glasses, short dark beard, moustache, calm friendly face; dark brown t-shirt. In group photos he is the bald man with glasses.",
+   "We are making a consistent set of watercolor team portraits. These three finished portraits define the style, framing and paper background that every portrait must share:",
+   "Real reference photos of the person to draw (likeness must come from these):",
+   "Our current portrait of this person, which needs correction:",
+   " Keep the exact same style, paper background, head-and-shoulders framing with space above the head as the three style portraits. Faithful likeness first; do not beautify. No text. Square image.",
+   "https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image:generateContent",
+   "Redraw this person's portrait. Corrections: "
+  ]
+ },
+ "not": "çağrı başına istem saklanmadı; istemler bu betiklerdeki sabitlerden kuruluyor"
+}

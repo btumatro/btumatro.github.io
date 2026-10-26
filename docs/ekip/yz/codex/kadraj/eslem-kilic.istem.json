@@ -1,0 +1,100 @@
+{
+ "model": "gemini-3-pro-image",
+ "uretici": "agy (Antigravity CLI)",
+ "gorev_notu": "docs/ekip/yz/CODEX-GOREV.md",
+ "betik": [
+  "docs/ekip/yz/talimatlar/agy/uret_26_kadraj_poisson.py",
+  "docs/ekip/yz/talimatlar/agy/uret_ek9_8kadraj.py",
+  "docs/ekip/yz/talimatlar/agy/fix_ek10_2kadraj.py"
+ ],
+ "cagrilar": {
+  "kadraj_ek5_try1": [
+   {
+    "zaman": "2026-10-25T23:37:25Z",
+    "istem": null,
+    "referanslar": [
+     {
+      "file": "eslem-kilic-canva.jpg",
+      "sha256_16": "e57b3b9aff723c67",
+      "size": [
+       1200,
+       1599
+      ]
+     },
+     {
+      "file": "grey_canvas_600.jpg",
+      "sha256_16": "3c1102ca94534965",
+      "size": [
+       600,
+       600
+      ]
+     }
+    ]
+   }
+  ],
+  "kadraj_ek9_try1": [
+   {
+    "zaman": "2026-10-26T00:10:48Z",
+    "istem": null,
+    "referanslar": [
+     {
+      "file": "eslem-kilic-canva.jpg",
+      "sha256_16": "e57b3b9aff723c67",
+      "size": [
+       1200,
+       1599
+      ]
+     },
+     {
+      "file": "eslem-kilic.jpg",
+      "sha256_16": "e8b06b8521433e99",
+      "size": [
+       1200,
+       1599
+      ]
+     },
+     {
+      "file": "canvas_600.jpg",
+      "sha256_16": "6f99ac5addffe3b5",
+      "size": [
+       600,
+       600
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "istem_sabitleri": {
+  "docs/ekip/yz/talimatlar/agy/uret_26_kadraj_poisson.py": [
+   "/Users/wildgenie/.gemini/antigravity-cli/brain/482501c3-e797-49fa-a7d5-231ae28c4675/scratch",
+   "\n    Collect all uncropped originals from docs/ekip/orijinal/<slug>*.jpg and docs/ekip/alternatif/<slug>.jpg.\n    Find the uncropped original that matches the site photo scene best (highest NCC match) and place it LAST\n    before the framing canvas.\n    ",
+   "\n    Align real_crop_600 / site_bgr to gem_bgr and blend ONLY the inner elliptical face oval\n    using Poisson seamlessClone (cv2.NORMAL_CLONE).\n    ",
+   "\n    Mandatory automatic seam check from Ek istek 4:\n    1. Compute blur(3) - blur(25).\n    2. Search for long horizontal/vertical step edges across rows and columns.\n    3. Search for Hough lines near real_box boundaries.\n    4. Directly measure directional step energy right on real_box boundaries (rx0, ry0, rx1, ry1)\n       vs adjacent bands.\n    ",
+   "İlk görseller kişinin kesilmemiş orijinal referans fotoğraflarıdır. SON GÖRSELDE ise fotoğraf kadrajı genişletilmiş ve fotoğrafta eksik kalan dar kenar şeritleri düz gri (RGB 128,128,128) ile işaretlenmiştir. Son görseldeki kişinin konumunu, boyutunu, duruşunu ve yüzünü HİÇ değiştirmeden, yalnızca düz gri kenar şeritlerini fotoğrafın gerçek arka planı, tavanı, duvarı ve omuzlarıyla kesintisiz, aynı renk ve parlaklıkta tamamla. Gri alanla fotoğraf arasında hiçbir çizgi, basamak, çerçeve veya ton farkı kalmasın.",
+   "https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image:generateContent?key="
+  ],
+  "docs/ekip/yz/talimatlar/agy/uret_ek9_8kadraj.py": [
+   "/Users/wildgenie/.gemini/antigravity-cli/brain/482501c3-e797-49fa-a7d5-231ae28c4675/scratch",
+   "\n    Solve Laplace's equation (harmonic membrane interpolation) outside the interior of valid_600\n    so that (gem_bgr + offset) matches real_crop_600 with 0.000 step along the boundary of valid_600!\n    ",
+   "\n    Burt-Adelson Laplacian pyramid blending between real_crop_600 (inside valid_600)\n    and gem_corrected (outside valid_600), using a slightly curved/feathered mask inside the\n    margin of valid_600 so 100% of the face and interior background remain exact original pixels,\n    while the transition has zero step at all spatial frequencies.\n    ",
+   "\n    Ensure gem_bgr is pixel-aligned with real_crop_600 (in case Gemini slightly shifted/scaled the image by a few pixels)\n    before running harmonic offset + multiband blend!\n    ",
+   "\n    1. Check that 100% of core_mask (face + original background) has 0.0 difference from real_crop_600.\n    2. Check blur(3) - blur(25) for any straight seam along real_box boundary.\n    ",
+   "docs/ekip/orijinal/zeynep-seher-yolasigmaz-canva.jpg",
+   "docs/ekip/orijinal/melisa-aydirek-canva.jpg",
+   "docs/ekip/orijinal/nusret-bircan-keser.jpg",
+   "https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image:generateContent?key=",
+   "Sol ve sağ kenardaki gri şeritleri yalnızca parktaki yeşil çalılar, ağaçlar ve yürüyüş yoluyla doldur; kenarlara başka insan, yüz veya saç ÇİZME.",
+   "İlk görseller kişinin kesilmemiş orijinal fotoğraflarıdır. SON GÖRSELDE fotoğrafın kenarlarındaki eksik dar şeritler düz gri (RGB 128,128,128) ile işaretlenmiştir. Son görselin iç kısmındaki görüntüyü (yüzü, saçları ve mevcut arka planı) HİÇ değiştirmeden ve yeniden çizmeden, yalnızca gri şeritleri hemen yanındaki mevcut arka planın düz ve doğal devamı olarak doldur. ",
+   "Üst ve yan kenarlardaki gri şeritleri mevcut duvarın/dolabın/saçın düz ve doğal devamı olarak doldur; yeni raf, çizgi, kiriş veya farklı bir oda detayı EKLEME."
+  ],
+  "docs/ekip/yz/talimatlar/agy/fix_ek10_2kadraj.py": [
+   "/Users/wildgenie/.gemini/antigravity-cli/brain/482501c3-e797-49fa-a7d5-231ae28c4675/scratch",
+   "\n    True Dirichlet Laplace solver for the outer strip (valid_mask == 0):\n    1. Inside valid_mask, the offset u = real_bgr - gem_bgr is known along the boundary band.\n    2. Outside valid_mask, we NEVER look at real_bgr (which has border reflections!).\n       Instead, we initialize u outside valid_mask from the mean boundary offset and solve\n       Laplace's equation (Δu = 0) with Dirichlet boundary conditions on the interior boundary\n       and Neumann (zero-slope) boundary conditions on the outer canvas edges.\n    ",
+   "\n    Smoothly transition across the valid_mask boundary using BORDER_REPLICATE during erosion\n    so the left, right, and bottom edges of the 600x600 frame are NEVER eroded when they are already valid!\n    ",
+   "docs/ekip/orijinal/zeynep-seher-yolasigmaz-canva.jpg",
+   "kadraj_ek5_cache/zeynep-seher-yolasigmaz_try2.jpg"
+  ]
+ },
+ "not": "agy bu görevde istem metnini kaydetmemiş (yalnız referanslar); istem betikteki sabitlerden kuruluyor"
+}

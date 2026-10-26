@@ -1,0 +1,158 @@
+{
+ "model": "gemini-3-pro-image",
+ "uretici": "agy (Antigravity CLI)",
+ "gorev_notu": "docs/ekip/yz/CODEX-GOREV.md",
+ "betik": [
+  "docs/ekip/yz/talimatlar/agy/uret_26_kadraj_poisson.py",
+  "docs/ekip/yz/talimatlar/agy/uret_ek9_8kadraj.py",
+  "docs/ekip/yz/talimatlar/agy/fix_ek10_2kadraj.py"
+ ],
+ "cagrilar": {
+  "kadraj_ek4": [
+   {
+    "zaman": "2026-10-25T23:19:43Z",
+    "istem": "Yukarıda aynı kişinin kesilmemiş orijinal referans fotoğrafları verilmiştir. SON GÖRSELDEKİ fotoğrafı temel alarak, aynı sahneyi, aynı arka planı, aynı kıyafeti/başörtüsünü/gözlüğü ve kişinin birebir aynı yüzünü/ifadesini koruyarak 1:1 kare kadraj düzeltmesi yap:\n- Baş yatayda tam ortada olsun.\n- Başın, saçın veya başörtüsünün en üst noktası ile üst kenar arasında rahat bir boşluk (en az %12-%15 tavan/arka plan payı) bulunsun, kafa üst kenara değmesin.\n- Alt kısımda her iki omuz net biçimde görünsün.\n- Kişiyi çok küçültme veya aşırı uzaklaştırma; standart bir ekip kartı portresi ölçeğinde (baş-omuz) olsun.\n- Arka planı doğal dokusuyla kesintisiz devam ettir; hiçbir çerçeve, kutu izi, kenar çizgisi veya yapay nesne olmasın.",
+    "referanslar": [
+     {
+      "file": "emine-sultan-gunes-canva.jpg",
+      "sha256_16": "6e08eeb281ad88d6",
+      "size": [
+       1200,
+       1600
+      ]
+     },
+     {
+      "file": "emine-sultan-gunes.jpg",
+      "sha256_16": "0e25142e099effe7",
+      "size": [
+       1200,
+       1600
+      ]
+     }
+    ]
+   }
+  ],
+  "kadraj_soft_guide_test": [
+   {
+    "zaman": "2026-10-25T23:22:15Z",
+    "istem": null,
+    "referanslar": [
+     {
+      "file": "emine-sultan-gunes-canva.jpg",
+      "sha256_16": "6e08eeb281ad88d6",
+      "size": [
+       1200,
+       1600
+      ]
+     },
+     {
+      "file": "emine-sultan-gunes.jpg",
+      "sha256_16": "0e25142e099effe7",
+      "size": [
+       1200,
+       1600
+      ]
+     },
+     {
+      "file": "soft_guide.jpg",
+      "sha256_16": "12b74d85303b7c47",
+      "size": [
+       600,
+       600
+      ]
+     }
+    ]
+   }
+  ],
+  "kadraj_clean_zoomout": [
+   {
+    "zaman": "2026-10-25T23:25:20Z",
+    "istem": null,
+    "referanslar": [
+     {
+      "file": "emine-sultan-gunes-canva.jpg",
+      "sha256_16": "6e08eeb281ad88d6",
+      "size": [
+       1200,
+       1600
+      ]
+     },
+     {
+      "file": "emine-sultan-gunes.jpg",
+      "sha256_16": "0e25142e099effe7",
+      "size": [
+       1200,
+       1600
+      ]
+     },
+     {
+      "file": "clean_target_crop.jpg",
+      "sha256_16": "5bd87b729e34b480",
+      "size": [
+       1500,
+       1877
+      ]
+     }
+    ]
+   }
+  ],
+  "kadraj_uncropped_poisson": [
+   {
+    "zaman": "2026-10-25T23:30:15Z",
+    "istem": null,
+    "referanslar": [
+     {
+      "file": "emine-sultan-gunes-canva.jpg",
+      "sha256_16": "6e08eeb281ad88d6",
+      "size": [
+       1200,
+       1600
+      ]
+     },
+     {
+      "file": "emine-sultan-gunes.jpg",
+      "sha256_16": "0e25142e099effe7",
+      "size": [
+       1200,
+       1600
+      ]
+     },
+     {
+      "file": "grey_canvas_600.jpg",
+      "sha256_16": "d91aa6907c2a199a",
+      "size": [
+       600,
+       600
+      ]
+     }
+    ]
+   }
+  ],
+  "kadraj_ek5_try1": [
+   {
+    "zaman": "2026-10-25T23:35:11Z",
+    "istem": null,
+    "referanslar": [
+     {
+      "file": "emine-sultan-gunes-canva.jpg",
+      "sha256_16": "6e08eeb281ad88d6",
+      "size": [
+       1200,
+       1600
+      ]
+     },
+     {
+      "file": "grey_canvas_600.jpg",
+      "sha256_16": "acd731aa2b95402d",
+      "size": [
+       600,
+       600
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "istem_sabitleri": null,
+ "not": "agy çağrı kaydındaki istemler ve referanslar"
+}

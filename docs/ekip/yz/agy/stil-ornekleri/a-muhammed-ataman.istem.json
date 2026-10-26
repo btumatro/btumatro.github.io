@@ -1,0 +1,448 @@
+{
+ "model": "gemini-3-pro-image",
+ "uretici": "agy (Antigravity CLI)",
+ "gorev_notu": "docs/ekip/yz/CODEX-GOREV.md",
+ "betik": [
+  "docs/ekip/yz/talimatlar/agy/uret_ek10_stil_ve_sheet.py",
+  "docs/ekip/yz/talimatlar/agy/fix_ek10_13_stiller.py"
+ ],
+ "cagrilar": {
+  "stil_a": [
+   {
+    "zaman": null,
+    "istem": null,
+    "referanslar": [
+     {
+      "file": "muhammed-ataman-yuz-1.jpg",
+      "role": "kesilmemiş orijinal fotoğraf #1 (yüz/kimlik referansı)",
+      "sha256_16": "05157f298bf1bddd",
+      "size": [
+       1200,
+       1200
+      ]
+     },
+     {
+      "file": "muhammed-ataman-yuz-2.jpg",
+      "role": "kesilmemiş orijinal fotoğraf #2 (yüz/kimlik referansı)",
+      "sha256_16": "9a6a147ea0d561f1",
+      "size": [
+       1200,
+       1200
+      ]
+     },
+     {
+      "file": "muhammed-ataman-yuz-3.jpg",
+      "role": "kesilmemiş orijinal fotoğraf #3 (yüz/kimlik referansı)",
+      "sha256_16": "92e09018250d8cc1",
+      "size": [
+       300,
+       300
+      ]
+     },
+     {
+      "file": "muhammed-ataman.jpg",
+      "role": "kesilmemiş orijinal fotoğraf #4 (yüz/kimlik referansı)",
+      "sha256_16": "39451d20e03bac80",
+      "size": [
+       787,
+       1400
+      ]
+     },
+     {
+      "file": "muhammed-ataman.jpg",
+      "role": "kesilmemiş orijinal fotoğraf #5 (yüz/kimlik referansı)",
+      "sha256_16": "e828ab4bcdd77054",
+      "size": [
+       600,
+       600
+      ]
+     },
+     {
+      "file": "muhammed-ataman.jpg",
+      "role": "gri fon stüdyo portresi (ana duruş ve baş-omuz kadraj referansı)",
+      "sha256_16": "0c57ebdc924e3258",
+      "size": [
+       600,
+       600
+      ]
+     },
+     {
+      "file": "morph_07_yakin_plan_mimik.jpg",
+      "role": "yalnız stil referansı",
+      "sha256_16": "f6510ad5b066d07d",
+      "size": [
+       1200,
+       670
+      ]
+     },
+     {
+      "file": "10_sahne_zeki_kisisel_itiraf_cene_elde_05_38.jpg",
+      "role": "yalnız stil referansı",
+      "sha256_16": "ec5f90e5d9720cbc",
+      "size": [
+       1200,
+       670
+      ]
+     }
+    ]
+   }
+  ],
+  "stil_b": [
+   {
+    "zaman": null,
+    "istem": null,
+    "referanslar": [
+     {
+      "file": "KARAKTER_KIMLIK_PAFTASI_v1.jpg",
+      "role": "yalnız stil referansı",
+      "sha256_16": "730b5d97f5739a68",
+      "size": [
+       1029,
+       1200
+      ]
+     }
+    ]
+   }
+  ],
+  "stil_c": [
+   {
+    "zaman": null,
+    "istem": null,
+    "referanslar": []
+   }
+  ],
+  "stil_d": [
+   {
+    "zaman": null,
+    "istem": null,
+    "referanslar": []
+   }
+  ],
+  "stil_e": [
+   {
+    "zaman": null,
+    "istem": null,
+    "referanslar": []
+   }
+  ],
+  "stil_f": [
+   {
+    "zaman": null,
+    "istem": null,
+    "referanslar": []
+   }
+  ],
+  "stil_b_v2": [
+   {
+    "zaman": null,
+    "istem": null,
+    "referanslar": [
+     {
+      "file": "muhammed-ataman-yuz-1.jpg",
+      "role": "kesilmemiş orijinal fotoğraf #1 (yüz/kimlik referansı)",
+      "sha256_16": "05157f298bf1bddd",
+      "size": [
+       1200,
+       1200
+      ]
+     },
+     {
+      "file": "muhammed-ataman-yuz-2.jpg",
+      "role": "kesilmemiş orijinal fotoğraf #2 (yüz/kimlik referansı)",
+      "sha256_16": "9a6a147ea0d561f1",
+      "size": [
+       1200,
+       1200
+      ]
+     },
+     {
+      "file": "muhammed-ataman-yuz-3.jpg",
+      "role": "kesilmemiş orijinal fotoğraf #3 (yüz/kimlik referansı)",
+      "sha256_16": "92e09018250d8cc1",
+      "size": [
+       300,
+       300
+      ]
+     },
+     {
+      "file": "muhammed-ataman.jpg",
+      "role": "kesilmemiş orijinal fotoğraf #4 (yüz/kimlik referansı)",
+      "sha256_16": "39451d20e03bac80",
+      "size": [
+       787,
+       1400
+      ]
+     },
+     {
+      "file": "muhammed-ataman.jpg",
+      "role": "kesilmemiş orijinal fotoğraf #5 (yüz/kimlik referansı)",
+      "sha256_16": "e828ab4bcdd77054",
+      "size": [
+       600,
+       600
+      ]
+     },
+     {
+      "file": "muhammed-ataman.jpg",
+      "role": "gri fon stüdyo portresi (ana duruş ve baş-omuz kadraj referansı)",
+      "sha256_16": "0c57ebdc924e3258",
+      "size": [
+       600,
+       600
+      ]
+     },
+     {
+      "file": "KARAKTER_KIMLIK_PAFTASI_v1.jpg",
+      "role": "yalnız stil referansı",
+      "sha256_16": "bfc5132e0c47f6a3",
+      "size": [
+       667,
+       1200
+      ]
+     }
+    ]
+   }
+  ],
+  "stil_d_v2": [
+   {
+    "zaman": null,
+    "istem": null,
+    "referanslar": [
+     {
+      "file": "muhammed-ataman-yuz-1.jpg",
+      "role": "kesilmemiş orijinal fotoğraf #1 (yüz/kimlik referansı)",
+      "sha256_16": "05157f298bf1bddd",
+      "size": [
+       1200,
+       1200
+      ]
+     },
+     {
+      "file": "muhammed-ataman-yuz-2.jpg",
+      "role": "kesilmemiş orijinal fotoğraf #2 (yüz/kimlik referansı)",
+      "sha256_16": "9a6a147ea0d561f1",
+      "size": [
+       1200,
+       1200
+      ]
+     },
+     {
+      "file": "muhammed-ataman-yuz-3.jpg",
+      "role": "kesilmemiş orijinal fotoğraf #3 (yüz/kimlik referansı)",
+      "sha256_16": "92e09018250d8cc1",
+      "size": [
+       300,
+       300
+      ]
+     },
+     {
+      "file": "muhammed-ataman.jpg",
+      "role": "kesilmemiş orijinal fotoğraf #4 (yüz/kimlik referansı)",
+      "sha256_16": "39451d20e03bac80",
+      "size": [
+       787,
+       1400
+      ]
+     },
+     {
+      "file": "muhammed-ataman.jpg",
+      "role": "kesilmemiş orijinal fotoğraf #5 (yüz/kimlik referansı)",
+      "sha256_16": "e828ab4bcdd77054",
+      "size": [
+       600,
+       600
+      ]
+     },
+     {
+      "file": "muhammed-ataman.jpg",
+      "role": "gri fon stüdyo portresi (ana duruş ve baş-omuz kadraj referansı)",
+      "sha256_16": "0c57ebdc924e3258",
+      "size": [
+       600,
+       600
+      ]
+     }
+    ]
+   }
+  ],
+  "stil_e_v2": [
+   {
+    "zaman": null,
+    "istem": null,
+    "referanslar": [
+     {
+      "file": "muhammed-ataman-yuz-1.jpg",
+      "role": "kesilmemiş orijinal fotoğraf #1 (yüz/kimlik referansı)",
+      "sha256_16": "05157f298bf1bddd",
+      "size": [
+       1200,
+       1200
+      ]
+     },
+     {
+      "file": "muhammed-ataman-yuz-2.jpg",
+      "role": "kesilmemiş orijinal fotoğraf #2 (yüz/kimlik referansı)",
+      "sha256_16": "9a6a147ea0d561f1",
+      "size": [
+       1200,
+       1200
+      ]
+     },
+     {
+      "file": "muhammed-ataman-yuz-3.jpg",
+      "role": "kesilmemiş orijinal fotoğraf #3 (yüz/kimlik referansı)",
+      "sha256_16": "92e09018250d8cc1",
+      "size": [
+       300,
+       300
+      ]
+     },
+     {
+      "file": "muhammed-ataman.jpg",
+      "role": "kesilmemiş orijinal fotoğraf #4 (yüz/kimlik referansı)",
+      "sha256_16": "39451d20e03bac80",
+      "size": [
+       787,
+       1400
+      ]
+     },
+     {
+      "file": "muhammed-ataman.jpg",
+      "role": "kesilmemiş orijinal fotoğraf #5 (yüz/kimlik referansı)",
+      "sha256_16": "e828ab4bcdd77054",
+      "size": [
+       600,
+       600
+      ]
+     },
+     {
+      "file": "muhammed-ataman.jpg",
+      "role": "gri fon stüdyo portresi (ana duruş ve baş-omuz kadraj referansı)",
+      "sha256_16": "0c57ebdc924e3258",
+      "size": [
+       600,
+       600
+      ]
+     }
+    ]
+   }
+  ],
+  "stil_f_v2": [
+   {
+    "zaman": null,
+    "istem": null,
+    "referanslar": [
+     {
+      "file": "muhammed-ataman-yuz-1.jpg",
+      "role": "kesilmemiş orijinal fotoğraf #1 (yüz/kimlik referansı)",
+      "sha256_16": "05157f298bf1bddd",
+      "size": [
+       1200,
+       1200
+      ]
+     },
+     {
+      "file": "muhammed-ataman-yuz-2.jpg",
+      "role": "kesilmemiş orijinal fotoğraf #2 (yüz/kimlik referansı)",
+      "sha256_16": "9a6a147ea0d561f1",
+      "size": [
+       1200,
+       1200
+      ]
+     },
+     {
+      "file": "muhammed-ataman-yuz-3.jpg",
+      "role": "kesilmemiş orijinal fotoğraf #3 (yüz/kimlik referansı)",
+      "sha256_16": "92e09018250d8cc1",
+      "size": [
+       300,
+       300
+      ]
+     },
+     {
+      "file": "muhammed-ataman.jpg",
+      "role": "kesilmemiş orijinal fotoğraf #4 (yüz/kimlik referansı)",
+      "sha256_16": "39451d20e03bac80",
+      "size": [
+       787,
+       1400
+      ]
+     },
+     {
+      "file": "muhammed-ataman.jpg",
+      "role": "kesilmemiş orijinal fotoğraf #5 (yüz/kimlik referansı)",
+      "sha256_16": "e828ab4bcdd77054",
+      "size": [
+       600,
+       600
+      ]
+     },
+     {
+      "file": "muhammed-ataman.jpg",
+      "role": "gri fon stüdyo portresi (ana duruş ve baş-omuz kadraj referansı)",
+      "sha256_16": "0c57ebdc924e3258",
+      "size": [
+       600,
+       600
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "istem_sabitleri": {
+  "docs/ekip/yz/talimatlar/agy/uret_ek10_stil_ve_sheet.py": [
+   "/Users/wildgenie/.gemini/antigravity-cli/brain/482501c3-e797-49fa-a7d5-231ae28c4675/scratch",
+   "/Users/wildgenie/Projects/gemini-prompt-arena/kaynak/avatar/morph_07_yakin_plan_mimik.jpg",
+   "/Users/wildgenie/Projects/gemini-prompt-arena/kaynak/avatar/10_sahne_zeki_kisisel_itiraf_cene_elde_05_38.jpg",
+   "/Users/wildgenie/Projects/gemini-prompt-arena/kaynak/avatar/KARAKTER_KIMLIK_PAFTASI_v1.jpg",
+   "\n    Item 3 of Ek istek 10: Generate character identity sheets in style a) and style b)\n    for Adem Bağlan in the same conversation context (using his uncropped originals + gri-fon + approved style portrait + layout reference).\n    ",
+   "\n    Build docs/ekip/kontrol/stil-ornekleri.jpg:\n    Rows = 3 people (15. Adem Bağlan, 01. Irmak Karaağaç, 02. Muhammed Ataman)\n    Columns = [0. Gri Fon (Referans)] + 6 numbered styles (1. a) Zeki Reels Sahne .. 6. f) Çizgi Roman (Halftone))\n    ",
+   "Kısa siyah saç (yanları kısa kesim, üstü hafif dalgalı), dikdörtgen-oval yüz yapısı, belirgin siyah kaşlar, bıyık ve çene sakalı birleşik (keçi sakalı, yanaklar seyrek/temiz), melanj kot mavisi polo yaka tişört; lacivert yakasında ince beyaz ve turuncu-kırmızı şeritler, yaka içi turuncu-kırmızı patlı ve iki açık renk düğmeli.",
+   "Üstte melanj kot mavisi polo yaka tişört (lacivert yakasında ince beyaz ve turuncu-kırmızı şeritler, turuncu-kırmızı iç pat ve iki düğme), altta koyu lacivert düz kesim kot pantolon ve koyu gri-beyaz tabanlı sade spor ayakkabı.",
+   "Yüzü düzgünce çevreleyen ve boyun etrafında yumuşak katlarla sarılı düz mat siyah başörtüsü, açık buğday ten, simetrik oval yüz, belirgin düzgün kavisli koyu kaşlar, sıcak kahverengi gözler, dişleri hafif görünen doğal ve samimi gülümseme, üzerinde düz koyu lacivert bisiklet yaka uzun kollu üst.",
+   "Düz mat siyah başörtüsü, koyu lacivert uzun kollu tunik/üst, koyu gri-lacivert bol kesim pantolon ve sade siyah düz ayakkabı.",
+   "Orta uzunlukta gür ve hafif dalgalı siyah-kırçıllı saçlar, kısa tam sakal ve bıyık, sakin ve içten ifade, boynunda siyah ve koyu gri yatay çizgili örgü atkı, üzerinde dik yakalı ve fermuar detaylı açık krem/ekru kapitone şişme mont.",
+   "Boynunda siyah ve koyu gri çizgili örgü atkı, açık krem/ekru kapitone şişme mont, koyu antrasit pantolon ve siyah bot.",
+   "STİL A (Zeki Reels Sahne Tarzı): Eklenen son iki görseli YALNIZCA çizim üslubu, mürekkep kontur kalınlığı, boyama tekniği, sinematik ışık ve arka plan atmosferi referansı olarak kullan (referans görseldeki kel/gözlüklü kişinin yüzünü ASLA kopyalama). Bu ekip üyesinin baş-omuz (head-and-shoulders) 1:1 portresini çizgi roman / grafik roman illüstrasyonu tarzında üret: ince ve net koyu mürekkep konturlar, yumuşak geçişli boyalı gölgeleme (cel + soft painted shading), yandan vuran sıcak kehribar masa lambası ışığı vurgusu ve soğuk lacivert gölge dolgusu. Arka plan: referans sahne karelerindeki gibi sade koyu lacivert-gri (#1e2631) duvar, sağ alt tarafa doğru hafif sıcak kehribar ışık halesi. Gerçekçi insan yüz oranlarını birebir koru; büyük göz, karikatür abartısı veya güzelleştirme yapma.",
+   "STİL B (Zeki Karakter Paftası Tarzı): Eklenen son görseli YALNIZCA çizim tekniği, kontur yapısı, düz boyama ve arka plan rengi referansı olarak kullan (referans paftadaki karakterlerin yüzünü veya kıyafetini ASLA kopyalama). Aynı ekip üyesinin baş-omuz (head-and-shoulders) 1:1 portresini düz 2B çizgi film (clean 2D cartoon character sheet) tarzında üret: temiz ve belirgin koyu kontur çizgileri, gradyansız düz renk yüzeyleri ve tek kademeli yumuşak cel-gölge. Arka plan: referans paftadakiyle aynı düz, homojen sıcak gri-bej (#bfb6a8) fon. Gerçekçi yüz oranlarını, saç/başörtüsü/sakal yapısını ve kendi kıyafetini birebir koru; büyük göz veya anime abartısı yapma.",
+   "STİL C (Yumuşak 3B Animasyon Filmi Karakteri): Aynı ekip üyesinin baş-omuz (head-and-shoulders) 1:1 portresini yüksek kaliteli yumuşak 3B animasyon filmi karakteri (stylized 3D animated feature film portrait) tarzında üret: yumuşak cilt alt saçılımı (subsurface scattering), doğal dokulu saç/başörtüsü ve kumaş yüzeyi, yumuşak stüdyo anahtar ışığı ve zarif kenar ışığı (rim light). Arka plan: düz orta-gri stüdyo fonu (#6e7075). Kişinin gerçek yüz kemik yapısını, göz büyüklüğünü, burun ve çene oranlarını birebir koru; büyük bebek gözü veya çocuksu karikatür abartısı yapma, kişi arkadaşları tarafından ilk bakışta tanınmalı.",
+   "STİL D (Düz Vektör / Flat İllüstrasyon): Aynı ekip üyesinin baş-omuz (head-and-shoulders) 1:1 portresini modern düz vektör portre illüstrasyonu (clean flat vector editorial portrait illustration) tarzında üret: net geometrik renk katmanları, keskin ve temiz kenarlı düz ton bloklarıyla tanımlanan yüz hacmi, minimum çizgi, uyumlu mat renk paleti. Arka plan: sade düz sıcak açık gri-krem (#dcd8d0) fon. Kişinin yüz hatlarını, ifadesini, saç/başörtüsü/sakal şeklini ve kendi kıyafetini birebir koru; yüzü basitleştirirken kimliği kaybettirme.",
+   "STİL E (Suluboya Portre): Aynı ekip üyesinin baş-omuz (head-and-shoulders) 1:1 portresini geleneksel el yapımı suluboya portre (fine art watercolor portrait on cold-press textured cotton paper) tarzında üret: ince kurşun kalem ve mürekkep eskiz çizgileri üzerinde saydam suluboya katmanları, doğal fırça darbeleri, yumuşak su ve pigment geçişleri. Arka plan: hafif suluboya yıkama geçişli açık krem pamuklu kağıt dokusu (#f2ece1). Kişinin gerçek yüz oranlarını, bakışını, saç/başörtüsü/sakal yapısını ve kendi kıyafetini birebir koru.",
+   "STİL F (Çizgi Roman - Kalın Kontur ve Halftone): Aynı ekip üyesinin baş-omuz (head-and-shoulders) 1:1 portresini klasik çizgi roman portresi (classic comic book ink portrait with bold black brush outlines, ink cross-hatching, and subtle Ben-Day halftone dots) tarzında üret: güçlü siyah fırça mürekkep konturlar, grafik tarama gölgeleri ve gölge geçişlerinde ince halftone nokta dokusu, canlı ama doğal çizgi roman renkleri. Arka plan: hafif halftone noktalı sade açık sıcak gri-krem (#e4dfd3) çizgi roman fonu. Kişinin gerçek yüz oranlarını, saç/başörtüsü/sakal yapısını ve kendi kıyafetini birebir koru; abartılı süper kahraman çenesi veya büyük göz çizme.",
+   "https://generativelanguage.googleapis.com/v1beta/models/gemini-3-pro-image:generateContent?key=",
+   "BTU MATRO - Stilize Karakter Örnek Paftası (3 Kişi x 6 Stil Karşılaştırması)",
+   "GEMINI_API_KEY environment variable is not set",
+   "gri fon stüdyo portresi (ana duruş ve baş-omuz kadraj referansı)",
+   "GÖREV: Görsellerdeki gerçek ekip üyesinin (",
+   ") kimliğini, yüz kemik yapısını, göz-kaş-burun-ağız oranlarını, saç/başörtüsü/sakal biçimini ve kendi kıyafetini BİREBİR koruyarak 1:1 kare baş-omuz (head-and-shoulders, göğüs üstünden baş üstünde rahat boşlukla ortalı) portresini üret.\nSABİT KİMLİK ÇAPALARI (her stilde değişmez): ",
+   "\nKESİN KISITLAR: Yüzü güzelleştirme, gençleştirme, başka bir modele benzetme, gözleri büyütme YOK. Görselin içinde hiçbir yazı, etiket, imza veya çerçeve OLMASIN.\n\n",
+   "Zeki Reels Sahne Tarzı (ince koyu mürekkep kontur, yumuşak geçişli boyalı gölgeleme, sıcak kehribar anahtar ışık ve soğuk lacivert gölge dolgu)",
+   "düz açık sıcak gri-bej pafta zemini (#d8d2c7) üzerinde her karakter ve ifade net okunur",
+   "Zeki Karakter Paftası Tarzı (düz 2B çizgi film, temiz koyu konturlar, gradyansız düz renkler + tek ton yumuşak cel-gölge)",
+   "referans karakter paftasıyla aynı düz homojen sıcak gri-bej (#bfb6a8) pafta zemini",
+   "Girdi görsellerinin rolleri:\n- İlk görseller: Adem Bağlan'ın kesilmemiş orijinal fotoğrafları ve gri fon stüdyo portresi (yalnızca yüz ve kimlik kaynağı).\n- Sonraki kare portre: Adem Bağlan'ın onaylı ",
+   ") stilize portresi (ana karakter ve kıyafet çapası).\n- Çoklu karakter içeren yatay görsel: YALNIZCA sayfa düzeni (layout) referansı (oradaki kel/gözlüklü veya diğer karakterleri ASLA kopyalama).\n\nGÖREV: Adem Bağlan için yatay 16:9 (1600x900) profesyonel bir KARAKTER KİMLİK PAFTASI (Character Turnaround & Expression Sheet) üret.\nÇİZİM STİLİ: ",
+   ". Gerçekçi insan oranları (7.5 baş boy oranı, büyük göz veya karikatür abartısı yok).\nSABİT KİMLİK VE KIYAFET (tüm pozlarda ve ifadelerde 100% aynı kalmalı): ",
+   "\n\nSAYFA DÜZENİ:\n1. ÜST BÖLÜM (Sol-Orta): Aynı boy ölçeğinde ve hizada 4 tam boy dönüş (turnaround) pozu yan yana: \"ÖNDEN\", \"ÜÇ ÇEYREK\", \"YANDAN\", \"ARKADAN\" (her birinin altında küçük, temiz büyük harf Türkçe etiket).\n2. ALT BÖLÜM (Sol-Orta): 4 adet baş-omuz yüz ifadesi büstü yan yana: \"GÜLÜMSEME\", \"CİDDİ\", \"ŞAŞKIN\", \"KONUŞURKEN\" (her birinin altında küçük Türkçe etiket).\n3. SAĞ PANEL: Dikey renk paleti kutucukları (Ten, Siyah Saç/Sakal, Melanj Mavi Polo, Lacivert-Turuncu Yaka, Koyu Kot) ve kısa Türkçe oran notu (\"7.5 Baş Oranı | Doğal Portre Ölçeği\"). Üstte temiz Türkçe başlık: \"ADEM BAĞLAN - KARAKTER KİMLİK PAFTASI\" (birebir, emoji yok).\nARKA PLAN: ",
+   "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+   "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+   "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+   "/System/Library/Fonts/Supplemental/Arial.ttf",
+   "onaylı stilize karakter portresi (ana karakter çapası)"
+  ],
+  "docs/ekip/yz/talimatlar/agy/fix_ek10_13_stiller.py": [
+   " için TEK BİR tam kare (1:1) baş-omuz (head-and-shoulders, ortalı) portre üret.\nSABİT KİMLİK ÇAPALARI: ",
+   "\nKESİN KURALLAR:\n- Görseli ASLA ikiye bölme; yan yana karşılaştırma (split-screen, before/after) veya çoklu panel ÇİZME. Tuvalde yalnızca TEK bir portre olsun.\n- Arka plana masa lambası veya oda eşyası ÇİZME; yalnızca bu stilin kendi düz arka planını kullan.\n- Yüzü güzelleştirme, gözleri büyütme veya başka bir modele benzetme YOK; kişinin gerçek yüz oranları birebir korunmalı.\n- Görsel içinde hiçbir yazı, etiket veya çerçeve OLMASIN.\n\n",
+   "BTU MATRO - Stilize Karakter Örnek Paftası (3 Kişi x 6 Stil Karşılaştırması)",
+   "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+   "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+   "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+   "/System/Library/Fonts/Supplemental/Arial.ttf",
+   "'ın yüz kemik yapısı, göz-kaş-burun-ağız oranları, saç/başörtüsü/sakal biçimi ve kıyafet detayları referans fotoğraflardan ve gri fon portresinden sabitlendi.",
+   "'ın kesilmemiş orijinal fotoğrafları ve düz orta-gri stüdyo portresidir. Sabit kimlik özellikleri: ",
+   " Sonraki adımda bu kişiyi farklı bir illüstrasyon stilinde, kimliğini ve kıyafetini hiç değiştirmeden çizeceğiz."
+  ]
+ },
+ "not": "agy bu görevde istem metnini kaydetmemiş (yalnız referanslar); istem betikteki sabitlerden kuruluyor"
+}

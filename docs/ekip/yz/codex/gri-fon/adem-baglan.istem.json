@@ -1,0 +1,104 @@
+{
+ "model": "gemini-3-pro-image",
+ "uretici": "agy (Antigravity CLI)",
+ "gorev_notu": "docs/ekip/yz/CODEX-GOREV.md",
+ "betik": [
+  "docs/ekip/yz/talimatlar/agy/codex_uret.py",
+  "docs/ekip/yz/talimatlar/agy/iyilestir.py",
+  "docs/ekip/yz/talimatlar/agy/uret_gri_fon_yeni.py"
+ ],
+ "cagrilar": {
+  "turn1_grifon": [
+   {
+    "zaman": "2026-10-25T22:27:39Z",
+    "istem": {
+     "contents": [
+      {
+       "role": "user",
+       "parts": [
+        {
+         "text": "We are creating studio portraits for team member 'adem-baglan' in a multi-turn conversation. First, here are ALL available original reference photographs of this exact person (4 unique photos):"
+        },
+        {
+         "text": "Reference photo — Current 600x600 site portrait:"
+        },
+        {
+         "inlineData": {
+          "mimeType": "image/jpeg",
+          "sha256": "7c84101a611c9dc5",
+          "base64_len": 59632
+         }
+        },
+        {
+         "text": "Reference photo — Original photo (adem-baglan-canva.jpg) / Canva raw image (6776e9c1-dcca-4450-8aa6-c917b57992d6.jpg):"
+        },
+        {
+         "inlineData": {
+          "mimeType": "image/jpeg",
+          "sha256": "8b4c47afcbd9d2b3",
+          "base64_len": 61596
+         }
+        },
+        {
+         "text": "Reference photo — Original photo (adem-baglan.jpg):"
+        },
+        {
+         "inlineData": {
+          "mimeType": "image/jpeg",
+          "sha256": "477a6969157f8e54",
+          "base64_len": 329044
+         }
+        },
+        {
+         "text": "Reference photo — Alternative square crop (adem-baglan.jpg):"
+        },
+        {
+         "inlineData": {
+          "mimeType": "image/jpeg",
+          "sha256": "b68ee8cb537650d6",
+          "base64_len": 60364
+         }
+        },
+        {
+         "text": "Here is the framing-corrected portrait (`kadraj`) of this person where their original face is 100% preserved and the head-and-shoulders framing is centered with headroom:"
+        },
+        {
+         "inlineData": {
+          "mimeType": "image/jpeg",
+          "sha256": "6a324bb50c4dcffb",
+          "base64_len": 81824
+         }
+        },
+        {
+         "text": "And here is our target medium-grey studio backdrop reference (`bilgehan-zeki-ozaytac.jpg` — note the medium-grey seamless studio background with subtle vignette and clean studio lighting):"
+        },
+        {
+         "inlineData": {
+          "mimeType": "image/jpeg",
+          "sha256": "2f064048d3ef396e",
+          "base64_len": 75324
+         }
+        },
+        {
+         "text": "TASK 1 (Natural Medium-Grey Studio Portrait / Gri Fon): Using the framing-corrected portrait and all original reference photos of this person above, produce a natural head-and-shoulders studio portrait on a flat medium-grey studio background matching Bilgehan's studio backdrop (NOT pure white, NOT black). IMPORTANT:\n1. NO stiff biometric/ID rules: preserve the person's natural head angle, posture, authentic expression/smile, hairstyle or headscarf wrap, glasses (if worn), and clothing from their framing-corrected photo.\n2. Keep their face 100% faithful to the real person—do NOT beautify, smooth skin texture, slim the face, change eye/nose/lip/eyebrow shape, or alter age.\n3. Head-and-shoulders framing with comfortable headroom above the hair/headscarf and both shoulders visible. If a hand is raised to the face/hair in a selfie, remove/lower the hand cleanly.\n4. Soft, even professional studio lighting on the subject that matches the medium-grey backdrop, sharp focus across the subject, no shallow depth-of-field blur, no text or logos. \nPerson details: Short dark hair, goatee beard and moustache (chin beard + moustache, clean cheeks), wearing a denim-blue polo shirt with red/navy collar trim."
+        }
+       ]
+      }
+     ],
+     "generationConfig": {
+      "responseModalities": [
+       "TEXT",
+       "IMAGE"
+      ],
+      "imageConfig": {
+       "aspectRatio": "1:1"
+      }
+     }
+    },
+    "referanslar": null
+   }
+  ]
+ },
+ "istem_sabitleri": null,
+ "not": "agy çağrı kaydındaki istemler ve referanslar"
+}

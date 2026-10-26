@@ -1,0 +1,7 @@
+{
+ "model": "gemini-3-pro-image",
+ "uretici": "Claude",
+ "betik": "docs/ekip/yz/claude/referans_uret.py",
+ "surum": "stil örneği 2 ve \"başka kişiler\" uyarısı; kontrolde elendi",
+ "not": "elendi; tam istem saklanmadı, güncel betikten yukarıdaki farkla kurulur"
+}

@@ -1,0 +1,168 @@
+{
+ "model": "gemini-3-pro-image",
+ "uretici": "agy (Antigravity CLI)",
+ "gorev_notu": "docs/ekip/yz/CODEX-GOREV.md",
+ "betik": [
+  "docs/ekip/yz/talimatlar/agy/codex_uret.py",
+  "docs/ekip/yz/talimatlar/agy/iyilestir.py",
+  "docs/ekip/yz/talimatlar/agy/uret_gri_fon_yeni.py"
+ ],
+ "cagrilar": {
+  "turn2_grifon": [
+   {
+    "zaman": "2026-10-25T22:20:53Z",
+    "istem": {
+     "contents": [
+      {
+       "role": "user",
+       "parts": [
+        {
+         "text": "We are preparing three consistent square portraits for team member 'irmak-karaagac' in a multi-turn conversation. First, here are ALL available real reference photographs of this exact person (4 unique photos) so you lock in their exact facial identity, bone structure, eyes, eyebrows, nose, mouth, skin tone, hair/headscarf, glasses, and clothing:"
+        },
+        {
+         "text": "Reference photo — Current 600x600 site portrait:"
+        },
+        {
+         "inlineData": {
+          "mimeType": "image/jpeg",
+          "sha256": "9e9adc30ee35c3a9",
+          "base64_len": 62632
+         }
+        },
+        {
+         "text": "Reference photo — Original photo (irmak-karaagac.jpg) / Canva raw image (e0f54ab9-ba97-4792-88cc-d4036d3be9bc.jpg):"
+        },
+        {
+         "inlineData": {
+          "mimeType": "image/jpeg",
+          "sha256": "f261bf4b9b529f5c",
+          "base64_len": 172856
+         }
+        },
+        {
+         "text": "Reference photo — Alternative square crop (irmak-karaagac.jpg):"
+        },
+        {
+         "inlineData": {
+          "mimeType": "image/jpeg",
+          "sha256": "49a901997e1fabe4",
+          "base64_len": 72812
+         }
+        },
+        {
+         "text": "Reference photo — Close-up face reference (irmak-karaagac):"
+        },
+        {
+         "inlineData": {
+          "mimeType": "image/jpeg",
+          "sha256": "601b2121e6eb3a43",
+          "base64_len": 211992
+         }
+        },
+        {
+         "text": "Now here is their current square site photo placed on a flat neutral grey (RGB 128,128,128) canvas to add headroom at the top and shoulder room at the sides/bottom:"
+        },
+        {
+         "inlineData": {
+          "mimeType": "image/jpeg",
+          "sha256": "f8234d960a830046",
+          "base64_len": 101236
+         }
+        },
+        {
+         "text": "TASK 1 (Framing / Outpaint): Replace ONLY the flat grey border areas (top, left, right, bottom) by naturally extending the existing scene, background, hair or headscarf, and shoulders/clothing so it looks like a wider original camera shot. CRITICAL: Do NOT move, shift, resize, or change anything inside the existing photo area; the person's face and position must stay pixel-identical in the exact same coordinates. No new people, hands, objects, or text. Output the full 1:1 square image."
+        }
+       ]
+      },
+      {
+       "parts": [
+        {
+         "inlineData": {
+          "mimeType": "image/jpeg",
+          "sha256": "b088cf7e5598d908",
+          "base64_len": 595480
+         }
+        }
+       ],
+       "role": "model"
+      },
+      {
+       "role": "user",
+       "parts": [
+        {
+         "text": "Here is the completed framing-corrected portrait of this person with their 100% original face preserved (first image), followed by our reference medium-grey studio portrait style (`bilgehan-zeki-ozaytac.jpg`, second image):"
+        },
+        {
+         "inlineData": {
+          "mimeType": "image/jpeg",
+          "sha256": "ddce9da65250e019",
+          "base64_len": 97116
+         }
+        },
+        {
+         "inlineData": {
+          "mimeType": "image/jpeg",
+          "sha256": "2f064048d3ef396e",
+          "base64_len": 75324
+         }
+        },
+        {
+         "text": "TASK 2 (Natural Medium-Grey Studio Portrait / Gri Fon): Using the framing-corrected portrait above and all original references of this person from Turn 1, create a natural studio portrait on a flat medium-grey studio background (matching the exact medium-grey backdrop tone and subtle vignette of Bilgehan's reference photo—NOT white, NOT dark black). IMPORTANT RULES:\n1. NO stiff biometric/ID rules: preserve the person's natural posture, head angle, expression/smile, clothing, headscarf style, and glasses from their framing-corrected photo.\n2. Keep their face 100% faithful to the real person—do NOT beautify, smooth skin, slim the face, change eye/nose/lip shape, or alter age.\n3. Head-and-shoulders framing with comfortable headroom above the hair/headscarf and both shoulders visible. If a hand is raised to the face/hair in a selfie, lower/remove the hand cleanly so only head and shoulders are shown.\n4. Soft, even professional studio lighting on the subject that harmonizes with the medium-grey studio backdrop; sharp focus across the subject, no shallow depth-of-field blur, no text or logos. \nNote for this person: In the main outdoor sea photo she wears a dark navy headscarf with a white cap over it; in her indoor reference photos she wears a brown headscarf without a cap. For gri-fon keep her outdoor navy headscarf + cap look (or clean navy headscarf without lanyard); for vesikalik remove the cap and lanyard and show her neat headscarf as in the indoor reference photo. Keep her exact long oval face, thick straight dark eyebrows, warm olive skin, and gentle smile."
+        }
+       ]
+      }
+     ],
+     "generationConfig": {
+      "responseModalities": [
+       "TEXT",
+       "IMAGE"
+      ],
+      "imageConfig": {
+       "aspectRatio": "1:1"
+      }
+     }
+    },
+    "referanslar": null
+   }
+  ],
+  "turn3_grifon_fix": [
+   {
+    "zaman": "2026-10-25T22:39:48Z",
+    "istem": {
+     "contents": [
+      {
+       "role": "user",
+       "parts": [
+        {
+         "text": "Real photo with her exact face proportions:"
+        },
+        {
+         "inlineData": {
+          "mimeType": "image/jpeg",
+          "sha256": "ff3987b74bb6687a",
+          "base64_len": 58884
+         }
+        },
+        {
+         "text": "Edit this grey-background portrait of Irmak: keep the exact medium-grey studio background, but make her face 100% identical to the first image (her real outdoor photo—do not widen her cheeks or jaw) and remove the white circular logo on her bottom-right shirt so the dark navy top is plain."
+        }
+       ]
+      }
+     ],
+     "generationConfig": {
+      "responseModalities": [
+       "TEXT",
+       "IMAGE"
+      ],
+      "imageConfig": {
+       "aspectRatio": "1:1"
+      }
+     }
+    },
+    "referanslar": null
+   }
+  ]
+ },
+ "istem_sabitleri": null,
+ "not": "agy çağrı kaydındaki istemler ve referanslar"
+}

@@ -1,0 +1,7 @@
+{
+ "model": "gemini-3-pro-image",
+ "uretici": "Claude",
+ "betik": "docs/ekip/yz/claude/referans_uret.py",
+ "surum": "ilk sürüm: Bilgehan tarifinde \"biraz kır sakal\", stil örneği en çok 6",
+ "not": "elendi; tam istem saklanmadı, güncel betikten yukarıdaki farkla kurulur"
+}

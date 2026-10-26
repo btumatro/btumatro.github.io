@@ -1,0 +1,121 @@
+{
+ "model": "gemini-3-pro-image",
+ "uretici": "agy (Antigravity CLI)",
+ "gorev_notu": "docs/ekip/yz/CODEX-GOREV.md",
+ "betik": [
+  "docs/ekip/yz/talimatlar/agy/codex_uret.py",
+  "docs/ekip/yz/talimatlar/agy/iyilestir.py",
+  "docs/ekip/yz/talimatlar/agy/uret_gri_fon_yeni.py"
+ ],
+ "cagrilar": {
+  "turn2_grifon": [
+   {
+    "zaman": "2026-10-25T22:22:44Z",
+    "istem": {
+     "contents": [
+      {
+       "role": "user",
+       "parts": [
+        {
+         "text": "We are preparing three consistent square portraits for team member 'rumeysa-akarsu' in a multi-turn conversation. First, here are ALL available real reference photographs of this exact person (3 unique photos) so you lock in their exact facial identity, bone structure, eyes, eyebrows, nose, mouth, skin tone, hair/headscarf, glasses, and clothing:"
+        },
+        {
+         "text": "Reference photo — Current 600x600 site portrait:"
+        },
+        {
+         "inlineData": {
+          "mimeType": "image/jpeg",
+          "sha256": "2160a693b97bfefe",
+          "base64_len": 122288
+         }
+        },
+        {
+         "text": "Reference photo — Original photo (rumeysa-akarsu-canva.jpg) / Canva raw image (e00f142d-d4ee-4893-a859-db99ae749c08.jpg):"
+        },
+        {
+         "inlineData": {
+          "mimeType": "image/jpeg",
+          "sha256": "9bde4fa5756fb8bc",
+          "base64_len": 192068
+         }
+        },
+        {
+         "text": "Reference photo — Original photo (rumeysa-akarsu.jpg):"
+        },
+        {
+         "inlineData": {
+          "mimeType": "image/jpeg",
+          "sha256": "df8b8903c4533296",
+          "base64_len": 475292
+         }
+        },
+        {
+         "text": "Now here is their current square site photo placed on a flat neutral grey (RGB 128,128,128) canvas to add headroom at the top and shoulder room at the sides/bottom:"
+        },
+        {
+         "inlineData": {
+          "mimeType": "image/jpeg",
+          "sha256": "a2e760374709176f",
+          "base64_len": 184248
+         }
+        },
+        {
+         "text": "TASK 1 (Framing / Outpaint): Replace ONLY the flat grey border areas (top, left, right, bottom) by naturally extending the existing scene, background, hair or headscarf, and shoulders/clothing so it looks like a wider original camera shot. CRITICAL: Do NOT move, shift, resize, or change anything inside the existing photo area; the person's face and position must stay pixel-identical in the exact same coordinates. No new people, hands, objects, or text. Output the full 1:1 square image."
+        }
+       ]
+      },
+      {
+       "parts": [
+        {
+         "inlineData": {
+          "mimeType": "image/jpeg",
+          "sha256": "507dec25a459cab5",
+          "base64_len": 820372
+         }
+        }
+       ],
+       "role": "model"
+      },
+      {
+       "role": "user",
+       "parts": [
+        {
+         "text": "Here is the completed framing-corrected portrait of this person with their 100% original face preserved (first image), followed by our reference medium-grey studio portrait style (`bilgehan-zeki-ozaytac.jpg`, second image):"
+        },
+        {
+         "inlineData": {
+          "mimeType": "image/jpeg",
+          "sha256": "9588e10f173268ce",
+          "base64_len": 172816
+         }
+        },
+        {
+         "inlineData": {
+          "mimeType": "image/jpeg",
+          "sha256": "2f064048d3ef396e",
+          "base64_len": 75324
+         }
+        },
+        {
+         "text": "TASK 2 (Natural Medium-Grey Studio Portrait / Gri Fon): Using the framing-corrected portrait above and all original references of this person from Turn 1, create a natural studio portrait on a flat medium-grey studio background (matching the exact medium-grey backdrop tone and subtle vignette of Bilgehan's reference photo—NOT white, NOT dark black). IMPORTANT RULES:\n1. NO stiff biometric/ID rules: preserve the person's natural posture, head angle, expression/smile, clothing, headscarf style, and glasses from their framing-corrected photo.\n2. Keep their face 100% faithful to the real person—do NOT beautify, smooth skin, slim the face, change eye/nose/lip shape, or alter age.\n3. Head-and-shoulders framing with comfortable headroom above the hair/headscarf and both shoulders visible. If a hand is raised to the face/hair in a selfie, lower/remove the hand cleanly so only head and shoulders are shown.\n4. Soft, even professional studio lighting on the subject that harmonizes with the medium-grey studio backdrop; sharp focus across the subject, no shallow depth-of-field blur, no text or logos. \nNote for this person: She has a soft round-oval face, warm skin tone, gentle closed-lip smile, wearing a patterned mauve/brown silk headscarf and brown jacket."
+        }
+       ]
+      }
+     ],
+     "generationConfig": {
+      "responseModalities": [
+       "TEXT",
+       "IMAGE"
+      ],
+      "imageConfig": {
+       "aspectRatio": "1:1"
+      }
+     }
+    },
+    "referanslar": null
+   }
+  ]
+ },
+ "istem_sabitleri": null,
+ "not": "agy çağrı kaydındaki istemler ve referanslar"
+}
