@@ -1,0 +1,23 @@
+{
+ "not": "üretimden sonra betikten yeniden kuruldu; stil örneği listesi üretim anındakinden farklı olabilir",
+ "model": "gemini-3-pro-image",
+ "oran": "1:1",
+ "tur1": [
+  "These are ALL real photos of one person: Yusuf, a young university student; keep exactly the age seen in the photos, do NOT make them look older. Study the face from every photo: face shape, eyes, eyebrows, nose, mouth, beard, hairline, skin tone, real age. Reply only 'OK'.",
+  "photo of this person:",
+  "docs/ekip/orijinal/yusuf-sarsici-canva.jpg",
+  "photo of this person:",
+  "docs/ekip/orijinal/yusuf-sarsici.jpg",
+  "wider crop of a real photo:",
+  "docs/ekip/yz/codex/kadraj/yusuf-sarsici.jpg",
+  "studio portrait of this person (generated; real photos win if they differ):",
+  "docs/ekip/yz/codex/gri-fon/yusuf-sarsici.jpg"
+ ],
+ "tur2": [
+  "STYLE ONLY: drawings of OTHER, DIFFERENT people. Copy only their rendering; never draw these people:",
+  "docs/ekip/yz/claude/stil-ornekleri/e-adem-baglan.jpg",
+  "docs/ekip/yz/claude/stil-ornekleri/e-almina-yanar.jpg",
+  "Now draw a head-and-shoulders portrait of the person from the REAL PHOTOS in the first message (Yusuf, a young university student; keep exactly the age seen in the photos, do NOT make them look older), not anyone from the style images. Keep every accessory from the photos (glasses, hijab, beard). Draw in loose watercolour portrait on textured paper, soft washes, light pencil lines.",
+  "Portrait of THIS person in loose watercolour portrait on textured paper, soft washes, light pencil lines. Instantly recognisable: same face, beard/hair, hijab or glasses as in the photos. Do NOT make them look older, no wrinkles, no extra weight, no beautifying, no big eyes. Same outfit as in the studio portrait. Centred, square 1:1. No text."
+ ]
+}

@@ -1,0 +1,21 @@
+{
+ "not": "üretimden sonra betikten yeniden kuruldu; stil örneği listesi üretim anındakinden farklı olabilir",
+ "model": "gemini-3-pro-image",
+ "oran": "3:2",
+ "tur1": [
+  "These are ALL real photos of one person: Mehmet Onur, the academic advisor: dark wavy hair, full dark beard, warm smile, dark suit and tie. Keep exactly the age seen in the photos; do NOT make him look older. Study the face from every photo: face shape, eyes, eyebrows, nose, mouth, beard, hairline, skin tone, real age. Reply only 'OK'.",
+  "photo of this person:",
+  "docs/ekip/orijinal/mehmet-onur-genc-kare.jpg",
+  "photo of this person:",
+  "docs/ekip/orijinal/mehmet-onur-genc.jpg",
+  "another photo:",
+  "docs/ekip/alternatif/mehmet-onur-genc.jpg",
+  "wider crop of a real photo:",
+  "docs/ekip/yz/codex/kadraj/mehmet-onur-genc.jpg",
+  "studio portrait of this person (generated; real photos win if they differ):",
+  "docs/ekip/yz/codex/gri-fon/mehmet-onur-genc.jpg"
+ ],
+ "tur2": [
+  "Create a character reference sheet of THIS exact person on a light grey seamless studio background, landscape 3:2, thin white gutters, no text. TOP ROW, six head-and-shoulders panels: front view; three-quarter view; side profile; serious look with head slightly down; warm smile; big surprised laugh. BOTTOM ROW, four full-body standing panels: front; side profile; back view; relaxed three-quarter pose with one hand in pocket. Same person, same real age, same outfit (take the outfit from the studio portrait; add simple trousers and shoes that suit it) and the same accessories in every panel. Photorealistic studio photography, soft even light, true skin texture, exactly like the real photos."
+ ]
+}

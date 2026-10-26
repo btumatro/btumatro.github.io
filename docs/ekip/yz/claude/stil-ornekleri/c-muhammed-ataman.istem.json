@@ -1,0 +1,35 @@
+{
+ "not": "üretimden sonra betikten yeniden kuruldu; stil örneği listesi üretim anındakinden farklı olabilir",
+ "model": "gemini-3-pro-image",
+ "oran": "1:1",
+ "tur1": [
+  "These are ALL real photos of one person: Muhammed, a young man under 30: thick dark wavy hair swept back, full dark beard. Do NOT make him look older. Study the face from every photo: face shape, eyes, eyebrows, nose, mouth, beard, hairline, skin tone, real age. Reply only 'OK'.",
+  "group photo; this person is the bearded man standing on the right; ignore everyone else:",
+  "docs/ekip/orijinal/irmak-karaagac-muhammed-ataman-kursu.jpg",
+  "group photo; this person is the bearded man in black on the far LEFT; ignore everyone else:",
+  "docs/ekip/orijinal/muhammed-ataman-grup-1.jpg",
+  "group photo; this person is the bearded man in black on the far LEFT; ignore everyone else:",
+  "docs/ekip/orijinal/muhammed-ataman-grup-2.jpg",
+  "photo of this person:",
+  "docs/ekip/orijinal/muhammed-ataman-yuz-1.jpg",
+  "photo of this person:",
+  "docs/ekip/orijinal/muhammed-ataman-yuz-2.jpg",
+  "photo of this person:",
+  "docs/ekip/orijinal/muhammed-ataman-yuz-3.jpg",
+  "photo of this person:",
+  "docs/ekip/orijinal/muhammed-ataman.jpg",
+  "another photo:",
+  "docs/ekip/alternatif/muhammed-ataman.jpg",
+  "wider crop of a real photo:",
+  "docs/ekip/yz/codex/kadraj/muhammed-ataman.jpg",
+  "studio portrait of this person (generated; real photos win if they differ):",
+  "docs/ekip/yz/codex/gri-fon/muhammed-ataman.jpg"
+ ],
+ "tur2": [
+  "STYLE ONLY: drawings of OTHER, DIFFERENT people. Copy only their rendering; never draw these people:",
+  "docs/ekip/yz/claude/stil-ornekleri/c-adem-baglan.jpg",
+  "docs/ekip/yz/claude/stil-ornekleri/c-bilgehan-zeki-ozaytac.jpg",
+  "Now draw a head-and-shoulders portrait of the person from the REAL PHOTOS in the first message (Muhammed, a young man under 30), not anyone from the style images. Keep every accessory from the photos (glasses, hijab, beard). Draw in soft 3D animated feature film character style, gentle subsurface skin, soft studio light, plain grey background.",
+  "Portrait of THIS person in soft 3D animated feature film character style, gentle subsurface skin, soft studio light, plain grey background. Instantly recognisable: same face, beard/hair, hijab or glasses as in the photos. Do NOT make them look older, no wrinkles, no extra weight, no beautifying, no big eyes. Same outfit as in the studio portrait. Centred, square 1:1. No text."
+ ]
+}

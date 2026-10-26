@@ -25,6 +25,16 @@ KISI = {
 for _k in json.load(open('src/data/ekibimiz.json'))['people']:
     _s = os.path.basename(_k['photo'])[:-4]
     KISI.setdefault(_s, _k['name'].split()[0] + ", " + GENC)
+# benzemeyen çıktılardan sonra eklenen düzeltmeler (26 Ekim 2026)
+EK = {
+ 'duygu-solak': "long DARK BROWN wavy hair (not blonde, not light)",
+ 'esma-demirkiyik': "calm front-facing studio pose, hands not in frame",
+ 'melisa-aydirek': "long DARK BROWN straight hair exactly as dark as in the photos (not light, not blonde)",
+ 'eslem-kilic': "long dark brown hair with lighter ends only as in the photos (overall dark, not light), black cat-eye glasses",
+ 'muhammed-efe-coskunpinar': "light fair skin, fuller rounded lower face and soft jaw, CLEAN-SHAVEN (no beard, no stubble), thick dark hair swept back with a loose strand falling on the forehead, calm closed-mouth slight smile, black t-shirt",
+}
+for _s, _e in EK.items():
+    KISI[_s] += ": " + _e
 # grup fotoğraflarında kim kim
 GRUP = {
  'irmak-karaagac-bilgehan': {'bilgehan-zeki-ozaytac': 'the bald man with glasses on the LEFT', 'irmak-karaagac': 'the young woman in the brown hijab on the RIGHT'},
@@ -35,10 +45,14 @@ GRUP = {
 # kullanıcının kendi onaylı avatar çizimleri (kimlik + stil için)
 OZEL = {'bilgehan-zeki-ozaytac': [E + 'orijinal/bilgehan-zeki-ozaytac-referans-sayfasi.png', PK + 'zeki_avatar_1024.jpg', A + 'morph_07_yakin_plan_mimik.jpg']}
 
+def kayit_parcalari(parts):
+    # görseller yerine dosya yolu, metinler aynen
+    return [x.get('_yol') or x.get('text') for x in parts]
+
 def img(p, m=1024):
     im = ImageOps.exif_transpose(Image.open(p)).convert('RGB'); im.thumbnail((m, m))
     b = io.BytesIO(); im.save(b, 'JPEG', quality=88)
-    return {"inlineData": {"mimeType": "image/jpeg", "data": base64.b64encode(b.getvalue()).decode()}}
+    return {"inlineData": {"mimeType": "image/jpeg", "data": base64.b64encode(b.getvalue()).decode()}, "_yol": os.path.relpath(p)}
 
 def fotolar(slug):
     L = []
@@ -62,8 +76,15 @@ def ilk_tur(slug):
     return p
 
 def cagir(slug, p2, oran, cikti):
-    g = {"contents": [{"role": "user", "parts": ilk_tur(slug)}, {"role": "model", "parts": [{"text": "OK"}]}, {"role": "user", "parts": p2}],
+    p1 = ilk_tur(slug)
+    temiz = lambda ps: [{k: v for k, v in x.items() if k != '_yol'} for x in ps]
+    g = {"contents": [{"role": "user", "parts": temiz(p1)}, {"role": "model", "parts": [{"text": "OK"}]}, {"role": "user", "parts": temiz(p2)}],
          "generationConfig": {"responseModalities": ["IMAGE"], "imageConfig": {"aspectRatio": oran}}}
+    # yeniden üretilebilsin: istem metinleri ve referans dosyaları çıktının yanına
+    os.makedirs(os.path.dirname(cikti), exist_ok=True)
+    with open(cikti[:-4] + '.istem.json', 'w') as kf:
+        json.dump({"model": URL.split('/models/')[1].split(':')[0], "oran": oran,
+                   "tur1": kayit_parcalari(p1), "tur2": kayit_parcalari(p2)}, kf, ensure_ascii=False, indent=1)
     hata = ''
     for _ in range(3):
         try:

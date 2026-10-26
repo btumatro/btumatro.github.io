@@ -1,0 +1,27 @@
+{
+ "not": "üretimden sonra betikten yeniden kuruldu; stil örneği listesi üretim anındakinden farklı olabilir",
+ "model": "gemini-3-pro-image",
+ "oran": "1:1",
+ "tur1": [
+  "These are ALL real photos of one person: Mehmet Onur, the academic advisor: dark wavy hair, full dark beard, warm smile, dark suit and tie. Keep exactly the age seen in the photos; do NOT make him look older. Study the face from every photo: face shape, eyes, eyebrows, nose, mouth, beard, hairline, skin tone, real age. Reply only 'OK'.",
+  "photo of this person:",
+  "docs/ekip/orijinal/mehmet-onur-genc-kare.jpg",
+  "photo of this person:",
+  "docs/ekip/orijinal/mehmet-onur-genc.jpg",
+  "another photo:",
+  "docs/ekip/alternatif/mehmet-onur-genc.jpg",
+  "wider crop of a real photo:",
+  "docs/ekip/yz/codex/kadraj/mehmet-onur-genc.jpg",
+  "studio portrait of this person (generated; real photos win if they differ):",
+  "docs/ekip/yz/codex/gri-fon/mehmet-onur-genc.jpg"
+ ],
+ "tur2": [
+  "STYLE ONLY: drawings of OTHER, DIFFERENT people. Copy only their rendering; never draw these people:",
+  "docs/ekip/yz/claude/stil-ornekleri/b-adem-baglan.jpg",
+  "docs/ekip/yz/claude/stil-ornekleri/b-bilgehan-zeki-ozaytac.jpg",
+  "Style reference (copy ONLY the drawing style):",
+  "../gemini-prompt-arena/kaynak/avatar/KARAKTER_KIMLIK_PAFTASI_v1.jpg",
+  "Now draw a head-and-shoulders portrait of the person from the REAL PHOTOS in the first message (Mehmet Onur, the academic advisor), not anyone from the style images. Keep every accessory from the photos (glasses, hijab, beard). Draw in flat 2D cartoon character style: clean dark outlines, flat colours with one soft shadow tone, plain warm grey-beige background.",
+  "Portrait of THIS person in flat 2D cartoon character style: clean dark outlines, flat colours with one soft shadow tone, plain warm grey-beige background. Instantly recognisable: same face, beard/hair, hijab or glasses as in the photos. Do NOT make them look older, no wrinkles, no extra weight, no beautifying, no big eyes. Same outfit as in the studio portrait. Centred, square 1:1. No text."
+ ]
+}
