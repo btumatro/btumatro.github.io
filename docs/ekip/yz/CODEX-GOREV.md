@@ -109,3 +109,6 @@ Durum: 26 gri fon tamam (Gülsiye/Melek/Nusret yenileri `gri-fon/`'a taşındı)
    Çıktılar: `docs/ekip/yz/codex/stil-ornekleri/<stil-harfi>-<slug>.jpg`; pafta: `docs/ekip/kontrol/stil-ornekleri.jpg` (satır = kişi, sütun = stil, üstte stil adları Türkçe, numaralı).
 3. Zaman kalırsa a) ve b) stilinde 1 kişilik karakter sheet (Ek istek 7 düzeni, skill dosyalarını oku) → `docs/ekip/yz/codex/karakter-sheet/`.
 Site dosyalarına dokunma, commit/push yok.
+
+## Ek istek 11 (26 Ekim, kullanıcı): Zeynep kadrajı YAPILMAZ
+zeynep-seher-yolasigmaz için kadraj üretme, yeniden deneme, dosya yazma. Orijinal selfie'de saç çerçevenin üst kenarına değiyor; her denemede üstte tekrar eden kafa/uydurma alan çıktı, kullanıcı her seferinde sildi. Zeynep'in kadraj sütunu boş kalır. Kadraj işi kapandı (25 kişi: Zeynep hariç). Bu turda yalnız Ek istek 10'un 2. ve 3. maddesi (stil örnekleri paftası, zaman kalırsa karakter sheet).
