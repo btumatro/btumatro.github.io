@@ -17,7 +17,7 @@ KISI = {
  'bilgehan-zeki-ozaytac': "Bilgehan (Zeki): bald head, short fully DARK beard (no grey hair at all), dark rectangular glasses in most casual photos. Keep exactly the age seen in the photos; do NOT make him look older",
  'muhammed-ataman': "Muhammed, a young man under 30: thick dark wavy hair swept back, full dark beard. Do NOT make him look older",
  'irmak-karaagac': "Irmak, " + GENC + ": she wears a hijab, friendly smile",
- 'omer-cihan-demir': "Ömer, " + GENC + ": short dark hair with a quiff, trimmed dark beard",
+ 'omer-cihan-demir': "Ömer, " + GENC + ": short dark hair with a quiff, slim face, slightly heavy relaxed eyelids, SHORT SPARSE light beard and moustache (not thick, not full), calm soft expression",
  'gulsiye-begum-gumus': "Gülsiye, " + GENC + ": she wears a patterned grey hijab, often glasses resting on her head",
  'feyza-karabicak': "Feyza, " + GENC + ": she wears a dark brown hijab and round thin glasses",
 }
