@@ -21,6 +21,10 @@ KISI = {
  'gulsiye-begum-gumus': "Gülsiye, " + GENC + ": she wears a patterned grey hijab, often glasses resting on her head",
  'feyza-karabicak': "Feyza, " + GENC + ": she wears a dark brown hijab and round thin glasses",
 }
+# listede tarifi olmayanlar: yalnız ad + yaş kuralı; görünüş fotoğraflardan okunur
+for _k in json.load(open('src/data/ekibimiz.json'))['people']:
+    _s = os.path.basename(_k['photo'])[:-4]
+    KISI.setdefault(_s, _k['name'].split()[0] + ", " + GENC)
 # grup fotoğraflarında kim kim
 GRUP = {
  'irmak-karaagac-bilgehan': {'bilgehan-zeki-ozaytac': 'the bald man with glasses on the LEFT', 'irmak-karaagac': 'the young woman in the brown hijab on the RIGHT'},
@@ -45,7 +49,7 @@ def fotolar(slug):
             L.append((p, 'group photo; this person is ' + GRUP[grup][slug] + '; ignore everyone else'))
         elif not grup and ad.startswith(slug) and 'referans-sayfasi' not in ad:
             L.append((p, 'photo of this person'))
-    for p, n in [(E + f'alternatif/{slug}.jpg', 'another photo'), (E + f'yz/codex/gri-fon/{slug}.jpg', 'studio portrait of this person')]:
+    for p, n in [(E + f'alternatif/{slug}.jpg', 'another photo'), (E + f'yz/codex/kadraj/{slug}.jpg', 'wider crop of a real photo'), (E + f'yz/codex/gri-fon/{slug}.jpg', 'studio portrait of this person')]:
         if os.path.exists(p): L.append((p, n))
     return L
 
