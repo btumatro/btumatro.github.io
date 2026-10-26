@@ -49,7 +49,7 @@ def fotolar(slug):
             L.append((p, 'group photo; this person is ' + GRUP[grup][slug] + '; ignore everyone else'))
         elif not grup and ad.startswith(slug) and 'referans-sayfasi' not in ad:
             L.append((p, 'photo of this person'))
-    for p, n in [(E + f'alternatif/{slug}.jpg', 'another photo'), (E + f'yz/codex/kadraj/{slug}.jpg', 'wider crop of a real photo'), (E + f'yz/codex/gri-fon/{slug}.jpg', 'studio portrait of this person')]:
+    for p, n in [(E + f'alternatif/{slug}.jpg', 'another photo'), (E + f'yz/codex/kadraj/{slug}.jpg', 'wider crop of a real photo'), (E + f'yz/codex/gri-fon/{slug}.jpg', 'studio portrait of this person (generated; real photos win if they differ)')]:
         if os.path.exists(p): L.append((p, n))
     return L
 
