@@ -95,3 +95,17 @@ Durum: 26 gri fon tamam (Gülsiye/Melek/Nusret yenileri `gri-fon/`'a taşındı)
 - Son turdaki hata: Melisa, Nusret, Eslem ve Zeynep'te arka plan tamamen değişmiş, başka odaya dönmüştü. Bu YASAK. Kadraj = aynı fotoğrafın kenarlarını genişletmek: orijinal karenin tüm pikselleri (yüz + arka plan) korunur, Gemini yalnızca dışarıda kalan şeridi aynı sahnenin devamı olarak doldurur. Önce kesilmemiş orijinal fotoğrafta (`docs/ekip/orijinal/<slug>*.jpg`) zaten kare dışında kalan gerçek alan varsa ÖNCE onu kullan (orijinalden daha geniş kırp), Gemini'yi yalnız gerçek alan yetmezse çağır.
 - Kontrol: çıktıyı orijinal kareyle hizalayıp karşılaştır; orijinal karenin içindeki arka plan değişmişse ya da dikiş izi varsa teslim etme. Başarısız kişiyi raporda yaz, uydurma çıktı koyma.
 - Pafta: `docs/ekip/kontrol/kadraj-eksikler.jpg` (numara+isim; sitede | yeni kadraj). Site dosyalarına dokunma, commit/push yok.
+
+## Ek istek 10 (26 Ekim, kullanıcı): 2 kadraj + stil örnekleri paftası
+1. Kadraj yeniden (Ek istek 9 kuralları aynen): zeynep-seher-yolasigmaz (üstte ikinci bir kafa tekrar etmişti), duygu-solak (üstte bulanık koyu leke, sol kenarda siyah şerit). Diğer 24 kadraja dokunma.
+2. Stilize karakter ÖRNEK paftası (karar için, 26 kişiye geçme): 3 kişi (adem-baglan, irmak-karaagac, muhammed-ataman) × 6 stil, her biri baş-omuz 1:1:
+   a) Zeki reels sahne tarzı (ana ref: /Users/wildgenie/Projects/gemini-prompt-arena/kaynak/avatar/morph_07_yakin_plan_mimik.jpg ve sahne kareleri; grafik roman, mürekkep kontur, sinematik sıcak lamba ışığı, koyu lacivert fon)
+   b) Zeki karakter paftası tarzı (ref: /Users/wildgenie/Projects/gemini-prompt-arena/kaynak/avatar/KARAKTER_KIMLIK_PAFTASI_v1.jpg; düz 2B, temiz kontur, sıcak gri-bej fon)
+   c) yumuşak 3B animasyon filmi karakteri
+   d) düz vektör / flat illüstrasyon
+   e) suluboya portre
+   f) çizgi roman (kalın kontur, halftone)
+   Hepsinde kişi tanınır kalmalı (yüz hatları, gözlük/başörtüsü/sakal, kıyafet); büyük göz/güzelleştirme yok. Her kişi için aynı sohbet bağlamı, kesilmemiş orijinaller + gri fon portresi referans.
+   Çıktılar: `docs/ekip/yz/codex/stil-ornekleri/<stil-harfi>-<slug>.jpg`; pafta: `docs/ekip/kontrol/stil-ornekleri.jpg` (satır = kişi, sütun = stil, üstte stil adları Türkçe, numaralı).
+3. Zaman kalırsa a) ve b) stilinde 1 kişilik karakter sheet (Ek istek 7 düzeni, skill dosyalarını oku) → `docs/ekip/yz/codex/karakter-sheet/`.
+Site dosyalarına dokunma, commit/push yok.

@@ -1,0 +1,4 @@
+{
+  "duration": 2.6,
+  "assertions": [{"kind":"appearsBy","selector":"#title","bySec":0.7},{"kind":"staysInFrame","selector":"#title"}]
+}
