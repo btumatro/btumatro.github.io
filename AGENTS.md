@@ -1,4 +1,4 @@
-# AGENTS.md — BTÜ MATRO web sitesi
+# AGENTS.md - BTÜ MATRO web sitesi
 
 Bu depo Codex, OpenCode, Claude Code veya benzer bir ajan tarafından devralınabilir. Bu dosya
 o devir için yazıldı: proje ne, nasıl çalıştırılır, nerede ne var, hangi kurallar sabit,
@@ -10,7 +10,7 @@ Bursa Teknik Üniversitesi **MATRO** (Makine Teknolojileri Robot ve Otomasyon To
 statik bir tanıtım sitesi. **Astro 7** + **Tailwind CSS v4**, **GitHub Pages**'te
 (`btumatro.github.io` deposu, `btumatro.com` özel alan adıyla) barındırılıyor. İçerik,
 geliştirici olmayan topluluk üyelerinin **Pages CMS** (app.pagescms.org, `.pages.yml` ile
-yapılandırılır) üzerinden Türkçe arayüzle düzenleyebileceği şekilde tasarlandı — her yeni alan
+yapılandırılır) üzerinden Türkçe arayüzle düzenleyebileceği şekilde tasarlandı - her yeni alan
 hem `src/content.config.ts`/`src/data/*.json` şemasına hem de `.pages.yml`'e eklenmeli.
 
 ## Komutlar
@@ -18,7 +18,7 @@ hem `src/content.config.ts`/`src/data/*.json` şemasına hem de `.pages.yml`'e e
 ```bash
 npm install
 npm run dev      # localhost:4321
-npm run build    # dist/ üretir, aynı zamanda tip/şema hatalarını yakalar — her değişiklikten sonra çalıştır
+npm run build    # dist/ üretir, aynı zamanda tip/şema hatalarını yakalar - her değişiklikten sonra çalıştır
 npm run preview
 ```
 
@@ -27,36 +27,36 @@ ve her gün 06:00 TR'de (süresi geçen duyurular düşsün diye) otomatik build
 
 ## Dizin haritası
 
-- `src/pages/*.astro` — sabit sayfalar (anasayfa, hakkımızda, sponsorluk, iletişim…)
-- `src/pages/takimlarimiz/` — `index.astro` (liste) + `[slug].astro` (detay, `getStaticPaths` ile
+- `src/pages/*.astro` - sabit sayfalar (anasayfa, hakkımızda, sponsorluk, iletişim…)
+- `src/pages/takimlarimiz/` - `index.astro` (liste) + `[slug].astro` (detay, `getStaticPaths` ile
   `src/content/teams/*.md`'den üretilir)
-- `src/content/{teams,activities,haberler}/*.md` — Markdown + frontmatter içerik koleksiyonları;
+- `src/content/{teams,activities,haberler}/*.md` - Markdown + frontmatter içerik koleksiyonları;
   şemaları `src/content.config.ts`'de (Zod)
-- `src/data/*.json` — sayfa bazlı düz veri (hero metni, sponsorluk paketleri, ekip, vb.)
-- `src/components/*.astro` — paylaşılan bileşenler (bkz. DESIGN.md)
-- `src/lib/utils.ts` — `url()`, `media()`, `instagramUrl()`, `teamIndex()`/`teamHref()`,
+- `src/data/*.json` - sayfa bazlı düz veri (hero metni, sponsorluk paketleri, ekip, vb.)
+- `src/components/*.astro` - paylaşılan bileşenler (bkz. [DESIGN.md](DESIGN.md))
+- `src/lib/utils.ts` - `url()`, `media()`, `instagramUrl()`, `teamIndex()`/`teamHref()`,
   `publishedNews()`, `packageTone()`/`degreeTone()`, `NAV`
-- `public/media/` — tüm görseller (bkz. Görsel kuralları)
-- `scripts/*.mjs` — tek seferlik/yeniden çalıştırılabilir üretim betikleri (marka varlıkları,
-  OG görseli, sponsor logo kırpma — `node scripts/<isim>.mjs`)
-- `.pages.yml` — Pages CMS şeması, Türkçe etiketlerle
-- `docs/podcast/`, `docs/topluluk-sarkisi/` — MATRO Radyo senaryoları, şarkılar, promptlar
+- `public/media/` - tüm görseller ([public/media/README.md](public/media/README.md) ve aşağıdaki Görsel kuralları)
+- `scripts/*.mjs` - tek seferlik/yeniden çalıştırılabilir üretim betikleri (marka varlıkları,
+  OG görseli, sponsor logo kırpma: `node scripts/<isim>.mjs`)
+- `.pages.yml` - Pages CMS şeması, Türkçe etiketlerle
+- [docs/README.md](docs/README.md), [docs/podcast/RADYO-YAYIN-PLANI.md](docs/podcast/RADYO-YAYIN-PLANI.md), [docs/topluluk-sarkisi/README.md](docs/topluluk-sarkisi/README.md), [docs/takim-sunumlari/README.md](docs/takim-sunumlari/README.md), [docs/sticker-paketi/README.md](docs/sticker-paketi/README.md) - MATRO Radyo senaryoları, şarkılar, takım sunumları, dergi/kitapçık hazırlıkları ve promptlar
   (bkz. aşağıdaki MATRO Radyo bölümü)
 
 ## Sabit kurallar (bunları bozma)
 
 - **Site adresi**: `site.config.mjs` → `SITE_URL='https://btumatro.com'`, `BASE_PATH='/'`. Depo adı
-  `btumatro.github.io` olduğu için BASE_PATH hep `/` kalmalı — alt sayfa yok.
+  `btumatro.github.io` olduğu için BASE_PATH hep `/` kalmalı - alt sayfa yok.
 - **Emoji yasak**: site metninde, duyurularda, commit'lerde hiç emoji kullanılmaz. Kaynak
   materyal (Instagram vb.) emoji içerse bile siteye aktarırken temizlenir.
 - **Kişisel veri**: telefon/e-posta gibi bilgiler yalnızca ilgili kişinin açık onayıyla
-  yayınlanır. Akademik danışmanın e-postası ve bir mühendisin telefonu bilerek kaldırıldı —
+  yayınlanır. Akademik danışmanın e-postası ve bir mühendisin telefonu bilerek kaldırıldı -
   geri eklenmemeli. Sponsor `logoKaynak` (Drive) bağlantıları da bilerek kaldırıldı.
 - **Sponsorluk formu siteye konmaz**: resmî BTÜ sponsorluk formu (PDF) kaldırıldı; süreç artık
   "önce bizimle iletişime geçin" akışı (`sponsorluk.astro` → `sponsorship.json officialForm`).
 - **Rakamlar veriden hesaplanır, elle yazılmaz**: `basarilarimiz.astro` başlığı ve sayaçları
   `achievements.json`'dan türetilir (`items.length`, `firstPlaces` regex'i "31.lik" gibi sahte
-  eşleşmeleri saymamaya dikkat eder — bkz. dosyadaki yorum).
+  eşleşmeleri saymamaya dikkat eder - bkz. dosyadaki yorum).
 - **Taslak/süreli içerik**: `haberler` koleksiyonunda `draft: true` hiç yayınlanmaz,
   `expiresOn` geçmişse içerik düşer (`publishedNews()` bunu `src/lib/utils.ts`'de yapar).
 - **Takım yapısı (Eylül 2026)**: takım sayfaları **türe göre** adlandırılır. `title` takım
@@ -106,14 +106,14 @@ başlıktaki düğme ve "Radyomuzu dinlediniz mi?" ipucu `Header.astro`'da). Ça
 - Sponsor logoları: `scripts/crop-sponsor-logos.mjs` duyuru görsellerindeki dairesel rozetleri
   otomatik bulup `public/media/logolar/*.png` üretir (renk maskesi + aşındırma + taşma
   doldurma + yarıçap normalizasyonu). Yeni bir sponsor duyurusu geldiğinde bu betiğe yeni bir
-  `jobs` satırı eklenip yeniden çalıştırılır — koordinatları elle tahmin ETME, script'in
+  `jobs` satırı eklenip yeniden çalıştırılır - koordinatları elle tahmin ETME, script'in
   içindeki yöntemi izle (dosyanın başındaki yorum tüm mantığı anlatıyor).
 - **Çoklu görsel desteği** (`MediaGaleri.astro`, bkz. DESIGN.md): `teams`, `activities`,
   `haberler` şemalarının hepsinde artık `image` (kapak) yanında `gallery: string[]` var. Bir
-  içerik için birden fazla gerçek fotoğraf varsa hepsini `gallery`'e ekle — kapağın altında
+  içerik için birden fazla gerçek fotoğraf varsa hepsini `gallery`'e ekle - kapağın altında
   küçük resim şeridi olarak otomatik çıkar, ekstra kod gerekmez.
 - **Kaynak doğrulama**: Instagram/Drive'dan görsel çekerken içeriği görmeden (sadece dosya adına
-  bakarak) hiçbir şeyi belirli bir takıma/olaya mal etme — görseli aç, kim/ne olduğunu doğrula,
+  bakarak) hiçbir şeyi belirli bir takıma/olaya mal etme - görseli aç, kim/ne olduğunu doğrula,
   emin değilsen kullanma. Bu oturumda birkaç kez klasör adı ile fotoğraf içeriği uyuşmadı
   (ör. "TUSAŞ 2025" klasörü aslında MATRO'nun kendi atölyesini gösteriyordu).
 
@@ -124,11 +124,11 @@ başlıktaki düğme ve "Radyomuzu dinlediniz mi?" ipucu `Header.astro`'da). Ça
    `faaliyetlerimiz.astro`/`takimlarimiz/[slug].astro` bağlı). Şu an gerçek çoklu görseli olan
    içerikler: takımlardan `insansiz-kara-araci`, `insansiz-deniz-araci`, `insansiz-su-alti-sistemleri`,
    `suru-insansiz-hava-araci`, `su-alti-roket-sistemleri`, `insansiz-hava-araclari`; haberlerden `turkish-technic-muhendislik-calistayi`,
-   `hktm-teknik-gezisi`, `zemheri-su-alti-roketi-finalist`. **Geri kalan tüm takım/haber/faaliyet
-   kayıtlarının `gallery` alanı boş** — kullanıcının paylaştığı Google Drive klasöründe
+   `hktm-teknik-gezisi`, `zemheri-su-alti-roketi-finalist`, `aselsan-teknik-gezisi-2026`, `formula-student-soylesisi`, `luna-ika-teknofest-2026`, `matro-seni-bekliyor-2026`, `tanisma-ve-bilgilendirme-toplantisi-2026`, `yonetim-ve-koordinasyon-ekibi-2026`. **Geri kalan takım/haber/faaliyet
+   kayıtlarının `gallery` alanı boş**: kullanıcının paylaştığı Google Drive klasöründe
    (bkz. aşağıdaki link) çok daha fazla ham fotoğraf var, işlenip eklenmeyi bekliyor.
 2. **Kullanıcının sohbette doğrudan yapıştırdığı 5 fotoğraf** (Turkish Airlines hangarı,
-   Turkish Technic tişörtlü/yelekli grup fotoğrafları) **diske kaydedilemedi** — bu ortamda
+   Turkish Technic tişörtlü/yelekli grup fotoğrafları) **diske kaydedilemedi** - bu ortamda
    yapıştırılan görseller dosya yolu olarak erişilebilir değil. Kullanıcıdan bu görselleri
    `~/Downloads`'a kaydetmesini veya bir Drive/Instagram bağlantısı paylaşmasını iste; sonra
    indirip `public/media`'ya işle.
@@ -149,29 +149,29 @@ başlıktaki düğme ve "Radyomuzu dinlediniz mi?" ipucu `Header.astro`'da). Ça
    yapıp eklemeye çalış" dedi. Drive'da birkaç takımın "Videolar" alt klasörü var (LODOS, Turkish
    Technic Workshop, HKTM, TÜBİTAK, TUSAŞ). Kullanıcının yerelinde (`~/Downloads/v3_60fps.mp4`,
    `v3_takimlogo_reel.mp4`) bulunan iki video **MATRO ile ilgisiz** (PUBG yayın overlay'i,
-   "DokunMachine" — kontrol edildi, kullanılmamalı). Web'e video eklenecekse: indir, `ffmpeg`
+   "DokunMachine" - kontrol edildi, kullanılmamalı). Web'e video eklenecekse: indir, `ffmpeg`
    ile h264/aac, ~720p, düşük-orta bitrate'e encode et (`ffmpeg -i giris.mp4 -vf scale=-2:720
    -c:v libx264 -crf 23 -preset slow -c:a aac -b:a 128k cikis.mp4`), `public/media/`'ya koy,
    `<video>` etiketiyle (muted/loop/playsinline, poster'lı) uygun sayfaya göm. Henüz hiçbir
-   sayfada `<video>` kullanılmıyor — sıfırdan bir yaklaşım gerekecek.
+   sayfada `<video>` kullanılmıyor - sıfırdan bir yaklaşım gerekecek.
 5. **Git geçmişi hâlâ eski PII içeriyor** (iki telefon numarası, bir e-posta, sponsor Drive
-   bağlantıları, kaldırılmış sponsorluk PDF'i) — bunlar güncel `main`'de yok ama eski commit'lerde
+   bağlantıları, kaldırılmış sponsorluk PDF'i) - bunlar güncel `main`'de yok ama eski commit'lerde
    duruyor. Kullanıcı "güncel içerikte olmaması yeterli" dedi, geçmişi temizlemeyi istemedi;
    bir daha sorulmadıkça `git filter-repo` ile depo geçmişini yeniden yazma.
 6. Küçük açık sorular: **Komagene** sponsor değil (yalnızca bir etkinlikte ikram yaptı),
    Eylül 2026'da sponsor listesinden çıkarıldı, geri eklenmemeli. Bazı ZEMHERİ haber tarihleri tahmin
-   (28 Ağustos), başvuru `expiresOn` tarihi tahmin (31 Ekim) — kesinleşince düzeltilmeli.
+   (28 Ağustos), başvuru `expiresOn` tarihi tahmin (31 Ekim) - kesinleşince düzeltilmeli.
 
 ## Devir sırasında dikkat
 
-- Bu proje boyunca **Türkçe** yazıldı — commit mesajları, kod yorumları, kullanıcıya yanıtlar
+- Bu proje boyunca **Türkçe** yazıldı - commit mesajları, kod yorumları, kullanıcıya yanıtlar
   hep Türkçe. Bunu koru.
 - Kullanıcı (Bilgehan Zeki Özaytaç / @WildGenie) hızlı, doğrudan geri bildirim veriyor; iş
   bitince kısa özet + canlı doğrulama (curl ile 200 kontrolü, GitHub Actions run durumu) bekliyor.
   `gh run list` ile deploy'u takip et, `https://btumatro.com` üzerinden gerçek sonucu doğrula.
 
 
-## 10 Eylül 2026 — Codex devam notu
+## 10 Eylül 2026 - Codex devam notu
 
 Kullanıcı medya işinden önce görsel kaliteye öncelik verdi. Ana sayfa, ortak başlık/CTA/
 istatistik/takım kartları, renkler ve takım listesi yenilendi; güncel sözleşme DESIGN.md'de.

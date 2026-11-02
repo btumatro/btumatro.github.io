@@ -9,7 +9,7 @@ Bursa Teknik Üniversitesi **Makine Teknolojileri Robot ve Otomasyon Topluluğu*
 | **Yedek adres** | https://btumatro.github.io |
 | **Depo** | https://github.com/btumatro/btumatro.github.io |
 
-Site tamamen statiktir: sunucu, veritabanı ve barındırma ücreti yoktur. Tüm içerik bu deponun içinde metin dosyası olarak durur; içerik panelinden yapılan her düzenleme buraya kaydedilir ve site **1–2 dakika içinde** otomatik güncellenir.
+Site tamamen statiktir: sunucu, veritabanı ve barındırma ücreti yoktur. Tüm içerik bu deponun içinde metin dosyası olarak durur; içerik panelinden yapılan her düzenleme buraya kaydedilir ve site **1-2 dakika içinde** otomatik güncellenir.
 
 ---
 
@@ -87,7 +87,7 @@ Telefon/e-posta boş bırakılırsa sitede hiç gösterilmez.
 
 ### Dikkat
 
-- **Sponsor tutarları sitede görünmez.** `Tutar` alanı yalnızca topluluk içi kayıt içindir. Ama bu depo herkese açıksa dosya içeriği de görülebilir — hassas bulunuyorsa alanı boş bırakın.
+- **Sponsor tutarları sitede görünmez.** `Tutar` alanı yalnızca topluluk içi kayıt içindir. Ama bu depo herkese açıksa dosya içeriği de görülebilir - hassas bulunuyorsa alanı boş bırakın.
 - **Kişisel telefon/e-posta yayınlarken izin alın.** Site Ayarları → Yetkililer bölümündeki bilgiler herkese açık şekilde sitede görünür.
 
 ---
@@ -147,22 +147,25 @@ görsellerini kaynak dosyalardan yeniden üretir.
 
 ### Teknoloji yığını
 
-- **[Astro](https://astro.build)** — statik site üreteci (SSG)
-- **[Tailwind CSS v4](https://tailwindcss.com)** — stil
-- **[Pages CMS](https://pagescms.org)** — barındırılan, sunucusuz içerik paneli
-- **GitHub Actions + GitHub Pages** — otomatik derleme ve yayın
+- **[Astro](https://astro.build)** - statik site üreteci (SSG)
+- **[Tailwind CSS v4](https://tailwindcss.com)** - stil
+- **[Pages CMS](https://pagescms.org)** - barındırılan, sunucusuz içerik paneli
+- **GitHub Actions + GitHub Pages** - otomatik derleme ve yayın
 
-> **Not:** İlk planda geçen Keystatic, GitHub Pages ile çalışmaz — GitHub mode'u sunucu tarafı API route'u (`prerender: false`) gerektirir, GitHub Pages ise yalnızca statik dosya sunar. Bu yüzden aynı işi sunucusuz yapan Pages CMS tercih edildi.
+> **Not:** İlk planda geçen Keystatic, GitHub Pages ile çalışmaz - GitHub mode'u sunucu tarafı API route'u (`prerender: false`) gerektirir, GitHub Pages ise yalnızca statik dosya sunar. Bu yüzden aynı işi sunucusuz yapan Pages CMS tercih edildi.
 
 ### Klasör yapısı
 
-```
+```text
 .pages.yml               İçerik panelinin form şeması
 site.config.mjs          Site adresi / alt klasör ayarı
 astro.config.mjs         Astro yapılandırması
+DESIGN.md                Arayüz tasarım sistemi ve bileşen kuralları
+AGENTS.md                Geliştirici ve ajan devir kılavuzu
+docs/                    Radyo, topluluk şarkıları, dergi ve kitapçık belgeleri (bkz. docs/README.md)
 .github/workflows/       Otomatik yayın (GitHub Actions)
 public/
-  media/                 Panelden yüklenen görseller
+  media/                 Panelden yüklenen görseller ve ses blokları
   logo-*.png             Üretilen logolar (elle düzenlemeyin)
   favicon.png            Sekme simgesi (üretilir)
   og.png                 Sosyal medya önizleme görseli (üretilir)
@@ -171,14 +174,17 @@ scripts/
   make-og.mjs            Sosyal medya önizleme görselini üretir
 src/
   assets/logo-kaynak/    Orijinal logo dosyaları (kaynak)
-  data/*.json            Tekil sayfa içerikleri
+  data/*.json            Tekil sayfa içerikleri ve radyo listesi
   content/teams/*.md     Takım sayfaları
   content/activities/*.md Faaliyetler
+  content/haberler/*.md  Haberler ve duyurular
   components/            Arayüz bileşenleri
   layouts/               Sayfa iskeleti
   pages/                 Site sayfaları (dosya = URL)
   styles/global.css      Renk paleti ve tipografi
 ```
+
+Tasarım sistemi ayrıntıları için [DESIGN.md](DESIGN.md), ajan devir ve medya kuralları için [AGENTS.md](AGENTS.md), radyo ve basılı yayın belgeleri için [docs/README.md](docs/README.md) dosyalarına bakın.
 
 ### Menü yapısı
 
