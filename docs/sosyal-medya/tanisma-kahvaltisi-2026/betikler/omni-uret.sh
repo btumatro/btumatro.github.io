@@ -1,0 +1,7 @@
+#!/bin/bash
+# MATRO Tanışma Kahvaltısı Reels: Omni ile 9:16 gerçekçi çekimler
+cd /tmp/reels
+gemini-api video "Photorealistic vertical 9:16 footage, morning garden cafe under green trees, soft sunlight through leaves. Slow top-down camera glide over a long wooden table covered with a traditional Turkish breakfast spread: cheeses, olives, tomatoes, cucumbers, honey and clotted cream, simit, eggs sizzling in copper pans, tulip glasses of tea. Hands of young people reach in and share food. Warm, cheerful, natural light, shallow depth of field. No text, no logos, no readable faces." --aspect-ratio 9:16 --resolution 1080p --out c1.mp4 > c1.log 2>&1 &
+gemini-api video "Photorealistic vertical 9:16 close-up: Turkish tea being poured from a double teapot into a tulip-shaped glass on a saucer on a wooden garden table, steam rising, morning sunlight and green leaves bokeh behind, a hand takes the glass. Slow motion feel, warm tones. No text, no logos." --aspect-ratio 9:16 --resolution 1080p --out c2.mp4 > c2.log 2>&1 &
+gemini-api video "Photorealistic vertical 9:16 footage: a group of university students sitting around a breakfast table in a leafy garden cafe, laughing and talking, passing plates and simit to each other, seen from behind and the side so no face is clearly identifiable, soft morning sunlight, gentle handheld camera moving along the table. No text, no logos." --aspect-ratio 9:16 --resolution 1080p --out c3.mp4 > c3.log 2>&1 &
+wait; touch bitti
