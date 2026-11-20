@@ -182,7 +182,7 @@ page(
     <dt>Kuruluş</dt><dd>${site.foundedYear}</dd>
     <dt>Topluluk başkanı</dt><dd>${esc(adDuzelt(kisi('Topluluk Başkanı')))}</dd>
     <dt>Akademik danışman</dt><dd>${esc(adDuzelt(kisi('Akademik Danışman')))}</dd>
-    <dt>Danışman mühendis</dt><dd>${esc(adDuzelt(kisi('Topluluk Danışman Mühendisi')))}</dd>
+    <dt>Sektör danışmanı</dt><dd>${esc(adDuzelt(kisi('Sektör Danışmanı')))}</dd>
     <dt>Hazırlayan</dt><dd>MATRO Yönetim Kurulu</dd>
     <dt>Atölye</dt><dd>${esc(site.contact.workshop)}</dd>
     <dt>İletişim</dt><dd>${esc(site.contact.emails[0])} · btumatro.com</dd>

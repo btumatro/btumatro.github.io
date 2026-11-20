@@ -7,7 +7,7 @@
   "boardIntro": "Yönetim Kurulu, topluluğun günlük işleyişinden ve stratejik kararlarından sorumludur. Kurul içindeki ekipler şu alanlarda çalışır:",
   "boardTeams": [
     {
-      "name": "Atölye Ekibi",
+      "name": "Takım Atölye Ekibi",
       "description": "Atölye düzeni ve denetiminden, takımlar arası iletişimden ve takım koordinasyonluğundan sorumludur."
     },
     {
@@ -26,7 +26,7 @@
   "groupOrder": [
     "Danışman",
     "Başkanlık",
-    "Atölye Ekibi",
+    "Takım Atölye Ekibi",
     "Sponsorluk Ekibi",
     "Organizasyon Ekibi",
     "Sosyal Medya Ekibi",
@@ -63,21 +63,21 @@
     },
     {
       "name": "Ömer Cihan Demir",
-      "group": "Atölye Ekibi",
+      "group": "Takım Atölye Ekibi",
       "role": "Ekip Lideri",
       "order": 1,
       "photo": "/media/ekip/omer-cihan-demir.jpg"
     },
     {
       "name": "Duygu Solak",
-      "group": "Atölye Ekibi",
+      "group": "Takım Atölye Ekibi",
       "role": "Ekip Üyesi",
       "order": 2,
       "photo": "/media/ekip/duygu-solak.jpg"
     },
     {
       "name": "Zeynep Seher Yolasığmaz",
-      "group": "Atölye Ekibi",
+      "group": "Takım Atölye Ekibi",
       "role": "Ekip Üyesi",
       "order": 3,
       "photo": "/media/ekip/zeynep-seher-yolasigmaz.jpg"
@@ -104,7 +104,7 @@
       "photo": "/media/ekip/nusret-bircan-keser.jpg"
     },
     {
-      "name": "Rumeysa Akarsu",
+      "name": "Rümeysa Akarsu",
       "group": "Organizasyon Ekibi",
       "role": "Ekip Üyesi",
       "order": 4,
